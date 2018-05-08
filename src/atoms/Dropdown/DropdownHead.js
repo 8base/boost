@@ -4,9 +4,9 @@ import React, { PureComponent } from 'react';
 import { Target } from 'react-popper';
 import { compose } from 'recompose';
 
-import { withDropdownContext } from './DropdownContext'
+import { withDropdownContext } from './DropdownContext';
+import { DropdownHeadTag, DropdownPopperTarget } from './DropdownHead.theme';
 
-import { createStyledTag, createTheme } from '../../utils';
 
 /**
  * @prop {*} stretch stretch dropdown to the parent container
@@ -23,39 +23,7 @@ type DropdownHeadProps = {|
 
   children: React$Node,
   stopClickPropagation?: boolean,
-
-  /** cloned props */
-  onClick?: (event?: Event) => void,
-  outsideClickIgnoreClass?: string,
 |}
-
-const name = 'dropdownHead';
-
-const theme: Theme<DropdownHeadThemeProps> = createTheme(name, {
-  modifiers: {
-    stretch: {
-      height: '100%',
-      width: '100%',
-    },
-  },
-  defaults: {},
-});
-
-const DropdownHeadTag = createStyledTag(name, {
-  cursor: 'pointer',
-  display: 'inline-flex',
-  flexWrap: 'nowrap',
-  height: 'auto',
-  width: 'auto',
-  zIndex: 2,
-});
-
-
-const DropdownPopperTarget = createStyledTag(name, {
-  display: 'inline-flex',
-  width: '100%',
-  height:' 100%',
-});
 
 const dropdownHeadEnhancer: HOC<*, DropdownHeadProps>  = compose(
   withDropdownContext,
@@ -87,4 +55,5 @@ class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
 
 const DropdownHead = dropdownHeadEnhancer(DropdownHeadBase);
 
-export { DropdownHead, theme}
+export { DropdownHead }
+export type { DropdownHeadThemeProps }

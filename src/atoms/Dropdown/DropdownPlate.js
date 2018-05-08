@@ -7,6 +7,7 @@ import { Manager } from 'react-popper';
 
 import { DropdownHead } from './DropdownHead';
 import { DropdownBody } from './DropdownBody';
+import { DropdownContext } from './DropdownContext';
 
 /**
  * @prop {*} isOpen opened state of the dropdown
@@ -59,44 +60,25 @@ class DropdownPlateBase extends Component<DropdownControlledProps> {
 
   getIgnoreClickOutsideClass = () => `ignore-react-onclickoutside-${this.instanceIndex}`;
 
-  getHeadComponent() {
-    const { children } = this.props;
-
-    return React.Children.map(children, child =>
-      (child.type.prototype instanceof DropdownHead || child.type === DropdownHead)
-        ? React.cloneElement(child,
-          {
-            onClick: this.toggleDropdown,
-            outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
-          })
-        : null,
-    );
-  }
-
-  getBodyComponent() {
+  render() {
     const { children, onCloseDropdown, isOpen } = this.props;
 
-    return React.Children.map(children, child =>
-      (child.type.prototype instanceof DropdownBody || child.type === DropdownBody)
-        ? React.cloneElement(child,
-          {
-            onCloseDropdown,
-            isOpen,
-            targetWidth: this.getDropdownWidth(),
-            outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
-          })
-        : null,
-    );
-  }
+    const contextData: DropdownContextData = {
+      isOpen,
+      toggleDropdown: this.toggleDropdown,
+      closeDropdown: onCloseDropdown,
+      targetWidth: this.getDropdownWidth(),
+      outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
+    }
 
-  render() {
     return (
-      <div ref={ this.setDropdownRef }>
-        <Manager tag={ false }>
-          { this.getHeadComponent() }
-          { this.getBodyComponent() }
-        </Manager>
-      </div>
+      <DropdownContext.Provider value={ contextData }>
+        <div ref={ this.setDropdownRef }>
+          <Manager tag={ false }>
+            { children }
+          </Manager>
+        </div>
+      </DropdownContext.Provider>
     );
   }
 }
@@ -115,4 +97,6 @@ const dropDownEnhancer: { (any): React$ComponentType<DropdownControlledProps | D
   ),
 );
 
-export const DropdownPlate = dropDownEnhancer(DropdownPlateBase);
+const DropdownPlate = dropDownEnhancer(DropdownPlateBase);
+
+export { DropdownPlate };

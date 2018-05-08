@@ -5,8 +5,6 @@ import fp from 'lodash/fp';
 import { compose, withStateHandlers, branch } from 'recompose';
 import { Manager } from 'react-popper';
 
-import { DropdownHead } from './DropdownHead';
-import { DropdownBody } from './DropdownBody';
 import { DropdownContext } from './DropdownContext';
 
 /**

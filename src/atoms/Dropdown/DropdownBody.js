@@ -6,8 +6,8 @@ import onClickOutside from 'react-onclickoutside';
 import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
 
-import { DropdownContext, withDropdownContext, type DropdownContextData } from './DropdownPlate'
-import { createStyledTag, createTheme } from '../../utils'
+import { withDropdownContext } from './DropdownContext'
+import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme'
 
 /**
  * @prop {*} background options for background color
@@ -41,60 +41,8 @@ type DropdownBodyProps = {|
   preventOverflow?: boolean,
   forceRender?: boolean,
   withPortal?: boolean,
-  closeOnClickOutside: boolean,
+  closeOnClickOutside?: boolean,
 |}
-
-const name = 'dropdownBody';
-
-const theme: Theme<DropdownBodyThemeProps> = createTheme(name, {
-  modifiers: {
-    stretch: {
-      width: '100%',
-    },
-
-    background: {
-      white: {
-        backgroundColor: '#fff',
-        border: '1px solid #d0d7dd',
-        boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
-      },
-      dark: {
-        backgroundColor: '#323c47',
-        color: '#fff',
-      },
-      none: {
-        backgroundColor: 'transparent',
-      },
-    },
-
-    padding: {
-      none: { padding: '0' },
-      xs: { padding: '0.25rem' },
-      sm: { padding: '0.5rem' },
-      md: { padding: '1rem' },
-      lg: { padding: '1.5rem' },
-      xl: { padding: '2rem' },
-    },
-  },
-  defaults: {
-    background: 'white',
-    padding: 'sm',
-    borderRadius: 'md',
-  },
-});
-
-const offsetSizes: { [PropSizes]: string } = {
-  none: '0',
-  xs: '0, 2.5px',
-  sm: '0, 5px',
-  md: '0, 7.5px',
-  xl: '0, 10px',
-  lg: '0, 15px',
-};
-
-const DropdownBodyTag = createStyledTag(name, {
-  borderRadius: '.25rem',
-});
 
 const setPreventOverflow = (preventOverflow?: boolean) => preventOverflow
   ? fp.merge({ preventOverflow: { enabled: false }, hide: { enabled: false }})
@@ -103,8 +51,6 @@ const setPreventOverflow = (preventOverflow?: boolean) => preventOverflow
 const setOffset = (offset?: PropSizes) => offset && offset !== 'none'
   ? fp.merge({ offset: { enabled: true, offset: offsetSizes[offset] }})
   : fp.identity;
-
-
 
 const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
   setDisplayName('DropdownBody'),
@@ -118,7 +64,7 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   static zIndex = 2000;
 
   static defaultProps = {
-    ...theme[name].defaults,
+    ...defaultTheme,
     placement: 'bottom',
     pin: 'left',
     offset: 'xs',
@@ -199,4 +145,5 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
 
 const DropdownBody = dropdownBodyEnhancer(DropdownBodyBase)
 
-export { DropdownBody, theme }
+export { DropdownBody }
+export type { DropdownBodyThemeProps }

@@ -1,8 +1,10 @@
 // @flow
 
 import { DropdownPlate as Plate } from './DropdownPlate';
-import { DropdownHead as Head, theme as dropdownHeadTheme } from './DropdownHead';
-import { DropdownBody as Body, theme as dropdownBodyTheme } from './DropdownBody';
+import { DropdownHead as Head } from './DropdownHead';
+import { theme as dropdownHeadTheme } from './DropdownHead.theme';
+import { DropdownBody as Body } from './DropdownBody';
+import { theme as dropdownBodyTheme } from './DropdownBody.theme';
 
 const Dropdown = {
   Head,

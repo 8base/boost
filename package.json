@@ -1,6 +1,8 @@
 {
   "name": "@8base/boost",
   "version": "0.1.0",
+  "author": "8base",
+  "license": "MIT",
   "main": "build/index.js",
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^3.4.1",
+    "@storybook/addons": "3.4.1",
     "@storybook/react": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "7.2.3",

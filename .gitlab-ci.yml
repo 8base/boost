@@ -1,0 +1,40 @@
+image: 8base/docker-amazonlinux-node:node8
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
+    - export PATH="$HOME/.yarn/bin:$PATH"
+    - yarn install
+    - yarn run eslint
+    - yarn run test
+    - yarn run flow
+  tags:
+    - docker
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+
+publish:  
+  stage: deploy
+  environment: production
+  only:
+    - tags
+    - triggers
+  script:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
+    - export PATH="$HOME/.yarn/bin:$PATH"
+    - yarn install
+    - yarn build
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish --access public
+  tags:
+    - docker
+
+cache:
+  key: "$CI_PROJECT_PATH_SLUG 1"
+  paths:
+  - node_modules/
+  - package-lock.json

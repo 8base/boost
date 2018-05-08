@@ -1,0 +1,19 @@
+extends: react-app
+globals:
+  If: true
+  Choose: true
+  When: true
+  Otherwise: true
+rules:
+  indent: ['error', 2]
+  no-console: ['warn']
+  no-unused-vars: ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }]
+  react/jsx-no-undef: ['warn', { allowGlobals: true }]
+  comma-dangle: ['warn', {
+    'arrays': 'always-multiline',
+    'objects': 'always-multiline',
+    'imports': 'always-multiline',
+    'exports': 'always-multiline',
+    'functions': 'always-multiline'
+  }]
+  no-trailing-spaces: 'warn'

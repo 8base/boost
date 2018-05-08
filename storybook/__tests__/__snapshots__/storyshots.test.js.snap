@@ -1,0 +1,4032 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Avatar with custom size modifiers 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <img
+    className="emotion-0"
+    src="https://randomuser.me/api/portraits/women/87.jpg"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Avatar with default modifiers 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <img
+    className="emotion-0"
+    src="https://randomuser.me/api/portraits/women/76.jpg"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Button with children 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+<div
+  className="emotion-1"
+>
+  <button
+    className="emotion-0"
+    type="button"
+  >
+    Children
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button with kind secondary 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid rgba(0,0,0,0.12);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #FFFFFF;
+  color: rgba(0,0,0,0.87);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+<div
+  className="emotion-1"
+>
+  <button
+    className="emotion-0"
+    type="button"
+  >
+    Text
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button with loading 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.emotion-1 {
+  border: 1px solid rgba(0,0,0,0.12);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #FFFFFF;
+  color: rgba(0,0,0,0.87);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+<div
+  className="emotion-2"
+>
+  <button
+    className="emotion-0"
+    type="button"
+  >
+    Loading...
+  </button>
+  <button
+    className="emotion-1"
+    type="button"
+  >
+    Loading...
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button with submit type 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+<div
+  className="emotion-1"
+>
+  <button
+    className="emotion-0"
+    type="submit"
+  >
+    Submit
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button with text 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+<div
+  className="emotion-1"
+>
+  <button
+    className="emotion-0"
+    type="button"
+  >
+    Text
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Divider with default modifiers 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  background-color: rgba(0,0,0,0.12);
+  height: 1px;
+  border: none;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+<div
+  className="emotion-1"
+>
+  <hr
+    className="emotion-0"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown default 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-0 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with custom body width 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-4 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": "40rem",
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with custom offset 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-5 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with dark background 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #323c47;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-6 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with force render 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-9 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with pin to right 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-1 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with stretch body 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+<div
+  className="emotion-3"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-3 emotion-2"
+      onClick={[Function]}
+      stretch={true}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          stretch={true}
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown with stretch target 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-2 emotion-2"
+      onClick={[Function]}
+      stretch={true}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          stretch={true}
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown without background 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-7 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Dropdown without close on outside click 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  padding: 0.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-8 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <button
+          className="emotion-0"
+          type="button"
+        >
+          Head
+        </button>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "block",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 2000,
+        }
+      }
+    >
+      <div
+        className="emotion-3"
+      >
+        Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Form without groups 1`] = `
+.emotion-17 {
+  margin: 2rem;
+}
+
+.emotion-15 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.emotion-16 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-17"
+>
+  <form
+    className="emotion-16"
+    onSubmit={[Function]}
+  >
+    <div
+      className="emotion-2"
+    >
+      <label
+        className="emotion-0"
+      >
+        Jobs
+      </label>
+      <input
+        className="emotion-1"
+        name="curple"
+        onChange={[Function]}
+        placeholder={undefined}
+        value="Breakthrough"
+      />
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <label
+        className="emotion-0"
+      >
+        Posted
+      </label>
+      <input
+        className="emotion-1"
+        name="provect"
+        onChange={[Function]}
+        placeholder={undefined}
+        value="Yearock"
+      />
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <label
+        className="emotion-0"
+      >
+        My Active Jobs
+      </label>
+      <input
+        className="emotion-1"
+        name="inlaying"
+        onChange={[Function]}
+        placeholder={undefined}
+        value="Lombard"
+      />
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <label
+        className="emotion-0"
+      >
+        Active Requests
+      </label>
+      <input
+        className="emotion-1"
+        name="saccharifier"
+        onChange={[Function]}
+        placeholder={undefined}
+        value="Cyanoacetic"
+      />
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <label
+        className="emotion-0"
+      >
+        Applied
+      </label>
+      <input
+        className="emotion-1"
+        name="inertance"
+        onChange={[Function]}
+        placeholder={undefined}
+        value="Unfluent"
+      />
+    </div>
+    <button
+      className="emotion-15"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with default modifiers 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  display: grid;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      1
+    </div>
+    <div
+      className="emotion-0"
+    >
+      2
+    </div>
+    <div
+      className="emotion-0"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with gap modifiers 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      1
+    </div>
+    <div
+      className="emotion-0"
+    >
+      2
+    </div>
+    <div
+      className="emotion-0"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with grid areas 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "avatar info rating rate actions" "avatar skills skills skills actions";
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: avatar;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: info;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: rating;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: rate;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: actions;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-area: skills;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+  className="emotion-7"
+>
+  <div
+    className="emotion-6"
+  >
+    <div
+      className="emotion-0"
+    >
+      avatar
+    </div>
+    <div
+      className="emotion-1"
+    >
+      info
+    </div>
+    <div
+      className="emotion-2"
+    >
+      rating
+    </div>
+    <div
+      className="emotion-3"
+    >
+      rate
+    </div>
+    <div
+      className="emotion-4"
+    >
+      actions
+    </div>
+    <div
+      className="emotion-5"
+    >
+      skills
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with inline modifier 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      1
+    </div>
+    <div
+      className="emotion-0"
+    >
+      2
+    </div>
+    <div
+      className="emotion-0"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with padding modifiers 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: grid;
+  padding: 1.5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      1
+    </div>
+    <div
+      className="emotion-0"
+    >
+      2
+    </div>
+    <div
+      className="emotion-0"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Grid with stretch column 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: grid;
+  grid-template-columns: 300px minmax(200px,1fr) 200px;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      300px
+    </div>
+    <div
+      className="emotion-0"
+    >
+      stretch
+    </div>
+    <div
+      className="emotion-0"
+    >
+      200px
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading with kind modifiers  1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 48px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 32px;
+  color: rgba(0,0,0,0.54);
+  font-weight: 400;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 24px;
+  color: rgba(0,0,0,0.38);
+  font-weight: 400;
+}
+
+<div
+  className="emotion-3"
+>
+  <h1
+    className="emotion-0"
+    type="h1"
+  >
+    Primary Heading
+  </h1>
+  <h2
+    className="emotion-1"
+    type="h2"
+  >
+    Secondary Heading
+  </h2>
+  <h3
+    className="emotion-2"
+    type="h3"
+  >
+    Disabled Heading
+  </h3>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading with type modifiers 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 48px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 32px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 24px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-3 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 20px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-4 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-5 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 12px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+<div
+  className="emotion-6"
+>
+  <h1
+    className="emotion-0"
+    type="h1"
+  >
+    Heading 1
+  </h1>
+  <h2
+    className="emotion-1"
+    type="h2"
+  >
+    Heading 2
+  </h2>
+  <h3
+    className="emotion-2"
+    type="h3"
+  >
+    Heading 3
+  </h3>
+  <h4
+    className="emotion-3"
+    type="h4"
+  >
+    Heading 4
+  </h4>
+  <h5
+    className="emotion-4"
+    type="h5"
+  >
+    Heading 5
+  </h5>
+  <h6
+    className="emotion-5"
+    type="h6"
+  >
+    Heading 6
+  </h6>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon with default modifiers 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="emotion-1"
+>
+  <div
+    className="emotion-0"
+  >
+    <svg
+      focusable="false"
+      height="24"
+      role="presentation"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+        fill="currentColor"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Label with kind modifiers 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.38);
+}
+
+<div
+  className="emotion-3"
+>
+  <label
+    className="emotion-0"
+  >
+    Primary Label
+  </label>
+  <label
+    className="emotion-1"
+  >
+    Secondary Label
+  </label>
+  <label
+    className="emotion-2"
+  >
+    Disabled Label
+  </label>
+</div>
+`;
+
+exports[`Storyshots Atoms/Link with children 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.emotion-1 {
+  color: #4DA1FF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="emotion-2"
+>
+  <a
+    className="emotion-1"
+    href="https://randomuser.me/api/portraits/women/87.jpg"
+    onClick={[Function]}
+  >
+    <img
+      className="emotion-0"
+      src="https://randomuser.me/api/portraits/women/87.jpg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Atoms/Link with text 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  color: #4DA1FF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="emotion-1"
+>
+  <a
+    className="emotion-0"
+    href="https://randomuser.me/api/portraits/women/76.jpg"
+    onClick={[Function]}
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`Storyshots Atoms/Menu with default modifiers 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.emotion-0:hover {
+  background-color: #4DA1FF;
+  color: #fff;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      Tramman
+    </div>
+    <div
+      className="emotion-0"
+    >
+      Gripman
+    </div>
+    <div
+      className="emotion-0"
+    >
+      Proalliance
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Navigation with groups 1`] = `
+.emotion-17 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 2rem;
+}
+
+.emotion-5:hover,
+.emotion-5.is-active {
+  background-color: #fff;
+}
+
+.emotion-5.is-active {
+  font-weight: 600;
+}
+
+.emotion-5:hover::before,
+.emotion-5.is-active::before {
+  content: "";
+  background-color: #4DA1FF;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+}
+
+.emotion-0 {
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.emotion-0:hover,
+.emotion-0.is-active {
+  background-color: #fff;
+}
+
+.emotion-0.is-active {
+  font-weight: 600;
+}
+
+.emotion-0:hover::before,
+.emotion-0.is-active::before {
+  content: "";
+  background-color: #4DA1FF;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+}
+
+<div
+  className="emotion-17"
+>
+  <nav
+    className="emotion-1"
+  >
+    <div
+      className="emotion-1"
+    >
+      <a
+        aria-current={false}
+        className="emotion-0"
+        href="/profile"
+        onClick={[Function]}
+        style={undefined}
+      >
+        My Profile
+      </a>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <a
+        aria-current={false}
+        className="emotion-0"
+        href="/messages"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Messages
+      </a>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <a
+        aria-current={false}
+        className="emotion-0"
+        href="/network"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Network
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/network/hired-developers"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Hired Developers
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/network/my-employers"
+        onClick={[Function]}
+        style={undefined}
+      >
+        My Employers
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/network/open-invitations"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Open Invitations
+      </a>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <a
+        aria-current={false}
+        className="emotion-0"
+        href="/jobs"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Jobs
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/jobs/posted"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Posted
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/jobs/my-active-jobs"
+        onClick={[Function]}
+        style={undefined}
+      >
+        My Active Jobs
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/jobs/active-requests"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Active Requests
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/jobs/applied"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Applied
+      </a>
+      <a
+        aria-current={false}
+        className="emotion-5"
+        href="/jobs/saved"
+        onClick={[Function]}
+        style={undefined}
+      >
+        Saved
+      </a>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Atoms/Navigation without groups 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  color: rgba(0,0,0,0.87);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 2rem;
+}
+
+.emotion-0:hover,
+.emotion-0.is-active {
+  background-color: #fff;
+}
+
+.emotion-0.is-active {
+  font-weight: 600;
+}
+
+.emotion-0:hover::before,
+.emotion-0.is-active::before {
+  content: "";
+  background-color: #4DA1FF;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+}
+
+<div
+  className="emotion-7"
+>
+  <nav
+    className="emotion-6"
+  >
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/jobs"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Jobs
+    </a>
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/posted"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Posted
+    </a>
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/my-active-jobs"
+      onClick={[Function]}
+      style={undefined}
+    >
+      My Active Jobs
+    </a>
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/active-requests"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Active Requests
+    </a>
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/applied"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Applied
+    </a>
+    <a
+      aria-current={false}
+      className="emotion-0"
+      href="/saved"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Saved
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Atoms/Paper with header and sections 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  line-height: normal;
+  margin: 0;
+  font-size: 20px;
+  color: rgba(0,0,0,0.87);
+  font-weight: 400;
+}
+
+.emotion-5 {
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1.5em;
+}
+
+.emotion-4 {
+  border-top: 1px solid #E9EFF4;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-bottom: 1.5rem;
+}
+
+.emotion-2 {
+  padding: 1.5rem;
+}
+
+.emotion-2 + * {
+  border-top: 1px solid #E9EFF4;
+}
+
+.emotion-2:last-child {
+  padding-bottom: 0;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+  >
+    <div
+      className="emotion-1"
+    >
+      <h4
+        className="emotion-0"
+        type="h4"
+      >
+        My Profile
+      </h4>
+      PaperHeaderChildren
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-2"
+      >
+        PaperSectionChildren
+      </div>
+      <div
+        className="emotion-2"
+      >
+        PaperSectionChildren
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Paragraph with children 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+<div
+  className="emotion-1"
+>
+  <p
+    className="emotion-0"
+  >
+    Binode carpetbaggism preyouthful salesmanship sinuventricular outskirmish autoepilation frescoer Jebus waneless hyperinsulinize Oxycoccus onlooker upbrought gryllid apopenptic sinuatrial nonresidency villainy planxty gelatinize fructivorous headlock aggrieve
+  </p>
+</div>
+`;
+
+exports[`Storyshots Atoms/Paragraph with kind modifiers  1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.38);
+}
+
+<div
+  className="emotion-3"
+>
+  <p
+    className="emotion-0"
+  >
+    Primary Paragraph
+  </p>
+  <p
+    className="emotion-1"
+  >
+    Secondary Paragraph
+  </p>
+  <p
+    className="emotion-2"
+  >
+    Disabled Paragraph
+  </p>
+</div>
+`;
+
+exports[`Storyshots Atoms/Paragraph with text 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+<div
+  className="emotion-1"
+>
+  <p
+    className="emotion-0"
+  >
+    Binode carpetbaggism preyouthful salesmanship sinuventricular outskirmish autoepilation frescoer Jebus waneless hyperinsulinize Oxycoccus onlooker upbrought gryllid apopenptic sinuatrial nonresidency villainy planxty gelatinize fructivorous headlock aggrieve
+  </p>
+</div>
+`;
+
+exports[`Storyshots Atoms/Scrollable with default modifiers 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.emotion-0 {
+  height: 100%;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    style={
+      Object {
+        "height": "300px",
+        "width": "100px",
+      }
+    }
+  >
+    <h1>
+      Heading
+    </h1>
+    <div
+      className="emotion-1"
+    >
+      <div
+        className="emotion-0"
+      >
+        Overappareled analysis antemarginal czarist pedotrophist hemocrystallin ischioperineal Pelasgic rabbeting radicate shinza entame pleurotomy multicolor heterocyclic uncontestedness enwallow hydrazone tinderous roguishness postatrial cerotate kinetomeric
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Select default 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.54);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.emotion-1 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    name="name"
+    onChange={[Function]}
+  >
+    <div>
+      <div
+        className="ignore-react-onclickoutside-10 emotion-4"
+        onClick={[Function]}
+        stretch={undefined}
+      >
+        <div
+          className="emotion-3"
+        >
+          <div
+            className="emotion-2"
+          >
+            Select an option
+            <div
+              className="emotion-1"
+            >
+              <div
+                className="emotion-0"
+              >
+                <svg
+                  focusable="false"
+                  height="24"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Select filled 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-1 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    name="name"
+    onChange={[Function]}
+  >
+    <div>
+      <div
+        className="ignore-react-onclickoutside-11 emotion-4"
+        onClick={[Function]}
+        stretch={undefined}
+      >
+        <div
+          className="emotion-3"
+        >
+          <div
+            className="emotion-2"
+          >
+            ovenlike
+            <div
+              className="emotion-1"
+            >
+              <div
+                className="emotion-0"
+              >
+                <svg
+                  focusable="false"
+                  height="24"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Select stretch 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-4 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.54);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.emotion-1 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    name="name"
+    onChange={[Function]}
+  >
+    <div>
+      <div
+        className="ignore-react-onclickoutside-12 emotion-4"
+        onClick={[Function]}
+        stretch={true}
+      >
+        <div
+          className="emotion-3"
+        >
+          <div
+            className="emotion-2"
+          >
+            Select an option
+            <div
+              className="emotion-1"
+            >
+              <div
+                className="emotion-0"
+              >
+                <svg
+                  focusable="false"
+                  height="24"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/SelectField default 1`] = `
+.emotion-8 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+<div
+  className="emotion-8"
+>
+  <div
+    className="emotion-7"
+  >
+    <label
+      className="emotion-0"
+    >
+      Select Label
+    </label>
+    <div
+      className="emotion-6"
+      name="input"
+      onChange={[Function]}
+    >
+      <div>
+        <div
+          className="ignore-react-onclickoutside-13 emotion-5"
+          onClick={[Function]}
+          stretch={undefined}
+        >
+          <div
+            className="emotion-4"
+          >
+            <div
+              className="emotion-3"
+            >
+              ovenlike
+              <div
+                className="emotion-2"
+              >
+                <div
+                  className="emotion-1"
+                >
+                  <svg
+                    focusable="false"
+                    height="24"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path
+                      d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+                      fill="currentColor"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Stars with default modifiers 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  color: #FFCB00;
+  line-height: normal;
+  font-size: 24px;
+}
+
+<div
+  className="emotion-1"
+>
+  <div
+    className="emotion-0"
+  >
+    ★★★★★
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Text with children 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+<div
+  className="emotion-1"
+>
+  <span
+    className="emotion-0"
+  >
+    Imploringness
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/Text with kind modifiers  1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.38);
+}
+
+<div
+  className="emotion-3"
+>
+  <span
+    className="emotion-0"
+  >
+    Primary Text
+  </span>
+  <span
+    className="emotion-1"
+  >
+    Secondary Text
+  </span>
+  <span
+    className="emotion-2"
+  >
+    Disabled Text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/Text with text 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.87);
+}
+
+<div
+  className="emotion-1"
+>
+  <span
+    className="emotion-0"
+  >
+    Expletively
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextArea with placeholder 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <textarea
+    className="emotion-0"
+    cols={100}
+    name="input"
+    onChange={[Function]}
+    placeholder="placeholder"
+    rows={5}
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextArea with value 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <textarea
+    className="emotion-0"
+    cols={100}
+    name="input"
+    onChange={[Function]}
+    rows={5}
+    value="Affectious vindicably splenopathy demirevetment saffron redeny epitheliosis reacclimatization pistacite obdeltoid Balawu drugman lasher godlet immomentous unguentaria curwhibble dismastment filterable virilist subtrigonal iditol Silybum banshee"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextArea without value 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <textarea
+    className="emotion-0"
+    cols={100}
+    name="input"
+    onChange={[Function]}
+    rows={5}
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextAreaField with placeholder 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Area
+    </label>
+    <textarea
+      className="emotion-1"
+      cols={undefined}
+      name="input"
+      onChange={[Function]}
+      placeholder="placeholder"
+      rows={undefined}
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextAreaField with value 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Area
+    </label>
+    <textarea
+      className="emotion-1"
+      cols={undefined}
+      name="input"
+      onChange={[Function]}
+      placeholder={undefined}
+      rows={undefined}
+      value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextAreaField without value 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  line-height: 28px;
+  outline: none;
+  padding: 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Area
+    </label>
+    <textarea
+      className="emotion-1"
+      cols={undefined}
+      name="input"
+      onChange={[Function]}
+      placeholder={undefined}
+      rows={undefined}
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInput with placeholder 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <input
+    className="emotion-0"
+    name="input"
+    onChange={[Function]}
+    placeholder="placeholder"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInput with value 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <input
+    className="emotion-0"
+    name="input"
+    onChange={[Function]}
+    value="value"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInput without value 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <input
+    className="emotion-0"
+    name="input"
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInputField with placeholder 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <input
+      className="emotion-1"
+      name="input"
+      onChange={[Function]}
+      placeholder="placeholder"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInputField with value 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <input
+      className="emotion-1"
+      name="input"
+      onChange={[Function]}
+      placeholder={undefined}
+      value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/TextInputField without value 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-1 {
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 3rem;
+  line-height: normal;
+  outline: none;
+  padding: 0 1rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <input
+      className="emotion-1"
+      name="input"
+      onChange={[Function]}
+      placeholder={undefined}
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/Rating with default modifiers 1`] = `
+.emotion-5 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: rgba(0,0,0,0.54);
+}
+
+.emotion-0 {
+  color: #FFCB00;
+  line-height: normal;
+  font-size: 24px;
+}
+
+.emotion-4 {
+  display: inline-grid;
+  grid-auto-columns: min-content;
+  grid-gap: 1rem;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  grid-column: 2;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+  className="emotion-5"
+>
+  <div
+    className="emotion-4"
+  >
+    <div
+      className="emotion-1"
+    >
+      <div
+        className="emotion-0"
+      >
+        ★★★★★
+      </div>
+    </div>
+    <div
+      className="emotion-3"
+    >
+      <span
+        className="emotion-2"
+      >
+        4.5
+      </span>
+    </div>
+  </div>
+</div>
+`;

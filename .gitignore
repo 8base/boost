@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.eslintcache
+build
+coverage
+node_modules
+npm-debug.log
+yarn-error.log

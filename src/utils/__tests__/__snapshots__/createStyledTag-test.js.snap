@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`As developer, I can create tag by provided theme and passed styles. with style function 1`] = `
+.emotion-0 {
+  height: 10px;
+  grid-gap: 10px;
+  color: #000;
+}
+
+<div
+  className="emotion-0"
+>
+  Children
+</div>
+`;
+
+exports[`As developer, I can create tag by provided theme and passed styles. with style object 1`] = `
+.emotion-0 {
+  height: 10px;
+  color: #000;
+  width: 200px;
+}
+
+<div
+  className="emotion-0"
+>
+  Children
+</div>
+`;

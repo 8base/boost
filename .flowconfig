@@ -1,0 +1,29 @@
+[ignore]
+.*/node_modules/.*/test/.*
+
+[include]
+
+[libs]
+flow/.*
+flow-typed/.*
+flow-typed/global.js
+
+[lints]
+
+[options]
+module.use_strict=true
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+module.name_mapper='^atoms\(.*\)$' -> '<PROJECT_ROOT>/src/atoms/\1'
+module.name_mapper='^common\(.*\)$' -> '<PROJECT_ROOT>/src/common/\1'
+module.name_mapper='^molecules\(.*\)$' -> '<PROJECT_ROOT>/src/molecules/\1'
+module.name_mapper='^utils\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.jsx
+
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+[strict]

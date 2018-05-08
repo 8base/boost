@@ -6,6 +6,7 @@ import onClickOutside from 'react-onclickoutside';
 import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
 
+import { DropdownContext, withDropdownContext, type DropdownContextData } from './DropdownPlate'
 import { createStyledTag, createTheme } from '../../utils'
 
 /**
@@ -41,11 +42,6 @@ type DropdownBodyProps = {|
   forceRender?: boolean,
   withPortal?: boolean,
   closeOnClickOutside: boolean,
-
-  /** cloned props */
-  isOpen: boolean,
-  onCloseDropdown: () => void,
-  targetWidth?: number,
 |}
 
 const name = 'dropdownBody';
@@ -109,7 +105,16 @@ const setOffset = (offset?: PropSizes) => offset && offset !== 'none'
   : fp.identity;
 
 
-class DropdownBodyBase extends PureComponent<DropdownBodyProps> {
+
+const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
+  setDisplayName('DropdownBody'),
+  withDropdownContext,
+  onClickOutside,
+);
+
+type DropdownBodyEnhancedProps = HOCBase<typeof dropdownBodyEnhancer>;
+
+class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   static zIndex = 2000;
 
   static defaultProps = {
@@ -154,15 +159,15 @@ class DropdownBodyBase extends PureComponent<DropdownBodyProps> {
   }
 
   getBodyChildren = () => {
-    const { children, onCloseDropdown } = this.props;
+    const { children, dropdown: { closeDropdown } } = this.props;
 
     return typeof children === 'function'
-      ? children({ closeDropdown: onCloseDropdown })
+      ? children({ closeDropdown })
       : children;
   }
 
   render() {
-    const { isOpen, withPortal, forceRender, ...rest } = this.props;
+    const { withPortal, forceRender, dropdown: { isOpen }, ...rest } = this.props;
 
     const popperPlacement = this.getPopperPlacement();
     const popperModifiers = this.getPopperModifiers();
@@ -192,10 +197,6 @@ class DropdownBodyBase extends PureComponent<DropdownBodyProps> {
   }
 }
 
-const dropdownBodyEnhancer: HOC<DropdownBodyProps, DropdownBodyProps> = compose(
-  setDisplayName('DropdownBody'),
-  onClickOutside,
-);
 const DropdownBody = dropdownBodyEnhancer(DropdownBodyBase)
 
 export { DropdownBody, theme }

@@ -2,6 +2,9 @@
 
 import React, { PureComponent } from 'react';
 import { Target } from 'react-popper';
+import { compose } from 'recompose';
+
+import { withDropdownContext } from './DropdownContext'
 
 import { createStyledTag, createTheme } from '../../utils';
 
@@ -54,17 +57,23 @@ const DropdownPopperTarget = createStyledTag(name, {
   height:' 100%',
 });
 
-class DropdownHead extends PureComponent<DropdownHeadProps> {
+const dropdownHeadEnhancer: HOC<*, DropdownHeadProps>  = compose(
+  withDropdownContext,
+)
+
+type DropdownHeadPropsEnhanced = HOCBase<typeof dropdownHeadEnhancer>;
+
+class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
-    const { onClick, stopClickPropagation } = this.props;
+    const { dropdown: { toggleDropdown }, stopClickPropagation } = this.props;
 
-    onClick && onClick(event);
+    toggleDropdown && toggleDropdown();
     stopClickPropagation && event.stopPropagation();
   }
 
   render() {
-    const { outsideClickIgnoreClass = '', children, ...rest } = this.props;
+    const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
 
     return (
       <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
@@ -75,5 +84,7 @@ class DropdownHead extends PureComponent<DropdownHeadProps> {
     );
   }
 }
+
+const DropdownHead = dropdownHeadEnhancer(DropdownHeadBase);
 
 export { DropdownHead, theme}

@@ -27,6 +27,14 @@ type DropdownUncontroledProps = {|
   children: React$Node,
 |}
 
+type DropdownContextData = {|
+  isOpen: boolean,
+  toggleDropdown: () => void,
+  closeDropdown: () => void,
+  targetWidth?: number,
+  outsideClickIgnoreClass: string,
+|}
+
 class DropdownPlateBase extends Component<DropdownControlledProps> {
   instanceIndex: number;
   dropdownRef: ?HTMLElement;

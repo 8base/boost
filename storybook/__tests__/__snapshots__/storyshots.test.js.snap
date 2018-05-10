@@ -74,6 +74,7 @@ exports[`Storyshots Atoms/Button with children 1`] = `
 >
   <button
     className="emotion-0"
+    onClick={undefined}
     type="button"
   >
     Children
@@ -113,6 +114,7 @@ exports[`Storyshots Atoms/Button with kind secondary 1`] = `
 >
   <button
     className="emotion-0"
+    onClick={undefined}
     type="button"
   >
     Text
@@ -178,12 +180,14 @@ exports[`Storyshots Atoms/Button with loading 1`] = `
 >
   <button
     className="emotion-0"
+    onClick={undefined}
     type="button"
   >
     Loading...
   </button>
   <button
     className="emotion-1"
+    onClick={undefined}
     type="button"
   >
     Loading...
@@ -223,6 +227,7 @@ exports[`Storyshots Atoms/Button with submit type 1`] = `
 >
   <button
     className="emotion-0"
+    onClick={undefined}
     type="submit"
   >
     Submit
@@ -262,6 +267,7 @@ exports[`Storyshots Atoms/Button with text 1`] = `
 >
   <button
     className="emotion-0"
+    onClick={undefined}
     type="button"
   >
     Text
@@ -362,6 +368,7 @@ exports[`Storyshots Atoms/Dropdown default 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -463,6 +470,7 @@ exports[`Storyshots Atoms/Dropdown with custom body width 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -564,6 +572,7 @@ exports[`Storyshots Atoms/Dropdown with custom offset 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -664,6 +673,7 @@ exports[`Storyshots Atoms/Dropdown with dark background 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -765,6 +775,7 @@ exports[`Storyshots Atoms/Dropdown with force render 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -866,6 +877,7 @@ exports[`Storyshots Atoms/Dropdown with pin to right 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -961,6 +973,7 @@ exports[`Storyshots Atoms/Dropdown with stretch body 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           stretch={true}
           type="button"
         >
@@ -1045,6 +1058,7 @@ exports[`Storyshots Atoms/Dropdown with stretch target 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           stretch={true}
           type="button"
         >
@@ -1145,6 +1159,7 @@ exports[`Storyshots Atoms/Dropdown without background 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -1246,6 +1261,7 @@ exports[`Storyshots Atoms/Dropdown without close on outside click 1`] = `
       >
         <button
           className="emotion-0"
+          onClick={undefined}
           type="button"
         >
           Head
@@ -1431,6 +1447,7 @@ exports[`Storyshots Atoms/Form without groups 1`] = `
     </div>
     <button
       className="emotion-15"
+      onClick={undefined}
       type="submit"
     >
       Submit

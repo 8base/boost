@@ -11,12 +11,4 @@ describe('<Button />', () => {
     wrapper.simulate('click');
     expect(onClick).toHaveBeenCalled();
   });
-
-  it('should change loading state by the prop', () => {
-    const wrapper = shallow(<Button />);
-
-    expect(wrapper.state('loading')).toBeFalsy();
-    wrapper.setProps({ loading: true });
-    expect(wrapper.state('loading')).toBeTruthy();
-  });
 });

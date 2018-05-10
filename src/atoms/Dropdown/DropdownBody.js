@@ -133,7 +133,7 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
               display: isOpen ? 'block' : 'none',
             }}
           >
-            <DropdownBodyTag tagName="div" { ...rest }>
+            <DropdownBodyTag { ...rest } tagName="div">
               { renderChildren }
             </DropdownBodyTag>
           </Popper>

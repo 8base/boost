@@ -1,1 +1,4 @@
-export { Select, theme } from './Select';
+// @flow
+
+export { Select } from './Select';
+export { theme } from './Select.theme';

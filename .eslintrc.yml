@@ -4,6 +4,10 @@ globals:
   Choose: true
   When: true
   Otherwise: true
+  shallow: true
+  render: true
+  mount: true
+
 rules:  
   #styles
   block-spacing: ['error']

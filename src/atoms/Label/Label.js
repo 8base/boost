@@ -42,7 +42,7 @@ function Label({
   children,
   ...rest
   }: LabelProps) {
-  return <StyledTag tagName="label" {...rest}>{text}</StyledTag>;
+  return <StyledTag tagName="label" { ...rest }>{ text }</StyledTag>;
 }
 
 export { Label, theme };

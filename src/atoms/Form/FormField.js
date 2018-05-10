@@ -1,5 +1,5 @@
 import React from 'react';
-import { Field } from 'react-final-form'
+import { Field } from 'react-final-form';
 
 import { createStyledTag, createTheme } from '../../utils';
 
@@ -24,12 +24,10 @@ function FormField({
   ...rest
   }: FormFieldProps) {
   return (
-    <Field name={name}>
-      {
-        ({ input }) => (
-          <StyledTag tagName={component} {...input} {...rest} />
-        )
-      }
+    <Field name={ name }>
+      { ({ input }) => (
+        <StyledTag tagName={ component } { ...input } { ...rest } />
+      ) }
     </Field>
   );
 }

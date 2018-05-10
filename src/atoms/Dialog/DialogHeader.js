@@ -37,14 +37,14 @@ function DialogHeader({
   ...rest
   }: DialogHeaderProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
+    <StyledTag tagName="div" { ...rest }>
       <Grid.Layout columns="auto 1fr auto" stretch>
         <Grid.Box>
-          <Heading type="h5" text={heading} weight="semibold" />
+          <Heading type="h5" text={ heading } weight="semibold" />
         </Grid.Box>
-        <Grid.Box/>
+        <Grid.Box />
         <Grid.Box justifyContent="center">
-          <CloseStyledTag tagName="div" onClick={onClose}>✕</CloseStyledTag>
+          <CloseStyledTag tagName="div" onClick={ onClose }>✕</CloseStyledTag>
         </Grid.Box>
       </Grid.Layout>
     </StyledTag>

@@ -63,14 +63,14 @@ function GridBox({
   }: GridBoxProps) {
   if (scrollable) {
     return (
-      <StyledTag tagName="div" direction={direction} {...rest}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: direction }}>{children}</div>
+      <StyledTag tagName="div" direction={ direction } { ...rest }>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: direction }}>{ children }</div>
       </StyledTag>
     );
   }
 
   return (
-    <StyledTag tagName="div" direction={direction} {...rest}>{children}</StyledTag>
+    <StyledTag tagName="div" direction={ direction } { ...rest }>{ children }</StyledTag>
   );
 }
 

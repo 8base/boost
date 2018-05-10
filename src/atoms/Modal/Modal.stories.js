@@ -5,24 +5,24 @@ export default (asStory) => {
     story
       .add('multiple modals', () => (
         <React.Fragment>
-          <Modal isOpen={true}>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
-            XXXXXXXXXX<br/>
+          <Modal isOpen>
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
           </Modal>
-          <Modal isOpen={true}>
-            00000<br/>
-            00000<br/>
-            00000<br/>
-            00000<br/>
-            00000<br/>
+          <Modal isOpen>
+            00000<br />
+            00000<br />
+            00000<br />
+            00000<br />
+            00000<br />
           </Modal>
         </React.Fragment>
       ));

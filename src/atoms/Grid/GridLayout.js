@@ -72,7 +72,7 @@ function GridLayout({
   children,
   ...rest
   }: GridLayoutProps) {
-  return <StyledTag tagName="div" {...rest}>{children}</StyledTag>;
+  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
 }
 
 export { GridLayout, theme };

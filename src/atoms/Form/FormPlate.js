@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form } from 'react-final-form'
+import { Form } from 'react-final-form';
 
 import { createStyledTag, createTheme } from '../../utils';
 
@@ -27,9 +27,9 @@ function FormPlate({
   initialValues,
   ...rest
   }: FormPlateProps) {
-  return <Form onSubmit={onSubmit} initialValues={initialValues} render={({ handleSubmit, reset, submitting, pristine, values }) => (
-    <StyledTag tagName="form" onSubmit={handleSubmit} {...rest}>{children({ reset, submitting, pristine, values })}</StyledTag>
-  )} />
+  return (<Form onSubmit={ onSubmit } initialValues={ initialValues } render={ ({ handleSubmit, reset, submitting, pristine, values }) => (
+    <StyledTag tagName="form" onSubmit={ handleSubmit } { ...rest }>{ children({ reset, submitting, pristine, values }) }</StyledTag>
+  ) } />);
 }
 
 export { FormPlate, theme };

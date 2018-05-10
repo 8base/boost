@@ -15,9 +15,9 @@ const Dropdown = {
 const theme = {
   ...dropdownHeadTheme,
   ...dropdownBodyTheme,
-}
+};
 
 export {
   Dropdown,
   theme,
-}
+};

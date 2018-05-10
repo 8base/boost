@@ -8,8 +8,8 @@ export default (asStory) => {
       ))
       .add('with loading', () => (
         <React.Fragment>
-          <Button text="Text" loading={true} />
-          <Button text="Text" kind="secondary" loading={true} />
+          <Button text="Text" loading />
+          <Button text="Text" kind="secondary" loading />
         </React.Fragment>
       ))
       .add('with children', () => (

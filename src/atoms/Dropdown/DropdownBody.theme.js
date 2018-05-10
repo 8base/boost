@@ -1,11 +1,10 @@
 // @flow
 
 import { createStyledTag, createTheme } from '../../utils';
-import type { DropdownBodyThemeProps } from './DropdownBody';
 
 const name = 'dropdownBody';
 
-const theme: Theme<DropdownBodyThemeProps> = createTheme(name, {
+const theme = createTheme(name, {
   modifiers: {
     stretch: {
       width: '100%',
@@ -55,7 +54,6 @@ const DropdownBodyTag = createStyledTag(name, {
   borderRadius: '.25rem',
 });
 
-const defaultTheme = theme[name].defaults
+const defaultTheme = theme[name].defaults;
 
-export { theme, defaultTheme, offsetSizes, DropdownBodyTag }
-export type { DropdownBodyThemeProps }
+export { theme, defaultTheme, offsetSizes, DropdownBodyTag };

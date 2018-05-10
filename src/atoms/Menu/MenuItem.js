@@ -36,7 +36,7 @@ function MenuItem({
   children,
   ...rest
   }: MenuItemProps) {
-  return <StyledTag tagName="div" {...rest}>{children}</StyledTag>;
+  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
 }
 
 export { MenuItem, theme };

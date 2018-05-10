@@ -34,16 +34,16 @@ function TextInputField({
   ...rest
   }: TextInputFieldProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
-      <Label text={label} kind="secondary" />
+    <StyledTag tagName="div" { ...rest }>
+      <Label text={ label } kind="secondary" />
       <TextInput
-        name={name}
-        onChange={onChange}
-        placeholder={placeholder}
-        value={value}
+        name={ name }
+        onChange={ onChange }
+        placeholder={ placeholder }
+        value={ value }
       />
     </StyledTag>
   );
-};
+}
 
 export { TextInputField, theme };

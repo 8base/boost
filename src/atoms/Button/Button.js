@@ -102,7 +102,7 @@ class Button extends Component<ButtonProps> {
       };
     }
 
-    return <StyledTag tagName="button" type={type} loading={this.state.loading} {...rest}>{this.state.loading ? 'Loading...' : (children || text) }</StyledTag>
+    return <StyledTag tagName="button" type={ type } loading={ this.state.loading } { ...rest }>{ this.state.loading ? 'Loading...' : (children || text) }</StyledTag>;
   }
 }
 

@@ -28,7 +28,7 @@ function PaperBody({
   children,
   ...rest
   }: PaperBodyProps) {
-  return <StyledTag tagName="div" {...rest}>{children}</StyledTag>;
+  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
 }
 
 export { PaperBody, theme };

@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer'
+import renderer from 'react-test-renderer';
 import { ThemeProvider } from '../../';
 import { createStyledTag } from '../';
 
@@ -35,9 +35,9 @@ describe('As developer, I can create tag by provided theme and passed styles.', 
       height: '10px',
     });
 
-    const tree = renderer.create(<ThemeProvider theme={theme}><StyledTag tagName="div" size="md">Children</StyledTag></ThemeProvider>);
+    const tree = renderer.create(<ThemeProvider theme={ theme }><StyledTag tagName="div" size="md">Children</StyledTag></ThemeProvider>);
 
-    expect(tree.toJSON()).toMatchSnapshot()
+    expect(tree.toJSON()).toMatchSnapshot();
   });
 
   it('with style function', () => {
@@ -46,8 +46,8 @@ describe('As developer, I can create tag by provided theme and passed styles.', 
       gridGap: props.gap,
     }));
 
-    const tree = renderer.create(<ThemeProvider theme={theme}><StyledTag tagName="div" gap="10px">Children</StyledTag></ThemeProvider>);
+    const tree = renderer.create(<ThemeProvider theme={ theme }><StyledTag tagName="div" gap="10px">Children</StyledTag></ThemeProvider>);
 
-    expect(tree.toJSON()).toMatchSnapshot()
+    expect(tree.toJSON()).toMatchSnapshot();
   });
 });

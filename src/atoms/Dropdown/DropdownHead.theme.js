@@ -1,11 +1,10 @@
 // @flow
 
-import type { DropdownHeadThemeProps } from './DropdownBody';
 import { createStyledTag, createTheme } from '../../utils';
 
 const name = 'dropdownHead';
 
-const theme: Theme<DropdownHeadThemeProps> = createTheme(name, {
+const theme = createTheme(name, {
   modifiers: {
     stretch: {
       height: '100%',
@@ -28,7 +27,7 @@ const DropdownHeadTag = createStyledTag(name, {
 const DropdownPopperTarget = createStyledTag(name, {
   display: 'inline-flex',
   width: '100%',
-  height:' 100%',
+  height: ' 100%',
 });
 
 
@@ -36,4 +35,4 @@ export {
   theme,
   DropdownHeadTag,
   DropdownPopperTarget,
-}
+};

@@ -25,9 +25,9 @@ type DropdownHeadProps = {|
   stopClickPropagation?: boolean,
 |}
 
-const dropdownHeadEnhancer: HOC<*, DropdownHeadProps>  = compose(
+const dropdownHeadEnhancer: HOC<*, DropdownHeadProps> = compose(
   withDropdownContext,
-)
+);
 
 type DropdownHeadPropsEnhanced = HOCBase<typeof dropdownHeadEnhancer>;
 
@@ -45,7 +45,7 @@ class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
 
     return (
       <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
-        <DropdownPopperTarget tagName = { Target }>
+        <DropdownPopperTarget tagName={ Target }>
           { children }
         </DropdownPopperTarget>
       </DropdownHeadTag>
@@ -55,5 +55,5 @@ class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
 
 const DropdownHead = dropdownHeadEnhancer(DropdownHeadBase);
 
-export { DropdownHead }
-export type { DropdownHeadThemeProps }
+export { DropdownHead };
+export type { DropdownHeadThemeProps };

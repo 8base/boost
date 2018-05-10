@@ -97,22 +97,20 @@ class Select extends Component<SelectProps> {
     const selectedOption = this.getSelectedOption();
 
     return (
-      <SelectTag tagName="div" {...rest}>
-        <Dropdown.Plate isOpen={ this.state.isOpen } onCloseDropdown={this.closeSelect} onOpenDropdown={this.openSelect}>
-          <Dropdown.Head stretch={stretch}>
-            <SelectValue isPlaceholder={!selectedOption}>
-              {selectedOption ? selectedOption.content : placeholder}
+      <SelectTag tagName="div" { ...rest }>
+        <Dropdown.Plate isOpen={ this.state.isOpen } onCloseDropdown={ this.closeSelect } onOpenDropdown={ this.openSelect }>
+          <Dropdown.Head stretch={ stretch }>
+            <SelectValue isPlaceholder={ !selectedOption }>
+              { selectedOption ? selectedOption.content : placeholder }
               <SelectChevron><Icon name="ChevronDown" /></SelectChevron>
             </SelectValue>
           </Dropdown.Head>
-          <Dropdown.Body background="none" padding="none" stretch={stretch}>
+          <Dropdown.Body background="none" padding="none" stretch={ stretch }>
             <Menu.Plate>
               <Scrollable>
-                {
-                  React.Children.toArray(
-                    options.map(({ content, value }) => <Menu.Item onClick={this.onSelectOption(value)}>{content}</Menu.Item>),
-                  )
-                }
+                { React.Children.toArray(
+                  options.map(({ content, value }) => <Menu.Item key={ value } onClick={ this.onSelectOption(value) }>{ content }</Menu.Item>),
+                ) }
               </Scrollable>
             </Menu.Plate>
           </Dropdown.Body>

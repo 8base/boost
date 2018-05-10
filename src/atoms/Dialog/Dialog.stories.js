@@ -5,17 +5,16 @@ export default (asStory) => {
     story
       .add('with default header, body, actions and footer (skip shot)', () => (
         <Dialog.Plate
-          isOpen={true}
+          isOpen
           heading="Mark Job as Completed"
-          actions={[{
+          actions={ [{
             text: 'Close', onClick: () => null,
           }, {
             text: 'Submit', onClick: () => null,
-          }]}
+          }] }
         >
-          <Paragraph>Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics proplex holt obpyramidal vibrometer objectlessness laevogyrous wichtje monel silklike provostorial collingual Serpentes beget inparabola tolling speleology</Paragraph>
+          <Paragraph>{ 'Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics proplex holt obpyramidal vibrometer objectlessness laevogyrous wichtje monel silklike provostorial collingual Serpentes beget inparabola tolling speleology</Paragraph' }</Paragraph>
         </Dialog.Plate>
       ));
   });
 };
-

@@ -19,9 +19,9 @@ export default (asStory) => {
           label="Select Label"
           name="input"
           placeholder="Select an option"
-          onChange={() => null}
-          options={OPTIONS}
-          value={OPTIONS[0].value}
+          onChange={ () => null }
+          options={ OPTIONS }
+          value={ OPTIONS[0].value }
         />
       ));
   });

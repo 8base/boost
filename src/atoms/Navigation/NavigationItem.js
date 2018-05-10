@@ -52,7 +52,7 @@ const StyledTag = createStyledTag(name, (props) => ({
   },
 
   '&:hover::before, &.is-active::before': {
-    content: "\"\"",
+    content: '""',
     backgroundColor: '#4DA1FF',
     left: 0,
     top: 0,
@@ -66,7 +66,7 @@ function NavigationItem({
   label,
   ...rest
   }: NavigationItemProps) {
-  return <StyledTag tagName={NavLink} activeClassName="is-active" {...rest}>{label}</StyledTag>;
+  return <StyledTag tagName={ NavLink } activeClassName="is-active" { ...rest }>{ label }</StyledTag>;
 }
 
 export { NavigationItem, theme };

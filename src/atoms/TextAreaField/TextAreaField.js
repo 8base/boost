@@ -38,18 +38,18 @@ function TextAreaField({
   ...rest
   }: TextAreaFieldProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
-      <Label text={label} kind="secondary" />
+    <StyledTag tagName="div" { ...rest }>
+      <Label text={ label } kind="secondary" />
       <TextArea
-        name={name}
-        onChange={onChange}
-        placeholder={placeholder}
-        value={value}
-        cols={cols}
-        rows={rows}
+        name={ name }
+        onChange={ onChange }
+        placeholder={ placeholder }
+        value={ value }
+        cols={ cols }
+        rows={ rows }
       />
     </StyledTag>
   );
-};
+}
 
 export { TextAreaField, theme };

@@ -67,7 +67,7 @@ class DropdownPlateBase extends Component<DropdownControlledProps> {
       closeDropdown: onCloseDropdown,
       targetWidth: this.getDropdownWidth(),
       outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
-    }
+    };
 
     return (
       <DropdownContext.Provider value={ contextData }>

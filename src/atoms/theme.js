@@ -26,7 +26,7 @@ import { theme as textInputFieldTheme } from './TextInputField';
 import { theme as textInputTheme } from './TextInput';
 import { theme as textTheme } from './Text';
 
-export const theme =  {
+export const theme = {
   ...avatarTheme,
   ...buttonTheme,
   ...dialogTheme,

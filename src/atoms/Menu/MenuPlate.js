@@ -29,7 +29,7 @@ function MenuPlate({
   ...rest
   }: MenuPlateProps) {
   return (
-    <StyledTag tagName="div" {...rest}>{children}</StyledTag>
+    <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>
   );
 }
 

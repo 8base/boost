@@ -39,10 +39,10 @@ export default (asStory) => {
         </Grid.Layout>
       ))
       .add('with grid areas', () => (
-        <Grid.Layout columns="auto" areas={[
+        <Grid.Layout columns="auto" areas={ [
           ['avatar', 'info', 'rating', 'rate', 'actions'],
           ['avatar', 'skills', 'skills', 'skills', 'actions'],
-        ]}>
+        ] }>
           <Grid.Box area="avatar">avatar</Grid.Box>
           <Grid.Box area="info">info</Grid.Box>
           <Grid.Box area="rating">rating</Grid.Box>

@@ -31,9 +31,9 @@ function PaperHeader({
   ...rest
   }: PaperHeaderProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
-      <Heading type="h4" text={title} />
-      {children}
+    <StyledTag tagName="div" { ...rest }>
+      <Heading type="h4" text={ title } />
+      { children }
     </StyledTag>
   );
 }

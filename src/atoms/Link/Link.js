@@ -34,7 +34,7 @@ function Link({
   children,
   ...rest
   }: LinkProps) {
-  return <StyledTag tagName={RouterLink} {...rest}>{text || children}</StyledTag>;
+  return <StyledTag tagName={ RouterLink } { ...rest }>{ text || children }</StyledTag>;
 }
 
 export { Link, theme };

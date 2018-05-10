@@ -6,8 +6,8 @@ import onClickOutside from 'react-onclickoutside';
 import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
 
-import { withDropdownContext } from './DropdownContext'
-import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme'
+import { withDropdownContext } from './DropdownContext';
+import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme';
 
 /**
  * @prop {*} background options for background color
@@ -105,7 +105,7 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   }
 
   getBodyChildren = () => {
-    const { children, dropdown: { closeDropdown } } = this.props;
+    const { children, dropdown: { closeDropdown }} = this.props;
 
     return typeof children === 'function'
       ? children({ closeDropdown })
@@ -133,17 +133,17 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
               display: isOpen ? 'block' : 'none',
             }}
           >
-            <DropdownBodyTag tagName="div" {...rest}>
+            <DropdownBodyTag tagName="div" { ...rest }>
               { renderChildren }
             </DropdownBodyTag>
           </Popper>
         </PortalCondComponent>
       )
-      : null
+      : null;
   }
 }
 
-const DropdownBody = dropdownBodyEnhancer(DropdownBodyBase)
+const DropdownBody = dropdownBodyEnhancer(DropdownBodyBase);
 
-export { DropdownBody }
-export type { DropdownBodyThemeProps }
+export { DropdownBody };
+export type { DropdownBodyThemeProps };

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../utils';
-import { Modal } from '../Modal'
-import { DialogHeader } from './DialogHeader'
-import { DialogBody } from './DialogBody'
-import { DialogFooter } from './DialogFooter'
+import { Modal } from '../Modal';
+import { DialogHeader } from './DialogHeader';
+import { DialogBody } from './DialogBody';
+import { DialogFooter } from './DialogFooter';
 
 type DialogPlateProps = {|
   actions?: Array<{
@@ -53,11 +53,11 @@ function DialogPlate({
   ...rest
   }: DialogPlateProps) {
   return (
-    <Modal isOpen={isOpen} onOpen={onOpen} onClose={onClose} shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
-      <StyledTag tagName="div" {...rest}>
-        <DialogHeader heading={heading} onClose={onClose} />
-        <DialogBody>{children}</DialogBody>
-        <DialogFooter actions={actions} />
+    <Modal isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
+      <StyledTag tagName="div" { ...rest }>
+        <DialogHeader heading={ heading } onClose={ onClose } />
+        <DialogBody>{ children }</DialogBody>
+        <DialogFooter actions={ actions } />
       </StyledTag>
     </Modal>
   );

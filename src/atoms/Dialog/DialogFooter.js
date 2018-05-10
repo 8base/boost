@@ -28,14 +28,12 @@ function DialogFooter({
   ...rest
   }: DialogFooterProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
+    <StyledTag tagName="div" { ...rest }>
       <Grid.Layout gap="xs" columns="1fr auto">
         <Grid.Box column="1" />
-        {
-          React.Children.toArray(
-            actions.map(({text, onClick }, index) => <Grid.Box column={index + 2}><Button kind={index === 0 ? 'secondary' : 'primary'} text={text} onClick={onClick} /></Grid.Box>),
-          )
-        }
+        { React.Children.toArray(
+          actions.map(({ text, onClick }, index) => <Grid.Box key={ index } column={ index + 2 }><Button kind={ index === 0 ? 'secondary' : 'primary' } text={ text } onClick={ onClick } /></Grid.Box>),
+        ) }
       </Grid.Layout>
     </StyledTag>
   );

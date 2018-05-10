@@ -36,7 +36,7 @@ function PaperSection({
   children,
   ...rest
   }: PaperSectionProps) {
-  return <StyledTag tagName="div" {...rest}>{children}</StyledTag>;
+  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
 }
 
 export { PaperSection, theme };

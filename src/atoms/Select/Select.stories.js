@@ -15,13 +15,13 @@ export default (asStory) => {
   asStory('Atoms/Select', module, (story, { Select }) => {
     story
       .add('default', () => (
-        <Select name="name" onChange={() => null} placeholder="Select an option" options={OPTIONS} />
+        <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } />
       ))
       .add('filled', () => (
-        <Select name="name" onChange={() => null} placeholder="Select an option" options={OPTIONS} value={OPTIONS[0].value} />
+        <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } value={ OPTIONS[0].value } />
       ))
       .add('stretch', () => (
-        <Select name="name" onChange={() => null} placeholder="Select an option" options={OPTIONS} stretch />
+        <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } stretch />
       ));
   });
 };

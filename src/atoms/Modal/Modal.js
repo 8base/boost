@@ -111,7 +111,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
         <Portal>
           <OverlayTag tagName="div" onMouseDown={ this.onOverlayMouseDown }>
             <ModalTag tagName="div" onMouseDown={ this.onModalMouseDown }>
-              {children}
+              { children }
             </ModalTag>
           </OverlayTag>
         </Portal>

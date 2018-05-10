@@ -39,18 +39,18 @@ function SelectField({
   ...rest
   }: SelectFieldProps) {
   return (
-    <StyledTag tagName="div" {...rest}>
-      <Label text={label} kind="secondary" />
+    <StyledTag tagName="div" { ...rest }>
+      <Label text={ label } kind="secondary" />
       <Select
-        name={name}
-        onChange={onChange}
-        placeholder={placeholder}
-        value={value}
-        options={options}
-        stretch={stretch}
+        name={ name }
+        onChange={ onChange }
+        placeholder={ placeholder }
+        value={ value }
+        options={ options }
+        stretch={ stretch }
       />
     </StyledTag>
   );
-};
+}
 
 export { SelectField, theme };

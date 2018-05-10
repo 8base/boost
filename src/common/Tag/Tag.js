@@ -67,11 +67,11 @@ const COLLECTED_PROPS = [
   'value',
 ];
 
-function Tag({ tagName, ...props}: TagProps) {
+function Tag({ tagName, ...props }: TagProps) {
   const TagComponent = tagName;
   const collectedProps = pick(props, COLLECTED_PROPS);
 
-  return <TagComponent {...collectedProps} />;
-};
+  return <TagComponent { ...collectedProps } />;
+}
 
 export { Tag };

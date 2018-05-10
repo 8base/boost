@@ -20,11 +20,11 @@ const StyledTag = createStyledTag(name, {
   display: 'inline-flex',
 });
 
-function Icon({ name, rest}: IconProps) {
+function Icon({ name, rest }: IconProps) {
   const Glyph = glyphs[name];
 
   return (
-    <StyledTag tagName="div" {...rest}>
+    <StyledTag tagName="div" { ...rest }>
       <Glyph />
     </StyledTag>
   );

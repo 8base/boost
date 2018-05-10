@@ -7,9 +7,10 @@ install:
   - yarn install
 
 script:
-  - yarn run eslint
-  - yarn run test
-  - yarn run flow
+  - yarn eslint
+  - yarn test
+  - yarn flow
+  - yarn build
 
 deploy:
   provider: npm

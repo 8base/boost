@@ -46,8 +46,8 @@
     "jest": "^22.4.3",
     "jest-emotion": "^9.0.0",
     "lodash": "^4.17.5",
-    "react": "16.3.2",
-    "react-dom": "16.3.0",
+    "react": "16",
+    "react-dom": "16",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.3.1",
     "rollup": "^0.57.1",
@@ -74,6 +74,11 @@
     "roots": [
       "<rootDir>/src",
       "<rootDir>/storybook"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.stories.js",
+      "!src/**/*.index.js"
     ]
   },
   "config": {

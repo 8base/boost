@@ -10,7 +10,7 @@ function Rating({
   ...rest
   }: RatingProps) {
   return (
-    <Grid.Layout gap="xs" autoColumns="min-content" inline { ...rest }>
+    <Grid.Layout { ...rest } gap="xs" autoColumns="min-content" inline>
       <Grid.Box justifyContent="center"><Stars /></Grid.Box>
       <Grid.Box column={ 2 } justifyContent="center"><Text kind="secondary">{ value }</Text></Grid.Box>
     </Grid.Layout>

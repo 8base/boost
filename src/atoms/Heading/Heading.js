@@ -78,7 +78,7 @@ function Heading({
   type,
   ...rest
   }: HeadingProps) {
-  return <StyledTag tagName={ type } type={ type } { ...rest }>{ children || text }</StyledTag>;
+  return <StyledTag { ...rest } tagName={ type } type={ type }>{ children || text }</StyledTag>;
 }
 
 export { Heading, theme };

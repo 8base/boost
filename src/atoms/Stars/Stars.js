@@ -21,7 +21,7 @@ const StyledTag = createStyledTag(name, {
 });
 
 function Stars(props: StarsProps) {
-  return <StyledTag tagName="div" { ...props }>★★★★★</StyledTag>;
+  return <StyledTag { ...props } tagName="div">★★★★★</StyledTag>;
 }
 
 export { Stars, theme };

@@ -26,7 +26,7 @@ function FormField({
   return (
     <Field name={ name }>
       { ({ input }) => (
-        <StyledTag tagName={ component } { ...input } { ...rest } />
+        <StyledTag { ...rest } { ...input } tagName={ component } />
       ) }
     </Field>
   );

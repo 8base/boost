@@ -66,7 +66,7 @@ function NavigationItem({
   label,
   ...rest
   }: NavigationItemProps) {
-  return <StyledTag tagName={ NavLink } activeClassName="is-active" { ...rest }>{ label }</StyledTag>;
+  return <StyledTag { ...rest } tagName={ NavLink } activeClassName="is-active">{ label }</StyledTag>;
 }
 
 export { NavigationItem, theme };

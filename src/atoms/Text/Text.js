@@ -42,7 +42,7 @@ function Text({
   children,
   ...rest
   }: TextProps) {
-  return <StyledTag tagName="span" { ...rest }>{ children || text }</StyledTag>;
+  return <StyledTag { ...rest } tagName="span">{ children || text }</StyledTag>;
 }
 
 export { Text, theme };

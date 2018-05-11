@@ -23,7 +23,7 @@ const StyledTag = createStyledTag(name, (props) => ({
 }));
 
 function Divider(props: DividerProps) {
-  return <StyledTag tagName="hr" { ...props } />;
+  return <StyledTag { ...props } tagName="hr" />;
 }
 
 export { Divider, theme };

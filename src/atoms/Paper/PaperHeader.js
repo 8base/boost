@@ -31,7 +31,7 @@ function PaperHeader({
   ...rest
   }: PaperHeaderProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Heading type="h4" text={ title } />
       { children }
     </StyledTag>

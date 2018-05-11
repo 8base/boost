@@ -5,14 +5,19 @@ import React, { Component } from 'react';
 import { createStyledTag, createTheme } from '../../utils';
 
 type ButtonProps = {|
+  onClick?: (MouseEvent) => void | Promise<(MouseEvent) => void>,
   text?: string,
   stretch?: boolean,
   loading?: boolean,
-  children?: React.Node,
+  children?: React$Node,
   type?: 'submit' | 'button',
   kind?: 'primary' | 'secondary',
   size?: 'md',
 |};
+
+type ButtonState = {|
+  loading: boolean,
+|}
 
 const name = 'button';
 
@@ -63,25 +68,21 @@ const StyledTag = createStyledTag(name, {
   textTransform: 'capitalize',
 });
 
-class Button extends Component<ButtonProps> {
+class Button extends Component<ButtonProps, ButtonState> {
   static defaultProps = {
     type: 'button',
   };
 
-  constructor(props) {
+  constructor(props: ButtonProps) {
     super(props);
 
-    this.state = { loading: props.loading };
+    this.state = { loading: props.loading || false };
   }
 
-  static getDerivedStateFromProps(nextProps, prevState) {
-    let result = null;
-
-    if (nextProps.loading !== prevState.loading) {
-      result = { loading: nextProps.loading };
-    }
-
-    return result;
+  static getDerivedStateFromProps(nextProps: ButtonProps, prevState: ButtonState) {
+    return (nextProps.loading !== prevState.loading)
+      ? { loading: nextProps.loading }
+      : null;
   }
 
   render() {
@@ -105,6 +106,5 @@ class Button extends Component<ButtonProps> {
     return <StyledTag tagName="button" type={ type } loading={ this.state.loading } { ...rest }>{ this.state.loading ? 'Loading...' : (children || text) }</StyledTag>;
   }
 }
-
 
 export { Button, theme };

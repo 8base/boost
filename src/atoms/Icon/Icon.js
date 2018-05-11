@@ -24,7 +24,7 @@ function Icon({ name, rest }: IconProps) {
   const Glyph = glyphs[name];
 
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Glyph />
     </StyledTag>
   );

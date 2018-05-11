@@ -97,7 +97,7 @@ class Select extends Component<SelectProps> {
     const selectedOption = this.getSelectedOption();
 
     return (
-      <SelectTag tagName="div" { ...rest }>
+      <SelectTag { ...rest } tagName="div">
         <Dropdown.Plate isOpen={ this.state.isOpen } onCloseDropdown={ this.closeSelect } onOpenDropdown={ this.openSelect }>
           <Dropdown.Head stretch={ stretch }>
             <SelectValue isPlaceholder={ !selectedOption }>

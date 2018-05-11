@@ -24,7 +24,7 @@ function DialogBody({
   children,
   ...rest
   }: DialogBodyProps) {
-  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
+  return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
 }
 
 export { DialogBody, theme };

@@ -30,7 +30,7 @@ function PaperPlate({
   children,
   ...rest
   }: PaperPlateProps) {
-  return <StyledTag tagName="div" { ...rest }>{ children }</StyledTag>;
+  return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
 }
 
 export { PaperPlate, theme };

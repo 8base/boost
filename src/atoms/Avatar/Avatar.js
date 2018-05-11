@@ -40,7 +40,7 @@ function Avatar({
   src,
   ...rest
   }: AvatarProps) {
-  return <StyledTag tagName="img" src={ src } { ...rest } />;
+  return <StyledTag { ...rest } tagName="img" src={ src } />;
 }
 
 export { Avatar, theme };

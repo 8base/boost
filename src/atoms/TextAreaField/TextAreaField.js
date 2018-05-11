@@ -38,7 +38,7 @@ function TextAreaField({
   ...rest
   }: TextAreaFieldProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Label text={ label } kind="secondary" />
       <TextArea
         name={ name }

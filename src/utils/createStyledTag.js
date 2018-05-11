@@ -1,24 +1,37 @@
+// @flow
+
 import styled from 'react-emotion';
+import fp from 'lodash/fp';
 import { Tag } from '../common';
 
-const getPropValue = (props, themeName, modifierName) => (
+const getThemeModifiers = (themeName: string, props: *) =>
+  fp.getOr({}, ['theme', themeName, 'modifiers'], props);
+
+const getModifierValue = (themeName: string, modifierName: string, props: Object) => (
   props[modifierName] || props.theme[themeName].defaults[modifierName]
 );
 
-const getModifierStyles = (props, themeName, modifierName) => {
-  const modifierValue = getPropValue(props, themeName, modifierName);
+const getModifierStyles = (themeName: string, modifierName: string, props: Object) => {
+  const modifierValue = getModifierValue(themeName, modifierName, props);
+  const themeModifiers = getThemeModifiers(themeName, props);
 
   return typeof modifierValue === 'boolean'
-    ? props.theme[themeName].modifiers[modifierName]
-    : props.theme[themeName].modifiers[modifierName][modifierValue];
+    ? themeModifiers[modifierName] || {}
+    : themeModifiers[modifierName][modifierValue] || {};
 };
 
-const createStyledTag = (themeName, styles) => styled(Tag)((props) => ({
-  ...(typeof styles === 'function' ? styles(props) : styles),
-  ...Object.keys(props.theme[themeName].modifiers).reduce((result, modifierName) => ({
-    ...result,
-    ...(getModifierStyles(props, themeName, modifierName) || {}),
-  }), {}),
-}));
+const getAllModifiersStyles = (themeName: string, props: Object) =>
+  Object.keys(getThemeModifiers(themeName, props))
+    .reduce((result, modifierName) => ({
+      ...result,
+      ...getModifierStyles(themeName, modifierName, props),
+    }), {});
+
+const createStyledTag = (themeName: string, styles: Object) => styled(Tag)(
+  (props: Object) => ({
+    ...(typeof styles === 'function' ? styles(props) : styles),
+    ...getAllModifiersStyles(themeName, props),
+  }),
+);
 
 export { createStyledTag };

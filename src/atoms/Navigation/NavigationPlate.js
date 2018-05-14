@@ -24,7 +24,7 @@ function NavigationPlate({
   children,
   ...rest
   }: NavigationPlateProps) {
-  return <StyledTag tagName="nav" { ...rest }>{ children }</StyledTag>;
+  return <StyledTag { ...rest } tagName="nav">{ children }</StyledTag>;
 }
 
 export { NavigationPlate, theme };

@@ -33,7 +33,7 @@ const StyledTag = createStyledTag(name, {
 });
 
 function TextArea(props: TextAreaProps) {
-  return <StyledTag tagName="textarea" { ...props } />;
+  return <StyledTag { ...props } tagName="textarea" />;
 }
 
 export { TextArea, theme };

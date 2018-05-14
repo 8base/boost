@@ -34,7 +34,7 @@ function TextInputField({
   ...rest
   }: TextInputFieldProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Label text={ label } kind="secondary" />
       <TextInput
         name={ name }

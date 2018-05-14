@@ -31,7 +31,7 @@ const StyledTag = createStyledTag(name, {
 });
 
 function TextInput(props: TextInputProps) {
-  return <StyledTag tagName="input" { ...props } />;
+  return <StyledTag { ...props } tagName="input" />;
 }
 
 export { TextInput, theme };

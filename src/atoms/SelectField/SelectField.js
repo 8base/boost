@@ -39,7 +39,7 @@ function SelectField({
   ...rest
   }: SelectFieldProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Label text={ label } kind="secondary" />
       <Select
         name={ name }

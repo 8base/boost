@@ -30,7 +30,7 @@ function Scrollable({
   ...rest
   }: ScrollableProps) {
   return (
-    <ScrollableWrapper tagName="div" { ...rest }>
+    <ScrollableWrapper { ...rest } tagName="div">
       <ScrollableContent tagName="div">{ children }</ScrollableContent>
     </ScrollableWrapper>
   );

@@ -5,7 +5,7 @@ import pkg from './package.json';
 
 export default {
   input: 'src/index.js',
-  external: ['react'],
+  external: ['react', 'react-dom'],
   output: {
     name: 'app-ui-kit',
     file: pkg.main,
@@ -23,7 +23,7 @@ export default {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'react-dom': [ 'findDOMNode' ],
+        'react-dom': ['findDOMNode'],
       },
     }),
   ],

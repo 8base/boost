@@ -37,7 +37,7 @@ function DialogHeader({
   ...rest
   }: DialogHeaderProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Grid.Layout columns="auto 1fr auto" stretch>
         <Grid.Box>
           <Heading type="h5" text={ heading } weight="semibold" />

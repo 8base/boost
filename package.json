@@ -7,24 +7,27 @@
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "dev": "NODE_ENV=development rollup -c -w",
+    "build-storybook": "build-storybook -c storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "sb": "yarn storybook",
-    "push-tags": "git push --follow-tags",
     "test": "jest --coverage",
     "eslint": "eslint --ext .jsx,.js --max-warnings=0 src/ storybook/ flow-typed/",
     "flow": "flow",
-    "commit": "git-cz",
+    "changelog-overwrite": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "version": "yarn changelog && git add CHANGELOG.md"
+    "version": "yarn changelog && git add CHANGELOG.md",
+    "commit": "git-cz",
+    "push-tags": "git push --follow-tags"
   },
   "peerDependencies": {
-    "react": "16.3.0",
-    "react-dom": "16.3.0"
+    "react": "^16.3",
+    "react-dom": "^16.3"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "^3.4.1",
     "@storybook/addons": "3.4.1",
     "@storybook/react": "^3.4.1",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "7.2.3",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -34,7 +37,9 @@
     "babel-preset-react-app": "^3.1.1",
     "babel-runtime": "^6.26.0",
     "commitizen": "^2.9.6",
+    "conventional-changelog-cli": "^1.3.22",
     "cz-conventional-changelog": "^2.1.0",
+    "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "4.1.1",
     "eslint-config-react-app": "2.1.0",
@@ -46,9 +51,8 @@
     "jest": "^22.4.3",
     "jest-emotion": "^9.0.0",
     "lodash": "^4.17.5",
-    "react": "16.3.2",
-    "react-dom": "16.3.0",
-    "react-router-dom": "^4.2.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-test-renderer": "^16.3.1",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^3.0.3",
@@ -56,10 +60,8 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "dependencies": {
-    "conventional-changelog-cli": "^1.3.22",
     "emotion": "^9.1.1",
     "emotion-theming": "^9.0.0",
-    "enzyme": "^3.3.0",
     "final-form": "^4.6.1",
     "prop-types": "^15.6.1",
     "react-emotion": "^9.1.1",
@@ -67,6 +69,7 @@
     "react-onclickoutside": "^6.7.1",
     "react-popper": "^0.10.1",
     "react-portal": "^4.1.5",
+    "react-router-dom": "^4.2.2",
     "recompose": "^0.27.0"
   },
   "jest": {
@@ -74,6 +77,11 @@
     "roots": [
       "<rootDir>/src",
       "<rootDir>/storybook"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.stories.js",
+      "!src/**/*.index.js"
     ]
   },
   "config": {

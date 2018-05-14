@@ -32,7 +32,7 @@ function NavigationGroup({
   ...rest
   }: NavigationGroupProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <NavigationItem to={ to } label={ label } kind="primary" exact={ exact } />
       { children }
     </StyledTag>

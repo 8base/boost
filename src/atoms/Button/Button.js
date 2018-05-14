@@ -5,10 +5,11 @@ import React, { Component } from 'react';
 import { createStyledTag, createTheme } from '../../utils';
 
 type ButtonProps = {|
+  onClick?: (MouseEvent) => void,
   text?: string,
   stretch?: boolean,
   loading?: boolean,
-  children?: React.Node,
+  children?: React$Node,
   type?: 'submit' | 'button',
   kind?: 'primary' | 'secondary',
   size?: 'md',
@@ -68,43 +69,21 @@ class Button extends Component<ButtonProps> {
     type: 'button',
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = { loading: props.loading };
-  }
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    let result = null;
-
-    if (nextProps.loading !== prevState.loading) {
-      result = { loading: nextProps.loading };
-    }
-
-    return result;
-  }
-
   render() {
-    const {
-      text,
-      children,
-      type,
-      ...rest
-    } = this.props;
+    const { text, children, type, onClick, loading, ...rest } = this.props;
 
-    if (rest.onClick) {
-      rest.onClick = (...args) => {
-        this.setState({ loading: true });
-
-        this.props.onClick(...args).finally(() => {
-          this.setState({ loading: false });
-        });
-      };
-    }
-
-    return <StyledTag tagName="button" type={ type } loading={ this.state.loading } { ...rest }>{ this.state.loading ? 'Loading...' : (children || text) }</StyledTag>;
+    return (
+      <StyledTag
+        { ...rest }
+        tagName="button"
+        type={ type }
+        loading={ loading }
+        onClick={ onClick }
+      >
+        { loading ? 'Loading...' : (children || text) }
+      </StyledTag>
+    );
   }
 }
-
 
 export { Button, theme };

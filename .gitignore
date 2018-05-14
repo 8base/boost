@@ -1,9 +1,10 @@
 .DS_Store
 .env
 .eslintcache
+.vscode
 build
 coverage
 node_modules
 npm-debug.log
+out*
 yarn-error.log
-.vscode

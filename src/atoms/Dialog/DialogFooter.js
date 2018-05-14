@@ -28,7 +28,7 @@ function DialogFooter({
   ...rest
   }: DialogFooterProps) {
   return (
-    <StyledTag tagName="div" { ...rest }>
+    <StyledTag { ...rest } tagName="div">
       <Grid.Layout gap="xs" columns="1fr auto">
         <Grid.Box column="1" />
         { React.Children.toArray(

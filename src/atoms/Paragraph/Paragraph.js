@@ -42,7 +42,7 @@ function Paragraph({
   children,
   ...rest
   }: ParagraphProps) {
-  return <StyledTag tagName="p" { ...rest }>{ children || text }</StyledTag>;
+  return <StyledTag { ...rest } tagName="p">{ children || text }</StyledTag>;
 }
 
 export { Paragraph, theme };

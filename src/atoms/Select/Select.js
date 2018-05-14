@@ -18,7 +18,7 @@ type SelectProps = {|
 |};
 
 type SelectState = {|
-  selectedValue: string,
+  selectedValue: ?string,
   isOpen: boolean,
 |}
 

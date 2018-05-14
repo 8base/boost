@@ -61,7 +61,7 @@ class DropdownPlateBase extends Component<DropdownControlledProps> {
   }
 
   getDropdownWidth = () => {
-    return this.dropdownRef && this.dropdownRef.offsetWidth;
+    return this.dropdownRef ? this.dropdownRef.offsetWidth : undefined;
   }
 
   getIgnoreClickOutsideClass = () => `ignore-react-onclickoutside-${this.instanceIndex}`;

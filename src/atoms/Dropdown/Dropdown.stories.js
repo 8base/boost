@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default (asStory) => {
+export default (asStory: *) => {
   asStory('Atoms/Dropdown', module, (story, { Dropdown, Button }) => {
     story
       .add('default', () => (

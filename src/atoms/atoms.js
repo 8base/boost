@@ -16,6 +16,7 @@ export { Modal } from './Modal';
 export { Navigation } from './Navigation';
 export { Paper } from './Paper';
 export { Paragraph } from './Paragraph';
+export { Row, Column } from './FlexLayout';
 export { Scrollable } from './Scrollable';
 export { Select } from './Select';
 export { SelectField } from './SelectField';

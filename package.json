@@ -10,7 +10,7 @@
     "build-storybook": "build-storybook -c storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "test": "jest --coverage -i --reporters jest-silent-reporter",
+    "test": "jest --no-cache --coverage -i --reporters jest-silent-reporter",
     "eslint": "eslint --ext .jsx,.js --max-warnings=0 src/ storybook/",
     "flow": "flow",
     "checks": "yarn eslint && yarn flow && yarn test",
@@ -85,6 +85,10 @@
       "src/**/*.js",
       "!src/**/*.stories.js",
       "!src/**/*.index.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
     ]
   },
   "config": {

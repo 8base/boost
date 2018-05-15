@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Scrollable', module, (story, { Scrollable }) => {
+  asStory('ATOMS/Scrollable', module, (story, { Scrollable }) => {
     story
       .add('with default modifiers', () => (
         <div style={{ width: '100px', height: '300px' }}>

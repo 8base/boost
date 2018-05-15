@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Modal (skip shot)', module, (story, { Modal }) => {
+  asStory('ATOMS/Modal (skip shot)', module, (story, { Modal }) => {
     story
       .add('multiple modals', () => (
         <React.Fragment>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Menu', module, (story, { Menu }) => {
+  asStory('ATOMS/Menu', module, (story, { Menu }) => {
     story
       .add('with default modifiers', () => (
         <Menu.Plate>

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Portal } from 'react-portal';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createTheme } from 'utils';
 
 type ModalProps = {
   children: React$Node,

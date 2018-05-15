@@ -1292,6 +1292,962 @@ exports[`Storyshots Atoms/Dropdown without close on outside click 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms/FlexLayout default Column 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout default Row 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 0px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with custom alignContent 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with custom gap 1`] = `
+.emotion-12 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: inherit;
+}
+
+.emotion-11 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-12"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+  <div
+    className="emotion-11"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with custom justifyContent 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 0px;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with custom offset 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 0px;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with grow children 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > * {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/FlexLayout with pointer cursor 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: chocolate;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: red;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: orange;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 0px;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <div
+      className="emotion-0"
+      color="chocolate"
+    />
+    <div
+      className="emotion-1"
+      color="red"
+    />
+    <div
+      className="emotion-2"
+      color="orange"
+    />
+    <div
+      className="emotion-3"
+      color="green"
+    />
+    <div
+      className="emotion-4"
+      color="purple"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms/Form without groups 1`] = `
 .emotion-17 {
   margin: 2rem;

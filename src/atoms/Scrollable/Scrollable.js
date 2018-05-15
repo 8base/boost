@@ -4,6 +4,7 @@ import React from 'react';
 import { createStyledTag, createTheme } from '../../utils';
 
 type ScrollableProps = {|
+  children: React$Node,
 |};
 
 const name = 'scrollable';

@@ -1,4 +1,5 @@
 // @flow
+import * as __enzume from 'enzume';
 
 /* eslint-disable no-undef */
 declare type Theme<ThemeProps> = {

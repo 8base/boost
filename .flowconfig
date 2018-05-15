@@ -1,10 +1,7 @@
 [ignore]
 .*/node_modules/.*/test/.*
 
-[include]
-
 [libs]
-flow/.*
 flow-typed/.*
 flow-typed/global.js
 
@@ -13,7 +10,6 @@ flow-typed/global.js
 [options]
 module.use_strict=true
 module.system.node.resolve_dirname=node_modules
-module.system.node.resolve_dirname=src
 module.name_mapper='^atoms\(.*\)$' -> '<PROJECT_ROOT>/src/atoms/\1'
 module.name_mapper='^common\(.*\)$' -> '<PROJECT_ROOT>/src/common/\1'
 module.name_mapper='^molecules\(.*\)$' -> '<PROJECT_ROOT>/src/molecules/\1'

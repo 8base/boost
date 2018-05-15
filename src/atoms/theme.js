@@ -17,11 +17,11 @@ import { theme as navigationTheme } from './Navigation';
 import { theme as paperTheme } from './Paper';
 import { theme as paragraphTheme } from './Paragraph';
 import { theme as scrollableTheme } from './Scrollable';
-import { theme as selectTheme } from './Select';
 import { theme as selectFieldTheme } from './SelectField';
+import { theme as selectTheme } from './Select';
 import { theme as starsTheme } from './Stars';
-import { theme as textAreaTheme } from './TextArea';
 import { theme as textAreaFieldTheme } from './TextAreaField';
+import { theme as textAreaTheme } from './TextArea';
 import { theme as textInputFieldTheme } from './TextInputField';
 import { theme as textInputTheme } from './TextInput';
 import { theme as textTheme } from './Text';
@@ -44,11 +44,11 @@ export const theme = {
   ...paperTheme,
   ...paragraphTheme,
   ...scrollableTheme,
-  ...selectTheme,
   ...selectFieldTheme,
+  ...selectTheme,
   ...starsTheme,
-  ...textAreaTheme,
   ...textAreaFieldTheme,
+  ...textAreaTheme,
   ...textInputFieldTheme,
   ...textInputTheme,
   ...textTheme,

@@ -1,4 +1,3 @@
-// @flow
 import React, { createContext } from 'react';
 
 
@@ -24,7 +23,6 @@ const withDropdownContext: HOCProps<{ dropdown: DropdownContextType }> = (Compon
     </DropdownContext.Consumer>
   );
 };
-
 
 export { DropdownContext, withDropdownContext };
 export type { DropdownContextType };

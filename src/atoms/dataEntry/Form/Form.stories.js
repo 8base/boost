@@ -9,7 +9,7 @@ const onSubmit = async values => {
 };
 
 export default (asStory) => {
-  asStory('ATOMS/DATA ENTRY/Form', module, (story, { Form, TextInputField, Button }) => {
+  asStory('ATOMS/DATA ENTRY/Form', module, (story, { Form, InputField, Button }) => {
     story
       .add('without groups', () => (
         <Form.Plate onSubmit={ onSubmit } initialValues={{
@@ -21,11 +21,11 @@ export default (asStory) => {
         }}>
           { ({ submitting }) => (
             <React.Fragment>
-              <Form.Field component={ TextInputField } name="curple" label="Jobs" />
-              <Form.Field component={ TextInputField } name="provect" label="Posted" />
-              <Form.Field component={ TextInputField } name="inlaying" label="My Active Jobs" />
-              <Form.Field component={ TextInputField } name="saccharifier" label="Active Requests" />
-              <Form.Field component={ TextInputField } name="inertance" label="Applied" />
+              <Form.Field component={ InputField } name="curple" label="Jobs" />
+              <Form.Field component={ InputField } name="provect" label="Posted" />
+              <Form.Field component={ InputField } name="inlaying" label="My Active Jobs" />
+              <Form.Field component={ InputField } name="saccharifier" label="Active Requests" />
+              <Form.Field component={ InputField } name="inertance" label="Applied" />
               <Button text="Submit" type="submit" loading={ submitting } />
             </React.Fragment>
           ) }

@@ -27,11 +27,17 @@ const getAllModifiersStyles = (themeName: string, props: Object) =>
       ...getModifierStyles(themeName, modifierName, props),
     }), {});
 
-const createStyledTag = (themeName: string, styles: Object) => styled(Tag)(
-  (props: Object) => ({
-    ...(typeof styles === 'function' ? styles(props) : styles),
-    ...getAllModifiersStyles(themeName, props),
-  }),
-);
+const createStyledTag = (themeName: string, styles: Object) => {
+
+  const StyledTag = styled(Tag)(
+    (props: Object) => ({
+      ...(typeof styles === 'function' ? styles(props) : styles),
+      ...getAllModifiersStyles(themeName, props),
+    }),
+  );
+  StyledTag.displayName = `Styled(${themeName})`;
+
+  return StyledTag;
+};
 
 export { createStyledTag };

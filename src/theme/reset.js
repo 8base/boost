@@ -3,7 +3,12 @@ import { injectGlobal } from 'emotion';
 injectGlobal`
   html {
     -webkit-font-smoothing: antialiased;
-    font-size: 14px;
+    font-size: 62.5% !important;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem !important;
   }
   
   *, *:after, *:before {

@@ -24,5 +24,5 @@ export { Stars } from './Stars';
 export { Text } from './typography/Text';
 export { TextArea } from './dataEntry/TextArea';
 export { TextAreaField } from './dataEntry/TextAreaField';
-export { TextInput } from './dataEntry/TextInput';
-export { TextInputField } from './dataEntry/TextInputField';
+export { Input } from './dataEntry/Input';
+export { InputField } from './dataEntry/InputField';

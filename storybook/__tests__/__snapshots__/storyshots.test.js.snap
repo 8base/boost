@@ -88,7 +88,7 @@ exports[`Storyshots ATOMS/Button with kind secondary 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid rgba(0,0,0,0.12);
+  border: 1px solid undefined;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -103,7 +103,6 @@ exports[`Storyshots ATOMS/Button with kind secondary 1`] = `
   text-decoration: none;
   text-transform: capitalize;
   background-color: #FFFFFF;
-  color: rgba(0,0,0,0.87);
   height: 40px;
   padding: 0 20px;
   border-radius: 5px;
@@ -152,7 +151,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
 }
 
 .emotion-1 {
-  border: 1px solid rgba(0,0,0,0.12);
+  border: 1px solid undefined;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -167,7 +166,6 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   text-decoration: none;
   text-transform: capitalize;
   background-color: #FFFFFF;
-  color: rgba(0,0,0,0.87);
   height: 40px;
   padding: 0 20px;
   border-radius: 5px;
@@ -276,11 +274,11 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
-.emotion-17 {
+.emotion-32 {
   margin: 2rem;
 }
 
-.emotion-15 {
+.emotion-30 {
   border: 0px;
   cursor: pointer;
   display: -webkit-box;
@@ -302,14 +300,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   border-radius: 5px;
 }
 
-.emotion-16 {
+.emotion-31 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   height: 100%;
 }
 
-.emotion-2 {
+.emotion-5 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -317,125 +316,1429 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: auto;
 }
 
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 12px;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
-  color: rgba(0,0,0,0.54);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
 }
 
 .emotion-1 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
+  width: 100%;
   outline: none;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-3 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
 }
 
 <div
-  className="emotion-17"
+  className="emotion-32"
 >
   <form
-    className="emotion-16"
+    className="emotion-31"
     onSubmit={[Function]}
   >
     <div
-      className="emotion-2"
+      className="emotion-5"
+      stretch={false}
     >
       <label
         className="emotion-0"
       >
         Jobs
       </label>
-      <input
-        className="emotion-1"
-        name="curple"
-        onChange={[Function]}
-        placeholder={undefined}
-        value="Breakthrough"
-      />
+      <div
+        className="emotion-2"
+        stretch={false}
+      >
+        <input
+          className="emotion-1"
+          name={undefined}
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <div
+          className="emotion-3"
+        />
+      </div>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-5"
+      stretch={false}
     >
       <label
         className="emotion-0"
       >
         Posted
       </label>
-      <input
-        className="emotion-1"
-        name="provect"
-        onChange={[Function]}
-        placeholder={undefined}
-        value="Yearock"
-      />
+      <div
+        className="emotion-2"
+        stretch={false}
+      >
+        <input
+          className="emotion-1"
+          name={undefined}
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <div
+          className="emotion-3"
+        />
+      </div>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-5"
+      stretch={false}
     >
       <label
         className="emotion-0"
       >
         My Active Jobs
       </label>
-      <input
-        className="emotion-1"
-        name="inlaying"
-        onChange={[Function]}
-        placeholder={undefined}
-        value="Lombard"
-      />
+      <div
+        className="emotion-2"
+        stretch={false}
+      >
+        <input
+          className="emotion-1"
+          name={undefined}
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <div
+          className="emotion-3"
+        />
+      </div>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-5"
+      stretch={false}
     >
       <label
         className="emotion-0"
       >
         Active Requests
       </label>
-      <input
-        className="emotion-1"
-        name="saccharifier"
-        onChange={[Function]}
-        placeholder={undefined}
-        value="Cyanoacetic"
-      />
+      <div
+        className="emotion-2"
+        stretch={false}
+      >
+        <input
+          className="emotion-1"
+          name={undefined}
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <div
+          className="emotion-3"
+        />
+      </div>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-5"
+      stretch={false}
     >
       <label
         className="emotion-0"
       >
         Applied
       </label>
-      <input
-        className="emotion-1"
-        name="inertance"
-        onChange={[Function]}
-        placeholder={undefined}
-        value="Unfluent"
-      />
+      <div
+        className="emotion-2"
+        stretch={false}
+      >
+        <input
+          className="emotion-1"
+          name={undefined}
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <div
+          className="emotion-3"
+        />
+      </div>
     </div>
     <button
-      className="emotion-15"
+      className="emotion-30"
       onClick={undefined}
       type="submit"
     >
       Submit
     </button>
   </form>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-1 {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  margin-top: -.3rem;
+  width: .6rem;
+  height: .6rem;
+  background-color: #ff6d4a;
+  border-radius: 50%;
+  border-color: #ff6d4a !important;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="emotion-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+  left: 0;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="emotion-1"
+    >
+      i
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      placeholder="custom placeholder"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+  right: 0;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="emotion-1"
+    >
+      i
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+  right: 0;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-2"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="emotion-1"
+    >
+      i
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    stretch={true}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+      value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    stretch={false}
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-6 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-4 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  margin-top: -.3rem;
+  width: .6rem;
+  height: .6rem;
+  background-color: #ff6d4a;
+  border-radius: 50%;
+  border-color: #ff6d4a !important;
+}
+
+<div
+  className="emotion-7"
+>
+  <div
+    className="emotion-6"
+    stretch={false}
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <div
+      className="emotion-3"
+      stretch={false}
+    >
+      <input
+        className="emotion-1"
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value={undefined}
+      />
+      <div
+        className="emotion-2"
+      />
+    </div>
+    <div
+      className="emotion-5"
+    >
+      <div
+        className="emotion-4"
+      >
+        Required
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-3 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <div
+      className="emotion-2"
+      stretch={false}
+    >
+      <input
+        className="emotion-1"
+        name="input"
+        onChange={[Function]}
+        placeholder="placeholder"
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-3"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-3 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+.emotion-5 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={true}
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <div
+      className="emotion-2"
+      stretch={false}
+    >
+      <input
+        className="emotion-1"
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-3"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-3 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <div
+      className="emotion-2"
+      stretch={false}
+    >
+      <input
+        className="emotion-1"
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value="value"
+      />
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-3"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
+.emotion-5 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-3 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-2 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+<div
+  className="emotion-5"
+>
+  <div
+    className="emotion-4"
+    stretch={false}
+  >
+    <div
+      className="emotion-1"
+      stretch={false}
+    >
+      <input
+        className="emotion-0"
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-2"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-3 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+<div
+  className="emotion-6"
+>
+  <div
+    className="emotion-5"
+    stretch={false}
+  >
+    <label
+      className="emotion-0"
+    >
+      Input
+    </label>
+    <div
+      className="emotion-2"
+      stretch={false}
+    >
+      <input
+        className="emotion-1"
+        name="input"
+        onChange={[Function]}
+        type="text"
+        value={undefined}
+      />
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-3"
+      />
+    </div>
+  </div>
 </div>
 `;
 
@@ -470,7 +1773,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
-  color: rgba(0,0,0,0.54);
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
@@ -586,25 +1888,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   height: 100%;
 }
 
-.emotion-1 {
-  padding-left: 1rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
-  color: rgba(0,0,0,0.87);
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
@@ -625,6 +1911,21 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+}
+
+.emotion-1 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <div
@@ -708,7 +2009,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
-  color: rgba(0,0,0,0.54);
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
@@ -824,44 +2124,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   height: 100%;
 }
 
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 12px;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
-.emotion-2 {
-  padding-left: 1rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .emotion-3 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
-  color: rgba(0,0,0,0.87);
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
@@ -882,6 +2154,31 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+}
+
+.emotion-2 {
+  padding-left: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 <div
@@ -1040,6 +2337,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   margin: 2rem;
 }
 
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
 .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1048,15 +2352,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
 }
 
 .emotion-1 {
@@ -1100,6 +2395,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   margin: 2rem;
 }
 
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
 .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1108,15 +2410,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
 }
 
 .emotion-1 {
@@ -1160,6 +2453,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   margin: 2rem;
 }
 
+.emotion-0 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
 .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1168,15 +2468,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
 }
 
 .emotion-1 {
@@ -1215,279 +2506,12 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/DATA ENTRY/TextInput with placeholder 1`] = `
-.emotion-1 {
-  margin: 2rem;
-}
-
-.emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-1"
->
-  <input
-    className="emotion-0"
-    name="input"
-    onChange={[Function]}
-    placeholder="placeholder"
-  />
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/TextInput with value 1`] = `
-.emotion-1 {
-  margin: 2rem;
-}
-
-.emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-1"
->
-  <input
-    className="emotion-0"
-    name="input"
-    onChange={[Function]}
-    value="value"
-  />
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/TextInput without value 1`] = `
-.emotion-1 {
-  margin: 2rem;
-}
-
-.emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-1"
->
-  <input
-    className="emotion-0"
-    name="input"
-    onChange={[Function]}
-  />
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/TextInputField with placeholder 1`] = `
-.emotion-3 {
-  margin: 2rem;
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
-.emotion-1 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-3"
->
-  <div
-    className="emotion-2"
-  >
-    <label
-      className="emotion-0"
-    >
-      Input
-    </label>
-    <input
-      className="emotion-1"
-      name="input"
-      onChange={[Function]}
-      placeholder="placeholder"
-      value={undefined}
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/TextInputField with value 1`] = `
-.emotion-3 {
-  margin: 2rem;
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
-.emotion-1 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-3"
->
-  <div
-    className="emotion-2"
-  >
-    <label
-      className="emotion-0"
-    >
-      Input
-    </label>
-    <input
-      className="emotion-1"
-      name="input"
-      onChange={[Function]}
-      placeholder={undefined}
-      value="value"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/TextInputField without value 1`] = `
-.emotion-3 {
-  margin: 2rem;
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-0 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
-.emotion-1 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  color: rgba(0,0,0,0.87);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  height: 3rem;
-  line-height: normal;
-  outline: none;
-  padding: 0 1rem;
-}
-
-<div
-  className="emotion-3"
->
-  <div
-    className="emotion-2"
-  >
-    <label
-      className="emotion-0"
-    >
-      Input
-    </label>
-    <input
-      className="emotion-1"
-      name="input"
-      onChange={[Function]}
-      placeholder={undefined}
-      value={undefined}
-    />
-  </div>
-</div>
-`;
-
 exports[`Storyshots ATOMS/Divider with default modifiers 1`] = `
 .emotion-1 {
   margin: 2rem;
 }
 
 .emotion-0 {
-  background-color: rgba(0,0,0,0.12);
   height: 1px;
   border: none;
   width: 100%;
@@ -3889,7 +4913,6 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
 }
 
 .emotion-5 {
-  color: rgba(0,0,0,0.87);
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3932,7 +4955,6 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
 }
 
 .emotion-0 {
-  color: rgba(0,0,0,0.87);
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4123,7 +5145,6 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
 }
 
 .emotion-0 {
-  color: rgba(0,0,0,0.87);
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4272,7 +5293,6 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 20px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4413,7 +5433,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   line-height: normal;
   margin: 0;
   font-size: 48px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4422,7 +5441,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   line-height: normal;
   margin: 0;
   font-size: 32px;
-  color: rgba(0,0,0,0.54);
   font-weight: 400;
 }
 
@@ -4431,7 +5449,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   line-height: normal;
   margin: 0;
   font-size: 24px;
-  color: rgba(0,0,0,0.38);
   font-weight: 400;
 }
 
@@ -4469,7 +5486,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 20px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4478,7 +5494,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 48px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4487,7 +5502,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 32px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4496,7 +5510,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 24px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4505,7 +5518,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 14px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4514,7 +5526,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   line-height: normal;
   margin: 0;
   font-size: 12px;
-  color: rgba(0,0,0,0.87);
   font-weight: 400;
 }
 
@@ -4600,31 +5611,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Label with kind modifiers 1`] = `
   margin: 2rem;
 }
 
-.emotion-1 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 12px;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
-  color: rgba(0,0,0,0.87);
-}
-
-.emotion-2 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.38);
 }
 
 <div
@@ -4636,12 +5627,12 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Label with kind modifiers 1`] = `
     Primary Label
   </label>
   <label
-    className="emotion-1"
+    className="emotion-0"
   >
     Secondary Label
   </label>
   <label
-    className="emotion-2"
+    className="emotion-0"
   >
     Disabled Label
   </label>
@@ -4724,7 +5715,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with children 1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
 }
 
 <div
@@ -4749,25 +5739,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with kind modifiers  1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
-}
-
-.emotion-1 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
-}
-
-.emotion-2 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.38);
 }
 
 <div
@@ -4779,12 +5750,12 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with kind modifiers  1`] = `
     Primary Paragraph
   </p>
   <p
-    className="emotion-1"
+    className="emotion-0"
   >
     Secondary Paragraph
   </p>
   <p
-    className="emotion-2"
+    className="emotion-0"
   >
     Disabled Paragraph
   </p>
@@ -4802,7 +5773,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with text 1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
 }
 
 <div
@@ -4827,7 +5797,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
 }
 
 <div
@@ -4841,8 +5810,8 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/TYPOGRAPHY/Text with kind modifiers  1`] = `
-.emotion-3 {
+exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
+.emotion-5 {
   margin: 2rem;
 }
 
@@ -4852,16 +5821,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with kind modifiers  1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
-}
-
-.emotion-1 {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  margin: 0;
-  color: rgba(0,0,0,0.54);
 }
 
 .emotion-2 {
@@ -4870,24 +5829,79 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with kind modifiers  1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.38);
+  color: #eb4235;
+}
+
+.emotion-3 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: #00bb6e;
+}
+
+.emotion-4 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: #1968cb;
 }
 
 <div
-  className="emotion-3"
+  className="emotion-5"
+>
+  <div>
+    <span
+      className="emotion-0"
+    >
+      Primary Text
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Secondary Text
+    </span>
+    <span
+      className="emotion-2"
+    >
+      Red Text
+    </span>
+    <span
+      className="emotion-3"
+    >
+      Green Text
+    </span>
+    <span
+      className="emotion-4"
+    >
+      Blue Text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0;
+  color: #d0d7dd;
+}
+
+<div
+  className="emotion-1"
 >
   <span
     className="emotion-0"
-  >
-    Primary Text
-  </span>
-  <span
-    className="emotion-1"
-  >
-    Secondary Text
-  </span>
-  <span
-    className="emotion-2"
   >
     Disabled Text
   </span>
@@ -4905,7 +5919,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.87);
 }
 
 <div
@@ -4936,7 +5949,6 @@ exports[`Storyshots Molecules/Rating with default modifiers 1`] = `
   font-size: 14px;
   line-height: 28px;
   margin: 0;
-  color: rgba(0,0,0,0.54);
 }
 
 .emotion-4 {

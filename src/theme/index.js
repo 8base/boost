@@ -1,4 +1,4 @@
 // @flow
 
-export { COlORS } from './colors';
+export { COLORS } from './colors';
 export { defaultTheme } from './defaultTheme';

@@ -22,8 +22,8 @@ import { theme as selectTheme } from './dataEntry/Select';
 import { theme as starsTheme } from './Stars';
 import { theme as textAreaFieldTheme } from './dataEntry/TextAreaField';
 import { theme as textAreaTheme } from './dataEntry/TextArea';
-import { theme as textInputFieldTheme } from './dataEntry/TextInputField';
-import { theme as textInputTheme } from './dataEntry/TextInput';
+import { theme as inputFieldTheme } from './dataEntry/InputField';
+import { theme as inputTheme } from './dataEntry/Input';
 import { theme as textTheme } from './typography/Text';
 
 export const theme = {
@@ -49,7 +49,7 @@ export const theme = {
   ...starsTheme,
   ...textAreaFieldTheme,
   ...textAreaTheme,
-  ...textInputFieldTheme,
-  ...textInputTheme,
+  ...inputFieldTheme,
+  ...inputTheme,
   ...textTheme,
 };

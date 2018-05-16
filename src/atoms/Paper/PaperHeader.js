@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
-import { Heading } from '../Heading';
+import { createStyledTag, createTheme } from 'utils';
+import { Heading } from 'atoms/typography/Heading';
 
 type PaperHeaderProps = {|
   children?: React.Node,

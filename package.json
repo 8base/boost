@@ -10,7 +10,7 @@
     "build-storybook": "build-storybook -c storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "test": "jest --coverage",
+    "test": "jest --no-cache --coverage -i --reporters jest-silent-reporter",
     "eslint": "eslint --ext .jsx,.js --max-warnings=0 src/ storybook/",
     "flow": "flow",
     "checks": "yarn eslint && yarn flow && yarn test",
@@ -25,6 +25,7 @@
     "react-dom": "^16.3"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^3.4.4",
     "@storybook/addon-storyshots": "^3.4.1",
     "@storybook/addons": "3.4.1",
     "@storybook/react": "^3.4.1",
@@ -51,6 +52,7 @@
     "flow-bin": "0.66",
     "jest": "^22.4.3",
     "jest-emotion": "^9.0.0",
+    "jest-silent-reporter": "^0.0.4",
     "lodash": "^4.17.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -83,6 +85,10 @@
       "src/**/*.js",
       "!src/**/*.stories.js",
       "!src/**/*.index.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
     ]
   },
   "config": {

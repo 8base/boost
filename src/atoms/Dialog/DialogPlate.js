@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createTheme } from 'utils';
 import { Modal } from '../Modal';
 import { DialogHeader } from './DialogHeader';
 import { DialogBody } from './DialogBody';

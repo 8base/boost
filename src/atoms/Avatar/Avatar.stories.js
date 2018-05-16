@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Avatar', module, (story, { Avatar }) => {
+  asStory('ATOMS/Avatar', module, (story, { Avatar }) => {
     story
       .add('with default modifiers', () => (
         <Avatar src="https://randomuser.me/api/portraits/women/76.jpg" />

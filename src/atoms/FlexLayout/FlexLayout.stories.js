@@ -21,7 +21,7 @@ const Blocks = () => (
 );
 
 export default (asStory: *) => {
-  asStory('Atoms/FlexLayout', module, (story, { Row, Column }) => {
+  asStory('ATOMS/FlexLayout', module, (story, { Row, Column }) => {
     story
       .add('default Row', () => (
         <Row>

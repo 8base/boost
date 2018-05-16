@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Navigation', module, (story, { Navigation }) => {
+  asStory('ATOMS/Navigation', module, (story, { Navigation }) => {
     story
       .add('without groups', () => (
         <Navigation.Plate>

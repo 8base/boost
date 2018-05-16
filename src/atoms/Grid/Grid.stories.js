@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Grid', module, (story, { Grid }) => {
+  asStory('ATOMS/Grid', module, (story, { Grid }) => {
     story
       .add('with default modifiers', () => (
         <Grid.Layout>

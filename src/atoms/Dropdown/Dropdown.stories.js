@@ -3,7 +3,7 @@
 import React from 'react';
 
 export default (asStory: *) => {
-  asStory('Atoms/Dropdown', module, (story, { Dropdown, Button }) => {
+  asStory('ATOMS/Dropdown', module, (story, { Dropdown, Button }) => {
     story
       .add('default', () => (
         <Dropdown.Plate defaultOpen>

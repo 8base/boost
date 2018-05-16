@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createTheme } from 'utils';
 
 type ButtonProps = {|
   onClick?: (MouseEvent) => void,

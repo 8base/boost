@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Stars', module, (story, { Stars }) => {
+  asStory('ATOMS/Stars', module, (story, { Stars }) => {
     story
       .add('with default modifiers', () => (
         <Stars />

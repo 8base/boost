@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Paper', module, (story, { Paper }) => {
+  asStory('ATOMS/Paper', module, (story, { Paper }) => {
     story
       .add('with header and sections', () => (
         <Paper.Plate>

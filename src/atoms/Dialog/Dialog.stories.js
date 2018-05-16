@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Dialog (skip shot)', module, (story, { Dialog, Paragraph }) => {
+  asStory('ATOMS/Dialog (skip shot)', module, (story, { Dialog, Paragraph }) => {
     story
       .add('with default header, body, actions and footer (skip shot)', () => (
         <Dialog.Plate

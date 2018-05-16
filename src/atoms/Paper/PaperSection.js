@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createTheme } from 'utils';
 
 type PaperSectionProps = {|
   children?: React.Node,

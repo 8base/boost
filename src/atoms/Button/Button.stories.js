@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Atoms/Button', module, (story, { Button }) => {
+  asStory('ATOMS/Button', module, (story, { Button }) => {
     story
       .add('with text', () => (
         <Button text="Text" />

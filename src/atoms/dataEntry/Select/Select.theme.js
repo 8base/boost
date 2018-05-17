@@ -5,12 +5,12 @@ import { createStyledTag, createTheme } from 'utils';
 
 const name = 'select';
 
-const theme = createTheme(name, () => ({
+const theme = createTheme(name, {
   modifiers: {
   },
   defaults: {
   },
-}));
+});
 
 const SelectTag = createStyledTag(name, {});
 

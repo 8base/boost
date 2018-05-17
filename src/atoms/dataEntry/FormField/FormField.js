@@ -17,7 +17,7 @@ type FormFieldProps = {
 const name = 'formField';
 
 const theme = createTheme(name, {
-  modifiers: { },
+  modifiers: {},
   defaults: {},
 });
 
@@ -28,7 +28,6 @@ const FormFieldTag = createStyledTag(name, props => ({
 
   width: props.stretch ? '100%' : 'auto',
 }));
-FormFieldTag.displayName = 'FormFieldTag';
 
 const ControlErrorWrapperTag = createStyledTag(name, {
   display: 'block',
@@ -60,9 +59,11 @@ const FormField = ({
         <Label kind="secondary">{ label }</Label>
       </If>
       { children }
-      <ControlErrorWrapperTag tagName="div">
-        <ControlErrorTag hasError={ hasError } tagName="div">{ error }</ControlErrorTag>
-      </ControlErrorWrapperTag>
+      <If condition={ hasError }>
+        <ControlErrorWrapperTag tagName="div">
+          <ControlErrorTag tagName="div">{ error }</ControlErrorTag>
+        </ControlErrorWrapperTag>
+      </If>
     </FormFieldTag>
   );
 };

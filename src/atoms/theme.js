@@ -2,6 +2,7 @@
 
 import { theme as avatarTheme } from './Avatar';
 import { theme as buttonTheme } from './Button';
+import { theme as checkboxTheme } from './dataEntry/Checkbox';
 import { theme as dialogTheme } from './Dialog';
 import { theme as dividerTheme } from './Divider';
 import { theme as dropdownTheme } from './Dropdown';
@@ -29,6 +30,7 @@ import { theme as textTheme } from './typography/Text';
 export const theme = {
   ...avatarTheme,
   ...buttonTheme,
+  ...checkboxTheme,
   ...dialogTheme,
   ...dividerTheme,
   ...dropdownTheme,

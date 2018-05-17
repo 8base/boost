@@ -2,6 +2,8 @@
 
 export { Avatar } from './Avatar';
 export { Button } from './Button';
+export { Checkbox } from './dataEntry/Checkbox';
+export { CheckboxField } from './dataEntry/CheckboxField';
 export { Dialog } from './Dialog';
 export { Divider } from './Divider';
 export { Dropdown } from './Dropdown';

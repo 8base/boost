@@ -17,7 +17,7 @@ type ButtonProps = {|
 
 const name = 'button';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createTheme(name, (colors: *): * => ({
   modifiers: {
     kind: {
       primary: {

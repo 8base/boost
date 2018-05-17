@@ -20,6 +20,9 @@ export default (asStory) => {
       ))
       .add('with submit type', () => (
         <Button type="submit" text="Submit" />
+      ))
+      .add('with stretch', () => (
+        <Button text="Stretch" stretch />
       ));
   });
 };

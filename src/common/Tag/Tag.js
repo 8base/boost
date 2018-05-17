@@ -35,12 +35,9 @@ type TagProps = {|
 |};
 
 const COLLECTED_PROPS = [
-  'activeClassName',
   'children',
   'className',
   'cols',
-  'component',
-  'exact',
   'for',
   'label',
   'name',
@@ -60,7 +57,6 @@ const COLLECTED_PROPS = [
   'rows',
   'src',
   'style',
-  'stretch',
   'tagName',
   'to',
   'type',

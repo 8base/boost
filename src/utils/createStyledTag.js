@@ -7,9 +7,11 @@ import { Tag } from '../common';
 const getThemeModifiers = (themeName: string, props: *) =>
   fp.getOr({}, ['theme', themeName, 'modifiers'], props);
 
-const getModifierValue = (themeName: string, modifierName: string, props: Object) => (
-  props[modifierName] || props.theme[themeName].defaults[modifierName]
-);
+const getModifierValue = (themeName: string, modifierName: string, props: Object) => {
+  const defaultModifiers = props.theme[themeName].defaults || {};
+
+  return props[modifierName] || defaultModifiers[modifierName];
+};
 
 const getModifierStyles = (themeName: string, modifierName: string, props: Object) => {
   const modifierValue = getModifierValue(themeName, modifierName, props);
@@ -35,6 +37,7 @@ const createStyledTag = (themeName: string, styles: Object) => {
       ...getAllModifiersStyles(themeName, props),
     }),
   );
+
   StyledTag.displayName = `Styled(${themeName})`;
 
   return StyledTag;

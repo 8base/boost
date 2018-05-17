@@ -1,32 +1,71 @@
+// @flow
+
 import React from 'react';
 
 import { createStyledTag, createTheme } from 'utils';
 import * as glyphs from './glyphs';
 
-type IconProps = {|
+type IconProps = {
+  /** icon name */
   name: string,
-|};
+  /** icon color */
+  color?: 'red' | 'green' | 'blue' | 'primary',
+  /** icon size */
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'stretch',
+};
 
 const name = 'icon';
 
-const theme = createTheme(name, {
+const theme : Theme<IconProps> = createTheme(name, (colors: *): * => ({
   modifiers: {
+    color: {
+      primary: { color: colors.PRIMARY },
+      red: { color: colors.RED },
+      green: { color: colors.GREEN },
+      blue: { color: colors.BLUE },
+    },
+    size: {
+      xs: {
+        width: '1.4rem',
+        height: '1.4rem',
+      },
+      sm: {
+        width: '2.4rem',
+        height: '2.4rem',
+      },
+      md: {
+        width: '3.6rem',
+        height: '3.6rem',
+      },
+      lg: {
+        width: '4.8rem',
+        height: '4.8rem',
+      },
+      stretch: {
+        width: '100%',
+        height: '100%',
+      },
+    },
   },
-  defaults: {
-  },
-});
+  defaults: {},
+}));
 
-const StyledTag = createStyledTag(name, {
+const IconTag = createStyledTag(name, {
   display: 'inline-flex',
 });
 
-function Icon({ name, rest }: IconProps) {
+const Icon = ({ name, ...rest }: IconProps) => {
   const Glyph = glyphs[name];
 
   return (
-    <StyledTag { ...rest } tagName="div">
-      <Glyph />
-    </StyledTag>
+    <IconTag { ...rest } tagName="div">
+      <Glyph width="100%" height="100%" />
+    </IconTag>
   );
-}
+};
+
+Icon.defaultProps = {
+  size: 'sm',
+};
+
 export { Icon, theme };

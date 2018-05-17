@@ -1,27 +1,44 @@
+// @flow
+
 import React from 'react';
 
 import { createStyledTag, createTheme } from 'utils';
 
 type TextProps = {|
-  children?: React$Node,
-  kind?: 'primary' | 'secondary' | 'disabled',
-  text?: string,
+  /** text to display in the component */
+  children?: string | number,
+  /** another way to set displayed text */
+  text?: string | number,
+  /** possible text colors */
+  color?: 'primary' | 'secondary' | 'red' | 'green' | 'blue',
+  /** disabled text state*/
+  disabled?: boolean,
 |};
 
 const name = 'text';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createTheme(name, (colors: *): * => ({
   modifiers: {
-    kind: {
+    color: {
       primary: {
         color: colors.DARK_PRIMARY_TEXT_COLOR,
       },
       secondary: {
         color: colors.DARK_SECONDARY_TEXT_COLOR,
       },
-      disabled: {
-        color: colors.DARK_DISABLED_TEXT_COLOR,
+      red: {
+        color: colors.RED,
       },
+      green: {
+        color: colors.GREEN,
+      },
+      blue: {
+        color: colors.BLUE,
+      },
+    },
+
+    disabled: {
+      color: colors.DISABLED_TEXT_COLOR,
     },
   },
   defaults: {

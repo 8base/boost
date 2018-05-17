@@ -5,6 +5,7 @@ import { createStyledTag, createTheme } from 'utils';
 type LabelProps = {|
   kind?: 'primary' | 'secondary' | 'disabled',
   for?: string,
+  children?: string,
   text?: string,
 |};
 
@@ -24,16 +25,13 @@ const theme = createTheme(name, (colors) => ({
       },
     },
   },
-  defaults: {
-    kind: 'primary',
-  },
+  defaults: { },
 }));
 
 const StyledTag = createStyledTag(name, {
-  fontFamily: 'Poppins',
   fontWeight: 400,
   fontSize: '12px',
-  lineHeight: '28px',
+  lineHeight: 2,
   margin: 0,
 });
 
@@ -42,7 +40,11 @@ function Label({
   children,
   ...rest
   }: LabelProps) {
-  return <StyledTag { ...rest } tagName="label">{ text }</StyledTag>;
+  return <StyledTag { ...rest } tagName="label">{ children || text }</StyledTag>;
 }
+
+Label.defaultProps = {
+  kind: 'primary',
+};
 
 export { Label, theme };

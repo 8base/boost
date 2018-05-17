@@ -73,7 +73,6 @@ rules:
   rest-spread-spacing: ['error', 'never']
 
   #react
-  react/default-props-match-prop-types: ['error', { 'allowRequiredDefaults': true }]
   react/forbid-foreign-prop-types: 'error'
   react/no-children-prop: 'error'
   react/jsx-curly-spacing: [1, {'when': 'always', 'children': true, 'allowMultiline': true, 'spacing': {'objectLiterals': 'never'}}]

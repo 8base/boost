@@ -26,6 +26,9 @@ export default (asStory) => {
       ))
       .add('with right icon and error', () => (
         <Input name="input" rightIcon="i" hasError hideIndicator />
+      ))
+      .add('with html auto-complete', () => (
+        <Input name="input" autoComplete />
       ));
   });
 };

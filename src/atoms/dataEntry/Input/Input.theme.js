@@ -1,6 +1,6 @@
 // @flow
 
-import { createStyledTag, createTheme } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle } from 'utils';
 
 const name = 'input';
 
@@ -49,7 +49,7 @@ const InputWrapperTag = createStyledTag(name, props => ({
 const InputIndicatorTag = createStyledTag(name, props => ({
   display: props.hasRightIcon ? 'none' : 'block',
   position: 'absolute',
-  ...props.theme[name].inputIndicator,
+  ...getThemeStyle(props, name).inputIndicator,
 }));
 
 const InputTag = createStyledTag(name, props => ({
@@ -58,7 +58,7 @@ const InputTag = createStyledTag(name, props => ({
   paddingLeft: props.hasLeftIcon ? '3rem' : '1rem',
   paddingRight: props.hasRightIcon ? '3rem' : '2rem',
 
-  ...props.theme[name].input,
+  ...getThemeStyle(props, name).input,
 
   '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
     '-webkit-appearance': 'none',

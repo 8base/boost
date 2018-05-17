@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react';
 import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag } from './Input.theme';
 
-type InputCommonProps = {|
+type InputCommonProps = {
   /** field placeholder */
   placeholder?: string,
   /** html auto-complete representation */
@@ -16,22 +16,24 @@ type InputCommonProps = {|
   leftIcon?: React$Node,
   /** right icon componen */
   rightIcon?: React$Node,
-|}
+}
 
-type InputProps = {|
+type InputProps = {
   /** input name */
   name?: string,
   /** input value */
   value?: string,
   /** possible input types */
   type?: 'text' | 'number',
-  /** callback to change input value */
-  onChange?: (value: string | number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   /** then true when show error styles */
   hasError?: boolean,
   /** text of the error */
   errorText?: string,
-|} & InputCommonProps;
+  /** callback to change input value */
+  onChange?: (value?: string | number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
+  onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
+} & InputCommonProps
 
 class Input extends PureComponent<InputProps> {
   static defaultProps = {
@@ -46,7 +48,7 @@ class Input extends PureComponent<InputProps> {
     const { onChange, type } = this.props;
     const { value } = event.target;
     if (type === 'number') {
-      onChange && onChange(Number(value), event);
+      onChange && onChange(Number(value) || undefined, event);
     }
     else {
       onChange && onChange(value, event);

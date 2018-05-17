@@ -30,7 +30,7 @@ const theme = createTheme(name, (colors) => ({
 
 const StyledTag = createStyledTag(name, {
   fontWeight: 400,
-  fontSize: '12px',
+  fontSize: '1.2rem',
   lineHeight: 2,
   margin: 0,
 });

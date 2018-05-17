@@ -193,6 +193,47 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/Button with stretch 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+<div
+  className="emotion-1"
+>
+  <button
+    className="emotion-0"
+    onClick={undefined}
+    type="button"
+  >
+    Stretch
+  </button>
+</div>
+`;
+
 exports[`Storyshots ATOMS/Button with submit type 1`] = `
 .emotion-1 {
   margin: 2rem;
@@ -273,12 +314,1007 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
-.emotion-32 {
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
+.emotion-6 {
   margin: 2rem;
 }
 
-.emotion-30 {
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    >
+      Checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #EDF0F2;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    >
+      Checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-color: red;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    >
+      Checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    >
+      Checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-6 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+<div
+  className="emotion-7"
+>
+  <div
+    className="emotion-6"
+  >
+    <label
+      className="emotion-5"
+      name={undefined}
+    >
+      <div
+        className="emotion-2"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          >
+            <svg
+              height="100%"
+              viewBox="0 0 14 11"
+              width="100%"
+            >
+              <path
+                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <input
+        className="emotion-3"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-4"
+      >
+        CheckboxField
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+<div
+  className="emotion-7"
+>
+  <div
+    className="emotion-6"
+  >
+    <label
+      className="emotion-5"
+      name={undefined}
+    >
+      <div
+        className="emotion-2"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          >
+            <svg
+              height="100%"
+              viewBox="0 0 14 11"
+              width="100%"
+            >
+              <path
+                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <input
+        className="emotion-3"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-4"
+      >
+        CheckboxField
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
+.emotion-9 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-color: red;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-8 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-7 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-6 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+<div
+  className="emotion-9"
+>
+  <div
+    className="emotion-8"
+  >
+    <label
+      className="emotion-5"
+      name={undefined}
+    >
+      <div
+        className="emotion-2"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          >
+            <svg
+              height="100%"
+              viewBox="0 0 14 11"
+              width="100%"
+            >
+              <path
+                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                fill="currentColor"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <input
+        className="emotion-3"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-4"
+      >
+        CheckboxField
+      </div>
+    </label>
+    <div
+      className="emotion-7"
+    >
+      <div
+        className="emotion-6"
+      >
+        Required
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
+.emotion-22 {
+  margin: 2rem;
+}
+
+.emotion-20 {
   border: 0px;
   cursor: pointer;
   display: -webkit-box;
@@ -300,14 +1336,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   border-radius: 5px;
 }
 
-.emotion-31 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  height: 100%;
-}
-
-.emotion-5 {
+.emotion-3 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -319,9 +1348,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   width: auto;
 }
 
+.emotion-21 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -361,30 +1397,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   margin: 0;
 }
 
-.emotion-4 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
-.emotion-3 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
 <div
-  className="emotion-32"
+  className="emotion-22"
 >
   <form
-    className="emotion-31"
+    className="emotion-21"
     onSubmit={[Function]}
   >
     <div
-      className="emotion-5"
-      stretch={false}
+      className="emotion-3"
     >
       <label
         className="emotion-0"
@@ -393,7 +1414,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </label>
       <div
         className="emotion-2"
-        stretch={false}
       >
         <input
           className="emotion-1"
@@ -403,17 +1423,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           value={undefined}
         />
       </div>
-      <div
-        className="emotion-4"
-      >
-        <div
-          className="emotion-3"
-        />
-      </div>
     </div>
     <div
-      className="emotion-5"
-      stretch={false}
+      className="emotion-3"
     >
       <label
         className="emotion-0"
@@ -422,7 +1434,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </label>
       <div
         className="emotion-2"
-        stretch={false}
       >
         <input
           className="emotion-1"
@@ -432,17 +1443,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           value={undefined}
         />
       </div>
-      <div
-        className="emotion-4"
-      >
-        <div
-          className="emotion-3"
-        />
-      </div>
     </div>
     <div
-      className="emotion-5"
-      stretch={false}
+      className="emotion-3"
     >
       <label
         className="emotion-0"
@@ -451,7 +1454,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </label>
       <div
         className="emotion-2"
-        stretch={false}
       >
         <input
           className="emotion-1"
@@ -461,17 +1463,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           value={undefined}
         />
       </div>
-      <div
-        className="emotion-4"
-      >
-        <div
-          className="emotion-3"
-        />
-      </div>
     </div>
     <div
-      className="emotion-5"
-      stretch={false}
+      className="emotion-3"
     >
       <label
         className="emotion-0"
@@ -480,7 +1474,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </label>
       <div
         className="emotion-2"
-        stretch={false}
       >
         <input
           className="emotion-1"
@@ -490,17 +1483,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           value={undefined}
         />
       </div>
-      <div
-        className="emotion-4"
-      >
-        <div
-          className="emotion-3"
-        />
-      </div>
     </div>
     <div
-      className="emotion-5"
-      stretch={false}
+      className="emotion-3"
     >
       <label
         className="emotion-0"
@@ -509,7 +1494,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </label>
       <div
         className="emotion-2"
-        stretch={false}
       >
         <input
           className="emotion-1"
@@ -519,16 +1503,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           value={undefined}
         />
       </div>
-      <div
-        className="emotion-4"
-      >
-        <div
-          className="emotion-3"
-        />
-      </div>
     </div>
     <button
-      className="emotion-30"
+      className="emotion-20"
       onClick={undefined}
       type="submit"
     >
@@ -597,7 +1574,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 >
   <div
     className="emotion-2"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -607,6 +1583,62 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
     />
     <div
       className="emotion-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+  >
+    <input
+      className="emotion-0"
+      name="input"
+      onChange={[Function]}
+      type="text"
     />
   </div>
 </div>
@@ -676,7 +1708,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 >
   <div
     className="emotion-2"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -738,7 +1769,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
 >
   <div
     className="emotion-1"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -815,7 +1845,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 >
   <div
     className="emotion-2"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -897,7 +1926,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 >
   <div
     className="emotion-2"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -959,7 +1987,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch 1`] = `
 >
   <div
     className="emotion-1"
-    stretch={true}
   >
     <input
       className="emotion-0"
@@ -1016,7 +2043,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
 >
   <div
     className="emotion-1"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -1074,7 +2100,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 >
   <div
     className="emotion-1"
-    stretch={false}
   >
     <input
       className="emotion-0"
@@ -1103,22 +2128,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   width: auto;
 }
 
-.emotion-0 {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  margin: 0;
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  width: auto;
-}
-
 .emotion-5 {
   display: block;
   position: absolute;
@@ -1131,6 +2140,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   height: 1.2rem;
   color: #eb4235;
   line-height: 2;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
 }
 
 .emotion-1 {
@@ -1178,7 +2203,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 >
   <div
     className="emotion-6"
-    stretch={false}
   >
     <label
       className="emotion-0"
@@ -1187,7 +2211,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
     </label>
     <div
       className="emotion-3"
-      stretch={false}
     >
       <input
         className="emotion-1"
@@ -1214,11 +2237,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
-.emotion-6 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-5 {
+.emotion-3 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1232,7 +2255,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -1272,26 +2295,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   margin: 0;
 }
 
-.emotion-4 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
-.emotion-3 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
 <div
-  className="emotion-6"
+  className="emotion-4"
 >
   <div
-    className="emotion-5"
-    stretch={false}
+    className="emotion-3"
   >
     <label
       className="emotion-0"
@@ -1300,7 +2308,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
     </label>
     <div
       className="emotion-2"
-      stretch={false}
     >
       <input
         className="emotion-1"
@@ -1311,25 +2318,18 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
         value={undefined}
       />
     </div>
-    <div
-      className="emotion-4"
-    >
-      <div
-        className="emotion-3"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
-.emotion-6 {
+.emotion-4 {
   margin: 2rem;
 }
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -1369,21 +2369,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   margin: 0;
 }
 
-.emotion-4 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
 .emotion-3 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
-.emotion-5 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1396,11 +2382,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 }
 
 <div
-  className="emotion-6"
+  className="emotion-4"
 >
   <div
-    className="emotion-5"
-    stretch={true}
+    className="emotion-3"
   >
     <label
       className="emotion-0"
@@ -1409,7 +2394,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
     </label>
     <div
       className="emotion-2"
-      stretch={false}
     >
       <input
         className="emotion-1"
@@ -1419,23 +2403,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
         value={undefined}
       />
     </div>
-    <div
-      className="emotion-4"
-    >
-      <div
-        className="emotion-3"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
-.emotion-6 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-5 {
+.emotion-3 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1449,7 +2426,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -1489,26 +2466,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   margin: 0;
 }
 
-.emotion-4 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
-.emotion-3 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
 <div
-  className="emotion-6"
+  className="emotion-4"
 >
   <div
-    className="emotion-5"
-    stretch={false}
+    className="emotion-3"
   >
     <label
       className="emotion-0"
@@ -1517,7 +2479,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
     </label>
     <div
       className="emotion-2"
-      stretch={false}
     >
       <input
         className="emotion-1"
@@ -1527,23 +2488,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
         value="value"
       />
     </div>
-    <div
-      className="emotion-4"
-    >
-      <div
-        className="emotion-3"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
-.emotion-5 {
+.emotion-3 {
   margin: 2rem;
 }
 
-.emotion-4 {
+.emotion-2 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1590,30 +2544,14 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   margin: 0;
 }
 
-.emotion-3 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
-.emotion-2 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
 <div
-  className="emotion-5"
+  className="emotion-3"
 >
   <div
-    className="emotion-4"
-    stretch={false}
+    className="emotion-2"
   >
     <div
       className="emotion-1"
-      stretch={false}
     >
       <input
         className="emotion-0"
@@ -1623,23 +2561,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
         value={undefined}
       />
     </div>
-    <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-2"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
-.emotion-6 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-5 {
+.emotion-3 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1653,7 +2584,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -1693,26 +2624,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   margin: 0;
 }
 
-.emotion-4 {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  line-height: 1;
-}
-
-.emotion-3 {
-  height: 1.2rem;
-  color: #eb4235;
-  line-height: 2;
-}
-
 <div
-  className="emotion-6"
+  className="emotion-4"
 >
   <div
-    className="emotion-5"
-    stretch={false}
+    className="emotion-3"
   >
     <label
       className="emotion-0"
@@ -1721,7 +2637,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
     </label>
     <div
       className="emotion-2"
-      stretch={false}
     >
       <input
         className="emotion-1"
@@ -1729,13 +2644,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
         onChange={[Function]}
         type="text"
         value={undefined}
-      />
-    </div>
-    <div
-      className="emotion-4"
-    >
-      <div
-        className="emotion-3"
       />
     </div>
   </div>
@@ -1808,6 +2716,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 <div
@@ -1822,7 +2732,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
       <div
         className="ignore-react-onclickoutside-10 emotion-4"
         onClick={[Function]}
-        stretch={undefined}
       >
         <div
           className="emotion-3"
@@ -1838,16 +2747,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
                 className="emotion-0"
               >
                 <svg
-                  focusable="false"
-                  height="24"
-                  role="presentation"
+                  height="100%"
                   viewBox="0 0 24 24"
-                  width="24"
+                  width="100%"
                 >
                   <path
                     d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
                     fill="currentColor"
-                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -1926,6 +2832,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 <div
@@ -1940,7 +2848,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
       <div
         className="ignore-react-onclickoutside-11 emotion-4"
         onClick={[Function]}
-        stretch={undefined}
       >
         <div
           className="emotion-3"
@@ -1956,16 +2863,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
                 className="emotion-0"
               >
                 <svg
-                  focusable="false"
-                  height="24"
-                  role="presentation"
+                  height="100%"
                   viewBox="0 0 24 24"
-                  width="24"
+                  width="100%"
                 >
                   <path
                     d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
                     fill="currentColor"
-                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -2044,6 +2948,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 <div
@@ -2058,7 +2964,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
       <div
         className="ignore-react-onclickoutside-12 emotion-4"
         onClick={[Function]}
-        stretch={true}
       >
         <div
           className="emotion-3"
@@ -2074,16 +2979,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
                 className="emotion-0"
               >
                 <svg
-                  focusable="false"
-                  height="24"
-                  role="presentation"
+                  height="100%"
                   viewBox="0 0 24 24"
-                  width="24"
+                  width="100%"
                 >
                   <path
                     d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
                     fill="currentColor"
-                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -2126,7 +3028,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -2169,6 +3071,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .emotion-7 {
@@ -2201,7 +3105,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
         <div
           className="ignore-react-onclickoutside-13 emotion-5"
           onClick={[Function]}
-          stretch={undefined}
         >
           <div
             className="emotion-4"
@@ -2217,16 +3120,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
                   className="emotion-1"
                 >
                   <svg
-                    focusable="false"
-                    height="24"
-                    role="presentation"
+                    height="100%"
                     viewBox="0 0 24 24"
-                    width="24"
+                    width="100%"
                   >
                     <path
                       d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
                       fill="currentColor"
-                      fillRule="evenodd"
                     />
                   </svg>
                 </div>
@@ -2339,7 +3239,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -2397,7 +3297,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -2455,7 +3355,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }
@@ -3143,29 +4043,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   margin: 2rem;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 {
-  cursor: pointer;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}
-
 .emotion-0 {
   border: 0px;
   cursor: pointer;
@@ -3189,6 +4066,29 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   width: 100%;
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
 <div
   className="emotion-3"
 >
@@ -3196,7 +4096,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
     <div
       className="ignore-react-onclickoutside-3 emotion-2"
       onClick={[Function]}
-      stretch={true}
     >
       <div
         className="emotion-1"
@@ -3204,7 +4103,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
         <button
           className="emotion-0"
           onClick={undefined}
-          stretch={true}
           type="button"
         >
           Head
@@ -3218,6 +4116,29 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
 exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
 .emotion-4 {
   margin: 2rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .emotion-1 {
@@ -3251,29 +4172,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   z-index: 2;
 }
 
-.emotion-0 {
-  border: 0px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
-  width: 100%;
-}
-
 <div
   className="emotion-4"
 >
@@ -3281,7 +4179,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
     <div
       className="ignore-react-onclickoutside-2 emotion-2"
       onClick={[Function]}
-      stretch={true}
     >
       <div
         className="emotion-1"
@@ -3289,7 +4186,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
         <button
           className="emotion-0"
           onClick={undefined}
-          stretch={true}
           type="button"
         >
           Head
@@ -3608,7 +4504,6 @@ exports[`Storyshots ATOMS/FlexLayout default Column 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -3720,7 +4615,6 @@ exports[`Storyshots ATOMS/FlexLayout default Row 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -3832,7 +4726,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom alignContent 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -3972,7 +4865,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom gap 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -3997,7 +4889,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom gap 1`] = `
   </div>
   <div
     className="emotion-11"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -4109,7 +5000,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom justifyContent 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -4225,7 +5115,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom offset 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -4340,7 +5229,6 @@ exports[`Storyshots ATOMS/FlexLayout with grow children 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -4452,7 +5340,6 @@ exports[`Storyshots ATOMS/FlexLayout with pointer cursor 1`] = `
 >
   <div
     className="emotion-5"
-    stretch={false}
   >
     <div
       className="emotion-0"
@@ -5571,8 +6458,8 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with default modifiers 1`] = `
-.emotion-1 {
+exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
+.emotion-2 {
   margin: 2rem;
 }
 
@@ -5581,27 +6468,261 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with default modifiers 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 <div
-  className="emotion-1"
+  className="emotion-2"
 >
   <div
-    className="emotion-0"
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+      }
+    }
   >
-    <svg
-      focusable="false"
-      height="24"
-      role="presentation"
-      viewBox="0 0 24 24"
-      width="24"
+    <div
+      className="emotion-0"
     >
-      <path
-        d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
-        fill="currentColor"
-        fillRule="evenodd"
-      />
-    </svg>
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #4DA1FF;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #00bb6e;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #1968cb;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-3"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
@@ -5613,7 +6734,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Label with kind modifiers 1`] = `
 
 .emotion-0 {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 2;
   margin: 0;
 }

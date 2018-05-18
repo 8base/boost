@@ -1,7 +1,12 @@
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
+import dotenv from 'dotenv';
 import pkg from './package.json';
+
+dotenv.config();
+
+const { env } = process;
 
 export default {
   input: 'src/index.js',
@@ -19,7 +24,11 @@ export default {
       exclude: 'node_modules/**',
       plugins: ['external-helpers'],
     }),
-    resolve(),
+    resolve({
+      customResolveOptions: {
+        moduleDirectory: env.NODE_PATH,
+      },
+    }),
     commonjs({
       include: 'node_modules/**',
       namedExports: {

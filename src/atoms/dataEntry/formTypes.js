@@ -15,7 +15,7 @@ export type MetaType = {|
   dirty?: boolean,
   dirtySinceLastSubmit?: boolean,
   error?: any,
-  initial?: boolean,
+  initial?: any,
   invalid?: boolean,
   pristine?: boolean,
   submitError?: any,

@@ -24,7 +24,7 @@ type InputProps = {
   /** input value */
   value?: string,
   /** possible input types */
-  type?: 'text' | 'number',
+  type?: 'text' | 'number' | 'password' | 'email' | 'url',
   /** then true when show error styles */
   hasError?: boolean,
   /** text of the error */

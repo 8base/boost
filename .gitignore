@@ -7,4 +7,5 @@ coverage
 node_modules
 npm-debug.log
 out*
+wallaby.conf.js
 yarn-error.log

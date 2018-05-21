@@ -21,7 +21,7 @@ const SelectValue = styled('div')((props) => ({
   fontFamily: 'Poppins',
   fontSize: '14px',
   fontWeight: 400,
-  height: '3rem',
+  height: '4rem',
   lineHeight: 'normal',
   outline: 'none',
   display: 'inline-flex',

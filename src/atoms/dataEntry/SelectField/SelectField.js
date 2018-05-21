@@ -1,17 +1,22 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
+import { createTheme } from 'utils';
 import { Select } from '../Select';
-import { Label } from 'atoms/typography/Label';
+import { FormField } from '../FormField';
 
 type SelectFieldProps = {|
-  label: string,
-  name: string,
-  onChange: (event?: SyntheticInputEvent) => void,
+  /** array of select options */
   options: Array<Object>,
+  /** placeholder */
   placeholder?: string,
-  value?: string,
+  /** field label */
+  label?: string,
+  /** when true then stretch to the maximal width */
   stretch?: boolean,
+  /** form input object */
+  input?: InputType,
+  /** form meta object */
+  meta?: MetaType,
 |};
 
 const name = 'selectField';
@@ -23,25 +28,21 @@ const theme = createTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, {
-  display: 'inline-flex',
-  flexDirection: 'column',
-});
-
 function SelectField({
-  label,
-  name,
-  onChange,
-  placeholder,
-  value,
   options,
+  placeholder,
+  label,
   stretch,
+  input = {},
+  meta = {},
   ...rest
   }: SelectFieldProps) {
+  const { name, value, onChange } = input;
+
   return (
-    <StyledTag { ...rest } tagName="div">
-      <Label text={ label } kind="secondary" />
+    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
       <Select
+        { ...rest }
         name={ name }
         onChange={ onChange }
         placeholder={ placeholder }
@@ -49,7 +50,7 @@ function SelectField({
         options={ options }
         stretch={ stretch }
       />
-    </StyledTag>
+    </FormField>
   );
 }
 

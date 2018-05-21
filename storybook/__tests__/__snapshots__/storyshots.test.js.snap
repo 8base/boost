@@ -3239,14 +3239,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   margin: 2rem;
 }
 
-.emotion-0 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2;
-  margin: 0;
-}
-
 .emotion-2 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3254,6 +3248,14 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0;
 }
 
 .emotion-1 {
@@ -3297,14 +3299,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   margin: 2rem;
 }
 
-.emotion-0 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2;
-  margin: 0;
-}
-
 .emotion-2 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3312,6 +3308,14 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0;
 }
 
 .emotion-1 {
@@ -3355,14 +3359,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   margin: 2rem;
 }
 
-.emotion-0 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2;
-  margin: 0;
-}
-
 .emotion-2 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3370,6 +3368,14 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: auto;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0;
 }
 
 .emotion-1 {

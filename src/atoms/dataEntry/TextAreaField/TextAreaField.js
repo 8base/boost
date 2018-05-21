@@ -1,16 +1,24 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
+import { createTheme } from 'utils';
 import { TextArea } from '../TextArea';
-import { Label } from 'atoms/typography/Label';
+import { FormField } from '../FormField';
 
 type TextAreaFieldProps = {|
+  /** number of textarea columns */
   cols?: number,
-  name: string,
-  onChange: (event?: SyntheticAreaEvent) => void,
-  placeholder?: string,
+  /** number of textarea rows */
   rows?: number,
-  value?: string,
+  /** placeholder */
+  placeholder?: string,
+  /** field label */
+  label?: string,
+  /** when true then stretch to the maximal width */
+  stretch?: boolean,
+  /** form input object */
+  input?: InputType,
+  /** form meta object */
+  meta?: MetaType,
 |};
 
 const name = 'textAreaField';
@@ -22,25 +30,22 @@ const theme = createTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, {
-  display: 'inline-flex',
-  flexDirection: 'column',
-});
-
 function TextAreaField({
-  label,
-  name,
-  onChange,
-  placeholder,
-  value,
   cols,
+  input = {},
+  label,
+  meta = {},
+  placeholder,
   rows,
+  stretch,
   ...rest
   }: TextAreaFieldProps) {
+  const { name, value, onChange } = input;
+
   return (
-    <StyledTag { ...rest } tagName="div">
-      <Label text={ label } kind="secondary" />
+    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
       <TextArea
+        { ...rest }
         name={ name }
         onChange={ onChange }
         placeholder={ placeholder }
@@ -48,7 +53,7 @@ function TextAreaField({
         cols={ cols }
         rows={ rows }
       />
-    </StyledTag>
+    </FormField>
   );
 }
 

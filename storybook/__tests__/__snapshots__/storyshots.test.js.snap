@@ -88,7 +88,7 @@ exports[`Storyshots ATOMS/Button with kind secondary 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid undefined;
+  border: 1px solid #EDF0F2;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -151,7 +151,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
 }
 
 .emotion-1 {
-  border: 1px solid undefined;
+  border: 1px solid #EDF0F2;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;

@@ -1,3 +1,14 @@
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/8base/boost/compare/v0.3.1...v0.3.2) (2018-05-21)
+
+
+### Bug Fixes
+
+* **atoms:** add missed types for input ([1c55fe8](https://github.com/8base/boost/commit/1c55fe8))
+* **atoms:** fix initial value type for the form types ([d46b525](https://github.com/8base/boost/commit/d46b525))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/8base/boost/compare/v0.3.0...v0.3.1) (2018-05-18)
 

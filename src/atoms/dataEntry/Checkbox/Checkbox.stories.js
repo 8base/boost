@@ -29,6 +29,9 @@ export default (asStory: *) => {
       .add('without label', () => (
         <Checkbox checked />
       ))
+      .add('without secondary color', () => (
+        <Checkbox color="secondary" label="Checkbox" checked />
+      ))
       .add('with state', () => (
         <CheckboxState>
           {

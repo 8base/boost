@@ -27,7 +27,7 @@ const theme = createTheme(name, (colors: *): * => ({
       secondary: {
         backgroundColor: colors.SECONDARY_BUTTON_BACKGROUND_COLOR,
         color: colors.DARK_PRIMARY_TEXT_COLOR,
-        border: `1px solid ${colors.DARK_DIVIDER_COLOR}`,
+        border: `1px solid ${colors.DIVIDER_COLOR}`,
       },
     },
     size: {

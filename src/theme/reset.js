@@ -1,6 +1,6 @@
 import { injectGlobal } from 'emotion';
 
-injectGlobal`
+const resetGlobal = () => injectGlobal`
   html {
     -webkit-font-smoothing: antialiased;
     font-size: 62.5% !important;
@@ -59,3 +59,5 @@ injectGlobal`
     border-spacing: 0;
   }
 `;
+
+export { resetGlobal };

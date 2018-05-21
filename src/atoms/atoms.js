@@ -18,6 +18,8 @@ export { Modal } from './Modal';
 export { Navigation } from './Navigation';
 export { Paper } from './Paper';
 export { Paragraph } from './typography/Paragraph';
+export { Radio } from './dataEntry/Radio';
+export { RadioGroupField } from './dataEntry/RadioGroupField';
 export { Row, Column } from './FlexLayout';
 export { Scrollable } from './Scrollable';
 export { Select } from './dataEntry/Select';

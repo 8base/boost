@@ -17,11 +17,10 @@ export default (asStory) => {
       .add('default', () => (
         <SelectField
           label="Select Label"
-          name="input"
+          input={{ name: 'input', onChange: () => null, value: OPTIONS[0].value }}
           placeholder="Select an option"
-          onChange={ () => null }
           options={ OPTIONS }
-          value={ OPTIONS[0].value }
+          stretch
         />
       ));
   });

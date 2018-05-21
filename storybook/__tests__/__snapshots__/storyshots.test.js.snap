@@ -2684,7 +2684,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 3rem;
+  height: 4rem;
   line-height: normal;
   outline: none;
   display: -webkit-inline-box;
@@ -2800,7 +2800,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 3rem;
+  height: 4rem;
   line-height: normal;
   outline: none;
   display: -webkit-inline-box;
@@ -2916,7 +2916,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 3rem;
+  height: 4rem;
   line-height: normal;
   outline: none;
   display: -webkit-inline-box;
@@ -3003,20 +3003,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   margin: 2rem;
 }
 
-.emotion-5 {
-  cursor: pointer;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  height: auto;
-  width: auto;
-  z-index: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3026,11 +3012,37 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   height: 100%;
 }
 
+.emotion-5 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
 .emotion-0 {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2;
   margin: 0;
+}
+
+.emotion-7 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
 }
 
 .emotion-3 {
@@ -3039,7 +3051,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 3rem;
+  height: 4rem;
   line-height: normal;
   outline: none;
   display: -webkit-inline-box;
@@ -3073,16 +3085,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   display: inline-flex;
   width: 2.4rem;
   height: 2.4rem;
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 <div

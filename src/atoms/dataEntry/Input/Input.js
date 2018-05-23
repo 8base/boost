@@ -1,7 +1,8 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag } from './Input.theme';
+import fp from 'lodash/fp';
+import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputMaskStyled } from './Input.theme';
 
 type InputCommonProps = {
   /** field placeholder */
@@ -11,24 +12,30 @@ type InputCommonProps = {
   /** when true then stretch to the maximal width */
   stretch?: boolean,
   /** when true then don't show error indicator  */
-  hideIndicator?: boolean,
+  hideErrorIndicator?: boolean,
   /** left icon componen */
   leftIcon?: React$Node,
   /** right icon componen */
   rightIcon?: React$Node,
+  /** max symbols in the input value*/
+  maxLength?: number,
 }
 
 type InputProps = {
   /** input name */
   name?: string,
   /** input value */
-  value?: string,
+  value?: string | number,
   /** possible input types */
   type?: 'text' | 'number' | 'password' | 'email' | 'url',
   /** then true when show error styles */
   hasError?: boolean,
   /** text of the error */
   errorText?: string,
+  /** mask string in the react-input-mask format */
+  mask?: string,
+  /** set input width to the equal height */
+  square?: boolean,
   /** callback to change input value */
   onChange?: (value?: string | number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
@@ -38,41 +45,60 @@ type InputProps = {
 class Input extends PureComponent<InputProps> {
   static defaultProps = {
     type: 'text',
+    square: false,
     stretch: true,
-    hideIndicator: false,
+    hideErrorIndicator: false,
     autoComplete: false,
     hasError: false,
   }
 
   onChange = (event: *) => {
-    const { onChange, type } = this.props;
+    const { onChange, type, maxLength } = this.props;
     const { value } = event.target;
-    if (type === 'number') {
-      onChange && onChange(Number(value) || undefined, event);
-    }
-    else {
-      onChange && onChange(value, event);
+    const hasNotMaxLength = maxLength === undefined;
+
+    if (value.toString().length <= maxLength || hasNotMaxLength) {
+      if (type === 'number') {
+        onChange && onChange(Number(value) || undefined, event);
+      }
+      else {
+        onChange && onChange(value, event);
+      }
     }
   }
 
   render() {
-    const { hasError, hideIndicator, autoComplete, stretch, errorText, leftIcon, rightIcon, ...rest } = this.props;
+    const { hasError, hideErrorIndicator, autoComplete, stretch, errorText, leftIcon, rightIcon, mask, square, value, ...rest } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
-    const htmlAutoComplete = autoComplete ? 'on' : 'off';
+
+    const inputProps = {
+      value,
+      square,
+      onChange: this.onChange,
+      hasError,
+      hasLeftIcon,
+      hasRightIcon,
+      autoComplete: autoComplete ? 'on' : 'off',
+    };
 
     return (
-      <InputWrapperTag stretch={ stretch } tagName="div">
-        <InputTag
-          { ...rest }
-          hasError={ hasError }
-          hasLeftIcon={ hasLeftIcon }
-          hasRightIcon={ hasRightIcon }
-          onChange={ this.onChange }
-          autoComplete={ htmlAutoComplete }
-          tagName="input"
-        />
-        <If condition={ !!hasError && !hideIndicator }>
+      <InputWrapperTag { ...fp.omit(['onChange'], rest) } stretch={ stretch } square={ square } tagName="div">
+        <Choose>
+          <When condition={ !mask }>
+            <InputTag
+              { ...inputProps }
+              tagName="input"
+            />
+          </When>
+          <Otherwise >
+            <InputMaskStyled
+              { ...inputProps }
+              mask={ mask }
+            />
+          </Otherwise>
+        </Choose>
+        <If condition={ !!hasError && !hideErrorIndicator }>
           <InputIndicatorTag hasError={ hasError } tagName="div" />
         </If>
         <If condition={ hasLeftIcon }>

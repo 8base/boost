@@ -1,6 +1,7 @@
 // @flow
-
-import { createStyledTag, createTheme, getThemeStyle } from 'utils';
+import styled from 'react-emotion';
+import InputMask from 'react-input-mask';
+import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from 'utils';
 
 const name = 'input';
 
@@ -20,6 +21,16 @@ const theme = createTheme(name, (colors: *): * => ({
     },
   },
 
+  inputSquare: {
+    width: '4rem',
+    textAlign: 'center',
+    padding: 0,
+  },
+
+  inputError: {
+    borderColor: `${colors.DANGER} !important`,
+  },
+
   inputIndicator: {
     right: '1rem',
     top: '50%',
@@ -30,11 +41,6 @@ const theme = createTheme(name, (colors: *): * => ({
     borderRadius: '50%',
   },
 
-  modifiers: {
-    hasError: {
-      borderColor: `${colors.DANGER} !important`,
-    },
-  },
   defaults: {
   },
 }));
@@ -42,8 +48,7 @@ const theme = createTheme(name, (colors: *): * => ({
 const InputWrapperTag = createStyledTag(name, props => ({
   display: 'inline-flex',
   position: 'relative',
-
-  width: props.stretch ? '100%' : 'auto',
+  width: props.stretch && !props.square ? '100%' : 'auto',
 }));
 
 const InputIndicatorTag = createStyledTag(name, props => ({
@@ -51,21 +56,6 @@ const InputIndicatorTag = createStyledTag(name, props => ({
   position: 'absolute',
   ...getThemeStyle(props, name).inputIndicator,
 }));
-
-const InputTag = createStyledTag(name, props => ({
-  width: '100%',
-  outline: 'none',
-  paddingLeft: props.hasLeftIcon ? '3rem' : '1rem',
-  paddingRight: props.hasRightIcon ? '3rem' : '2rem',
-
-  ...getThemeStyle(props, name).input,
-
-  '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
-    '-webkit-appearance': 'none',
-    margin: 0,
-  },
-}));
-
 
 const iconsStyles = {
   position: 'absolute',
@@ -86,4 +76,26 @@ const InputRightIconTag = createStyledTag(name, {
   right: 0,
 });
 
-export { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, theme };
+const getInputStyles = props => ({
+  width: '100%',
+  outline: 'none',
+  paddingLeft: props.hasLeftIcon ? '3rem' : '1rem',
+  paddingRight: props.hasRightIcon ? '3rem' : '2rem',
+
+  ...getThemeStyle(props, name).input,
+  ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
+  ...getThemeStyleByCond(props, name, 'inputSquare', props.square),
+
+  '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
+    '-webkit-appearance': 'none',
+    margin: 0,
+  },
+});
+
+const InputTag = createStyledTag(name, props => ({
+  ...getInputStyles(props),
+}));
+
+const InputMaskStyled = styled(InputMask)(getInputStyles);
+
+export { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputMaskStyled, theme };

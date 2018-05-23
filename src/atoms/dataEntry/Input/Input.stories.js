@@ -15,8 +15,8 @@ export default (asStory) => {
       .add('with error', () => (
         <Input name="input" hasError onChange={ () => null } />
       ))
-      .add('with stretch', () => (
-        <Input name="input" stretch onChange={ () => null } />
+      .add('with stretch=false', () => (
+        <Input name="input" stretch={ false } onChange={ () => null } />
       ))
       .add('with left icon', () => (
         <Input name="input" leftIcon="i" />
@@ -25,11 +25,10 @@ export default (asStory) => {
         <Input name="input" rightIcon="i" />
       ))
       .add('with right icon and error', () => (
-        <Input name="input" rightIcon="i" hasError hideIndicator />
+        <Input name="input" rightIcon="i" hasError hideErrorIndicator />
       ))
       .add('with html auto-complete', () => (
         <Input name="input" autoComplete />
       ));
   });
 };
-

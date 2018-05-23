@@ -22,4 +22,15 @@ describe('<Input />', () => {
     expect(onChange.mock.calls[1][0]).toBe(42);
     expect(typeof onChange.mock.calls[1][0]).toBe('number');
   });
+
+  it('should not call onCahnge with max value', () => {
+    const onChange = jest.fn();
+    const wrapper = mount(<Input onChange={ onChange } maxLength={ 2 } />);
+
+    wrapper.find('input').simulate('change', { target: { value: '123' }});
+    expect(onChange).not.toHaveBeenCalled();
+
+    wrapper.find('input').simulate('change', { target: { value: '12' }});
+    expect(onChange.mock.calls[0][0]).toBe('12');
+  });
 });

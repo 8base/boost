@@ -38,7 +38,7 @@ type InputProps = {
 class Input extends PureComponent<InputProps> {
   static defaultProps = {
     type: 'text',
-    stretch: false,
+    stretch: true,
     hideIndicator: false,
     autoComplete: false,
     hasError: false,

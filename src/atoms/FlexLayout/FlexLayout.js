@@ -48,4 +48,4 @@ const Row = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction
 /** component provides interface to render flex column */
 const Column = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="column" />;
 
-export { Row, Column };
+export { Row, Column, FlexLayout };

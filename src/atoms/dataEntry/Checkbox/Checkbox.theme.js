@@ -1,3 +1,5 @@
+// @flow
+
 import { createStyledTag, createTheme, getThemeColors } from 'utils';
 
 const name = 'checkbox';
@@ -9,6 +11,10 @@ const theme = createTheme(name, (colors: *): * => ({
     },
     disabled: {
       backgroundColor: colors.LIGHT_GRAY4,
+    },
+    color: {
+      primary: { color: colors.PRIMARY },
+      secondary: { color: colors.SECONDARY },
     },
   },
 }));

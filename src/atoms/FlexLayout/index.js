@@ -1,3 +1,3 @@
 // @flow
 
-export { Row, Column } from './FlexLayout';
+export { Row, Column, FlexLayout } from './FlexLayout';

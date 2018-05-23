@@ -11,7 +11,7 @@ type CheckboxProps = {
   /** checkbox label */
   label?: string,
   /** color of the check */
-  color?: 'green' | 'blue' | 'primary',
+  color?: 'primary' | 'secondary',
   /** checked state */
   checked?: boolean,
   /** when error then show error styles */
@@ -46,8 +46,8 @@ class Checkbox extends PureComponent<CheckboxProps> {
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
         <CheckboxSquareTag hasError={ hasError } disabled={ disabled } tagName="div">
-          <CheckboxIconTag checked={ checked } tagName="div">
-            <Icon name="Check" color="primary" size="xs" />
+          <CheckboxIconTag checked={ checked } color={ color } tagName="div">
+            <Icon name="Check" size="xs" />
           </CheckboxIconTag>
         </CheckboxSquareTag>
         <CheckboxTag checked={ checked } onChange={ this.onChange } type="checkbox" tagName="input" />

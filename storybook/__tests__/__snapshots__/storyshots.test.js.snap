@@ -364,6 +364,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-0 {
@@ -371,7 +372,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -468,6 +468,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-0 {
@@ -475,7 +476,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -584,6 +584,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-0 {
@@ -591,7 +592,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -694,7 +694,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -731,6 +730,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 <div
@@ -826,6 +826,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-0 {
@@ -833,7 +834,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -889,6 +889,121 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: .25rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.emotion-3 {
+  display: none;
+}
+
+.emotion-4 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00bb6e;
+}
+
+<div
+  className="emotion-6"
+>
+  <label
+    className="emotion-5"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 14 11"
+            width="100%"
+          >
+            <path
+              d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      className="emotion-3"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="emotion-4"
+    >
+      Checkbox
+    </div>
+  </label>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
 .emotion-7 {
   margin: 2rem;
@@ -922,7 +1037,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -959,6 +1073,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-6 {
@@ -1071,6 +1186,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-0 {
@@ -1078,7 +1194,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -1175,7 +1290,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
   width: 1.4rem;
   height: 1.4rem;
 }
@@ -1224,6 +1338,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   line-height: 1;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  color: #4DA1FF;
 }
 
 .emotion-8 {
@@ -2645,6 +2760,1514 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
         type="text"
         value={undefined}
       />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
+.emotion-16 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+<div
+  className="emotion-16"
+>
+  <div
+    className="emotion-15"
+  >
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-3"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-3"
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-3"
+        onChange={[Function]}
+        type="radio"
+        value="3"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
+.emotion-16 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #7e868e;
+}
+
+<div
+  className="emotion-16"
+>
+  <div
+    className="emotion-15"
+  >
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-5"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-5"
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-5"
+        onChange={[Function]}
+        type="radio"
+        value="3"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
+.emotion-16 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-16"
+>
+  <div
+    className="emotion-15"
+  >
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-1"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-1"
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-1"
+        onChange={[Function]}
+        type="radio"
+        value="3"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
+.emotion-16 {
+  margin: 2rem;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-16"
+>
+  <div
+    className="emotion-15"
+  >
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-2"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-2"
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-2"
+        onChange={[Function]}
+        type="radio"
+        value="3"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with secondary color 1`] = `
+.emotion-5 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #00bb6e;
+}
+
+<div
+  className="emotion-5"
+>
+  <label
+    className="emotion-4"
+  >
+    <div
+      className="emotion-1"
+    >
+      <div
+        className="emotion-0"
+      />
+    </div>
+    <input
+      className="emotion-2"
+      name={undefined}
+      onChange={[Function]}
+      type="radio"
+      value="1"
+    />
+    <div
+      className="emotion-3"
+    >
+      Radio
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with selected value 1`] = `
+.emotion-5 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-5"
+>
+  <label
+    className="emotion-4"
+  >
+    <div
+      className="emotion-1"
+    >
+      <div
+        className="emotion-0"
+      />
+    </div>
+    <input
+      className="emotion-2"
+      name={undefined}
+      onChange={[Function]}
+      type="radio"
+      value="1"
+    />
+    <div
+      className="emotion-3"
+    >
+      Radio
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
+.emotion-16 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-16"
+>
+  <div
+    className="emotion-15"
+  >
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-4"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-5"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-4"
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+    <label
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        />
+      </div>
+      <input
+        className="emotion-2"
+        name="radio-group-4"
+        onChange={[Function]}
+        type="radio"
+        value="3"
+      />
+      <div
+        className="emotion-3"
+      >
+        Radio
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
+.emotion-17 {
+  margin: 2rem;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-16 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #4DA1FF;
+}
+
+.emotion-5 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-17"
+>
+  <div
+    className="emotion-16"
+  >
+    <div
+      className="emotion-15"
+    >
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-6"
+          onChange={[Function]}
+          type="radio"
+          value="1"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-5"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-6"
+          onChange={[Function]}
+          type="radio"
+          value="2"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-5"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-6"
+          onChange={[Function]}
+          type="radio"
+          value="3"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
+.emotion-19 {
+  margin: 2rem;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  display: none;
+}
+
+.emotion-3 {
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.emotion-18 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: auto;
+}
+
+.emotion-17 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-16 {
+  height: 1.2rem;
+  color: #eb4235;
+  line-height: 2;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #d0d7dd;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.emotion-0 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -.4rem;
+  margin-top: -.4rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: #4DA1FF;
+}
+
+<div
+  className="emotion-19"
+>
+  <div
+    className="emotion-18"
+  >
+    <div
+      className="emotion-15"
+    >
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-7"
+          onChange={[Function]}
+          type="radio"
+          value="1"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-7"
+          onChange={[Function]}
+          type="radio"
+          value="2"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+      <label
+        className="emotion-4"
+      >
+        <div
+          className="emotion-1"
+        >
+          <div
+            className="emotion-0"
+          />
+        </div>
+        <input
+          className="emotion-2"
+          name="radio-group-7"
+          onChange={[Function]}
+          type="radio"
+          value="3"
+        />
+        <div
+          className="emotion-3"
+        >
+          Radio
+        </div>
+      </label>
+    </div>
+    <div
+      className="emotion-17"
+    >
+      <div
+        className="emotion-16"
+      >
+        Required
+      </div>
     </div>
   </div>
 </div>
@@ -6624,15 +8247,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   margin: 2rem;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6640,6 +8254,15 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   display: inline-flex;
   width: 1.4rem;
   height: 1.4rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .emotion-2 {

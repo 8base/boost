@@ -2,4 +2,4 @@
 
 export { COLORS } from './colors';
 export { defaultTheme } from './defaultTheme';
-export { resetGlobal } from './reset';
+export { resetGlobal } from './resetGlobal';

@@ -9,6 +9,16 @@ type InputFieldProps = {|
   label?: string,
   /** when true then stretch to the maximal width */
   stretch?: boolean,
+  /** direction of the input with label */
+  direction?: 'row' | 'column',
+  /** set input width to the equal height */
+  square?: boolean,
+  /** max symbols in the input value*/
+  maxLength?: number,
+  /** when true then don't show error label */
+  hideErrorLabel?: boolean,
+  /** when true then don't show error indicator */
+  hideErrorIndicator?: boolean,
   /** form input object */
   input?: InputType,
   /** form meta object */
@@ -25,8 +35,13 @@ const theme = createTheme(name, {
 });
 
 const InputField = ({
+  square,
   label,
   stretch,
+  direction,
+  maxLength,
+  hideErrorLabel,
+  hideErrorIndicator,
   input = {},
   meta = {},
   ...rest
@@ -36,9 +51,12 @@ const InputField = ({
   const hasError = !!error && !!touched;
 
   return (
-    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
+    <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
       <Input
         { ...rest }
+        hideErrorIndicator={ hideErrorIndicator }
+        maxLength={ maxLength }
+        square={ square }
         name={ name }
         onChange={ onChange }
         value={ value }
@@ -49,7 +67,7 @@ const InputField = ({
 };
 
 InputField.defaultProps = {
-  stretch: false,
+  stretch: true,
   type: 'text',
   input: {},
   meta: {},

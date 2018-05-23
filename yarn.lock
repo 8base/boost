@@ -4722,7 +4722,7 @@ interpret@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
 
-invariant@^2.2.1, invariant@^2.2.2:
+invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -7440,6 +7440,13 @@ react-icons@^2.2.7:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.7.tgz#d7860826b258557510dac10680abea5ca23cf650"
   dependencies:
     react-icon-base "2.1.0"
+
+react-input-mask@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-input-mask/-/react-input-mask-2.0.1.tgz#fa577d24cd1e0c64d297904be618d0f4b893e773"
+  dependencies:
+    invariant "^2.2.4"
+    warning "^3.0.0"
 
 react-inspector@^2.2.2:
   version "2.3.0"

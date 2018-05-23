@@ -22,7 +22,18 @@ export default (asStory) => {
       ))
       .add('without label', () => (
         <InputField input={{ name: 'input', onChange }} />
+      ))
+      .add('without error label and indicator', () => (
+        <InputField hideErrorLabel hideErrorIndicator input={{ name: 'input', onChange }} meta={{ error: 'Required', touched: true }} />
+      ))
+      .add('with row direction', () => (
+        <InputField direction="row" label="Input" input={{ name: 'input', onChange }} />
+      ))
+      .add('with row direction stretch=false', () => (
+        <InputField direction="row" stretch={ false } label="Input" input={{ name: 'input', onChange }} />
+      ))
+      .add('with square input', () => (
+        <InputField direction="row" stretch={ false } square label="Input" input={{ name: 'input', onChange }} />
       ));
   });
 };
-

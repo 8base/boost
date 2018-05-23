@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'react-emotion';
 import { BrowserRouter } from 'react-router-dom';
 import { storiesOf } from '@storybook/react';
-import { components, ThemeProvider, defaultTheme, resetGlobal } from '../src';
+import * as boost from '../src';
 import { withInfo } from '@storybook/addon-info';
+
+const { ThemeProvider, defaultTheme, resetGlobal, ...components } = boost;
 
 resetGlobal();
 

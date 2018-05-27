@@ -19,7 +19,6 @@ const theme = createTheme(name, (colors: *): * => ({
   },
 }));
 
-
 const CheckboxWrapperTag = createStyledTag(name, {
   display: 'flex',
   alignItems: 'center',
@@ -33,7 +32,7 @@ const CheckboxSquareTag = createStyledTag(name, props => ({
 
   background: 'white',
   border: `1px solid ${getThemeColors(props).PRIMARY_BORDER_COLOR}`,
-  borderRadius: '.25rem',
+  borderRadius: '.5rem',
   transition: 'all .3s ease',
 }));
 
@@ -59,7 +58,7 @@ const CheckboxTextTag = createStyledTag(name, props => ({
   paddingLeft: '1.2rem',
   fontSize: '1.4rem',
   cursor: 'pointer',
-  color: getThemeColors(props).DARK_SECONDARY_TEXT_COLOR,
+  color: getThemeColors(props).SECONDARY_TEXT_COLOR,
 }));
 
 export { theme, CheckboxSquareTag, CheckboxTag, CheckboxWrapperTag, CheckboxTextTag, CheckboxIconTag };

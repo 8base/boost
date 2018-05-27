@@ -9,6 +9,8 @@ import { FormField } from '../FormField';
 type RadioGroupFieldProps = {
   /** Grop.Item components */
   children: React$Node,
+  /** when true then don't show error label */
+  hideErrorLabel?: boolean,
   /** form input object */
   input?: InputType,
   /** form meta object */
@@ -17,6 +19,7 @@ type RadioGroupFieldProps = {
 
 const RadioGroupField = ({
   children,
+  hideErrorLabel,
   input = {},
   meta = {},
   ...rest
@@ -24,7 +27,7 @@ const RadioGroupField = ({
   const { name, value, onChange } = input;
 
   return (
-    <FormField input={ input } meta={ meta }>
+    <FormField hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
       <Radio.Group
         { ...rest }
         name={ name }

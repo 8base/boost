@@ -13,6 +13,10 @@ type TextProps = {|
   color?: 'primary' | 'secondary' | 'red' | 'green' | 'blue',
   /** disabled text state*/
   disabled?: boolean,
+  /** set style to bold */
+  bold?: boolean,
+  /** possible sizes */
+  size?: PropSizes,
 |};
 
 const name = 'text';
@@ -40,6 +44,28 @@ const theme = createTheme(name, (colors: *): * => ({
     disabled: {
       color: colors.DISABLED_TEXT_COLOR,
     },
+
+    bold: {
+      fontWeight: 600,
+    },
+
+    size: {
+      xs: {
+        fontSize: '1rem',
+      },
+      sm: {
+        fontSize: '1.2rem',
+      },
+      md: {
+        fontSize: '1.4rem',
+      },
+      lg: {
+        fontSize: '1.6rem',
+      },
+      xl: {
+        fontSize: '1.8rem',
+      },
+    },
   },
   defaults: {
     kind: 'primary',
@@ -61,5 +87,10 @@ function Text({
   }: TextProps) {
   return <StyledTag { ...rest } tagName="span">{ children || text }</StyledTag>;
 }
+
+Text.defaultProps = {
+  size: 'md',
+  bold: false,
+};
 
 export { Text, theme };

@@ -15,13 +15,13 @@ const theme = createTheme(name, (colors) => ({
   modifiers: {
     kind: {
       primary: {
-        color: colors.DARK_PRIMARY_TEXT_COLOR,
+        color: colors.PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: colors.DARK_SECONDARY_TEXT_COLOR,
+        color: colors.SECONDARY_TEXT_COLOR,
       },
       disabled: {
-        color: colors.DARK_DISABLED_TEXT_COLOR,
+        color: colors.DISABLED_TEXT_COLOR,
       },
     },
   },

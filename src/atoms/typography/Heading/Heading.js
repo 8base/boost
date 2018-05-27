@@ -16,22 +16,22 @@ const theme = createTheme(name, (colors) => ({
   modifiers: {
     type: {
       h1: {
-        fontSize: '48px',
+        fontSize: '3.2rem',
       },
       h2: {
-        fontSize: '32px',
+        fontSize: '2.4rem',
       },
       h3: {
-        fontSize: '24px',
+        fontSize: '2rem',
       },
       h4: {
-        fontSize: '20px',
+        fontSize: '1.4rem',
       },
       h5: {
-        fontSize: '14px',
+        fontSize: '1.2rem',
       },
       h6: {
-        fontSize: '12px',
+        fontSize: '1rem',
       },
     },
     kind: {
@@ -67,8 +67,9 @@ const theme = createTheme(name, (colors) => ({
 }));
 
 const StyledTag = createStyledTag(name, {
-  fontFamily: 'Poppins',
-  lineHeight: 'normal',
+  lineHeight: 1.1,
+  fontFamily: 'Sofia Pro, sans-serif',
+  fontWeight: 400,
   margin: 0,
 });
 

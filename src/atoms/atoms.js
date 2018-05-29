@@ -2,6 +2,7 @@
 
 export { Avatar } from './Avatar';
 export { Button } from './Button';
+export { Card } from './Card';
 export { Checkbox } from './dataEntry/Checkbox';
 export { CheckboxField } from './dataEntry/CheckboxField';
 export { Dialog } from './Dialog';

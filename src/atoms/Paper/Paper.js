@@ -1,23 +1,39 @@
-import { PaperBody as Body, theme as paperBodyTheme } from './PaperBody';
-import { PaperHeader as Header, theme as paperHeaderTheme } from './PaperHeader';
-import { PaperPlate as Plate, theme as paperPlateTheme } from './PaperPlate';
-import { PaperSection as Section, theme as paperSectionTheme } from './PaperSection';
+// @flow
 
-const Paper = {
-  Body,
-  Header,
-  Plate,
-  Section,
-};
+import React from 'react';
 
-const theme = {
-  ...paperBodyTheme,
-  ...paperHeaderTheme,
-  ...paperPlateTheme,
-  ...paperSectionTheme,
-};
+import { createStyledTag, createTheme, getThemeStyle } from 'utils';
 
-export {
-  Paper,
-  theme,
-};
+type PaperProps = {|
+  children?: React$Node,
+|};
+
+const name = 'paper';
+
+const theme = createTheme(name, (colors: *): * => ({
+  paper: {
+    background: colors.WHITE,
+    color: colors.BLACK,
+    borderRadius: '.5rem',
+    boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
+  },
+
+  modifiers: {},
+  defaults: {},
+}));
+
+const StyledTag = createStyledTag(name, props => ({
+  display: 'flex',
+  flexDirection: 'column',
+
+  ...getThemeStyle(props, name).paper,
+}));
+
+function Paper({
+  children,
+  ...rest
+  }: PaperProps) {
+  return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
+}
+
+export { Paper, theme };

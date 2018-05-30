@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import styled from 'react-emotion';
 import { BrowserRouter } from 'react-router-dom';
@@ -23,7 +25,7 @@ const ThemeDecorator = (storyFn) => (
   </Root>
 );
 
-export const asStory = (name, module, init) => {
+export const asStory = (name: string, module: *, init: *) => {
   init(
     storiesOf(name, module)
       .addDecorator((story, context) => withInfo()(story)(context))

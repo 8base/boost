@@ -1,12 +1,18 @@
 // @flow
 
-import { theme as atomsTheme } from 'atoms';
+import { atomsTheme } from 'atoms';
+import { moleculesTheme } from 'molecules';
 import { COLORS } from './colors';
+
+const theme = {
+  ...atomsTheme,
+  ...moleculesTheme,
+};
 
 export const defaultTheme = {
   COLORS,
-  ...Object.keys(atomsTheme).reduce((result, atomName) => ({
+  ...Object.keys(theme).reduce((result, componentName) => ({
     ...result,
-    [atomName]: atomsTheme[atomName],
+    [componentName]: theme[componentName],
   }), {}),
 };

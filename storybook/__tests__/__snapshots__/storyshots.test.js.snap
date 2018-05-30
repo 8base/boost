@@ -48,27 +48,43 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -84,44 +100,622 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/Button with kind secondary 1`] = `
-.emotion-1 {
+exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
+.emotion-9 {
   margin: 2rem;
 }
 
 .emotion-0 {
-  border: 1px solid #EDF0F2;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-8 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-3 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-1 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
   background-color: #00bb6e;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-2 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  background-color: #FFFFFF;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-4 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-4 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-5 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-5:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-6 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-6:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-6 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
-  className="emotion-1"
+  className="emotion-9"
+>
+  <div
+    className="emotion-8"
+  >
+    <div
+      className="emotion-3"
+    >
+      <button
+        className="emotion-0"
+        onClick={undefined}
+        type="button"
+      >
+        Raised
+      </button>
+      <button
+        className="emotion-1"
+        onClick={undefined}
+        type="button"
+      >
+        Raised
+      </button>
+      <button
+        className="emotion-2"
+        onClick={undefined}
+        type="button"
+      >
+        Raised
+      </button>
+    </div>
+    <div
+      className="emotion-3"
+    >
+      <button
+        className="emotion-4"
+        onClick={undefined}
+        type="button"
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-5"
+        onClick={undefined}
+        type="button"
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-6"
+        onClick={undefined}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-3 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-0 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-2 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 5rem;
+  padding: 0 3rem;
+  border-radius: .5rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <button
+      className="emotion-0"
+      onClick={undefined}
+      type="button"
+    >
+      Small Button
+    </button>
+    <button
+      className="emotion-1"
+      onClick={undefined}
+      type="button"
+    >
+      Medium Button
+    </button>
+    <button
+      className="emotion-2"
+      onClick={undefined}
+      type="button"
+    >
+      Large Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Button with icon 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #00bb6e;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+<div
+  className="emotion-2"
 >
   <button
-    className="emotion-0"
+    className="emotion-1"
     onClick={undefined}
     type="button"
   >
-    Text
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <span>
+      Succes
+    </span>
   </button>
 </div>
 `;
@@ -132,55 +726,123 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
-  opacity: 0.5;
+  color: transparent;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+  position: relative;
   pointer-events: none;
 }
 
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-0:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -.75em;
+  margin-top: -.75em;
+  border: 4px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: animation-kshzfu .7s infinite linear;
+  animation: animation-kshzfu .7s infinite linear;
+}
+
 .emotion-1 {
-  border: 1px solid #EDF0F2;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
   background-color: #00bb6e;
-  color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
-  opacity: 0.5;
+  color: transparent;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+  position: relative;
   pointer-events: none;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -.75em;
+  margin-top: -.75em;
+  border: 4px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: animation-kshzfu .7s infinite linear;
+  animation: animation-kshzfu .7s infinite linear;
 }
 
 <div
@@ -193,6 +855,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   >
     Loading...
   </button>
+  <br />
   <button
     className="emotion-1"
     onClick={undefined}
@@ -209,28 +872,44 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -252,27 +931,43 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -294,27 +989,43 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1695,27 +2406,43 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 }
 
 .emotion-20 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-20:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-20 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-3 {
@@ -5736,27 +6463,43 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -5840,27 +6583,43 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -5944,27 +6703,43 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6048,27 +6823,43 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6151,27 +6942,43 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6255,27 +7062,43 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6359,28 +7182,44 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-1 {
@@ -6436,28 +7275,44 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-1 {
@@ -6541,27 +7396,43 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6643,27 +7514,43 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -6746,6 +7633,32 @@ exports[`Storyshots ATOMS/FlexLayout default Column 1`] = `
   margin: 2rem;
 }
 
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6794,32 +7707,6 @@ exports[`Storyshots ATOMS/FlexLayout default Column 1`] = `
   min-width: 100px;
   min-height: 100px;
   background-color: purple;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
 }
 
 <div
@@ -9402,27 +10289,43 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -9504,27 +10407,43 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -9615,27 +10534,43 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #4DA1FF;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-transform: capitalize;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-6 {
@@ -9672,34 +10607,6 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   display: none;
 }
 
-.emotion-2 {
-  border: 1px solid #EDF0F2;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
-  color: #323c47;
-  height: 40px;
-  padding: 0 20px;
-  border-radius: 5px;
-}
-
-.emotion-2:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
 <div
   className="emotion-11"
 >
@@ -9726,7 +10633,7 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
         onClick={[Function]}
       >
         <button
-          className="emotion-2"
+          className="emotion-0"
           onClick={undefined}
           type="button"
         >
@@ -9738,7 +10645,7 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
         onClick={[Function]}
       >
         <button
-          className="emotion-2"
+          className="emotion-0"
           onClick={undefined}
           type="button"
         >
@@ -9765,7 +10672,181 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules/Rating with default modifiers 1`] = `
+exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  background-color: #4DA1FF;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-1 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
+  background-color: #00bb6e;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-2 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-type: solid;
+  border-width: 1px;
+  border-color: #4DA1FF;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 > *:not(:last-child) {
+  border-right-color: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.emotion-3 > *:not(:first-child) {
+  border-left-color: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <button
+      className="emotion-0"
+      onClick={undefined}
+      type="button"
+    >
+      Button 1
+    </button>
+    <button
+      className="emotion-1"
+      onClick={undefined}
+      type="button"
+    >
+      Button 2
+    </button>
+    <button
+      className="emotion-2"
+      onClick={undefined}
+      type="button"
+    >
+      Button 2
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 .emotion-5 {
   margin: 2rem;
 }

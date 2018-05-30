@@ -1,42 +1,46 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle } from 'utils';
 
-type ButtonProps = {|
-  onClick?: (MouseEvent) => void,
-  text?: string,
-  stretch?: boolean,
-  loading?: boolean,
-  children?: React$Node,
-  type?: 'submit' | 'button',
-  kind?: 'primary' | 'secondary' | 'neutral',
-  size?: 'md',
+type ButtonGroupProps = {|
+  children: React$Node,
 |};
 
 const name = 'buttonGroup';
 
-const StyledTag = createStyledTag(name, {
+const theme = createTheme(name, {
 
+  buttonGroup: {
+    '& > *': {
+      '&:not(:last-child)': {
+        borderRightColor: 'none',
+        borderTopRightRadius: 0,
+        borderBottomRightRadius: 0,
+      },
+      '&:not(:first-child)': {
+        borderLeftColor: 'none',
+        borderTopLeftRadius: 0,
+        borderBottomLeftRadius: 0,
+      },
+    },
+  },
 });
 
-class Button extends Component<ButtonProps> {
-  render() {
-    const { text, children, type, onClick, loading, ...rest } = this.props;
+const ButtonGroupTag = createStyledTag(name, props => ({
+  display: 'flex',
+  flexDirection: props.direction,
 
-    return (
-      <StyledTag
-        { ...rest }
-        tagName="button"
-        type={ type }
-        loading={ loading }
-        onClick={ onClick }
-      >
-        { loading ? 'Loading...' : (children || text) }
-      </StyledTag>
-    );
-  }
-}
+  ...getThemeStyle(props, name).buttonGroup,
+}));
 
-export { Button, theme };
+const ButtonGroup = ({ children, ...rest }: ButtonGroupProps) => {
+  return (
+    <ButtonGroupTag { ...rest } tagName="div" >
+      { children }
+    </ButtonGroupTag>
+  );
+};
+
+export { ButtonGroup, theme };

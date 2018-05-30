@@ -9,7 +9,7 @@ type IconProps = {
   /** icon name */
   name: string,
   /** icon color */
-  color?: 'red' | 'green' | 'blue' | 'primary',
+  color?: 'red' | 'green' | 'blue' | 'primary' | 'secondary',
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'stretch',
 };
@@ -20,6 +20,7 @@ const theme : Theme<IconProps> = createTheme(name, (colors: *): * => ({
   modifiers: {
     color: {
       primary: { color: colors.PRIMARY },
+      secondary: { color: colors.SECONDARY },
       red: { color: colors.RED },
       green: { color: colors.GREEN },
       blue: { color: colors.BLUE },

@@ -1,2 +1,2 @@
 export * from './atoms';
-export { theme } from './theme';
+export { theme as atomsTheme } from './theme';

@@ -2528,11 +2528,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       <div
         className="emotion-2"
         name={undefined}
-        type="text"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          type="text"
           value={undefined}
         />
       </div>
@@ -2548,11 +2548,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       <div
         className="emotion-2"
         name={undefined}
-        type="text"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          type="text"
           value={undefined}
         />
       </div>
@@ -2568,11 +2568,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       <div
         className="emotion-2"
         name={undefined}
-        type="text"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          type="text"
           value={undefined}
         />
       </div>
@@ -2588,11 +2588,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       <div
         className="emotion-2"
         name={undefined}
-        type="text"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          type="text"
           value={undefined}
         />
       </div>
@@ -2608,11 +2608,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       <div
         className="emotion-2"
         name={undefined}
-        type="text"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          type="text"
           value={undefined}
         />
       </div>
@@ -2687,11 +2687,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   <div
     className="emotion-2"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
     <div
@@ -2747,11 +2747,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   <div
     className="emotion-1"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
   </div>
@@ -2823,11 +2823,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   <div
     className="emotion-2"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
     <div
@@ -2886,11 +2886,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
     className="emotion-1"
     name="input"
     placeholder="custom placeholder"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
   </div>
@@ -2962,11 +2962,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   <div
     className="emotion-2"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
     <div
@@ -3044,11 +3044,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   <div
     className="emotion-2"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
     <div
@@ -3106,11 +3106,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   <div
     className="emotion-1"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
   </div>
@@ -3163,11 +3163,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   <div
     className="emotion-1"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value="value"
     />
   </div>
@@ -3220,11 +3220,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   <div
     className="emotion-1"
     name="input"
-    type="text"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      type="text"
       value={undefined}
     />
   </div>
@@ -3335,11 +3335,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
     <div
       className="emotion-3"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
       <div
@@ -3437,11 +3437,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
       className="emotion-2"
       name="input"
       placeholder="placeholder"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -3526,11 +3526,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -3615,11 +3615,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction stretch=false
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -3706,11 +3706,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -3795,11 +3795,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -3884,11 +3884,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value="value"
       />
     </div>
@@ -3962,11 +3962,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
     <div
       className="emotion-1"
       name="input"
-      type="text"
     >
       <input
         className="emotion-0"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -4039,11 +4039,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
     <div
       className="emotion-1"
       name="input"
-      type="text"
     >
       <input
         className="emotion-0"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>
@@ -4128,11 +4128,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
     <div
       className="emotion-2"
       name="input"
-      type="text"
     >
       <input
         className="emotion-1"
         onChange={[Function]}
+        type="text"
         value={undefined}
       />
     </div>

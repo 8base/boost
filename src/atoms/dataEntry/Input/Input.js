@@ -68,7 +68,7 @@ class Input extends PureComponent<InputProps> {
   }
 
   render() {
-    const { hasError, hideErrorIndicator, autoComplete, stretch, errorText, leftIcon, rightIcon, mask, square, value, ...rest } = this.props;
+    const { hasError, hideErrorIndicator, autoComplete, stretch, errorText, leftIcon, rightIcon, mask, square, value, type, ...rest } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
 
@@ -80,6 +80,7 @@ class Input extends PureComponent<InputProps> {
       hasLeftIcon,
       hasRightIcon,
       autoComplete: autoComplete ? 'on' : 'off',
+      type,
     };
 
     return (

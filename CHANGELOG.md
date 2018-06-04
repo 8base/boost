@@ -1,3 +1,20 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/8base/boost/compare/v0.4.0...v0.4.1) (2018-06-04)
+
+
+### Bug Fixes
+
+* **atoms:** pass type to input ([65503e1](https://github.com/8base/boost/commit/65503e1))
+
+
+### Features
+
+* **atoms:** add Button features ([393aed0](https://github.com/8base/boost/commit/393aed0))
+* **atoms:** add secondary color to the Icon component ([ee9442a](https://github.com/8base/boost/commit/ee9442a))
+* **molecules:** add ButtonGroup component ([efe9706](https://github.com/8base/boost/commit/efe9706))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/8base/boost/compare/v0.3.2...v0.4.0) (2018-05-30)
 

@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from 'react';
 import { Target } from 'react-popper';
-import { compose } from 'recompose';
+import { compose, setDisplayName } from 'recompose';
 
 import { withDropdownContext } from './DropdownContext';
 import { DropdownHeadTag, DropdownPopperTarget } from './DropdownHead.theme';
@@ -26,6 +26,7 @@ type DropdownHeadProps = {|
 |}
 
 const dropdownHeadEnhancer: HOC<*, DropdownHeadProps> = compose(
+  setDisplayName('Dropdown.Head'),
   withDropdownContext,
 );
 

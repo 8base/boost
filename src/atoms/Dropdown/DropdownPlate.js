@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import fp from 'lodash/fp';
-import { compose, withStateHandlers, branch } from 'recompose';
+import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
 import { Manager } from 'react-popper';
 
 import { DropdownContext } from './DropdownContext';
@@ -91,6 +91,7 @@ class DropdownPlateBase extends Component<DropdownControlledProps> {
 
 /** if component has defaultOpen prop when will add the hoc with isOpen state */
 const dropDownEnhancer: { (any): React$ComponentType<DropdownControlledProps | DropdownUncontroledProps> } = compose(
+  setDisplayName('Dropdown.Plate'),
   branch(
     (props) => !fp.isNil(props.defaultOpen),
     withStateHandlers(

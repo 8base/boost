@@ -1,7 +1,7 @@
 // @flow
 import fp from 'lodash/fp';
 import React, { PureComponent, Fragment } from 'react';
-import { type HOC, compose, setDisplayName } from 'recompose';
+import { type HOC, compose, setDisplayName, withProps } from 'recompose';
 import onClickOutside from 'react-onclickoutside';
 import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
@@ -53,8 +53,11 @@ const setOffset = (offset?: PropSizes) => offset && offset !== 'none'
   : fp.identity;
 
 const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
-  setDisplayName('DropdownBody'),
+  setDisplayName('Dropdown.Body'),
   withDropdownContext,
+  withProps(
+    ({ dropdown: { outsideClickIgnoreClass }}) => ({ outsideClickIgnoreClass }),
+  ),
   onClickOutside,
 );
 
@@ -75,9 +78,9 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   }
 
   handleClickOutside = () => {
-    const { closeOnClickOutside, onCloseDropdown } = this.props;
+    const { closeOnClickOutside, dropdown: { closeDropdown }} = this.props;
 
-    closeOnClickOutside && onCloseDropdown && onCloseDropdown();
+    closeOnClickOutside && closeDropdown && closeDropdown();
   }
 
   getPopperPlacement = () => {

@@ -1,3 +1,13 @@
+<a name="0.4.2"></a>
+## [0.4.2](https://github.com/8base/boost/compare/v0.4.1...v0.4.2) (2018-06-07)
+
+
+### Bug Fixes
+
+* **atoms:** fix ignore outside click class in the Dropdown atom ([2ca065b](https://github.com/8base/boost/commit/2ca065b))
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/8base/boost/compare/v0.4.0...v0.4.1) (2018-06-04)
 

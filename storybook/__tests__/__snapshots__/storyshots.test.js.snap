@@ -69,7 +69,7 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -127,7 +127,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -219,7 +219,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
   background-color: #00bb6e;
@@ -259,7 +259,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #d0d7dd;
   background-color: #FFFFFF;
@@ -299,7 +299,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   color: #323c47;
@@ -338,7 +338,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
   color: #323c47;
@@ -377,7 +377,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #d0d7dd;
   color: #323c47;
@@ -481,7 +481,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -547,7 +547,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -587,7 +587,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -663,7 +663,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
   color: #323c47;
@@ -747,7 +747,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -807,7 +807,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
   background-color: #00bb6e;
@@ -893,7 +893,7 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -952,7 +952,7 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -1010,7 +1010,7 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -2427,7 +2427,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -6484,7 +6484,7 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -6527,10 +6527,8 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -6604,7 +6602,7 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -6647,10 +6645,8 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -6724,7 +6720,7 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -6767,10 +6763,8 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -6844,7 +6838,7 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -6889,7 +6883,7 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   border-radius: .25rem;
   background-color: #323c47;
   color: #fff;
-  padding: 0.5rem;
+  padding: 0px;
 }
 
 <div
@@ -6963,7 +6957,7 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7006,10 +7000,8 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -7083,7 +7075,7 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7126,10 +7118,8 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -7203,7 +7193,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7296,7 +7286,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7326,10 +7316,8 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 .emotion-2 {
@@ -7417,7 +7405,7 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7461,7 +7449,7 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
 .emotion-3 {
   border-radius: .25rem;
   background-color: transparent;
-  padding: 0.5rem;
+  padding: 0px;
 }
 
 <div
@@ -7535,7 +7523,7 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -7578,10 +7566,8 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
 
 .emotion-3 {
   border-radius: .25rem;
-  background-color: #fff;
-  border: 1px solid #d0d7dd;
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0px;
 }
 
 <div
@@ -10098,7 +10084,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
 }
 
@@ -10122,7 +10108,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
 }
 
@@ -10146,15 +10132,25 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
+  color: #323c47;
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin: 0;
+  color: #878c93;
 }
 
 .emotion-2 {
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
   color: #eb4235;
 }
@@ -10163,7 +10159,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
   color: #00bb6e;
 }
@@ -10172,7 +10168,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
   color: #1968cb;
 }
@@ -10187,7 +10183,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
       Primary Text
     </span>
     <span
-      className="emotion-0"
+      className="emotion-1"
     >
       Secondary Text
     </span>
@@ -10219,7 +10215,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
 }
 
@@ -10243,7 +10239,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
   color: #d0d7dd;
 }
@@ -10268,7 +10264,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
 }
 
@@ -10310,7 +10306,7 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -10428,7 +10424,7 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -10555,7 +10551,7 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -10699,7 +10695,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   background-color: #4DA1FF;
@@ -10739,7 +10735,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
   background-color: #00bb6e;
@@ -10779,7 +10775,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-type: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
   color: #323c47;
@@ -10861,7 +10857,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 1;
   margin: 0;
 }
 

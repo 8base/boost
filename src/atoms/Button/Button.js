@@ -147,7 +147,7 @@ const StyledTag = createStyledTag(name, props => ({
 
   ...getThemeStyle(props, name).button,
 
-  borderType: 'solid',
+  borderStyle: 'solid',
   borderWidth: '1px',
   borderColor: getBorderColor(props),
   backgroundColor: getBackgroundColor(props),

@@ -25,10 +25,10 @@ const theme = createTheme(name, (colors: *): * => ({
   modifiers: {
     color: {
       primary: {
-        color: colors.DARK_PRIMARY_TEXT_COLOR,
+        color: colors.PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: colors.DARK_SECONDARY_TEXT_COLOR,
+        color: colors.SECONDARY_TEXT_COLOR,
       },
       red: {
         color: colors.RED,
@@ -75,8 +75,8 @@ const theme = createTheme(name, (colors: *): * => ({
 const StyledTag = createStyledTag(name, {
   fontFamily: 'Poppins',
   fontWeight: 400,
-  fontSize: '14px',
-  lineHeight: '28px',
+  fontSize: '1.4rem',
+  lineHeight: 1,
   margin: 0,
 });
 

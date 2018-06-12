@@ -14,8 +14,8 @@ import { DropdownContext } from './DropdownContext';
  */
 type DropdownControlledProps = {|
   isOpen: boolean,
-  onCloseDropdown: () => void,
-  onOpenDropdown: () => void,
+  onCloseDropdown?: () => void,
+  onOpenDropdown?: () => void,
   children: React$Node,
 |}
 
@@ -30,7 +30,7 @@ type DropdownUncontroledProps = {|
 type DropdownContextData = {|
   isOpen: boolean,
   toggleDropdown: () => void,
-  closeDropdown: () => void,
+  closeDropdown?: () => void,
   targetWidth?: number,
   outsideClickIgnoreClass: string,
 |}
@@ -52,8 +52,8 @@ class DropdownPlateBase extends Component<DropdownControlledProps> {
     const { isOpen, onOpenDropdown, onCloseDropdown } = this.props;
 
     isOpen
-      ? fp.isFunction(onCloseDropdown) && onCloseDropdown()
-      : fp.isFunction(onOpenDropdown) && onOpenDropdown();
+      ? onCloseDropdown && onCloseDropdown()
+      : onOpenDropdown && onOpenDropdown();
   }
 
   setDropdownRef = (ref: *) => {

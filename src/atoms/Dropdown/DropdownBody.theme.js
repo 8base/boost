@@ -35,8 +35,8 @@ const theme = createTheme(name, {
     },
   },
   defaults: {
-    background: 'white',
-    padding: 'sm',
+    background: 'none',
+    padding: 'none',
     borderRadius: 'md',
   },
 });

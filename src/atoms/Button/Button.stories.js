@@ -8,7 +8,7 @@ export default (asStory) => {
       ))
       .add('with loading', () => (
         <React.Fragment>
-          <Button text="Text" loading />
+          <Button text="TextTextTextText" loading />
           <br />
           <Button text="Text" color="secondary" loading />
         </React.Fragment>

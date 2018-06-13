@@ -173,7 +173,7 @@ class Button extends Component<ButtonProps> {
         loading={ loading }
         onClick={ onClick }
       >
-        { loading ? 'Loading...' : (children || text) }
+        { children || text }
       </StyledTag>
     );
   }

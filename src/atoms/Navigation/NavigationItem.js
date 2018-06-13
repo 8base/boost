@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import { createStyledTag, createTheme } from 'utils';
 
@@ -8,6 +7,7 @@ type NavigationItemProps = {|
   kind?: 'primary' | 'secondary',
   label: string,
   to: string,
+  component?: React$Node,
 |};
 
 const name = 'navigationItem';
@@ -53,7 +53,7 @@ const StyledTag = createStyledTag(name, (props) => ({
 
   '&:hover::before, &.is-active::before': {
     content: '""',
-    backgroundColor: '#4DA1FF',
+    backgroundColor: props.theme.COLORS.PRIMARY,
     left: 0,
     top: 0,
     position: 'absolute',
@@ -64,9 +64,15 @@ const StyledTag = createStyledTag(name, (props) => ({
 
 function NavigationItem({
   label,
+  component,
   ...rest
   }: NavigationItemProps) {
-  return <StyledTag { ...rest } tagName={ NavLink } activeClassName="is-active">{ label }</StyledTag>;
+  return <StyledTag { ...rest } tagName={ component }>{ label }</StyledTag>;
 }
+
+NavigationItem.defaultProps = {
+  ...theme[name].defaults,
+  component: 'a',
+};
 
 export { NavigationItem, theme };

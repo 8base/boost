@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 
 import { createStyledTag, createTheme } from 'utils';
 
@@ -9,6 +8,7 @@ type LinkProps = {|
   to: string,
   text?: string,
   children?: React$Node,
+  component?: React$Node,
 |};
 
 const name = 'link';
@@ -21,20 +21,31 @@ const theme = createTheme(name, {
 });
 
 const StyledTag = createStyledTag(name, (props) => ({
+  cursor: 'pointer',
   color: props.theme.COLORS.PRIMARY_LINK_COLOR,
   fontFamily: 'Poppins',
-  fontSize: '14px',
+  fontSize: '1.4rem',
   fontWeight: 400,
-  lineHeight: '28px',
+  lineHeight: '1',
   textDecoration: 'none',
+
+  '&:hover': {
+    textDecoration: 'underline',
+  },
 }));
 
 function Link({
   text,
   children,
+  component,
   ...rest
   }: LinkProps) {
-  return <StyledTag { ...rest } tagName={ RouterLink }>{ text || children }</StyledTag>;
+  return <StyledTag { ...rest } tagName={ component }>{ text || children }</StyledTag>;
 }
+
+Link.defaultProps = {
+  ...theme[name].defaults,
+  component: 'a',
+};
 
 export { Link, theme };

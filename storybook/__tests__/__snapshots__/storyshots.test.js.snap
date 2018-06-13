@@ -92,8 +92,8 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 >
   <button
     className="emotion-0"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     Children
   </button>
@@ -145,32 +145,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-8 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -195,6 +169,32 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
 
 .emotion-3 > *:not(:last-child) {
   margin-right: 1.5rem;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-8 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-1 {
@@ -405,22 +405,22 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
     >
       <button
         className="emotion-0"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Raised
       </button>
       <button
         className="emotion-1"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Raised
       </button>
       <button
         className="emotion-2"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Raised
       </button>
@@ -430,22 +430,22 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
     >
       <button
         className="emotion-4"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Outlined
       </button>
       <button
         className="emotion-5"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Outlined
       </button>
       <button
         className="emotion-6"
-        onClick={undefined}
-        type="button"
+        onClick={[Function]}
+        type={undefined}
       >
         Outlined
       </button>
@@ -613,24 +613,126 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   >
     <button
       className="emotion-0"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Small Button
     </button>
     <button
       className="emotion-1"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Medium Button
     </button>
     <button
       className="emotion-2"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Large Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-3 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-0 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  background-color: #d0d7dd;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.emotion-0:hover {
+  box-shadow: none;
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <button
+      className="emotion-0"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Disabled
+    </button>
+    <button
+      className="emotion-0"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Disabled
+    </button>
+    <button
+      className="emotion-0"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Disabled
     </button>
   </div>
 </div>
@@ -695,8 +797,8 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
 >
   <button
     className="emotion-1"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     <div
       className="emotion-0"
@@ -850,16 +952,16 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
 >
   <button
     className="emotion-0"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     TextTextTextText
   </button>
   <br />
   <button
     className="emotion-1"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     Text
   </button>
@@ -917,8 +1019,8 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
 >
   <button
     className="emotion-0"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     Stretch
   </button>
@@ -975,7 +1077,7 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
 >
   <button
     className="emotion-0"
-    onClick={undefined}
+    onClick={[Function]}
     type="submit"
   >
     Submit
@@ -1033,8 +1135,8 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
 >
   <button
     className="emotion-0"
-    onClick={undefined}
-    type="button"
+    onClick={[Function]}
+    type={undefined}
   >
     Text
   </button>
@@ -2619,7 +2721,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
     </div>
     <button
       className="emotion-20"
-      onClick={undefined}
+      onClick={[Function]}
       type="submit"
     >
       Submit
@@ -6544,8 +6646,8 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -6662,8 +6764,8 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -6780,8 +6882,8 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -6899,8 +7001,8 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7017,8 +7119,8 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7135,8 +7237,8 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7248,8 +7350,8 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7347,8 +7449,8 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7465,8 +7567,8 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -7583,8 +7685,8 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Head
         </button>
@@ -10325,8 +10427,8 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-1
         </button>
@@ -10337,8 +10439,8 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-2
         </button>
@@ -10447,8 +10549,8 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-1
         </button>
@@ -10459,8 +10561,8 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-2
         </button>
@@ -10574,8 +10676,8 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-1
         </button>
@@ -10586,8 +10688,8 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-2
         </button>
@@ -10598,8 +10700,8 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
       >
         <button
           className="emotion-0"
-          onClick={undefined}
-          type="button"
+          onClick={[Function]}
+          type={undefined}
         >
           Tab-3
         </button>
@@ -10775,22 +10877,22 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   >
     <button
       className="emotion-0"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Button 1
     </button>
     <button
       className="emotion-1"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Button 2
     </button>
     <button
       className="emotion-2"
-      onClick={undefined}
-      type="button"
+      onClick={[Function]}
+      type={undefined}
     >
       Button 2
     </button>

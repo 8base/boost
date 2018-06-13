@@ -14,8 +14,10 @@ type ButtonProps = {|
   children?: React$Node,
   /** then true when stretch to the parent width */
   stretch?: boolean,
-  /** then true when show laoder */
+  /** then true when show loader */
   loading?: boolean,
+ /** then true when disable button */
+  disabled?: boolean,
   /** possible button types */
   type?: 'submit' | 'button',
   /** possible button kind */
@@ -33,7 +35,7 @@ const spinner = keyframes`
   to   { transform: rotate(360deg) }
 `;
 
-const theme = createTheme(name, {
+const theme = createTheme(name, (colors: *): * => ({
   button: {
     cursor: 'pointer',
     fontSize: '1.4rem',
@@ -69,6 +71,16 @@ const theme = createTheme(name, {
         borderRadius: '.5rem',
       },
     },
+    disabled: {
+      backgroundColor: colors.LIGHT_GRAY1,
+      borderColor: colors.LIGHT_GRAY1,
+      color: colors.WHITE,
+      cursor: 'default',
+
+      '&:hover': {
+        boxShadow: 'none',
+      },
+    },
     loading: {
       position: 'relative',
       color: 'transparent',
@@ -101,7 +113,7 @@ const theme = createTheme(name, {
     color: 'primary',
     size: 'md',
   },
-});
+}));
 
 const getBackgroundColor = (props: ButtonProps) => {
   if (props.variant === 'raised') {
@@ -156,11 +168,15 @@ const StyledTag = createStyledTag(name, props => ({
 
 class Button extends Component<ButtonProps> {
   static defaultProps = {
-    type: 'button',
-    color: 'primary',
-    variant: 'raised',
+    ...theme[name].defaults,
     size: 'md',
   };
+
+  onClick = (event: *) => {
+    const { onClick, disabled } = this.props;
+
+    !disabled && onClick && onClick(event);
+  }
 
   render() {
     const { text, children, type, onClick, loading, ...rest } = this.props;
@@ -171,7 +187,7 @@ class Button extends Component<ButtonProps> {
         tagName="button"
         type={ type }
         loading={ loading }
-        onClick={ onClick }
+        onClick={ this.onClick }
       >
         { children || text }
       </StyledTag>

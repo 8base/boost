@@ -1,3 +1,15 @@
+<a name="0.4.3"></a>
+## [0.4.3](https://github.com/8base/boost/compare/v0.4.2...v0.4.3) (2018-06-13)
+
+
+### Bug Fixes
+
+* **atoms:** fix Button styles ([6e39139](https://github.com/8base/boost/commit/6e39139))
+* **atoms:** fix Text colors ([2244a92](https://github.com/8base/boost/commit/2244a92))
+* **atoms:** set default padding and background to the 'none' value ([445d2f8](https://github.com/8base/boost/commit/445d2f8))
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/8base/boost/compare/v0.4.1...v0.4.2) (2018-06-07)
 

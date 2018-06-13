@@ -1,3 +1,19 @@
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/8base/boost/compare/v0.4.3...v0.4.4) (2018-06-13)
+
+
+### Bug Fixes
+
+* **atoms:** fix button loading styles ([4c7a689](https://github.com/8base/boost/commit/4c7a689))
+* **atoms:** remove react-router dep from Link component ([5859b25](https://github.com/8base/boost/commit/5859b25))
+
+
+### Features
+
+* **atoms:** add disabled prop to the button ([90bb051](https://github.com/8base/boost/commit/90bb051))
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/8base/boost/compare/v0.4.2...v0.4.3) (2018-06-13)
 

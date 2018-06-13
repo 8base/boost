@@ -19,6 +19,13 @@ export default (asStory) => {
       .add('with submit type', () => (
         <Button text="Submit" type="submit" />
       ))
+      .add('with disabled modifiers', () => (
+        <Row>
+          <Button text="Disabled" color="primary" disabled />
+          <Button text="Disabled" color="secondary" disabled />
+          <Button text="Disabled" color="neutral" disabled />
+        </Row>
+      ))
       .add('with custom colors and variant', () => (
         <Column>
           <Row>

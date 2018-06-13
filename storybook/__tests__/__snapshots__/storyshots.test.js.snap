@@ -853,7 +853,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
     onClick={undefined}
     type="button"
   >
-    Loading...
+    TextTextTextText
   </button>
   <br />
   <button
@@ -861,7 +861,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
     onClick={undefined}
     type="button"
   >
-    Loading...
+    Text
   </button>
 </div>
 `;
@@ -9088,11 +9088,8 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
       className="emotion-1"
     >
       <a
-        aria-current={false}
         className="emotion-0"
-        href="/profile"
-        onClick={[Function]}
-        style={undefined}
+        to="/profile"
       >
         My Profile
       </a>
@@ -9101,11 +9098,8 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
       className="emotion-1"
     >
       <a
-        aria-current={false}
         className="emotion-0"
-        href="/messages"
-        onClick={[Function]}
-        style={undefined}
+        to="/messages"
       >
         Messages
       </a>
@@ -9114,38 +9108,26 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
       className="emotion-1"
     >
       <a
-        aria-current={false}
         className="emotion-0"
-        href="/network"
-        onClick={[Function]}
-        style={undefined}
+        to="/network"
       >
         Network
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/network/hired-developers"
-        onClick={[Function]}
-        style={undefined}
+        to="/network/hired-developers"
       >
         Hired Developers
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/network/my-employers"
-        onClick={[Function]}
-        style={undefined}
+        to="/network/my-employers"
       >
         My Employers
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/network/open-invitations"
-        onClick={[Function]}
-        style={undefined}
+        to="/network/open-invitations"
       >
         Open Invitations
       </a>
@@ -9154,56 +9136,38 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
       className="emotion-1"
     >
       <a
-        aria-current={false}
         className="emotion-0"
-        href="/jobs"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs"
       >
         Jobs
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/jobs/posted"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs/posted"
       >
         Posted
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/jobs/my-active-jobs"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs/my-active-jobs"
       >
         My Active Jobs
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/jobs/active-requests"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs/active-requests"
       >
         Active Requests
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/jobs/applied"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs/applied"
       >
         Applied
       </a>
       <a
-        aria-current={false}
         className="emotion-5"
-        href="/jobs/saved"
-        onClick={[Function]}
-        style={undefined}
+        to="/jobs/saved"
       >
         Saved
       </a>
@@ -9276,56 +9240,38 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
     className="emotion-6"
   >
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/jobs"
-      onClick={[Function]}
-      style={undefined}
+      to="/jobs"
     >
       Jobs
     </a>
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/posted"
-      onClick={[Function]}
-      style={undefined}
+      to="/posted"
     >
       Posted
     </a>
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/my-active-jobs"
-      onClick={[Function]}
-      style={undefined}
+      to="/my-active-jobs"
     >
       My Active Jobs
     </a>
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/active-requests"
-      onClick={[Function]}
-      style={undefined}
+      to="/active-requests"
     >
       Active Requests
     </a>
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/applied"
-      onClick={[Function]}
-      style={undefined}
+      to="/applied"
     >
       Applied
     </a>
     <a
-      aria-current={false}
       className="emotion-0"
-      href="/saved"
-      onClick={[Function]}
-      style={undefined}
+      to="/saved"
     >
       Saved
     </a>
@@ -9940,13 +9886,19 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
 }
 
 .emotion-1 {
+  cursor: pointer;
   color: #4DA1FF;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 <div
@@ -9954,8 +9906,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
 >
   <a
     className="emotion-1"
-    href="https://randomuser.me/api/portraits/women/87.jpg"
-    onClick={[Function]}
+    to="https://randomuser.me/api/portraits/women/87.jpg"
   >
     <img
       className="emotion-0"
@@ -9971,13 +9922,19 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with text 1`] = `
 }
 
 .emotion-0 {
+  cursor: pointer;
   color: #4DA1FF;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 <div
@@ -9985,8 +9942,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with text 1`] = `
 >
   <a
     className="emotion-0"
-    href="https://randomuser.me/api/portraits/women/76.jpg"
-    onClick={[Function]}
+    to="https://randomuser.me/api/portraits/women/76.jpg"
   >
     Link
   </a>

@@ -1454,6 +1454,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
       className="emotion-2"
     >
       <div
+        checked={true}
         className="emotion-1"
       >
         <div
@@ -1474,6 +1475,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
       </div>
     </div>
     <input
+      checked={true}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -1571,6 +1573,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
       className="emotion-2"
     >
       <div
+        checked={true}
         className="emotion-1"
       >
         <div
@@ -1591,6 +1594,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
       </div>
     </div>
     <input
+      checked={true}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -1688,6 +1692,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
       className="emotion-2"
     >
       <div
+        checked={true}
         className="emotion-1"
       >
         <div
@@ -1708,6 +1713,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
       </div>
     </div>
     <input
+      checked={true}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -1804,6 +1810,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
       className="emotion-2"
     >
       <div
+        checked={false}
         className="emotion-1"
       >
         <div
@@ -1824,6 +1831,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
       </div>
     </div>
     <input
+      checked={false}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -1920,6 +1928,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
       className="emotion-2"
     >
       <div
+        checked={true}
         className="emotion-1"
       >
         <div
@@ -1940,6 +1949,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
       </div>
     </div>
     <input
+      checked={true}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -2034,6 +2044,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
       className="emotion-2"
     >
       <div
+        checked={true}
         className="emotion-1"
       >
         <div
@@ -2054,6 +2065,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
       </div>
     </div>
     <input
+      checked={true}
       className="emotion-3"
       onChange={[Function]}
       type="checkbox"
@@ -2170,6 +2182,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
         className="emotion-2"
       >
         <div
+          checked={false}
           className="emotion-1"
         >
           <div
@@ -2190,6 +2203,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
         </div>
       </div>
       <input
+        checked={false}
         className="emotion-3"
         onChange={[Function]}
         type="checkbox"
@@ -2307,6 +2321,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
         className="emotion-2"
       >
         <div
+          checked={true}
           className="emotion-1"
         >
           <div
@@ -2327,6 +2342,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
         </div>
       </div>
       <input
+        checked={true}
         className="emotion-3"
         onChange={[Function]}
         type="checkbox"
@@ -2459,6 +2475,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
         className="emotion-2"
       >
         <div
+          checked={false}
           className="emotion-1"
         >
           <div
@@ -2479,6 +2496,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
         </div>
       </div>
       <input
+        checked={false}
         className="emotion-3"
         onChange={[Function]}
         type="checkbox"

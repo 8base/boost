@@ -35,6 +35,7 @@ type TagProps = {|
 |};
 
 const COLLECTED_PROPS = [
+  'checked',
   'children',
   'className',
   'cols',

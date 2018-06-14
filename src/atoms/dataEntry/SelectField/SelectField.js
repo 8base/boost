@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createTheme } from 'utils';
 import { Select } from '../Select';
-import { FormField } from '../FormField';
+import { FormField } from '../Form/FormField';
 
 type SelectFieldProps = {|
   /** array of select options */

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createTheme } from 'utils';
 import { Input } from '../Input';
-import { FormField } from '../FormField';
+import { FormField } from '../Form/FormField';
 
 type InputFieldProps = {|
   /** field label */

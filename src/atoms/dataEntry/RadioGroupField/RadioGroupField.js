@@ -4,7 +4,7 @@ import React from 'react';
 
 import type { InputType, MetaType } from '../formTypes';
 import { Radio } from '../Radio';
-import { FormField } from '../FormField';
+import { FormField } from '../Form/FormField';
 
 type RadioGroupFieldProps = {
   /** Grop.Item components */

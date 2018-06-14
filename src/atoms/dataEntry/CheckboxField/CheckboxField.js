@@ -4,7 +4,7 @@ import React from 'react';
 
 import type { InputType, MetaType } from '../formTypes';
 import { Checkbox } from '../Checkbox';
-import { FormField } from '../FormField';
+import { FormField } from '../Form/FormField';
 
 type CheckboxFieldProps = {|
   /** field label */

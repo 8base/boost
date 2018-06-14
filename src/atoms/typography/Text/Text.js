@@ -68,7 +68,9 @@ const theme = createTheme(name, (colors: *): * => ({
     },
   },
   defaults: {
-    kind: 'primary',
+    color: 'primary',
+    size: 'md',
+    bold: false,
   },
 }));
 
@@ -89,8 +91,7 @@ function Text({
 }
 
 Text.defaultProps = {
-  size: 'md',
-  bold: false,
+  ...theme[name].defaults,
 };
 
 export { Text, theme };

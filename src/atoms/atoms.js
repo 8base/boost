@@ -9,7 +9,6 @@ export { Dialog } from './Dialog';
 export { Divider } from './Divider';
 export { Dropdown } from './Dropdown';
 export { Form } from './dataEntry/Form';
-export { FormSubTitle } from './dataEntry/FormSubTitle';
 export { Grid } from './Grid';
 export { Heading } from './typography/Heading';
 export { Icon } from './typography/Icon';

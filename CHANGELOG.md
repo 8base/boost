@@ -1,3 +1,13 @@
+<a name="0.4.5"></a>
+## [0.4.5](https://github.com/8base/boost/compare/v0.4.4...v0.4.5) (2018-06-14)
+
+
+### Bug Fixes
+
+* **utils:** add checked prop to Tag prop list ([29ae097](https://github.com/8base/boost/commit/29ae097))
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/8base/boost/compare/v0.4.3...v0.4.4) (2018-06-13)
 

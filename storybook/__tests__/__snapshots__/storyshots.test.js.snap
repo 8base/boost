@@ -168,7 +168,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
 }
 
 .emotion-3 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .emotion-8 {
@@ -194,7 +194,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
 }
 
 .emotion-8 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .emotion-1 {
@@ -522,7 +522,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
 }
 
 .emotion-3 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .emotion-0 {
@@ -664,7 +664,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
 }
 
 .emotion-3 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .emotion-0 {
@@ -2520,49 +2520,297 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
+.emotion-26 {
+  margin: 2rem;
+}
+
+.emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-24 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.emotion-25 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-1 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-2 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-13 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  font-weight: 600;
+}
+
+<div
+  className="emotion-26"
+>
+  <form
+    className="emotion-25"
+    onSubmit={undefined}
+  >
+    <div
+      className="emotion-24"
+    >
+      <div
+        className="emotion-13"
+      >
+        <span
+          className="emotion-0"
+        >
+          Some section 1
+        </span>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-1"
+          >
+            Jobs
+          </div>
+          <div
+            className="emotion-3"
+            name="curple"
+          >
+            <input
+              className="emotion-2"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-1"
+          >
+            Posted
+          </div>
+          <div
+            className="emotion-3"
+            name="provect"
+          >
+            <input
+              className="emotion-2"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-1"
+          >
+            My Active Jobs
+          </div>
+          <div
+            className="emotion-3"
+            name="inlaying"
+          >
+            <input
+              className="emotion-2"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="emotion-13"
+      >
+        <span
+          className="emotion-0"
+        >
+          Some section 2
+        </span>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-1"
+          >
+            Active Requests
+          </div>
+          <div
+            className="emotion-3"
+            name="saccharifier"
+          >
+            <input
+              className="emotion-2"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-1"
+          >
+            Applied
+          </div>
+          <div
+            className="emotion-3"
+            name="inertance"
+          >
+            <input
+              className="emotion-2"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 .emotion-22 {
   margin: 2rem;
 }
 
 .emotion-20 {
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4DA1FF;
-  background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
-  height: 4rem;
-  padding: 0 2rem;
-  border-radius: .5rem;
-}
-
-.emotion-20:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
 }
 
 .emotion-20 > *:not(:last-child) {
-  margin-right: .5rem;
+  margin-bottom: 1rem;
 }
 
 .emotion-3 {
@@ -2586,6 +2834,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -ms-flex: 1;
   flex: 1;
   height: 100%;
+  width: 100%;
 }
 
 .emotion-0 {
@@ -2635,115 +2884,112 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 >
   <form
     className="emotion-21"
-    onSubmit={[Function]}
+    onSubmit={undefined}
   >
     <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-0"
-      >
-        Jobs
-      </div>
-      <div
-        className="emotion-2"
-        name={undefined}
-      >
-        <input
-          className="emotion-1"
-          onChange={[Function]}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-    <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-0"
-      >
-        Posted
-      </div>
-      <div
-        className="emotion-2"
-        name={undefined}
-      >
-        <input
-          className="emotion-1"
-          onChange={[Function]}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-    <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-0"
-      >
-        My Active Jobs
-      </div>
-      <div
-        className="emotion-2"
-        name={undefined}
-      >
-        <input
-          className="emotion-1"
-          onChange={[Function]}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-    <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-0"
-      >
-        Active Requests
-      </div>
-      <div
-        className="emotion-2"
-        name={undefined}
-      >
-        <input
-          className="emotion-1"
-          onChange={[Function]}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-    <div
-      className="emotion-3"
-    >
-      <div
-        className="emotion-0"
-      >
-        Applied
-      </div>
-      <div
-        className="emotion-2"
-        name={undefined}
-      >
-        <input
-          className="emotion-1"
-          onChange={[Function]}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-    <button
       className="emotion-20"
-      onClick={[Function]}
-      type="submit"
     >
-      Submit
-    </button>
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-0"
+        >
+          Jobs
+        </div>
+        <div
+          className="emotion-2"
+          name="curple"
+        >
+          <input
+            className="emotion-1"
+            onChange={[Function]}
+            type="text"
+            value={undefined}
+          />
+        </div>
+      </div>
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-0"
+        >
+          Posted
+        </div>
+        <div
+          className="emotion-2"
+          name="provect"
+        >
+          <input
+            className="emotion-1"
+            onChange={[Function]}
+            type="text"
+            value={undefined}
+          />
+        </div>
+      </div>
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-0"
+        >
+          My Active Jobs
+        </div>
+        <div
+          className="emotion-2"
+          name="inlaying"
+        >
+          <input
+            className="emotion-1"
+            onChange={[Function]}
+            type="text"
+            value={undefined}
+          />
+        </div>
+      </div>
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-0"
+        >
+          Active Requests
+        </div>
+        <div
+          className="emotion-2"
+          name="saccharifier"
+        >
+          <input
+            className="emotion-1"
+            onChange={[Function]}
+            type="text"
+            value={undefined}
+          />
+        </div>
+      </div>
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-0"
+        >
+          Applied
+        </div>
+        <div
+          className="emotion-2"
+          name="inertance"
+        >
+          <input
+            className="emotion-1"
+            onChange={[Function]}
+            type="text"
+            value={undefined}
+          />
+        </div>
+      </div>
+    </div>
   </form>
 </div>
 `;
@@ -4448,32 +4694,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
   margin: 2rem;
 }
 
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-15 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .emotion-2 {
   display: none;
 }
@@ -4517,6 +4737,32 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
   padding-left: 1.2rem;
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-0 {
@@ -4631,32 +4877,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
   margin: 2rem;
 }
 
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-15 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .emotion-2 {
   display: none;
 }
@@ -4714,6 +4934,32 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
   padding-left: 1.2rem;
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-5 {
@@ -5183,32 +5429,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
   margin: 2rem;
 }
 
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-15 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .emotion-2 {
   display: none;
 }
@@ -5266,6 +5486,32 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
   padding-left: 1.2rem;
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-0 {
@@ -7762,7 +8008,7 @@ exports[`Storyshots ATOMS/FlexLayout default Column 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .emotion-0 {
@@ -7873,7 +8119,7 @@ exports[`Storyshots ATOMS/FlexLayout default Row 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .emotion-0 {
@@ -8034,7 +8280,7 @@ exports[`Storyshots ATOMS/FlexLayout with custom alignContent 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 <div
@@ -8070,32 +8316,6 @@ exports[`Storyshots ATOMS/FlexLayout with custom alignContent 1`] = `
 exports[`Storyshots ATOMS/FlexLayout with custom gap 1`] = `
 .emotion-12 {
   margin: 2rem;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-5 > *:not(:last-child) {
-  margin-right: 1.5rem;
 }
 
 .emotion-0 {
@@ -8146,6 +8366,32 @@ exports[`Storyshots ATOMS/FlexLayout with custom gap 1`] = `
   min-width: 100px;
   min-height: 100px;
   background-color: purple;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
 .emotion-11 {
@@ -8308,7 +8554,7 @@ exports[`Storyshots ATOMS/FlexLayout with custom justifyContent 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 <div
@@ -8423,7 +8669,7 @@ exports[`Storyshots ATOMS/FlexLayout with custom offset 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 <div
@@ -8648,7 +8894,7 @@ exports[`Storyshots ATOMS/FlexLayout with pointer cursor 1`] = `
 }
 
 .emotion-5 > *:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 <div
@@ -9445,7 +9691,7 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
 }
 
 .emotion-0 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 <div
@@ -10162,6 +10408,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
+  color: #323c47;
 }
 
 <div
@@ -10182,10 +10429,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
+  color: #323c47;
 }
 
 <div
@@ -10206,7 +10454,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10215,7 +10463,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-1 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10224,7 +10472,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-2 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10233,7 +10481,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-3 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10242,7 +10490,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-4 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10289,10 +10537,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 1;
   margin: 0;
+  color: #323c47;
 }
 
 <div
@@ -10313,7 +10562,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
@@ -10338,10 +10587,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
+  color: #323c47;
 }
 
 <div
@@ -10931,10 +11181,11 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 
 .emotion-2 {
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   margin: 0;
+  color: #323c47;
 }
 
 .emotion-4 {

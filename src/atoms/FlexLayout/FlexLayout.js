@@ -38,7 +38,7 @@ type FlexLayoutProps = {
 }
 
 const defaultProps = {
-  gap: 'md',
+  gap: 'sm',
 };
 
 /** component provides interface to render flex layout */
@@ -46,12 +46,13 @@ const FlexLayout = (props: FlexLayoutProps) => {
   return <FlexLayoutTag { ...props } tagName="div" />;
 };
 
+FlexLayout.defaultProps = defaultProps;
+
 /** component provides interface to render flex row */
 const Row = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="row" />;
-Row.defaultProps = defaultProps;
 
 /** component provides interface to render flex column */
 const Column = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="column" />;
-Column.defaultProps = defaultProps;
 
 export { Row, Column, FlexLayout };
+export type { FlexLayoutProps };

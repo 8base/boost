@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createTheme } from 'utils';
 import { TextArea } from '../TextArea';
-import { FormField } from '../FormField';
+import { FormField } from '../Form/FormField';
 
 type TextAreaFieldProps = {|
   /** number of textarea columns */

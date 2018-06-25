@@ -1,3 +1,18 @@
+<a name="0.4.7"></a>
+## [0.4.7](https://github.com/8base/boost/compare/v0.4.6...v0.4.7) (2018-06-25)
+
+
+### Bug Fixes
+
+* **atoms:** fix button loader color ([fa77a7b](https://github.com/8base/boost/commit/fa77a7b))
+
+
+### Features
+
+* **atoms:** add align prop to the Text component ([5f5ceb7](https://github.com/8base/boost/commit/5f5ceb7))
+
+
+
 <a name="0.4.6"></a>
 ## [0.4.6](https://github.com/8base/boost/compare/v0.4.5...v0.4.6) (2018-06-18)
 

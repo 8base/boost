@@ -17,6 +17,8 @@ type TextProps = {|
   bold?: boolean,
   /** possible sizes */
   size?: PropSizes,
+  /** text align */
+  align?: 'left' | 'center' | 'right',
 |};
 
 const name = 'text';
@@ -39,6 +41,12 @@ const theme = createTheme(name, (colors: *): * => ({
       blue: {
         color: colors.BLUE,
       },
+    },
+
+    align: {
+      left: { textAlign: 'left' },
+      right: { textAlign: 'right' },
+      center: { textAlign: 'center' },
     },
 
     disabled: {
@@ -78,7 +86,7 @@ const StyledTag = createStyledTag(name, {
   fontFamily: 'Poppins',
   fontWeight: 400,
   fontSize: '1.4rem',
-  lineHeight: 1,
+  lineHeight: 1.4,
   margin: 0,
 });
 

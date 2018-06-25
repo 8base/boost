@@ -21,6 +21,15 @@ export default (asStory: *) => {
           <Text color="blue">Blue Text</Text>
         </div>
       ))
+      .add('with align modifiers ', () => (
+        <div style={{ width: '300px', display: ' flex', flexDirection: 'column' }}>
+          <Text align="left">LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.</Text>
+          <br />
+          <Text align="right">LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.</Text>
+          <br />
+          <Text align="center">LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.</Text>
+        </div>
+      ))
       .add('with disabled modifier', () => (
         <Text disabled>Disabled Text</Text>
       ))

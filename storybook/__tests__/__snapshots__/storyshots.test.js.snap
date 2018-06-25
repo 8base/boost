@@ -851,14 +851,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
-  background-color: #4DA1FF;
+  border-color: #d0d7dd;
+  background-color: #FFFFFF;
   color: transparent;
+  position: relative;
+  pointer-events: none;
   height: 4rem;
   padding: 0 2rem;
   border-radius: .5rem;
-  position: relative;
-  pointer-events: none;
 }
 
 .emotion-0:hover {
@@ -880,7 +880,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   height: 1.5em;
   margin-left: -.75em;
   margin-top: -.75em;
-  border: 4px solid #fff;
+  border: 4px solid #d0d7dd;
   border-top-color: transparent;
   border-radius: 50%;
   -webkit-animation: animation-kshzfu .7s infinite linear;
@@ -914,11 +914,11 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-color: #00bb6e;
   background-color: #00bb6e;
   color: transparent;
+  position: relative;
+  pointer-events: none;
   height: 4rem;
   padding: 0 2rem;
   border-radius: .5rem;
-  position: relative;
-  pointer-events: none;
 }
 
 .emotion-1:hover {
@@ -940,7 +940,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   height: 1.5em;
   margin-left: -.75em;
   margin-top: -.75em;
-  border: 4px solid #fff;
+  border: 4px solid #FFFFFF;
   border-top-color: transparent;
   border-radius: 50%;
   -webkit-animation: animation-kshzfu .7s infinite linear;
@@ -10397,6 +10397,74 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with text 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  text-align: left;
+}
+
+.emotion-1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  text-align: right;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  text-align: center;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    style={
+      Object {
+        "display": " flex",
+        "flexDirection": "column",
+        "width": "300px",
+      }
+    }
+  >
+    <span
+      className="emotion-0"
+    >
+      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+    </span>
+    <br />
+    <span
+      className="emotion-1"
+    >
+      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+    </span>
+    <br />
+    <span
+      className="emotion-2"
+    >
+      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
 .emotion-1 {
   margin: 2rem;
@@ -10406,7 +10474,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }
@@ -10431,7 +10499,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }
@@ -10456,7 +10524,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }
@@ -10465,7 +10533,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #878c93;
 }
@@ -10474,7 +10542,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #eb4235;
 }
@@ -10483,7 +10551,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #00bb6e;
 }
@@ -10492,7 +10560,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #1968cb;
 }
@@ -10539,7 +10607,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }
@@ -10564,7 +10632,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #d0d7dd;
 }
@@ -10589,7 +10657,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }
@@ -11183,7 +11251,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.4;
   margin: 0;
   color: #323c47;
 }

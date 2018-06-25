@@ -81,7 +81,24 @@ const theme = createTheme(name, (colors: *): * => ({
         boxShadow: 'none',
       },
     },
-    loading: {
+    stretch: {
+      width: '100%',
+    },
+  },
+  defaults: {
+    variant: 'raised',
+    color: 'primary',
+    size: 'md',
+  },
+}));
+
+const getLoading = (props: ButtonProps) => {
+  const color = props.color === 'neutral'
+    ? getThemeColors(props).LIGHT_GRAY1
+    : getThemeColors(props).WHITE;
+
+  return props.loading
+    ? {
       position: 'relative',
       color: 'transparent',
       pointerEvents: 'none',
@@ -98,22 +115,14 @@ const theme = createTheme(name, (colors: *): * => ({
         height: '1.5em',
         marginLeft: ' -.75em',
         marginTop: ' -.75em',
-        border: '4px solid #fff',
+        border: `4px solid ${color}`,
         borderTopColor: 'transparent',
         borderRadius: '50%',
         animation: `${spinner} .7s infinite linear`,
       },
-    },
-    stretch: {
-      width: '100%',
-    },
-  },
-  defaults: {
-    variant: 'raised',
-    color: 'primary',
-    size: 'md',
-  },
-}));
+    }
+    : {};
+};
 
 const getBackgroundColor = (props: ButtonProps) => {
   if (props.variant === 'raised') {
@@ -164,6 +173,8 @@ const StyledTag = createStyledTag(name, props => ({
   borderColor: getBorderColor(props),
   backgroundColor: getBackgroundColor(props),
   color: getColor(props),
+
+  ...getLoading(props),
 }));
 
 class Button extends Component<ButtonProps> {

@@ -1,3 +1,13 @@
+<a name="0.4.8"></a>
+## [0.4.8](https://github.com/8base/boost/compare/v0.4.7...v0.4.8) (2018-06-29)
+
+
+### Bug Fixes
+
+* **atoms:** fix row direction in the form field ([6aed206](https://github.com/8base/boost/commit/6aed206))
+
+
+
 <a name="0.4.7"></a>
 ## [0.4.7](https://github.com/8base/boost/compare/v0.4.6...v0.4.7) (2018-06-25)
 

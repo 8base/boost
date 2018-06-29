@@ -18,6 +18,9 @@ export default (asStory) => {
       .add('with stretch=false', () => (
         <Input name="input" stretch={ false } onChange={ () => null } />
       ))
+      .add('with square=true', () => (
+        <Input name="input" square onChange={ () => null } />
+      ))
       .add('with left icon', () => (
         <Input name="input" leftIcon="i" />
       ))

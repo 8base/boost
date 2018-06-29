@@ -25,6 +25,11 @@ const theme = createTheme(name, {
 const FormFieldTag = createStyledTag(name, props => ({
   position: 'relative',
   display: 'inline-flex',
+  width: props.stretch ? '100%' : 'auto',
+}));
+
+const FormFieldDirectionTag = createStyledTag(name, props => ({
+  display: 'inline-flex',
   flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
   alignItems: props.direction === 'row' ? 'center' : 'flex-start',
   width: props.stretch ? '100%' : 'auto',
@@ -56,6 +61,7 @@ const FormField = ({
   label,
   children,
   direction,
+  stretch,
   hideErrorLabel,
   ...rest
   }: FormFieldProps) => {
@@ -64,13 +70,15 @@ const FormField = ({
   const hasLabel = !!label;
 
   return (
-    <FormFieldTag { ...rest } direction={ direction } tagName="div">
-      <If condition={ hasLabel }>
-        <ControlLabelTag direction={ direction } tagName="div">
-          { label }
-        </ControlLabelTag>
-      </If>
-      { children }
+    <FormFieldTag { ...rest } stretch={ stretch } tagName="div">
+      <FormFieldDirectionTag direction={ direction } stretch={ stretch } tagName="div">
+        <If condition={ hasLabel }>
+          <ControlLabelTag direction={ direction } tagName="div">
+            { label }
+          </ControlLabelTag>
+        </If>
+        { children }
+      </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
         <ControlErrorWrapperTag tagName="div">
           <ControlErrorTag tagName="span">{ error }</ControlErrorTag>

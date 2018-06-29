@@ -2080,7 +2080,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
-.emotion-7 {
+.emotion-8 {
   margin: 2rem;
 }
 
@@ -2152,8 +2152,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   color: #4DA1FF;
 }
 
-.emotion-6 {
+.emotion-7 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2169,57 +2177,61 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
 }
 
 <div
-  className="emotion-7"
+  className="emotion-8"
 >
   <div
-    className="emotion-6"
+    className="emotion-7"
   >
-    <label
-      className="emotion-5"
-      name={undefined}
+    <div
+      className="emotion-6"
     >
-      <div
-        className="emotion-2"
+      <label
+        className="emotion-5"
+        name={undefined}
       >
         <div
-          checked={false}
-          className="emotion-1"
+          className="emotion-2"
         >
           <div
-            className="emotion-0"
+            checked={false}
+            className="emotion-1"
           >
-            <svg
-              height="100%"
-              viewBox="0 0 14 11"
-              width="100%"
+            <div
+              className="emotion-0"
             >
-              <path
-                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
-                fill="currentColor"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                height="100%"
+                viewBox="0 0 14 11"
+                width="100%"
+              >
+                <path
+                  d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-      <input
-        checked={false}
-        className="emotion-3"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <div
-        className="emotion-4"
-      >
-        CheckboxField
-      </div>
-    </label>
+        <input
+          checked={false}
+          className="emotion-3"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="emotion-4"
+        >
+          CheckboxField
+        </div>
+      </label>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
-.emotion-7 {
+.emotion-8 {
   margin: 2rem;
 }
 
@@ -2291,8 +2303,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   color: #878c93;
 }
 
-.emotion-6 {
+.emotion-7 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2308,57 +2328,61 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
 }
 
 <div
-  className="emotion-7"
+  className="emotion-8"
 >
   <div
-    className="emotion-6"
+    className="emotion-7"
   >
-    <label
-      className="emotion-5"
-      name={undefined}
+    <div
+      className="emotion-6"
     >
-      <div
-        className="emotion-2"
+      <label
+        className="emotion-5"
+        name={undefined}
       >
         <div
-          checked={true}
-          className="emotion-1"
+          className="emotion-2"
         >
           <div
-            className="emotion-0"
+            checked={true}
+            className="emotion-1"
           >
-            <svg
-              height="100%"
-              viewBox="0 0 14 11"
-              width="100%"
+            <div
+              className="emotion-0"
             >
-              <path
-                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
-                fill="currentColor"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                height="100%"
+                viewBox="0 0 14 11"
+                width="100%"
+              >
+                <path
+                  d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-      <input
-        checked={true}
-        className="emotion-3"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <div
-        className="emotion-4"
-      >
-        CheckboxField
-      </div>
-    </label>
+        <input
+          checked={true}
+          className="emotion-3"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="emotion-4"
+        >
+          CheckboxField
+        </div>
+      </label>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
-.emotion-9 {
+.emotion-10 {
   margin: 2rem;
 }
 
@@ -2431,8 +2455,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   color: #4DA1FF;
 }
 
-.emotion-8 {
+.emotion-9 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2447,7 +2479,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: block;
   position: absolute;
   bottom: 0;
@@ -2455,63 +2487,67 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   line-height: 1;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
 }
 
 <div
-  className="emotion-9"
+  className="emotion-10"
 >
   <div
-    className="emotion-8"
+    className="emotion-9"
   >
-    <label
-      className="emotion-5"
-      name={undefined}
+    <div
+      className="emotion-6"
     >
-      <div
-        className="emotion-2"
+      <label
+        className="emotion-5"
+        name={undefined}
       >
         <div
-          checked={false}
-          className="emotion-1"
+          className="emotion-2"
         >
           <div
-            className="emotion-0"
+            checked={false}
+            className="emotion-1"
           >
-            <svg
-              height="100%"
-              viewBox="0 0 14 11"
-              width="100%"
+            <div
+              className="emotion-0"
             >
-              <path
-                d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
-                fill="currentColor"
-                fillRule="evenodd"
-              />
-            </svg>
+              <svg
+                height="100%"
+                viewBox="0 0 14 11"
+                width="100%"
+              >
+                <path
+                  d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
-      <input
-        checked={false}
-        className="emotion-3"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <div
-        className="emotion-4"
-      >
-        CheckboxField
-      </div>
-    </label>
+        <input
+          checked={false}
+          className="emotion-3"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="emotion-4"
+        >
+          CheckboxField
+        </div>
+      </label>
+    </div>
     <div
-      className="emotion-7"
+      className="emotion-8"
     >
       <span
-        className="emotion-6"
+        className="emotion-7"
       >
         Required
       </span>
@@ -2521,11 +2557,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
-.emotion-26 {
+.emotion-31 {
   margin: 2rem;
 }
 
-.emotion-24 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2547,12 +2583,20 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   cursor: inherit;
 }
 
-.emotion-24 > *:not(:last-child) {
+.emotion-29 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-4 {
+.emotion-5 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2567,7 +2611,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   width: 100%;
 }
 
-.emotion-25 {
+.emotion-30 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2617,7 +2661,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   margin: 0;
 }
 
-.emotion-13 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2641,7 +2685,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   height: 100%;
 }
 
-.emotion-13 > *:not(:last-child) {
+.emotion-16 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -2650,17 +2694,17 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 }
 
 <div
-  className="emotion-26"
+  className="emotion-31"
 >
   <form
-    className="emotion-25"
+    className="emotion-30"
     onSubmit={undefined}
   >
     <div
-      className="emotion-24"
+      className="emotion-29"
     >
       <div
-        className="emotion-13"
+        className="emotion-16"
       >
         <span
           className="emotion-0"
@@ -2668,68 +2712,80 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           Some section 1
         </span>
         <div
-          className="emotion-4"
+          className="emotion-5"
         >
           <div
-            className="emotion-1"
+            className="emotion-4"
           >
-            Jobs
-          </div>
-          <div
-            className="emotion-3"
-            name="curple"
-          >
-            <input
-              className="emotion-2"
-              onChange={[Function]}
-              type="text"
-              value={undefined}
-            />
+            <div
+              className="emotion-1"
+            >
+              Jobs
+            </div>
+            <div
+              className="emotion-3"
+              name="curple"
+            >
+              <input
+                className="emotion-2"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </div>
         </div>
         <div
-          className="emotion-4"
+          className="emotion-5"
         >
           <div
-            className="emotion-1"
+            className="emotion-4"
           >
-            Posted
-          </div>
-          <div
-            className="emotion-3"
-            name="provect"
-          >
-            <input
-              className="emotion-2"
-              onChange={[Function]}
-              type="text"
-              value={undefined}
-            />
+            <div
+              className="emotion-1"
+            >
+              Posted
+            </div>
+            <div
+              className="emotion-3"
+              name="provect"
+            >
+              <input
+                className="emotion-2"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </div>
         </div>
         <div
-          className="emotion-4"
+          className="emotion-5"
         >
           <div
-            className="emotion-1"
+            className="emotion-4"
           >
-            My Active Jobs
-          </div>
-          <div
-            className="emotion-3"
-            name="inlaying"
-          >
-            <input
-              className="emotion-2"
-              onChange={[Function]}
-              type="text"
-              value={undefined}
-            />
+            <div
+              className="emotion-1"
+            >
+              My Active Jobs
+            </div>
+            <div
+              className="emotion-3"
+              name="inlaying"
+            >
+              <input
+                className="emotion-2"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </div>
         </div>
       </div>
       <div
-        className="emotion-13"
+        className="emotion-16"
       >
         <span
           className="emotion-0"
@@ -2737,43 +2793,51 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           Some section 2
         </span>
         <div
-          className="emotion-4"
+          className="emotion-5"
         >
           <div
-            className="emotion-1"
+            className="emotion-4"
           >
-            Active Requests
-          </div>
-          <div
-            className="emotion-3"
-            name="saccharifier"
-          >
-            <input
-              className="emotion-2"
-              onChange={[Function]}
-              type="text"
-              value={undefined}
-            />
+            <div
+              className="emotion-1"
+            >
+              Active Requests
+            </div>
+            <div
+              className="emotion-3"
+              name="saccharifier"
+            >
+              <input
+                className="emotion-2"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </div>
         </div>
         <div
-          className="emotion-4"
+          className="emotion-5"
         >
           <div
-            className="emotion-1"
+            className="emotion-4"
           >
-            Applied
-          </div>
-          <div
-            className="emotion-3"
-            name="inertance"
-          >
-            <input
-              className="emotion-2"
-              onChange={[Function]}
-              type="text"
-              value={undefined}
-            />
+            <div
+              className="emotion-1"
+            >
+              Applied
+            </div>
+            <div
+              className="emotion-3"
+              name="inertance"
+            >
+              <input
+                className="emotion-2"
+                onChange={[Function]}
+                type="text"
+                value={undefined}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -2783,11 +2847,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
-.emotion-22 {
+.emotion-27 {
   margin: 2rem;
 }
 
-.emotion-20 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2809,12 +2873,20 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   cursor: inherit;
 }
 
-.emotion-20 > *:not(:last-child) {
+.emotion-25 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2829,7 +2901,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   width: 100%;
 }
 
-.emotion-21 {
+.emotion-26 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2880,113 +2952,133 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 }
 
 <div
-  className="emotion-22"
+  className="emotion-27"
 >
   <form
-    className="emotion-21"
+    className="emotion-26"
     onSubmit={undefined}
   >
     <div
-      className="emotion-20"
+      className="emotion-25"
     >
       <div
-        className="emotion-3"
+        className="emotion-4"
       >
         <div
-          className="emotion-0"
+          className="emotion-3"
         >
-          Jobs
-        </div>
-        <div
-          className="emotion-2"
-          name="curple"
-        >
-          <input
-            className="emotion-1"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
+          <div
+            className="emotion-0"
+          >
+            Jobs
+          </div>
+          <div
+            className="emotion-2"
+            name="curple"
+          >
+            <input
+              className="emotion-1"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
         </div>
       </div>
       <div
-        className="emotion-3"
+        className="emotion-4"
       >
         <div
-          className="emotion-0"
+          className="emotion-3"
         >
-          Posted
-        </div>
-        <div
-          className="emotion-2"
-          name="provect"
-        >
-          <input
-            className="emotion-1"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
+          <div
+            className="emotion-0"
+          >
+            Posted
+          </div>
+          <div
+            className="emotion-2"
+            name="provect"
+          >
+            <input
+              className="emotion-1"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
         </div>
       </div>
       <div
-        className="emotion-3"
+        className="emotion-4"
       >
         <div
-          className="emotion-0"
+          className="emotion-3"
         >
-          My Active Jobs
-        </div>
-        <div
-          className="emotion-2"
-          name="inlaying"
-        >
-          <input
-            className="emotion-1"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
+          <div
+            className="emotion-0"
+          >
+            My Active Jobs
+          </div>
+          <div
+            className="emotion-2"
+            name="inlaying"
+          >
+            <input
+              className="emotion-1"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
         </div>
       </div>
       <div
-        className="emotion-3"
+        className="emotion-4"
       >
         <div
-          className="emotion-0"
+          className="emotion-3"
         >
-          Active Requests
-        </div>
-        <div
-          className="emotion-2"
-          name="saccharifier"
-        >
-          <input
-            className="emotion-1"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
+          <div
+            className="emotion-0"
+          >
+            Active Requests
+          </div>
+          <div
+            className="emotion-2"
+            name="saccharifier"
+          >
+            <input
+              className="emotion-1"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
         </div>
       </div>
       <div
-        className="emotion-3"
+        className="emotion-4"
       >
         <div
-          className="emotion-0"
+          className="emotion-3"
         >
-          Applied
-        </div>
-        <div
-          className="emotion-2"
-          name="inertance"
-        >
-          <input
-            className="emotion-1"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
+          <div
+            className="emotion-0"
+          >
+            Applied
+          </div>
+          <div
+            className="emotion-2"
+            name="inertance"
+          >
+            <input
+              className="emotion-1"
+              onChange={[Function]}
+              type="text"
+              value={undefined}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -3426,6 +3518,65 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 4rem;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  text-align: center;
+  padding: 0;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    name="input"
+  >
+    <input
+      className="emotion-0"
+      onChange={[Function]}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 .emotion-2 {
   margin: 2rem;
@@ -3598,12 +3749,20 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
-.emotion-7 {
+.emotion-8 {
   margin: 2rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3618,7 +3777,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   width: 100%;
 }
 
-.emotion-5 {
+.emotion-6 {
   display: block;
   position: absolute;
   bottom: 0;
@@ -3626,7 +3785,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   line-height: 1;
 }
 
-.emotion-4 {
+.emotion-5 {
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
@@ -3688,35 +3847,179 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 }
 
 <div
-  className="emotion-7"
+  className="emotion-8"
 >
   <div
-    className="emotion-6"
+    className="emotion-7"
   >
     <div
-      className="emotion-0"
+      className="emotion-4"
     >
-      Input
-    </div>
-    <div
-      className="emotion-3"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
       <div
-        className="emotion-2"
-      />
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-3"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+        <div
+          className="emotion-2"
+        />
+      </div>
     </div>
     <div
-      className="emotion-5"
+      className="emotion-6"
     >
       <span
-        className="emotion-4"
+        className="emotion-5"
+      >
+        Required
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`] = `
+.emotion-8 {
+  margin: 2rem;
+}
+
+.emotion-7 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-6 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  line-height: 1;
+}
+
+.emotion-5 {
+  font-size: 1rem;
+  color: #ff6d4a;
+  line-height: 1;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  margin-top: -.3rem;
+  width: .6rem;
+  height: .6rem;
+  background-color: #ff6d4a;
+  border-radius: 50%;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.emotion-0 {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+<div
+  className="emotion-8"
+>
+  <div
+    className="emotion-7"
+  >
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-3"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+        <div
+          className="emotion-2"
+        />
+      </div>
+    </div>
+    <div
+      className="emotion-6"
+    >
+      <span
+        className="emotion-5"
       >
         Required
       </span>
@@ -3726,12 +4029,20 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3789,35 +4100,48 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-      placeholder="placeholder"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+        placeholder="placeholder"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
 }
 
 .emotion-2 {
@@ -3856,7 +4180,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 }
 
 .emotion-3 {
-  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3879,33 +4202,37 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction stretch=false 1`] = `
-.emotion-4 {
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=false 1`] = `
+.emotion-5 {
   margin: 2rem;
 }
 
@@ -3951,8 +4278,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction stretch=false
   line-height: 2;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3968,33 +4303,37 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction stretch=false
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
@@ -4004,29 +4343,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  width: auto;
-}
-
-.emotion-0 {
-  margin-left: 1rem;
-  font-size: 1.4rem;
-  color: #878c93;
-  line-height: 2;
-}
-
-.emotion-3 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: auto;
 }
 
@@ -4058,39 +4374,82 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   margin: 0;
 }
 
+.emotion-0 {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+}
+
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4148,38 +4507,50 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4237,38 +4608,50 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value="value"
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value="value"
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicator 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4320,33 +4703,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
-    className="emotion-2"
+    className="emotion-3"
   >
     <div
-      className="emotion-1"
-      name="input"
+      className="emotion-2"
     >
-      <input
-        className="emotion-0"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-1"
+        name="input"
+      >
+        <input
+          className="emotion-0"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4397,33 +4792,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
-    className="emotion-2"
+    className="emotion-3"
   >
     <div
-      className="emotion-1"
-      name="input"
+      className="emotion-2"
     >
-      <input
-        className="emotion-0"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-1"
+        name="input"
+      >
+        <input
+          className="emotion-0"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
-.emotion-3 {
+.emotion-4 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4481,26 +4888,30 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
-    className="emotion-3"
+    className="emotion-4"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
     >
-      Input
-    </div>
-    <div
-      className="emotion-2"
-      name="input"
-    >
-      <input
-        className="emotion-1"
-        onChange={[Function]}
-        type="text"
-        value={undefined}
-      />
+      <div
+        className="emotion-0"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-2"
+        name="input"
+      >
+        <input
+          className="emotion-1"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -5608,7 +6019,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
-.emotion-17 {
+.emotion-18 {
   margin: 2rem;
 }
 
@@ -5654,8 +6065,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
   cursor: pointer;
 }
 
-.emotion-16 {
+.emotion-17 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5728,90 +6147,94 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
 }
 
 <div
-  className="emotion-17"
+  className="emotion-18"
 >
   <div
-    className="emotion-16"
+    className="emotion-17"
   >
     <div
-      className="emotion-15"
+      className="emotion-16"
     >
-      <label
-        className="emotion-4"
+      <div
+        className="emotion-15"
       >
-        <div
-          className="emotion-1"
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-0"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-6"
+            onChange={[Function]}
+            type="radio"
+            value="1"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-6"
-          onChange={[Function]}
-          type="radio"
-          value="1"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
-      <label
-        className="emotion-4"
-      >
-        <div
-          className="emotion-1"
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-5"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-5"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-6"
+            onChange={[Function]}
+            type="radio"
+            value="2"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-6"
-          onChange={[Function]}
-          type="radio"
-          value="2"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
-      <label
-        className="emotion-4"
-      >
-        <div
-          className="emotion-1"
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-5"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-5"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-6"
+            onChange={[Function]}
+            type="radio"
+            value="3"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-6"
-          onChange={[Function]}
-          type="radio"
-          value="3"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
-.emotion-19 {
+.emotion-20 {
   margin: 2rem;
 }
 
@@ -5857,8 +6280,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 {
+.emotion-19 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5873,7 +6304,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   width: 100%;
 }
 
-.emotion-17 {
+.emotion-18 {
   display: block;
   position: absolute;
   bottom: 0;
@@ -5881,7 +6312,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   line-height: 1;
 }
 
-.emotion-16 {
+.emotion-17 {
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
@@ -5931,89 +6362,93 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
 }
 
 <div
-  className="emotion-19"
+  className="emotion-20"
 >
   <div
-    className="emotion-18"
+    className="emotion-19"
   >
     <div
-      className="emotion-15"
+      className="emotion-16"
     >
-      <label
-        className="emotion-4"
+      <div
+        className="emotion-15"
       >
-        <div
-          className="emotion-1"
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-0"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-7"
+            onChange={[Function]}
+            type="radio"
+            value="1"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-7"
-          onChange={[Function]}
-          type="radio"
-          value="1"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
-      <label
-        className="emotion-4"
-      >
-        <div
-          className="emotion-1"
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-0"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-7"
+            onChange={[Function]}
+            type="radio"
+            value="2"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-7"
-          onChange={[Function]}
-          type="radio"
-          value="2"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
-      <label
-        className="emotion-4"
-      >
-        <div
-          className="emotion-1"
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+        <label
+          className="emotion-4"
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
+          >
+            <div
+              className="emotion-0"
+            />
+          </div>
+          <input
+            className="emotion-2"
+            name="radio-group-7"
+            onChange={[Function]}
+            type="radio"
+            value="3"
           />
-        </div>
-        <input
-          className="emotion-2"
-          name="radio-group-7"
-          onChange={[Function]}
-          type="radio"
-          value="3"
-        />
-        <div
-          className="emotion-3"
-        >
-          Radio
-        </div>
-      </label>
+          <div
+            className="emotion-3"
+          >
+            Radio
+          </div>
+        </label>
+      </div>
     </div>
     <div
-      className="emotion-17"
+      className="emotion-18"
     >
       <span
-        className="emotion-16"
+        className="emotion-17"
       >
         Required
       </span>
@@ -6371,7 +6806,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
-.emotion-8 {
+.emotion-9 {
   margin: 2rem;
 }
 
@@ -6398,8 +6833,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   z-index: 2;
 }
 
-.emotion-7 {
+.emotion-8 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6464,49 +6907,53 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
 }
 
 <div
-  className="emotion-8"
+  className="emotion-9"
 >
   <div
-    className="emotion-7"
+    className="emotion-8"
   >
     <div
-      className="emotion-0"
+      className="emotion-7"
     >
-      Select Label
-    </div>
-    <div
-      className="emotion-6"
-      name="input"
-      onChange={[Function]}
-    >
-      <div>
-        <div
-          className="ignore-react-onclickoutside-13 emotion-5"
-          onClick={[Function]}
-        >
+      <div
+        className="emotion-0"
+      >
+        Select Label
+      </div>
+      <div
+        className="emotion-6"
+        name="input"
+        onChange={[Function]}
+      >
+        <div>
           <div
-            className="emotion-4"
+            className="ignore-react-onclickoutside-13 emotion-5"
+            onClick={[Function]}
           >
             <div
-              className="emotion-3"
+              className="emotion-4"
             >
-              ovenlike
               <div
-                className="emotion-2"
+                className="emotion-3"
               >
+                ovenlike
                 <div
-                  className="emotion-1"
+                  className="emotion-2"
                 >
-                  <svg
-                    height="100%"
-                    viewBox="0 0 24 24"
-                    width="100%"
+                  <div
+                    className="emotion-1"
                   >
-                    <path
-                      d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    <svg
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      width="100%"
+                    >
+                      <path
+                        d="M8.292 10.293a1.009 1.009 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -6611,12 +7058,20 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea without value 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6651,36 +7106,48 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
-    className="emotion-2"
+    className="emotion-3"
   >
     <div
-      className="emotion-0"
+      className="emotion-2"
     >
-      Area
+      <div
+        className="emotion-0"
+      >
+        Area
+      </div>
+      <textarea
+        className="emotion-1"
+        cols={undefined}
+        name="input"
+        onChange={[Function]}
+        placeholder="placeholder"
+        rows={undefined}
+        value={undefined}
+      />
     </div>
-    <textarea
-      className="emotion-1"
-      cols={undefined}
-      name="input"
-      onChange={[Function]}
-      placeholder="placeholder"
-      rows={undefined}
-      value={undefined}
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6715,36 +7182,48 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
-    className="emotion-2"
+    className="emotion-3"
   >
     <div
-      className="emotion-0"
+      className="emotion-2"
     >
-      Area
+      <div
+        className="emotion-0"
+      >
+        Area
+      </div>
+      <textarea
+        className="emotion-1"
+        cols={undefined}
+        name="input"
+        onChange={[Function]}
+        placeholder={undefined}
+        rows={undefined}
+        value="value"
+      />
     </div>
-    <textarea
-      className="emotion-1"
-      cols={undefined}
-      name="input"
-      onChange={[Function]}
-      placeholder={undefined}
-      rows={undefined}
-      value="value"
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6779,25 +7258,29 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
-    className="emotion-2"
+    className="emotion-3"
   >
     <div
-      className="emotion-0"
+      className="emotion-2"
     >
-      Area
+      <div
+        className="emotion-0"
+      >
+        Area
+      </div>
+      <textarea
+        className="emotion-1"
+        cols={undefined}
+        name="input"
+        onChange={[Function]}
+        placeholder={undefined}
+        rows={undefined}
+        value={undefined}
+      />
     </div>
-    <textarea
-      className="emotion-1"
-      cols={undefined}
-      name="input"
-      onChange={[Function]}
-      placeholder={undefined}
-      rows={undefined}
-      value={undefined}
-    />
   </div>
 </div>
 `;

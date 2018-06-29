@@ -20,6 +20,9 @@ export default (asStory) => {
       .add('with error', () => (
         <InputField label="Input" input={{ name: 'input', onChange }} meta={{ error: 'Required', touched: true }} />
       ))
+      .add('with error and row direction', () => (
+        <InputField label="Input" direction="row" input={{ name: 'input', onChange }} meta={{ error: 'Required', touched: true }} />
+      ))
       .add('without label', () => (
         <InputField input={{ name: 'input', onChange }} />
       ))
@@ -29,7 +32,7 @@ export default (asStory) => {
       .add('with row direction', () => (
         <InputField direction="row" label="Input" input={{ name: 'input', onChange }} />
       ))
-      .add('with row direction stretch=false', () => (
+      .add('with row direction and stretch=false', () => (
         <InputField direction="row" stretch={ false } label="Input" input={{ name: 'input', onChange }} />
       ))
       .add('with square input', () => (

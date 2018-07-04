@@ -1,3 +1,13 @@
+<a name="0.4.9"></a>
+## [0.4.9](https://github.com/8base/boost/compare/v0.4.8...v0.4.9) (2018-07-04)
+
+
+### Bug Fixes
+
+* **atoms:** fix layout offset size ([a39b96b](https://github.com/8base/boost/commit/a39b96b))
+
+
+
 <a name="0.4.8"></a>
 ## [0.4.8](https://github.com/8base/boost/compare/v0.4.7...v0.4.8) (2018-06-29)
 

@@ -19,6 +19,8 @@ type InputFieldProps = {|
   hideErrorLabel?: boolean,
   /** when true then don't show error indicator */
   hideErrorIndicator?: boolean,
+  /** align of the input value */
+  align?: 'center' | 'left' | 'right',
   /** form input object */
   input?: InputType,
   /** form meta object */
@@ -35,15 +37,16 @@ const theme = createTheme(name, {
 });
 
 const InputField = ({
-  square,
-  label,
-  stretch,
+  align,
   direction,
-  maxLength,
-  hideErrorLabel,
   hideErrorIndicator,
+  hideErrorLabel,
   input = {},
+  label,
+  maxLength,
   meta = {},
+  square,
+  stretch,
   ...rest
   }: InputFieldProps) => {
   const { error, touched } = meta;
@@ -54,13 +57,14 @@ const InputField = ({
     <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
       <Input
         { ...rest }
+        align={ align }
+        hasError={ hasError }
         hideErrorIndicator={ hideErrorIndicator }
         maxLength={ maxLength }
-        square={ square }
         name={ name }
         onChange={ onChange }
+        square={ square }
         value={ value }
-        hasError={ hasError }
       />
     </FormField>
   );

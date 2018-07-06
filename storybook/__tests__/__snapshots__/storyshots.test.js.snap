@@ -2649,6 +2649,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-2:focus {
@@ -2939,6 +2940,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -3086,6 +3088,64 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  text-align: center;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+    name="input"
+  >
+    <input
+      className="emotion-0"
+      onChange={[Function]}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 .emotion-3 {
   margin: 2rem;
@@ -3115,6 +3175,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3187,6 +3248,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3244,6 +3306,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3325,6 +3388,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3383,6 +3447,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3484,6 +3549,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3546,7 +3612,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  text-align: center;
+  text-align: left;
   padding: 0;
 }
 
@@ -3596,6 +3662,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3662,6 +3729,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3719,6 +3787,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -3744,6 +3813,96 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
       type="text"
       value={undefined}
     />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  text-align: center;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-1"
+        name="input"
+      >
+        <input
+          className="emotion-0"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -3822,6 +3981,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -3940,6 +4100,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4087,6 +4248,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4167,6 +4329,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4259,6 +4422,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4360,7 +4524,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  text-align: center;
+  text-align: left;
   padding: 0;
 }
 
@@ -4494,6 +4658,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4595,6 +4760,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {
@@ -4690,6 +4856,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -4779,6 +4946,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-0:focus {
@@ -4875,6 +5043,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  text-align: left;
 }
 
 .emotion-1:focus {

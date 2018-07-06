@@ -21,6 +21,14 @@ const theme = createTheme(name, (colors: *): * => ({
     },
   },
 
+  modifiers: {
+    align: {
+      left: { textAlign: 'left ' },
+      right: { textAlign: 'right ' },
+      center: { textAlign: 'center ' },
+    },
+  },
+
   inputSquare: {
     width: '4rem',
     textAlign: 'center',

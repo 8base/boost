@@ -37,6 +37,9 @@ export default (asStory) => {
       ))
       .add('with square input', () => (
         <InputField direction="row" stretch={ false } square label="Input" input={{ name: 'input', onChange }} />
+      ))
+      .add('with center align', () => (
+        <InputField input={{ name: 'input', onChange }} align="center" />
       ));
   });
 };

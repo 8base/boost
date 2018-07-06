@@ -32,6 +32,9 @@ export default (asStory) => {
       ))
       .add('with html auto-complete', () => (
         <Input name="input" autoComplete />
+      ))
+      .add('with center align', () => (
+        <Input name="input" align="center" />
       ));
   });
 };

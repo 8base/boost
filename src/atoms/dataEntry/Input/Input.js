@@ -13,6 +13,8 @@ type InputCommonProps = {
   stretch?: boolean,
   /** when true then don't show error indicator  */
   hideErrorIndicator?: boolean,
+  /** align of the input value */
+  align?: 'center' | 'left' | 'right',
   /** left icon componen */
   leftIcon?: React$Node,
   /** right icon componen */
@@ -44,12 +46,13 @@ type InputProps = {
 
 class Input extends PureComponent<InputProps> {
   static defaultProps = {
-    type: 'text',
-    square: false,
-    stretch: true,
-    hideErrorIndicator: false,
+    align: 'left',
     autoComplete: false,
     hasError: false,
+    hideErrorIndicator: false,
+    square: false,
+    stretch: true,
+    type: 'text',
   }
 
   onChange = (event: *) => {
@@ -68,11 +71,25 @@ class Input extends PureComponent<InputProps> {
   }
 
   render() {
-    const { hasError, hideErrorIndicator, autoComplete, stretch, errorText, leftIcon, rightIcon, mask, square, value, type, ...rest } = this.props;
+    const {
+      align,
+      autoComplete,
+      errorText,
+      hasError,
+      hideErrorIndicator,
+      leftIcon,
+      mask,
+      rightIcon,
+      square,
+      stretch,
+      type,
+      value,
+      ...rest } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
 
     const inputProps = {
+      align,
       value,
       square,
       onChange: this.onChange,

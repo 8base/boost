@@ -20,8 +20,8 @@ type ButtonProps = {|
   disabled?: boolean,
   /** possible button types */
   type?: 'submit' | 'button',
-  /** possible button kind */
-  color?: 'primary' | 'secondary' | 'neutral',
+  /** possible button colors */
+  color?: 'primary' | 'secondary' | 'neutral' | 'warning',
   /** the type of button */
   variant?: 'outlined' | 'raised',
   /** posible sizes */
@@ -129,6 +129,7 @@ const getBackgroundColor = (props: ButtonProps) => {
     switch (props.color) {
       case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
       case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
+      case 'warning': return getThemeColors(props).WARNING_BUTTON_BACKGROUND_COLOR;
       case 'neutral': return getThemeColors(props).NEUTRAL_BUTTON_BACKGROUND_COLOR;
       default: return '';
     }
@@ -141,6 +142,7 @@ const getColor = (props: ButtonProps) => {
       case 'primary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
       case 'secondary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
       case 'neutral': return getThemeColors(props).PRIMARY_TEXT_COLOR;
+      case 'warning': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
       default: return '';
     }
   }
@@ -153,6 +155,7 @@ const getBorderColor = (props: ButtonProps) => {
   switch (props.color) {
     case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
     case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
+    case 'warning': return getThemeColors(props).WARNING_BUTTON_BACKGROUND_COLOR;
     case 'neutral': return getThemeColors(props).PRIMARY_BORDER_COLOR;
     default: return '';
   }

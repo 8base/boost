@@ -1,3 +1,13 @@
+<a name="0.4.10"></a>
+## [0.4.10](https://github.com/8base/boost/compare/v0.4.9...v0.4.10) (2018-07-06)
+
+
+### Features
+
+* **atoms:** add align feature to the input ([76e6f2a](https://github.com/8base/boost/commit/76e6f2a))
+
+
+
 <a name="0.4.9"></a>
 ## [0.4.9](https://github.com/8base/boost/compare/v0.4.8...v0.4.9) (2018-07-04)
 

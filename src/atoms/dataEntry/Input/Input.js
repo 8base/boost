@@ -79,6 +79,7 @@ class Input extends PureComponent<InputProps> {
       hideErrorIndicator,
       leftIcon,
       mask,
+      placeholder,
       rightIcon,
       square,
       stretch,
@@ -90,14 +91,15 @@ class Input extends PureComponent<InputProps> {
 
     const inputProps = {
       align,
-      value,
-      square,
-      onChange: this.onChange,
+      autoComplete: autoComplete ? 'on' : 'off',
       hasError,
       hasLeftIcon,
       hasRightIcon,
-      autoComplete: autoComplete ? 'on' : 'off',
+      onChange: this.onChange,
+      placeholder,
+      square,
       type,
+      value,
     };
 
     return (

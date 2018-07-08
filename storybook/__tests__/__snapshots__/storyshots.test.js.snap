@@ -2823,6 +2823,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
               <input
                 className="emotion-2"
                 onChange={[Function]}
+                placeholder={undefined}
                 type="text"
                 value={undefined}
               />
@@ -2847,6 +2848,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
               <input
                 className="emotion-2"
                 onChange={[Function]}
+                placeholder={undefined}
                 type="text"
                 value={undefined}
               />
@@ -2871,6 +2873,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
               <input
                 className="emotion-2"
                 onChange={[Function]}
+                placeholder={undefined}
                 type="text"
                 value={undefined}
               />
@@ -2904,6 +2907,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
               <input
                 className="emotion-2"
                 onChange={[Function]}
+                placeholder={undefined}
                 type="text"
                 value={undefined}
               />
@@ -2928,6 +2932,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
               <input
                 className="emotion-2"
                 onChange={[Function]}
+                placeholder={undefined}
                 type="text"
                 value={undefined}
               />
@@ -3074,6 +3079,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
             <input
               className="emotion-1"
               onChange={[Function]}
+              placeholder={undefined}
               type="text"
               value={undefined}
             />
@@ -3098,6 +3104,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
             <input
               className="emotion-1"
               onChange={[Function]}
+              placeholder={undefined}
               type="text"
               value={undefined}
             />
@@ -3122,6 +3129,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
             <input
               className="emotion-1"
               onChange={[Function]}
+              placeholder={undefined}
               type="text"
               value={undefined}
             />
@@ -3146,6 +3154,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
             <input
               className="emotion-1"
               onChange={[Function]}
+              placeholder={undefined}
               type="text"
               value={undefined}
             />
@@ -3170,6 +3179,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
             <input
               className="emotion-1"
               onChange={[Function]}
+              placeholder={undefined}
               type="text"
               value={undefined}
             />
@@ -3232,6 +3242,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3303,6 +3314,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3364,6 +3376,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3441,6 +3454,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3500,11 +3514,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   <div
     className="emotion-1"
     name="input"
-    placeholder="custom placeholder"
   >
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder="custom placeholder"
       type="text"
       value={undefined}
     />
@@ -3582,6 +3596,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3665,6 +3680,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3729,6 +3745,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3787,6 +3804,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3845,6 +3863,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value="value"
     />
@@ -3903,6 +3922,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
     <input
       className="emotion-0"
       onChange={[Function]}
+      placeholder={undefined}
       type="text"
       value={undefined}
     />
@@ -3991,6 +4011,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
         <input
           className="emotion-0"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4120,6 +4141,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4261,6 +4283,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4371,11 +4394,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
       <div
         className="emotion-2"
         name="input"
-        placeholder="placeholder"
       >
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder="placeholder"
           type="text"
           value={undefined}
         />
@@ -4478,6 +4501,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4580,6 +4604,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4683,6 +4708,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4785,6 +4811,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -4887,6 +4914,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value="value"
         />
@@ -4978,6 +5006,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
         <input
           className="emotion-0"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -5068,6 +5097,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
         <input
           className="emotion-0"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />
@@ -5170,6 +5200,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
         <input
           className="emotion-1"
           onChange={[Function]}
+          placeholder={undefined}
           type="text"
           value={undefined}
         />

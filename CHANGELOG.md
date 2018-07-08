@@ -1,3 +1,18 @@
+<a name="0.4.11"></a>
+## [0.4.11](https://github.com/8base/boost/compare/v0.4.10...v0.4.11) (2018-07-08)
+
+
+### Bug Fixes
+
+* **atoms:** fix input placeholder ([a446dc9](https://github.com/8base/boost/commit/a446dc9))
+
+
+### Features
+
+* **atoms:** add warning colors to the Button component ([bf217d8](https://github.com/8base/boost/commit/bf217d8))
+
+
+
 <a name="0.4.10"></a>
 ## [0.4.10](https://github.com/8base/boost/compare/v0.4.9...v0.4.10) (2018-07-06)
 

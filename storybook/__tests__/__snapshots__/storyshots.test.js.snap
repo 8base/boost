@@ -75,7 +75,7 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -133,7 +133,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -225,7 +225,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   background-color: #00bb6e;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -265,7 +265,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   background-color: #eb4235;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -305,7 +305,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -344,7 +344,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-color: #4DA1FF;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -383,7 +383,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -422,7 +422,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-color: #eb4235;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -461,7 +461,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-color: #d0d7dd;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -580,7 +580,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -646,7 +646,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 3rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
   border-radius: .5rem;
 }
 
@@ -686,7 +686,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 5rem;
-  padding: 0 3rem;
+  padding: 0 6rem;
   border-radius: .5rem;
 }
 
@@ -788,7 +788,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   background-color: #d0d7dd;
   color: #FFFFFF;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -863,7 +863,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -950,7 +950,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   position: relative;
   pointer-events: none;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -1010,7 +1010,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   position: relative;
   pointer-events: none;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -1094,7 +1094,7 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
   width: 100%;
 }
@@ -1153,7 +1153,7 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -1211,7 +1211,7 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -2281,6 +2281,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
       <label
         className="emotion-5"
         name={undefined}
+        onBlur={undefined}
+        onFocus={undefined}
       >
         <div
           className="emotion-2"
@@ -2432,6 +2434,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
       <label
         className="emotion-5"
         name={undefined}
+        onBlur={undefined}
+        onFocus={undefined}
       >
         <div
           className="emotion-2"
@@ -2598,6 +2602,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
       <label
         className="emotion-5"
         name={undefined}
+        onBlur={undefined}
+        onFocus={undefined}
       >
         <div
           className="emotion-2"
@@ -2822,7 +2828,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                onBlur={undefined}
                 onChange={[Function]}
+                onFocus={undefined}
                 placeholder={undefined}
                 type="text"
                 value={undefined}
@@ -2847,7 +2855,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                onBlur={undefined}
                 onChange={[Function]}
+                onFocus={undefined}
                 placeholder={undefined}
                 type="text"
                 value={undefined}
@@ -2872,7 +2882,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                onBlur={undefined}
                 onChange={[Function]}
+                onFocus={undefined}
                 placeholder={undefined}
                 type="text"
                 value={undefined}
@@ -2906,7 +2918,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                onBlur={undefined}
                 onChange={[Function]}
+                onFocus={undefined}
                 placeholder={undefined}
                 type="text"
                 value={undefined}
@@ -2931,7 +2945,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                onBlur={undefined}
                 onChange={[Function]}
+                onFocus={undefined}
                 placeholder={undefined}
                 type="text"
                 value={undefined}
@@ -3078,7 +3094,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              onBlur={undefined}
               onChange={[Function]}
+              onFocus={undefined}
               placeholder={undefined}
               type="text"
               value={undefined}
@@ -3103,7 +3121,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              onBlur={undefined}
               onChange={[Function]}
+              onFocus={undefined}
               placeholder={undefined}
               type="text"
               value={undefined}
@@ -3128,7 +3148,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              onBlur={undefined}
               onChange={[Function]}
+              onFocus={undefined}
               placeholder={undefined}
               type="text"
               value={undefined}
@@ -3153,7 +3175,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              onBlur={undefined}
               onChange={[Function]}
+              onFocus={undefined}
               placeholder={undefined}
               type="text"
               value={undefined}
@@ -3178,7 +3202,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              onBlur={undefined}
               onChange={[Function]}
+              onFocus={undefined}
               placeholder={undefined}
               type="text"
               value={undefined}
@@ -3241,7 +3267,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3313,7 +3341,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3375,7 +3405,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3453,7 +3485,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3517,7 +3551,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder="custom placeholder"
       type="text"
       value={undefined}
@@ -3595,7 +3631,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3679,7 +3717,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3744,7 +3784,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3803,7 +3845,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -3862,7 +3906,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value="value"
@@ -3921,7 +3967,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   >
     <input
       className="emotion-0"
+      onBlur={undefined}
       onChange={[Function]}
+      onFocus={undefined}
       placeholder={undefined}
       type="text"
       value={undefined}
@@ -4010,7 +4058,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
       >
         <input
           className="emotion-0"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4140,7 +4190,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4282,7 +4334,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4397,7 +4451,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder="placeholder"
           type="text"
           value={undefined}
@@ -4500,7 +4556,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4603,7 +4661,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4707,7 +4767,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4810,7 +4872,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -4913,7 +4977,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value="value"
@@ -5005,7 +5071,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
       >
         <input
           className="emotion-0"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -5096,7 +5164,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
       >
         <input
           className="emotion-0"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -5199,7 +5269,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
       >
         <input
           className="emotion-1"
+          onBlur={undefined}
           onChange={[Function]}
+          onFocus={undefined}
           placeholder={undefined}
           type="text"
           value={undefined}
@@ -7632,7 +7704,7 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -7750,7 +7822,7 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -7868,7 +7940,7 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -7986,7 +8058,7 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -8105,7 +8177,7 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -8223,7 +8295,7 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -8341,7 +8413,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
   width: 100%;
 }
@@ -8434,7 +8506,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
   width: 100%;
 }
@@ -8553,7 +8625,7 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -8671,7 +8743,7 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11482,7 +11554,7 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11600,7 +11672,7 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11727,7 +11799,7 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11871,7 +11943,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   background-color: #4DA1FF;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11911,7 +11983,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   background-color: #00bb6e;
   color: rgba(255,255,255,1);
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 
@@ -11950,7 +12022,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-color: #4DA1FF;
   color: #323c47;
   height: 4rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   border-radius: .5rem;
 }
 

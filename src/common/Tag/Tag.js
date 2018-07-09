@@ -43,6 +43,8 @@ const COLLECTED_PROPS = [
   'label',
   'name',
   'onChange',
+  'onBlur',
+  'onFocus',
   'onClick',
   'onDoubleClick',
   'onMouseDown',

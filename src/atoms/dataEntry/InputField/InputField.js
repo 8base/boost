@@ -50,8 +50,10 @@ const InputField = ({
   ...rest
   }: InputFieldProps) => {
   const { error, touched } = meta;
-  const { name, value, onChange } = input;
+  const { name, value, onChange, onFocus, onBlur } = input;
   const hasError = !!error && !!touched;
+
+  console.log(hasError, error, touched);
 
   return (
     <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
@@ -63,6 +65,8 @@ const InputField = ({
         maxLength={ maxLength }
         name={ name }
         onChange={ onChange }
+        onFocus={ onFocus }
+        onBlur={ onBlur }
         square={ square }
         value={ value }
       />

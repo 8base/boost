@@ -5,9 +5,20 @@ import { createStyledTag, createTheme } from 'utils';
 
 type GridLayoutProps = {|
   children?: React$Node,
+  /** possbile spaces between grid items */
   gap?: 'xs' | 'md' | 'lg' | 'none',
+  /** when true then set inline-grid */
   inline?: boolean,
-  padding?: 'xs' | 'md' | 'lg' | 'none',
+  /** possible offsets of the grid layout */
+  offset?: 'xs' | 'md' | 'lg' | 'none',
+  /** justify-content css rule*/
+  justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  /** align-content css rule*/
+  alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  /** justify-items css rule */
+  justifyItems?: 'start' | 'end' | 'center' | 'stretch',
+  /** align-items css rule */
+  alignItems?: 'start' | 'end' | 'center' | 'stretch',
 |};
 
 const name = 'gridLayout';
@@ -63,6 +74,22 @@ const StyledTag = createStyledTag(name, (props) => {
 
   if (props.areas) {
     style.gridTemplateAreas = props.areas.map((item) => `"${item.join(' ')}"`).join(' ');
+  }
+
+  if (props.justifyContent) {
+    style.justifyContent = props.justifyContent;
+  }
+
+  if (props.alignContent) {
+    style.alignContent = props.alignContent;
+  }
+
+  if (props.justifyItems) {
+    style.justifyItems = props.justifyItems;
+  }
+
+  if (props.alignItems) {
+    style.alignItems = props.alignItems;
   }
 
   return style;

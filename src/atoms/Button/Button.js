@@ -52,22 +52,21 @@ const theme = createTheme(name, (colors: *): * => ({
       },
     },
   },
-
   modifiers: {
     size: {
       sm: {
         height: '3rem',
-        padding: '0 1rem',
+        padding: '0 2rem',
         borderRadius: '.5rem',
       },
       md: {
         height: '4rem',
-        padding: '0 2rem',
+        padding: '0 4rem',
         borderRadius: '.5rem',
       },
       lg: {
         height: '5rem',
-        padding: '0 3rem',
+        padding: '0 6rem',
         borderRadius: '.5rem',
       },
     },

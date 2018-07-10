@@ -1,3 +1,19 @@
+<a name="0.4.12"></a>
+## [0.4.12](https://github.com/8base/boost/compare/v0.4.11...v0.4.12) (2018-07-10)
+
+
+### Bug Fixes
+
+* **atoms:** fix button paddings ([df499de](https://github.com/8base/boost/commit/df499de))
+* **atoms:** pass onFocus to the input component ([0562e9e](https://github.com/8base/boost/commit/0562e9e))
+
+
+### Features
+
+* **atoms:** add css props to the GridLayout ([6fcd43d](https://github.com/8base/boost/commit/6fcd43d))
+
+
+
 <a name="0.4.11"></a>
 ## [0.4.11](https://github.com/8base/boost/compare/v0.4.10...v0.4.11) (2018-07-08)
 

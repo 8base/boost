@@ -18,6 +18,10 @@ type ButtonProps = {|
   loading?: boolean,
  /** then true when disable button */
   disabled?: boolean,
+ /** then button is squared */
+  squared?: boolean,
+ /** then button is rounded */
+  rounded?: boolean,
   /** possible button types */
   type?: 'submit' | 'button',
   /** possible button colors */
@@ -27,6 +31,18 @@ type ButtonProps = {|
   /** posible sizes */
   size?: 'sm' | 'md' | 'lg',
 |};
+
+const BUTTON_HEIGHT_BY_SIZE = {
+  sm: '3rem',
+  md: '4rem',
+  lg: '5rem',
+};
+
+const DEFAULT_MODIFIERS = {
+  variant: 'raised',
+  color: 'primary',
+  size: 'md',
+};
 
 const name = 'button';
 
@@ -55,17 +71,17 @@ const theme = createTheme(name, (colors: *): * => ({
   modifiers: {
     size: {
       sm: {
-        height: '3rem',
+        height: BUTTON_HEIGHT_BY_SIZE.sm,
         padding: '0 2rem',
         borderRadius: '.5rem',
       },
       md: {
-        height: '4rem',
+        height: BUTTON_HEIGHT_BY_SIZE.md,
         padding: '0 4rem',
         borderRadius: '.5rem',
       },
       lg: {
-        height: '5rem',
+        height: BUTTON_HEIGHT_BY_SIZE.lg,
         padding: '0 6rem',
         borderRadius: '.5rem',
       },
@@ -83,11 +99,15 @@ const theme = createTheme(name, (colors: *): * => ({
     stretch: {
       width: '100%',
     },
+    squared: {
+      padding: '0',
+    },
+    rounded: {
+      borderRadius: '5rem',
+    },
   },
   defaults: {
-    variant: 'raised',
-    color: 'primary',
-    size: 'md',
+    ...DEFAULT_MODIFIERS,
   },
 }));
 
@@ -160,6 +180,17 @@ const getBorderColor = (props: ButtonProps) => {
   }
 };
 
+const getSquaredStyle = (props: ButtonProps) => {
+  if (props.squared) {
+    return {
+      width: BUTTON_HEIGHT_BY_SIZE[props.size || DEFAULT_MODIFIERS.size],
+      height: BUTTON_HEIGHT_BY_SIZE[props.size || DEFAULT_MODIFIERS.size],
+    };
+  }
+
+  return {};
+};
+
 const StyledTag = createStyledTag(name, props => ({
   outline: 'none',
   textAlign: 'center',
@@ -169,6 +200,8 @@ const StyledTag = createStyledTag(name, props => ({
   alignItems: 'center',
 
   ...getThemeStyle(props, name).button,
+
+  ...getSquaredStyle(props),
 
   borderStyle: 'solid',
   borderWidth: '1px',
@@ -182,7 +215,7 @@ const StyledTag = createStyledTag(name, props => ({
 class Button extends Component<ButtonProps> {
   static defaultProps = {
     ...theme[name].defaults,
-    size: 'md',
+    ...DEFAULT_MODIFIERS,
   };
 
   onClick = (event: *) => {

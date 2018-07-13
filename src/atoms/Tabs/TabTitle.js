@@ -3,7 +3,7 @@
 import React, { PureComponent } from 'react';
 import fp from 'lodash/fp';
 import { compose, setDisplayName } from 'recompose';
-import { createStyledTag } from 'utils';
+import { createStyledTag } from '../../utils';
 import { withTabsContext } from './TabsContext';
 
 /**

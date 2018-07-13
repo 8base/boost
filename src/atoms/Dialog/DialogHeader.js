@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
-import { Grid } from 'atoms/Grid';
-import { Heading } from 'atoms/typography/Heading';
+import { createStyledTag, createTheme } from '../../utils';
+import { Grid } from '../Grid';
+import { Heading } from '../typography/Heading';
 
 type DialogHeaderProps = {|
   children?: React$Node,

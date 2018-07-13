@@ -1,6 +1,6 @@
 // @flow
 
-import { createStyledTag, createTheme, getThemeColors } from 'utils';
+import { createStyledTag, createTheme, getThemeColors } from '../../../utils';
 
 const name = 'checkbox';
 

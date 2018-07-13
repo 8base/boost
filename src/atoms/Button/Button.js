@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 import { keyframes } from 'react-emotion';
-import { createStyledTag, createTheme, getThemeStyle, getThemeColors } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle, getThemeColors } from '../../utils';
 
 type ButtonProps = {|
   /** callback to handle click */

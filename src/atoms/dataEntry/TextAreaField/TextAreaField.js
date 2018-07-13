@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTheme } from 'utils';
+import { createTheme } from '../../../utils';
 import { TextArea } from '../TextArea';
 import { FormField } from '../Form/FormField';
 

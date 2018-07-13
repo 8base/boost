@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { createStyledTag, createTheme, getThemeStyle } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 import { offsetModifier } from './common';
 
 type CardFooterProps = {|

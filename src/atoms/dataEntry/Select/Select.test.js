@@ -3,8 +3,8 @@
 import React from 'react';
 import { Select } from './Select';
 import { SelectValue } from './Select.theme';
-import { Dropdown } from 'atoms/Dropdown';
-import { Menu } from 'atoms/Menu';
+import { Dropdown } from '../../Dropdown';
+import { Menu } from '../../Menu';
 
 
 const OPTIONS = [{

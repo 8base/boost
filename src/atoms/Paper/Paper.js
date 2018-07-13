@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme, getThemeStyle } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 
 type PaperProps = {|
   children?: React$Node,

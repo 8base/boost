@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
+import { createStyledTag, createTheme } from '../../../utils';
 import * as glyphs from './glyphs';
 
 type IconProps = {

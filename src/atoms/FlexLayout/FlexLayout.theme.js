@@ -1,6 +1,6 @@
 // @flow
 
-import { createStyledTag } from 'utils';
+import { createStyledTag } from '../../utils';
 
 const name = 'flex-layout';
 

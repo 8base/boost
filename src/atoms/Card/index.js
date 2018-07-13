@@ -1,9 +1,9 @@
 // @flow
 
-import { CardPlate } from './components/CardPlate';
-import { CardHeader, cardHeaderTheme } from './components/CardHeader';
-import { CardBody, cardBodyTheme } from './components/CardBody';
-import { CardFooter, cardFooterTheme } from './components/CardFooter';
+import { CardPlate } from './CardPlate';
+import { CardHeader, cardHeaderTheme } from './CardHeader';
+import { CardBody, cardBodyTheme } from './CardBody';
+import { CardFooter, cardFooterTheme } from './CardFooter';
 
 const Card = {
   Plate: CardPlate,

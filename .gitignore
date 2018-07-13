@@ -4,6 +4,7 @@
 .vscode
 build
 coverage
+es
 node_modules
 npm-debug.log
 out*

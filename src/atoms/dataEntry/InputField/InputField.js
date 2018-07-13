@@ -53,8 +53,6 @@ const InputField = ({
   const { name, value, onChange, onFocus, onBlur } = input;
   const hasError = !!error && !!touched;
 
-  console.log(hasError, error, touched);
-
   return (
     <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
       <Input

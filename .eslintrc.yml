@@ -58,6 +58,7 @@ rules:
   no-use-before-define: 'error'
   dot-notation: 'warn'
   no-alert: 'error'
+  no-console: 'warn'
   max-len: ['warn', { 'code': 150, 'ignoreComments': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true }]
 
   #es6

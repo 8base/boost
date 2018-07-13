@@ -1,7 +1,7 @@
 // @flow
 
-import { atomsTheme } from 'atoms';
-import { moleculesTheme } from 'molecules';
+import { atomsTheme } from '../atoms';
+import { moleculesTheme } from '../molecules';
 import { COLORS } from './colors';
 
 const theme = {

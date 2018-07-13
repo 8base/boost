@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import find from 'lodash/find';
 
 import { SelectTag, SelectValue, SelectChevron } from './Select.theme';
-import { Dropdown } from 'atoms/Dropdown';
-import { Scrollable } from 'atoms/Scrollable';
-import { Menu } from 'atoms/Menu';
-import { Icon } from 'atoms/typography/Icon';
+import { Dropdown } from '../../Dropdown';
+import { Scrollable } from '../../Scrollable';
+import { Menu } from '../../Menu';
+import { Icon } from '../../typography/Icon';
 
 type SelectProps = {|
   options: Array<{ content: mixed, value: string }>,

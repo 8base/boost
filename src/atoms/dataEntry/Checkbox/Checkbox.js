@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from 'react';
 
-import { Icon } from 'atoms/typography/Icon';
+import { Icon } from '../../typography/Icon';
 import { CheckboxSquareTag, CheckboxTag, CheckboxWrapperTag, CheckboxTextTag, CheckboxIconTag } from './Checkbox.theme';
 
 type CheckboxProps = {

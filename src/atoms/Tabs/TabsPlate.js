@@ -3,7 +3,7 @@
 import React from 'react';
 import fp from 'lodash/fp';
 import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
-import { createStyledTag } from 'utils';
+import { createStyledTag } from '../../utils';
 import { TabsContext } from './TabsContext';
 
 

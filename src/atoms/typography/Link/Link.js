@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme } from 'utils';
+import { createStyledTag, createTheme } from '../../../utils';
 
 type LinkProps = {|
   to: string,

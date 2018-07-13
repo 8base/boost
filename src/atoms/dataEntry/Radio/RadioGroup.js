@@ -1,6 +1,6 @@
 // @flow
 import React, { PureComponent } from 'react';
-import { FlexLayout } from 'atoms/FlexLayout';
+import { FlexLayout } from '../../FlexLayout';
 
 
 type RadioProps = {

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { compose, setDisplayName } from 'recompose';
-import { createStyledTag } from 'utils';
+import { createStyledTag } from '../../utils';
 import { withTabsContext } from './TabsContext';
 
 type TabPanelProps = {|

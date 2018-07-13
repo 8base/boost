@@ -1,7 +1,7 @@
 // @flow
 import styled from 'react-emotion';
 import InputMask from 'react-input-mask';
-import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from 'utils';
+import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from '../../../utils';
 
 const name = 'input';
 

@@ -4,9 +4,13 @@ import React from 'react';
 
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
+import Search from './Search.svg';
+import Trashcan from './Trashcan.svg';
 
 export {
-  ChevronDown,
   Check,
+  ChevronDown,
+  Search,
+  Trashcan,
 };
 

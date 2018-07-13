@@ -76,12 +76,12 @@ const iconsStyles = {
 
 const InputLeftIconTag = createStyledTag(name, {
   ...iconsStyles,
-  left: 0,
+  left: '1rem',
 });
 
 const InputRightIconTag = createStyledTag(name, {
   ...iconsStyles,
-  right: 0,
+  right: '1rem',
 });
 
 const getInputStyles = props => ({

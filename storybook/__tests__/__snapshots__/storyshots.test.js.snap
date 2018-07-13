@@ -3473,7 +3473,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  left: 0;
+  left: 1rem;
 }
 
 <div
@@ -3619,7 +3619,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  right: 0;
+  right: 1rem;
 }
 
 <div
@@ -3677,7 +3677,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  right: 0;
+  right: 1rem;
 }
 
 .emotion-0 {

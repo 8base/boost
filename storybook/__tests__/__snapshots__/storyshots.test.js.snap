@@ -1253,6 +1253,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1315,6 +1316,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1377,6 +1379,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1429,6 +1432,7 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -10510,6 +10514,7 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {

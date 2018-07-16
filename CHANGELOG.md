@@ -1,3 +1,22 @@
+<a name="0.4.13"></a>
+## [0.4.13](https://github.com/8base/boost/compare/v0.4.12...v0.4.13) (2018-07-16)
+
+
+### Bug Fixes
+
+* **atoms:** fix button disabled styles ([a97c756](https://github.com/8base/boost/commit/a97c756))
+* **atoms:** fix dropdown flip ([207c1d5](https://github.com/8base/boost/commit/207c1d5))
+* **atoms:** fix input left/right icons position ([b64d15f](https://github.com/8base/boost/commit/b64d15f))
+* **paper:** relative paper ([87c792d](https://github.com/8base/boost/commit/87c792d))
+
+
+### Features
+
+* **atoms:** add rounded and squared buttons ([3cc17c0](https://github.com/8base/boost/commit/3cc17c0))
+* **atoms:** add search and trashcan icons ([a5e147e](https://github.com/8base/boost/commit/a5e147e))
+
+
+
 <a name="0.4.12"></a>
 ## [0.4.12](https://github.com/8base/boost/compare/v0.4.11...v0.4.12) (2018-07-10)
 

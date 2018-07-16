@@ -87,10 +87,14 @@ const theme = createTheme(name, (colors: *): * => ({
       },
     },
     disabled: {
-      backgroundColor: colors.LIGHT_GRAY1,
-      borderColor: colors.LIGHT_GRAY1,
-      color: colors.WHITE,
+      backgroundColor: colors.LIGHT_GRAY5,
+      borderColor: colors.LIGHT_GRAY3,
+      color: colors.LIGHT_GRAY3,
       cursor: 'default',
+
+      svg: {
+        color: colors.LIGHT_GRAY3,
+      },
 
       '&:hover': {
         boxShadow: 'none',

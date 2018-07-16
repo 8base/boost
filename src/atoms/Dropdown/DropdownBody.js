@@ -52,6 +52,11 @@ const setOffset = (offset?: PropSizes) => offset && offset !== 'none'
   ? fp.merge({ offset: { enabled: true, offset: offsetSizes[offset] }})
   : fp.identity;
 
+const setFlip = fp.merge({
+  flip: { behavior: ['bottom'] },
+  boundariesElement: 'window',
+});
+
 const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
   setDisplayName('Dropdown.Body'),
   withDropdownContext,
@@ -94,13 +99,14 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
     const { preventOverflow, offset } = this.props;
 
     return fp.pipe(
+      setFlip,
       setPreventOverflow(preventOverflow),
       setOffset(offset),
     )({});
   }
 
   getBodyWidth = () => {
-    const { stretch, targetWidth, width } = this.props;
+    const { stretch, dropdown: { targetWidth }, width } = this.props;
 
     return stretch
       ? targetWidth

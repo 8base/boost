@@ -784,9 +784,9 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d7dd;
-  background-color: #d0d7dd;
-  color: #FFFFFF;
+  border-color: #E5E9EC;
+  background-color: #f4f7f9;
+  color: #E5E9EC;
   height: 4rem;
   padding: 0 4rem;
   border-radius: .5rem;
@@ -798,6 +798,10 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
 
 .emotion-0 > *:not(:last-child) {
   margin-right: .5rem;
+}
+
+.emotion-0 svg {
+  color: #E5E9EC;
 }
 
 <div
@@ -1253,6 +1257,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1315,6 +1320,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1377,6 +1383,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -1429,6 +1436,7 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {
@@ -3473,7 +3481,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  left: 0;
+  left: 1rem;
 }
 
 <div
@@ -3619,7 +3627,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  right: 0;
+  right: 1rem;
 }
 
 <div
@@ -3677,7 +3685,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   align-items: center;
   height: 100%;
   width: 3rem;
-  right: 0;
+  right: 1rem;
 }
 
 .emotion-0 {
@@ -10510,6 +10518,7 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
   color: #000000;
   border-radius: .5rem;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
 }
 
 .emotion-0 {

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Portal } from 'react-portal';
+import { injectGlobal } from 'emotion';
 
 import { createStyledTag, createTheme } from '../../utils';
 
@@ -15,6 +16,16 @@ type ModalState = {
   isOpen: boolean,
   blurred: boolean,
 };
+
+const MODAL_BLUR_CLASS = 'modal-blur';
+
+injectGlobal`
+  body.${MODAL_BLUR_CLASS} {
+    #root {
+      filter: blur(3px);
+    }
+  }
+`;
 
 const name = 'modal';
 
@@ -41,21 +52,19 @@ const OverlayTag = createStyledTag(name, {
 const ModalTag = createStyledTag(name, {});
 
 class Modal extends PureComponent<ModalProps, ModalState> {
+  static openedModals: number = 0;
+
   static defaultProps = {
     shouldCloseOnOverlayClick: true,
     isOpen: false,
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isOpen: props.isOpen,
-    };
-  }
+  state = {
+    isOpen: false,
+  };
 
   componentDidMount() {
-    if (this.state.isOpen) {
+    if (this.props.isOpen) {
       this.openModal();
     } else {
       this.closeModal();
@@ -74,21 +83,49 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 
   openModal() {
     if (!this.state.isOpen) {
+      Modal.openedModals += 1;
+
       this.setState({ isOpen: true });
 
       if (typeof this.props.onOpen === 'function') {
         this.props.onOpen();
       }
+
+      this.updateBlurClass();
     }
   }
 
   closeModal() {
     if (this.state.isOpen) {
+      Modal.openedModals -= 1;
+
       this.setState({ isOpen: false });
 
       if (typeof this.props.onClose === 'function') {
         this.props.onClose();
       }
+
+      this.updateBlurClass();
+    }
+  }
+
+  updateBlurClass() {
+    if (Modal.openedModals === 0) {
+      this.removeBlurClass();
+    } else if (Modal.openedModals > 0) {
+      this.addBlurClass();
+    }
+  }
+
+  addBlurClass() {
+    if (!document.body.classList.contains(MODAL_BLUR_CLASS)) {
+      document.body.classList.add(MODAL_BLUR_CLASS);
+    }
+  }
+
+  removeBlurClass() {
+    if (document.body.classList.contains(MODAL_BLUR_CLASS)) {
+      document.body.classList.remove(MODAL_BLUR_CLASS);
     }
   }
 

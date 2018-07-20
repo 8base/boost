@@ -1,5 +1,5 @@
 import React from 'react';
-import pick from 'lodash/pick';
+import pickBy from 'lodash/pickBy';
 
 type TagProps = {|
   activeClassName?: string,
@@ -66,9 +66,11 @@ const COLLECTED_PROPS = [
   'value',
 ];
 
+const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));
+
 function Tag({ tagName, ...props }: TagProps) {
   const TagComponent = tagName;
-  const collectedProps = pick(props, COLLECTED_PROPS);
+  const collectedProps = collectProps(props);
 
   return <TagComponent { ...collectedProps } />;
 }

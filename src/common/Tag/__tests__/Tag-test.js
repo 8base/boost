@@ -7,3 +7,9 @@ it('As developer, I can use tag for collect common props.', () => {
 
   expect(tree.toJSON()).toMatchSnapshot();
 });
+
+it('As developer, I can pass data attributes to the tag.', () => {
+  const tree = renderer.create(<Tag tagName="div" data-attr={ 10 } />);
+
+  expect(tree.toJSON()).toMatchSnapshot();
+});

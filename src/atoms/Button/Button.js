@@ -233,11 +233,11 @@ class Button extends Component<ButtonProps> {
 
     return (
       <StyledTag
-        { ...rest }
         tagName="button"
         type={ type }
         loading={ loading }
         onClick={ this.onClick }
+        { ...rest }
       >
         { children || text }
       </StyledTag>

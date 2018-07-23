@@ -1,3 +1,20 @@
+<a name="0.4.15"></a>
+## [0.4.15](https://github.com/8base/boost/compare/v0.4.14...v0.4.15) (2018-07-23)
+
+
+### Bug Fixes
+
+* **atoms:** fix button rest props ([8bb8c93](https://github.com/8base/boost/commit/8bb8c93))
+* **atoms:** fix card header styles ([2d23ef0](https://github.com/8base/boost/commit/2d23ef0))
+* **tag:** fix ability to pass data attributes to the tags ([3495dce](https://github.com/8base/boost/commit/3495dce))
+
+
+### Features
+
+* **atoms:** add blur content for modals ([4d2f31c](https://github.com/8base/boost/commit/4d2f31c))
+
+
+
 <a name="0.4.14"></a>
 ## [0.4.14](https://github.com/8base/boost/compare/v0.4.12...v0.4.14) (2018-07-17)
 

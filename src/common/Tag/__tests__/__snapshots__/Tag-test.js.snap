@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`As developer, I can pass data attributes to the tag. 1`] = `
+<div
+  data-attr={10}
+/>
+`;
+
 exports[`As developer, I can use tag for collect common props. 1`] = `
 <div
   onClick={[Function]}

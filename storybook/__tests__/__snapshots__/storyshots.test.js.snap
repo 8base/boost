@@ -1262,6 +1262,15 @@ exports[`Storyshots ATOMS/Card default 1`] = `
 
 .emotion-0 {
   border-bottom: 1px solid #d0d7dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -1325,6 +1334,15 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 
 .emotion-0 {
   border-bottom: 1px solid #d0d7dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 2.5rem;
 }
 
@@ -1388,6 +1406,15 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
 
 .emotion-0 {
   border-bottom: 1px solid #d0d7dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.5rem;
 }
 

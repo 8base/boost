@@ -1,3 +1,13 @@
+<a name="0.4.16"></a>
+## [0.4.16](https://github.com/8base/boost/compare/v0.4.15...v0.4.16) (2018-07-30)
+
+
+### Bug Fixes
+
+* **atoms:** beautify dialog styles ([b16536d](https://github.com/8base/boost/commit/b16536d))
+
+
+
 <a name="0.4.15"></a>
 ## [0.4.15](https://github.com/8base/boost/compare/v0.4.14...v0.4.15) (2018-07-23)
 

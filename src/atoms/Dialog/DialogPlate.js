@@ -2,17 +2,10 @@ import React from 'react';
 
 import { createStyledTag, createTheme } from '../../utils';
 import { Modal } from '../Modal';
-import { DialogHeader } from './DialogHeader';
-import { DialogBody } from './DialogBody';
-import { DialogFooter } from './DialogFooter';
+import { Card } from '../Card';
 
 type DialogPlateProps = {|
-  actions?: Array<{
-    onClick?: (event?: SyntheticMouseEvent) => void,
-    text?: string,
-  }>,
   children?: React$Node,
-  heading: string,
   isOpen?: boolean,
   onClose?: (any) => void,
   onOpen?: (any) => void,
@@ -24,8 +17,14 @@ const name = 'dialogPlate';
 const theme = createTheme(name, {
   modifiers: {
     size: {
+      sm: {
+        width: '400px',
+      },
       md: {
         width: '600px',
+      },
+      lg: {
+        width: '800px',
       },
     },
   },
@@ -44,20 +43,19 @@ const StyledTag = createStyledTag(name, {
 
 function DialogPlate({
   children,
-  heading,
-  actions,
   isOpen,
   onOpen,
   onClose,
   shouldCloseOnOverlayClick,
+  size,
   ...rest
   }: DialogPlateProps) {
   return (
     <Modal isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
-      <StyledTag tagName="div" { ...rest }>
-        <DialogHeader heading={ heading } onClose={ onClose } />
-        <DialogBody>{ children }</DialogBody>
-        <DialogFooter actions={ actions } />
+      <StyledTag tagName="div" size={ size }>
+        <Card.Plate { ...rest }>
+          { children }
+        </Card.Plate>
       </StyledTag>
     </Modal>
   );

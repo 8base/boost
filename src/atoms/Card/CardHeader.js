@@ -13,8 +13,9 @@ const cardHeaderTheme = createTheme(name, (colors: *): * => ({
   cardHeader: {
     borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
     display: 'flex',
-    height: '8rem',
+    height: '6rem',
     alignItems: 'center',
+    position: 'relative',
   },
   modifiers: {
     ...offsetModifier,

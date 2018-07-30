@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../utils';
-import { Grid } from '../Grid';
+import { Card } from '../Card';
 import { Heading } from '../typography/Heading';
 
 type DialogHeaderProps = {|
   children?: React$Node,
-  heading: string,
+  title: string,
 |};
 
 const name = 'dialogHeader';
@@ -18,36 +18,30 @@ const theme = createTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, {
-  alignItems: 'center',
-  display: 'flex',
-  height: '4rem',
-  padding: '1.5rem',
-  position: 'relative',
-});
-
 const CloseStyledTag = createStyledTag(name, {
   cursor: 'pointer',
   userSelect: 'none',
+  position: 'absolute',
+  right: '2rem',
+  fontWeight: 600,
+  fontSize: '2rem',
+  color: '#d0d7dd',
+
+  '&:hover': {
+    color: '#8698a7',
+  },
 });
 
 function DialogHeader({
-  heading,
+  title,
   onClose,
   ...rest
   }: DialogHeaderProps) {
   return (
-    <StyledTag { ...rest } tagName="div">
-      <Grid.Layout columns="auto 1fr auto" stretch>
-        <Grid.Box>
-          <Heading type="h5" text={ heading } weight="semibold" />
-        </Grid.Box>
-        <Grid.Box />
-        <Grid.Box justifyContent="center">
-          <CloseStyledTag tagName="div" onClick={ onClose }>✕</CloseStyledTag>
-        </Grid.Box>
-      </Grid.Layout>
-    </StyledTag>
+    <Card.Header offset="lg" { ...rest }>
+      <Heading type="h3">{ title }</Heading>
+      <CloseStyledTag tagName="div" onClick={ onClose }>×</CloseStyledTag>
+    </Card.Header>
   );
 }
 

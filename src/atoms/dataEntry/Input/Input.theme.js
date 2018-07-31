@@ -19,6 +19,10 @@ const theme = createTheme(name, (colors: *): * => ({
     '&:focus': {
       borderColor: colors.PRIMARY,
     },
+
+    '&::placeholder': {
+      color: colors.LIGHT_GRAY1,
+    },
   },
 
   modifiers: {

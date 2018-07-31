@@ -1,3 +1,13 @@
+<a name="0.4.17"></a>
+## [0.4.17](https://github.com/8base/boost/compare/v0.4.16...v0.4.17) (2018-07-31)
+
+
+### Bug Fixes
+
+* **atoms:** add placeholder color to the input ([fdcdf83](https://github.com/8base/boost/commit/fdcdf83))
+
+
+
 <a name="0.4.16"></a>
 ## [0.4.16](https://github.com/8base/boost/compare/v0.4.15...v0.4.16) (2018-07-30)
 

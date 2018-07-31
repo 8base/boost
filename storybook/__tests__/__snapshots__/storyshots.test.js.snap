@@ -2793,6 +2793,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-2::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-2::-webkit-outer-spin-button,
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3099,6 +3115,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-1::-webkit-outer-spin-button,
 .emotion-1::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3290,6 +3322,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3350,6 +3398,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -3428,6 +3492,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3487,6 +3567,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -3574,6 +3670,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3633,6 +3745,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -3740,6 +3868,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3807,6 +3951,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3857,6 +4017,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -3929,6 +4105,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3988,6 +4180,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4073,6 +4281,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4188,6 +4412,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -4310,6 +4550,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -4463,6 +4719,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-1::-webkit-outer-spin-button,
 .emotion-1::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4544,6 +4816,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -4640,6 +4928,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -4746,6 +5050,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -4884,6 +5204,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-1::-webkit-outer-spin-button,
 .emotion-1::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4989,6 +5325,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   border-color: #4DA1FF;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-1::-webkit-outer-spin-button,
 .emotion-1::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -5088,6 +5440,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   border-color: #4DA1FF;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -5179,6 +5547,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 
 .emotion-0:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -5279,6 +5663,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 
 .emotion-1:focus {
   border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
 }
 
 .emotion-1::-webkit-outer-spin-button,

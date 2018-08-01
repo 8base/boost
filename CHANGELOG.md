@@ -1,3 +1,13 @@
+<a name="0.4.18"></a>
+## [0.4.18](https://github.com/8base/boost/compare/v0.4.17...v0.4.18) (2018-08-01)
+
+
+### Bug Fixes
+
+* **atoms:** add insideRef to the Input component ([fd8dd00](https://github.com/8base/boost/commit/fd8dd00))
+
+
+
 <a name="0.4.17"></a>
 ## [0.4.17](https://github.com/8base/boost/compare/v0.4.16...v0.4.17) (2018-07-31)
 

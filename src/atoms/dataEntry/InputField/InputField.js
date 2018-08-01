@@ -25,6 +25,8 @@ type InputFieldProps = {|
   input?: InputType,
   /** form meta object */
   meta?: MetaType,
+  /** callback to set input ref */
+  insideRef?:(HTMLInputElement) => void,
 |};
 
 const name = 'inputField';

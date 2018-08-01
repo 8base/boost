@@ -21,6 +21,8 @@ type InputCommonProps = {
   rightIcon?: React$Node,
   /** max symbols in the input value*/
   maxLength?: number,
+  /** callback to set input ref */
+  insideRef?:(HTMLInputElement) => void,
 }
 
 type InputProps = {
@@ -77,6 +79,7 @@ class Input extends PureComponent<InputProps> {
       errorText,
       hasError,
       hideErrorIndicator,
+      insideRef,
       leftIcon,
       mask,
       onBlur,
@@ -104,6 +107,7 @@ class Input extends PureComponent<InputProps> {
       square,
       type,
       value,
+      insideRef,
     };
 
     return (

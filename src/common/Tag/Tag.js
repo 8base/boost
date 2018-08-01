@@ -42,11 +42,11 @@ const COLLECTED_PROPS = [
   'for',
   'label',
   'name',
-  'onChange',
   'onBlur',
-  'onFocus',
+  'onChange',
   'onClick',
   'onDoubleClick',
+  'onFocus',
   'onMouseDown',
   'onMouseEnter',
   'onMouseLeave',
@@ -72,7 +72,7 @@ function Tag({ tagName, ...props }: TagProps) {
   const TagComponent = tagName;
   const collectedProps = collectProps(props);
 
-  return <TagComponent { ...collectedProps } />;
+  return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
 }
 
 export { Tag };

@@ -1,3 +1,13 @@
+<a name="0.4.21"></a>
+## [0.4.21](https://github.com/8base/boost/compare/v0.4.20...v0.4.21) (2018-08-08)
+
+
+### Bug Fixes
+
+* **atoms:** add justifyContent and alignContent to the GridBox component ([f3d9a50](https://github.com/8base/boost/commit/f3d9a50))
+
+
+
 <a name="0.4.20"></a>
 ## [0.4.20](https://github.com/8base/boost/compare/v0.4.19...v0.4.20) (2018-08-08)
 

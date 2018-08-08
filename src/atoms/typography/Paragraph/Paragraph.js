@@ -4,7 +4,8 @@ import { createStyledTag, createTheme } from '../../../utils';
 
 type ParagraphProps = {|
   children?: React$Node,
-  kind?: 'primary' | 'secondary' | 'disabled',
+  kind?: 'primary' | 'secondary' | 'disabled' | 'white',
+  size: 'md' | 'lg',
   text?: string,
 |};
 
@@ -22,10 +23,22 @@ const theme = createTheme(name, (colors) => ({
       disabled: {
         color: colors.DARK_DISABLED_TEXT_COLOR,
       },
+      white: {
+        color: colors.WHITE,
+      },
+    },
+    size: {
+      lg: {
+        fontSize: '1.8rem',
+      },
+      md: {
+        fontSize: '1.4rem',
+      },
     },
   },
   defaults: {
     kind: 'primary',
+    size: 'md',
   },
 }));
 

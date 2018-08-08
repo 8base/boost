@@ -6,15 +6,15 @@ import { createStyledTag, createTheme } from '../../../utils';
 
 type TextProps = {|
   /** text to display in the component */
-  children?: string | number,
+  children?: React$Node | string | number,
   /** another way to set displayed text */
   text?: string | number,
   /** possible text colors */
-  color?: 'primary' | 'secondary' | 'red' | 'green' | 'blue',
+  color?: 'primary' | 'secondary' | 'red' | 'green' | 'blue' | 'white',
   /** disabled text state*/
   disabled?: boolean,
-  /** set style to bold */
-  bold?: boolean,
+  /** set style to bold or other weights */
+  weight?: 'light' | 'normal' | 'semibold' | 'bold',
   /** possible sizes */
   size?: PropSizes,
   /** text align */
@@ -41,6 +41,9 @@ const theme = createTheme(name, (colors: *): * => ({
       blue: {
         color: colors.BLUE,
       },
+      white: {
+        color: colors.WHITE,
+      },
     },
 
     align: {
@@ -53,8 +56,19 @@ const theme = createTheme(name, (colors: *): * => ({
       color: colors.DISABLED_TEXT_COLOR,
     },
 
-    bold: {
-      fontWeight: 600,
+    weight: {
+      light: {
+        fontWeight: 300,
+      },
+      normal: {
+        fontWeight: 400,
+      },
+      semibold: {
+        fontWeight: 600,
+      },
+      bold: {
+        fontWeight: 700,
+      },
     },
 
     size: {
@@ -78,13 +92,12 @@ const theme = createTheme(name, (colors: *): * => ({
   defaults: {
     color: 'primary',
     size: 'md',
-    bold: false,
+    weight: 'normal',
   },
 }));
 
 const StyledTag = createStyledTag(name, {
   fontFamily: 'Poppins',
-  fontWeight: 400,
   fontSize: '1.4rem',
   lineHeight: 1.4,
   margin: 0,

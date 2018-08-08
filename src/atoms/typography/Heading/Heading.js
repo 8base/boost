@@ -4,7 +4,7 @@ import { createStyledTag, createTheme } from '../../../utils';
 
 type HeadingProps = {|
   children?: React$Node,
-  kind?: 'primary' | 'secondary' | 'disabled',
+  kind?: 'primary' | 'secondary' | 'disabled' | 'white',
   text?: string,
   type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   weight?: 'light' | 'normal' | 'semibold' | 'bold',
@@ -44,6 +44,9 @@ const theme = createTheme(name, (colors) => ({
       disabled: {
         color: colors.DARK_DISABLED_TEXT_COLOR,
       },
+      white: {
+        color: colors.WHITE,
+      },
     },
     weight: {
       light: {
@@ -68,7 +71,7 @@ const theme = createTheme(name, (colors) => ({
 
 const StyledTag = createStyledTag(name, {
   lineHeight: 1.1,
-  fontFamily: 'Sofia Pro, sans-serif',
+  fontFamily: 'Poppins',
   fontWeight: 400,
   margin: 0,
 });

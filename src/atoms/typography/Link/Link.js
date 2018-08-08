@@ -34,8 +34,8 @@ const theme = createTheme(name, (colors: *) => ({
       white: {
         color: colors.WHITE,
       },
-      brand: {
-        color: colors.BRAND,
+      red: {
+        color: colors.RED,
       },
     },
     underline: {

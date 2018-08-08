@@ -23,7 +23,9 @@ type InputCommonProps = {
   maxLength?: number,
   /** callback to set input ref */
   insideRef?:(HTMLInputElement) => void,
-}
+  /** kind of the input */
+  kind?: 'bordered' | 'underline',
+};
 
 type InputProps = {
   /** input name */
@@ -44,7 +46,7 @@ type InputProps = {
   onChange?: (value?: string | number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
   onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
-} & InputCommonProps
+} & InputCommonProps;
 
 class Input extends PureComponent<InputProps> {
   static defaultProps = {
@@ -55,6 +57,7 @@ class Input extends PureComponent<InputProps> {
     square: false,
     stretch: true,
     type: 'text',
+    kind: 'bordered',
   }
 
   onChange = (event: *) => {
@@ -90,6 +93,8 @@ class Input extends PureComponent<InputProps> {
       stretch,
       type,
       value,
+      name,
+      kind,
       ...rest } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
@@ -108,6 +113,8 @@ class Input extends PureComponent<InputProps> {
       type,
       value,
       insideRef,
+      name,
+      kind,
     };
 
     return (

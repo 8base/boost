@@ -1,3 +1,19 @@
+<a name="0.4.20"></a>
+## [0.4.20](https://github.com/8base/boost/compare/v0.4.19...v0.4.20) (2018-08-08)
+
+
+### Bug Fixes
+
+* **atoms:** add alignSelf and justifySelf modifiers to the GridBox component ([ae0f754](https://github.com/8base/boost/commit/ae0f754))
+* **atoms:** fix Paragraph size required ([c89e9e5](https://github.com/8base/boost/commit/c89e9e5))
+
+
+### Features
+
+* **atoms:** add ellipsis modifier to the Text component ([83018c5](https://github.com/8base/boost/commit/83018c5))
+
+
+
 <a name="0.4.19"></a>
 ## [0.4.19](https://github.com/8base/boost/compare/v0.4.18...v0.4.19) (2018-08-08)
 

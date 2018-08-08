@@ -19,6 +19,8 @@ type TextProps = {|
   size?: PropSizes,
   /** text align */
   align?: 'left' | 'center' | 'right',
+  /** when true then cut text with ellipsis */
+  ellipsis?: boolean,
 |};
 
 const name = 'text';
@@ -88,11 +90,19 @@ const theme = createTheme(name, (colors: *): * => ({
         fontSize: '1.8rem',
       },
     },
+
+    ellipsis: {
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+    },
   },
+
   defaults: {
     color: 'primary',
     size: 'md',
     weight: 'normal',
+    ellipsis: false,
   },
 }));
 

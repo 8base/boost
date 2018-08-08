@@ -12672,17 +12672,6 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   margin: 2rem;
 }
 
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .emotion-0 {
   color: #FFCB00;
   line-height: normal;
@@ -12707,6 +12696,21 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   grid-gap: 0.5rem;
 }
 
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12714,6 +12718,10 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   display: flex;
   position: relative;
   grid-column: 2;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;

@@ -25,17 +25,19 @@ type ButtonProps = {|
   /** possible button types */
   type?: 'submit' | 'button',
   /** possible button colors */
-  color?: 'primary' | 'secondary' | 'neutral' | 'warning',
+  color?: 'primary' | 'secondary' | 'neutral' | 'red' | 'white',
   /** the type of button */
   variant?: 'outlined' | 'raised',
   /** posible sizes */
-  size?: 'sm' | 'md' | 'lg',
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
 |};
 
 const BUTTON_HEIGHT_BY_SIZE = {
+  xs: '2rem',
   sm: '3rem',
   md: '4rem',
   lg: '5rem',
+  xl: '6rem',
 };
 
 const DEFAULT_MODIFIERS = {
@@ -70,6 +72,11 @@ const theme = createTheme(name, (colors: *): * => ({
   },
   modifiers: {
     size: {
+      xs: {
+        height: BUTTON_HEIGHT_BY_SIZE.xs,
+        padding: '0 1rem',
+        borderRadius: '.5rem',
+      },
       sm: {
         height: BUTTON_HEIGHT_BY_SIZE.sm,
         padding: '0 2rem',
@@ -84,6 +91,12 @@ const theme = createTheme(name, (colors: *): * => ({
         height: BUTTON_HEIGHT_BY_SIZE.lg,
         padding: '0 6rem',
         borderRadius: '.5rem',
+      },
+      xl: {
+        height: BUTTON_HEIGHT_BY_SIZE.xl,
+        padding: '0 6rem',
+        borderRadius: '.5rem',
+        fontSize: '1.8rem',
       },
     },
     disabled: {
@@ -152,8 +165,14 @@ const getBackgroundColor = (props: ButtonProps) => {
     switch (props.color) {
       case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
       case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
-      case 'warning': return getThemeColors(props).WARNING_BUTTON_BACKGROUND_COLOR;
+      case 'red': return getThemeColors(props).RED_BUTTON_BACKGROUND_COLOR;
       case 'neutral': return getThemeColors(props).NEUTRAL_BUTTON_BACKGROUND_COLOR;
+      case 'white': return getThemeColors(props).WHITE;
+      default: return '';
+    }
+  } else {
+    switch (props.color) {
+      case 'white': return getThemeColors(props).TRANSPARENT;
       default: return '';
     }
   }
@@ -165,12 +184,15 @@ const getColor = (props: ButtonProps) => {
       case 'primary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
       case 'secondary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
       case 'neutral': return getThemeColors(props).PRIMARY_TEXT_COLOR;
-      case 'warning': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
+      case 'red': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
+      case 'white': return getThemeColors(props).PRIMARY_TEXT_COLOR;
       default: return '';
     }
-  }
-  else {
-    return getThemeColors(props).PRIMARY_TEXT_COLOR;
+  } else {
+    switch (props.color) {
+      case 'white': return getThemeColors(props).WHITE;
+      default: return getThemeColors(props).PRIMARY_TEXT_COLOR;
+    }
   }
 };
 
@@ -178,8 +200,9 @@ const getBorderColor = (props: ButtonProps) => {
   switch (props.color) {
     case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
     case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
-    case 'warning': return getThemeColors(props).WARNING_BUTTON_BACKGROUND_COLOR;
+    case 'red': return getThemeColors(props).RED_BUTTON_BACKGROUND_COLOR;
     case 'neutral': return getThemeColors(props).PRIMARY_BORDER_COLOR;
+    case 'white': return getThemeColors(props).WHITE;
     default: return '';
   }
 };

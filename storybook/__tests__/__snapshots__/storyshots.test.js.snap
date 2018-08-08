@@ -101,7 +101,7 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
-.emotion-11 {
+.emotion-13 {
   margin: 2rem;
 }
 
@@ -145,7 +145,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -167,11 +167,11 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-4 > *:not(:last-child) {
+.emotion-5 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.emotion-10 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,7 +193,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-10 > *:not(:last-child) {
+.emotion-12 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -317,7 +317,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-5 {
+.emotion-4 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -341,18 +341,19 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
   border-radius: .5rem;
 }
 
-.emotion-5:hover {
+.emotion-4:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-5 > *:not(:last-child) {
+.emotion-4 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -380,7 +381,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
+  border-color: #4DA1FF;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -419,7 +421,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #eb4235;
+  border-color: #00bb6e;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -458,7 +461,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d7dd;
+  border-color: #eb4235;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -473,14 +477,99 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
+.emotion-9 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  background-color: px;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 4rem;
+  border-radius: .5rem;
+}
+
+.emotion-9:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-9 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-10 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 4rem;
+  border-radius: .5rem;
+}
+
+.emotion-10:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
 <div
-  className="emotion-11"
+  className="emotion-13"
 >
   <div
-    className="emotion-10"
+    className="emotion-12"
+    style={
+      Object {
+        "background": "#999",
+      }
+    }
   >
     <div
-      className="emotion-4"
+      className="emotion-5"
     >
       <button
         className="emotion-0"
@@ -510,17 +599,17 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       >
         Raised
       </button>
-    </div>
-    <div
-      className="emotion-4"
-    >
       <button
-        className="emotion-5"
+        className="emotion-4"
         onClick={[Function]}
         type={undefined}
       >
-        Outlined
+        Raised
       </button>
+    </div>
+    <div
+      className="emotion-5"
+    >
       <button
         className="emotion-6"
         onClick={[Function]}
@@ -537,6 +626,20 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       </button>
       <button
         className="emotion-8"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-9"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-10"
         onClick={[Function]}
         type={undefined}
       >
@@ -865,6 +968,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -12459,6 +12563,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;

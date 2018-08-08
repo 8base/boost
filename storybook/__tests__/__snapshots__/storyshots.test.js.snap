@@ -12651,7 +12651,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 .emotion-4 {
   display: inline-grid;
   grid-auto-columns: min-content;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 .emotion-1 {

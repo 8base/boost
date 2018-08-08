@@ -5,7 +5,7 @@ import { createStyledTag, createTheme } from '../../../utils';
 type ParagraphProps = {|
   children?: React$Node,
   kind?: 'primary' | 'secondary' | 'disabled' | 'white',
-  size: 'md' | 'lg',
+  size?: 'md' | 'lg',
   text?: string,
 |};
 

@@ -7,8 +7,6 @@ const name = 'input';
 
 const theme = createTheme(name, (colors: *): * => ({
   input: {
-    border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
-    borderRadius: '5px',
     color: colors.PRIMARY_TEXT_COLOR,
     fontSize: '1.4rem',
     fontWeight: 400,
@@ -30,6 +28,16 @@ const theme = createTheme(name, (colors: *): * => ({
       left: { textAlign: 'left ' },
       right: { textAlign: 'right ' },
       center: { textAlign: 'center ' },
+    },
+    kind: {
+      bordered: {
+        border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+        borderRadius: '5px',
+      },
+      underline: {
+        border: 0,
+        borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+      },
     },
   },
 
@@ -54,16 +62,17 @@ const theme = createTheme(name, (colors: *): * => ({
   },
 
   defaults: {
+    kind: 'app',
   },
 }));
 
-const InputWrapperTag = createStyledTag(name, props => ({
+const InputWrapperTag = createStyledTag(`${name}Wrapper`, props => ({
   display: 'inline-flex',
   position: 'relative',
   width: props.stretch && !props.square ? '100%' : 'auto',
 }));
 
-const InputIndicatorTag = createStyledTag(name, props => ({
+const InputIndicatorTag = createStyledTag(`${name}Indicator`, props => ({
   display: props.hasRightIcon ? 'none' : 'block',
   position: 'absolute',
   ...getThemeStyle(props, name).inputIndicator,
@@ -78,12 +87,12 @@ const iconsStyles = {
   width: '3rem',
 };
 
-const InputLeftIconTag = createStyledTag(name, {
+const InputLeftIconTag = createStyledTag(`${name}LeftIcon`, {
   ...iconsStyles,
   left: '1rem',
 });
 
-const InputRightIconTag = createStyledTag(name, {
+const InputRightIconTag = createStyledTag(`${name}RightIcon`, {
   ...iconsStyles,
   right: '1rem',
 });

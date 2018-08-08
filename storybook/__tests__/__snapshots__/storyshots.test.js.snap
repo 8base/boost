@@ -101,7 +101,7 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
-.emotion-11 {
+.emotion-13 {
   margin: 2rem;
 }
 
@@ -145,7 +145,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -167,11 +167,11 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-4 > *:not(:last-child) {
+.emotion-5 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.emotion-10 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,7 +193,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-10 > *:not(:last-child) {
+.emotion-12 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -317,7 +317,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-5 {
+.emotion-4 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -341,18 +341,19 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
   border-radius: .5rem;
 }
 
-.emotion-5:hover {
+.emotion-4:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-5 > *:not(:last-child) {
+.emotion-4 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -380,7 +381,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
+  border-color: #4DA1FF;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -419,7 +421,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #eb4235;
+  border-color: #00bb6e;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -458,7 +461,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   transition: all .15s ease-in-out;
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d7dd;
+  border-color: #eb4235;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -473,14 +477,99 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
+.emotion-9 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  background-color: px;
+  color: #323c47;
+  height: 4rem;
+  padding: 0 4rem;
+  border-radius: .5rem;
+}
+
+.emotion-9:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-9 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-10 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 4rem;
+  border-radius: .5rem;
+}
+
+.emotion-10:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
 <div
-  className="emotion-11"
+  className="emotion-13"
 >
   <div
-    className="emotion-10"
+    className="emotion-12"
+    style={
+      Object {
+        "background": "#999",
+      }
+    }
   >
     <div
-      className="emotion-4"
+      className="emotion-5"
     >
       <button
         className="emotion-0"
@@ -510,17 +599,17 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       >
         Raised
       </button>
-    </div>
-    <div
-      className="emotion-4"
-    >
       <button
-        className="emotion-5"
+        className="emotion-4"
         onClick={[Function]}
         type={undefined}
       >
-        Outlined
+        Raised
       </button>
+    </div>
+    <div
+      className="emotion-5"
+    >
       <button
         className="emotion-6"
         onClick={[Function]}
@@ -537,6 +626,20 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       </button>
       <button
         className="emotion-8"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-9"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Outlined
+      </button>
+      <button
+        className="emotion-10"
         onClick={[Function]}
         type={undefined}
       >
@@ -865,6 +968,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -2777,8 +2881,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -2787,6 +2889,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-2:focus {
@@ -2878,10 +2982,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             </div>
             <div
               className="emotion-3"
-              name="curple"
             >
               <input
                 className="emotion-2"
+                name="curple"
                 onBlur={undefined}
                 onChange={[Function]}
                 onFocus={undefined}
@@ -2905,10 +3009,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             </div>
             <div
               className="emotion-3"
-              name="provect"
             >
               <input
                 className="emotion-2"
+                name="provect"
                 onBlur={undefined}
                 onChange={[Function]}
                 onFocus={undefined}
@@ -2932,10 +3036,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             </div>
             <div
               className="emotion-3"
-              name="inlaying"
             >
               <input
                 className="emotion-2"
+                name="inlaying"
                 onBlur={undefined}
                 onChange={[Function]}
                 onFocus={undefined}
@@ -2968,10 +3072,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             </div>
             <div
               className="emotion-3"
-              name="saccharifier"
             >
               <input
                 className="emotion-2"
+                name="saccharifier"
                 onBlur={undefined}
                 onChange={[Function]}
                 onFocus={undefined}
@@ -2995,10 +3099,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             </div>
             <div
               className="emotion-3"
-              name="inertance"
             >
               <input
                 className="emotion-2"
+                name="inertance"
                 onBlur={undefined}
                 onChange={[Function]}
                 onFocus={undefined}
@@ -3099,8 +3203,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3109,6 +3211,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -3160,10 +3264,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           </div>
           <div
             className="emotion-2"
-            name="curple"
           >
             <input
               className="emotion-1"
+              name="curple"
               onBlur={undefined}
               onChange={[Function]}
               onFocus={undefined}
@@ -3187,10 +3291,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           </div>
           <div
             className="emotion-2"
-            name="provect"
           >
             <input
               className="emotion-1"
+              name="provect"
               onBlur={undefined}
               onChange={[Function]}
               onFocus={undefined}
@@ -3214,10 +3318,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           </div>
           <div
             className="emotion-2"
-            name="inlaying"
           >
             <input
               className="emotion-1"
+              name="inlaying"
               onBlur={undefined}
               onChange={[Function]}
               onFocus={undefined}
@@ -3241,10 +3345,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           </div>
           <div
             className="emotion-2"
-            name="saccharifier"
           >
             <input
               className="emotion-1"
+              name="saccharifier"
               onBlur={undefined}
               onChange={[Function]}
               onFocus={undefined}
@@ -3268,10 +3372,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           </div>
           <div
             className="emotion-2"
-            name="inertance"
           >
             <input
               className="emotion-1"
+              name="inertance"
               onBlur={undefined}
               onChange={[Function]}
               onFocus={undefined}
@@ -3306,8 +3410,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3316,6 +3418,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: center;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3349,10 +3453,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3383,8 +3487,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3394,6 +3496,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3439,10 +3543,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 >
   <div
     className="emotion-2"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3476,8 +3580,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3486,6 +3588,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3519,10 +3623,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3553,8 +3657,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   outline: none;
   padding-left: 3rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3563,6 +3665,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3615,10 +3719,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 >
   <div
     className="emotion-2"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3654,8 +3758,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3664,6 +3766,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3697,10 +3801,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3731,8 +3835,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 3rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3741,6 +3843,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3793,10 +3897,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 >
   <div
     className="emotion-2"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3851,8 +3955,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 3rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3862,6 +3964,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3895,10 +3999,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 >
   <div
     className="emotion-2"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -3934,8 +4038,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -3945,6 +4047,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   transition: all .15s ease-in-out;
   text-align: left;
   padding: 0;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -3978,10 +4082,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -4003,8 +4107,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4013,6 +4115,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -4055,10 +4159,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -4089,8 +4193,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4099,6 +4201,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -4132,10 +4236,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -4166,8 +4270,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4176,6 +4278,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -4209,10 +4313,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 >
   <div
     className="emotion-1"
-    name="input"
   >
     <input
       className="emotion-0"
+      name="input"
       onBlur={undefined}
       onChange={[Function]}
       onFocus={undefined}
@@ -4267,8 +4371,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4277,6 +4379,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: center;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -4316,10 +4420,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
     >
       <div
         className="emotion-1"
-        name="input"
       >
         <input
           className="emotion-0"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -4397,8 +4501,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4408,6 +4510,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -4464,10 +4568,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
       </div>
       <div
         className="emotion-3"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -4535,8 +4639,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4546,6 +4648,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -4624,10 +4728,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
       </div>
       <div
         className="emotion-3"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -4703,8 +4807,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4713,6 +4815,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -4757,10 +4861,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -4802,8 +4906,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4812,6 +4914,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -4878,10 +4982,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -4914,8 +5018,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4924,6 +5026,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -4999,10 +5103,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5035,8 +5139,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5046,6 +5148,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   transition: all .15s ease-in-out;
   text-align: left;
   padding: 0;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -5121,10 +5225,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5188,8 +5292,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5198,6 +5300,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -5242,10 +5346,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5309,8 +5413,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5319,6 +5421,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -5363,10 +5467,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5423,8 +5527,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5434,6 +5536,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -5473,10 +5577,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
     >
       <div
         className="emotion-1"
-        name="input"
       >
         <input
           className="emotion-0"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5533,8 +5637,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5543,6 +5645,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-0:focus {
@@ -5582,10 +5686,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
     >
       <div
         className="emotion-1"
-        name="input"
       >
         <input
           className="emotion-0"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -5649,8 +5753,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5659,6 +5761,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
 }
 
 .emotion-1:focus {
@@ -5703,10 +5807,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
       </div>
       <div
         className="emotion-2"
-        name="input"
       >
         <input
           className="emotion-1"
+          name="input"
           onBlur={undefined}
           onChange={[Function]}
           onFocus={undefined}
@@ -11067,7 +11171,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-0 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 3.2rem;
@@ -11075,7 +11179,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-1 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 2.4rem;
@@ -11083,7 +11187,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-2 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 2rem;
@@ -11120,7 +11224,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-0 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 3.2rem;
@@ -11128,7 +11232,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-1 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 2.4rem;
@@ -11136,7 +11240,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-2 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 2rem;
@@ -11144,7 +11248,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-3 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
@@ -11152,7 +11256,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-4 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 1.2rem;
@@ -11160,7 +11264,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-5 {
   line-height: 1.1;
-  font-family: Sofia Pro,sans-serif;
+  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 1rem;
@@ -11540,13 +11644,13 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
 
 .emotion-1 {
   cursor: pointer;
-  color: #4DA1FF;
   font-family: Poppins;
-  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  color: #4DA1FF;
 }
 
 .emotion-1:hover {
@@ -11576,13 +11680,13 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with text 1`] = `
 
 .emotion-0 {
   cursor: pointer;
-  color: #4DA1FF;
   font-family: Poppins;
-  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  color: #4DA1FF;
 }
 
 .emotion-0:hover {
@@ -11610,7 +11714,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with children 1`] = `
 .emotion-0 {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 28px;
   margin: 0;
 }
@@ -11634,7 +11738,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with kind modifiers  1`] = `
 .emotion-0 {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 28px;
   margin: 0;
 }
@@ -11668,7 +11772,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with text 1`] = `
 .emotion-0 {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 28px;
   margin: 0;
 }
@@ -11691,32 +11795,32 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
   text-align: left;
+  font-weight: 400;
 }
 
 .emotion-1 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
   text-align: right;
+  font-weight: 400;
 }
 
 .emotion-2 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
   text-align: center;
+  font-weight: 400;
 }
 
 <div
@@ -11759,11 +11863,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 700;
 }
 
 <div
@@ -11784,11 +11888,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 400;
 }
 
 <div
@@ -11809,47 +11913,47 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 400;
 }
 
 .emotion-1 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #878c93;
+  font-weight: 400;
 }
 
 .emotion-2 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #eb4235;
+  font-weight: 400;
 }
 
 .emotion-3 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #00bb6e;
+  font-weight: 400;
 }
 
 .emotion-4 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #1968cb;
+  font-weight: 400;
 }
 
 <div
@@ -11892,11 +11996,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 400;
 }
 
 <div
@@ -11917,11 +12021,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #d0d7dd;
+  font-weight: 400;
 }
 
 <div
@@ -11942,11 +12046,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
 
 .emotion-0 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 400;
 }
 
 <div
@@ -12459,6 +12563,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
+  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -12536,17 +12641,17 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 
 .emotion-2 {
   font-family: Poppins;
-  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #323c47;
+  font-weight: 400;
 }
 
 .emotion-4 {
   display: inline-grid;
   grid-auto-columns: min-content;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 .emotion-1 {

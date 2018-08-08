@@ -34,7 +34,7 @@ export default (asStory: *) => {
         <Text disabled>Disabled Text</Text>
       ))
       .add('with bold modifier', () => (
-        <Text bold>Disabled Text</Text>
+        <Text weight="bold">Disabled Text</Text>
       ))
       .add('with custom size', () => (
         <Text size="lg">Disabled Text</Text>

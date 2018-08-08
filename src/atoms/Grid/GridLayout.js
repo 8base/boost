@@ -6,11 +6,11 @@ import { createStyledTag, createTheme } from '../../utils';
 type GridLayoutProps = {|
   children?: React$Node,
   /** possbile spaces between grid items */
-  gap?: 'xs' | 'md' | 'lg' | 'none',
+  gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none',
   /** when true then set inline-grid */
   inline?: boolean,
   /** possible offsets of the grid layout */
-  offset?: 'xs' | 'md' | 'lg' | 'none',
+  offset?: 'sm' | 'md' | 'lg' | 'none',
   /** justify-content css rule*/
   justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
   /** align-content css rule*/
@@ -27,6 +27,9 @@ const theme = createTheme(name, {
   modifiers: {
     gap: {
       xs: {
+        gridGap: '0.5rem',
+      },
+      sm: {
         gridGap: '1rem',
       },
       md: {
@@ -35,10 +38,13 @@ const theme = createTheme(name, {
       lg: {
         gridGap: '2rem',
       },
+      xl: {
+        gridGap: '3rem',
+      },
       none: {},
     },
     padding: {
-      xs: {
+      sm: {
         padding: '1rem',
       },
       md: {

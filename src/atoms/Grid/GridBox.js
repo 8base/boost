@@ -6,6 +6,8 @@ type GridBoxProps = {|
   children?: React$Node,
   direction?: 'column' | 'row',
   scrollable?: boolean,
+  alignSelf?: 'start' | 'end' | 'center' | 'stretch',
+  justifySelf?: 'start' | 'end' | 'center' | 'stretch',
 |};
 
 const name = 'gridBox';
@@ -40,12 +42,12 @@ const StyledTag = createStyledTag(name, (props) => {
     style.gridRow = props.row;
   }
 
-  if (props.justifyContent) {
-    style.justifyContent = props.justifyContent;
+  if (props.justifySelf) {
+    style.justifySelf = props.justifySelf;
   }
 
-  if (props.alignItems) {
-    style.alignItems = props.alignItems;
+  if (props.alignSelf) {
+    style.alignSelf = props.alignSelf;
   }
 
   if (props.area) {

@@ -11801,6 +11801,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
   color: #323c47;
   text-align: left;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-1 {
@@ -11811,6 +11814,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
   color: #323c47;
   text-align: right;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -11821,6 +11827,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
   color: #323c47;
   text-align: center;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -11868,6 +11877,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -11893,6 +11905,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -11918,6 +11933,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-1 {
@@ -11927,6 +11945,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   margin: 0;
   color: #878c93;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-2 {
@@ -11936,6 +11957,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   margin: 0;
   color: #eb4235;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-3 {
@@ -11945,6 +11969,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   margin: 0;
   color: #00bb6e;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-4 {
@@ -11954,6 +11981,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
   margin: 0;
   color: #1968cb;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -12001,6 +12031,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -12026,6 +12059,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
   margin: 0;
   color: #d0d7dd;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -12051,6 +12087,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 <div
@@ -12633,6 +12672,17 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   margin: 2rem;
 }
 
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .emotion-0 {
   color: #FFCB00;
   line-height: normal;
@@ -12646,27 +12696,15 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   margin: 0;
   color: #323c47;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .emotion-4 {
   display: inline-grid;
   grid-auto-columns: min-content;
   grid-gap: 0.5rem;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .emotion-3 {
@@ -12676,10 +12714,6 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   display: flex;
   position: relative;
   grid-column: 2;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;

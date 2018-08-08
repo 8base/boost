@@ -5,6 +5,8 @@ import { createStyledTag, createTheme } from '../../utils';
 
 type GridLayoutProps = {|
   children?: React$Node,
+  /** when true then stretch to full width */
+  stretch?: boolean,
   /** possbile spaces between grid items */
   gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none',
   /** when true then set inline-grid */
@@ -57,6 +59,8 @@ const theme = createTheme(name, {
     },
     stretch: {
       flex: 1,
+      width: '100%',
+      maxWidth: '100%',
     },
   },
   defaults: {

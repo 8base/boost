@@ -1,3 +1,21 @@
+<a name="0.4.19"></a>
+## [0.4.19](https://github.com/8base/boost/compare/v0.4.18...v0.4.19) (2018-08-08)
+
+
+### Bug Fixes
+
+* **atoms:** add styles for user flow screens to the typography ([d6fff7e](https://github.com/8base/boost/commit/d6fff7e))
+* **tag:** fix types ([7d4ff80](https://github.com/8base/boost/commit/7d4ff80))
+
+
+### Features
+
+* **atoms:** add user flow styles for input ([2f82549](https://github.com/8base/boost/commit/2f82549))
+* **atoms:** add xl gap for grid layout ([015711d](https://github.com/8base/boost/commit/015711d))
+* **atoms:** add xl size, brand and marketing colors ([cb2b962](https://github.com/8base/boost/commit/cb2b962))
+
+
+
 <a name="0.4.18"></a>
 ## [0.4.18](https://github.com/8base/boost/compare/v0.4.17...v0.4.18) (2018-08-01)
 

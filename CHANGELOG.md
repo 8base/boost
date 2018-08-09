@@ -1,3 +1,18 @@
+<a name="0.4.22"></a>
+## [0.4.22](https://github.com/8base/boost/compare/v0.4.21...v0.4.22) (2018-08-09)
+
+
+### Bug Fixes
+
+* **utils:** fix boolean modifiers ([bcfa75d](https://github.com/8base/boost/commit/bcfa75d))
+
+
+### Features
+
+* **grid:** add align items prop ([60d1308](https://github.com/8base/boost/commit/60d1308))
+
+
+
 <a name="0.4.21"></a>
 ## [0.4.21](https://github.com/8base/boost/compare/v0.4.20...v0.4.21) (2018-08-08)
 

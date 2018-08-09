@@ -12,6 +12,8 @@ type GridBoxProps = {|
   justifySelf?: 'start' | 'end' | 'center' | 'stretch',
   /** justify-content css rule*/
   justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  /** justify-content css rule*/
+  alignItems?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
   /** align-content css rule*/
   alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
 |};
@@ -58,6 +60,10 @@ const StyledTag = createStyledTag(name, (props) => {
 
   if (props.justifyContent) {
     style.justifyContent = props.justifyContent;
+  }
+
+  if (props.alignItems) {
+    style.alignItems = props.alignItems;
   }
 
   if (props.alignContent) {

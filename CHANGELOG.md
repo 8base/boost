@@ -1,3 +1,13 @@
+<a name="0.4.23"></a>
+## [0.4.23](https://github.com/8base/boost/compare/v0.4.22...v0.4.23) (2018-08-09)
+
+
+### Bug Fixes
+
+* **heading:** fix sizes ([00515d7](https://github.com/8base/boost/commit/00515d7))
+
+
+
 <a name="0.4.22"></a>
 ## [0.4.22](https://github.com/8base/boost/compare/v0.4.21...v0.4.22) (2018-08-09)
 

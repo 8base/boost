@@ -17,9 +17,17 @@ const getModifierStyles = (themeName: string, modifierName: string, props: Objec
   const modifierValue = getModifierValue(themeName, modifierName, props);
   const themeModifiers = getThemeModifiers(themeName, props);
 
-  return typeof modifierValue === 'boolean'
-    ? themeModifiers[modifierName] || {}
-    : themeModifiers[modifierName][modifierValue] || {};
+  let styles = {};
+
+  if (typeof modifierValue === 'boolean') {
+    if (modifierValue === true) {
+      styles = themeModifiers[modifierName];
+    }
+  } else {
+    styles = themeModifiers[modifierName][modifierValue] || {};
+  }
+
+  return styles;
 };
 
 const getAllModifiersStyles = (themeName: string, props: Object) =>

@@ -16,19 +16,19 @@ const theme = createTheme(name, (colors) => ({
   modifiers: {
     type: {
       h1: {
-        fontSize: '3.2rem',
+        fontSize: '6.2rem',
       },
       h2: {
-        fontSize: '2.4rem',
+        fontSize: '4.6rem',
       },
       h3: {
-        fontSize: '2rem',
+        fontSize: '3rem',
       },
       h4: {
-        fontSize: '1.4rem',
+        fontSize: '2rem',
       },
       h5: {
-        fontSize: '1.2rem',
+        fontSize: '1.4rem',
       },
       h6: {
         fontSize: '1rem',

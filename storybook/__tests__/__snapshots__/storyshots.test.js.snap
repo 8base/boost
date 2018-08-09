@@ -11170,7 +11170,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 6.2rem;
 }
 
 .emotion-1 {
@@ -11178,7 +11178,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 4.6rem;
 }
 
 .emotion-2 {
@@ -11186,7 +11186,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 <div
@@ -11223,7 +11223,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 6.2rem;
 }
 
 .emotion-1 {
@@ -11231,7 +11231,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 4.6rem;
 }
 
 .emotion-2 {
@@ -11239,7 +11239,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .emotion-3 {
@@ -11247,7 +11247,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .emotion-4 {
@@ -11255,7 +11255,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-family: Poppins;
   font-weight: 400;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .emotion-5 {

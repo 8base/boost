@@ -1,3 +1,13 @@
+<a name="0.4.25"></a>
+## [0.4.25](https://github.com/8base/boost/compare/v0.4.24...v0.4.25) (2018-08-10)
+
+
+### Bug Fixes
+
+* **dialog:** fix header heading size ([c24d764](https://github.com/8base/boost/commit/c24d764))
+
+
+
 <a name="0.4.24"></a>
 ## [0.4.24](https://github.com/8base/boost/compare/v0.4.23...v0.4.24) (2018-08-10)
 

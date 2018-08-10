@@ -16,6 +16,8 @@ type GridBoxProps = {|
   alignItems?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
   /** align-content css rule*/
   alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  /** text-align css rule*/
+  textAlign?: 'left' | 'right' | 'center' | 'justify',
 |};
 
 const name = 'gridBox';
@@ -72,6 +74,10 @@ const StyledTag = createStyledTag(name, (props) => {
 
   if (props.area) {
     style.gridArea = props.area;
+  }
+
+  if (props.textAlign) {
+    style.textAlign = props.textAlign;
   }
 
   return style;

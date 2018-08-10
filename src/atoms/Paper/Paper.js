@@ -6,6 +6,7 @@ import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 
 type PaperProps = {|
   children?: React$Node,
+  padding: PropSizes,
 |};
 
 const name = 'paper';
@@ -19,8 +20,20 @@ const theme = createTheme(name, (colors: *): * => ({
     position: 'relative',
   },
 
-  modifiers: {},
-  defaults: {},
+  modifiers: {
+    padding: {
+      none: { padding: '0' },
+      xs: { padding: '0.5rem' },
+      sm: { padding: '1rem' },
+      md: { padding: '2rem' },
+      lg: { padding: '4rem' },
+      xl: { padding: '8rem' },
+    },
+  },
+
+  defaults: {
+    padding: 'none',
+  },
 }));
 
 const StyledTag = createStyledTag(name, props => ({

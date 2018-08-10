@@ -1,3 +1,14 @@
+<a name="0.4.24"></a>
+## [0.4.24](https://github.com/8base/boost/compare/v0.4.23...v0.4.24) (2018-08-10)
+
+
+### Features
+
+* **gridBox:** add text align ([f1f2442](https://github.com/8base/boost/commit/f1f2442))
+* **paper:** add padding modifier ([e364fdd](https://github.com/8base/boost/commit/e364fdd))
+
+
+
 <a name="0.4.23"></a>
 ## [0.4.23](https://github.com/8base/boost/compare/v0.4.22...v0.4.23) (2018-08-09)
 

@@ -39,7 +39,7 @@ function DialogHeader({
   }: DialogHeaderProps) {
   return (
     <Card.Header offset="lg" { ...rest }>
-      <Heading type="h3">{ title }</Heading>
+      <Heading type="h4">{ title }</Heading>
       <CloseStyledTag tagName="div" onClick={ onClose }>×</CloseStyledTag>
     </Card.Header>
   );

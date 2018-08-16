@@ -70,12 +70,16 @@ const theme = createTheme(name, {
 });
 
 const StyledTag = createStyledTag(name, (props) => {
-  const style = {};
+  const style = props.style || {};
 
   style.display = props.inline ? 'inline-grid' : 'grid';
 
   if (props.columns) {
     style.gridTemplateColumns = props.columns;
+  }
+
+  if (props.rows) {
+    style.gridTemplateRows = props.rows;
   }
 
   if (props.autoColumns) {

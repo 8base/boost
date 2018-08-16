@@ -10335,6 +10335,7 @@ exports[`Storyshots ATOMS/Grid with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 <div
@@ -10376,6 +10377,7 @@ exports[`Storyshots ATOMS/Grid with gap modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -10429,6 +10431,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-1 {
@@ -10441,6 +10444,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-2 {
@@ -10453,6 +10457,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -10465,6 +10470,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-4 {
@@ -10477,6 +10483,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-5 {
@@ -10489,6 +10496,7 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 <div
@@ -10545,6 +10553,7 @@ exports[`Storyshots ATOMS/Grid with inline modifier 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -10591,6 +10600,7 @@ exports[`Storyshots ATOMS/Grid with padding modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -10637,6 +10647,7 @@ exports[`Storyshots ATOMS/Grid with stretch column 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -10736,9 +10747,55 @@ exports[`Storyshots ATOMS/Menu with default modifiers 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/Navigation with groups 1`] = `
-.emotion-17 {
+exports[`Storyshots ATOMS/Navigation without groups 1`] = `
+.emotion-13 {
   margin: 2rem;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 6rem;
+  z-index: 100000;
+}
+
+.emotion-12:hover {
+  width: auto;
+}
+
+.emotion-12:hover .NavigationItem-label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 {
+  cursor: pointer;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3:hover,
+.emotion-3.active {
+  background-color: #4D5A78;
 }
 
 .emotion-1 {
@@ -10746,290 +10803,141 @@ exports[`Storyshots ATOMS/Navigation with groups 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-5 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 1rem;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 300;
-  font-size: 12px;
-  padding-left: 2rem;
-}
-
-.emotion-5:hover,
-.emotion-5.is-active {
-  background-color: #fff;
-}
-
-.emotion-5.is-active {
-  font-weight: 600;
-}
-
-.emotion-5:hover::before,
-.emotion-5.is-active::before {
-  content: "";
-  background-color: #4DA1FF;
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 2px;
+  width: 6rem;
+  height: 6rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-0 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 1rem;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 400;
-  font-size: 14px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #FFFFFF;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
-.emotion-0:hover,
-.emotion-0.is-active {
-  background-color: #fff;
-}
-
-.emotion-0.is-active {
+.emotion-2 {
+  color: #fff;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
   font-weight: 600;
-}
-
-.emotion-0:hover::before,
-.emotion-0.is-active::before {
-  content: "";
-  background-color: #4DA1FF;
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 2px;
+  padding-right: 2rem;
 }
 
 <div
-  className="emotion-17"
+  className="emotion-13"
 >
   <nav
-    className="emotion-1"
-  >
-    <div
-      className="emotion-1"
-    >
-      <a
-        className="emotion-0"
-        to="/profile"
-      >
-        My Profile
-      </a>
-    </div>
-    <div
-      className="emotion-1"
-    >
-      <a
-        className="emotion-0"
-        to="/messages"
-      >
-        Messages
-      </a>
-    </div>
-    <div
-      className="emotion-1"
-    >
-      <a
-        className="emotion-0"
-        to="/network"
-      >
-        Network
-      </a>
-      <a
-        className="emotion-5"
-        to="/network/hired-developers"
-      >
-        Hired Developers
-      </a>
-      <a
-        className="emotion-5"
-        to="/network/my-employers"
-      >
-        My Employers
-      </a>
-      <a
-        className="emotion-5"
-        to="/network/open-invitations"
-      >
-        Open Invitations
-      </a>
-    </div>
-    <div
-      className="emotion-1"
-    >
-      <a
-        className="emotion-0"
-        to="/jobs"
-      >
-        Jobs
-      </a>
-      <a
-        className="emotion-5"
-        to="/jobs/posted"
-      >
-        Posted
-      </a>
-      <a
-        className="emotion-5"
-        to="/jobs/my-active-jobs"
-      >
-        My Active Jobs
-      </a>
-      <a
-        className="emotion-5"
-        to="/jobs/active-requests"
-      >
-        Active Requests
-      </a>
-      <a
-        className="emotion-5"
-        to="/jobs/applied"
-      >
-        Applied
-      </a>
-      <a
-        className="emotion-5"
-        to="/jobs/saved"
-      >
-        Saved
-      </a>
-    </div>
-  </nav>
-</div>
-`;
-
-exports[`Storyshots ATOMS/Navigation without groups 1`] = `
-.emotion-7 {
-  margin: 2rem;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-0 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Poppins;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 1rem;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 300;
-  font-size: 12px;
-  padding-left: 2rem;
-}
-
-.emotion-0:hover,
-.emotion-0.is-active {
-  background-color: #fff;
-}
-
-.emotion-0.is-active {
-  font-weight: 600;
-}
-
-.emotion-0:hover::before,
-.emotion-0.is-active::before {
-  content: "";
-  background-color: #4DA1FF;
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 2px;
-}
-
-<div
-  className="emotion-7"
->
-  <nav
-    className="emotion-6"
+    className="emotion-12"
   >
     <a
-      className="emotion-0"
+      className="emotion-3"
       to="/jobs"
     >
-      Jobs
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 24 24"
+            width="100%"
+          >
+            <path
+              d="M20.5 6h-17a.5.5 0 0 1-.5-.5v-1C3 3.122 4.121 2 5.5 2h2.691l.309-.618A2.486 2.486 0 0 1 10.736 0h2.527c.953 0 1.81.529 2.236 1.382l.31.618H18.5C19.879 2 21 3.122 21 4.5v1a.5.5 0 0 1-.5.5zM4 5h16v-.5c0-.827-.673-1.5-1.5-1.5h-3a.5.5 0 0 1-.447-.276l-.447-.895A1.493 1.493 0 0 0 13.264 1h-2.527a1.49 1.49 0 0 0-1.342.829l-.448.895A.5.5 0 0 1 8.5 3h-3C4.673 3 4 3.673 4 4.5V5z"
+              fill="currentColor"
+            />
+            <path
+              d="M16.5 24h-9C5.57 24 4 22.43 4 20.5v-15a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v15c0 1.93-1.57 3.5-3.5 3.5zM5 6v14.5C5 21.878 6.121 23 7.5 23h9c1.379 0 2.5-1.122 2.5-2.5V6H5z"
+              fill="currentColor"
+            />
+            <path
+              d="M7.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM10.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM13.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM16.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="NavigationItem-label emotion-2"
+      >
+        Jobs
+      </div>
     </a>
     <a
-      className="emotion-0"
+      className="emotion-3"
       to="/posted"
     >
-      Posted
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 24 24"
+            width="100%"
+          >
+            <path
+              d="M21.5 20h-19A2.503 2.503 0 0 1 0 17.5v-11C0 5.122 1.122 4 2.5 4h19C22.878 4 24 5.122 24 6.5v11c0 1.378-1.122 2.5-2.5 2.5zM2.5 5C1.673 5 1 5.673 1 6.5v11c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-11c0-.827-.673-1.5-1.5-1.5h-19z"
+              fill="currentColor"
+            />
+            <path
+              d="M12 13.017c-.55 0-1.101-.164-1.581-.493L2.218 6.913a.5.5 0 0 1 .564-.825l8.201 5.611a1.79 1.79 0 0 0 2.033 0l8.201-5.611a.5.5 0 0 1 .565.825l-8.201 5.611a2.792 2.792 0 0 1-1.581.493zM2.5 18a.5.5 0 0 1-.321-.885l6-5a.5.5 0 0 1 .641.769l-6 5A.497.497 0 0 1 2.5 18zM21.5 18a.499.499 0 0 1-.32-.116l-6-5a.5.5 0 0 1 .641-.769l6 5A.5.5 0 0 1 21.5 18z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="NavigationItem-label emotion-2"
+      >
+        Posted
+      </div>
     </a>
     <a
-      className="emotion-0"
+      className="emotion-3"
       to="/my-active-jobs"
     >
-      My Active Jobs
-    </a>
-    <a
-      className="emotion-0"
-      to="/active-requests"
-    >
-      Active Requests
-    </a>
-    <a
-      className="emotion-0"
-      to="/applied"
-    >
-      Applied
-    </a>
-    <a
-      className="emotion-0"
-      to="/saved"
-    >
-      Saved
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 24 24"
+            width="100%"
+          >
+            <path
+              d="M23.854 23.146l-7.302-7.302A9.453 9.453 0 0 0 19 9.5C19 4.262 14.738 0 9.5 0S0 4.262 0 9.5 4.262 19 9.5 19c2.44 0 4.66-.932 6.344-2.449l7.302 7.302a.5.5 0 1 0 .708-.707zM9.5 18C4.813 18 1 14.187 1 9.5S4.813 1 9.5 1 18 4.813 18 9.5 14.187 18 9.5 18z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="NavigationItem-label emotion-2"
+      >
+        My Active Jobs
+      </div>
     </a>
   </nav>
 </div>
@@ -12454,6 +12362,383 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
 </div>
 `;
 
+exports[`Storyshots Colors without groups 1`] = `
+.emotion-1 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+<div
+  className="emotion-1"
+>
+  <div
+    className="emotion-0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      WHITE
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      BLACK
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#323c47",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      DARK_GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#3E4650",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      DARK_GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#444D57",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      DARK_GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#878c93",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#5C6268",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#737A82",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#7e868e",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GRAY4
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#d0d7dd",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#DCE1E6",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E5E9EC",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#EDF0F2",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY4
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#f4f7f9",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY5
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#ffd012",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      YELLOW
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#9975D0",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      PURPLE
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#EB518E",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      PINK
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#4DA1FF",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#1968cb",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#687695",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      DARK_BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#a6e50f",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GREEN
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#00bb6e",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GREEN
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#ff6d4a",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_RED
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#eb4235",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      RED
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#f4f7f9",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      LIGHT_GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#7e868e",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#323c47",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      DARK_GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#fff",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      TRANSPARENT
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
 .emotion-4 {
   margin: 2rem;
@@ -12668,6 +12953,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 .emotion-3 {
@@ -12684,6 +12970,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0px;
 }
 
 <div

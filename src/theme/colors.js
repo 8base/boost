@@ -25,6 +25,7 @@ const PALETTE = {
 
   LIGHT_BLUE: '#4DA1FF',
   BLUE: '#1968cb',
+  DARK_BLUE: '#687695',
 
   LIGHT_GREEN: '#a6e50f',
   GREEN: '#00bb6e',
@@ -66,4 +67,4 @@ const COLORS = {
   LIGHT_SECONDARY_TEXT_COLOR: 'rgba(255, 255, 255, 0.87)',
 };
 
-export { COLORS };
+export { COLORS, PALETTE };

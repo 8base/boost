@@ -6,7 +6,7 @@ import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 
 type PaperProps = {|
   children?: React$Node,
-  padding: PropSizes,
+  padding?: PropSizes,
 |};
 
 const name = 'paper';
@@ -28,6 +28,10 @@ const theme = createTheme(name, (colors: *): * => ({
       md: { padding: '2rem' },
       lg: { padding: '4rem' },
       xl: { padding: '8rem' },
+    },
+    stretch: {
+      flex: 1,
+      width: '100%',
     },
   },
 

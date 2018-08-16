@@ -10335,7 +10335,6 @@ exports[`Storyshots ATOMS/Grid with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 <div
@@ -10377,7 +10376,6 @@ exports[`Storyshots ATOMS/Grid with gap modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -10431,7 +10429,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-1 {
@@ -10444,7 +10441,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-2 {
@@ -10457,7 +10453,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -10470,7 +10465,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-4 {
@@ -10483,7 +10477,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-5 {
@@ -10496,7 +10489,6 @@ exports[`Storyshots ATOMS/Grid with grid areas 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 <div
@@ -10553,7 +10545,6 @@ exports[`Storyshots ATOMS/Grid with inline modifier 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -10600,7 +10591,6 @@ exports[`Storyshots ATOMS/Grid with padding modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -10647,7 +10637,6 @@ exports[`Storyshots ATOMS/Grid with stretch column 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -10760,11 +10749,9 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: fixed;
-  left: 0;
   height: 100%;
   width: 6rem;
-  z-index: 100000;
+  background-color: #00bb6e;
 }
 
 .emotion-12:hover {
@@ -10791,11 +10778,12 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #00bb6e;
 }
 
 .emotion-3:hover,
 .emotion-3.active {
-  background-color: #4D5A78;
+  background-color: #009658;
 }
 
 .emotion-1 {
@@ -12362,383 +12350,6 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Colors without groups 1`] = `
-.emotion-1 {
-  margin: 2rem;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-0 > *:not(:last-child) {
-  margin-right: 1rem;
-}
-
-<div
-  className="emotion-1"
->
-  <div
-    className="emotion-0"
-  >
-    <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      WHITE
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#000000",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      BLACK
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#323c47",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      DARK_GRAY1
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#3E4650",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      DARK_GRAY2
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#444D57",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      DARK_GRAY3
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#878c93",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GRAY1
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#5C6268",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GRAY2
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#737A82",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GRAY3
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#7e868e",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GRAY4
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#d0d7dd",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY1
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#DCE1E6",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY2
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#E5E9EC",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY3
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#EDF0F2",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY4
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#f4f7f9",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY5
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#ffd012",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      YELLOW
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#9975D0",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      PURPLE
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#EB518E",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      PINK
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#4DA1FF",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_BLUE
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#1968cb",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      BLUE
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#687695",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      DARK_BLUE
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#a6e50f",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GREEN
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#00bb6e",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GREEN
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#ff6d4a",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_RED
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#eb4235",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      RED
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#f4f7f9",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      LIGHT_GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#7e868e",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#323c47",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      DARK_GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "transparent",
-          "color": "#fff",
-          "height": "100px",
-          "width": "100px",
-        }
-      }
-    >
-      TRANSPARENT
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
 .emotion-4 {
   margin: 2rem;
@@ -12953,7 +12564,6 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 .emotion-3 {
@@ -12970,7 +12580,6 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0px;
 }
 
 <div
@@ -12996,6 +12605,411 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
       >
         4.5
       </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Theme palette 1`] = `
+.emotion-0 {
+  margin: 2rem;
+}
+
+<div
+  className="emotion-0"
+>
+  <div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      WHITE
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#000000",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      BLACK
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#323c47",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DARK_GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#3E4650",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DARK_GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#444D57",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DARK_GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#878c93",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#5C6268",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#737A82",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#7e868e",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY4
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#d0d7dd",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY1
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#DCE1E6",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY2
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E5E9EC",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY3
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#EDF0F2",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY4
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#f4f7f9",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY5
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffd012",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      YELLOW
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#9975D0",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      PURPLE
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#EB518E",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      PINK
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4DA1FF",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1968cb",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#687695",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DARK_BLUE
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#a6e50f",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GREEN
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#00bb6e",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GREEN
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ff6d4a",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_RED
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#eb4235",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      RED
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#f4f7f9",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      LIGHT_GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#7e868e",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#323c47",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DARK_GRAY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      TRANSPARENT
     </div>
   </div>
 </div>

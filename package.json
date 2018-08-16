@@ -65,6 +65,7 @@
     "react-test-renderer": "^16.3.1"
   },
   "dependencies": {
+    "color": "^3.0.0",
     "emotion": "^9.1.1",
     "emotion-theming": "^9.1.2",
     "prop-types": "^15.6.1",

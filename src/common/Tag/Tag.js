@@ -75,4 +75,8 @@ function Tag({ tagName, ...props }: TagProps) {
   return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
 }
 
+Tag.defaultProps = {
+  tagName: 'div',
+};
+
 export { Tag };

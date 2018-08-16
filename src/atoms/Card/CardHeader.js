@@ -13,7 +13,7 @@ const cardHeaderTheme = createTheme(name, (colors: *): * => ({
   cardHeader: {
     borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
     display: 'flex',
-    height: '6rem',
+    height: '7rem',
     alignItems: 'center',
     position: 'relative',
   },

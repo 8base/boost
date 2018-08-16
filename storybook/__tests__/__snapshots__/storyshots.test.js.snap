@@ -1371,7 +1371,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 6rem;
+  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1445,7 +1445,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 6rem;
+  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1519,7 +1519,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 6rem;
+  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

@@ -18,7 +18,7 @@ const theme = createTheme(name, (colors: *) => ({
   modifiers: {
     size: {
       lg: {
-        fontSize: '1.8rem',
+        fontSize: '1.6rem',
       },
       md: {
         fontSize: '1.4rem',
@@ -36,6 +36,9 @@ const theme = createTheme(name, (colors: *) => ({
       },
       red: {
         color: colors.RED,
+      },
+      gray: {
+        color: colors.DARK_GRAY1,
       },
     },
     underline: {

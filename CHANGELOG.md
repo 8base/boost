@@ -1,3 +1,25 @@
+<a name="0.4.26"></a>
+## [0.4.26](https://github.com/8base/boost/compare/v0.4.25...v0.4.26) (2018-08-20)
+
+
+### Bug Fixes
+
+* **card:** fix header height ([b6526a7](https://github.com/8base/boost/commit/b6526a7))
+* **grid:** grid rows template prop ([89197cc](https://github.com/8base/boost/commit/89197cc))
+* **link:** fix font size ([ce13fdc](https://github.com/8base/boost/commit/ce13fdc))
+
+
+### Features
+
+* **breadcrumbs:** add breadcrumbs ([c081230](https://github.com/8base/boost/commit/c081230))
+* **icon:** add icons ([7d50d78](https://github.com/8base/boost/commit/7d50d78))
+* **navigation:** new navigation ([6c19935](https://github.com/8base/boost/commit/6c19935))
+* **paper:** add stretch modifier ([9cd9509](https://github.com/8base/boost/commit/9cd9509))
+* **tag:** use div as default tag ([6f88c5a](https://github.com/8base/boost/commit/6f88c5a))
+* **theme:** add palette story ([385e140](https://github.com/8base/boost/commit/385e140))
+
+
+
 <a name="0.4.25"></a>
 ## [0.4.25](https://github.com/8base/boost/compare/v0.4.24...v0.4.25) (2018-08-10)
 

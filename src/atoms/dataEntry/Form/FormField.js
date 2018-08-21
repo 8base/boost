@@ -43,7 +43,7 @@ const ControlErrorWrapperTag = createStyledTag(name, {
   lineHeight: 1,
 });
 
-const ControlErrorTag = createStyledTag(name, props => ({
+export const ControlErrorTag = createStyledTag(name, props => ({
   fontSize: '1rem',
   color: props.theme.COLORS.DANGER,
   lineHeight: 1,

@@ -14,11 +14,11 @@ export default (asStory: *) => {
       ))
       .add('with color modifiers ', () => (
         <div>
-          <Text color="primary">Primary Text</Text>
-          <Text color="secondary">Secondary Text</Text>
-          <Text color="red">Red Text</Text>
-          <Text color="green">Green Text</Text>
-          <Text color="blue">Blue Text</Text>
+          <Text color="PRIMARY">Primary Text</Text>
+          <Text color="SECONDARY">Secondary Text</Text>
+          <Text color="RED">Red Text</Text>
+          <Text color="GREEN">Green Text</Text>
+          <Text color="BLUE">Blue Text</Text>
         </div>
       ))
       .add('with align modifiers ', () => (

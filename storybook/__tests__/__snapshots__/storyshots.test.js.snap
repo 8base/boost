@@ -109,6 +109,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -116,7 +117,6 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -292,6 +292,7 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -299,7 +300,6 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -376,6 +376,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -383,7 +384,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -442,6 +442,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
@@ -449,7 +450,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-1:hover {
@@ -482,6 +482,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #eb4235;
@@ -489,7 +490,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-2:hover {
@@ -522,6 +522,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #d0d7dd;
@@ -529,7 +530,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-3:hover {
@@ -562,6 +562,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #FFFFFF;
@@ -569,7 +570,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-4:hover {
@@ -602,6 +602,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -609,7 +610,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-6:hover {
@@ -642,6 +642,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
@@ -649,7 +650,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-7:hover {
@@ -682,6 +682,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #eb4235;
@@ -689,7 +690,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-8:hover {
@@ -722,6 +722,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #d0d7dd;
@@ -729,7 +730,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-9:hover {
@@ -762,6 +762,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #FFFFFF;
@@ -769,7 +770,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-10:hover {
@@ -926,6 +926,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -933,7 +934,6 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-1:hover {
@@ -966,6 +966,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -973,7 +974,6 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   color: rgba(255,255,255,1);
   height: 3rem;
   padding: 0 2rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -1006,6 +1006,7 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -1013,7 +1014,6 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   color: rgba(255,255,255,1);
   height: 5rem;
   padding: 0 6rem;
-  border-radius: .5rem;
 }
 
 .emotion-2:hover {
@@ -1108,6 +1108,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #E5E9EC;
@@ -1115,7 +1116,6 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   color: #E5E9EC;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -1188,6 +1188,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
@@ -1195,7 +1196,6 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-1:hover {
@@ -1212,8 +1212,8 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #00bb6e;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 <div
@@ -1273,6 +1273,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #d0d7dd;
@@ -1282,7 +1283,6 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   pointer-events: none;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -1333,6 +1333,7 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
@@ -1342,7 +1343,6 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   pointer-events: none;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-1:hover {
@@ -1419,6 +1419,7 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -1426,7 +1427,6 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
   width: 100%;
 }
 
@@ -1478,6 +1478,7 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -1485,7 +1486,6 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -1536,6 +1536,7 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -1543,7 +1544,6 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -1594,22 +1594,21 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .emotion-1 {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .emotion-2 {
   border-top: 1px solid #d0d7dd;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 <div
@@ -1668,22 +1667,21 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .emotion-1 {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .emotion-2 {
   border-top: 1px solid #d0d7dd;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 <div
@@ -1742,17 +1740,16 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .emotion-1 {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 <div
@@ -1801,12 +1798,12 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
 }
 
 .emotion-0 {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .emotion-1 {
   border-top: 1px solid #d0d7dd;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 <div
@@ -1895,8 +1892,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2002,8 +1999,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2121,8 +2118,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2226,8 +2223,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2369,8 +2366,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2460,8 +2457,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2578,8 +2575,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2756,8 +2753,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -2873,8 +2870,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-4 {
@@ -7653,8 +7650,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
@@ -7769,8 +7766,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
@@ -7885,8 +7882,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
@@ -8032,8 +8029,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
@@ -8463,6 +8460,7 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -8470,7 +8468,6 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -8581,6 +8578,7 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -8588,7 +8586,6 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -8699,6 +8696,7 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -8706,7 +8704,6 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -8817,6 +8814,7 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -8824,7 +8822,6 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -8936,6 +8933,7 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -8943,7 +8941,6 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -9054,6 +9051,7 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -9061,7 +9059,6 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -9172,6 +9169,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -9179,7 +9177,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
   width: 100%;
 }
 
@@ -9265,6 +9262,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -9272,7 +9270,6 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
   width: 100%;
 }
 
@@ -9384,6 +9381,7 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -9391,7 +9389,6 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -9502,6 +9499,7 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -9509,7 +9507,6 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -10274,10 +10271,10 @@ exports[`Storyshots ATOMS/FlexLayout with custom offset 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   cursor: inherit;
 }
 
@@ -11032,8 +11029,8 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #FFFFFF;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .emotion-2 {
@@ -11433,7 +11430,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 `;
 
 exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
-.emotion-2 {
+.emotion-14 {
   margin: 2rem;
 }
 
@@ -11442,12 +11439,12 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
-  className="emotion-2"
+  className="emotion-14"
 >
   <div
     style={
@@ -11457,6 +11454,21 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
       }
     }
   >
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 14 11"
+        width="100%"
+      >
+        <path
+          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
     <div
       className="emotion-0"
     >
@@ -11476,13 +11488,219 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
     >
       <svg
         height="100%"
-        viewBox="0 0 14 11"
+        viewBox="0 0 24 24"
         width="100%"
       >
         <path
-          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          d="M20.5 17c-.091 0-.182.005-.271.013A4.495 4.495 0 0 0 16.5 15a4.506 4.506 0 0 0-4.477 4.046A2.504 2.504 0 0 0 10 21.5c0 1.378 1.122 2.5 2.5 2.5h8c1.93 0 3.5-1.57 3.5-3.5S22.43 17 20.5 17zm0 6h-8c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5a.5.5 0 0 0 .5-.5c0-1.93 1.57-3.5 3.5-3.5a3.5 3.5 0 0 1 3.038 1.798.5.5 0 0 0 .524.247A2.53 2.53 0 0 1 20.5 18c1.378 0 2.5 1.122 2.5 2.5S21.878 23 20.5 23zm-10.134-4.5a.5.5 0 0 0-.497-.503C4.564 17.966 1 16.164 1 14.5v-3.018C2.603 12.984 5.985 14 10 14s7.397-1.016 9-2.518v2.835a.5.5 0 0 0 1 0V4.5C20 1.977 15.607 0 10 0S0 1.977 0 4.5v15c0 2.376 3.795 4.26 9.025 4.479h.021a.5.5 0 0 0 .02-.999C4.084 22.771 1 21.011 1 19.5v-2.992c1.572 1.478 4.863 2.466 8.863 2.489h.003a.5.5 0 0 0 .5-.497zM10 1c5.304 0 9 1.845 9 3.5S15.304 8 10 8 1 6.155 1 4.5 4.696 1 10 1zM1 6.482C2.603 7.984 5.985 9 10 9s7.397-1.016 9-2.518V9.5c0 1.655-3.696 3.5-9 3.5s-9-1.845-9-3.5V6.482z"
           fill="currentColor"
-          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 512 128"
+        width="100%"
+      >
+        <path
+          d="M64 0C28.8 0 0 28.8 0 64s28.8 64 64 64 64-28.8 64-64S99.2 0 64 0zm384 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64zM256 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M11 16a.502.502 0 0 1-.354-.146l-4-4a.5.5 0 0 1 .707-.707L11 14.793l6.646-6.646a.5.5 0 0 1 .707.707l-7 7A.498.498 0 0 1 11 16z"
+          fill="currentColor"
+        />
+        <path
+          d="M12 24c-.05 0-.1-.007-.148-.022C8.242 22.855 1.5 18.922 1.5 14.5v-11a.5.5 0 0 1 .356-.479l10-3a.5.5 0 0 1 .287 0l10 3a.5.5 0 0 1 .357.479v11c0 4.422-6.742 8.354-10.352 9.478A.496.496 0 0 1 12 24zM2.5 3.872V14.5c0 3.511 5.563 7.203 9.5 8.476 3.937-1.273 9.5-4.965 9.5-8.476V3.872L12 1.022l-9.5 2.85z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M14.301 24h-4.6c-.539 0-.995-.396-1.06-.921l-.396-2.76a9.015 9.015 0 0 1-1.563-.907l-2.603 1.045c-.516.187-1.078-.021-1.327-.477L.458 16.011a1.083 1.083 0 0 1 .26-1.378l2.208-1.727a9.289 9.289 0 0 1-.05-.906c0-.275.017-.568.052-.906L.722 9.37a1.073 1.073 0 0 1-.26-1.384l2.297-3.975c.25-.458.818-.664 1.317-.469l2.61 1.048a9.205 9.205 0 0 1 1.56-.908L8.643.911A1.06 1.06 0 0 1 9.702 0h4.6c.539 0 .995.396 1.06.921l.396 2.761a8.88 8.88 0 0 1 1.562.907l2.603-1.045a1.082 1.082 0 0 1 1.327.477l2.294 3.969a1.08 1.08 0 0 1-.261 1.378l-2.208 1.726c.028.266.052.577.052.906 0 .329-.023.64-.052.906l2.206 1.725c.412.327.524.902.269 1.37l-2.306 3.989c-.25.458-.82.662-1.317.469l-2.61-1.048a9.205 9.205 0 0 1-1.56.908l-.397 2.77a1.06 1.06 0 0 1-1.059.911zm-7.544-5.657c.108 0 .216.035.305.104a7.97 7.97 0 0 0 1.829 1.061c.164.067.28.216.306.392l.437 3.047 4.667.053.505-3.101a.5.5 0 0 1 .306-.392 8.284 8.284 0 0 0 1.833-1.064.502.502 0 0 1 .486-.064l2.863 1.15 2.382-4.018c.016-.028.011-.073-.015-.094l-2.424-1.896a.501.501 0 0 1-.188-.456c.038-.304.077-.668.077-1.065 0-.396-.039-.761-.077-1.065a.5.5 0 0 1 .188-.456l2.427-1.897c.024-.019.028-.063.007-.102l-2.294-3.969-2.945 1.111a.497.497 0 0 1-.491-.067 7.939 7.939 0 0 0-1.829-1.061.502.502 0 0 1-.306-.392l-.436-3.048L9.702 1l-.506 3.102a.502.502 0 0 1-.305.392 8.223 8.223 0 0 0-1.833 1.064.499.499 0 0 1-.487.064l-2.863-1.15L1.326 8.49l2.439 1.989a.5.5 0 0 1 .188.456c-.052.42-.077.758-.077 1.065 0 .307.024.646.077 1.065a.501.501 0 0 1-.188.456l-2.427 1.897c-.024.019-.028.064-.007.103l2.294 3.969 2.945-1.111a.49.49 0 0 1 .187-.036zM12.001 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5zm0-9c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M11.914 5c1.378 0 2.5-1.122 2.5-2.5S13.293 0 11.914 0c-1.378 0-2.5 1.122-2.5 2.5s1.122 2.5 2.5 2.5zm0-4c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5-1.5-.673-1.5-1.5.674-1.5 1.5-1.5zM19 6c1.378 0 2.5-1.122 2.5-2.5S20.379 1 19 1c-1.378 0-2.5 1.122-2.5 2.5S17.622 6 19 6zm0-4a1.501 1.501 0 1 1-1.5 1.5c0-.827.674-1.5 1.5-1.5zm-2.597 12.237l-.663-5.808C15.583 7.044 14.486 6 13.19 6h-2.553c-1.294 0-2.39 1.044-2.548 2.429l-.663 5.808a1.7 1.7 0 0 0 .411 1.323 1.48 1.48 0 0 0 1.027.505l.552 7.472a.5.5 0 0 0 .498.463h4c.262 0 .48-.202.498-.463l.552-7.472a1.478 1.478 0 0 0 1.027-.505c.318-.355.467-.837.412-1.323zm-1.156.657a.498.498 0 0 1-.366.173H14.5a.5.5 0 0 0-.499.463L13.45 23h-3.071l-.55-7.47a.5.5 0 0 0-.499-.463h-.38a.5.5 0 0 1-.366-.173.699.699 0 0 1-.164-.544l.663-5.808C9.183 7.663 9.852 7 10.639 7h2.553c.786 0 1.455.663 1.556 1.542l.663 5.808a.699.699 0 0 1-.164.544zm8.108-.579l-.641-5.124a2.502 2.502 0 0 0-2.48-2.19h-2.469c-.278 0-.558.049-.833.147a.5.5 0 0 0 .334.942c.167-.059.335-.089.499-.089h2.469c.755 0 1.394.565 1.488 1.314l.641 5.124c.018.144-.025.284-.121.393s-.229.169-.375.169H21.5a.5.5 0 0 0-.499.464l-.467 6.536h-3.069l-.36-5.037a.495.495 0 0 0-.534-.463.5.5 0 0 0-.463.534l.393 5.501c.02.261.238.464.499.464h4a.5.5 0 0 0 .498-.463l.467-6.539a1.5 1.5 0 0 0 1.39-1.683zm-15.933 2.3a.494.494 0 0 0-.534.463L6.536 22h-3.07L3 15.464A.501.501 0 0 0 2.5 15h-.367c-.146 0-.279-.06-.375-.169s-.139-.248-.121-.393l.641-5.124A1.5 1.5 0 0 1 3.766 8h2.469c.112 0 .231.017.377.056a.5.5 0 0 0 .254-.968A2.46 2.46 0 0 0 6.234 7H3.766a2.503 2.503 0 0 0-2.48 2.19l-.641 5.124a1.501 1.501 0 0 0 1.39 1.683l.467 6.539A.5.5 0 0 0 3 23h4a.5.5 0 0 0 .499-.464l.385-5.387a.5.5 0 0 0-.462-.534zM5 6c1.378 0 2.5-1.122 2.5-2.5S6.379 1 5 1C3.622 1 2.5 2.122 2.5 3.5S3.622 6 5 6zm0-4a1.501 1.501 0 1 1-1.5 1.5C3.5 2.673 4.174 2 5 2z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M18.5 10.051V6.5C18.5 2.916 15.584 0 12 0S5.5 2.916 5.5 6.5v3.551c-1.14.232-2 1.243-2 2.449v9C3.5 22.878 4.621 24 6 24h12c1.379 0 2.5-1.122 2.5-2.5v-9c0-1.207-.86-2.217-2-2.449zM6.5 6.5C6.5 3.467 8.968 1 12 1s5.5 2.467 5.5 5.5V10h-1V6.5C16.5 4.019 14.481 2 12 2S7.5 4.019 7.5 6.5V10h-1V6.5zm9 0V10h-7V6.5C8.5 4.57 10.07 3 12 3s3.5 1.57 3.5 3.5zm4 15c0 .827-.673 1.5-1.5 1.5H6c-.827 0-1.5-.673-1.5-1.5v-9c0-.827.673-1.5 1.5-1.5h12c.827 0 1.5.673 1.5 1.5v9zM12 13a2.503 2.503 0 0 0-2.5 2.5c0 .95.555 1.813 1.391 2.231l-.386 2.699A.497.497 0 0 0 11 21h2a.503.503 0 0 0 .495-.571l-.386-2.699A2.508 2.508 0 0 0 14.5 15.5c0-1.378-1.121-2.5-2.5-2.5zm.418 3.931a.501.501 0 0 0-.354.551l.36 2.518h-.848l.36-2.518a.5.5 0 0 0-.354-.551A1.485 1.485 0 0 1 10.5 15.5c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5c0 .667-.435 1.242-1.082 1.431z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M21.5 20h-19A2.503 2.503 0 0 1 0 17.5v-11C0 5.122 1.122 4 2.5 4h19C22.878 4 24 5.122 24 6.5v11c0 1.378-1.122 2.5-2.5 2.5zM2.5 5C1.673 5 1 5.673 1 6.5v11c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-11c0-.827-.673-1.5-1.5-1.5h-19z"
+          fill="currentColor"
+        />
+        <path
+          d="M12 13.017c-.55 0-1.101-.164-1.581-.493L2.218 6.913a.5.5 0 0 1 .564-.825l8.201 5.611a1.79 1.79 0 0 0 2.033 0l8.201-5.611a.5.5 0 0 1 .565.825l-8.201 5.611a2.792 2.792 0 0 1-1.581.493zM2.5 18a.5.5 0 0 1-.321-.885l6-5a.5.5 0 0 1 .641.769l-6 5A.497.497 0 0 1 2.5 18zM21.5 18a.499.499 0 0 1-.32-.116l-6-5a.5.5 0 0 1 .641-.769l6 5A.5.5 0 0 1 21.5 18z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M12 14c-3.032 0-5.5-2.467-5.5-5.5S8.968 3 12 3s5.5 2.467 5.5 5.5S15.032 14 12 14zm0-10C9.519 4 7.5 6.019 7.5 8.5S9.519 13 12 13s4.5-2.019 4.5-4.5S14.481 4 12 4z"
+          fill="currentColor"
+        />
+        <path
+          d="M12 14c-3.032 0-5.5-2.467-5.5-5.5S8.968 3 12 3s5.5 2.467 5.5 5.5S15.032 14 12 14zm0-10C9.519 4 7.5 6.019 7.5 8.5S9.519 13 12 13s4.5-2.019 4.5-4.5S14.481 4 12 4z"
+          fill="currentColor"
+        />
+        <path
+          d="M12 24a.501.501 0 0 1-.327-.122C11.339 23.59 3.5 16.718 3.5 8.5 3.5 3.813 7.313 0 12 0s8.5 3.813 8.5 8.5c0 8.218-7.839 15.09-8.173 15.378A.501.501 0 0 1 12 24zm0-23C7.864 1 4.5 4.364 4.5 8.5c0 6.842 6.016 12.926 7.5 14.322 1.483-1.397 7.5-7.488 7.5-14.322C19.5 4.364 16.136 1 12 1z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M23.854 23.146l-7.302-7.302A9.453 9.453 0 0 0 19 9.5C19 4.262 14.738 0 9.5 0S0 4.262 0 9.5 4.262 19 9.5 19c2.44 0 4.66-.932 6.344-2.449l7.302 7.302a.5.5 0 1 0 .708-.707zM9.5 18C4.813 18 1 14.187 1 9.5S4.813 1 9.5 1 18 4.813 18 9.5 14.187 18 9.5 18z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M12 23.5C5.659 23.5.5 18.341.5 12S5.659.5 12 .5 23.5 5.659 23.5 12 18.341 23.5 12 23.5zm0-22C6.21 1.5 1.5 6.21 1.5 12S6.21 22.5 12 22.5 22.5 17.79 22.5 12 17.79 1.5 12 1.5z"
+          fill="currentColor"
+        />
+        <path
+          d="M20 19.5H4a.5.5 0 0 1 0-1h16a.5.5 0 0 1 0 1z"
+          fill="currentColor"
+        />
+        <path
+          d="M15 19.5a.5.5 0 0 1-.5-.5c0-1.378-1.121-2.5-2.5-2.5S9.5 17.622 9.5 19a.5.5 0 0 1-1 0c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5a.5.5 0 0 1-.5.5z"
+          fill="currentColor"
+        />
+        <path
+          d="M11 16.5a.5.5 0 0 1-.447-.276l-4-8a.5.5 0 0 1 .894-.448l4 8A.5.5 0 0 1 11 16.5zM12 4.5a.5.5 0 0 1-.5-.5V1a.5.5 0 0 1 1 0v3a.5.5 0 0 1-.5.5zM6 6.5a.5.5 0 0 1-.447-.276l-1-2a.5.5 0 0 1 .894-.448l1 2A.5.5 0 0 1 6 6.5zM9 5a.5.5 0 0 1-.464-.314l-1-2.5a.5.5 0 1 1 .927-.371l1 2.5A.5.5 0 0 1 9 5zM4 8.5a.502.502 0 0 1-.354-.146l-1.5-1.5a.5.5 0 0 1 .707-.707l1.5 1.5A.5.5 0 0 1 4 8.5zM3 11.5a.494.494 0 0 1-.277-.084l-1.5-1a.5.5 0 0 1 .554-.832l1.5 1A.5.5 0 0 1 3 11.5zM3 14a.484.484 0 0 1-.158-.026l-1.5-.5a.5.5 0 1 1 .317-.948l1.5.5A.5.5 0 0 1 3 14zM18 6.5a.5.5 0 0 1-.448-.724l1-2a.5.5 0 0 1 .895.447l-1 2A.499.499 0 0 1 18 6.5zM15 5a.5.5 0 0 1-.464-.686l1-2.5a.5.5 0 1 1 .927.371l-1 2.5A.497.497 0 0 1 15 5zM20 8.5a.5.5 0 0 1-.354-.853l1.5-1.5a.5.5 0 0 1 .707.707l-1.5 1.5A.498.498 0 0 1 20 8.5zM21 11.5a.5.5 0 0 1-.277-.916l1.5-1a.5.5 0 1 1 .554.832l-1.5 1A.494.494 0 0 1 21 11.5zM21 14a.5.5 0 0 1-.159-.974l1.5-.5a.5.5 0 0 1 .317.948l-1.5.5A.484.484 0 0 1 21 14z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M20.5 6h-17a.5.5 0 0 1-.5-.5v-1C3 3.122 4.121 2 5.5 2h2.691l.309-.618A2.486 2.486 0 0 1 10.736 0h2.527c.953 0 1.81.529 2.236 1.382l.31.618H18.5C19.879 2 21 3.122 21 4.5v1a.5.5 0 0 1-.5.5zM4 5h16v-.5c0-.827-.673-1.5-1.5-1.5h-3a.5.5 0 0 1-.447-.276l-.447-.895A1.493 1.493 0 0 0 13.264 1h-2.527a1.49 1.49 0 0 0-1.342.829l-.448.895A.5.5 0 0 1 8.5 3h-3C4.673 3 4 3.673 4 4.5V5z"
+          fill="currentColor"
+        />
+        <path
+          d="M16.5 24h-9C5.57 24 4 22.43 4 20.5v-15a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v15c0 1.93-1.57 3.5-3.5 3.5zM5 6v14.5C5 21.878 6.121 23 7.5 23h9c1.379 0 2.5-1.122 2.5-2.5V6H5z"
+          fill="currentColor"
+        />
+        <path
+          d="M7.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM10.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM13.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5zM16.5 21a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 1 0v12a.5.5 0 0 1-.5.5z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 24 24"
+        width="100%"
+      >
+        <path
+          d="M21.5.5h-19A2.503 2.503 0 0 0 0 3v18c0 1.378 1.121 2.5 2.5 2.5h19c1.379 0 2.5-1.122 2.5-2.5V3C24 1.622 22.879.5 21.5.5zm-19 1h19c.827 0 1.5.673 1.5 1.5v1.5H1V3c0-.827.673-1.5 1.5-1.5zm19 21h-19c-.827 0-1.5-.673-1.5-1.5V5.5h22V21c0 .827-.673 1.5-1.5 1.5z"
+        />
+        <circle
+          cx="2.5"
+          cy="3"
+          r=".5"
+        />
+        <circle
+          cx="4.5"
+          cy="3"
+          r=".5"
+        />
+        <circle
+          cx="6.5"
+          cy="3"
+          r=".5"
+        />
+        <path
+          d="M9.5 12.5h-2a.5.5 0 0 0-.5.5v.5H6v-3h.5A.5.5 0 0 0 7 10V8a.5.5 0 0 0-.5-.5h-2A.5.5 0 0 0 4 8v2a.5.5 0 0 0 .5.5H5V19a.5.5 0 0 0 .5.5H7v.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v.5H6v-4h1v.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5zM5 8.5h1v1H5v-1zm3 10h1v1H8v-1zm1-4H8v-1h1v1zM9.5 9.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0 0 1zM19.5 13.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM19.5 18.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z"
         />
       </svg>
     </div>
@@ -11491,7 +11709,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
 `;
 
 exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
-.emotion-3 {
+.emotion-4 {
   margin: 2rem;
 }
 
@@ -11501,8 +11719,8 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #4DA1FF;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .emotion-1 {
@@ -11510,9 +11728,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #00bb6e;
-  width: 2.4rem;
-  height: 2.4rem;
+  color: #1968cb;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .emotion-2 {
@@ -11520,13 +11738,23 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #1968cb;
-  width: 2.4rem;
-  height: 2.4rem;
+  color: #00bb6e;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #d0d7dd;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 <div
-  className="emotion-3"
+  className="emotion-4"
 >
   <div
     style={
@@ -11541,13 +11769,12 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
     >
       <svg
         height="100%"
-        viewBox="0 0 14 11"
+        viewBox="0 0 24 24"
         width="100%"
       >
         <path
-          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          d="M20.5 17c-.091 0-.182.005-.271.013A4.495 4.495 0 0 0 16.5 15a4.506 4.506 0 0 0-4.477 4.046A2.504 2.504 0 0 0 10 21.5c0 1.378 1.122 2.5 2.5 2.5h8c1.93 0 3.5-1.57 3.5-3.5S22.43 17 20.5 17zm0 6h-8c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5a.5.5 0 0 0 .5-.5c0-1.93 1.57-3.5 3.5-3.5a3.5 3.5 0 0 1 3.038 1.798.5.5 0 0 0 .524.247A2.53 2.53 0 0 1 20.5 18c1.378 0 2.5 1.122 2.5 2.5S21.878 23 20.5 23zm-10.134-4.5a.5.5 0 0 0-.497-.503C4.564 17.966 1 16.164 1 14.5v-3.018C2.603 12.984 5.985 14 10 14s7.397-1.016 9-2.518v2.835a.5.5 0 0 0 1 0V4.5C20 1.977 15.607 0 10 0S0 1.977 0 4.5v15c0 2.376 3.795 4.26 9.025 4.479h.021a.5.5 0 0 0 .02-.999C4.084 22.771 1 21.011 1 19.5v-2.992c1.572 1.478 4.863 2.466 8.863 2.489h.003a.5.5 0 0 0 .5-.497zM10 1c5.304 0 9 1.845 9 3.5S15.304 8 10 8 1 6.155 1 4.5 4.696 1 10 1zM1 6.482C2.603 7.984 5.985 9 10 9s7.397-1.016 9-2.518V9.5c0 1.655-3.696 3.5-9 3.5s-9-1.845-9-3.5V6.482z"
           fill="currentColor"
-          fillRule="evenodd"
         />
       </svg>
     </div>
@@ -11556,13 +11783,16 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
     >
       <svg
         height="100%"
-        viewBox="0 0 14 11"
+        viewBox="0 0 24 24"
         width="100%"
       >
         <path
-          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          d="M11 16a.502.502 0 0 1-.354-.146l-4-4a.5.5 0 0 1 .707-.707L11 14.793l6.646-6.646a.5.5 0 0 1 .707.707l-7 7A.498.498 0 0 1 11 16z"
           fill="currentColor"
-          fillRule="evenodd"
+        />
+        <path
+          d="M12 24c-.05 0-.1-.007-.148-.022C8.242 22.855 1.5 18.922 1.5 14.5v-11a.5.5 0 0 1 .356-.479l10-3a.5.5 0 0 1 .287 0l10 3a.5.5 0 0 1 .357.479v11c0 4.422-6.742 8.354-10.352 9.478A.496.496 0 0 1 12 24zM2.5 3.872V14.5c0 3.511 5.563 7.203 9.5 8.476 3.937-1.273 9.5-4.965 9.5-8.476V3.872L12 1.022l-9.5 2.85z"
+          fill="currentColor"
         />
       </svg>
     </div>
@@ -11571,13 +11801,26 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
     >
       <svg
         height="100%"
-        viewBox="0 0 14 11"
+        viewBox="0 0 24 24"
         width="100%"
       >
         <path
-          d="M12.845 3.657L11.178 5.35l-5 5.077a1.648 1.648 0 0 1-2.357 0L.488 7.042A1.699 1.699 0 0 1 0 5.846c0-.936.746-1.693 1.666-1.693.461 0 .877.189 1.179.496L5 6.837l3.821-3.881 1.667-1.692a1.648 1.648 0 0 1 1.178-.496c.921 0 1.667.758 1.667 1.692 0 .468-.186.891-.488 1.197z"
+          d="M23.854 23.146l-7.302-7.302A9.453 9.453 0 0 0 19 9.5C19 4.262 14.738 0 9.5 0S0 4.262 0 9.5 4.262 19 9.5 19c2.44 0 4.66-.932 6.344-2.449l7.302 7.302a.5.5 0 1 0 .708-.707zM9.5 18C4.813 18 1 14.187 1 9.5S4.813 1 9.5 1 18 4.813 18 9.5 14.187 18 9.5 18z"
           fill="currentColor"
-          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      className="emotion-3"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 512 128"
+        width="100%"
+      >
+        <path
+          d="M64 0C28.8 0 0 28.8 0 64s28.8 64 64 64 64-28.8 64-64S99.2 0 64 0zm384 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64zM256 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64z"
+          fill="currentColor"
         />
       </svg>
     </div>
@@ -11595,17 +11838,8 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-2 {
@@ -11613,8 +11847,17 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-3 {
@@ -11622,8 +11865,8 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 <div
@@ -11914,33 +12157,30 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   text-align: left;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .emotion-1 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   text-align: right;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .emotion-2 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   text-align: center;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 <div
@@ -11982,12 +12222,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 <div
@@ -12007,12 +12246,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 <div
@@ -12032,48 +12270,35 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .emotion-1 {
-  font-family: Poppins;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin: 0;
-  color: #878c93;
-  font-weight: 400;
-}
-
-.emotion-2 {
-  font-family: Poppins;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin: 0;
-  color: #eb4235;
-  font-weight: 400;
-}
-
-.emotion-3 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #00bb6e;
   font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.emotion-2 {
+  line-height: 1.4;
+  margin: 0;
+  color: #eb4235;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .emotion-4 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #1968cb;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 <div
@@ -12096,7 +12321,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
       Red Text
     </span>
     <span
-      className="emotion-3"
+      className="emotion-1"
     >
       Green Text
     </span>
@@ -12115,12 +12340,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.6rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 <div
@@ -12140,12 +12364,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
   color: #d0d7dd;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 <div
@@ -12165,12 +12388,11 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 <div
@@ -12211,6 +12433,7 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -12218,7 +12441,6 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -12329,6 +12551,7 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -12336,7 +12559,6 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -12456,6 +12678,7 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -12463,7 +12686,6 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -12600,6 +12822,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -12607,7 +12830,6 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-0:hover {
@@ -12640,6 +12862,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
@@ -12647,7 +12870,6 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-1:hover {
@@ -12680,6 +12902,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   font-weight: 600;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
@@ -12687,7 +12910,6 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
-  border-radius: .5rem;
 }
 
 .emotion-2:hover {
@@ -12760,12 +12982,11 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 }
 
 .emotion-2 {
-  font-family: Poppins;
-  font-size: 1.4rem;
   line-height: 1.4;
   margin: 0;
-  color: #323c47;
+  color: #4DA1FF;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .emotion-4 {
@@ -12967,6 +13188,20 @@ exports[`Storyshots Theme palette 1`] = `
       }
     >
       GRAY4
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#A5AFB6",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      GRAY5
     </div>
     <div
       style={
@@ -13182,48 +13417,6 @@ exports[`Storyshots Theme palette 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#f4f7f9",
-          "color": "#fff",
-          "display": "flex",
-          "height": "30px",
-          "width": "400px",
-        }
-      }
-    >
-      LIGHT_GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#7e868e",
-          "color": "#fff",
-          "display": "flex",
-          "height": "30px",
-          "width": "400px",
-        }
-      }
-    >
-      GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#323c47",
-          "color": "#fff",
-          "display": "flex",
-          "height": "30px",
-          "width": "400px",
-        }
-      }
-    >
-      DARK_GRAY
-    </div>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
           "backgroundColor": "transparent",
           "color": "#fff",
           "display": "flex",
@@ -13233,6 +13426,62 @@ exports[`Storyshots Theme palette 1`] = `
       }
     >
       TRANSPARENT
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#4DA1FF",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      PRIMARY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#00bb6e",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      SECONDARY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#a6e50f",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      SUCCESS
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ff6d4a",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DANGER
     </div>
   </div>
 </div>

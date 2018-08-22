@@ -7,7 +7,7 @@ import { createStyledTag, createTheme, getThemeStyle, getThemeColors } from '../
 
 type ButtonProps = {|
   /** callback to handle click */
-  onClick?: (MouseEvent) => void,
+  onClick?: (event?: MouseEvent) => void,
   /** button text */
   text?: string,
   /** button text */
@@ -53,12 +53,13 @@ const spinner = keyframes`
   to   { transform: rotate(360deg) }
 `;
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createTheme(name, (colors: *, sizes: *): * => ({
   button: {
     cursor: 'pointer',
     fontSize: '1.4rem',
     fontWeight: '600',
     transition: 'all .15s ease-in-out',
+    borderRadius: sizes.MAIN_BORDER_RADIUS,
 
     '&:hover': {
       boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
@@ -75,27 +76,22 @@ const theme = createTheme(name, (colors: *): * => ({
       xs: {
         height: BUTTON_HEIGHT_BY_SIZE.xs,
         padding: '0 1rem',
-        borderRadius: '.5rem',
       },
       sm: {
         height: BUTTON_HEIGHT_BY_SIZE.sm,
         padding: '0 2rem',
-        borderRadius: '.5rem',
       },
       md: {
         height: BUTTON_HEIGHT_BY_SIZE.md,
         padding: '0 4rem',
-        borderRadius: '.5rem',
       },
       lg: {
         height: BUTTON_HEIGHT_BY_SIZE.lg,
         padding: '0 6rem',
-        borderRadius: '.5rem',
       },
       xl: {
         height: BUTTON_HEIGHT_BY_SIZE.xl,
         padding: '0 6rem',
-        borderRadius: '.5rem',
         fontSize: '1.8rem',
       },
     },

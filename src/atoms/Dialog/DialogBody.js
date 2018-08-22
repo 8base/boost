@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createTheme } from '../../utils';
+import { Card } from '../Card';
+import type { PropSizes } from '../../types';
 
 type DialogBodyProps = {|
   children?: React$Node,
+  padding?: PropSizes,
 |};
 
 const name = 'dialogBody';
@@ -15,16 +18,11 @@ const theme = createTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, (props) => ({
-  padding: '1.5rem',
-  borderTop: `1px solid ${props.theme.COLORS.DARK_DIVIDER_COLOR}`,
-}));
-
 function DialogBody({
   children,
   ...rest
   }: DialogBodyProps) {
-  return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
+  return <Card.Body { ...rest }>{ children }</Card.Body>;
 }
 
 export { DialogBody, theme };

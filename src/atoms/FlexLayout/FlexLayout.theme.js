@@ -4,13 +4,13 @@ import { createStyledTag } from '../../utils';
 
 const name = 'flex-layout';
 
-const offestSizes = {
+const paddingSizes = {
   none: '0',
   xs: '0.5rem',
   sm: '1rem',
   md: '1.5rem',
   lg: '2rem',
-  xl: '2.5rem',
+  xl: '3rem',
 };
 
 const gapSizes = {
@@ -19,7 +19,7 @@ const gapSizes = {
   sm: '1rem',
   md: '1.5rem',
   lg: '2rem',
-  xl: '2.5rem',
+  xl: '3rem',
 };
 
 const justifyContentStyles = {
@@ -73,6 +73,11 @@ const getGrowChildrenStyles = (growChildren: boolean) =>
     }
     : {};
 
+const getGrowStyles = (grow: boolean) =>
+  grow
+    ? { flexGrow: '1' }
+    : {};
+
 const FlexLayoutTag = createStyledTag(name, props => ({
   display: 'flex',
 
@@ -82,17 +87,17 @@ const FlexLayoutTag = createStyledTag(name, props => ({
   alignContent: alignContentStyles[props.alignContent],
   alignItems: alignItemsStyles[props.alignItems],
 
-  paddingLeft: offestSizes[props.offsetX],
-  paddingRight: offestSizes[props.offsetX],
-  paddingTop: offestSizes[props.offsetY],
-  paddingBottom: offestSizes[props.offsetY],
+  paddingLeft: paddingSizes[props.offsetX] || paddingSizes[props.offsetLeft],
+  paddingRight: paddingSizes[props.offsetX] || paddingSizes[props.offsetRight],
+  paddingTop: paddingSizes[props.offsetY] || paddingSizes[props.offsetTop],
+  paddingBottom: paddingSizes[props.offsetY] || paddingSizes[props.offsetBottom],
 
   cursor: props.cursor,
-  flexGrow: props.grow && '1',
 
   ...getGapStyle(props.direction, props.gap),
   ...getStretchStyles(props.stretch),
   ...getGrowChildrenStyles(props.growChildren),
+  ...getGrowStyles(props.grow),
 }));
 
 FlexLayoutTag.defaultProps = {

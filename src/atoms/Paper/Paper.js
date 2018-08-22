@@ -6,16 +6,16 @@ import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 
 type PaperProps = {|
   children?: React$Node,
-  padding?: PropSizes,
+  padding?: PropSizes | 'xxl',
 |};
 
 const name = 'paper';
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createTheme(name, (colors: *, sizes: *): * => ({
   paper: {
     background: colors.WHITE,
     color: colors.BLACK,
-    borderRadius: '.5rem',
+    borderRadius: sizes.MAIN_BORDER_RADIUS,
     boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
     position: 'relative',
   },
@@ -26,8 +26,9 @@ const theme = createTheme(name, (colors: *): * => ({
       xs: { padding: '0.5rem' },
       sm: { padding: '1rem' },
       md: { padding: '2rem' },
-      lg: { padding: '4rem' },
-      xl: { padding: '8rem' },
+      lg: { padding: '3rem' },
+      xl: { padding: '4rem' },
+      xxl: { padding: '8rem' },
     },
     stretch: {
       flex: 1,

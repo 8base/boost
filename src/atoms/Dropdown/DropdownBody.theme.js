@@ -27,11 +27,11 @@ const theme = createTheme(name, {
 
     padding: {
       none: { padding: '0' },
-      xs: { padding: '0.25rem' },
-      sm: { padding: '0.5rem' },
-      md: { padding: '1rem' },
-      lg: { padding: '1.5rem' },
-      xl: { padding: '2rem' },
+      xs: { padding: '0.5rem' },
+      sm: { padding: '1rem' },
+      md: { padding: '1.5rem' },
+      lg: { padding: '2rem' },
+      xl: { padding: '2.5rem' },
     },
   },
   defaults: {

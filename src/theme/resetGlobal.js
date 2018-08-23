@@ -1,3 +1,5 @@
+// @flow
+
 import { injectGlobal } from 'emotion';
 
 const resetGlobal = () => injectGlobal`

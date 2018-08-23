@@ -2,11 +2,13 @@ import React from 'react';
 
 import { createStyledTag, createTheme } from '../../utils';
 import { Card } from '../Card';
-import { Heading } from '../typography/Heading';
+import { Text } from '../typography/Text';
+import type { PropSizes } from '../../types';
 
 type DialogHeaderProps = {|
   children?: React$Node,
   title: string,
+  padding?: PropSizes,
 |};
 
 const name = 'dialogHeader';
@@ -39,7 +41,7 @@ function DialogHeader({
   }: DialogHeaderProps) {
   return (
     <Card.Header offset="lg" { ...rest }>
-      <Heading type="h4">{ title }</Heading>
+      <Text weight="semibold" color="DARK_GRAY1">{ title }</Text>
       <CloseStyledTag tagName="div" onClick={ onClose }>×</CloseStyledTag>
     </Card.Header>
   );

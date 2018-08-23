@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { createStyledTag, createTheme } from '../../../utils';
+import type { PropSizes } from '../../../types';
 
 type FormSectionTitleProps = {|
   children?: string,

@@ -6,7 +6,9 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "NODE_ENV=production babel src -d es --ignore __tests__",
+    "build:es": "NODE_ENV=production babel src -d es --ignore __tests__",
+    "build:flow": "NODE_ENV=production yarn flow-copy-source src es",
+    "build": "yarn build:es && yarn build:flow",
     "watch": "NODE_ENV=development babel src -d es --watch --ignore __tests__",
     "build-storybook": "build-storybook -c storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
@@ -55,6 +57,7 @@
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "^7.1.0",
     "flow-bin": "^0.79.1",
+    "flow-copy-source": "^2.0.2",
     "jest": "^22.4.3",
     "jest-emotion": "^9.0.0",
     "lodash": "^4.17.5",

@@ -1,24 +1,27 @@
 // @flow
 import React from 'react';
 import { Paper } from '../Paper';
+import type { PropSizes } from '../../types';
 
 type CardPlateProps = {|
   children: React$Node,
-  offset: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  padding?: PropSizes,
+  paddingOuter?: PropSizes,
+  style: Object,
 |};
 
-const CardPlate = ({ children, offset, ...rest }: CardPlateProps) => (
-  <Paper { ...rest } >
+const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
+  <Paper { ...rest } padding={ paddingOuter }>
     {
       React.Children.map(children, child =>
-        React.cloneElement(child, { offset: child.props.offset || offset }),
+        React.cloneElement(child, { padding: child.props.padding || padding }),
       )
     }
   </Paper>
 );
 
 CardPlate.defaultProps = {
-  offset: 'md',
+  padding: 'md',
 };
 
 export { CardPlate };

@@ -8,6 +8,7 @@ import { Portal } from 'react-portal';
 
 import { withDropdownContext } from './DropdownContext';
 import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme';
+import type { PropSizes } from '../../types';
 
 /**
  * @prop {*} background options for background color

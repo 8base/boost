@@ -2,9 +2,11 @@
 import React from 'react';
 import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
 import { offsetModifier } from './common';
+import type { PropSizes } from '../../types';
 
 type CardFooterProps = {|
   children: React$Node,
+  padding?: PropSizes,
 |}
 
 const name = 'cardFooter';

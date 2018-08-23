@@ -3,6 +3,7 @@ import React from 'react';
 import { createStyledTag, createTheme } from '../../utils';
 import { Modal } from '../Modal';
 import { Card } from '../Card';
+import type { PropSizes } from '../../types';
 
 type DialogPlateProps = {|
   children?: React$Node,
@@ -10,6 +11,7 @@ type DialogPlateProps = {|
   onClose?: (any) => void,
   onOpen?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
+  padding?: PropSizes,
 |};
 
 const name = 'dialogPlate';
@@ -30,6 +32,7 @@ const theme = createTheme(name, {
   },
   defaults: {
     size: 'md',
+    padding: 'md',
   },
 });
 
@@ -60,5 +63,7 @@ function DialogPlate({
     </Modal>
   );
 }
+
+DialogPlate.defaultProps = theme[name].defaults;
 
 export { DialogPlate, theme };

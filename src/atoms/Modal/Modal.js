@@ -7,7 +7,6 @@ import { createStyledTag, createTheme } from '../../utils';
 type ModalProps = {
   children: React$Node,
   isOpen?: boolean,
-  onOpen?: (any) => void,
   onClose?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
 };
@@ -36,9 +35,8 @@ const theme = createTheme(name, {
   },
 });
 
-const OverlayTag = createStyledTag(name, {
+const OverlayTag = createStyledTag(name, (props): * => ({
   alignItems: 'center',
-  background: 'rgba(0, 0, 0, 0.5)',
   bottom: 0,
   display: 'flex',
   justifyContent: 'center',
@@ -46,8 +44,9 @@ const OverlayTag = createStyledTag(name, {
   position: 'fixed',
   right: 0,
   top: 0,
-  zIndex: 1000,
-});
+  background: 'rgba(0, 0, 0, 0.5)',
+  zIndex: props.theme.Z_INDEX.MODAL,
+}));
 
 const ModalTag = createStyledTag(name, {});
 
@@ -56,10 +55,6 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 
   static defaultProps = {
     shouldCloseOnOverlayClick: true,
-    isOpen: false,
-  };
-
-  state = {
     isOpen: false,
   };
 
@@ -82,21 +77,15 @@ class Modal extends PureComponent<ModalProps, ModalState> {
   }
 
   openModal() {
-    if (!this.state.isOpen) {
+    if (!this.props.isOpen) {
       Modal.openedModals += 1;
-
-      this.setState({ isOpen: true });
-
-      if (typeof this.props.onOpen === 'function') {
-        this.props.onOpen();
-      }
 
       this.updateBlurClass();
     }
   }
 
   closeModal() {
-    if (this.state.isOpen) {
+    if (this.props.isOpen) {
       Modal.openedModals -= 1;
 
       this.setState({ isOpen: false });
@@ -140,8 +129,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
   };
 
   render() {
-    const { children } = this.props;
-    const { isOpen } = this.state;
+    const { children, isOpen } = this.props;
 
     return (
       <If condition={ isOpen }>

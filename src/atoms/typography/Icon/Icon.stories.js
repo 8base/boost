@@ -5,15 +5,28 @@ export default (asStory) => {
     story
       .add('all icons', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Icon name="ChevronDown" />
           <Icon name="Check" />
+          <Icon name="ChevronDown" />
+          <Icon name="CloudDatabase" />
+          <Icon name="Dots" />
+          <Icon name="FirewallOn" />
+          <Icon name="Gear" />
+          <Icon name="Group" />
+          <Icon name="Lock" />
+          <Icon name="Mail" />
+          <Icon name="MapPin" />
+          <Icon name="Search" />
+          <Icon name="SpeedMeter" />
+          <Icon name="Trashcan" />
+          <Icon name="TreeView" />
         </div>
       ))
       .add('with custom color', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Icon name="Check" color="primary" />
-          <Icon name="Check" color="green" />
-          <Icon name="Check" color="blue" />
+          <Icon name="CloudDatabase" color="primary" />
+          <Icon name="FirewallOn" color="blue" />
+          <Icon name="Search" color="green" />
+          <Icon name="Dots" color="light-gray" />
         </div>
       ))
       .add('with custom sizes', () => (

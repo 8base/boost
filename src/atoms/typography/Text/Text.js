@@ -1,8 +1,10 @@
 // @flow
 
 import React from 'react';
-
+import fp from 'lodash/fp';
+import { PALETTE } from '../../../theme';
 import { createStyledTag, createTheme } from '../../../utils';
+import type { PropSizes } from '../../../types';
 
 type TextProps = {|
   /** text to display in the component */
@@ -10,11 +12,11 @@ type TextProps = {|
   /** another way to set displayed text */
   text?: string | number,
   /** possible text colors */
-  color?: 'primary' | 'secondary' | 'red' | 'green' | 'blue' | 'white',
+  color?: $Keys<typeof PALETTE>,
   /** disabled text state*/
   disabled?: boolean,
   /** set style to bold or other weights */
-  weight?: 'light' | 'normal' | 'semibold' | 'bold',
+  weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
   /** possible sizes */
   size?: PropSizes,
   /** text align */
@@ -27,26 +29,10 @@ const name = 'text';
 
 const theme = createTheme(name, (colors: *): * => ({
   modifiers: {
-    color: {
-      primary: {
-        color: colors.PRIMARY_TEXT_COLOR,
-      },
-      secondary: {
-        color: colors.SECONDARY_TEXT_COLOR,
-      },
-      red: {
-        color: colors.RED,
-      },
-      green: {
-        color: colors.GREEN,
-      },
-      blue: {
-        color: colors.BLUE,
-      },
-      white: {
-        color: colors.WHITE,
-      },
-    },
+    color: fp.mapValues(
+      (color) => ({ color }),
+      PALETTE,
+    ),
 
     align: {
       left: { textAlign: 'left' },
@@ -64,6 +50,9 @@ const theme = createTheme(name, (colors: *): * => ({
       },
       normal: {
         fontWeight: 400,
+      },
+      medium: {
+        fontWeight: 500,
       },
       semibold: {
         fontWeight: 600,
@@ -99,7 +88,7 @@ const theme = createTheme(name, (colors: *): * => ({
   },
 
   defaults: {
-    color: 'primary',
+    color: 'PRIMARY',
     size: 'md',
     weight: 'normal',
     ellipsis: false,
@@ -107,8 +96,6 @@ const theme = createTheme(name, (colors: *): * => ({
 }));
 
 const StyledTag = createStyledTag(name, {
-  fontFamily: 'Poppins',
-  fontSize: '1.4rem',
   lineHeight: 1.4,
   margin: 0,
 });

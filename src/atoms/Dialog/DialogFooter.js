@@ -3,9 +3,11 @@ import React from 'react';
 import { createTheme } from '../../utils';
 import { Card } from '../Card';
 import { Row } from '../FlexLayout';
+import type { PropSizes } from '../../types';
 
 type DialogFooterProps = {|
   children?: React$Node,
+  padding?: PropSizes,
 |};
 
 const name = 'dialogFooter';

@@ -3,13 +3,14 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
+import type { Theme } from '../../../types';
 import * as glyphs from './glyphs';
 
 type IconProps = {
   /** icon name */
   name: string,
   /** icon color */
-  color?: 'red' | 'green' | 'blue' | 'primary' | 'secondary' | 'white' | 'gray',
+  color?: 'red' | 'green' | 'blue' | 'primary' | 'secondary' | 'white' | 'gray' | 'light-gray',
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'stretch',
 };
@@ -26,23 +27,28 @@ const theme : Theme<IconProps> = createTheme(name, (colors: *): * => ({
       blue: { color: colors.BLUE },
       white: { color: colors.WHITE },
       gray: { color: colors.DARK_GRAY1 },
+      'light-gray': { color: colors.LIGHT_GRAY1 },
     },
     size: {
       xs: {
+        width: '1rem',
+        height: '1rem',
+      },
+      sm: {
         width: '1.4rem',
         height: '1.4rem',
       },
-      sm: {
+      md: {
+        width: '1.8rem',
+        height: '1.8rem',
+      },
+      lg: {
         width: '2.4rem',
         height: '2.4rem',
       },
-      md: {
+      xl: {
         width: '3.6rem',
         height: '3.6rem',
-      },
-      lg: {
-        width: '4.8rem',
-        height: '4.8rem',
       },
       stretch: {
         width: '100%',
@@ -68,7 +74,7 @@ const Icon = ({ name, ...rest }: IconProps) => {
 };
 
 Icon.defaultProps = {
-  size: 'sm',
+  size: 'md',
 };
 
 export { Icon, theme };

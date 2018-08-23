@@ -1,16 +1,6 @@
 // @flow
 import * as __enzume from 'enzume';
 
-/* eslint-disable no-undef */
-declare type Theme<ThemeProps> = {
-  [string]: {
-    modifiers: { [$Keys<ThemeProps>]: Object },
-    defaults: $Shape<ThemeProps>,
-  }
-}
-
-declare type PropSizes = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
 /** jsx-control-statements declaration */
 declare var If: React$ComponentType<$Exact<{ condition: boolean, children: React$Node }>>;
 declare var Choose: React$ComponentType<$Exact<{ children: React$Node }>>;

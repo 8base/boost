@@ -88,7 +88,7 @@ const theme = createTheme(name, (colors: *): * => ({
   },
 
   defaults: {
-    color: 'PRIMARY',
+    color: 'DARK_GRAY1',
     size: 'md',
     weight: 'normal',
     ellipsis: false,

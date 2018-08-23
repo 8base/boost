@@ -1,3 +1,26 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/8base/boost/compare/v0.4.27...v0.5.0) (2018-08-23)
+
+
+### Bug Fixes
+
+* **atoms:** change padding sizes in the Dropdown and Paper ([89c6cb6](https://github.com/8base/boost/commit/89c6cb6))
+* **atoms:** remove state from the modal ([e998a4b](https://github.com/8base/boost/commit/e998a4b))
+* **flow:** add [@flow](https://github.com/flow) to the several files ([d3a06ab](https://github.com/8base/boost/commit/d3a06ab))
+* **flow:** move some type from global ([756d2a6](https://github.com/8base/boost/commit/756d2a6))
+
+
+### Features
+
+* **atoms:** add offsets to the FlexLayout ([494ab53](https://github.com/8base/boost/commit/494ab53))
+* **atoms:** add padding props to the Card and Dialog ([74f2af0](https://github.com/8base/boost/commit/74f2af0))
+* **atoms:** add TreeViewe and Dots icons ([ce32b7e](https://github.com/8base/boost/commit/ce32b7e))
+* **atoms:** replace colors enum with them pallete colors ([5749210](https://github.com/8base/boost/commit/5749210))
+* **build:** add flow typings to the build ([51d4fb9](https://github.com/8base/boost/commit/51d4fb9))
+* **theme:** add sizes and colors objects to the theme ([2e783c7](https://github.com/8base/boost/commit/2e783c7))
+
+
+
 <a name="0.4.26"></a>
 ## [0.4.26](https://github.com/8base/boost/compare/v0.4.25...v0.4.26) (2018-08-20)
 

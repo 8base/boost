@@ -1,3 +1,13 @@
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/8base/boost/compare/v0.5.2...v0.5.3) (2018-08-23)
+
+
+### Bug Fixes
+
+* **theme:** move text primary color to the pallete ([3a0c8d1](https://github.com/8base/boost/commit/3a0c8d1))
+
+
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://github.com/8base/boost/compare/v0.5.1...v0.5.2) (2018-08-23)
 

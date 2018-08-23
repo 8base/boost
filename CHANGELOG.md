@@ -1,3 +1,13 @@
+<a name="0.5.2"></a>
+## [0.5.2](https://github.com/8base/boost/compare/v0.5.1...v0.5.2) (2018-08-23)
+
+
+### Bug Fixes
+
+* **atoms:** fix default color in Text ([4be2e53](https://github.com/8base/boost/commit/4be2e53))
+
+
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/8base/boost/compare/v0.5.0...v0.5.1) (2018-08-23)
 

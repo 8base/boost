@@ -1,3 +1,13 @@
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/8base/boost/compare/v0.5.0...v0.5.1) (2018-08-23)
+
+
+### Bug Fixes
+
+* **flow:** fix CardPlate style prop ([e540648](https://github.com/8base/boost/commit/e540648))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/8base/boost/compare/v0.4.27...v0.5.0) (2018-08-23)
 

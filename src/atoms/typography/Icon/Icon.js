@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
+import type { Theme } from '../../../types';
 import * as glyphs from './glyphs';
 
 type IconProps = {

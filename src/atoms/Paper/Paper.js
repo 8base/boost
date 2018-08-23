@@ -3,10 +3,12 @@
 import React from 'react';
 
 import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
+import type { PropSizes } from '../../types';
 
 type PaperProps = {|
   children?: React$Node,
   padding?: PropSizes | 'xxl',
+  style?: Object,
 |};
 
 const name = 'paper';

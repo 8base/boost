@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 import { keyframes } from 'react-emotion';
 import { createStyledTag, createTheme, getThemeStyle, getThemeColors } from '../../utils';
 
-type ButtonProps = {|
+type ButtonProps = {
   /** callback to handle click */
-  onClick?: (event?: MouseEvent) => void,
+  onClick?: Function,
   /** button text */
   text?: string,
   /** button text */
@@ -30,7 +30,9 @@ type ButtonProps = {|
   variant?: 'outlined' | 'raised',
   /** posible sizes */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
-|};
+  /** possible to reassign the button tag */
+  tagName?: any,
+};
 
 const BUTTON_HEIGHT_BY_SIZE = {
   xs: '2rem',

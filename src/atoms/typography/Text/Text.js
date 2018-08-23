@@ -4,6 +4,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 import { PALETTE } from '../../../theme';
 import { createStyledTag, createTheme } from '../../../utils';
+import type { PropSizes } from '../../../types';
 
 type TextProps = {|
   /** text to display in the component */

@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { FlexLayoutTag } from './FlexLayout.theme';
+import type { PropSizes } from '../../types';
 
 type PropLayout = 'start' | 'end' | 'between' | 'around' | 'center'
 
@@ -34,6 +35,7 @@ export type FlexLayoutCommonProps = {|
   stretch?: boolean,
   grow?: boolean,
   growChildren?: boolean,
+  onClick?: ((event: MouseEvent) => void) | (() => void)
 |}
 
 type FlexLayoutProps = {

@@ -1,6 +1,7 @@
 // @flow
 
 import { createStyledTag, createTheme } from '../../utils';
+import type { PropSizes } from '../../types';
 
 const name = 'dropdownBody';
 

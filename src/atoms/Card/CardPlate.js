@@ -7,7 +7,7 @@ type CardPlateProps = {|
   children: React$Node,
   padding?: PropSizes,
   paddingOuter?: PropSizes,
-  style: Object,
+  style?: Object,
 |};
 
 const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (

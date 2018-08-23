@@ -12159,7 +12159,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 .emotion-0 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   text-align: left;
   font-weight: 400;
   font-size: 1.4rem;
@@ -12168,7 +12168,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 .emotion-1 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   text-align: right;
   font-weight: 400;
   font-size: 1.4rem;
@@ -12177,7 +12177,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 .emotion-2 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   text-align: center;
   font-weight: 400;
   font-size: 1.4rem;
@@ -12224,7 +12224,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
 .emotion-0 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   font-weight: 700;
   font-size: 1.4rem;
 }
@@ -12248,7 +12248,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 .emotion-0 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -12342,7 +12342,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
 .emotion-0 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -12390,7 +12390,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
 .emotion-0 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -12984,7 +12984,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 .emotion-2 {
   line-height: 1.4;
   margin: 0;
-  color: #4DA1FF;
+  color: #323c47;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -13482,6 +13482,34 @@ exports[`Storyshots Theme palette 1`] = `
       }
     >
       DANGER
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#323c47",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      TEXT_PRIMARY
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#878c93",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      TEXT_SECONDARY
     </div>
   </div>
 </div>

@@ -1,3 +1,13 @@
+<a name="0.5.5"></a>
+## [0.5.5](https://github.com/8base/boost/compare/v0.5.4...v0.5.5) (2018-08-24)
+
+
+### Features
+
+* **theme:** export z-index constants ([3ea42e7](https://github.com/8base/boost/commit/3ea42e7))
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/8base/boost/compare/v0.5.3...v0.5.4) (2018-08-24)
 

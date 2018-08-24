@@ -9,7 +9,7 @@ import { Portal } from 'react-portal';
 import { withDropdownContext } from './DropdownContext';
 import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme';
 import type { PropSizes } from '../../types';
-import { Z_INDEX } from '../../theme/zIndex';
+import { Z_INDEX } from '../../theme';
 
 /**
  * @prop {*} background options for background color

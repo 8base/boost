@@ -1,3 +1,18 @@
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/8base/boost/compare/v0.5.5...v0.5.6) (2018-08-24)
+
+
+### Bug Fixes
+
+* **tag:** fix value typing ([aee2db6](https://github.com/8base/boost/commit/aee2db6))
+
+
+### Features
+
+* **link:** add all palette colors ([3c635ed](https://github.com/8base/boost/commit/3c635ed))
+
+
+
 <a name="0.5.5"></a>
 ## [0.5.5](https://github.com/8base/boost/compare/v0.5.4...v0.5.5) (2018-08-24)
 

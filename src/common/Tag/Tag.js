@@ -31,7 +31,7 @@ type TagProps = {|
   tagName: string | React$Component<*>,
   to?: string,
   type?: string,
-  value?: string,
+  value?: number | string,
 |};
 
 const COLLECTED_PROPS = [

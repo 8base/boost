@@ -60,17 +60,35 @@ const COLLECTED_PROPS = [
   'rows',
   'src',
   'style',
-  'tagName',
   'to',
   'type',
   'value',
+];
+
+const HTML_TAGS = [
+  'div',
+  'span',
+  'button',
+  'a',
+  'p',
+  'input',
+  'h1',
+  'h2',
+  'h3',
+  'h4',
+  'h5',
+  'h6',
+  'label',
+  'nav',
+  'img',
 ];
 
 const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));
 
 function Tag({ tagName, ...props }: TagProps) {
   const TagComponent = tagName;
-  const collectedProps = collectProps(props);
+
+  const collectedProps = HTML_TAGS.indexOf(tagName) === -1 ? props : collectProps(props);
 
   return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
 }

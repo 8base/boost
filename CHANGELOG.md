@@ -1,3 +1,15 @@
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/8base/boost/compare/v0.5.3...v0.5.4) (2018-08-24)
+
+
+### Bug Fixes
+
+* **dropdown:** add z-index ([32a6c4c](https://github.com/8base/boost/commit/32a6c4c))
+* **navigation:** icon size fix ([45905e2](https://github.com/8base/boost/commit/45905e2))
+* **tag:** pass all props to not html tags ([34725e5](https://github.com/8base/boost/commit/34725e5))
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/8base/boost/compare/v0.5.2...v0.5.3) (2018-08-23)
 

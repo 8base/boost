@@ -87,7 +87,6 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.4rem;
-  color: #4DA1FF;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;

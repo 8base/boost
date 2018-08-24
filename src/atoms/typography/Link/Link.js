@@ -1,6 +1,8 @@
 // @flow
 
 import React from 'react';
+import fp from 'lodash/fp';
+import { PALETTE } from '../../../theme';
 
 import { createStyledTag, createTheme } from '../../../utils';
 
@@ -14,7 +16,7 @@ type LinkProps = {|
 
 const name = 'link';
 
-const theme = createTheme(name, (colors: *) => ({
+const theme = createTheme(name, () => ({
   modifiers: {
     size: {
       lg: {
@@ -27,27 +29,17 @@ const theme = createTheme(name, (colors: *) => ({
         fontSize: '1.2rem',
       },
     },
-    color: {
-      primary: {
-        color: colors.PRIMARY_LINK_COLOR,
-      },
-      white: {
-        color: colors.WHITE,
-      },
-      red: {
-        color: colors.RED,
-      },
-      gray: {
-        color: colors.DARK_GRAY1,
-      },
-    },
+    color: fp.mapValues(
+      (color) => ({ color }),
+      PALETTE,
+    ),
     underline: {
       textDecoration: 'underline',
     },
   },
   defaults: {
     size: 'md',
-    color: 'primary',
+    color: 'LIGHT_BLUE',
     underline: false,
   },
 }));

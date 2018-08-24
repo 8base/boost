@@ -11029,8 +11029,8 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #FFFFFF;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .emotion-2 {

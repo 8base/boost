@@ -8537,7 +8537,7 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -8655,7 +8655,7 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": "40rem",
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -8773,7 +8773,7 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -8892,7 +8892,7 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -9010,7 +9010,7 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -9128,7 +9128,7 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -9340,7 +9340,7 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -9458,7 +9458,7 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >
@@ -9576,7 +9576,7 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
           "pointerEvents": "none",
           "position": "absolute",
           "width": undefined,
-          "zIndex": 2000,
+          "zIndex": 20000,
         }
       }
     >

@@ -9,6 +9,7 @@ import { Portal } from 'react-portal';
 import { withDropdownContext } from './DropdownContext';
 import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme';
 import type { PropSizes } from '../../types';
+import { Z_INDEX } from '../../theme/zIndex';
 
 /**
  * @prop {*} background options for background color
@@ -70,7 +71,7 @@ const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
 type DropdownBodyEnhancedProps = HOCBase<typeof dropdownBodyEnhancer>;
 
 class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
-  static zIndex = 2000;
+  static zIndex = Z_INDEX.DROPDOWN;
 
   static defaultProps = {
     ...defaultTheme,

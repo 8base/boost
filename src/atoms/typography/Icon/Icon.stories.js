@@ -23,10 +23,10 @@ export default (asStory) => {
       ))
       .add('with custom color', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Icon name="CloudDatabase" color="primary" />
-          <Icon name="FirewallOn" color="blue" />
-          <Icon name="Search" color="green" />
-          <Icon name="Dots" color="light-gray" />
+          <Icon name="CloudDatabase" color="LIGHT_BLUE" />
+          <Icon name="FirewallOn" color="BLUE" />
+          <Icon name="Search" color="GREEN" />
+          <Icon name="Dots" color="LIGHT_GRAY1" />
         </div>
       ))
       .add('with custom sizes', () => (

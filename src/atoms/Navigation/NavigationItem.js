@@ -57,7 +57,7 @@ const NavigationItemLabel = createStyledTag(`${name}Label`, {
 const NavigationItem = ({ icon, label, ...rest }: NavigationItemProps) => (
   <StyledTag { ...rest }>
     <NavigationItemIcon>
-      <Icon name={ icon } color="white" size="lg" />
+      <Icon name={ icon } color="WHITE" size="lg" />
     </NavigationItemIcon>
     { label && <NavigationItemLabel className="NavigationItem-label">{ label }</NavigationItemLabel> }
   </StyledTag>

@@ -17,6 +17,7 @@ const cardHeaderTheme = createTheme(name, (colors: *): * => ({
     display: 'flex',
     alignItems: 'center',
     position: 'relative',
+    flexShrink: 0,
   },
   modifiers: {
     ...offsetModifier,

@@ -1598,6 +1598,9 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1607,6 +1610,9 @@ exports[`Storyshots ATOMS/Card default 1`] = `
 
 .emotion-2 {
   border-top: 1px solid #d0d7dd;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1671,6 +1677,9 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1680,6 +1689,9 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 
 .emotion-2 {
   border-top: 1px solid #d0d7dd;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1744,11 +1756,17 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
 .emotion-3 {
   border-top: 1px solid #d0d7dd;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1835,6 +1853,9 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 
@@ -1893,6 +1914,9 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
 
 .emotion-1 {
   border-top: 1px solid #d0d7dd;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding: 2rem;
 }
 

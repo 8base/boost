@@ -14,6 +14,7 @@ const name = 'cardFooter';
 const cardFooterTheme = createTheme(name, (colors: *): * => ({
   cardFooter: {
     borderTop: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    flexShrink: 0,
   },
   modifiers: {
     ...offsetModifier,

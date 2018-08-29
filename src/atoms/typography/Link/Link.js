@@ -7,11 +7,12 @@ import { PALETTE } from '../../../theme';
 import { createStyledTag, createTheme } from '../../../utils';
 
 type LinkProps = {|
-  to?: string,
-  text?: string,
-  tagName: string | React$Component<*>,
   children?: React$Node,
-  component?: React$Node,
+  color?: string,
+  size?: 'sm' | 'md' | 'lg',
+  tagName?: string | React$Component<*>,
+  text?: string,
+  underline?: boolean,
 |};
 
 const name = 'link';

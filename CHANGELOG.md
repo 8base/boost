@@ -1,3 +1,19 @@
+<a name="0.5.9"></a>
+## [0.5.9](https://github.com/8base/boost/compare/v0.5.8...v0.5.9) (2018-08-31)
+
+
+### Bug Fixes
+
+* **link:** fix type ([7db3d4d](https://github.com/8base/boost/commit/7db3d4d))
+* **Storybook:** adds typography fixes ([be2fb66](https://github.com/8base/boost/commit/be2fb66))
+
+
+### Features
+
+* **Icon:** use palette colors for icon ([3922ba1](https://github.com/8base/boost/commit/3922ba1))
+
+
+
 <a name="0.5.6"></a>
 ## [0.5.6](https://github.com/8base/boost/compare/v0.5.5...v0.5.6) (2018-08-24)
 

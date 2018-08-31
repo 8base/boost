@@ -36,13 +36,13 @@ const theme = createTheme(name, (colors) => ({
     },
     kind: {
       primary: {
-        color: colors.DARK_PRIMARY_TEXT_COLOR,
+        color: colors.TEXT_PRIMARY,
       },
       secondary: {
-        color: colors.DARK_SECONDARY_TEXT_COLOR,
+        color: colors.TEXT_SECONDARY,
       },
       disabled: {
-        color: colors.DARK_DISABLED_TEXT_COLOR,
+        color: colors.DISABLED_TEXT_COLOR,
       },
       white: {
         color: colors.WHITE,

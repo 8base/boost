@@ -11406,6 +11406,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 6.2rem;
+  color: #323c47;
 }
 
 .emotion-1 {
@@ -11414,6 +11415,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 4.6rem;
+  color: #878c93;
 }
 
 .emotion-2 {
@@ -11422,6 +11424,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 3rem;
+  color: #d0d7dd;
 }
 
 <div
@@ -11459,6 +11462,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 6.2rem;
+  color: #323c47;
 }
 
 .emotion-1 {
@@ -11467,6 +11471,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 4.6rem;
+  color: #323c47;
 }
 
 .emotion-2 {
@@ -11475,6 +11480,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 3rem;
+  color: #323c47;
 }
 
 .emotion-3 {
@@ -11483,6 +11489,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 2rem;
+  color: #323c47;
 }
 
 .emotion-4 {
@@ -11491,6 +11498,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
+  color: #323c47;
 }
 
 .emotion-5 {
@@ -11499,6 +11507,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
   font-weight: 400;
   margin: 0;
   font-size: 1rem;
+  color: #323c47;
 }
 
 <div
@@ -11508,37 +11517,37 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
     className="emotion-0"
     type="h1"
   >
-    Heading 1
+    62px - Heading 1
   </h1>
   <h2
     className="emotion-1"
     type="h2"
   >
-    Heading 2
+    46px - Heading 2
   </h2>
   <h3
     className="emotion-2"
     type="h3"
   >
-    Heading 3
+    30px - Heading 3
   </h3>
   <h4
     className="emotion-3"
     type="h4"
   >
-    Heading 4
+    20px - Heading 4
   </h4>
   <h5
     className="emotion-4"
     type="h5"
   >
-    Heading 5
+    14px - Heading 5
   </h5>
   <h6
     className="emotion-5"
     type="h6"
   >
-    Heading 6
+    10px - Heading 6
   </h6>
 </div>
 `;
@@ -12312,30 +12321,38 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
     <span
       className="emotion-0"
     >
-      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </span>
     <br />
     <span
       className="emotion-1"
     >
-      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </span>
     <br />
     <span
       className="emotion-2"
     >
-      LongText.LongText.LongText.LongText.LongText. LongText.LongText.LongText.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </span>
   </div>
 </div>
 `;
 
-exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
-.emotion-1 {
+exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifiers 1`] = `
+.emotion-2 {
   margin: 2rem;
 }
 
 .emotion-0 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.emotion-1 {
   line-height: 1.4;
   margin: 0;
   color: #323c47;
@@ -12344,12 +12361,20 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifier 1`] = `
 }
 
 <div
-  className="emotion-1"
+  className="emotion-2"
 >
   <span
     className="emotion-0"
   >
-    Disabled Text
+    Semibold: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-1"
+  >
+    Bold: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
   </span>
 </div>
 `;
@@ -12373,7 +12398,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
   <span
     className="emotion-0"
   >
-    Imploringness
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
   </span>
 </div>
 `;
@@ -12418,56 +12443,34 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 <div
   className="emotion-5"
 >
-  <div>
-    <span
-      className="emotion-0"
-    >
-      Primary Text
-    </span>
-    <span
-      className="emotion-1"
-    >
-      Secondary Text
-    </span>
-    <span
-      className="emotion-2"
-    >
-      Red Text
-    </span>
-    <span
-      className="emotion-1"
-    >
-      Green Text
-    </span>
-    <span
-      className="emotion-4"
-    >
-      Blue Text
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots ATOMS/TYPOGRAPHY/Text with custom size 1`] = `
-.emotion-1 {
-  margin: 2rem;
-}
-
-.emotion-0 {
-  line-height: 1.4;
-  margin: 0;
-  color: #323c47;
-  font-weight: 400;
-  font-size: 1.6rem;
-}
-
-<div
-  className="emotion-1"
->
   <span
     className="emotion-0"
   >
-    Disabled Text
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-1"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-2"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-1"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-4"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
   </span>
 </div>
 `;
@@ -12491,7 +12494,93 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
   <span
     className="emotion-0"
   >
-    Disabled Text
+    Disabled 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+</div>
+`;
+
+exports[`Storyshots ATOMS/TYPOGRAPHY/Text with size modifiers 1`] = `
+.emotion-5 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.emotion-0 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.emotion-1 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.emotion-3 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.emotion-4 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+<div
+  className="emotion-5"
+>
+  <span
+    className="emotion-0"
+  >
+    XS - 10px: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-1"
+  >
+    SM - 12px: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-2"
+  >
+    MD - 14px: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-3"
+  >
+    LG - 16px: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </span>
+  <br />
+  <span
+    className="emotion-4"
+  >
+    XL - 18px: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
   </span>
 </div>
 `;
@@ -12515,7 +12604,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
   <span
     className="emotion-0"
   >
-    Expletively
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
   </span>
 </div>
 `;

@@ -11003,6 +11003,347 @@ exports[`Storyshots ATOMS/Grid with stretch column 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/Loader with stretch 1`] = `
+.emotion-2 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-1"
+  >
+    <svg
+      className="emotion-0"
+      height="44"
+      stretch={true}
+      stroke="#eb4235"
+      viewBox="0 0 44 44"
+      width="44"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+        strokeWidth="2"
+      >
+        <circle
+          cx="22"
+          cy="22"
+          r="1"
+        >
+          <animate
+            attributeName="r"
+            begin="0s"
+            calcMode="spline"
+            dur="1.8s"
+            keySplines="0.165, 0.84, 0.44, 1"
+            keyTimes="0; 1"
+            repeatCount="indefinite"
+            values="1; 20"
+          />
+          <animate
+            attributeName="stroke-opacity"
+            begin="0s"
+            calcMode="spline"
+            dur="1.8s"
+            keySplines="0.3, 0.61, 0.355, 1"
+            keyTimes="0; 1"
+            repeatCount="indefinite"
+            values="1; 0"
+          />
+        </circle>
+        <circle
+          cx="22"
+          cy="22"
+          r="1"
+        >
+          <animate
+            attributeName="r"
+            begin="-0.9s"
+            calcMode="spline"
+            dur="1.8s"
+            keySplines="0.165, 0.84, 0.44, 1"
+            keyTimes="0; 1"
+            repeatCount="indefinite"
+            values="1; 20"
+          />
+          <animate
+            attributeName="stroke-opacity"
+            begin="-0.9s"
+            calcMode="spline"
+            dur="1.8s"
+            keySplines="0.3, 0.61, 0.355, 1"
+            keyTimes="0; 1"
+            repeatCount="indefinite"
+            values="1; 0"
+          />
+        </circle>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Loader with various size 1`] = `
+.emotion-3 {
+  margin: 2rem;
+}
+
+.emotion-0 {
+  width: 4rem;
+  height: 4rem;
+}
+
+.emotion-1 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.emotion-2 {
+  width: 8rem;
+  height: 8rem;
+}
+
+<div
+  className="emotion-3"
+>
+  <svg
+    className="emotion-0"
+    height="44"
+    size="sm"
+    stretch={false}
+    stroke="#eb4235"
+    viewBox="0 0 44 44"
+    width="44"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fillRule="evenodd"
+      strokeWidth="2"
+    >
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+    </g>
+  </svg>
+  <svg
+    className="emotion-1"
+    height="44"
+    size="md"
+    stretch={false}
+    stroke="#eb4235"
+    viewBox="0 0 44 44"
+    width="44"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fillRule="evenodd"
+      strokeWidth="2"
+    >
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+    </g>
+  </svg>
+  <svg
+    className="emotion-2"
+    height="44"
+    size="lg"
+    stretch={false}
+    stroke="#eb4235"
+    viewBox="0 0 44 44"
+    width="44"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fillRule="evenodd"
+      strokeWidth="2"
+    >
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="0s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+      <circle
+        cx="22"
+        cy="22"
+        r="1"
+      >
+        <animate
+          attributeName="r"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.165, 0.84, 0.44, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 20"
+        />
+        <animate
+          attributeName="stroke-opacity"
+          begin="-0.9s"
+          calcMode="spline"
+          dur="1.8s"
+          keySplines="0.3, 0.61, 0.355, 1"
+          keyTimes="0; 1"
+          repeatCount="indefinite"
+          values="1; 0"
+        />
+      </circle>
+    </g>
+  </svg>
+</div>
+`;
+
 exports[`Storyshots ATOMS/Menu with default modifiers 1`] = `
 .emotion-4 {
   margin: 2rem;

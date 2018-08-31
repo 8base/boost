@@ -5,12 +5,12 @@ export default (asStory) => {
     story
       .add('with type modifiers', () => (
         <React.Fragment>
-          <Heading type="h1" text="Heading 1" />
-          <Heading type="h2" text="Heading 2" />
-          <Heading type="h3" text="Heading 3" />
-          <Heading type="h4" text="Heading 4" />
-          <Heading type="h5" text="Heading 5" />
-          <Heading type="h6" text="Heading 6" />
+          <Heading type="h1">62px - Heading 1</Heading>
+          <Heading type="h2">46px - Heading 2</Heading>
+          <Heading type="h3">30px - Heading 3</Heading>
+          <Heading type="h4">20px - Heading 4</Heading>
+          <Heading type="h5">14px - Heading 5</Heading>
+          <Heading type="h6">10px - Heading 6</Heading>
         </React.Fragment>
       ))
       .add('with kind modifiers ', () => (

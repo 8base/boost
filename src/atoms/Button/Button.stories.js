@@ -56,7 +56,7 @@ export default (asStory) => {
       ))
       .add('with icon', () => (
         <Button color="secondary" variant="outlined">
-          <Icon size="xs" name="Check" color="secondary" />
+          <Icon size="xs" name="Check" color="GREEN" />
           <span>Succes</span>
         </Button>
       ));

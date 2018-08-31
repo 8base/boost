@@ -1,7 +1,9 @@
 // @flow
 
 import React from 'react';
+import fp from 'lodash/fp';
 
+import { PALETTE } from '../../../theme';
 import { createStyledTag, createTheme } from '../../../utils';
 import type { Theme } from '../../../types';
 import * as glyphs from './glyphs';
@@ -10,25 +12,19 @@ type IconProps = {
   /** icon name */
   name: string,
   /** icon color */
-  color?: 'red' | 'green' | 'blue' | 'primary' | 'secondary' | 'white' | 'gray' | 'light-gray',
+  color?: $Keys<typeof PALETTE>,
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'stretch',
 };
 
 const name = 'icon';
 
-const theme : Theme<IconProps> = createTheme(name, (colors: *): * => ({
+const theme : Theme<IconProps> = createTheme(name, () => ({
   modifiers: {
-    color: {
-      primary: { color: colors.PRIMARY },
-      secondary: { color: colors.SECONDARY },
-      red: { color: colors.RED },
-      green: { color: colors.GREEN },
-      blue: { color: colors.BLUE },
-      white: { color: colors.WHITE },
-      gray: { color: colors.DARK_GRAY1 },
-      'light-gray': { color: colors.LIGHT_GRAY1 },
-    },
+    color: fp.mapValues(
+      (color) => ({ color }),
+      PALETTE,
+    ),
     size: {
       xs: {
         width: '1rem',

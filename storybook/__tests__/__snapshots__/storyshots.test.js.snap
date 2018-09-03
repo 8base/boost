@@ -1693,9 +1693,6 @@ exports[`Storyshots ATOMS/Card default 1`] = `
 }
 
 .emotion-1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 2rem;
 }
 
@@ -1775,9 +1772,6 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 }
 
 .emotion-1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 2rem;
 }
 
@@ -1875,9 +1869,6 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
 
 .emotion-2 {
   overflow: auto;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 2rem;
 }
 
@@ -1957,9 +1948,6 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
 }
 
 .emotion-1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 2rem;
 }
 
@@ -2009,9 +1997,6 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
 }
 
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 2rem;
 }
 
@@ -7829,15 +7814,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   height: 100%;
 }
 
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
@@ -7871,6 +7847,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   display: inline-flex;
 }
 
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 <div
   className="emotion-6"
 >
@@ -7881,7 +7866,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   >
     <div>
       <div
-        className="ignore-react-onclickoutside-40 emotion-4"
+        className="ignore-react-onclickoutside-41 emotion-4"
         onClick={[Function]}
       >
         <div
@@ -7945,15 +7930,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   height: 100%;
 }
 
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
@@ -7987,6 +7963,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   display: inline-flex;
 }
 
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 <div
   className="emotion-6"
 >
@@ -7997,7 +7982,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
   >
     <div>
       <div
-        className="ignore-react-onclickoutside-41 emotion-4"
+        className="ignore-react-onclickoutside-42 emotion-4"
         onClick={[Function]}
       >
         <div
@@ -8061,15 +8046,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   z-index: 2;
 }
 
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 .emotion-2 {
   border: 1px solid #D0D7DD;
   border-radius: 5px;
@@ -8103,6 +8079,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   display: inline-flex;
 }
 
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 <div
   className="emotion-6"
 >
@@ -8113,7 +8098,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   >
     <div>
       <div
-        className="ignore-react-onclickoutside-42 emotion-4"
+        className="ignore-react-onclickoutside-43 emotion-4"
         onClick={[Function]}
       >
         <div
@@ -8175,15 +8160,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   height: 100%;
   width: 100%;
   z-index: 2;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 .emotion-8 {
@@ -8250,6 +8226,15 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   display: inline-flex;
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 <div
   className="emotion-9"
 >
@@ -8271,7 +8256,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
       >
         <div>
           <div
-            className="ignore-react-onclickoutside-43 emotion-5"
+            className="ignore-react-onclickoutside-44 emotion-5"
             onClick={[Function]}
           >
             <div
@@ -9255,6 +9240,156 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
         className="emotion-3"
       >
         Body
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
+.emotion-8 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-7 {
+  border-radius: .25rem;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #DCE1E6;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.emotion-6 {
+  background-color: #fff;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  color: rgba(0,0,0,0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.emotion-3:hover {
+  background-color: #4DA1FF;
+  color: #fff;
+}
+
+<div
+  className="emotion-8"
+>
+  <div>
+    <div
+      className="ignore-react-onclickoutside-10 emotion-2"
+      onClick={[Function]}
+    >
+      <div
+        className="emotion-1"
+      >
+        <div
+          className="emotion-0"
+        >
+          <svg
+            height="100%"
+            viewBox="0 0 512 128"
+            width="100%"
+          >
+            <path
+              d="M64 0C28.8 0 0 28.8 0 64s28.8 64 64 64 64-28.8 64-64S99.2 0 64 0zm384 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64zM256 0c-35.2 0-64 28.8-64 64s28.8 64 64 64 64-28.8 64-64-28.8-64-64-64z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-placement={undefined}
+      data-x-out-of-boundaries={undefined}
+      style={
+        Object {
+          "display": "none",
+          "opacity": 0,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "width": undefined,
+          "zIndex": 20000,
+        }
+      }
+    >
+      <div
+        className="emotion-7"
+      >
+        <div
+          className="emotion-6"
+        >
+          <div
+            className="emotion-3"
+          >
+            Tramman
+          </div>
+          <div
+            className="emotion-3"
+          >
+            Gripman
+          </div>
+          <div
+            className="emotion-3"
+          >
+            Proalliance
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -12440,15 +12575,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   margin: 2rem;
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -12456,6 +12582,15 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   display: inline-flex;
   width: 1rem;
   height: 1rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .emotion-1 {
@@ -13453,6 +13588,16 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   height: 100%;
 }
 
+.emotion-13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #DCE1E6;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 .emotion-340 {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -13517,15 +13662,6 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   align-items: center;
   padding: 0 2rem;
   word-break: break-all;
-}
-
-.emotion-13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 .emotion-339 {
@@ -13634,7 +13770,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-10 emotion-15"
+                className="ignore-react-onclickoutside-11 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -13697,7 +13833,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-11 emotion-15"
+                className="ignore-react-onclickoutside-12 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -13760,7 +13896,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-12 emotion-15"
+                className="ignore-react-onclickoutside-13 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -13823,7 +13959,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-13 emotion-15"
+                className="ignore-react-onclickoutside-14 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -13886,7 +14022,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-14 emotion-15"
+                className="ignore-react-onclickoutside-15 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -13949,7 +14085,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-15 emotion-15"
+                className="ignore-react-onclickoutside-16 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14012,7 +14148,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-16 emotion-15"
+                className="ignore-react-onclickoutside-17 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14075,7 +14211,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-17 emotion-15"
+                className="ignore-react-onclickoutside-18 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14138,7 +14274,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-18 emotion-15"
+                className="ignore-react-onclickoutside-19 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14201,7 +14337,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-19 emotion-15"
+                className="ignore-react-onclickoutside-20 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14264,7 +14400,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-20 emotion-15"
+                className="ignore-react-onclickoutside-21 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14327,7 +14463,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-21 emotion-15"
+                className="ignore-react-onclickoutside-22 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14390,7 +14526,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-22 emotion-15"
+                className="ignore-react-onclickoutside-23 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14453,7 +14589,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-23 emotion-15"
+                className="ignore-react-onclickoutside-24 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14516,7 +14652,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-24 emotion-15"
+                className="ignore-react-onclickoutside-25 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14579,7 +14715,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-25 emotion-15"
+                className="ignore-react-onclickoutside-26 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14642,7 +14778,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-26 emotion-15"
+                className="ignore-react-onclickoutside-27 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14705,7 +14841,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-27 emotion-15"
+                className="ignore-react-onclickoutside-28 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14768,7 +14904,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-28 emotion-15"
+                className="ignore-react-onclickoutside-29 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14831,7 +14967,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-29 emotion-15"
+                className="ignore-react-onclickoutside-30 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14894,7 +15030,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-30 emotion-15"
+                className="ignore-react-onclickoutside-31 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -14957,7 +15093,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-31 emotion-15"
+                className="ignore-react-onclickoutside-32 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15020,7 +15156,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-32 emotion-15"
+                className="ignore-react-onclickoutside-33 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15083,7 +15219,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-33 emotion-15"
+                className="ignore-react-onclickoutside-34 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15146,7 +15282,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-34 emotion-15"
+                className="ignore-react-onclickoutside-35 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15209,7 +15345,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-35 emotion-15"
+                className="ignore-react-onclickoutside-36 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15272,7 +15408,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-36 emotion-15"
+                className="ignore-react-onclickoutside-37 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15335,7 +15471,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-37 emotion-15"
+                className="ignore-react-onclickoutside-38 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15398,7 +15534,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-38 emotion-15"
+                className="ignore-react-onclickoutside-39 emotion-15"
                 onClick={[Function]}
               >
                 <div
@@ -15461,7 +15597,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
           >
             <div>
               <div
-                className="ignore-react-onclickoutside-39 emotion-15"
+                className="ignore-react-onclickoutside-40 emotion-15"
                 onClick={[Function]}
               >
                 <div

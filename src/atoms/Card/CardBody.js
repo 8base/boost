@@ -8,12 +8,18 @@ type CardBodyProps = {|
   children: React$Node,
   padding?: PropSizes,
   scrollable?: boolean,
+  stretch?: boolean,
 |}
 
 const name = 'cardBody';
 
 const cardBodyTheme = createTheme(name, {
   modifiers: {
+    stretch: {
+      display: 'flex',
+      flex: 1,
+      width: '100%',
+    },
     ...offsetModifier,
   },
 });

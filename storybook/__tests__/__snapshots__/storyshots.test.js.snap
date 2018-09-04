@@ -1,44 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots ATOMS/Avatar with custom size modifiers 1`] = `
-.emotion-1 {
+.emotion-2 {
   margin: 2rem;
 }
 
 .emotion-0 {
+  width: 100%;
+}
+
+.emotion-1 {
   border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d0d7dd;
+  color: #323c47;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 <div
-  className="emotion-1"
+  className="emotion-2"
 >
-  <img
-    className="emotion-0"
-    src="https://randomuser.me/api/portraits/women/87.jpg"
-  />
+  <div
+    className="emotion-1"
+  >
+    <img
+      className="emotion-0"
+      src="https://randomuser.me/api/portraits/women/87.jpg"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots ATOMS/Avatar with default modifiers 1`] = `
-.emotion-1 {
+.emotion-2 {
   margin: 2rem;
 }
 
-.emotion-0 {
+.emotion-1 {
   border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d0d7dd;
+  color: #323c47;
   width: 5rem;
   height: 5rem;
 }
 
+.emotion-0 {
+  width: 100%;
+}
+
 <div
-  className="emotion-1"
+  className="emotion-2"
 >
-  <img
-    className="emotion-0"
-    src="https://randomuser.me/api/portraits/women/76.jpg"
-  />
+  <div
+    className="emotion-1"
+  >
+    <img
+      className="emotion-0"
+      src="https://randomuser.me/api/portraits/women/76.jpg"
+    />
+  </div>
 </div>
 `;
 
@@ -12737,17 +12783,36 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Label with kind modifiers 1`] = `
 `;
 
 exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
-.emotion-2 {
+.emotion-3 {
   margin: 2rem;
 }
 
-.emotion-0 {
+.emotion-1 {
   border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #d0d7dd;
+  color: #323c47;
   width: 5rem;
   height: 5rem;
 }
 
-.emotion-1 {
+.emotion-0 {
+  width: 100%;
+}
+
+.emotion-2 {
   cursor: pointer;
   font-family: Poppins;
   font-weight: 400;
@@ -12758,22 +12823,26 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
   color: #4DA1FF;
 }
 
-.emotion-1:hover {
+.emotion-2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <div
-  className="emotion-2"
+  className="emotion-3"
 >
   <a
-    className="emotion-1"
+    className="emotion-2"
     to="https://randomuser.me/api/portraits/women/87.jpg"
   >
-    <img
-      className="emotion-0"
-      src="https://randomuser.me/api/portraits/women/87.jpg"
-    />
+    <div
+      className="emotion-1"
+    >
+      <img
+        className="emotion-0"
+        src="https://randomuser.me/api/portraits/women/87.jpg"
+      />
+    </div>
   </a>
 </div>
 `;

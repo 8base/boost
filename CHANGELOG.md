@@ -1,3 +1,25 @@
+<a name="0.5.10"></a>
+## [0.5.10](https://github.com/8base/boost/compare/v0.5.9...v0.5.10) (2018-09-04)
+
+
+### Bug Fixes
+
+* **atoms:** update snapshots ([ade164c](https://github.com/8base/boost/commit/ade164c))
+* **Avatar:** add sizes and fix styles ([17bfa96](https://github.com/8base/boost/commit/17bfa96))
+* **Button:** disable text selection ([493d39a](https://github.com/8base/boost/commit/493d39a))
+* **Card:** stretch modifier ([c34021e](https://github.com/8base/boost/commit/c34021e))
+* **Menu:** no wrap for items ([65d713d](https://github.com/8base/boost/commit/65d713d))
+
+
+### Features
+
+* **atoms:** add loader ([b8dd374](https://github.com/8base/boost/commit/b8dd374))
+* **Card:** default padding ([633edb0](https://github.com/8base/boost/commit/633edb0))
+* **Card:** render prop ([4159c8e](https://github.com/8base/boost/commit/4159c8e))
+* **Table:** initial table ([6bdf6c8](https://github.com/8base/boost/commit/6bdf6c8))
+
+
+
 <a name="0.5.9"></a>
 ## [0.5.9](https://github.com/8base/boost/compare/v0.5.8...v0.5.9) (2018-08-31)
 

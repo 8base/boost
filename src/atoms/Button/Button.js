@@ -223,6 +223,7 @@ const StyledTag = createStyledTag(name, props => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  userSelect: 'none',
 
   ...getThemeStyle(props, name).button,
 

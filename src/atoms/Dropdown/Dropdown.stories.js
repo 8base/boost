@@ -3,7 +3,7 @@
 import React from 'react';
 
 export default (asStory: *) => {
-  asStory('ATOMS/Dropdown', module, (story, { Dropdown, Button }) => {
+  asStory('ATOMS/Dropdown', module, (story, { Dropdown, Button, Icon, Menu }) => {
     story
       .add('default', () => (
         <Dropdown.Plate defaultOpen>
@@ -64,7 +64,20 @@ export default (asStory: *) => {
           <Dropdown.Head><Button>Head</Button></Dropdown.Head>
           <Dropdown.Body forceRender>Body</Dropdown.Body>
         </Dropdown.Plate>
+      ))
+      .add('with menu', () => (
+        <Dropdown.Plate defaultOpen={ false }>
+          <Dropdown.Head>
+            <Icon name="Dots" color="LIGHT_GRAY2" />
+          </Dropdown.Head>
+          <Dropdown.Body forceRender>
+            <Menu.Plate>
+              <Menu.Item>Tramman</Menu.Item>
+              <Menu.Item>Gripman</Menu.Item>
+              <Menu.Item>Proalliance</Menu.Item>
+            </Menu.Plate>
+          </Dropdown.Body>
+        </Dropdown.Plate>
       ));
-
   });
 };

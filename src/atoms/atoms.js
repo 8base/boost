@@ -33,3 +33,5 @@ export { Tabs } from './Tabs';
 export { Text } from './typography/Text';
 export { TextArea } from './dataEntry/TextArea';
 export { TextAreaField } from './dataEntry/TextAreaField';
+export { Loader } from './Loader';
+export { Table } from './Table';

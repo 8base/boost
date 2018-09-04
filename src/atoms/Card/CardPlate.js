@@ -13,9 +13,14 @@ type CardPlateProps = {|
 const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
   <Paper { ...rest } padding={ paddingOuter }>
     {
-      React.Children.map(children, child =>
-        React.cloneElement(child, { padding: child.props.padding || padding }),
-      )
+
+      typeof children === 'function'
+        ?
+        children(rest)
+        :
+        React.Children.map(children, child =>
+          React.cloneElement(child, { padding: child.props.padding || padding }),
+        )
     }
   </Paper>
 );

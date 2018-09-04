@@ -25,6 +25,7 @@ const StyledTag = createStyledTag(name, () => ({
   alignItems: 'center',
   cursor: 'pointer',
   padding: '0 1rem',
+  whiteSpace: 'nowrap',
 
   '&:hover': {
     backgroundColor: '#4DA1FF',

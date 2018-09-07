@@ -1,3 +1,13 @@
+<a name="0.5.11"></a>
+## [0.5.11](https://github.com/8base/boost/compare/v0.5.10...v0.5.11) (2018-09-07)
+
+
+### Bug Fixes
+
+* **Input:** fix change handler for empty number value ([033bcf1](https://github.com/8base/boost/commit/033bcf1))
+
+
+
 <a name="0.5.10"></a>
 ## [0.5.10](https://github.com/8base/boost/compare/v0.5.9...v0.5.10) (2018-09-04)
 

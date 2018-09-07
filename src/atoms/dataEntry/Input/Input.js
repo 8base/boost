@@ -43,7 +43,7 @@ type InputProps = {
   /** set input width to the equal height */
   square?: boolean,
   /** callback to change input value */
-  onChange?: (value?: string | number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  onChange?: (value?: string | ?number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
   onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
 } & InputCommonProps;
@@ -67,7 +67,7 @@ class Input extends PureComponent<InputProps> {
 
     if (value.toString().length <= maxLength || hasNotMaxLength) {
       if (type === 'number') {
-        onChange && onChange(Number(value) || undefined, event);
+        onChange && onChange(Number(value) || null, event);
       }
       else {
         onChange && onChange(value, event);

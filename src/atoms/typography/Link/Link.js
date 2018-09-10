@@ -28,6 +28,7 @@ const theme = createTheme(name, () => ({
       },
       sm: {
         fontSize: '1.2rem',
+        lineHeight: '2rem',
       },
     },
     color: fp.mapValues(

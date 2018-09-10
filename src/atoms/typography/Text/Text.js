@@ -69,9 +69,11 @@ const theme = createTheme(name, (colors: *): * => ({
       },
       sm: {
         fontSize: '1.2rem',
+        lineHeight: '2rem',
       },
       md: {
         fontSize: '1.4rem',
+        lineHeight: '2.4rem',
       },
       lg: {
         fontSize: '1.6rem',

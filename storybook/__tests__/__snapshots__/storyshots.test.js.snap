@@ -12970,7 +12970,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   text-align: left;
@@ -12979,7 +12979,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 }
 
 .emotion-1 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   text-align: right;
@@ -12988,7 +12988,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with align modifiers  1`] = `
 }
 
 .emotion-2 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   text-align: center;
@@ -13035,7 +13035,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifiers 1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 600;
@@ -13043,7 +13043,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with bold modifiers 1`] = `
 }
 
 .emotion-1 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 700;
@@ -13075,7 +13075,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with children 1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 400;
@@ -13099,7 +13099,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #4DA1FF;
   font-weight: 400;
@@ -13107,7 +13107,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 }
 
 .emotion-1 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #00bb6e;
   font-weight: 400;
@@ -13115,7 +13115,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 }
 
 .emotion-2 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #eb4235;
   font-weight: 400;
@@ -13123,7 +13123,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with color modifiers  1`] = `
 }
 
 .emotion-4 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #1968cb;
   font-weight: 400;
@@ -13171,7 +13171,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #d0d7dd;
   font-weight: 400;
@@ -13196,7 +13196,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with size modifiers 1`] = `
 }
 
 .emotion-2 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 400;
@@ -13212,7 +13212,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with size modifiers 1`] = `
 }
 
 .emotion-1 {
-  line-height: 1.4;
+  line-height: 2rem;
   margin: 0;
   color: #323c47;
   font-weight: 400;
@@ -13281,7 +13281,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with text 1`] = `
 }
 
 .emotion-0 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 400;
@@ -16310,7 +16310,7 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 }
 
 .emotion-2 {
-  line-height: 1.4;
+  line-height: 2.4rem;
   margin: 0;
   color: #323c47;
   font-weight: 400;

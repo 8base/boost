@@ -1,3 +1,13 @@
+<a name="0.5.12"></a>
+## [0.5.12](https://github.com/8base/boost/compare/v0.5.11...v0.5.12) (2018-09-10)
+
+
+### Bug Fixes
+
+* **typography:** add some line heights ([08062fc](https://github.com/8base/boost/commit/08062fc))
+
+
+
 <a name="0.5.11"></a>
 ## [0.5.11](https://github.com/8base/boost/compare/v0.5.10...v0.5.11) (2018-09-07)
 

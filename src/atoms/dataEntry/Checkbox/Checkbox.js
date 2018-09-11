@@ -47,7 +47,7 @@ class Checkbox extends PureComponent<CheckboxProps> {
       <CheckboxWrapperTag { ...rest } tagName="label">
         <CheckboxSquareTag hasError={ hasError } disabled={ disabled } tagName="div">
           <CheckboxIconTag checked={ checked } color={ color } tagName="div">
-            <Icon name="Check" size="xs" />
+            <Icon name="Check" size="sm" />
           </CheckboxIconTag>
         </CheckboxSquareTag>
         <CheckboxTag checked={ checked } onChange={ this.onChange } type="checkbox" tagName="input" />

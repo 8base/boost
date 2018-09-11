@@ -2140,8 +2140,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2247,8 +2247,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2366,8 +2366,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2471,8 +2471,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2614,8 +2614,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2705,8 +2705,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -2823,8 +2823,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -3001,8 +3001,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -3118,8 +3118,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-4 {
@@ -12623,13 +12623,13 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   margin: 2rem;
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .emotion-2 {
@@ -12641,13 +12641,13 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom sizes 1`] = `
   height: 1.8rem;
 }
 
-.emotion-1 {
+.emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .emotion-3 {

@@ -1,3 +1,13 @@
+<a name="0.5.13"></a>
+## [0.5.13](https://github.com/8base/boost/compare/v0.5.12...v0.5.13) (2018-09-11)
+
+
+### Bug Fixes
+
+* **atoms:** fix checkbox icon size ([89be482](https://github.com/8base/boost/commit/89be482))
+
+
+
 <a name="0.5.12"></a>
 ## [0.5.12](https://github.com/8base/boost/compare/v0.5.11...v0.5.12) (2018-09-10)
 

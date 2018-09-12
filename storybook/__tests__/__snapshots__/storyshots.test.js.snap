@@ -4123,7 +4123,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 .emotion-0 {
   width: 100%;
   outline: none;
-  padding-left: 3rem;
+  padding-left: 4rem;
   padding-right: 2rem;
   color: #323c47;
   font-size: 1.4rem;
@@ -4302,7 +4302,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   width: 100%;
   outline: none;
   padding-left: 1rem;
-  padding-right: 3rem;
+  padding-right: 5rem;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4422,7 +4422,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   width: 100%;
   outline: none;
   padding-left: 1rem;
-  padding-right: 3rem;
+  padding-right: 5rem;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;

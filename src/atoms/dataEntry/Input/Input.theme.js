@@ -100,8 +100,8 @@ const InputRightIconTag = createStyledTag(`${name}RightIcon`, {
 const getInputStyles = props => ({
   width: '100%',
   outline: 'none',
-  paddingLeft: props.hasLeftIcon ? '3rem' : '1rem',
-  paddingRight: props.hasRightIcon ? '3rem' : '2rem',
+  paddingLeft: props.hasLeftIcon ? '4rem' : '1rem',
+  paddingRight: props.hasRightIcon ? '5rem' : '2rem',
 
   ...getThemeStyle(props, name).input,
   ...getThemeStyleByCond(props, name, 'inputError', props.hasError),

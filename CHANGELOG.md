@@ -1,3 +1,13 @@
+<a name="0.5.16"></a>
+## [0.5.16](https://github.com/8base/boost/compare/v0.5.15...v0.5.16) (2018-09-13)
+
+
+### Bug Fixes
+
+* **atoms:** fix FromPlate typings ([2fb7722](https://github.com/8base/boost/commit/2fb7722))
+
+
+
 <a name="0.5.15"></a>
 ## [0.5.15](https://github.com/8base/boost/compare/v0.5.14...v0.5.15) (2018-09-13)
 

@@ -1,3 +1,15 @@
+<a name="0.5.15"></a>
+## [0.5.15](https://github.com/8base/boost/compare/v0.5.14...v0.5.15) (2018-09-13)
+
+
+### Bug Fixes
+
+* **atoms:** add missing flow annotation ([b1b2c26](https://github.com/8base/boost/commit/b1b2c26))
+* **atoms:** fix input icons padding ([2a8a606](https://github.com/8base/boost/commit/2a8a606))
+* **atoms:** fix input mask border ([31159bf](https://github.com/8base/boost/commit/31159bf))
+
+
+
 <a name="0.5.14"></a>
 ## [0.5.14](https://github.com/8base/boost/compare/v0.5.12...v0.5.14) (2018-09-12)
 

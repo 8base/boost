@@ -5,7 +5,7 @@ import { createStyledTag, createTheme } from '../../../utils';
 import type { PropSizes } from '../../../types';
 
 type FormSectionTitleProps = {|
-  children?: string,
+  children?: React$Node,
   text?: string,
   size?: PropSizes,
 |}

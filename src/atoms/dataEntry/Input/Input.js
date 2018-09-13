@@ -2,7 +2,8 @@
 
 import React, { PureComponent } from 'react';
 import fp from 'lodash/fp';
-import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputMaskStyled } from './Input.theme';
+import InputMask from 'react-input-mask';
+import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag } from './Input.theme';
 
 type InputCommonProps = {
   /** field placeholder */
@@ -127,9 +128,10 @@ class Input extends PureComponent<InputProps> {
             />
           </When>
           <Otherwise >
-            <InputMaskStyled
+            <InputTag
               { ...inputProps }
               mask={ mask }
+              tagName={ InputMask }
             />
           </Otherwise>
         </Choose>

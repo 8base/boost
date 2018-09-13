@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
@@ -10,6 +12,8 @@ type FormPlateProps = {|
   stretch?: boolean,
   /** form content */
   children?: React$Node,
+  /** component to use instead of form tag */
+  component?: React$Node,
 |}
 
 const name = 'formPlate';

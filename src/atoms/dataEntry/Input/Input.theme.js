@@ -1,6 +1,4 @@
 // @flow
-import styled from 'react-emotion';
-import InputMask from 'react-input-mask';
 import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from '../../../utils';
 
 const name = 'input';
@@ -117,6 +115,11 @@ const InputTag = createStyledTag(name, props => ({
   ...getInputStyles(props),
 }));
 
-const InputMaskStyled = styled(InputMask)(getInputStyles);
-
-export { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputMaskStyled, theme };
+export {
+  InputWrapperTag,
+  InputTag,
+  InputIndicatorTag,
+  InputRightIconTag,
+  InputLeftIconTag,
+  theme,
+};

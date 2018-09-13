@@ -3,9 +3,9 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
-import { FlexLayout } from '../../FlexLayout/FlexLayout';
+import { FlexLayout, type FlexLayoutCommonProps } from '../../FlexLayout/FlexLayout';
 
-type FormPlateProps = {|
+type FormPlateProps = {
   /** callback called on form submit */
   onSubmit?: Function,
   /** when true then stretch form by the parent */
@@ -14,7 +14,7 @@ type FormPlateProps = {|
   children?: React$Node,
   /** component to use instead of form tag */
   component?: React$Node,
-|}
+} & FlexLayoutCommonProps;
 
 const name = 'formPlate';
 

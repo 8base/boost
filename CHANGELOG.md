@@ -1,3 +1,13 @@
+<a name="0.5.17"></a>
+## [0.5.17](https://github.com/8base/boost/compare/v0.5.16...v0.5.17) (2018-09-14)
+
+
+### Bug Fixes
+
+* **atoms:** fix flow annotation to avoid proptypes generating error ([d5acf2b](https://github.com/8base/boost/commit/d5acf2b))
+
+
+
 <a name="0.5.16"></a>
 ## [0.5.16](https://github.com/8base/boost/compare/v0.5.15...v0.5.16) (2018-09-13)
 

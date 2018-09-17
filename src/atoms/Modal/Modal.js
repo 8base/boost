@@ -3,12 +3,14 @@ import { Portal } from 'react-portal';
 import { injectGlobal } from 'emotion';
 
 import { createStyledTag, createTheme } from '../../utils';
+import { withModalState } from './withModalState';
 
 type ModalProps = {
   children: React$Node,
   isOpen?: boolean,
   onClose?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
+  id?: string,
 };
 
 type ModalState = {
@@ -88,8 +90,6 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     if (this.props.isOpen) {
       Modal.openedModals -= 1;
 
-      this.setState({ isOpen: false });
-
       if (typeof this.props.onClose === 'function') {
         this.props.onClose();
       }
@@ -120,7 +120,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 
   onOverlayMouseDown = () => {
     if (this.props.shouldCloseOnOverlayClick) {
-      this.closeModal();
+      this.props.onClose();
     }
   };
 
@@ -129,14 +129,14 @@ class Modal extends PureComponent<ModalProps, ModalState> {
   };
 
   render() {
-    const { children, isOpen } = this.props;
+    const { children, isOpen, ...rest } = this.props;
 
     return (
       <If condition={ isOpen }>
         <Portal>
           <OverlayTag tagName="div" onMouseDown={ this.onOverlayMouseDown }>
             <ModalTag tagName="div" onMouseDown={ this.onModalMouseDown }>
-              { children }
+              { typeof children === 'function' ? children(rest) : children }
             </ModalTag>
           </OverlayTag>
         </Portal>
@@ -144,5 +144,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     );
   }
 }
+
+Modal = withModalState(Modal);
 
 export { Modal, theme };

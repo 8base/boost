@@ -20,6 +20,8 @@ type TextProps = {|
   weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
   /** possible sizes */
   size?: PropSizes,
+  /** possible line heights */
+  lineHeight?: PropSizes,
   /** text align */
   align?: 'left' | 'center' | 'right',
   /** when true then cut text with ellipsis */
@@ -63,17 +65,23 @@ const theme = createTheme(name, (colors: *): * => ({
       },
     },
 
+    lineHeight: {
+      xs: { lineHeight: '1' },
+      sm: { lineHeight: '1.2' },
+      md: { lineHeight: '1.4' },
+      lg: { lineHeight: '1.6' },
+      xl: { lineHeight: '1.8' },
+    },
+
     size: {
       xs: {
         fontSize: '1rem',
       },
       sm: {
         fontSize: '1.2rem',
-        lineHeight: '2rem',
       },
       md: {
         fontSize: '1.4rem',
-        lineHeight: '2.4rem',
       },
       lg: {
         fontSize: '1.6rem',
@@ -93,6 +101,7 @@ const theme = createTheme(name, (colors: *): * => ({
   defaults: {
     color: 'DARK_GRAY1',
     size: 'md',
+    lineHeight: 'md',
     weight: 'normal',
     ellipsis: false,
   },

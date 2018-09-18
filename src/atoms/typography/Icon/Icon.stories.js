@@ -8,7 +8,6 @@ export default (asStory) => {
           <Icon name="Check" />
           <Icon name="ChevronDown" />
           <Icon name="CloudDatabase" />
-          <Icon name="Diagram" />
           <Icon name="Dots" />
           <Icon name="FirewallOn" />
           <Icon name="Gear" />

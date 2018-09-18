@@ -4,6 +4,7 @@ import React from 'react';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
 import CloudDatabase from './Cloud-Database.svg';
+import Diagram from './Diagram.svg';
 import Dots from './Dots.svg';
 import FirewallOn from './Firewall-On.svg';
 import Gear from './Gear.svg';
@@ -20,6 +21,7 @@ export {
   Check,
   ChevronDown,
   CloudDatabase,
+  Diagram,
   Dots,
   FirewallOn,
   Gear,

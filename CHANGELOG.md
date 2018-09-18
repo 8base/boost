@@ -1,3 +1,15 @@
+<a name="0.5.18"></a>
+## [0.5.18](https://github.com/8base/boost/compare/v0.5.17...v0.5.18) (2018-09-18)
+
+
+### Features
+
+* **atoms:** add custom line-height to the text component ([21b8d93](https://github.com/8base/boost/commit/21b8d93))
+* **atoms:** add Diagram icon ([962a846](https://github.com/8base/boost/commit/962a846))
+* **modal:** add modal provider ([d56612d](https://github.com/8base/boost/commit/d56612d))
+
+
+
 <a name="0.5.17"></a>
 ## [0.5.17](https://github.com/8base/boost/compare/v0.5.16...v0.5.17) (2018-09-14)
 

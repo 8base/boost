@@ -1,3 +1,13 @@
+<a name="0.5.21"></a>
+## [0.5.21](https://github.com/8base/boost/compare/v0.5.20...v0.5.21) (2018-09-18)
+
+
+### Bug Fixes
+
+* **atoms:** fix Diagramm icon color ([6d1caf8](https://github.com/8base/boost/commit/6d1caf8))
+
+
+
 <a name="0.5.20"></a>
 ## [0.5.20](https://github.com/8base/boost/compare/v0.5.19...v0.5.20) (2018-09-18)
 

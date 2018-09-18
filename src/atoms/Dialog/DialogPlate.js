@@ -46,20 +46,26 @@ const StyledTag = createStyledTag(name, {
 
 function DialogPlate({
   children,
+  id,
   isOpen,
   onOpen,
   onClose,
   shouldCloseOnOverlayClick,
   size,
+  args,
   ...rest
   }: DialogPlateProps) {
   return (
-    <Modal isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
-      <StyledTag tagName="div" size={ size }>
-        <Card.Plate { ...rest }>
-          { children }
-        </Card.Plate>
-      </StyledTag>
+    <Modal id={ id } isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } args={ args } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
+      {
+        ({ args, onClose }) => (
+          <StyledTag tagName="div" size={ size }>
+            <Card.Plate { ...rest } args={ args } onClose={ onClose }>
+              { children }
+            </Card.Plate>
+          </StyledTag>
+        )
+      }
     </Modal>
   );
 }

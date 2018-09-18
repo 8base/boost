@@ -2,27 +2,20 @@
 
 import React from 'react';
 import styled from 'react-emotion';
-import { BrowserRouter } from 'react-router-dom';
 import { storiesOf } from '@storybook/react';
 import * as boost from '../src';
 import { withInfo } from '@storybook/addon-info';
 
-const { ThemeProvider, defaultTheme, resetGlobal, ...components } = boost;
-
-resetGlobal();
+const { EightBaseBoostProvider, ...components } = boost;
 
 const Root = styled('div')`
   margin: 2rem;
 `;
 
 const ThemeDecorator = (storyFn) => (
-  <Root>
-    <BrowserRouter>
-      <ThemeProvider theme={ defaultTheme }>
-        { storyFn() }
-      </ThemeProvider>
-    </BrowserRouter>
-  </Root>
+  <EightBaseBoostProvider>
+    <Root>{ storyFn() }</Root>
+  </EightBaseBoostProvider>
 );
 
 export const asStory = (name: string, module: *, init: *) => {

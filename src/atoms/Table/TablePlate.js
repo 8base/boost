@@ -4,9 +4,9 @@ import React from 'react';
 import { Grid } from '../Grid';
 import { createStyledTag, createTheme } from '../../utils';
 
-type TablePlateProps = {|
+type TablePlateProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'tablePlate';
 

@@ -4,9 +4,9 @@ import React from 'react';
 import { Grid } from '../Grid';
 import { createStyledTag, createTheme } from '../../utils';
 
-type TableFooterProps = {|
+type TableFooterProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'tableFooter';
 
@@ -19,7 +19,6 @@ const theme = createTheme(name, {
 
 const TableFooterTag = createStyledTag(name, () => ({
   display: 'grid',
-  borderTop: '1px solid #ccc',
   padding: '2rem',
 }));
 

@@ -1,3 +1,18 @@
+<a name="0.5.24"></a>
+## [0.5.24](https://github.com/8base/boost/compare/v0.5.23...v0.5.24) (2018-09-19)
+
+
+### Bug Fixes
+
+* **atoms:** few fixes in the Table components ([d9bd86f](https://github.com/8base/boost/commit/d9bd86f))
+
+
+### Features
+
+* **atoms:** add borderRadius modifier to the Paper ([bead39e](https://github.com/8base/boost/commit/bead39e))
+
+
+
 <a name="0.5.23"></a>
 ## [0.5.23](https://github.com/8base/boost/compare/v0.5.22...v0.5.23) (2018-09-19)
 

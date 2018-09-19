@@ -1,3 +1,13 @@
+<a name="0.5.23"></a>
+## [0.5.23](https://github.com/8base/boost/compare/v0.5.22...v0.5.23) (2018-09-19)
+
+
+### Features
+
+* **Icon:** add graphql icon ([eac8824](https://github.com/8base/boost/commit/eac8824))
+
+
+
 <a name="0.5.22"></a>
 ## [0.5.22](https://github.com/8base/boost/compare/v0.5.21...v0.5.22) (2018-09-18)
 

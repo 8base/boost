@@ -6,6 +6,7 @@ import ChevronDown from './ChevronDown.svg';
 import CloudDatabase from './Cloud-Database.svg';
 import Diagram from './Diagram.svg';
 import Dots from './Dots.svg';
+import GraphQL from './GraphQL.svg';
 import FirewallOn from './Firewall-On.svg';
 import Gear from './Gear.svg';
 import Group from './Group.svg';
@@ -23,6 +24,7 @@ export {
   CloudDatabase,
   Diagram,
   Dots,
+  GraphQL,
   FirewallOn,
   Gear,
   Group,

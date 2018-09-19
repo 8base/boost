@@ -4,9 +4,9 @@ import React from 'react';
 import { Grid } from '../Grid';
 import { createStyledTag, createTheme } from '../../utils';
 
-type TableBodyProps = {|
+type TableBodyProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'tableBody';
 
@@ -17,9 +17,10 @@ const theme = createTheme(name, {
   },
 });
 
-const TableBodyTag = createStyledTag(name, () => ({
+const TableBodyTag = createStyledTag(name, (props: *) => ({
   display: 'grid',
-  overflowY: 'scroll',
+  overflowY: 'auto',
+  borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
 }));
 
 function TableBody({

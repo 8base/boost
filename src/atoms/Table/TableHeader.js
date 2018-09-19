@@ -4,9 +4,9 @@ import React from 'react';
 import { Grid } from '../Grid';
 import { createStyledTag, createTheme } from '../../utils';
 
-type TableHeaderProps = {|
+type TableHeaderProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'tableHeader';
 

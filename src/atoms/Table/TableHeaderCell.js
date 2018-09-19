@@ -3,9 +3,9 @@ import React from 'react';
 
 import { createStyledTag, createTheme } from '../../utils';
 
-type TableHeaderCellProps = {|
+type TableHeaderCellProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'tableHeaderCell';
 

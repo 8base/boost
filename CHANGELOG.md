@@ -1,3 +1,13 @@
+<a name="0.5.25"></a>
+## [0.5.25](https://github.com/8base/boost/compare/v0.5.24...v0.5.25) (2018-09-25)
+
+
+### Bug Fixes
+
+* **Button:** add pointer events none for disabled state ([82c609e](https://github.com/8base/boost/commit/82c609e))
+
+
+
 <a name="0.5.24"></a>
 ## [0.5.24](https://github.com/8base/boost/compare/v0.5.23...v0.5.24) (2018-09-19)
 

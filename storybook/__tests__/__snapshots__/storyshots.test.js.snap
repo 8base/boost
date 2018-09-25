@@ -1225,6 +1225,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   color: #E5E9EC;
   height: 4rem;
   padding: 0 4rem;
+  pointer-events: none;
 }
 
 .emotion-0:hover {

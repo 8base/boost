@@ -102,6 +102,7 @@ const theme = createTheme(name, (colors: *, sizes: *): * => ({
       borderColor: colors.LIGHT_GRAY3,
       color: colors.LIGHT_GRAY3,
       cursor: 'default',
+      pointerEvents: 'none',
 
       svg: {
         color: colors.LIGHT_GRAY3,

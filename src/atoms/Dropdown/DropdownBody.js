@@ -11,40 +11,35 @@ import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme
 import type { PropSizes } from '../../types';
 import { Z_INDEX } from '../../theme';
 
-/**
- * @prop {*} background options for background color
- * @prop {*} padding options for body padding
- * @prop {*} stretch stretch drodpown body width to the target width
- */
-type DropdownBodyThemeProps = {|
-  background?: 'white' | 'dark' | 'none',
-  padding?: PropSizes,
-  stretch?: boolean,
-|}
 
-/**
- * @prop {*} children takes either react dom element or function
- * @prop {*} placement default content position relative target
- * @prop {*} pin default content align relative target
- * @prop {*} offset set body offset relative target
- * @prop {*} width manual set width
- * @prop {*} preventOverflow popper js option https://popper.js.org/popper-documentation.html#modifiers..preventOverflow
- * @prop {*} forceRender prevent unmount dropdown content on close
- * @prop {*} withPortal replace dropdown body to the dom root by the portal
- */
-type DropdownBodyProps = {|
-  ...DropdownBodyThemeProps,
-
+type DropdownBodyProps = {
+  /** takes either react dom element or function */
   children: React$Node | ({ closeDropdown: () => void }) => React$Node,
+
+  /** Default content position relative target */
   placement?: 'top' | 'left' | 'bottom' | 'right',
+  /** Default content align relative target*/
   pin?: 'left' | 'right',
+  /** Set body offset relative target */
   offset?: PropSizes,
+  /** Manual set width */
   width?: number,
+  /** Popper js option https://popper.js.org/popper-documentation.html#modifiers..preventOverflow */
   preventOverflow?: boolean,
+  /** Prevent unmount dropdown content on close */
   forceRender?: boolean,
+  /** Replace dropdown body to the dom root by the portal */
   withPortal?: boolean,
+  /** When true then close dropdown on outside clicking */
   closeOnClickOutside?: boolean,
-|}
+
+  /** Options for background color */
+  background?: 'white' | 'dark' | 'none',
+  /** Options for body padding */
+  padding?: PropSizes,
+  /** Stretch drodpown body width to the target width */
+  stretch?: boolean,
+}
 
 const setPreventOverflow = (preventOverflow?: boolean) => preventOverflow
   ? fp.merge({ preventOverflow: { enabled: false }, hide: { enabled: false }})
@@ -70,7 +65,8 @@ const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
 
 type DropdownBodyEnhancedProps = HOCBase<typeof dropdownBodyEnhancer>;
 
-class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
+const DropdownBody = dropdownBodyEnhancer(
+  class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   static zIndex = Z_INDEX.DROPDOWN;
 
   static defaultProps = {
@@ -124,37 +120,35 @@ class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
   }
 
   render() {
-    const { withPortal, forceRender, dropdown: { isOpen }, ...rest } = this.props;
+      const { withPortal, forceRender, dropdown: { isOpen }, ...rest } = this.props;
 
-    const popperPlacement = this.getPopperPlacement();
-    const popperModifiers = this.getPopperModifiers();
-    const bodyWidth = this.getBodyWidth();
-    const renderChildren = this.getBodyChildren();
-    const PortalCondComponent = withPortal ? Portal : Fragment;
+      const popperPlacement = this.getPopperPlacement();
+      const popperModifiers = this.getPopperModifiers();
+      const bodyWidth = this.getBodyWidth();
+      const renderChildren = this.getBodyChildren();
+      const PortalCondComponent = withPortal ? Portal : Fragment;
 
-    return forceRender || isOpen
-      ? (
-        <PortalCondComponent>
-          <Popper
-            placement={ popperPlacement }
-            modifiers={ popperModifiers }
-            style={{
-              zIndex: DropdownBodyBase.zIndex,
-              width: bodyWidth,
-              display: isOpen ? 'block' : 'none',
-            }}
-          >
-            <DropdownBodyTag { ...rest } tagName="div">
-              { renderChildren }
-            </DropdownBodyTag>
-          </Popper>
-        </PortalCondComponent>
-      )
-      : null;
-  }
-}
-
-const DropdownBody = dropdownBodyEnhancer(DropdownBodyBase);
+      return forceRender || isOpen
+        ? (
+          <PortalCondComponent>
+            <Popper
+              placement={ popperPlacement }
+              modifiers={ popperModifiers }
+              style={{
+                zIndex: DropdownBodyBase.zIndex,
+                width: bodyWidth,
+                display: isOpen ? 'block' : 'none',
+              }}
+            >
+              <DropdownBodyTag { ...rest } tagName="div">
+                { renderChildren }
+              </DropdownBodyTag>
+            </Popper>
+          </PortalCondComponent>
+        )
+        : null;
+    }
+  },
+);
 
 export { DropdownBody };
-export type { DropdownBodyThemeProps };

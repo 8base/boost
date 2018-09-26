@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
+import Contract from './Contract.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
 import CloudDatabase from './Cloud-Database.svg';
@@ -17,8 +18,11 @@ import Search from './Search.svg';
 import SpeedMeter from './Speed-Meter.svg';
 import Trashcan from './Trashcan.svg';
 import TreeView from './TreeView.svg';
+import House from './House.svg';
+import Customers from './Customers.svg';
 
 export {
+  Contract,
   Check,
   ChevronDown,
   CloudDatabase,
@@ -35,5 +39,7 @@ export {
   SpeedMeter,
   Trashcan,
   TreeView,
+  House,
+  Customers,
 };
 

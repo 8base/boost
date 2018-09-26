@@ -12,13 +12,13 @@ const OPTIONS = [{
 }];
 
 export default (asStory) => {
-  asStory('ATOMS/DATA ENTRY/SelectField', module, (story, { SelectField }) => {
+  asStory('ATOMS/DATA ENTRY/FileInputField', module, (story, { FileInputField }) => {
     story
       .add('default', () => (
-        <SelectField
-          label="Select Label"
+        <FileInputField
+          label="FileInput Label"
           input={{ name: 'input', onChange: () => null, value: OPTIONS[0].value }}
-          placeholder="Select an option"
+          placeholder="FileInput an option"
           options={ OPTIONS }
           stretch
         />

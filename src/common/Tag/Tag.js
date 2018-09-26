@@ -63,6 +63,8 @@ const COLLECTED_PROPS = [
   'to',
   'type',
   'value',
+  'target',
+  'href',
 ];
 
 const HTML_TAGS = [

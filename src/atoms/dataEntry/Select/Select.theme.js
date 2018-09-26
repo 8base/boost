@@ -12,7 +12,9 @@ const theme = createTheme(name, {
   },
 });
 
-const SelectTag = createStyledTag(name, {});
+const SelectTag = createStyledTag(name, {
+  width: '100%',
+});
 
 const SelectValue = styled('div')((props) => ({
   border: '1px solid #D0D7DD',

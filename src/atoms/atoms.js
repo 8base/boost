@@ -1,6 +1,7 @@
 // @flow
 
 export { Avatar } from './Avatar';
+export { AsyncContent } from './AsyncContent';
 export { Button } from './Button';
 export { Breadcrumbs } from './Breadcrumbs';
 export { Card } from './Card';
@@ -28,6 +29,10 @@ export { Row, Column } from './FlexLayout';
 export { Scrollable } from './Scrollable';
 export { Select } from './dataEntry/Select';
 export { SelectField } from './dataEntry/SelectField';
+export { FileInput } from './dataEntry/FileInput';
+export { DateInput } from './dataEntry/DateInput';
+export { DateInputField } from './dataEntry/DateInputField';
+export { FileInputField } from './dataEntry/FileInputField';
 export { Stars } from './Stars';
 export { Tabs } from './Tabs';
 export { Text } from './typography/Text';

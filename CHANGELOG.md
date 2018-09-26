@@ -1,3 +1,13 @@
+<a name="0.5.26"></a>
+## [0.5.26](https://github.com/8base/boost/compare/v0.5.25...v0.5.26) (2018-09-26)
+
+
+### Bug Fixes
+
+* **atoms:** add onClick callback to the dropdown head ([8ca16c0](https://github.com/8base/boost/commit/8ca16c0))
+
+
+
 <a name="0.5.25"></a>
 ## [0.5.25](https://github.com/8base/boost/compare/v0.5.24...v0.5.25) (2018-09-25)
 

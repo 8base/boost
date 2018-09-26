@@ -8,22 +8,16 @@ import { withDropdownContext } from './DropdownContext';
 import { DropdownHeadTag, DropdownPopperTarget } from './DropdownHead.theme';
 
 
-/**
- * @prop {*} stretch stretch dropdown to the parent container
- */
-type DropdownHeadThemeProps = {|
-  stretch?: boolean,
-|}
-
-/**
- * @prop {*} stopClickPropagation prevent propagation on click
- */
-type DropdownHeadProps = {|
-  ...DropdownHeadThemeProps,
-
+type DropdownHeadProps = {
   children: React$Node,
+  /** When exists then stretch drodown head */
+  stretch?: boolean,
+  /** Prevent propagation on click */
   stopClickPropagation?: boolean,
-|}
+  /** onClick callback. When exists then disalbe auto toogle dropdown on click */
+  onClick?: (MouseEvent) => void,
+}
+
 
 const dropdownHeadEnhancer: HOC<*, DropdownHeadProps> = compose(
   setDisplayName('Dropdown.Head'),
@@ -32,29 +26,35 @@ const dropdownHeadEnhancer: HOC<*, DropdownHeadProps> = compose(
 
 type DropdownHeadPropsEnhanced = HOCBase<typeof dropdownHeadEnhancer>;
 
-class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
+
+const DropdownHead = dropdownHeadEnhancer(
+  class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
-    const { dropdown: { toggleDropdown }, stopClickPropagation } = this.props;
+    const { dropdown: { toggleDropdown }, stopClickPropagation, onClick } = this.props;
 
-    toggleDropdown && toggleDropdown();
+    if (typeof onClick === 'function') {
+      onClick(event);
+    }
+    else {
+      toggleDropdown && toggleDropdown();
+    }
+
     stopClickPropagation && event.stopPropagation();
   }
 
   render() {
-    const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
+      const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
 
-    return (
-      <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
-        <DropdownPopperTarget tagName={ Target }>
-          { children }
-        </DropdownPopperTarget>
-      </DropdownHeadTag>
-    );
-  }
-}
-
-const DropdownHead = dropdownHeadEnhancer(DropdownHeadBase);
+      return (
+        <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
+          <DropdownPopperTarget tagName={ Target }>
+            { children }
+          </DropdownPopperTarget>
+        </DropdownHeadTag>
+      );
+    }
+  },
+);
 
 export { DropdownHead };
-export type { DropdownHeadThemeProps };

@@ -2,8 +2,8 @@
 
 import { DropdownPlate as Plate } from './DropdownPlate';
 import { DropdownHead as Head } from './DropdownHead';
-import { theme as dropdownHeadTheme } from './DropdownHead.theme';
 import { DropdownBody as Body } from './DropdownBody';
+import { theme as dropdownHeadTheme } from './DropdownHead.theme';
 import { theme as dropdownBodyTheme } from './DropdownBody.theme';
 
 const Dropdown = {

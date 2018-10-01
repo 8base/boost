@@ -17,6 +17,9 @@ import Search from './Search.svg';
 import SpeedMeter from './Speed-Meter.svg';
 import Trashcan from './Trashcan.svg';
 import TreeView from './TreeView.svg';
+import EditPencil from './EditPencil.svg';
+import Environment from './Environment.svg';
+import Delete from './Delete.svg';
 
 export {
   Check,
@@ -35,5 +38,8 @@ export {
   SpeedMeter,
   Trashcan,
   TreeView,
+  EditPencil,
+  Environment,
+  Delete,
 };
 

@@ -1,3 +1,16 @@
+<a name="0.5.27"></a>
+## [0.5.27](https://github.com/8base/boost/compare/v0.5.26...v0.5.27) (2018-10-01)
+
+
+### Features
+
+* **GridBox:** add some grid properties ([0906a2c](https://github.com/8base/boost/commit/0906a2c))
+* **Icon:** add env, delete and edit icons ([86cbb4c](https://github.com/8base/boost/commit/86cbb4c))
+* **Input:** add disabled state ([7ccc90c](https://github.com/8base/boost/commit/7ccc90c))
+* **Switch:** add initial switch ([fbf3b22](https://github.com/8base/boost/commit/fbf3b22))
+
+
+
 <a name="0.5.26"></a>
 ## [0.5.26](https://github.com/8base/boost/compare/v0.5.25...v0.5.26) (2018-09-26)
 

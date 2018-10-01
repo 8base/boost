@@ -28,6 +28,7 @@ export { Row, Column } from './FlexLayout';
 export { Scrollable } from './Scrollable';
 export { Select } from './dataEntry/Select';
 export { SelectField } from './dataEntry/SelectField';
+export { Switch } from './dataEntry/Switch';
 export { Stars } from './Stars';
 export { Tabs } from './Tabs';
 export { Text } from './typography/Text';

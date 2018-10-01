@@ -28,6 +28,7 @@ import { theme as selectTheme } from './dataEntry/Select';
 import { theme as starsTheme } from './Stars';
 import { theme as textAreaFieldTheme } from './dataEntry/TextAreaField';
 import { theme as textAreaTheme } from './dataEntry/TextArea';
+import { theme as switchTheme } from './dataEntry/Switch';
 import { theme as textTheme } from './typography/Text';
 import { theme as loaderTheme } from './Loader';
 import { theme as tableTheme } from './Table';
@@ -64,4 +65,5 @@ export const theme = {
   ...textTheme,
   ...loaderTheme,
   ...tableTheme,
+  ...switchTheme,
 };

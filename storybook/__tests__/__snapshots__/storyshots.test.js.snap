@@ -8434,6 +8434,167 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
+.emotion-9 {
+  margin: 2rem;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-8 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  display: none;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.6rem;
+  width: 5.2rem;
+  border-radius: 2.6rem;
+  background-color: #d0d7dd;
+  position: relative;
+}
+
+.emotion-1:before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  left: 3px;
+  top: 3px;
+  z-index: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #878c93;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.6rem;
+  width: 5.2rem;
+  border-radius: 2.6rem;
+  background-color: #4DA1FF;
+  position: relative;
+}
+
+.emotion-5:before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  left: 29px;
+  top: 3px;
+  z-index: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+<div
+  className="emotion-9"
+>
+  <div
+    className="emotion-8"
+  >
+    <label
+      className="emotion-3"
+    >
+      <input
+        checked={false}
+        className="emotion-0"
+        name={undefined}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-1"
+        value={false}
+      />
+      <div
+        className="emotion-2"
+      >
+        Switch Label
+      </div>
+    </label>
+    <label
+      className="emotion-3"
+    >
+      <input
+        checked={true}
+        className="emotion-0"
+        name={undefined}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-5"
+        value={true}
+      />
+      <div
+        className="emotion-2"
+      >
+        Switch Label
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/TextArea with placeholder 1`] = `
 .emotion-1 {
   margin: 2rem;

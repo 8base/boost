@@ -1,4 +1,5 @@
 // @flow
+import { PALETTE } from '../../../theme';
 import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from '../../../utils';
 
 const name = 'input';
@@ -11,10 +12,6 @@ const theme = createTheme(name, (colors: *): * => ({
     height: '4rem',
     lineHeight: 'normal',
     transition: 'all .15s ease-in-out',
-
-    '&:focus': {
-      borderColor: colors.PRIMARY,
-    },
 
     '&::placeholder': {
       color: colors.LIGHT_GRAY1,
@@ -104,6 +101,12 @@ const getInputStyles = props => ({
   ...getThemeStyle(props, name).input,
   ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
   ...getThemeStyleByCond(props, name, 'inputSquare', props.square),
+
+  backgroundColor: PALETTE[props.disabled ? 'LIGHT_GRAY5' : 'WHITE'],
+
+  '&:focus': {
+    borderColor: PALETTE[props.disabled ? 'LIGHT_GRAY1' : 'LIGHT_BLUE'],
+  },
 
   '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
     '-webkit-appearance': 'none',

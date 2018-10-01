@@ -63,6 +63,7 @@ const COLLECTED_PROPS = [
   'to',
   'type',
   'value',
+  'disabled',
 ];
 
 const HTML_TAGS = [

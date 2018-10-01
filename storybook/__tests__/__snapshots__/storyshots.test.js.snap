@@ -1248,6 +1248,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   >
     <button
       className="emotion-0"
+      disabled={true}
       onClick={[Function]}
       type={undefined}
     >
@@ -1255,6 +1256,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
     </button>
     <button
       className="emotion-0"
+      disabled={true}
       onClick={[Function]}
       type={undefined}
     >
@@ -1262,6 +1264,7 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
     </button>
     <button
       className="emotion-0"
+      disabled={true}
       onClick={[Function]}
       type={undefined}
     >
@@ -2160,6 +2163,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={false}
     >
       <div
         checked={true}
@@ -2279,6 +2283,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={true}
     >
       <div
         checked={true}
@@ -2398,6 +2403,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={false}
     >
       <div
         checked={true}
@@ -2516,6 +2522,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={false}
     >
       <div
         checked={false}
@@ -2634,6 +2641,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={false}
     >
       <div
         checked={true}
@@ -2750,6 +2758,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
   >
     <div
       className="emotion-2"
+      disabled={false}
     >
       <div
         checked={true}
@@ -2901,6 +2910,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
       >
         <div
           className="emotion-2"
+          disabled={false}
         >
           <div
             checked={false}
@@ -3054,6 +3064,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
       >
         <div
           className="emotion-2"
+          disabled={false}
         >
           <div
             checked={true}
@@ -3222,6 +3233,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
       >
         <div
           className="emotion-2"
+          disabled={false}
         >
           <div
             checked={false}
@@ -3359,13 +3371,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -3382,6 +3391,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-2::-webkit-outer-spin-button,
@@ -3456,6 +3469,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                disabled={undefined}
                 name="curple"
                 onBlur={undefined}
                 onChange={[Function]}
@@ -3483,6 +3497,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                disabled={undefined}
                 name="provect"
                 onBlur={undefined}
                 onChange={[Function]}
@@ -3510,6 +3525,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                disabled={undefined}
                 name="inlaying"
                 onBlur={undefined}
                 onChange={[Function]}
@@ -3546,6 +3562,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                disabled={undefined}
                 name="saccharifier"
                 onBlur={undefined}
                 onChange={[Function]}
@@ -3573,6 +3590,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
             >
               <input
                 className="emotion-2"
+                disabled={undefined}
                 name="inertance"
                 onBlur={undefined}
                 onChange={[Function]}
@@ -3679,13 +3697,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -3702,6 +3717,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -3736,6 +3755,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              disabled={undefined}
               name="curple"
               onBlur={undefined}
               onChange={[Function]}
@@ -3763,6 +3783,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              disabled={undefined}
               name="provect"
               onBlur={undefined}
               onChange={[Function]}
@@ -3790,6 +3811,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              disabled={undefined}
               name="inlaying"
               onBlur={undefined}
               onChange={[Function]}
@@ -3817,6 +3839,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              disabled={undefined}
               name="saccharifier"
               onBlur={undefined}
               onChange={[Function]}
@@ -3844,6 +3867,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
           >
             <input
               className="emotion-1"
+              disabled={undefined}
               name="inertance"
               onBlur={undefined}
               onChange={[Function]}
@@ -3886,13 +3910,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: center;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -3911,6 +3932,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -3925,6 +3950,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -3964,13 +3990,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -3987,6 +4010,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4015,6 +4042,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4056,13 +4084,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4081,6 +4106,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4095,6 +4124,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4133,13 +4163,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4156,6 +4183,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4191,6 +4222,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4234,13 +4266,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4259,6 +4288,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4273,6 +4306,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4311,13 +4345,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4334,6 +4365,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4369,6 +4404,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4432,13 +4468,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4457,6 +4490,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4471,6 +4508,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4516,12 +4554,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   transition: all .15s ease-in-out;
   text-align: left;
   padding: 0;
+  background-color: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4540,6 +4575,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4554,6 +4593,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4583,13 +4623,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4606,6 +4643,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4631,6 +4672,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4669,13 +4711,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4694,6 +4733,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4708,6 +4751,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4746,13 +4790,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4771,6 +4812,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   color: #d0d7dd;
 }
 
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
 .emotion-0::-webkit-outer-spin-button,
 .emotion-0::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -4785,6 +4830,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   >
     <input
       className="emotion-0"
+      disabled={undefined}
       name="input"
       onBlur={undefined}
       onChange={[Function]}
@@ -4847,13 +4893,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: center;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4870,6 +4913,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -4892,6 +4939,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
       >
         <input
           className="emotion-0"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -4978,13 +5026,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5001,6 +5046,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5040,6 +5089,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5116,13 +5166,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5139,6 +5186,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5200,6 +5251,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5283,13 +5335,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5306,6 +5355,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5333,6 +5386,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5382,13 +5436,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5405,6 +5456,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5454,6 +5509,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5494,13 +5550,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5517,6 +5570,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5575,6 +5632,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5617,12 +5675,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
   transition: all .15s ease-in-out;
   text-align: left;
   padding: 0;
+  background-color: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5639,6 +5694,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5697,6 +5756,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5768,13 +5828,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5791,6 +5848,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5818,6 +5879,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -5889,13 +5951,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -5912,6 +5971,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -5939,6 +6002,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -6004,13 +6068,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   border-color: #ff6d4a !important;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6027,6 +6088,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -6049,6 +6114,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
       >
         <input
           className="emotion-0"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -6113,13 +6179,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6136,6 +6199,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-0::-webkit-outer-spin-button,
@@ -6158,6 +6225,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
       >
         <input
           className="emotion-0"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -6229,13 +6297,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
-}
-
-.emotion-1:focus {
-  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-input-placeholder {
@@ -6252,6 +6317,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 
 .emotion-1::placeholder {
   color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
 }
 
 .emotion-1::-webkit-outer-spin-button,
@@ -6279,6 +6348,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
       >
         <input
           className="emotion-1"
+          disabled={undefined}
           name="input"
           onBlur={undefined}
           onChange={[Function]}
@@ -6411,6 +6481,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6434,6 +6505,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6457,6 +6529,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6594,6 +6667,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6617,6 +6691,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={true}
         />
       </div>
       <input
@@ -6640,6 +6715,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6777,6 +6853,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6800,6 +6877,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6823,6 +6901,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6960,6 +7039,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -6983,6 +7063,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -7006,6 +7087,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -7100,6 +7182,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with secondary color 1`] = `
     >
       <div
         className="emotion-0"
+        disabled={undefined}
       />
     </div>
     <input
@@ -7193,6 +7276,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with selected value 1`] = `
     >
       <div
         className="emotion-0"
+        disabled={undefined}
       />
     </div>
     <input
@@ -7329,6 +7413,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -7352,6 +7437,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
       >
         <div
           className="emotion-5"
+          disabled={undefined}
         />
       </div>
       <input
@@ -7375,6 +7461,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
       >
         <div
           className="emotion-0"
+          disabled={undefined}
         />
       </div>
       <input
@@ -7542,6 +7629,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
           >
             <div
               className="emotion-0"
+              disabled={undefined}
             />
           </div>
           <input
@@ -7565,6 +7653,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
           >
             <div
               className="emotion-5"
+              disabled={undefined}
             />
           </div>
           <input
@@ -7588,6 +7677,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
           >
             <div
               className="emotion-5"
+              disabled={undefined}
             />
           </div>
           <input
@@ -7757,6 +7847,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
           >
             <div
               className="emotion-0"
+              disabled={undefined}
             />
           </div>
           <input
@@ -7780,6 +7871,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
           >
             <div
               className="emotion-0"
+              disabled={undefined}
             />
           </div>
           <input
@@ -7803,6 +7895,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
           >
             <div
               className="emotion-0"
+              disabled={undefined}
             />
           </div>
           <input
@@ -8337,6 +8430,167 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
+.emotion-9 {
+  margin: 2rem;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-8 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  display: none;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.6rem;
+  width: 5.2rem;
+  border-radius: 2.6rem;
+  background-color: #d0d7dd;
+  position: relative;
+}
+
+.emotion-1:before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  left: 3px;
+  top: 3px;
+  z-index: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.emotion-2 {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #878c93;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.6rem;
+  width: 5.2rem;
+  border-radius: 2.6rem;
+  background-color: #4DA1FF;
+  position: relative;
+}
+
+.emotion-5:before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  left: 29px;
+  top: 3px;
+  z-index: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+<div
+  className="emotion-9"
+>
+  <div
+    className="emotion-8"
+  >
+    <label
+      className="emotion-3"
+    >
+      <input
+        checked={false}
+        className="emotion-0"
+        name={undefined}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-1"
+        value={false}
+      />
+      <div
+        className="emotion-2"
+      >
+        Switch Label
+      </div>
+    </label>
+    <label
+      className="emotion-3"
+    >
+      <input
+        checked={true}
+        className="emotion-0"
+        name={undefined}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="emotion-5"
+        value={true}
+      />
+      <div
+        className="emotion-2"
+      >
+        Switch Label
+      </div>
+    </label>
   </div>
 </div>
 `;
@@ -13184,6 +13438,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Text with disabled modifier 1`] = `
 >
   <span
     className="emotion-0"
+    disabled={true}
   >
     Disabled 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit

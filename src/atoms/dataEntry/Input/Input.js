@@ -10,6 +10,8 @@ type InputCommonProps = {
   placeholder?: string,
   /** html auto-complete representation */
   autoComplete?: boolean,
+  /** disabled */
+  disabled?: boolean,
   /** when true then stretch to the maximal width */
   stretch?: boolean,
   /** when true then don't show error indicator  */
@@ -96,6 +98,7 @@ class Input extends PureComponent<InputProps> {
       value,
       name,
       kind,
+      disabled,
       ...rest } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
@@ -116,6 +119,7 @@ class Input extends PureComponent<InputProps> {
       insideRef,
       name,
       kind,
+      disabled,
     };
 
     return (

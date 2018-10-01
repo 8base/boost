@@ -44,6 +44,22 @@ const StyledTag = createStyledTag(name, (props) => {
     position: 'relative',
   };
 
+  if (props.columnStart) {
+    style.gridColumnStart = props.columnStart;
+  }
+
+  if (props.columnEnd) {
+    style.gridColumnEnd = props.columnEnd;
+  }
+
+  if (props.rowStart) {
+    style.gridRowStart = props.rowStart;
+  }
+
+  if (props.rowEnd) {
+    style.gridRowEnd = props.rowEnd;
+  }
+
   if (props.column) {
     style.gridColumn = props.column;
   }

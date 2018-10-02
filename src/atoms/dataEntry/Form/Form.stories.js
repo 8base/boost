@@ -20,14 +20,18 @@ export default (asStory) => {
         <Form.Plate>
           <Form.Section>
             <Form.SectionTitle>Some section 1</Form.SectionTitle>
-            <FieldMock component={ InputField } name="curple" label="Jobs" />
-            <FieldMock component={ InputField } name="provect" label="Posted" />
-            <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
+            <Form.SectionBody>
+              <FieldMock component={ InputField } name="curple" label="Jobs" />
+              <FieldMock component={ InputField } name="provect" label="Posted" />
+              <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
+            </Form.SectionBody>
           </Form.Section>
           <Form.Section>
             <Form.SectionTitle>Some section 2</Form.SectionTitle>
-            <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
-            <FieldMock component={ InputField } name="inertance" label="Applied" />
+            <Form.SectionBody>
+              <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
+              <FieldMock component={ InputField } name="inertance" label="Applied" />
+            </Form.SectionBody>
           </Form.Section>
         </Form.Plate>
       ));

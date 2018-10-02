@@ -3214,6 +3214,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
+  position: relative;
+  top: -2px;
 }
 
 <div
@@ -3283,34 +3285,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 `;
 
 exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
-.emotion-31 {
+.emotion-33 {
   margin: 2rem;
-}
-
-.emotion-29 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  cursor: inherit;
-}
-
-.emotion-29 > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-5 {
@@ -3337,10 +3313,36 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   width: 100%;
 }
 
-.emotion-30 {
+.emotion-32 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-31 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-1 {
@@ -3403,7 +3405,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   margin: 0;
 }
 
-.emotion-16 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3427,193 +3429,16 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   height: 100%;
 }
 
-.emotion-16 > *:not(:last-child) {
+.emotion-17 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
 .emotion-0 {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
-<div
-  className="emotion-31"
->
-  <form
-    className="emotion-30"
-    onSubmit={undefined}
-  >
-    <div
-      className="emotion-29"
-    >
-      <div
-        className="emotion-16"
-      >
-        <span
-          className="emotion-0"
-        >
-          Some section 1
-        </span>
-        <div
-          className="emotion-5"
-        >
-          <div
-            className="emotion-4"
-          >
-            <div
-              className="emotion-1"
-            >
-              Jobs
-            </div>
-            <div
-              className="emotion-3"
-            >
-              <input
-                className="emotion-2"
-                disabled={undefined}
-                name="curple"
-                onBlur={undefined}
-                onChange={[Function]}
-                onFocus={undefined}
-                placeholder={undefined}
-                type="text"
-                value={undefined}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="emotion-5"
-        >
-          <div
-            className="emotion-4"
-          >
-            <div
-              className="emotion-1"
-            >
-              Posted
-            </div>
-            <div
-              className="emotion-3"
-            >
-              <input
-                className="emotion-2"
-                disabled={undefined}
-                name="provect"
-                onBlur={undefined}
-                onChange={[Function]}
-                onFocus={undefined}
-                placeholder={undefined}
-                type="text"
-                value={undefined}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="emotion-5"
-        >
-          <div
-            className="emotion-4"
-          >
-            <div
-              className="emotion-1"
-            >
-              My Active Jobs
-            </div>
-            <div
-              className="emotion-3"
-            >
-              <input
-                className="emotion-2"
-                disabled={undefined}
-                name="inlaying"
-                onBlur={undefined}
-                onChange={[Function]}
-                onFocus={undefined}
-                placeholder={undefined}
-                type="text"
-                value={undefined}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="emotion-16"
-      >
-        <span
-          className="emotion-0"
-        >
-          Some section 2
-        </span>
-        <div
-          className="emotion-5"
-        >
-          <div
-            className="emotion-4"
-          >
-            <div
-              className="emotion-1"
-            >
-              Active Requests
-            </div>
-            <div
-              className="emotion-3"
-            >
-              <input
-                className="emotion-2"
-                disabled={undefined}
-                name="saccharifier"
-                onBlur={undefined}
-                onChange={[Function]}
-                onFocus={undefined}
-                placeholder={undefined}
-                type="text"
-                value={undefined}
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="emotion-5"
-        >
-          <div
-            className="emotion-4"
-          >
-            <div
-              className="emotion-1"
-            >
-              Applied
-            </div>
-            <div
-              className="emotion-3"
-            >
-              <input
-                className="emotion-2"
-                disabled={undefined}
-                name="inertance"
-                onBlur={undefined}
-                onChange={[Function]}
-                onFocus={undefined}
-                placeholder={undefined}
-                type="text"
-                value={undefined}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
-.emotion-27 {
-  margin: 2rem;
-}
-
-.emotion-25 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3628,15 +3453,203 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   cursor: inherit;
+  width: 100%;
+  height: 100%;
 }
 
-.emotion-25 > *:not(:last-child) {
-  margin-bottom: 1rem;
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+<div
+  className="emotion-33"
+>
+  <form
+    className="emotion-32"
+    onSubmit={undefined}
+  >
+    <div
+      className="emotion-31"
+    >
+      <div
+        className="emotion-17"
+      >
+        <span
+          className="emotion-0"
+        >
+          Some section 1
+        </span>
+        <div
+          className="emotion-16"
+        >
+          <div
+            className="emotion-5"
+          >
+            <div
+              className="emotion-4"
+            >
+              <div
+                className="emotion-1"
+              >
+                Jobs
+              </div>
+              <div
+                className="emotion-3"
+              >
+                <input
+                  className="emotion-2"
+                  disabled={undefined}
+                  name="curple"
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onFocus={undefined}
+                  placeholder={undefined}
+                  type="text"
+                  value={undefined}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="emotion-5"
+          >
+            <div
+              className="emotion-4"
+            >
+              <div
+                className="emotion-1"
+              >
+                Posted
+              </div>
+              <div
+                className="emotion-3"
+              >
+                <input
+                  className="emotion-2"
+                  disabled={undefined}
+                  name="provect"
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onFocus={undefined}
+                  placeholder={undefined}
+                  type="text"
+                  value={undefined}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="emotion-5"
+          >
+            <div
+              className="emotion-4"
+            >
+              <div
+                className="emotion-1"
+              >
+                My Active Jobs
+              </div>
+              <div
+                className="emotion-3"
+              >
+                <input
+                  className="emotion-2"
+                  disabled={undefined}
+                  name="inlaying"
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onFocus={undefined}
+                  placeholder={undefined}
+                  type="text"
+                  value={undefined}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="emotion-17"
+      >
+        <span
+          className="emotion-0"
+        >
+          Some section 2
+        </span>
+        <div
+          className="emotion-16"
+        >
+          <div
+            className="emotion-5"
+          >
+            <div
+              className="emotion-4"
+            >
+              <div
+                className="emotion-1"
+              >
+                Active Requests
+              </div>
+              <div
+                className="emotion-3"
+              >
+                <input
+                  className="emotion-2"
+                  disabled={undefined}
+                  name="saccharifier"
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onFocus={undefined}
+                  placeholder={undefined}
+                  type="text"
+                  value={undefined}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="emotion-5"
+          >
+            <div
+              className="emotion-4"
+            >
+              <div
+                className="emotion-1"
+              >
+                Applied
+              </div>
+              <div
+                className="emotion-3"
+              >
+                <input
+                  className="emotion-2"
+                  disabled={undefined}
+                  name="inertance"
+                  onBlur={undefined}
+                  onChange={[Function]}
+                  onFocus={undefined}
+                  placeholder={undefined}
+                  type="text"
+                  value={undefined}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
+.emotion-27 {
+  margin: 2rem;
 }
 
 .emotion-4 {
@@ -3667,6 +3680,32 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.emotion-25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-25 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .emotion-0 {
@@ -4995,6 +5034,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
+  position: relative;
+  top: -2px;
 }
 
 .emotion-0 {
@@ -5142,6 +5183,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
+  position: relative;
+  top: -2px;
 }
 
 .emotion-3 {
@@ -7782,6 +7825,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   font-size: 1rem;
   color: #ff6d4a;
   line-height: 1;
+  position: relative;
+  top: -2px;
 }
 
 .emotion-1 {

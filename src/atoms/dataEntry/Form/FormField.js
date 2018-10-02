@@ -47,6 +47,8 @@ export const ControlErrorTag = createStyledTag(name, props => ({
   fontSize: '1rem',
   color: props.theme.COLORS.DANGER,
   lineHeight: 1,
+  position: 'relative',
+  top: '-2px',
 }));
 
 const ControlLabelTag = createStyledTag(name, props => ({

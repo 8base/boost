@@ -14,7 +14,7 @@ type IconProps = {
   /** icon color */
   color?: $Keys<typeof PALETTE>,
   /** icon size */
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'stretch',
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
 };
 
 const name = 'icon';

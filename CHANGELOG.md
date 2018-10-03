@@ -1,3 +1,13 @@
+<a name="0.5.30"></a>
+## [0.5.30](https://github.com/8base/boost/compare/v0.5.29...v0.5.30) (2018-10-03)
+
+
+### Bug Fixes
+
+* **atoms:** add stretch prop to the dropdown palte ([e571581](https://github.com/8base/boost/commit/e571581))
+
+
+
 <a name="0.5.29"></a>
 ## [0.5.29](https://github.com/8base/boost/compare/v0.5.28...v0.5.29) (2018-10-03)
 

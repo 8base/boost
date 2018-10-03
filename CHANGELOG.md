@@ -1,3 +1,15 @@
+<a name="0.5.28"></a>
+## [0.5.28](https://github.com/8base/boost/compare/v0.5.27...v0.5.28) (2018-10-03)
+
+
+### Bug Fixes
+
+* **atoms:** add xl size to the Icon ([3a9a1e8](https://github.com/8base/boost/commit/3a9a1e8))
+* **atoms:** remove sizes modifier from the form ([c34e906](https://github.com/8base/boost/commit/c34e906))
+* **Button:** rid of button wraps ([88017c5](https://github.com/8base/boost/commit/88017c5))
+
+
+
 <a name="0.5.27"></a>
 ## [0.5.27](https://github.com/8base/boost/compare/v0.5.26...v0.5.27) (2018-10-01)
 

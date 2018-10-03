@@ -24,13 +24,16 @@ const RadioGroupField = ({
   meta = {},
   ...rest
   }: RadioGroupFieldProps) => {
+  const { error, touched } = meta;
   const { name, value, onChange } = input;
+  const hasError = !!error && !!touched;
 
   return (
     <FormField hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
       <Radio.Group
         { ...rest }
         name={ name }
+        hasError={ hasError }
         onChange={ onChange }
         value={ value }
       >

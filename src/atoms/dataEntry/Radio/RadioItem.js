@@ -16,6 +16,8 @@ type RadioItemClonedProps = {
   onChange?: (string | number, SyntheticInputEvent<HTMLInputElement>) => void,
   /** private cloned props */
   selectedValue?: string | number,
+  /** then true when show error styles */
+  hasError?: boolean,
 }
 
 type RadioItemProps = {
@@ -52,13 +54,14 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
       color,
       disabled,
       equalsFunc,
+      hasError,
     } = this.props;
     const hasLabel = !!label;
     const checked = value !== undefined && equalsFunc && equalsFunc({ selectedValue, value });
 
     return (
       <RadioWrapperTag tagName="label">
-        <RadioCircleTag tagName="div">
+        <RadioCircleTag tagName="div" hasError={ hasError }>
           <RadioInnerCircleTag tagName="div" color={ color } selected={ checked } disabled={ disabled } />
         </RadioCircleTag>
         <RadioTag name={ name } tagName="input" type="radio" value={ value.toString() } onChange={ this.onChange } />

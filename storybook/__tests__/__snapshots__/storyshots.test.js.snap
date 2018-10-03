@@ -7851,29 +7851,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   top: -2px;
 }
 
-.emotion-1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
-  border-radius: 50%;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
-}
-
 .emotion-3 {
   padding-left: 1.2rem;
   font-size: 1.4rem;
@@ -7892,6 +7869,29 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   border-radius: 50%;
   opacity: 0;
   background-color: #4DA1FF;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border: 1px solid #ff6d4a;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 
 <div

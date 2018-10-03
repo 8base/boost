@@ -1,3 +1,13 @@
+<a name="0.5.29"></a>
+## [0.5.29](https://github.com/8base/boost/compare/v0.5.28...v0.5.29) (2018-10-03)
+
+
+### Bug Fixes
+
+* **Radio:** add error indicator for circles ([0eb590b](https://github.com/8base/boost/commit/0eb590b))
+
+
+
 <a name="0.5.28"></a>
 ## [0.5.28](https://github.com/8base/boost/compare/v0.5.27...v0.5.28) (2018-10-03)
 

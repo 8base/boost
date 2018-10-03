@@ -16,6 +16,8 @@ type RadioProps = {
   direction?: 'row' | 'column',
   /** callback to change the radio state */
   onChange?: (string | number, SyntheticInputEvent<HTMLInputElement>) => void,
+  /** then true when show error styles */
+  hasError?: boolean,
 }
 
 class RadioGroup extends PureComponent<RadioProps> {
@@ -37,7 +39,7 @@ class RadioGroup extends PureComponent<RadioProps> {
   }
 
   render() {
-    const { children, value, direction, gap, onChange } = this.props;
+    const { children, value, direction, gap, onChange, hasError } = this.props;
 
     return (
       <FlexLayout direction={ direction } gap={ gap }>
@@ -47,6 +49,7 @@ class RadioGroup extends PureComponent<RadioProps> {
               onChange,
               selectedValue: value,
               name: this.getGroupName(),
+              hasError,
             }))
         }
       </FlexLayout>

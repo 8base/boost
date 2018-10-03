@@ -32,7 +32,7 @@ const RadioCircleTag = createStyledTag(name, props => ({
   height: '2.5rem',
 
   background: 'white',
-  border: `1px solid ${getThemeColors(props).PRIMARY_BORDER_COLOR}`,
+  border: `1px solid ${getThemeColors(props)[props.hasError ? 'DANGER' : 'PRIMARY_BORDER_COLOR']}`,
   borderRadius: '50%',
   transition: 'opacity .3s ease',
 }));

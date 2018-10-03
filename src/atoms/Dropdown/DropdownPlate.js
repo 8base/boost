@@ -6,10 +6,13 @@ import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
 import { Manager } from 'react-popper';
 
 import { DropdownContext } from './DropdownContext';
+import { DropdownPlateTag } from './DropdownPlate.theme';
 
 type DropdownControlledProps = {|
   /** Open state of the dropdown */
   isOpen: boolean,
+  /** When true then  plate */
+  stretch?: boolean,
   /** Callback to close dropdown */
   onCloseDropdown?: () => void,
   /** Callback to open dropdown */
@@ -20,6 +23,8 @@ type DropdownControlledProps = {|
 type DropdownUncontroledProps = {|
   /** Default opened state for the uncontorlled mode */
   defaultOpen?: boolean,
+  /** When true then  plate */
+  stretch?: boolean,
   children: React$Node,
 |}
 
@@ -81,7 +86,7 @@ const DropdownPlate = dropDownEnhancer(
   getIgnoreClickOutsideClass = () => `ignore-react-onclickoutside-${this.instanceIndex}`;
 
   render() {
-      const { children, onCloseDropdown, isOpen } = this.props;
+      const { children, onCloseDropdown, isOpen, ...rest } = this.props;
 
       const contextData: DropdownContextData = {
         isOpen,
@@ -93,11 +98,11 @@ const DropdownPlate = dropDownEnhancer(
 
       return (
         <DropdownContext.Provider value={ contextData }>
-          <div ref={ this.setDropdownRef }>
+          <DropdownPlateTag { ...rest } tag="div" ref={ this.setDropdownRef }>
             <Manager tag={ false }>
               { children }
             </Manager>
-          </div>
+          </DropdownPlateTag>
         </DropdownContext.Provider>
       );
     }

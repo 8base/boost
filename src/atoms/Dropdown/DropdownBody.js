@@ -108,7 +108,7 @@ const DropdownBody = dropdownBodyEnhancer(
 
     return stretch
       ? targetWidth
-      : width && `${width}rem`;
+      : width && `${width}px`;
   }
 
   getBodyChildren = () => {

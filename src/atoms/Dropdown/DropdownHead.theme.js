@@ -16,7 +16,7 @@ const theme = createTheme(name, {
 
 const DropdownHeadTag = createStyledTag(name, {
   cursor: 'pointer',
-  display: 'inline-flex',
+  display: 'flex',
   flexWrap: 'nowrap',
   height: 'auto',
   width: 'auto',
@@ -25,7 +25,7 @@ const DropdownHeadTag = createStyledTag(name, {
 
 
 const DropdownPopperTarget = createStyledTag(name, {
-  display: 'inline-flex',
+  display: 'flex',
   width: '100%',
   height: ' 100%',
 });

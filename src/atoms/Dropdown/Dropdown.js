@@ -5,6 +5,7 @@ import { DropdownHead as Head } from './DropdownHead';
 import { DropdownBody as Body } from './DropdownBody';
 import { theme as dropdownHeadTheme } from './DropdownHead.theme';
 import { theme as dropdownBodyTheme } from './DropdownBody.theme';
+import { theme as dropdownPlateTheme } from './DropdownPlate.theme';
 
 const Dropdown = {
   Head,
@@ -15,6 +16,7 @@ const Dropdown = {
 const theme = {
   ...dropdownHeadTheme,
   ...dropdownBodyTheme,
+  ...dropdownPlateTheme,
 };
 
 export {

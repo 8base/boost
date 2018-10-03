@@ -2,42 +2,22 @@
 
 import React from 'react';
 import { createStyledTag, createTheme } from '../../../utils';
-import type { PropSizes } from '../../../types';
 
 type FormSectionTitleProps = {|
   children?: React$Node,
   text?: string,
-  size?: PropSizes,
 |}
 
 const name = 'formSectionTitle';
 
 const theme = createTheme(name, {
-  modifiers: {
-    size: {
-      xs: {
-        fontSize: '1rem',
-      },
-      sm: {
-        fontSize: '1.2rem',
-      },
-      md: {
-        fontSize: '1.4rem',
-      },
-      lg: {
-        fontSize: '1.6rem',
-      },
-      xl: {
-        fontSize: '1.8rem',
-      },
-    },
-  },
-  defaults: {
-  },
+  modifiers: {},
+  defaults: {},
 });
 
 const FormSectionTitleTag = createStyledTag(name, {
   fontWeight: 600,
+  fontSize: '1.2rem',
 });
 
 const FormSectionTitle = ({ children, text, ...rest }: FormSectionTitleProps) => (

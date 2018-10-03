@@ -3,9 +3,7 @@
 import React from 'react';
 
 import { FlexLayoutTag } from './FlexLayout.theme';
-import type { PropSizes } from '../../types';
-
-type PropLayout = 'start' | 'end' | 'between' | 'around' | 'center'
+import type { PropSizes, PropLayout, PropLayoutStretch } from '../../types';
 
 /**
  * @prop {*} justifyContent css justify-content rule
@@ -21,9 +19,9 @@ type PropLayout = 'start' | 'end' | 'between' | 'around' | 'center'
  */
 export type FlexLayoutCommonProps = {|
   children: React$Node,
-  justifyContent?: PropLayout | 'stretch',
+  justifyContent?: PropLayoutStretch,
   alignContent?: PropLayout,
-  alignItems?: PropLayout | 'stretch',
+  alignItems?: PropLayoutStretch,
   gap?: PropSizes,
   offsetX?: PropSizes,
   offsetY?: PropSizes,

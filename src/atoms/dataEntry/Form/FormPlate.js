@@ -45,7 +45,13 @@ function FormPlate({
       tagName={ component }
       onSubmit={ onSubmit }
     >
-      <FlexLayout { ...rest }>{ children }</FlexLayout>
+      <FlexLayout
+        { ...rest }
+        gap="md"
+        alignItems="stretch"
+      >
+        { children }
+      </FlexLayout>
     </FormStyledTag>
   );
 }

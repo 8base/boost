@@ -1,13 +1,13 @@
 import React from 'react';
 
 const OPTIONS = [{
-  content: 'ovenlike',
+  label: 'ovenlike',
   value: 'ovenlike',
 }, {
-  content: 'serjeant',
+  label: 'serjeant',
   value: 'serjeant',
 }, {
-  content: 'wiseheartedly',
+  label: 'wiseheartedly',
   value: 'wiseheartedly',
 }];
 

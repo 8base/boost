@@ -1,104 +1,48 @@
 // @flow
 
-import React, { Component } from 'react';
-import find from 'lodash/find';
+import React from 'react';
+import ReactSelect from 'react-select';
 
-import { SelectTag, SelectValue, SelectChevron } from './Select.theme';
-import { Dropdown } from '../../Dropdown';
-import { Scrollable } from '../../Scrollable';
-import { Menu } from '../../Menu';
-import { Icon } from '../../typography/Icon';
+import { SelectTag } from './Select.theme';
+import { PALETTE, Z_INDEX } from '../../../theme';
 
 type SelectProps = {|
-  options: Array<{ content: mixed, value: string }>,
+  options: Array<{ label: mixed, value: string }>,
   onChange: (selectedValue: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
-  value?: string,
-  stretch?: boolean,
+  value?: Object,
+  loading?: boolean,
+  hasError?: boolean,
 |};
 
-type SelectState = {|
-  selectedValue: ?string,
-  isOpen: boolean,
-|}
+const customStyles = ({ hasError }) => ({
+  control: (style, { isFocused }) => ({
+    ...style,
+    minHeight: '4rem',
+    backgroundColor: PALETTE.WHITE,
+    borderColor: hasError ? PALETTE.DANGER : (isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1),
+    boxShadow: null,
+    '&:hover': {
+      borderColor: isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1,
+    },
+  }),
+  menuPortal: (style) => ({
+    ...style,
+    zIndex: Z_INDEX.DROPDOWN,
+  }),
+  placeholder: (style) => ({ ...style, color: PALETTE.LIGHT_GRAY1 }),
+  indicatorSeparator: (style) => ({ ...style, backgroundColor: PALETTE.WHITE }),
+});
 
-class Select extends Component<SelectProps, SelectState> {
-  constructor(props: SelectProps) {
-    super(props);
-
-    this.state = {
-      selectedValue: props.value || null,
-      isOpen: false,
-    };
-  }
-
-  setSelectedValue = (selectedValue: string) => {
-    this.setState({ selectedValue });
-  }
-
-  closeSelect = () => {
-    this.setState({ isOpen: false });
-  };
-
-  openSelect = () => {
-    this.setState({ isOpen: true });
-  };
-
-  onSelectOption = (selectedValue: string) => () => {
-    this.setSelectedValue(selectedValue);
-
-    this.props.onChange(selectedValue);
-
-    this.closeSelect();
-  };
-
-  getSelectedOption() {
-    const { selectedValue } = this.state;
-    const { options } = this.props;
-
-    return find(options, { value: selectedValue });
-  }
-
-  render() {
-    const {
-      value,
-      placeholder,
-      options,
-      stretch,
-      ...rest
-    } = this.props;
-
-    const selectedOption = this.getSelectedOption();
-
-    return (
-      <SelectTag { ...rest } tagName="div">
-        <Dropdown.Plate isOpen={ this.state.isOpen } onCloseDropdown={ this.closeSelect } onOpenDropdown={ this.openSelect }>
-          <Dropdown.Head stretch={ stretch }>
-            <SelectValue isPlaceholder={ !selectedOption }>
-              { selectedOption ? selectedOption.content : placeholder }
-              <SelectChevron><Icon name="ChevronDown" /></SelectChevron>
-            </SelectValue>
-          </Dropdown.Head>
-          <Dropdown.Body background="none" padding="none" stretch={ stretch }>
-            <Menu.Plate>
-              <Scrollable>
-                {
-                  React.Children.toArray(
-                    options.map(({ content, value }) => (
-                      <Menu.Item
-                        key={ value }
-                        onClick={ this.onSelectOption(value) }>
-                        { content }
-                      </Menu.Item>
-                    )))
-                }
-              </Scrollable>
-            </Menu.Plate>
-          </Dropdown.Body>
-        </Dropdown.Plate>
-      </SelectTag>
-    );
-  }
-}
+const Select = ({ loading, ...props }: SelectProps) => (
+  <SelectTag
+    { ...props }
+    isClearable={ false }
+    isLoading={ loading }
+    tagName={ ReactSelect }
+    styles={ customStyles(props) }
+    menuPortalTarget={ document.body }
+  />
+);
 
 export { Select };

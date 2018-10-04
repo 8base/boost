@@ -76,6 +76,7 @@
     "react-onclickoutside": "^6.7.1",
     "react-popper": "^0.10.1",
     "react-portal": "^4.1.5",
+    "react-select": "^2.1.0",
     "recompose": "^0.27.0"
   },
   "jest": {

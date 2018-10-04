@@ -38,17 +38,22 @@ function SelectField({
   ...rest
   }: SelectFieldProps) {
   const { name, value, onChange } = input;
+  const { error, touched } = meta;
+  const hasError = !!error && !!touched;
+
+  const selectedOption = options.find((option) => option.value === value);
 
   return (
     <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
       <Select
         { ...rest }
         name={ name }
-        onChange={ onChange }
+        onChange={ (selectedOption) => onChange(selectedOption ? selectedOption.value : null) }
         placeholder={ placeholder }
-        value={ value }
+        value={ selectedOption }
         options={ options }
         stretch={ stretch }
+        hasError={ hasError }
       />
     </FormField>
   );

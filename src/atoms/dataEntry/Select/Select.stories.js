@@ -1,13 +1,13 @@
 import React from 'react';
 
 const OPTIONS = [{
-  content: 'ovenlike',
+  label: 'ovenlike',
   value: 'ovenlike',
 }, {
-  content: 'serjeant',
+  label: 'serjeant',
   value: 'serjeant',
 }, {
-  content: 'wiseheartedly',
+  label: 'wiseheartedly',
   value: 'wiseheartedly',
 }];
 
@@ -18,7 +18,7 @@ export default (asStory) => {
         <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } />
       ))
       .add('filled', () => (
-        <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } value={ OPTIONS[0].value } />
+        <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } value={ OPTIONS[1] } />
       ))
       .add('stretch', () => (
         <Select name="name" onChange={ () => null } placeholder="Select an option" options={ OPTIONS } stretch />

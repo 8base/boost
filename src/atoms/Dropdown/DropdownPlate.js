@@ -98,7 +98,7 @@ const DropdownPlate = dropDownEnhancer(
 
       return (
         <DropdownContext.Provider value={ contextData }>
-          <DropdownPlateTag { ...rest } tag="div" ref={ this.setDropdownRef }>
+          <DropdownPlateTag { ...rest } tag="div" insideRef={ this.setDropdownRef }>
             <Manager tag={ false }>
               { children }
             </Manager>

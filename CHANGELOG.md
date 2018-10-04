@@ -1,3 +1,14 @@
+<a name="0.5.31"></a>
+## [0.5.31](https://github.com/8base/boost/compare/v0.5.30...v0.5.31) (2018-10-04)
+
+
+### Bug Fixes
+
+* **atoms:** fix flex layout gap ([c92c079](https://github.com/8base/boost/commit/c92c079))
+* **atoms:** replace ref to insideRef in the dropdown ([d4ec501](https://github.com/8base/boost/commit/d4ec501))
+
+
+
 <a name="0.5.30"></a>
 ## [0.5.30](https://github.com/8base/boost/compare/v0.5.29...v0.5.30) (2018-10-03)
 

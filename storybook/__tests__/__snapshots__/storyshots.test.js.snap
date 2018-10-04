@@ -11197,6 +11197,10 @@ exports[`Storyshots ATOMS/FlexLayout with grow children 1`] = `
   flex-grow: 1;
 }
 
+.emotion-5 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
 <div
   className="emotion-6"
 >

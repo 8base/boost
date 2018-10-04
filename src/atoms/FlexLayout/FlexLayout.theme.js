@@ -47,17 +47,13 @@ const alignItemsStyles = {
 const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) =>
   direction === 'row'
     ? {
-      '& > *': {
-        '&:not(:last-child)': {
-          marginRight: gapSizes[gapProp],
-        },
+      '&:not(:last-child)': {
+        marginRight: gapSizes[gapProp],
       },
     }
     : {
-      '& > *': {
-        '&:not(:last-child)': {
-          marginBottom: gapSizes[gapProp],
-        },
+      '&:not(:last-child)': {
+        marginBottom: gapSizes[gapProp],
       },
     };
 
@@ -68,9 +64,7 @@ const getStretchStyles = (stretchProp: boolean) =>
 
 const getGrowChildrenStyles = (growChildren: boolean) =>
   growChildren
-    ? {
-      '& > *': { flexGrow: '1' },
-    }
+    ? { flexGrow: '1' }
     : {};
 
 const getGrowStyles = (grow: boolean) =>
@@ -94,10 +88,14 @@ const FlexLayoutTag = createStyledTag(name, props => ({
 
   cursor: props.cursor,
 
-  ...getGapStyle(props.direction, props.gap),
   ...getStretchStyles(props.stretch),
-  ...getGrowChildrenStyles(props.growChildren),
   ...getGrowStyles(props.grow),
+
+  '& > *': {
+    ...getGapStyle(props.direction, props.gap),
+    ...getGrowChildrenStyles(props.growChildren),
+  },
+
 }));
 
 FlexLayoutTag.defaultProps = {

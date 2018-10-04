@@ -1,3 +1,13 @@
+<a name="0.5.32"></a>
+## [0.5.32](https://github.com/8base/boost/compare/v0.5.31...v0.5.32) (2018-10-04)
+
+
+### Features
+
+* **Select:** use react-select v2 ([bb676c9](https://github.com/8base/boost/commit/bb676c9))
+
+
+
 <a name="0.5.31"></a>
 ## [0.5.31](https://github.com/8base/boost/compare/v0.5.30...v0.5.31) (2018-10-04)
 

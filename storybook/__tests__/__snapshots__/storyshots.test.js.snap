@@ -1885,11 +1885,11 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
-.emotion-6 {
+.emotion-8 {
   margin: 2rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1922,7 +1922,7 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   padding: 2rem;
 }
 
-.emotion-3 {
+.emotion-5 {
   border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -1930,32 +1930,36 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   padding: 2rem;
 }
 
-.emotion-5 {
+.emotion-1 {
+  padding: 2rem;
+}
+
+.emotion-1:not(:last-child) {
+  border-bottom: 1px solid #d0d7dd;
+}
+
+.emotion-7 {
   height: 300px;
   max-height: 300px;
 }
 
-.emotion-5 > * {
+.emotion-7 > * {
   max-height: 100%;
 }
 
-.emotion-2 {
+.emotion-4 {
   overflow: auto;
-  padding: 2rem;
-}
-
-.emotion-1 {
-  height: 600px;
+  padding: 0px;
 }
 
 <div
-  className="emotion-6"
+  className="emotion-8"
 >
   <div
-    className="emotion-5"
+    className="emotion-7"
   >
     <div
-      className="emotion-4"
+      className="emotion-6"
     >
       <div
         className="emotion-0"
@@ -1963,16 +1967,50 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
         Header
       </div>
       <div
-        className="emotion-2"
+        className="emotion-4"
       >
         <div
           className="emotion-1"
         >
-          Body
+          Section
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <div
+          className="emotion-1"
+        >
+          Section
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <div
+          className="emotion-1"
+        >
+          Section
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
       <div
-        className="emotion-3"
+        className="emotion-5"
       >
         Footer 
       </div>
@@ -2097,6 +2135,115 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
     </div>
     <div
       className="emotion-1"
+    >
+      Footer 
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
+.emotion-7 {
+  margin: 2rem;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #FFFFFF;
+  color: #000000;
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+  position: relative;
+  padding: 0px;
+  border-radius: .5rem;
+}
+
+.emotion-0 {
+  border-bottom: 1px solid #d0d7dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 2rem;
+}
+
+.emotion-5 {
+  border-top: 1px solid #d0d7dd;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 2rem;
+}
+
+.emotion-4 {
+  padding: 0px;
+}
+
+.emotion-1 {
+  padding: 2rem;
+}
+
+.emotion-1:not(:last-child) {
+  border-bottom: 1px solid #d0d7dd;
+}
+
+<div
+  className="emotion-7"
+>
+  <div
+    className="emotion-6"
+  >
+    <div
+      className="emotion-0"
+    >
+      Header
+    </div>
+    <div
+      className="emotion-4"
+    >
+      <div
+        className="emotion-1"
+      >
+        Section
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <div
+        className="emotion-1"
+      >
+        Section
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <div
+        className="emotion-1"
+      >
+        Section
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <div
+      className="emotion-5"
     >
       Footer 
     </div>

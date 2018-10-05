@@ -1,3 +1,8 @@
+<a name="0.5.33"></a>
+## [0.5.33](https://github.com/8base/boost/compare/v0.5.32...v0.5.33) (2018-10-05)
+
+
+
 <a name="0.5.32"></a>
 ## [0.5.32](https://github.com/8base/boost/compare/v0.5.31...v0.5.32) (2018-10-04)
 

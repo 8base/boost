@@ -1,3 +1,14 @@
+<a name="0.5.34"></a>
+## [0.5.34](https://github.com/8base/boost/compare/v0.5.32...v0.5.34) (2018-10-05)
+
+
+### Features
+
+* **Card:** add ability to use multiple sections ([549e617](https://github.com/8base/boost/commit/549e617))
+* **Menu:** updates menu ([4ab8592](https://github.com/8base/boost/commit/4ab8592))
+
+
+
 <a name="0.5.33"></a>
 ## [0.5.33](https://github.com/8base/boost/compare/v0.5.32...v0.5.33) (2018-10-05)
 

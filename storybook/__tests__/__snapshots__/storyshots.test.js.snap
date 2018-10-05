@@ -10379,9 +10379,8 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
 
 .emotion-6 {
   background-color: #fff;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
-  padding: 1rem 0;
+  box-sizing: border-box;
+  border: .1rem solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10389,14 +10388,14 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  border-radius: 0 0 .5rem .5rem;
 }
 
 .emotion-3 {
-  color: rgba(0,0,0,0.87);
+  color: #939ea7;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10406,13 +10405,16 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  padding: 0 1rem;
   white-space: nowrap;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
 }
 
 .emotion-3:hover {
-  background-color: #4DA1FF;
-  color: #fff;
+  background-color: #f4f5f6;
+  color: #323c47;
 }
 
 <div
@@ -12731,16 +12733,15 @@ exports[`Storyshots ATOMS/Loader with various size 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/Menu with default modifiers 1`] = `
+exports[`Storyshots ATOMS/Menu m size 1`] = `
 .emotion-4 {
   margin: 2rem;
 }
 
 .emotion-3 {
   background-color: #fff;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
-  padding: 1rem 0;
+  box-sizing: border-box;
+  border: .1rem solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12748,14 +12749,18 @@ exports[`Storyshots ATOMS/Menu with default modifiers 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: .8rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  border-radius: .5rem;
+  box-shadow: 0 .4rem .8rem 0 rgba(0,0,0,0.04);
 }
 
 .emotion-0 {
-  color: rgba(0,0,0,0.87);
+  color: #939ea7;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  height: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12765,13 +12770,86 @@ exports[`Storyshots ATOMS/Menu with default modifiers 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  padding: 0 1rem;
   white-space: nowrap;
+  height: 4rem;
+  line-height: 2.3rem;
+  padding-right: 1.9rem;
+  padding-left: 1.9rem;
 }
 
 .emotion-0:hover {
-  background-color: #4DA1FF;
-  color: #fff;
+  background-color: #f4f5f6;
+  color: #323c47;
+}
+
+<div
+  className="emotion-4"
+>
+  <div
+    className="emotion-3"
+  >
+    <div
+      className="emotion-0"
+    >
+      Tramman
+    </div>
+    <div
+      className="emotion-0"
+    >
+      Gripman
+    </div>
+    <div
+      className="emotion-0"
+    >
+      Proalliance
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/Menu s size 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-3 {
+  background-color: #fff;
+  box-sizing: border-box;
+  border: .1rem solid #d0d7dd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.emotion-0 {
+  color: #939ea7;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+.emotion-0:hover {
+  background-color: #f4f5f6;
+  color: #323c47;
 }
 
 <div

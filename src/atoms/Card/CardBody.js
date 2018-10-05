@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+
 import { createStyledTag, createTheme } from '../../utils';
 import { offsetModifier } from './common';
 import type { PropSizes } from '../../types';

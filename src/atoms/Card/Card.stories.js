@@ -9,10 +9,6 @@ const ShortDiv = styled('div')({
   },
 });
 
-const LongDiv = styled('div')({
-  height: '600px',
-});
-
 export default (asStory) => {
   asStory('ATOMS/Card', module, (story, { Card }) => {
     story
@@ -36,6 +32,17 @@ export default (asStory) => {
           <Card.Body>Body<br /><br /><br /><br /></Card.Body>
         </Card.Plate>
       ))
+      .add('without multiple sections', () => (
+        <Card.Plate>
+          <Card.Header>Header</Card.Header>
+          <Card.Body padding="none">
+            <Card.Section>Section<br /><br /><br /><br /></Card.Section>
+            <Card.Section>Section<br /><br /><br /><br /></Card.Section>
+            <Card.Section>Section<br /><br /><br /><br /></Card.Section>
+          </Card.Body>
+          <Card.Footer>Footer </Card.Footer>
+        </Card.Plate>
+      ))
       .add('without header', () => (
         <Card.Plate>
           <Card.Body>Body<br /><br /><br /><br /></Card.Body>
@@ -46,10 +53,10 @@ export default (asStory) => {
         <ShortDiv>
           <Card.Plate>
             <Card.Header>Header</Card.Header>
-            <Card.Body scrollable>
-              <LongDiv>
-                Body
-              </LongDiv>
+            <Card.Body padding="none" scrollable>
+              <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
+              <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
+              <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
             </Card.Body>
             <Card.Footer>Footer </Card.Footer>
           </Card.Plate>

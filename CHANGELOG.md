@@ -1,3 +1,18 @@
+<a name="0.5.36"></a>
+## [0.5.36](https://github.com/8base/boost/compare/v0.5.34...v0.5.36) (2018-10-08)
+
+
+### Bug Fixes
+
+* **Card:** add missed prop in the type ([151626b](https://github.com/8base/boost/commit/151626b))
+
+
+### Features
+
+* **Icon:** add planet icon ([e42f96f](https://github.com/8base/boost/commit/e42f96f))
+
+
+
 <a name="0.5.34"></a>
 ## [0.5.34](https://github.com/8base/boost/compare/v0.5.32...v0.5.34) (2018-10-05)
 

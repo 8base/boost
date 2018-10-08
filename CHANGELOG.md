@@ -1,3 +1,13 @@
+<a name="0.5.35"></a>
+## [0.5.35](https://github.com/8base/boost/compare/v0.5.34...v0.5.35) (2018-10-08)
+
+
+### Features
+
+* **Icon:** add planet icon ([e42f96f](https://github.com/8base/boost/commit/e42f96f))
+
+
+
 <a name="0.5.34"></a>
 ## [0.5.34](https://github.com/8base/boost/compare/v0.5.32...v0.5.34) (2018-10-05)
 

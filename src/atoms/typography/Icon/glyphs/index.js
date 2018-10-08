@@ -20,6 +20,7 @@ import TreeView from './TreeView.svg';
 import EditPencil from './EditPencil.svg';
 import Environment from './Environment.svg';
 import Delete from './Delete.svg';
+import Planet from './Planet.svg';
 
 export {
   Check,
@@ -41,5 +42,6 @@ export {
   EditPencil,
   Environment,
   Delete,
+  Planet,
 };
 

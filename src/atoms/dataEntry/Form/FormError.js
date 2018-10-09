@@ -38,7 +38,7 @@ function FormError({ error, children }: FormErrorProps) {
     ? (
       <FormErrorPlateTag tagName="div" >
         <Row gap="md">
-          <Icon name="Alert" color="DANGER" size="lg" />
+          <Icon name="Alert" color="DANGER" size="xl" />
           <Text color="GRAY1" lineHeight="lg">{ errorText }</Text>
         </Row>
       </FormErrorPlateTag>

@@ -3640,8 +3640,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #ff6d4a;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 .emotion-1 {

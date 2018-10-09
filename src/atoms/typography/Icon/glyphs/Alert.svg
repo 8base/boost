@@ -1,0 +1,16 @@
+<svg viewBox="0 0 35 31" focusable="false" role="presentation">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-711.000000, -212.000000)">
+      <g transform="translate(610.000000, 151.000000)">
+        <g transform="translate(85.000000, 45.000000)">
+          <g transform="translate(16.000000, 16.000000)">
+            <path d="M2.14746568,30.005 C0.234465678,30.005 -0.548534322,28.686 0.408465678,27.074 L15.7614657,1.209 C16.7184657,-0.403 18.2844657,-0.403 19.2414657,1.209 L34.5954657,27.074 C35.5524657,28.686 34.7694657,30.005 32.8554657,30.005 L2.14746568,30.005 L2.14746568,30.005 Z" id="Shape" fill="currentColor"></path>
+            <text id="!" fill="#FFF" font-family="Poppins-Bold, Poppins" font-size="18" font-weight="bold">
+                <tspan x="14" y="25">!</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,21 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/8base/boost/compare/v0.5.36...v0.6.0) (2018-10-09)
+
+
+### Bug Fixes
+
+* **atoms:** fix for merror icon size ([d165710](https://github.com/8base/boost/commit/d165710))
+* **atoms:** move gap modifier to the form default props ([e76722e](https://github.com/8base/boost/commit/e76722e))
+* **atoms:** prevent showing form error when error not defined ([f342e12](https://github.com/8base/boost/commit/f342e12))
+
+
+### Features
+
+* **atoms:** add alert icon ([0299e52](https://github.com/8base/boost/commit/0299e52))
+* **atoms:** add FormError component ([ac40079](https://github.com/8base/boost/commit/ac40079))
+
+
+
 <a name="0.5.36"></a>
 ## [0.5.36](https://github.com/8base/boost/compare/v0.5.34...v0.5.36) (2018-10-08)
 

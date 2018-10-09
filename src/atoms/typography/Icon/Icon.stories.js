@@ -5,6 +5,7 @@ export default (asStory) => {
     story
       .add('all icons', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Icon name="Alert" />
           <Icon name="Check" />
           <Icon name="ChevronDown" />
           <Icon name="CloudDatabase" />
@@ -23,6 +24,7 @@ export default (asStory) => {
       ))
       .add('with custom color', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Icon name="Alert" color="DANGER" />
           <Icon name="CloudDatabase" color="LIGHT_BLUE" />
           <Icon name="FirewallOn" color="BLUE" />
           <Icon name="Search" color="GREEN" />

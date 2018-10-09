@@ -1,3 +1,13 @@
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/8base/boost/compare/v0.6.0...v0.6.1) (2018-10-09)
+
+
+### Bug Fixes
+
+* **atoms:** add rest params to the FormError ([4be144a](https://github.com/8base/boost/commit/4be144a))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/8base/boost/compare/v0.5.36...v0.6.0) (2018-10-09)
 

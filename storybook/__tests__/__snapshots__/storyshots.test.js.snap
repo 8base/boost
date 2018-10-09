@@ -3453,6 +3453,409 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
+.emotion-32 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.emotion-8 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.emotion-31 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-30 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-4 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-5 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+}
+
+.emotion-5::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-5::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-5:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-5::placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-5:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-5::-webkit-outer-spin-button,
+.emotion-5::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-29 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-3 {
+  border: 1px solid #ff6d4a;
+  border-radius: .5rem;
+  padding: 1.6rem;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #ff6d4a;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.emotion-1 {
+  line-height: 1.6;
+  margin: 0;
+  color: #878c93;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+<div
+  className="emotion-32"
+>
+  <form
+    className="emotion-31"
+    onSubmit={undefined}
+  >
+    <div
+      className="emotion-30"
+    >
+      <div
+        className="emotion-3"
+      >
+        <div
+          className="emotion-2"
+        >
+          <div
+            className="emotion-0"
+          >
+            <svg
+              height="100%"
+              viewBox="0 0 35 31"
+              width="100%"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M2.147 30.005c-1.913 0-2.696-1.319-1.739-2.931L15.761 1.209c.957-1.612 2.523-1.612 3.48 0l15.354 25.865c.957 1.612.174 2.931-1.74 2.931H2.147z"
+                  fill="currentColor"
+                />
+                <text
+                  fill="#FFF"
+                  fontFamily="Poppins-Bold, Poppins"
+                  fontSize="18"
+                  fontWeight="bold"
+                >
+                  <tspan
+                    x="14"
+                    y="25"
+                  >
+                    !
+                  </tspan>
+                </text>
+              </g>
+            </svg>
+          </div>
+          <span
+            className="emotion-1"
+          >
+            Some error
+          </span>
+        </div>
+      </div>
+      <div
+        className="emotion-29"
+      >
+        <div
+          className="emotion-8"
+        >
+          <div
+            className="emotion-7"
+          >
+            <div
+              className="emotion-4"
+            >
+              Jobs
+            </div>
+            <div
+              className="emotion-6"
+            >
+              <input
+                className="emotion-5"
+                disabled={undefined}
+                name="curple"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-8"
+        >
+          <div
+            className="emotion-7"
+          >
+            <div
+              className="emotion-4"
+            >
+              Posted
+            </div>
+            <div
+              className="emotion-6"
+            >
+              <input
+                className="emotion-5"
+                disabled={undefined}
+                name="provect"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-8"
+        >
+          <div
+            className="emotion-7"
+          >
+            <div
+              className="emotion-4"
+            >
+              My Active Jobs
+            </div>
+            <div
+              className="emotion-6"
+            >
+              <input
+                className="emotion-5"
+                disabled={undefined}
+                name="inlaying"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-8"
+        >
+          <div
+            className="emotion-7"
+          >
+            <div
+              className="emotion-4"
+            >
+              Active Requests
+            </div>
+            <div
+              className="emotion-6"
+            >
+              <input
+                className="emotion-5"
+                disabled={undefined}
+                name="saccharifier"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-8"
+        >
+          <div
+            className="emotion-7"
+          >
+            <div
+              className="emotion-4"
+            >
+              Applied
+            </div>
+            <div
+              className="emotion-6"
+            >
+              <input
+                className="emotion-5"
+                disabled={undefined}
+                name="inertance"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 .emotion-33 {
   margin: 2rem;
@@ -13507,7 +13910,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 `;
 
 exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
-.emotion-14 {
+.emotion-15 {
   margin: 2rem;
 }
 
@@ -13521,7 +13924,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
 }
 
 <div
-  className="emotion-14"
+  className="emotion-15"
 >
   <div
     style={
@@ -13531,6 +13934,38 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
       }
     }
   >
+    <div
+      className="emotion-0"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 35 31"
+        width="100%"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M2.147 30.005c-1.913 0-2.696-1.319-1.739-2.931L15.761 1.209c.957-1.612 2.523-1.612 3.48 0l15.354 25.865c.957 1.612.174 2.931-1.74 2.931H2.147z"
+            fill="currentColor"
+          />
+          <text
+            fill="#FFF"
+            fontFamily="Poppins-Bold, Poppins"
+            fontSize="18"
+            fontWeight="bold"
+          >
+            <tspan
+              x="14"
+              y="25"
+            >
+              !
+            </tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
     <div
       className="emotion-0"
     >
@@ -13786,7 +14221,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon all icons 1`] = `
 `;
 
 exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
-.emotion-4 {
+.emotion-5 {
   margin: 2rem;
 }
 
@@ -13795,7 +14230,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #4DA1FF;
+  color: #ff6d4a;
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -13805,7 +14240,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #1968cb;
+  color: #4DA1FF;
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -13815,12 +14250,22 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #00bb6e;
+  color: #1968cb;
   width: 1.8rem;
   height: 1.8rem;
 }
 
 .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #00bb6e;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -13831,7 +14276,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
 }
 
 <div
-  className="emotion-4"
+  className="emotion-5"
 >
   <div
     style={
@@ -13846,6 +14291,38 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
     >
       <svg
         height="100%"
+        viewBox="0 0 35 31"
+        width="100%"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M2.147 30.005c-1.913 0-2.696-1.319-1.739-2.931L15.761 1.209c.957-1.612 2.523-1.612 3.48 0l15.354 25.865c.957 1.612.174 2.931-1.74 2.931H2.147z"
+            fill="currentColor"
+          />
+          <text
+            fill="#FFF"
+            fontFamily="Poppins-Bold, Poppins"
+            fontSize="18"
+            fontWeight="bold"
+          >
+            <tspan
+              x="14"
+              y="25"
+            >
+              !
+            </tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="emotion-1"
+    >
+      <svg
+        height="100%"
         viewBox="0 0 24 24"
         width="100%"
       >
@@ -13856,7 +14333,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
       </svg>
     </div>
     <div
-      className="emotion-1"
+      className="emotion-2"
     >
       <svg
         height="100%"
@@ -13874,7 +14351,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
       </svg>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-3"
     >
       <svg
         height="100%"
@@ -13888,7 +14365,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Icon with custom color 1`] = `
       </svg>
     </div>
     <div
-      className="emotion-3"
+      className="emotion-4"
     >
       <svg
         height="100%"

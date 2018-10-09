@@ -3856,7 +3856,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is undefined 1`] = `
+exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
 .emotion-28 {
   margin: 2rem;
 }

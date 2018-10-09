@@ -31,12 +31,12 @@ const FormErrorPlateTag = createStyledTag(name, props => ({
   ...getThemeStyle(props, name).errorPlate,
 }));
 
-function FormError({ error, children }: FormErrorProps) {
+function FormError({ error, children, ...rest }: FormErrorProps) {
   const errorText = error || children;
 
   return errorText
     ? (
-      <FormErrorPlateTag tagName="div" >
+      <FormErrorPlateTag tagName="div" { ...rest } >
         <Row gap="md">
           <Icon name="Alert" color="DANGER" size="xl" />
           <Text color="GRAY1" lineHeight="lg">{ errorText }</Text>

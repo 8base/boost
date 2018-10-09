@@ -46,6 +46,18 @@ export default (asStory) => {
             <FieldMock component={ InputField } name="inertance" label="Applied" />
           </Form.Section>
         </Form.Plate>
+      ))
+      .add('with form error is null', () => (
+        <Form.Plate>
+          <Form.Error error={ null } />
+          <Form.Section>
+            <FieldMock component={ InputField } name="curple" label="Jobs" />
+            <FieldMock component={ InputField } name="provect" label="Posted" />
+            <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
+            <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
+            <FieldMock component={ InputField } name="inertance" label="Applied" />
+          </Form.Section>
+        </Form.Plate>
       ));
   });
 };

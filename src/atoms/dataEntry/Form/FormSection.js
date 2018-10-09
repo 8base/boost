@@ -12,12 +12,15 @@ const FormSection = ({ children, ...rest }: FormSectionProps) => (
   <FlexLayout
     { ...rest }
     stretch
-    gap="sm"
     direction="column"
   >
     { children }
   </FlexLayout>
 );
+
+FormSection.defaultProps = {
+  gap: 'sm',
+};
 
 export { FormSection };
 

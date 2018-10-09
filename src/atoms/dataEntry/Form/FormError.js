@@ -32,14 +32,18 @@ const FormErrorPlateTag = createStyledTag(name, props => ({
 }));
 
 function FormError({ error, children }: FormErrorProps) {
-  return (
-    <FormErrorPlateTag tagName="div" >
-      <Row gap="md">
-        <Icon name="Alert" color="DANGER" size="lg" />
-        <Text color="GRAY1" lineHeight="lg">{ error || children }</Text>
-      </Row>
-    </FormErrorPlateTag>
-  );
+  const errorText = error || children;
+
+  return errorText
+    ? (
+      <FormErrorPlateTag tagName="div" >
+        <Row gap="md">
+          <Icon name="Alert" color="DANGER" size="xl" />
+          <Text color="GRAY1" lineHeight="lg">{ errorText }</Text>
+        </Row>
+      </FormErrorPlateTag>
+    )
+    : null;
 }
 
 FormError.defaultProps = {

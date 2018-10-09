@@ -3640,8 +3640,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #ff6d4a;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 .emotion-1 {
@@ -3838,6 +3838,314 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
             >
               <input
                 className="emotion-5"
+                disabled={undefined}
+                name="inertance"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
+.emotion-28 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.emotion-27 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-26 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-1 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1::placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-1:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-1::-webkit-outer-spin-button,
+.emotion-1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-25 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+<div
+  className="emotion-28"
+>
+  <form
+    className="emotion-27"
+    onSubmit={undefined}
+  >
+    <div
+      className="emotion-26"
+    >
+      <div
+        className="emotion-25"
+      >
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-3"
+          >
+            <div
+              className="emotion-0"
+            >
+              Jobs
+            </div>
+            <div
+              className="emotion-2"
+            >
+              <input
+                className="emotion-1"
+                disabled={undefined}
+                name="curple"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-3"
+          >
+            <div
+              className="emotion-0"
+            >
+              Posted
+            </div>
+            <div
+              className="emotion-2"
+            >
+              <input
+                className="emotion-1"
+                disabled={undefined}
+                name="provect"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-3"
+          >
+            <div
+              className="emotion-0"
+            >
+              My Active Jobs
+            </div>
+            <div
+              className="emotion-2"
+            >
+              <input
+                className="emotion-1"
+                disabled={undefined}
+                name="inlaying"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-3"
+          >
+            <div
+              className="emotion-0"
+            >
+              Active Requests
+            </div>
+            <div
+              className="emotion-2"
+            >
+              <input
+                className="emotion-1"
+                disabled={undefined}
+                name="saccharifier"
+                onBlur={undefined}
+                onChange={[Function]}
+                onFocus={undefined}
+                placeholder={undefined}
+                type="text"
+                value={undefined}
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-3"
+          >
+            <div
+              className="emotion-0"
+            >
+              Applied
+            </div>
+            <div
+              className="emotion-2"
+            >
+              <input
+                className="emotion-1"
                 disabled={undefined}
                 name="inertance"
                 onBlur={undefined}

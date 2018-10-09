@@ -47,8 +47,6 @@ function FormPlate({
     >
       <FlexLayout
         { ...rest }
-        gap="md"
-        alignItems="stretch"
       >
         { children }
       </FlexLayout>
@@ -60,6 +58,9 @@ FormPlate.defaultProps = {
   ...theme[name].defaults,
   component: 'form',
   direction: 'column',
+  gap: 'md',
+  alignItems: 'stretch',
+
 };
 
 export { FormPlate, theme };

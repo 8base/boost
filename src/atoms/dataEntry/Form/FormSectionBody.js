@@ -15,7 +15,6 @@ const FormSectionBody = ({ children, ...rest }: FormSectionBodyProps) => {
     <FlexLayout
       { ...rest }
       stretch
-      gap="md"
       direction="column"
     >
       { children }
@@ -25,6 +24,7 @@ const FormSectionBody = ({ children, ...rest }: FormSectionBodyProps) => {
 
 FormSectionBody.defaultProps = {
   alignItems: 'stretch',
+  gap: 'md',
 };
 
 export { FormSectionBody };

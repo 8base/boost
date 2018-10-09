@@ -16,7 +16,6 @@ import { theme as inputFieldTheme } from './dataEntry/InputField';
 import { theme as inputTheme } from './dataEntry/Input';
 import { theme as labelTheme } from './typography/Label';
 import { theme as linkTheme } from './typography/Link';
-import { theme as menuTheme } from './Menu';
 import { theme as modalTheme } from './Modal';
 import { theme as navigationTheme } from './Navigation';
 import { theme as paperTheme } from './Paper';
@@ -50,7 +49,6 @@ export const theme = {
   ...inputTheme,
   ...labelTheme,
   ...linkTheme,
-  ...menuTheme,
   ...modalTheme,
   ...navigationTheme,
   ...paperTheme,

@@ -1,3 +1,21 @@
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/8base/boost/compare/v0.7.0...v0.7.1) (2018-10-10)
+
+
+### Bug Fixes
+
+* **Button:** fix rounded styles ([ea05d8b](https://github.com/8base/boost/commit/ea05d8b))
+* **Form:** handle final form errors ([b5c0f9a](https://github.com/8base/boost/commit/b5c0f9a))
+* **Tag:** add missing readonly prop ([3bdaddd](https://github.com/8base/boost/commit/3bdaddd))
+
+
+### Features
+
+* **Icon:** add api token icon ([c980a77](https://github.com/8base/boost/commit/c980a77))
+* **Table:** add table action ([1b6c09a](https://github.com/8base/boost/commit/1b6c09a))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/8base/boost/compare/v0.6.1...v0.7.0) (2018-10-10)
 

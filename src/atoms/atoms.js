@@ -17,7 +17,6 @@ export { Input } from './dataEntry/Input';
 export { InputField } from './dataEntry/InputField';
 export { Label } from './typography/Label';
 export { Link } from './typography/Link';
-export { Menu } from './Menu';
 export { Modal } from './Modal';
 export { Navigation } from './Navigation';
 export { Paper } from './Paper';

@@ -215,7 +215,7 @@ const TABLE_DATA = [{
 }];
 
 export default (asStory) => {
-  asStory('ATOMS/Table', module, (story, { Table, Link, Dropdown, Button, Icon, Menu, Loader }) => {
+  asStory('ATOMS/Table', module, (story, { Table, Link, Dropdown, Icon, Menu, Loader }) => {
     story
       .add('table with scroll', () => (
         <div style={{ display: 'flex', height: '600px' }}>
@@ -265,10 +265,8 @@ export default (asStory) => {
                   )),
                 )
               }
+              <Table.Action onClick={ () => alert('Create') }>Create Client</Table.Action>
             </Table.Body>
-            <Table.Footer justifyContent="center">
-              <Button onClick={ () => alert('Create') }>Create Client</Button>
-            </Table.Footer>
           </Table.Plate>
         </div>
       ))
@@ -286,10 +284,8 @@ export default (asStory) => {
 
             <Table.Body>
               <Loader stretch />
+              <Table.Action onClick={ () => alert('Create') }>Create Client</Table.Action>
             </Table.Body>
-            <Table.Footer justifyContent="center">
-              <Button onClick={ () => alert('Create') }>Create Client</Button>
-            </Table.Footer>
           </Table.Plate>
         </div>
       ));

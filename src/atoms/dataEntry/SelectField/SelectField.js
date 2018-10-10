@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { createTheme } from '../../../utils';
+import * as formUtils from '../../../utils/forms';
 import { Select } from '../Select';
 import { FormField } from '../Form/FormField';
 
@@ -38,8 +39,8 @@ function SelectField({
   ...rest
   }: SelectFieldProps) {
   const { name, value, onChange } = input;
-  const { error, touched } = meta;
-  const hasError = !!error && !!touched;
+
+  const hasError = formUtils.hasError(meta);
 
   const selectedOption = options.find((option) => option.value === value);
 

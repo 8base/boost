@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
+import * as formUtils from '../../../utils/forms';
 import type { InputType, MetaType } from '../formTypes';
 
 type FormFieldProps = {
@@ -67,8 +68,9 @@ const FormField = ({
   hideErrorLabel,
   ...rest
   }: FormFieldProps) => {
-  const { error, touched } = meta;
-  const hasError = !!error && !!touched;
+  const hasError = formUtils.hasError(meta);
+  const error = formUtils.getError(meta);
+
   const hasLabel = !!label;
 
   return (

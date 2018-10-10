@@ -1,3 +1,13 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/8base/boost/compare/v0.6.1...v0.7.0) (2018-10-10)
+
+
+### Bug Fixes
+
+* **Menu:** fixes menu's layout ([607856b](https://github.com/8base/boost/commit/607856b))
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/8base/boost/compare/v0.6.0...v0.6.1) (2018-10-09)
 

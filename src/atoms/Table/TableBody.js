@@ -20,6 +20,8 @@ const theme = createTheme(name, {
 const TableBodyTag = createStyledTag(name, (props: *) => ({
   display: 'grid',
   overflowY: 'auto',
+  position: 'relative',
+  gridAutoRows: 'min-content',
   borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
 }));
 

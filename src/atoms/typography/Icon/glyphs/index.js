@@ -2,6 +2,7 @@
 import React from 'react';
 
 import Alert from './Alert.svg';
+import APIToken from './APIToken.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
 import CloudDatabase from './Cloud-Database.svg';
@@ -25,6 +26,7 @@ import Planet from './Planet.svg';
 
 export {
   Alert,
+  APIToken,
   Check,
   ChevronDown,
   CloudDatabase,

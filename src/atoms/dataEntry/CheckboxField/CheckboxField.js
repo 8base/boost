@@ -3,6 +3,7 @@
 import React from 'react';
 
 import type { InputType, MetaType } from '../formTypes';
+import * as formUtils from '../../../utils/forms';
 import { Checkbox } from '../Checkbox';
 import { FormField } from '../Form/FormField';
 
@@ -22,9 +23,9 @@ const CheckboxField = ({
   meta = {},
   ...rest
   }: CheckboxFieldProps) => {
-  const { error, touched } = meta;
-  const { name, value, onChange, onBlur, onFocus } = input;
-  const hasError = !!error && !!touched;
+  const { name, value, onChange, onFocus, onBlur } = input;
+
+  const hasError = formUtils.hasError(meta);
 
   return (
     <FormField input={ input } meta={ meta }>

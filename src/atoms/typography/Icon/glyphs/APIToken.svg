@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 20 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>207722CE-E25F-4863-A0A8-B3BF5A4B1EB7</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="API-Tokens-Screen" transform="translate(-20.000000, -411.000000)" stroke="#FFFFFF">
+            <g id="API-Token-Icon" transform="translate(15.000000, 410.000000)">
+                <g transform="translate(16.617009, 16.617009) rotate(45.000000) translate(-16.617009, -16.617009) translate(4.617009, 5.117009)">
+                    <path d="M1,5 L12,5 C12.552,5 13,5.448 13,6 L13,8.5 C13,10.074 12.259,11.556 11,12.5 L11,12.5 C9.741,13.444 9,14.926 9,16.5 L9,18 C9,18.552 8.552,19 8,19 L5,19 C4.448,19 4,18.552 4,18 L4,16.5 C4,14.926 3.259,13.444 2,12.5 L2,12.5 C0.741,11.556 0,10.074 0,8.5 L0,6 C0,5.448 0.448,5 1,5 L1,5 Z" id="Stroke-412" stroke-width="1.5" fill-opacity="0.1" fill="#FFFFFF"></path>
+                    <path d="M3,5 L3,0" id="Stroke-414" stroke-width="1.5"></path>
+                    <path d="M10,5 L10,0" id="Stroke-416" stroke-width="1.5"></path>
+                    <path d="M7,19 C7,20.25 8.083,23 12,23 C15.917,23 16.208,16 20.5,16 C23.25,16 23.5,17 23.5,17" id="Stroke-418" stroke-width="1.5"></path>
+                    <path d="M8,10.5 C8,11.328 7.328,12 6.5,12 C5.672,12 5,11.328 5,10.5 C5,9.672 5.672,9 6.5,9 C7.328,9 8,9.672 8,10.5 L8,10.5 Z" id="Stroke-420" stroke-width="1.5" fill-opacity="0.1" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { createTheme } from '../../../utils';
+import * as formUtils from '../../../utils/forms';
 import { Input } from '../Input';
 import { FormField } from '../Form/FormField';
 
@@ -51,9 +52,9 @@ const InputField = ({
   stretch,
   ...rest
   }: InputFieldProps) => {
-  const { error, touched } = meta;
   const { name, value, onChange, onFocus, onBlur } = input;
-  const hasError = !!error && !!touched;
+
+  const hasError = formUtils.hasError(meta);
 
   return (
     <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>

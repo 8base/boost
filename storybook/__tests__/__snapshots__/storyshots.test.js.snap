@@ -15253,7 +15253,7 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   margin: 2rem;
 }
 
-.emotion-10 {
+.emotion-9 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -15290,11 +15290,11 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   padding: 0 4rem;
 }
 
-.emotion-10:hover {
+.emotion-9:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-10 > *:not(:last-child) {
+.emotion-9 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -15358,28 +15358,29 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   font-weight: 700;
 }
 
-.emotion-9 {
+.emotion-11 {
   display: grid;
   display: grid;
   overflow-y: auto;
+  position: relative;
+  grid-auto-rows: min-content;
   border-bottom: 1px solid #d0d7dd;
 }
 
-.emotion-11 {
+.emotion-10 {
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: grid;
-  padding: 2rem;
+  bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 <div
@@ -15430,7 +15431,7 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
         />
       </div>
       <div
-        className="emotion-9"
+        className="emotion-11"
       >
         <div
           className="emotion-8"
@@ -15504,17 +15505,17 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
             </g>
           </svg>
         </div>
-      </div>
-      <div
-        className="emotion-11"
-      >
-        <button
+        <div
           className="emotion-10"
-          onClick={[Function]}
-          type={undefined}
         >
-          Create Client
-        </button>
+          <button
+            className="emotion-9"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Create Client
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -15542,7 +15543,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   text-decoration: underline;
 }
 
-.emotion-368 {
+.emotion-367 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -15579,11 +15580,11 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   padding: 0 4rem;
 }
 
-.emotion-368:hover {
+.emotion-367:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-368 > *:not(:last-child) {
+.emotion-367 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -15655,10 +15656,12 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   font-weight: 700;
 }
 
-.emotion-367 {
+.emotion-369 {
   display: grid;
   display: grid;
   overflow-y: auto;
+  position: relative;
+  grid-auto-rows: min-content;
   border-bottom: 1px solid #d0d7dd;
 }
 
@@ -15687,21 +15690,20 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   word-break: break-all;
 }
 
-.emotion-369 {
+.emotion-368 {
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: grid;
-  padding: 2rem;
+  bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 <div
@@ -15752,7 +15754,7 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
         />
       </div>
       <div
-        className="emotion-367"
+        className="emotion-369"
       >
         <div
           className="emotion-18"
@@ -17704,17 +17706,17 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="emotion-369"
-      >
-        <button
+        <div
           className="emotion-368"
-          onClick={[Function]}
-          type={undefined}
         >
-          Create Client
-        </button>
+          <button
+            className="emotion-367"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Create Client
+          </button>
+        </div>
       </div>
     </div>
   </div>

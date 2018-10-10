@@ -3,6 +3,7 @@
 import React from 'react';
 
 import type { InputType, MetaType } from '../formTypes';
+import * as formUtils from '../../../utils/forms';
 import { Radio } from '../Radio';
 import { FormField } from '../Form/FormField';
 
@@ -24,9 +25,9 @@ const RadioGroupField = ({
   meta = {},
   ...rest
   }: RadioGroupFieldProps) => {
-  const { error, touched } = meta;
   const { name, value, onChange } = input;
-  const hasError = !!error && !!touched;
+
+  const hasError = formUtils.hasError(meta);
 
   return (
     <FormField hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>

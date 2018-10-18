@@ -1,3 +1,13 @@
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/8base/boost/compare/v0.7.2...v0.7.3) (2018-10-18)
+
+
+### Bug Fixes
+
+* **atoms:** replace gear icon ([61d2a6c](https://github.com/8base/boost/commit/61d2a6c))
+
+
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/8base/boost/compare/v0.7.1...v0.7.2) (2018-10-18)
 

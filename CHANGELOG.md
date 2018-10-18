@@ -1,3 +1,13 @@
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/8base/boost/compare/v0.7.1...v0.7.2) (2018-10-18)
+
+
+### Features
+
+* **atoms:** add home and help icons ([d38e423](https://github.com/8base/boost/commit/d38e423))
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/8base/boost/compare/v0.7.0...v0.7.1) (2018-10-10)
 

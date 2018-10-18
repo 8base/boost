@@ -23,6 +23,9 @@ import EditPencil from './EditPencil.svg';
 import Environment from './Environment.svg';
 import Delete from './Delete.svg';
 import Planet from './Planet.svg';
+import Customers from './Customers.svg';
+import House from './House.svg';
+import Contract from './Contract.svg';
 
 export {
   Alert,
@@ -46,6 +49,9 @@ export {
   EditPencil,
   Environment,
   Delete,
+  Customers,
+  House,
+  Contract,
   Planet,
 };
 

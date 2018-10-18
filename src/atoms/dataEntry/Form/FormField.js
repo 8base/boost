@@ -33,7 +33,7 @@ const FormFieldDirectionTag = createStyledTag(name, props => ({
   display: 'inline-flex',
   flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
   alignItems: props.direction === 'row' ? 'center' : 'flex-start',
-  width: props.stretch ? '100%' : 'auto',
+  width: '100%',
 }));
 
 const ControlErrorWrapperTag = createStyledTag(name, {

@@ -2,6 +2,7 @@
 import React from 'react';
 
 import Alert from './Alert.svg';
+import PaperClip from './PaperClip.svg';
 import APIToken from './APIToken.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
@@ -28,6 +29,7 @@ import TreeView from './TreeView.svg';
 
 export {
   Alert,
+  PaperClip,
   APIToken,
   Check,
   ChevronDown,

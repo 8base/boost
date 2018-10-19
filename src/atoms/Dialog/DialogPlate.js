@@ -19,13 +19,19 @@ const name = 'dialogPlate';
 const theme = createTheme(name, {
   modifiers: {
     size: {
+      xs: {
+        width: '300px',
+      },
       sm: {
         width: '400px',
       },
       md: {
-        width: '600px',
+        width: '500px',
       },
       lg: {
+        width: '600px',
+      },
+      xl: {
         width: '800px',
       },
     },

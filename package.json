@@ -37,6 +37,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "7.2.3",
+    "babel-plugin-emotion": "^9.2.11",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-flow-react-proptypes": "^23.0.0",
     "babel-plugin-inline-react-svg": "^0.5.2",
@@ -89,6 +90,10 @@
       "src/**/*.js",
       "!src/**/*.stories.js",
       "!src/**/*.index.js"
+    ],
+
+    "transformIgnorePatterns": [
+      "/node_modules/(?!babel-plugin-emotion).+(js|jsx)$"
     ],
     "moduleDirectories": [
       "node_modules",

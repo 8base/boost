@@ -4,7 +4,7 @@ import React from 'react';
 
 import { createStyledTag, createTheme } from '../../../utils';
 import * as formUtils from '../../../utils/forms';
-import type { InputType, MetaType } from '../formTypes';
+import type { MetaType } from '../formTypes';
 
 type FormFieldProps = {
   children?: React$Node,
@@ -12,7 +12,6 @@ type FormFieldProps = {
   stretch?: boolean,
   hideErrorLabel?: boolean,
   direction?: 'row' | 'column',
-  input: InputType,
   meta: MetaType,
 };
 

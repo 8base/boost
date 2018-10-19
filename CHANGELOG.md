@@ -1,3 +1,20 @@
+<a name="0.7.4"></a>
+## [0.7.4](https://github.com/8base/boost/compare/v0.7.3...v0.7.4) (2018-10-19)
+
+
+### Bug Fixes
+
+* **Form:** rid of unnecessary field prop ([c0124c9](https://github.com/8base/boost/commit/c0124c9))
+
+
+### Features
+
+* **Avatar:** new avatar with edit handle ([4b290a7](https://github.com/8base/boost/commit/4b290a7))
+* **Dialog:** add size with 500px ([5d7d6f7](https://github.com/8base/boost/commit/5d7d6f7))
+* **Icon:** add paper clip icon ([125f868](https://github.com/8base/boost/commit/125f868))
+
+
+
 <a name="0.7.3"></a>
 ## [0.7.3](https://github.com/8base/boost/compare/v0.7.2...v0.7.3) (2018-10-18)
 

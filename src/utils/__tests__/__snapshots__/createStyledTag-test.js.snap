@@ -8,7 +8,7 @@ exports[`As developer, I can create tag by provided theme and passed styles. wit
 }
 
 <div
-  className="emotion-0"
+  className="emotion-0 emotion-1"
 >
   Children
 </div>
@@ -22,7 +22,7 @@ exports[`As developer, I can create tag by provided theme and passed styles. wit
 }
 
 <div
-  className="emotion-0"
+  className="emotion-0 emotion-1"
 >
   Children
 </div>

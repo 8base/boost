@@ -23,7 +23,7 @@ export type ButtonProps = {
  /** then button is rounded */
   rounded?: boolean,
   /** possible button types */
-  type?: 'submit' | 'button',
+  type?: 'submit' | 'button' | 'reset',
   /** possible button colors */
   color?: 'primary' | 'secondary' | 'neutral' | 'red' | 'white',
   /** the type of button */

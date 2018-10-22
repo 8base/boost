@@ -1,3 +1,13 @@
+<a name="0.7.6"></a>
+## [0.7.6](https://github.com/8base/boost/compare/v0.7.5...v0.7.6) (2018-10-22)
+
+
+### Bug Fixes
+
+* **Modal:** temp disable blur ([70e3e3e](https://github.com/8base/boost/commit/70e3e3e))
+
+
+
 <a name="0.7.5"></a>
 ## [0.7.5](https://github.com/8base/boost/compare/v0.7.4...v0.7.5) (2018-10-22)
 

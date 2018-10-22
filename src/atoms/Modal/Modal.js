@@ -87,7 +87,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
   }
 
   closeModal() {
-    if (this.props.isOpen) {
+    if (Modal.openedModals > 0) {
       Modal.openedModals -= 1;
 
       if (typeof this.props.onClose === 'function') {

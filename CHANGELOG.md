@@ -1,3 +1,14 @@
+<a name="0.7.5"></a>
+## [0.7.5](https://github.com/8base/boost/compare/v0.7.4...v0.7.5) (2018-10-22)
+
+
+### Bug Fixes
+
+* **atoms:** add flow typings for the type prop ([9077626](https://github.com/8base/boost/commit/9077626))
+* **Modal:** fix close modal ([c234679](https://github.com/8base/boost/commit/c234679))
+
+
+
 <a name="0.7.4"></a>
 ## [0.7.4](https://github.com/8base/boost/compare/v0.7.3...v0.7.4) (2018-10-19)
 

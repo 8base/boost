@@ -82,7 +82,8 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     if (!this.props.isOpen) {
       Modal.openedModals += 1;
 
-      this.updateBlurClass();
+      // TODO: Revert blur
+      // this.updateBlurClass();
     }
   }
 
@@ -94,7 +95,8 @@ class Modal extends PureComponent<ModalProps, ModalState> {
         this.props.onClose();
       }
 
-      this.updateBlurClass();
+      // TODO: Revert blur
+      // this.updateBlurClass();
     }
   }
 

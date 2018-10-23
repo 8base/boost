@@ -8,8 +8,8 @@ const withModalState = (BaseComponent) => {
       const { id } = this.props;
 
       const props = {
-        ...this.props,
         onClose: () => modalContext.closeModal(id),
+        ...this.props,
         isOpen: modalContext.state[id] ? modalContext.state[id].isOpen : false,
         args: modalContext.state[id] ? modalContext.state[id].args : undefined,
       };

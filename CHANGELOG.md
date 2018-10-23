@@ -1,3 +1,13 @@
+<a name="0.7.7"></a>
+## [0.7.7](https://github.com/8base/boost/compare/v0.7.6...v0.7.7) (2018-10-23)
+
+
+### Features
+
+* **Modal:** add ability to override default on close for modals ([f72fee1](https://github.com/8base/boost/commit/f72fee1))
+
+
+
 <a name="0.7.6"></a>
 ## [0.7.6](https://github.com/8base/boost/compare/v0.7.5...v0.7.6) (2018-10-22)
 

@@ -66,6 +66,7 @@ const COLLECTED_PROPS = [
   'value',
   'disabled',
   'readOnly',
+  'href',
 ];
 
 const HTML_TAGS = [

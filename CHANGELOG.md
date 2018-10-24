@@ -1,3 +1,13 @@
+<a name="0.7.8"></a>
+## [0.7.8](https://github.com/8base/boost/compare/v0.7.7...v0.7.8) (2018-10-24)
+
+
+### Bug Fixes
+
+* **Tag:** handle autoComplete prop ([91c3632](https://github.com/8base/boost/commit/91c3632))
+
+
+
 <a name="0.7.7"></a>
 ## [0.7.7](https://github.com/8base/boost/compare/v0.7.6...v0.7.7) (2018-10-23)
 

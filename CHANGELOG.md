@@ -1,3 +1,13 @@
+<a name="0.7.9"></a>
+## [0.7.9](https://github.com/8base/boost/compare/v0.7.8...v0.7.9) (2018-10-24)
+
+
+### Bug Fixes
+
+* **Tag:** handle href prop ([5e36b98](https://github.com/8base/boost/commit/5e36b98))
+
+
+
 <a name="0.7.8"></a>
 ## [0.7.8](https://github.com/8base/boost/compare/v0.7.7...v0.7.8) (2018-10-24)
 

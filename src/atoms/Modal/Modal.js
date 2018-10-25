@@ -10,13 +10,13 @@ type ModalProps = {
   isOpen?: boolean,
   onClose?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
+  shouldCloseOnEscPress?: boolean,
   id?: string,
 };
 
-type ModalState = {
-  isOpen: boolean,
-  blurred: boolean,
-};
+type ModalState = {};
+
+const ESCAPE_KEY = 'Escape';
 
 const MODAL_BLUR_CLASS = 'modal-blur';
 
@@ -57,47 +57,44 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 
   static defaultProps = {
     shouldCloseOnOverlayClick: true,
+    shouldCloseOnEscPress: true,
     isOpen: false,
   };
 
   componentDidMount() {
     if (this.props.isOpen) {
-      this.openModal();
-    } else {
-      this.closeModal();
+      this.addEscPressEventListener();
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if ('isOpen' in nextProps) {
-      if (nextProps.isOpen) {
-        this.openModal();
-      } else {
-        this.closeModal();
-      }
+  componentDidUpdate(prevProps) {
+    if (!prevProps.isOpen && this.props.isOpen) {
+      this.addEscPressEventListener();
+    }
+
+    if (prevProps.isOpen && !this.props.isOpen) {
+      this.removeEscPressEventListener();
     }
   }
 
-  openModal() {
-    if (!this.props.isOpen) {
-      Modal.openedModals += 1;
+  componentWillUnmount() {
+    this.removeEscPressEventListener();
+  }
 
-      // TODO: Revert blur
-      // this.updateBlurClass();
+  onClose = () => {
+    if (typeof this.props.onClose === 'function') {
+      this.props.onClose();
     }
   }
 
-  closeModal() {
-    if (Modal.openedModals > 0) {
-      Modal.openedModals -= 1;
-
-      if (typeof this.props.onClose === 'function') {
-        this.props.onClose();
-      }
-
-      // TODO: Revert blur
-      // this.updateBlurClass();
+  addEscPressEventListener = () => {
+    if (this.props.shouldCloseOnEscPress) {
+      document.addEventListener('keydown', this.onDocumentKeyPress);
     }
+  }
+
+  removeEscPressEventListener = () => {
+    document.removeEventListener('keydown', this.onDocumentKeyPress);
   }
 
   updateBlurClass() {
@@ -120,9 +117,15 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     }
   }
 
+  onDocumentKeyPress = (event) => {
+    if (this.props.shouldCloseOnEscPress && event.key === ESCAPE_KEY) {
+      this.onClose();
+    }
+  };
+
   onOverlayMouseDown = () => {
     if (this.props.shouldCloseOnOverlayClick) {
-      this.props.onClose();
+      this.onClose();
     }
   };
 
@@ -150,3 +153,4 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 Modal = withModalState(Modal);
 
 export { Modal, theme };
+

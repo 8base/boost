@@ -44,3 +44,4 @@ class ModalProvider extends Component {
 }
 
 export { ModalProvider };
+

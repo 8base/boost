@@ -1,3 +1,13 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/8base/boost/compare/v0.7.9...v0.8.0) (2018-10-26)
+
+
+### Features
+
+* **Modal:** closes modal on escape ([de851f4](https://github.com/8base/boost/commit/de851f4))
+
+
+
 <a name="0.7.9"></a>
 ## [0.7.9](https://github.com/8base/boost/compare/v0.7.8...v0.7.9) (2018-10-24)
 

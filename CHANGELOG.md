@@ -1,3 +1,13 @@
+<a name="0.8.2"></a>
+## [0.8.2](https://github.com/8base/boost/compare/v0.8.1...v0.8.2) (2018-10-29)
+
+
+### Bug Fixes
+
+* **Select:** handle multiple value ([7eef95b](https://github.com/8base/boost/commit/7eef95b))
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/8base/boost/compare/v0.8.0...v0.8.1) (2018-10-29)
 

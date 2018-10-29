@@ -1,3 +1,13 @@
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/8base/boost/compare/v0.8.0...v0.8.1) (2018-10-29)
+
+
+### Features
+
+* **Avatar:** various background colors based on passed user name ([2ddea82](https://github.com/8base/boost/commit/2ddea82))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/8base/boost/compare/v0.7.9...v0.8.0) (2018-10-26)
 

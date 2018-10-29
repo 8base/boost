@@ -25,7 +25,7 @@ exports[`Storyshots ATOMS/Avatar with custom size modifiers 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #d0d7dd;
+  background-color: #ffd012;
   color: #323c47;
   width: 2rem;
   height: 2rem;
@@ -40,6 +40,7 @@ exports[`Storyshots ATOMS/Avatar with custom size modifiers 1`] = `
 >
   <div
     className="emotion-2 emotion-1"
+    name={undefined}
   >
     <img
       className="emotion-0 emotion-1"
@@ -50,8 +51,34 @@ exports[`Storyshots ATOMS/Avatar with custom size modifiers 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Avatar with default modifiers 1`] = `
-.emotion-4 {
+.emotion-8 {
   margin: 2rem;
+}
+
+.emotion-0 {
+  border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffd012;
+  color: #323c47;
+  width: 8rem;
+  height: 8rem;
+}
+
+.emotion-0:hover .emotion-1 {
+  bottom: 0;
 }
 
 .emotion-2 {
@@ -70,7 +97,7 @@ exports[`Storyshots ATOMS/Avatar with default modifiers 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #d0d7dd;
+  background-color: #4da1ff;
   color: #323c47;
   width: 8rem;
   height: 8rem;
@@ -80,18 +107,31 @@ exports[`Storyshots ATOMS/Avatar with default modifiers 1`] = `
   bottom: 0;
 }
 
-.emotion-0 {
+.emotion-4 {
   width: 100%;
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-8 emotion-9"
 >
   <div
+    className="emotion-0 emotion-1"
+    name={undefined}
+  >
+    A
+  </div>
+  <div
     className="emotion-2 emotion-1"
+    name="Madelyn"
+  >
+    M
+  </div>
+  <div
+    className="emotion-0 emotion-1"
+    name={undefined}
   >
     <img
-      className="emotion-0 emotion-1"
+      className="emotion-4 emotion-1"
       src="https://randomuser.me/api/portraits/women/76.jpg"
     />
   </div>
@@ -119,7 +159,7 @@ exports[`Storyshots ATOMS/Avatar with pick 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #d0d7dd;
+  background-color: #ffd012;
   color: #323c47;
   width: 8rem;
   height: 8rem;
@@ -168,6 +208,7 @@ exports[`Storyshots ATOMS/Avatar with pick 1`] = `
 >
   <div
     className="emotion-4 emotion-1"
+    name={undefined}
   >
     <img
       className="emotion-0 emotion-1"
@@ -14943,7 +14984,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-color: #d0d7dd;
+  background-color: #ffd012;
   color: #323c47;
   width: 8rem;
   height: 8rem;
@@ -14982,6 +15023,7 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
   >
     <div
       className="emotion-2 emotion-1"
+      name={undefined}
     >
       <img
         className="emotion-0 emotion-1"

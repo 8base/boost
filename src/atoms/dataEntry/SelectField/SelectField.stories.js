@@ -18,6 +18,7 @@ export default (asStory) => {
         <SelectField
           label="Select Label"
           input={{ name: 'input', onChange: () => null, value: OPTIONS[0].value }}
+          meta={{}}
           placeholder="Select an option"
           options={ OPTIONS }
           stretch

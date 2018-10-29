@@ -5,6 +5,7 @@ import { createStyledTag, createTheme } from '../../utils';
 
 type AvatarProps = {|
   src?: string,
+  name: string,
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
   onPick?: () => void,
   pickLabel?: string,
@@ -65,6 +66,14 @@ const AvatarHandleTag = createStyledTag(`${name}Handle`, {
   color: '#d0d7dd',
 });
 
+const COLORS = ['#ffd012', '#a6e50f', '#00bb6e', '#9975d0', '#4da1ff', '#1968cb', '#ff6d4a', '#EB518E', '#eb4235'];
+
+const getBackgroundColorByName = (name: ?string) => {
+  const index = name ? ((name.charCodeAt(0) - 64) % COLORS.length) : 0;
+
+  return COLORS[index];
+};
+
 const AvatarTag = createStyledTag(name, (props) => ({
   borderRadius: '100%',
   overflow: 'hidden',
@@ -72,7 +81,7 @@ const AvatarTag = createStyledTag(name, (props) => ({
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  backgroundColor: props.theme.COLORS.LIGHT_GRAY1,
+  backgroundColor: getBackgroundColorByName(props.name),
   color: props.theme.COLORS.DARK_GRAY1,
 
   [`&:hover ${AvatarHandleTag}`]: {
@@ -86,14 +95,15 @@ const AvatarImgTag = createStyledTag(`${name}Img`, {
 
 function Avatar({
   src,
+  name,
   onPick,
   pickLabel,
   ...rest
   }: AvatarProps) {
   return (
-    <AvatarTag { ...rest } tagName="div">
+    <AvatarTag { ...rest } name={ name } tagName="div">
       {
-        src ? <AvatarImgTag tagName="img" src={ src } /> : 'A'
+        src ? <AvatarImgTag tagName="img" src={ src } /> : (name ? name[0].toUpperCase() : 'A')
       }
       {
         (onPick && pickLabel)

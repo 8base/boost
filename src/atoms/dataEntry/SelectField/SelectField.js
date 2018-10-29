@@ -29,35 +29,52 @@ const theme = createTheme(name, {
   },
 });
 
-function SelectField({
-  options,
-  placeholder,
-  label,
-  stretch,
-  input = {},
-  meta = {},
-  ...rest
-  }: SelectFieldProps) {
-  const { name, value, onChange } = input;
+class SelectField extends React.Component<SelectFieldProps> {
+  onChange = (selectedOption) => {
+    const value = Array.isArray(selectedOption)
+      ? selectedOption.map(({ value }) => value)
+      : (selectedOption.value || null);
 
-  const hasError = formUtils.hasError(meta);
+    this.props.input.onChange(value);
+  };
 
-  const selectedOption = options.find((option) => option.value === value);
+  collectFormFieldProps() {
+    const { meta, input, stretch, label } = this.props;
 
-  return (
-    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
-      <Select
-        { ...rest }
-        name={ name }
-        onChange={ (selectedOption) => onChange(selectedOption ? selectedOption.value : null) }
-        placeholder={ placeholder }
-        value={ selectedOption }
-        options={ options }
-        stretch={ stretch }
-        hasError={ hasError }
-      />
-    </FormField>
-  );
+    return { meta, input, stretch, label };
+  }
+
+  collectSelectProps() {
+    const { input, meta, placeholder, options, stretch } = this.props;
+
+    const hasError = formUtils.hasError(meta);
+
+    const value = Array.isArray(input.value)
+      ? options.filter((option) => input.value.indexOf(option.value) !== -1)
+      : options.find((option) => option.value === input.value);
+
+    return {
+      ...this.props,
+      name: input.name,
+      value,
+      hasError,
+      placeholder,
+      options,
+      stretch,
+      onChange: this.onChange,
+    };
+  }
+
+  render() {
+    const collectedFormFieldProps = this.collectFormFieldProps();
+    const collectedSelectProps = this.collectSelectProps();
+
+    return (
+      <FormField { ...collectedFormFieldProps }>
+        <Select { ...collectedSelectProps } />
+      </FormField>
+    );
+  }
 }
 
 export { SelectField, theme };

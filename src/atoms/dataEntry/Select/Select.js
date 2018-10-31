@@ -13,9 +13,10 @@ type SelectProps = {|
   value?: Object,
   loading?: boolean,
   hasError?: boolean,
+  zIndex?: string | number,
 |};
 
-const customStyles = ({ hasError }) => ({
+const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   control: (style, { isFocused }) => ({
     ...style,
     minHeight: '4rem',
@@ -28,10 +29,17 @@ const customStyles = ({ hasError }) => ({
   }),
   menuPortal: (style) => ({
     ...style,
-    zIndex: Z_INDEX.DROPDOWN,
+    zIndex,
   }),
-  placeholder: (style) => ({ ...style, color: PALETTE.LIGHT_GRAY1 }),
-  indicatorSeparator: (style) => ({ ...style, backgroundColor: PALETTE.WHITE }),
+  placeholder: (style) => ({
+    ...style,
+    color: PALETTE.LIGHT_GRAY1,
+    whiteSpace: 'nowrap',
+  }),
+  indicatorSeparator: (style) => ({
+    ...style,
+    backgroundColor: PALETTE.WHITE,
+  }),
 });
 
 const Select = ({ loading, ...props }: SelectProps) => (
@@ -46,3 +54,4 @@ const Select = ({ loading, ...props }: SelectProps) => (
 );
 
 export { Select };
+

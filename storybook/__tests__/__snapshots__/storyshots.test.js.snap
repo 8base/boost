@@ -9110,6 +9110,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .emotion-1 {
@@ -9694,6 +9695,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .emotion-1 {

@@ -49,9 +49,11 @@ class SelectField extends React.Component<SelectFieldProps> {
 
     const hasError = formUtils.hasError(meta);
 
-    const value = Array.isArray(input.value)
-      ? options.filter((option) => input.value.indexOf(option.value) !== -1)
-      : options.find((option) => option.value === input.value);
+    const value = (
+      Array.isArray(input.value)
+        ? options.filter((option) => input.value.indexOf(option.value) !== -1)
+        : options.find((option) => option.value === input.value)
+    ) || null;
 
     return {
       ...this.props,
@@ -78,3 +80,4 @@ class SelectField extends React.Component<SelectFieldProps> {
 }
 
 export { SelectField, theme };
+

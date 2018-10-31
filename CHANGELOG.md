@@ -1,3 +1,15 @@
+<a name="0.8.3"></a>
+## [0.8.3](https://github.com/8base/boost/compare/v0.8.2...v0.8.3) (2018-10-31)
+
+
+### Features
+
+* **AsyncContent:** initial ([e126561](https://github.com/8base/boost/commit/e126561))
+* **select:** adds zIndex prop and ability to set empty value ([2224ad8](https://github.com/8base/boost/commit/2224ad8))
+* **TableBody:** add ability to pass data and render prop to table body ([a6b8f88](https://github.com/8base/boost/commit/a6b8f88))
+
+
+
 <a name="0.8.2"></a>
 ## [0.8.2](https://github.com/8base/boost/compare/v0.8.1...v0.8.2) (2018-10-29)
 

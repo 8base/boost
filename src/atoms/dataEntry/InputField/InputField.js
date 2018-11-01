@@ -12,8 +12,8 @@ type InputFieldProps = {|
   stretch?: boolean,
   /** direction of the input with label */
   direction?: 'row' | 'column',
-  /** set input width to the equal height */
-  square?: boolean,
+  /** set custom input width */
+  width?: number,
   /** max symbols in the input value*/
   maxLength?: number,
   /** when true then don't show error label */

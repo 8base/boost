@@ -36,12 +36,6 @@ const theme = createTheme(name, (colors: *): * => ({
     },
   },
 
-  inputSquare: {
-    width: '4rem',
-    textAlign: 'center',
-    padding: 0,
-  },
-
   inputError: {
     borderColor: `${colors.DANGER} !important`,
   },
@@ -64,7 +58,7 @@ const theme = createTheme(name, (colors: *): * => ({
 const InputWrapperTag = createStyledTag(`${name}Wrapper`, props => ({
   display: 'inline-flex',
   position: 'relative',
-  width: props.stretch && !props.square ? '100%' : 'auto',
+  width: props.stretch && !props.width ? '100%' : 'auto',
 }));
 
 const InputIndicatorTag = createStyledTag(`${name}Indicator`, props => ({
@@ -93,14 +87,13 @@ const InputRightIconTag = createStyledTag(`${name}RightIcon`, {
 });
 
 const getInputStyles = props => ({
-  width: '100%',
+  width: props.width ? `${props.width}rem` : '100%',
   outline: 'none',
   paddingLeft: props.hasLeftIcon ? '4rem' : '1rem',
   paddingRight: props.hasRightIcon ? '5rem' : '2rem',
 
   ...getThemeStyle(props, name).input,
   ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
-  ...getThemeStyleByCond(props, name, 'inputSquare', props.square),
 
   backgroundColor: PALETTE[props.disabled ? 'LIGHT_GRAY5' : 'WHITE'],
 

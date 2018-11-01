@@ -5039,6 +5039,86 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  width: 5rem;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  <div
+    className="emotion-2 emotion-1"
+  >
+    <input
+      autoComplete="off"
+      className="emotion-0 emotion-1"
+      disabled={undefined}
+      name="input"
+      onBlur={undefined}
+      onChange={[Function]}
+      onFocus={undefined}
+      placeholder={undefined}
+      type="text"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 .emotion-6 {
   margin: 2rem;
@@ -5608,87 +5688,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 </div>
 `;
 
-exports[`Storyshots ATOMS/DATA ENTRY/Input with square=true 1`] = `
-.emotion-4 {
-  margin: 2rem;
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  width: auto;
-}
-
-.emotion-0 {
-  width: 4rem;
-  outline: none;
-  padding-left: 1rem;
-  padding-right: 2rem;
-  color: #323c47;
-  font-size: 1.4rem;
-  font-weight: 400;
-  height: 4rem;
-  line-height: normal;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  text-align: left;
-  padding: 0;
-  background-color: #FFFFFF;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
-}
-
-.emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-0::-moz-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-0::placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-<div
-  className="emotion-4 emotion-5"
->
-  <div
-    className="emotion-2 emotion-1"
-  >
-    <input
-      autoComplete="off"
-      className="emotion-0 emotion-1"
-      disabled={undefined}
-      name="input"
-      onBlur={undefined}
-      onChange={[Function]}
-      onFocus={undefined}
-      placeholder={undefined}
-      type="text"
-      value={undefined}
-    />
-  </div>
-</div>
-`;
-
 exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 .emotion-4 {
   margin: 2rem;
@@ -6026,6 +6025,130 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
         <input
           autoComplete="off"
           className="emotion-0 emotion-1"
+          disabled={undefined}
+          name="input"
+          onBlur={undefined}
+          onChange={[Function]}
+          onFocus={undefined}
+          placeholder={undefined}
+          type="text"
+          value={undefined}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
+.emotion-10 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+}
+
+.emotion-0 {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #878c93;
+  line-height: 2;
+}
+
+.emotion-8 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+}
+
+.emotion-2 {
+  width: 7rem;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-10 emotion-11"
+>
+  <div
+    className="emotion-8 emotion-1"
+  >
+    <div
+      className="emotion-6 emotion-1"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      >
+        Input
+      </div>
+      <div
+        className="emotion-4 emotion-1"
+      >
+        <input
+          autoComplete="off"
+          className="emotion-2 emotion-1"
           disabled={undefined}
           name="input"
           onBlur={undefined}
@@ -6647,131 +6770,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   transition: all .15s ease-in-out;
   background-color: #FFFFFF;
   text-align: left;
-  border: 1px solid #d0d7dd;
-  border-radius: 5px;
-}
-
-.emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-2::-moz-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-2::placeholder {
-  color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0 {
-  margin-left: 1rem;
-  font-size: 1.4rem;
-  color: #878c93;
-  line-height: 2;
-}
-
-.emotion-8 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: auto;
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: auto;
-}
-
-<div
-  className="emotion-10 emotion-11"
->
-  <div
-    className="emotion-8 emotion-1"
-  >
-    <div
-      className="emotion-6 emotion-1"
-    >
-      <div
-        className="emotion-0 emotion-1"
-      >
-        Input
-      </div>
-      <div
-        className="emotion-4 emotion-1"
-      >
-        <input
-          autoComplete="off"
-          className="emotion-2 emotion-1"
-          disabled={undefined}
-          name="input"
-          onBlur={undefined}
-          onChange={[Function]}
-          onFocus={undefined}
-          placeholder={undefined}
-          type="text"
-          value={undefined}
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots ATOMS/DATA ENTRY/InputField with square input 1`] = `
-.emotion-10 {
-  margin: 2rem;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  width: auto;
-}
-
-.emotion-2 {
-  width: 4rem;
-  outline: none;
-  padding-left: 1rem;
-  padding-right: 2rem;
-  color: #323c47;
-  font-size: 1.4rem;
-  font-weight: 400;
-  height: 4rem;
-  line-height: normal;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  text-align: left;
-  padding: 0;
-  background-color: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
 }

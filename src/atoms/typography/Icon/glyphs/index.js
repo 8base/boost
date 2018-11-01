@@ -26,6 +26,9 @@ import Search from './Search.svg';
 import SpeedMeter from './Speed-Meter.svg';
 import Trashcan from './Trashcan.svg';
 import TreeView from './TreeView.svg';
+import Contract from './Contract.svg';
+import Customers from './Customers.svg';
+import House from './House.svg';
 
 export {
   Alert,
@@ -53,5 +56,8 @@ export {
   SpeedMeter,
   Trashcan,
   TreeView,
+  Contract,
+  Customers,
+  House,
 };
 

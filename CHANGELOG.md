@@ -1,3 +1,13 @@
+<a name="0.8.5"></a>
+## [0.8.5](https://github.com/8base/boost/compare/v0.8.4...v0.8.5) (2018-11-01)
+
+
+### Bug Fixes
+
+* **atoms:** replace square modifier with width modifier ([36c6051](https://github.com/8base/boost/commit/36c6051))
+
+
+
 <a name="0.8.4"></a>
 ## [0.8.4](https://github.com/8base/boost/compare/v0.8.3...v0.8.4) (2018-11-01)
 

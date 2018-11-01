@@ -43,8 +43,8 @@ type InputProps = {
   errorText?: string,
   /** mask string in the react-input-mask format */
   mask?: string,
-  /** set input width to the equal height */
-  square?: boolean,
+  /** set custom input width in rem */
+  width?: number,
   /** callback to change input value */
   onChange?: (value?: string | ?number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
@@ -57,7 +57,6 @@ class Input extends PureComponent<InputProps> {
     autoComplete: false,
     hasError: false,
     hideErrorIndicator: false,
-    square: false,
     stretch: true,
     type: 'text',
     kind: 'bordered',
@@ -92,7 +91,7 @@ class Input extends PureComponent<InputProps> {
       onFocus,
       placeholder,
       rightIcon,
-      square,
+      width,
       stretch,
       type,
       value,
@@ -113,7 +112,7 @@ class Input extends PureComponent<InputProps> {
       onChange: this.onChange,
       onFocus,
       placeholder,
-      square,
+      width,
       type,
       value,
       insideRef,
@@ -123,7 +122,7 @@ class Input extends PureComponent<InputProps> {
     };
 
     return (
-      <InputWrapperTag { ...fp.omit(['onChange'], rest) } stretch={ stretch } square={ square } tagName="div">
+      <InputWrapperTag { ...fp.omit(['onChange'], rest) } stretch={ stretch } width={ width } tagName="div">
         <Choose>
           <When condition={ !mask }>
             <InputTag

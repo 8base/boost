@@ -1,3 +1,13 @@
+<a name="0.8.4"></a>
+## [0.8.4](https://github.com/8base/boost/compare/v0.8.3...v0.8.4) (2018-11-01)
+
+
+### Features
+
+* **Icon:** add new icons ([7a5f15f](https://github.com/8base/boost/commit/7a5f15f))
+
+
+
 <a name="0.8.3"></a>
 ## [0.8.3](https://github.com/8base/boost/compare/v0.8.2...v0.8.3) (2018-10-31)
 

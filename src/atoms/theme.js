@@ -32,6 +32,8 @@ import { theme as switchTheme } from './dataEntry/Switch';
 import { theme as textTheme } from './typography/Text';
 import { theme as loaderTheme } from './Loader';
 import { theme as tableTheme } from './Table';
+import { theme as dateInputFieldTheme } from './dataEntry/DateInputField';
+import { theme as dateInputTheme } from './dataEntry/DateInput';
 
 export const theme = {
   ...avatarTheme,
@@ -66,4 +68,6 @@ export const theme = {
   ...loaderTheme,
   ...tableTheme,
   ...switchTheme,
+  ...dateInputFieldTheme,
+  ...dateInputTheme,
 };

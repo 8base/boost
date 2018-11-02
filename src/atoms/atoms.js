@@ -16,6 +16,8 @@ export { Heading } from './typography/Heading';
 export { Icon } from './typography/Icon';
 export { Input } from './dataEntry/Input';
 export { InputField } from './dataEntry/InputField';
+export { DateInput } from './dataEntry/DateInput';
+export { DateInputField } from './dataEntry/DateInputField';
 export { Label } from './typography/Label';
 export { Link } from './typography/Link';
 export { Modal } from './Modal';

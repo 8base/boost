@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Consumer } from './ModalContext';
+import { ModalContext } from './ModalContext';
 
 const withModalState = (BaseComponent) => {
   class ModalStateConsumer extends React.Component {
@@ -21,7 +21,7 @@ const withModalState = (BaseComponent) => {
       const { id, ...rest } = this.props;
 
       if (id) {
-        return <Consumer>{ this.renderBaseComponentWithModalProps }</Consumer>;
+        return <ModalContext.Consumer>{ this.renderBaseComponentWithModalProps }</ModalContext.Consumer>;
       }
 
       return <BaseComponent { ...rest } />;

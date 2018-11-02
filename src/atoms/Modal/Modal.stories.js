@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('ATOMS/Modal (skip shot)', module, (story, { Modal, ModalConsumer, Button }) => {
+  asStory('ATOMS/Modal (skip shot)', module, (story, { Modal, ModalContext, Button }) => {
     story
       .add('multiple modals', () => (
         <React.Fragment>
@@ -46,11 +46,11 @@ export default (asStory) => {
               )
             }
           </Modal>
-          <ModalConsumer>
+          <ModalContext.Consumer>
             {
               ({ openModal }) => <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open</Button>
             }
-          </ModalConsumer>
+          </ModalContext.Consumer>
         </React.Fragment>
       ));
   });

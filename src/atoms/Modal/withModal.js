@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Consumer } from './ModalContext';
+import { ModalContext } from './ModalContext';
 
 const withModal = (BaseComponent) => {
   class ModalStateConsumer extends React.Component {
@@ -15,7 +15,7 @@ const withModal = (BaseComponent) => {
     }
 
     render() {
-      return <Consumer>{ this.renderBaseComponent }</Consumer>;
+      return <ModalContext.Consumer>{ this.renderBaseComponent }</ModalContext.Consumer>;
     }
   }
 

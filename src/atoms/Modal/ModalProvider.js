@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Provider } from './ModalContext';
+import { ModalContext } from './ModalContext';
 
 class ModalProvider extends Component {
   constructor(props) {
@@ -36,9 +36,9 @@ class ModalProvider extends Component {
     const contextValue = this.collectContextValue();
 
     return (
-      <Provider value={ contextValue }>
+      <ModalContext.Provider value={ contextValue }>
         { this.props.children }
-      </Provider>
+      </ModalContext.Provider>
     );
   }
 }

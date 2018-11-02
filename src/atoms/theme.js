@@ -5,6 +5,7 @@ import { theme as buttonTheme } from './Button';
 import { theme as breadcrumbsTheme } from './Breadcrumbs';
 import { theme as cardTheme } from './Card';
 import { theme as checkboxTheme } from './dataEntry/Checkbox';
+import { theme as codeTheme } from './Code';
 import { theme as dialogTheme } from './Dialog';
 import { theme as dividerTheme } from './Divider';
 import { theme as dropdownTheme } from './Dropdown';
@@ -38,6 +39,7 @@ export const theme = {
   ...breadcrumbsTheme,
   ...cardTheme,
   ...checkboxTheme,
+  ...codeTheme,
   ...dialogTheme,
   ...dividerTheme,
   ...dropdownTheme,

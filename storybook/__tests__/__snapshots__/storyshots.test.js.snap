@@ -3652,6 +3652,121 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block;
+}
+
+.emotion-6 {
+  margin: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-4 > div {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-0 {
+  width: 100%;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  color: #323c47;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 4rem;
+  line-height: normal;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background-color: #FFFFFF;
+  text-align: left;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  <div
+    className="emotion-4 emotion-1"
+  >
+    <div>
+      <div
+        className="react-datepicker-wrapper"
+      >
+        <div
+          className="react-datepicker__input-container"
+        >
+          <div
+            className="emotion-2 emotion-1"
+            onClick={[Function]}
+            readOnly={false}
+          >
+            <input
+              autoComplete="off"
+              className="emotion-0 emotion-1"
+              disabled={false}
+              name={undefined}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder={undefined}
+              type="text"
+              value="11/02/2018"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 .emotion-64 {
   margin: 2rem;
@@ -3711,45 +3826,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   width: 100%;
 }
 
-.emotion-62 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-60 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  cursor: inherit;
-}
-
-.emotion-60 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.emotion-8 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3801,6 +3877,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 .emotion-10::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-62 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-60 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-60 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-8 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 .emotion-58 {
@@ -4097,45 +4212,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
   width: 100%;
 }
 
-.emotion-54 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-52 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  cursor: inherit;
-}
-
-.emotion-52 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4187,6 +4263,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-54 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-52 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-52 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 .emotion-50 {
@@ -4414,45 +4529,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   width: 100%;
 }
 
-.emotion-64 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-62 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  cursor: inherit;
-}
-
-.emotion-62 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.emotion-2 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4504,6 +4580,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 .emotion-4::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-64 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-62 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-62 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-2 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 .emotion-34 {
@@ -4786,45 +4901,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   width: 100%;
 }
 
-.emotion-52 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-50 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  cursor: inherit;
-}
-
-.emotion-50 > *:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4876,6 +4952,45 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-52 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  cursor: inherit;
+}
+
+.emotion-50 > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 <div
@@ -6300,13 +6415,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   top: -2px;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6314,6 +6422,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   display: inline-flex;
   position: relative;
   width: 100%;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 .emotion-2 {
@@ -6622,13 +6737,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6680,6 +6788,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 <div
@@ -7006,13 +7121,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7064,6 +7172,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 <div
@@ -7134,13 +7249,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7192,6 +7300,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 <div
@@ -7495,13 +7610,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  font-size: 1.2rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7553,6 +7661,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-0 {
+  margin-left: 0;
+  font-size: 1.2rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 <div

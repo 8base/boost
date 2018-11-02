@@ -2387,6 +2387,57 @@ exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/Code default 1`] = `
+.emotion-4 {
+  margin: 2rem;
+}
+
+.emotion-2 {
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2:before {
+  content: "";
+  display: block;
+  width: 3rem;
+  background-color: #f4f7f9;
+  border-right: 1px solid #d0d7dd;
+  z-index: -1;
+}
+
+.emotion-0 {
+  padding: 2rem;
+  font-family: Courier;
+  line-height: 2;
+  color: #323c47;
+  font-weight: normal;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  <div
+    className="emotion-2 emotion-1"
+  >
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <p>
+        npm i -g 8base
+      </p>
+      <p>
+        8base init my-project
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
 .emotion-12 {
   margin: 2rem;

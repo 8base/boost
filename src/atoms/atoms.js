@@ -6,6 +6,7 @@ export { Breadcrumbs } from './Breadcrumbs';
 export { Card } from './Card';
 export { Checkbox } from './dataEntry/Checkbox';
 export { CheckboxField } from './dataEntry/CheckboxField';
+export { Code } from './Code';
 export { Dialog } from './Dialog';
 export { Divider } from './Divider';
 export { Dropdown } from './Dropdown';

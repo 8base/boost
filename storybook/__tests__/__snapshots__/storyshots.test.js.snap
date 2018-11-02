@@ -3195,6 +3195,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -3349,6 +3353,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -3504,6 +3512,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -3641,6 +3653,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -4023,6 +4039,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -4336,6 +4356,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -4704,6 +4728,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -5954,6 +5982,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -6045,28 +6077,21 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
   margin: 2rem;
 }
 
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  width: auto;
-}
-
-.emotion-0 {
-  margin-left: 1rem;
-  font-size: 1.4rem;
-  color: #878c93;
-  line-height: 2;
-}
-
 .emotion-8 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 100%;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
   width: auto;
 }
 
@@ -6082,7 +6107,18 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: auto;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.emotion-0 {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #878c93;
+  line-height: 2;
 }
 
 .emotion-2 {
@@ -6190,6 +6226,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -6437,6 +6477,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -6520,6 +6564,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -6697,6 +6745,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -6828,6 +6880,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: auto;
 }
 
@@ -6892,6 +6948,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -7016,6 +7076,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -7140,6 +7204,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -7253,6 +7321,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -7365,6 +7437,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -8649,6 +8725,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -8867,6 +8947,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -9934,6 +10018,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -10521,6 +10609,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -10597,6 +10689,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -10673,6 +10769,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
 }
 

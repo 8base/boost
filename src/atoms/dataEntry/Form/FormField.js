@@ -32,6 +32,7 @@ const FormFieldDirectionTag = createStyledTag(name, props => ({
   display: 'inline-flex',
   flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
   alignItems: props.direction === 'row' ? 'center' : 'flex-start',
+  justifyContent: props.direction === 'row' ? 'flex-end' : 'flex-start',
   width: props.stretch ? '100%' : 'auto',
 }));
 

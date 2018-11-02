@@ -36,7 +36,7 @@ export default (asStory) => {
         <InputField direction="row" stretch={ false } label="Input" input={{ name: 'input', onChange }} />
       ))
       .add('with custom width input', () => (
-        <InputField direction="row" stretch={ false } width={ 7 } label="Input" input={{ name: 'input', onChange }} />
+        <InputField direction="row" stretch width={ 7 } label="Input" input={{ name: 'input', onChange }} />
       ))
       .add('with center align', () => (
         <InputField input={{ name: 'input', onChange }} align="center" />

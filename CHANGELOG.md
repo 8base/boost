@@ -1,3 +1,19 @@
+<a name="0.8.8"></a>
+## [0.8.8](https://github.com/8base/boost/compare/v0.8.7...v0.8.8) (2018-11-02)
+
+
+### Bug Fixes
+
+* **Dialog:** limit max height for scrollable ([28eb173](https://github.com/8base/boost/commit/28eb173))
+* **global:** file and css mocks ([d835a48](https://github.com/8base/boost/commit/d835a48))
+
+
+### Features
+
+* **DateInput:** initial ([9b0b8d2](https://github.com/8base/boost/commit/9b0b8d2))
+
+
+
 <a name="0.8.7"></a>
 ## [0.8.7](https://github.com/8base/boost/compare/v0.8.6...v0.8.7) (2018-11-02)
 

@@ -1,3 +1,13 @@
+<a name="0.8.6"></a>
+## [0.8.6](https://github.com/8base/boost/compare/v0.8.5...v0.8.6) (2018-11-02)
+
+
+### Bug Fixes
+
+* **atoms:** fix from filed row align ([fae1317](https://github.com/8base/boost/commit/fae1317))
+
+
+
 <a name="0.8.5"></a>
 ## [0.8.5](https://github.com/8base/boost/compare/v0.8.4...v0.8.5) (2018-11-01)
 

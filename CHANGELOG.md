@@ -1,3 +1,14 @@
+<a name="0.8.7"></a>
+## [0.8.7](https://github.com/8base/boost/compare/v0.8.6...v0.8.7) (2018-11-02)
+
+
+### Features
+
+* **atoms:** add code component ([bcee119](https://github.com/8base/boost/commit/bcee119))
+* **Modal:** export modal context instead of consumer ([5665732](https://github.com/8base/boost/commit/5665732))
+
+
+
 <a name="0.8.6"></a>
 ## [0.8.6](https://github.com/8base/boost/compare/v0.8.5...v0.8.6) (2018-11-02)
 

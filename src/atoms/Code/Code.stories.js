@@ -8,6 +8,31 @@ export default (asStory) => {
           <p>npm i -g 8base</p>
           <p>8base init my-project</p>
         </Code>
+      ))
+      .add('with custom height', () => (
+        <Code height={ 200 }>{
+          `npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project
+npm i -g 8base
+8base init my-project`
+	     }
+        </Code>
       ));
   });
 };

@@ -4,6 +4,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 
 import { PALETTE } from '../../../theme';
+import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../../theme/dsmColors';
 import { createStyledTag, createTheme } from '../../../utils';
 import type { Theme } from '../../../types';
 import * as glyphs from './glyphs';
@@ -12,7 +13,9 @@ type IconProps = {
   /** icon name */
   name: string,
   /** icon color */
-  color?: $Keys<typeof PALETTE>,
+  color?: $Keys<typeof PALETTE>
+    | $Keys<typeof SECONDARY_COLORS>
+    | $Keys<typeof MAIN_BRAND_COLORS>,
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
 };
@@ -21,10 +24,16 @@ const name = 'icon';
 
 const theme : Theme<IconProps> = createTheme(name, () => ({
   modifiers: {
-    color: fp.mapValues(
-      (color) => ({ color }),
-      PALETTE,
-    ),
+    color: {
+      ...fp.mapValues(
+        (color) => ({ color }),
+        {
+          ...PALETTE,
+          ...SECONDARY_COLORS,
+          ...MAIN_BRAND_COLORS,
+        },
+      ),
+    },
     size: {
       xs: {
         width: '1rem',

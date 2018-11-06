@@ -12,7 +12,7 @@ const NAME = 'menuItem';
 const theme = createTheme(NAME, {});
 
 const StyledTag = createStyledTag(NAME, () => ({
-  color: GREY_COLORS.DARK_GREY_2,
+  color: GREY_COLORS.DSM_DARK_GREY_2,
   fontFamily: 'Poppins',
   fontSize: '14px',
   fontWeight: 400,
@@ -27,8 +27,8 @@ const StyledTag = createStyledTag(NAME, () => ({
   paddingLeft: '1.9rem',
 
   '&:hover': {
-    backgroundColor: GREY_COLORS.LIGHT_GREY_3,
-    color: GREY_COLORS.BLACK,
+    backgroundColor: GREY_COLORS.DSM_LIGHT_GREY_3,
+    color: GREY_COLORS.DSM_BLACK,
   },
 }));
 

@@ -30,6 +30,9 @@ import Contract from './Contract.svg';
 import Customers from './Customers.svg';
 import House from './House.svg';
 import Screens from './Screens.svg';
+import Settings from './Settings.svg';
+import DataBuilder from './DataBuilder.svg';
+import Logic from './Logic.svg';
 
 export {
   Alert,
@@ -61,5 +64,8 @@ export {
   Customers,
   House,
   Screens,
+  Settings,
+  DataBuilder,
+  Logic,
 };
 

@@ -1,3 +1,18 @@
+<a name="0.8.10"></a>
+## [0.8.10](https://github.com/8base/boost/compare/v0.8.9...v0.8.10) (2018-11-06)
+
+
+### Bug Fixes
+
+* **flow:** add borderRadius modifier declaration ([6f876f5](https://github.com/8base/boost/commit/6f876f5))
+
+
+### Features
+
+* **icons:** adds new icons ([f8fc7e3](https://github.com/8base/boost/commit/f8fc7e3))
+
+
+
 <a name="0.8.9"></a>
 ## [0.8.9](https://github.com/8base/boost/compare/v0.8.8...v0.8.9) (2018-11-06)
 

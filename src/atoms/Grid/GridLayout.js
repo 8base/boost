@@ -8,7 +8,7 @@ type GridLayoutProps = {|
   /** when true then stretch to full width */
   stretch?: boolean,
   /** possbile spaces between grid items */
-  gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none',
+  gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'none',
   /** when true then set inline-grid */
   inline?: boolean,
   /** possible offsets of the grid layout */
@@ -42,6 +42,9 @@ const theme = createTheme(name, {
       },
       xl: {
         gridGap: '3rem',
+      },
+      xxl: {
+        gridGap: '4rem',
       },
       none: {},
     },

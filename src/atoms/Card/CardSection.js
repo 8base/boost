@@ -10,12 +10,19 @@ type CardSectionProps = {|
   children: React$Node,
   padding?: PropSizes,
   stretch?: boolean,
+  hoverable?: boolean,
 |};
 
 const name = 'cardSection';
 
 const cardSectionTheme = createTheme(name, {
   modifiers: {
+    hoverable: {
+      cursor: 'pointer',
+      '&:hover': {
+        boxShadow: '0 0.2rem 1rem 0 rgba(208, 215, 221, 0.6)',
+      },
+    },
     stretch: {
       display: 'flex',
       flex: 1,

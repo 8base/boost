@@ -9,6 +9,7 @@ type CardPlateProps = {|
   paddingOuter?: PropSizes,
   style?: Object,
   stretch?: boolean,
+  borderRadius?: 'top' | 'bottom' | 'all',
 |};
 
 const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (

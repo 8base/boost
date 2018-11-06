@@ -1,3 +1,13 @@
+<a name="0.8.11"></a>
+## [0.8.11](https://github.com/8base/boost/compare/v0.8.10...v0.8.11) (2018-11-06)
+
+
+### Bug Fixes
+
+* **atoms:** fox code numeric ([f9da6d4](https://github.com/8base/boost/commit/f9da6d4))
+
+
+
 <a name="0.8.10"></a>
 ## [0.8.10](https://github.com/8base/boost/compare/v0.8.9...v0.8.10) (2018-11-06)
 

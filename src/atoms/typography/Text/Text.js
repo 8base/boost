@@ -75,10 +75,10 @@ const theme = createTheme(name, (colors: *): * => ({
 
     size: {
       xs: {
-        fontSize: '1rem',
+        fontSize: '1.2rem',
       },
       sm: {
-        fontSize: '1.2rem',
+        fontSize: '1.3rem',
       },
       md: {
         fontSize: '1.4rem',

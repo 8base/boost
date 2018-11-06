@@ -9,7 +9,7 @@ import { createStyledTag, createTheme } from '../../../utils';
 type LinkProps = {|
   children?: React$Node,
   color?: string,
-  size?: 'sm' | 'md' | 'lg',
+  size?: 'sm' | 'md' | 'lg' | 'inherit',
   tagName?: string | React$Component<*>,
   text?: string,
   underline?: boolean,
@@ -29,6 +29,9 @@ const theme = createTheme(name, () => ({
       sm: {
         fontSize: '1.2rem',
         lineHeight: '2rem',
+      },
+      inherit: {
+        fontSize: 'inherit',
       },
     },
     color: fp.mapValues(

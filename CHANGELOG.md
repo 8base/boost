@@ -1,3 +1,19 @@
+<a name="0.8.9"></a>
+## [0.8.9](https://github.com/8base/boost/compare/v0.8.8...v0.8.9) (2018-11-06)
+
+
+### Bug Fixes
+
+* **atoms:** change text sizes ([95ffc31](https://github.com/8base/boost/commit/95ffc31))
+* **DateInput:** static time for story ([630f6cc](https://github.com/8base/boost/commit/630f6cc))
+
+
+### Features
+
+* **Icon:** add screens icon ([6c25b98](https://github.com/8base/boost/commit/6c25b98))
+
+
+
 <a name="0.8.8"></a>
 ## [0.8.8](https://github.com/8base/boost/compare/v0.8.7...v0.8.8) (2018-11-02)
 

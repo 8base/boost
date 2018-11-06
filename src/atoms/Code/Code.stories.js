@@ -13,6 +13,7 @@ export default (asStory) => {
         <Code height={ 200 }>{
           `npm i -g 8base
 8base init my-project
+
 npm i -g 8base
 8base init my-project
 npm i -g 8base
@@ -30,7 +31,8 @@ npm i -g 8base
 npm i -g 8base
 8base init my-project
 npm i -g 8base
-8base init my-project`
+8base init my-project
+`
 	     }
         </Code>
       ));

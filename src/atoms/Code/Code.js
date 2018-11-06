@@ -21,7 +21,7 @@ class Code extends PureComponent<CodeProps> {
   }
 
   getLinesCount = (codeText: mixed) => typeof codeText === 'string'
-    ? codeText.split(/\r\n|\r|\n/).length
+    ? codeText.replace(/\n$/, '').split(/\r\n|\r|\n/).length
     : 0;
 
   renderNumbs = () => {

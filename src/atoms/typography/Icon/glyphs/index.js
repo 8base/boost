@@ -29,6 +29,7 @@ import TreeView from './TreeView.svg';
 import Contract from './Contract.svg';
 import Customers from './Customers.svg';
 import House from './House.svg';
+import Screens from './Screens.svg';
 
 export {
   Alert,
@@ -59,5 +60,6 @@ export {
   Contract,
   Customers,
   House,
+  Screens,
 };
 

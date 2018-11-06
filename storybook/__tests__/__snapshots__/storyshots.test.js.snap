@@ -2497,11 +2497,11 @@ exports[`Storyshots ATOMS/Code default 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Code with custom height 1`] = `
-.emotion-54 {
+.emotion-56 {
   margin: 2rem;
 }
 
-.emotion-50 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2514,7 +2514,7 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
   align-items: stretch;
 }
 
-.emotion-42 {
+.emotion-44 {
   height: 100%;
   display: block;
   width: 3rem;
@@ -2522,7 +2522,7 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
   overflow: hidden;
 }
 
-.emotion-46 {
+.emotion-48 {
   overflow: auto;
   padding: 2rem;
   font-family: Courier;
@@ -2532,14 +2532,14 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
   height: 100%;
 }
 
-.emotion-52 {
+.emotion-54 {
   height: 200px;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
   overflow: hidden;
 }
 
-.emotion-44 {
+.emotion-46 {
   height: 200px;
   display: block;
   width: 3rem;
@@ -2549,7 +2549,7 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
   position: relative;
 }
 
-.emotion-40 {
+.emotion-42 {
   height: auto;
   padding: 2rem 0 4rem;
   background-color: #f4f7f9;
@@ -2567,29 +2567,29 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
   text-align: center;
 }
 
-.emotion-48 {
+.emotion-50 {
   overflow: hidden;
   height: 200px;
   width: 100%;
 }
 
 <div
-  className="emotion-54 emotion-55"
+  className="emotion-56 emotion-57"
 >
   <div
-    className="emotion-52 emotion-1"
+    className="emotion-54 emotion-1"
   >
     <div
-      className="emotion-50 emotion-1"
+      className="emotion-52 emotion-1"
     >
       <div
-        className="emotion-44 emotion-1"
+        className="emotion-46 emotion-1"
       >
         <div
-          className="emotion-42 emotion-1"
+          className="emotion-44 emotion-1"
         >
           <div
-            className="emotion-40 emotion-1"
+            className="emotion-42 emotion-1"
           >
             <div
               className="emotion-0 emotion-1"
@@ -2691,19 +2691,25 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
             >
               20
             </div>
+            <div
+              className="emotion-0 emotion-1"
+            >
+              21
+            </div>
           </div>
         </div>
       </div>
       <div
-        className="emotion-48 emotion-1"
+        className="emotion-50 emotion-1"
       >
         <pre
-          className="emotion-46 emotion-1"
+          className="emotion-48 emotion-1"
           insideRef={[Function]}
           onScroll={[Function]}
         >
           npm i -g 8base
 8base init my-project
+
 npm i -g 8base
 8base init my-project
 npm i -g 8base
@@ -2722,6 +2728,7 @@ npm i -g 8base
 8base init my-project
 npm i -g 8base
 8base init my-project
+
         </pre>
       </div>
     </div>

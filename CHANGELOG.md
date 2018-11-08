@@ -1,3 +1,14 @@
+<a name="0.8.12"></a>
+## [0.8.12](https://github.com/8base/boost/compare/v0.8.11...v0.8.12) (2018-11-08)
+
+
+### Bug Fixes
+
+* **Select:** add disabled state ([3033753](https://github.com/8base/boost/commit/3033753))
+* **Select:** autoplacement ([afe2001](https://github.com/8base/boost/commit/afe2001))
+
+
+
 <a name="0.8.11"></a>
 ## [0.8.11](https://github.com/8base/boost/compare/v0.8.10...v0.8.11) (2018-11-06)
 

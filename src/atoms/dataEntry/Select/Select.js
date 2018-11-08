@@ -52,6 +52,7 @@ const Select = ({ loading, disabled, ...props }: SelectProps) => (
     tagName={ ReactSelect }
     styles={ customStyles(props) }
     menuPortalTarget={ document.body }
+    menuPlacement="auto"
   />
 );
 

@@ -12,6 +12,7 @@ type SelectProps = {|
   placeholder?: string,
   value?: Object,
   loading?: boolean,
+  disabled?: boolean,
   hasError?: boolean,
   zIndex?: string | number,
 |};
@@ -42,11 +43,12 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-const Select = ({ loading, ...props }: SelectProps) => (
+const Select = ({ loading, disabled, ...props }: SelectProps) => (
   <SelectTag
     { ...props }
     isClearable={ false }
     isLoading={ loading }
+    isDisabled={ disabled }
     tagName={ ReactSelect }
     styles={ customStyles(props) }
     menuPortalTarget={ document.body }

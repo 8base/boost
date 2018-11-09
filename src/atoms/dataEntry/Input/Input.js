@@ -69,7 +69,7 @@ class Input extends PureComponent<InputProps> {
 
     if (value.toString().length <= maxLength || hasNotMaxLength) {
       if (type === 'number') {
-        onChange && onChange(Number(value) || null, event);
+        onChange && onChange(!value ? value : Number(value), event);
       }
       else {
         onChange && onChange(value, event);

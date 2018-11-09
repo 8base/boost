@@ -1,3 +1,15 @@
+<a name="0.8.13"></a>
+## [0.8.13](https://github.com/8base/boost/compare/v0.8.12...v0.8.13) (2018-11-09)
+
+
+### Bug Fixes
+
+* **Input:** handle forever zero ([fc647ae](https://github.com/8base/boost/commit/fc647ae))
+* **Select:** add ability to pass data attributes ([ce74988](https://github.com/8base/boost/commit/ce74988))
+* **Tag:** add keyboard events ([10a7dc8](https://github.com/8base/boost/commit/10a7dc8))
+
+
+
 <a name="0.8.12"></a>
 ## [0.8.12](https://github.com/8base/boost/compare/v0.8.11...v0.8.12) (2018-11-08)
 

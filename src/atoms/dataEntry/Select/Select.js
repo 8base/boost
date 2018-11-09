@@ -13,6 +13,7 @@ type SelectProps = {|
   value?: Object,
   loading?: boolean,
   disabled?: boolean,
+  multiple?: boolean,
   hasError?: boolean,
   zIndex?: string | number,
 |};
@@ -43,17 +44,22 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-const Select = ({ loading, disabled, ...props }: SelectProps) => (
-  <SelectTag
-    { ...props }
-    isClearable={ false }
-    isLoading={ loading }
-    isDisabled={ disabled }
-    tagName={ ReactSelect }
-    styles={ customStyles(props) }
-    menuPortalTarget={ document.body }
-    menuPlacement="auto"
-  />
+const Select = ({ value, loading, disabled, multiple, options, onChange, placeholder, ...props }: SelectProps) => (
+  <SelectTag { ...props }>
+    <ReactSelect
+      isClearable={ false }
+      isDisabled={ disabled }
+      isLoading={ loading }
+      isMulti={ multiple }
+      menuPlacement="auto"
+      menuPortalTarget={ document.body }
+      onChange={ onChange }
+      options={ options }
+      placeholder={ placeholder }
+      styles={ customStyles(props) }
+      value={ value }
+    />
+  </SelectTag>
 );
 
 export { Select };

@@ -7,7 +7,6 @@ import { TableBodyRow as BodyRow, theme as tableBodyRowTheme } from './TableBody
 import { TableFooter as Footer, theme as tableFooterTheme } from './TableFooter';
 import { TableHeaderCell as HeaderCell, theme as tableHeaderCellTheme } from './TableHeaderCell';
 import { TableBodyCell as BodyCell, theme as tableBodyCellTheme } from './TableBodyCell';
-import { TableAction as Action, theme as tableActionTheme } from './TableAction';
 
 const Table = {
   Plate,
@@ -17,7 +16,6 @@ const Table = {
   Footer,
   HeaderCell,
   BodyCell,
-  Action,
 };
 
 const theme = {
@@ -28,7 +26,6 @@ const theme = {
   ...tableFooterTheme,
   ...tableHeaderCellTheme,
   ...tableBodyCellTheme,
-  ...tableActionTheme,
 };
 
 export {

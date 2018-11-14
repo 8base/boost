@@ -9,6 +9,7 @@ import ChevronDown from './ChevronDown.svg';
 import CloudDatabase from './Cloud-Database.svg';
 import Delete from './Delete.svg';
 import Diagram from './Diagram.svg';
+import DismissData from './Dismiss-Data.svg';
 import Dots from './Dots.svg';
 import EditPencil from './EditPencil.svg';
 import Environment from './Environment.svg';
@@ -43,6 +44,7 @@ export {
   CloudDatabase,
   Delete,
   Diagram,
+  DismissData,
   Dots,
   EditPencil,
   Environment,

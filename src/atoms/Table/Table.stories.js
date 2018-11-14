@@ -215,8 +215,57 @@ const TABLE_DATA = [{
 }];
 
 export default (asStory) => {
-  asStory('ATOMS/Table', module, (story, { Table, Link, Dropdown, Icon, Menu, Loader }) => {
+  asStory('ATOMS/Table', module, (story, { Table, Link, Dropdown, Icon, Menu, Button }) => {
     story
+      .add('table with data', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <Table.Plate>
+            <Table.Header columns="repeat(6, 1fr)">
+              <Table.HeaderCell>Id</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Email</Table.HeaderCell>
+              <Table.HeaderCell>Created At</Table.HeaderCell>
+              <Table.HeaderCell>Updated At</Table.HeaderCell>
+              <Table.HeaderCell />
+            </Table.Header>
+
+            <Table.Body data={ [TABLE_DATA[0], TABLE_DATA[1]] } action="Create Client" onActionClick={ () => alert('Create') }>
+              { (client) => (
+                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+                  <Table.BodyCell>
+                    { client.id }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.email }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.createdAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.updatedAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Dropdown.Plate defaultOpen={ false }>
+                      <Dropdown.Head>
+                        <Icon name="Dots" color="LIGHT_GRAY2" />
+                      </Dropdown.Head>
+                      <Dropdown.Body pin="right">
+                        <Menu.Plate>
+                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
+                        </Menu.Plate>
+                      </Dropdown.Body>
+                    </Dropdown.Plate>
+                  </Table.BodyCell>
+                </Table.BodyRow>
+              ) }
+            </Table.Body>
+          </Table.Plate>
+        </div>
+      ))
+
       .add('table with scroll', () => (
         <div style={{ display: 'flex', height: '600px' }}>
           <Table.Plate>
@@ -229,47 +278,43 @@ export default (asStory) => {
               <Table.HeaderCell />
             </Table.Header>
 
-            <Table.Body>
-              {
-                React.Children.toArray(
-                  TABLE_DATA.map((client) => (
-                    <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
-                      <Table.BodyCell>
-                        { client.id }
-                      </Table.BodyCell>
-                      <Table.BodyCell>
-                        <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
-                      </Table.BodyCell>
-                      <Table.BodyCell>
-                        { client.email }
-                      </Table.BodyCell>
-                      <Table.BodyCell>
-                        { client.createdAt }
-                      </Table.BodyCell>
-                      <Table.BodyCell>
-                        { client.updatedAt }
-                      </Table.BodyCell>
-                      <Table.BodyCell>
-                        <Dropdown.Plate defaultOpen={ false }>
-                          <Dropdown.Head>
-                            <Icon name="Dots" color="LIGHT_GRAY2" />
-                          </Dropdown.Head>
-                          <Dropdown.Body pin="right">
-                            <Menu.Plate>
-                              <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                            </Menu.Plate>
-                          </Dropdown.Body>
-                        </Dropdown.Plate>
-                      </Table.BodyCell>
-                    </Table.BodyRow>
-                  )),
-                )
-              }
-              <Table.Action onClick={ () => alert('Create') }>Create Client</Table.Action>
+            <Table.Body data={ TABLE_DATA } action="Create Client" onActionClick={ () => alert('Create') }>
+              { (client) => (
+                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+                  <Table.BodyCell>
+                    { client.id }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.email }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.createdAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.updatedAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Dropdown.Plate defaultOpen={ false }>
+                      <Dropdown.Head>
+                        <Icon name="Dots" color="LIGHT_GRAY2" />
+                      </Dropdown.Head>
+                      <Dropdown.Body pin="right">
+                        <Menu.Plate>
+                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
+                        </Menu.Plate>
+                      </Dropdown.Body>
+                    </Dropdown.Plate>
+                  </Table.BodyCell>
+                </Table.BodyRow>
+              ) }
             </Table.Body>
           </Table.Plate>
         </div>
       ))
+
       .add('table with loader', () => (
         <div style={{ display: 'flex', height: '600px' }}>
           <Table.Plate>
@@ -281,11 +326,51 @@ export default (asStory) => {
               <Table.HeaderCell>Updated At</Table.HeaderCell>
               <Table.HeaderCell />
             </Table.Header>
+            <Table.Body loading action="Create Client" onActionClick={ () => alert('Create') } />
+          </Table.Plate>
+        </div>
+      ))
 
-            <Table.Body>
-              <Loader stretch />
-              <Table.Action onClick={ () => alert('Create') }>Create Client</Table.Action>
-            </Table.Body>
+      .add('without data', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <Table.Plate stretch>
+            <Table.Header columns="repeat(6, 1fr)">
+              <Table.HeaderCell>Id</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Email</Table.HeaderCell>
+              <Table.HeaderCell>Created At</Table.HeaderCell>
+              <Table.HeaderCell>Updated At</Table.HeaderCell>
+              <Table.HeaderCell />
+            </Table.Header>
+
+            <Table.Body />
+          </Table.Plate>
+        </div>
+      ))
+
+      .add('with custom action button', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <Table.Plate stretch>
+            <Table.Header columns="repeat(6, 1fr)">
+              <Table.HeaderCell>Id</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Email</Table.HeaderCell>
+              <Table.HeaderCell>Created At</Table.HeaderCell>
+              <Table.HeaderCell>Updated At</Table.HeaderCell>
+              <Table.HeaderCell />
+            </Table.Header>
+
+            <Table.Body
+              action={ (
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={ () => alert('Create') }
+                >
+                  Create Client
+                </Button>
+              ) }
+            />
           </Table.Plate>
         </div>
       ));

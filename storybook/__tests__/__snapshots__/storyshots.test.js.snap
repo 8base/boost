@@ -14149,6 +14149,7 @@ exports[`Storyshots ATOMS/Loader with various size 1`] = `
   <svg
     className="emotion-0 emotion-1"
     height="44"
+    role="loader"
     size="sm"
     stretch={false}
     stroke="#eb4235"
@@ -14218,6 +14219,7 @@ exports[`Storyshots ATOMS/Loader with various size 1`] = `
   <svg
     className="emotion-2 emotion-1"
     height="44"
+    role="loader"
     size="md"
     stretch={false}
     stroke="#eb4235"
@@ -14287,6 +14289,7 @@ exports[`Storyshots ATOMS/Loader with various size 1`] = `
   <svg
     className="emotion-4 emotion-1"
     height="44"
+    role="loader"
     size="lg"
     stretch={false}
     stroke="#eb4235"

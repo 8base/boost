@@ -44,10 +44,10 @@ const WrapperTag = createStyledTag(`${name}Wrapper`, () => ({
 
 function Loader(props: LoaderProps) {
   if (props.stretch) {
-    return <WrapperTag><StyledTag { ...props } tagName={ LoaderIcon } /></WrapperTag>;
+    return <WrapperTag role="loader"><StyledTag { ...props } tagName={ LoaderIcon } /></WrapperTag>;
   }
 
-  return <StyledTag { ...props } tagName={ LoaderIcon } />;
+  return <StyledTag { ...props } tagName={ LoaderIcon } role="loader" />;
 }
 
 Loader.defaultProps = {

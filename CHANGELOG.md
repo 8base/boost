@@ -1,3 +1,13 @@
+<a name="0.8.14"></a>
+## [0.8.14](https://github.com/8base/boost/compare/v0.8.13...v0.8.14) (2018-11-16)
+
+
+### Bug Fixes
+
+* **Input:** adds readOnly attribute support ([a71aa85](https://github.com/8base/boost/commit/a71aa85))
+
+
+
 <a name="0.8.13"></a>
 ## [0.8.13](https://github.com/8base/boost/compare/v0.8.12...v0.8.13) (2018-11-09)
 

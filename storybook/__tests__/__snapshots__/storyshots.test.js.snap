@@ -4027,6 +4027,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-6 emotion-7"
 >
@@ -4044,7 +4048,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
             className="emotion-2 emotion-1"
             onClick={[Function]}
             onKeyDown={[Function]}
-            readOnly={false}
           >
             <input
               autoComplete="off"
@@ -4055,6 +4058,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
               onChange={[Function]}
               onFocus={[Function]}
               placeholder={undefined}
+              readOnly={false}
               type="text"
               value="11/02/2018"
             />
@@ -4176,6 +4180,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 .emotion-10::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-10::-ms-clear {
+  display: none;
 }
 
 .emotion-62 {
@@ -4350,6 +4358,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4379,6 +4388,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4408,6 +4418,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4437,6 +4448,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4466,6 +4478,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4562,6 +4575,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
 .emotion-2::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-54 {
@@ -4667,6 +4684,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4696,6 +4714,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4725,6 +4744,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4754,6 +4774,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4783,6 +4804,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
                 onChange={[Function]}
                 onFocus={undefined}
                 placeholder={undefined}
+                readOnly={undefined}
                 type="text"
                 value={undefined}
               />
@@ -4879,6 +4901,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 .emotion-4::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.emotion-4::-ms-clear {
+  display: none;
 }
 
 .emotion-64 {
@@ -5025,6 +5051,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
                   onChange={[Function]}
                   onFocus={undefined}
                   placeholder={undefined}
+                  readOnly={undefined}
                   type="text"
                   value={undefined}
                 />
@@ -5054,6 +5081,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
                   onChange={[Function]}
                   onFocus={undefined}
                   placeholder={undefined}
+                  readOnly={undefined}
                   type="text"
                   value={undefined}
                 />
@@ -5083,6 +5111,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
                   onChange={[Function]}
                   onFocus={undefined}
                   placeholder={undefined}
+                  readOnly={undefined}
                   type="text"
                   value={undefined}
                 />
@@ -5125,6 +5154,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
                   onChange={[Function]}
                   onFocus={undefined}
                   placeholder={undefined}
+                  readOnly={undefined}
                   type="text"
                   value={undefined}
                 />
@@ -5154,6 +5184,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
                   onChange={[Function]}
                   onFocus={undefined}
                   placeholder={undefined}
+                  readOnly={undefined}
                   type="text"
                   value={undefined}
                 />
@@ -5253,6 +5284,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-52 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -5325,6 +5360,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
               onChange={[Function]}
               onFocus={undefined}
               placeholder={undefined}
+              readOnly={undefined}
               type="text"
               value={undefined}
             />
@@ -5354,6 +5390,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
               onChange={[Function]}
               onFocus={undefined}
               placeholder={undefined}
+              readOnly={undefined}
               type="text"
               value={undefined}
             />
@@ -5383,6 +5420,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
               onChange={[Function]}
               onFocus={undefined}
               placeholder={undefined}
+              readOnly={undefined}
               type="text"
               value={undefined}
             />
@@ -5412,6 +5450,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
               onChange={[Function]}
               onFocus={undefined}
               placeholder={undefined}
+              readOnly={undefined}
               type="text"
               value={undefined}
             />
@@ -5441,6 +5480,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
               onChange={[Function]}
               onFocus={undefined}
               placeholder={undefined}
+              readOnly={undefined}
               type="text"
               value={undefined}
             />
@@ -5510,6 +5550,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -5525,6 +5569,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -5590,6 +5635,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -5605,6 +5654,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -5671,6 +5721,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 .emotion-2 {
   display: block;
   position: absolute;
@@ -5698,6 +5752,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -5766,6 +5821,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -5781,6 +5840,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -5846,6 +5906,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 .emotion-2 {
   position: absolute;
   display: -webkit-box;
@@ -5880,6 +5944,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -5950,6 +6015,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -5965,6 +6034,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder="custom placeholder"
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -6030,6 +6100,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 .emotion-2 {
   position: absolute;
   display: -webkit-box;
@@ -6064,6 +6138,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -6154,6 +6229,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-6 emotion-7"
 >
@@ -6169,6 +6248,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -6230,6 +6310,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6254,6 +6338,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -6319,6 +6404,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -6334,6 +6423,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value="value"
     />
@@ -6399,6 +6489,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-4 emotion-5"
 >
@@ -6414,6 +6508,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
       onChange={[Function]}
       onFocus={undefined}
       placeholder={undefined}
+      readOnly={undefined}
       type="text"
       value={undefined}
     />
@@ -6507,6 +6602,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-8 emotion-9"
 >
@@ -6528,6 +6627,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -6630,6 +6730,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-10 emotion-11"
 >
@@ -6656,6 +6760,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -6775,6 +6880,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-4 {
   display: block;
   position: absolute;
@@ -6813,6 +6922,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -6918,6 +7028,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-4 {
   display: block;
   position: absolute;
@@ -6982,6 +7096,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7089,6 +7204,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-0 {
   margin-left: 0;
   font-size: 1.2rem;
@@ -7122,6 +7241,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder="placeholder"
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7198,6 +7318,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7250,6 +7374,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7317,6 +7442,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-0 {
   margin-left: 1rem;
   font-size: 1.4rem;
@@ -7378,6 +7507,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7473,6 +7603,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-0 {
   margin-left: 0;
   font-size: 1.2rem;
@@ -7506,6 +7640,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7601,6 +7736,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-0 {
   margin-left: 0;
   font-size: 1.2rem;
@@ -7634,6 +7773,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value="value"
         />
@@ -7730,6 +7870,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-8 emotion-9"
 >
@@ -7751,6 +7895,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7846,6 +7991,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   margin: 0;
 }
 
+.emotion-0::-ms-clear {
+  display: none;
+}
+
 <div
   className="emotion-8 emotion-9"
 >
@@ -7867,6 +8016,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />
@@ -7962,6 +8112,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   margin: 0;
 }
 
+.emotion-2::-ms-clear {
+  display: none;
+}
+
 .emotion-0 {
   margin-left: 0;
   font-size: 1.2rem;
@@ -7995,6 +8149,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
           onChange={[Function]}
           onFocus={undefined}
           placeholder={undefined}
+          readOnly={undefined}
           type="text"
           value={undefined}
         />

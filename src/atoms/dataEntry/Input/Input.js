@@ -28,6 +28,8 @@ type InputCommonProps = {
   insideRef?:(HTMLInputElement) => void,
   /** kind of the input */
   kind?: 'bordered' | 'underline',
+  /** readonly */
+  readOnly?: boolean,
 };
 
 type InputProps = {
@@ -98,7 +100,9 @@ class Input extends PureComponent<InputProps> {
       name,
       kind,
       disabled,
-      ...rest } = this.props;
+      readOnly,
+      ...rest
+    } = this.props;
     const hasLeftIcon = !!leftIcon;
     const hasRightIcon = !!rightIcon;
 
@@ -119,6 +123,7 @@ class Input extends PureComponent<InputProps> {
       name,
       kind,
       disabled,
+      readOnly,
     };
 
     return (

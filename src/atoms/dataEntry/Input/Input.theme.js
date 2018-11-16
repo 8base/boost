@@ -95,15 +95,27 @@ const getInputStyles = props => ({
   ...getThemeStyle(props, name).input,
   ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
 
-  backgroundColor: PALETTE[props.disabled ? 'LIGHT_GRAY5' : 'WHITE'],
+  backgroundColor: PALETTE[
+    (props.disabled || props.readOnly) ?
+      'LIGHT_GRAY5' :
+      'WHITE'
+  ],
 
   '&:focus': {
-    borderColor: PALETTE[props.disabled ? 'LIGHT_GRAY1' : 'LIGHT_BLUE'],
+    borderColor: PALETTE[
+      (props.disabled || props.readOnly) ?
+        'LIGHT_GRAY1' :
+        'LIGHT_BLUE'
+    ],
   },
 
   '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
     '-webkit-appearance': 'none',
     margin: 0,
+  },
+
+  '&::-ms-clear': {
+    display: 'none',
   },
 });
 

@@ -66,6 +66,7 @@ const theme = createTheme(name, (colors: *, sizes: *): * => ({
 const StyledTag = createStyledTag(name, props => ({
   display: 'flex',
   flexDirection: 'column',
+  maxHeight: '100%',
 
   ...getThemeStyle(props, name).paper,
 }));

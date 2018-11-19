@@ -50,7 +50,12 @@ const OverlayTag = createStyledTag(name, (props): * => ({
   zIndex: props.theme.Z_INDEX.MODAL,
 }));
 
-const ModalTag = createStyledTag(name, {});
+const ModalTag = createStyledTag(name, {
+  height: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});
 
 class Modal extends PureComponent<ModalProps, ModalState> {
   static openedModals: number = 0;

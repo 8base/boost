@@ -9,7 +9,7 @@ import { Button } from '../Button';
 import { createStyledTag, createTheme } from '../../utils';
 
 type TableBodyProps<T: Object> = {
-  children?: (T) => React$Node,
+  children?: (T, index: number) => React$Node,
   data?: T[],
   loading?: boolean,
   action?: React$Node,

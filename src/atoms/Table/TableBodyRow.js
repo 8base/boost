@@ -21,10 +21,6 @@ const TableBodyRowTag = createStyledTag(name, (props: *) => ({
   display: 'grid',
   borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
   height: '6rem',
-
-  '&:last-child': {
-    borderBottom: 'none',
-  },
 }));
 
 function TableBodyRow({
@@ -33,5 +29,7 @@ function TableBodyRow({
   }: TableBodyRowProps) {
   return <TableBodyRowTag { ...rest } tagName={ Grid.Layout }>{ children }</TableBodyRowTag>;
 }
+
+TableBodyRow.displayName = 'TableBodyRow';
 
 export { TableBodyRow, theme };

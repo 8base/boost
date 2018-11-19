@@ -6,6 +6,7 @@ import { createStyledTag, createTheme } from '../../utils';
 
 type TablePlateProps = {
   children?: React$Node,
+  stretch?: boolean,
 };
 
 const name = 'tablePlate';

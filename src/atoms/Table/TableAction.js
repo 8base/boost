@@ -1,10 +1,11 @@
 // @flow
 import React from 'react';
 
-import { Button, type ButtonProps } from '../Button';
 import { createStyledTag, createTheme } from '../../utils';
 
-type TableActionProps = ButtonProps;
+type TableActionProps = {
+  children: React$Node,
+};
 
 const name = 'tableAction';
 
@@ -15,17 +16,17 @@ const theme = createTheme(name, {
   },
 });
 
-const TableActionTag = createStyledTag(name, () => ({
+const TableActionTag = createStyledTag(name, {
   position: 'sticky',
+  bottom: 0,
   display: 'flex',
   justifyContent: 'center',
-  bottom: '2rem',
-  marginTop: '2rem',
-  marginBottom: '2rem',
-}));
+  paddingTop: '2rem',
+  paddingBottom: '2rem',
+});
 
-function TableAction(props: TableActionProps) {
-  return <TableActionTag tagName="div"><Button { ...props } /></TableActionTag>;
+function TableAction({ children }: TableActionProps) {
+  return <TableActionTag tagName="div">{ children }</TableActionTag>;
 }
 
 export { TableAction, theme };

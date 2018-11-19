@@ -17,7 +17,7 @@ import type { PropSizes, PropLayout, PropLayoutStretch } from '../../types';
  * @prop {*} grow set flex-grow: 1
  * @prop {*} growChildren set flex-grow: 1 to all children
  */
-export type FlexLayoutCommonProps = {|
+export type FlexLayoutCommonProps = {
   children: React$Node,
   justifyContent?: PropLayoutStretch,
   alignContent?: PropLayout,
@@ -33,24 +33,24 @@ export type FlexLayoutCommonProps = {|
   stretch?: boolean,
   grow?: boolean,
   growChildren?: boolean,
-  onClick?: ((event: MouseEvent) => void) | (() => void)
-|}
+  onClick?: ((event: MouseEvent) => void) | (() => void),
+  tagName?: string,
+}
 
 type FlexLayoutProps = {
   ...FlexLayoutCommonProps,
   direction?: 'row' | 'column',
 }
 
-const defaultProps = {
-  gap: 'sm',
-};
-
 /** component provides interface to render flex layout */
-const FlexLayout = (props: FlexLayoutProps) => {
-  return <FlexLayoutTag { ...props } tagName="div" />;
+const FlexLayout = ({ tagName, ...rest }: FlexLayoutProps) => {
+  return <FlexLayoutTag { ...rest } tagName={ tagName } />;
 };
 
-FlexLayout.defaultProps = defaultProps;
+FlexLayout.defaultProps = {
+  gap: 'sm',
+  tagName: 'div',
+};
 
 /** component provides interface to render flex row */
 const Row = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="row" />;

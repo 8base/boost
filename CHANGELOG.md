@@ -1,3 +1,13 @@
+<a name="0.8.17"></a>
+## [0.8.17](https://github.com/8base/boost/compare/v0.8.16...v0.8.17) (2018-11-19)
+
+
+### Bug Fixes
+
+* **flow:** fix table body callback ([4ae4a9c](https://github.com/8base/boost/commit/4ae4a9c))
+
+
+
 <a name="0.8.16"></a>
 ## [0.8.16](https://github.com/8base/boost/compare/v0.8.15...v0.8.16) (2018-11-19)
 

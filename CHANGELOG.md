@@ -1,3 +1,13 @@
+<a name="0.8.16"></a>
+## [0.8.16](https://github.com/8base/boost/compare/v0.8.15...v0.8.16) (2018-11-19)
+
+
+### Features
+
+* **table:** add empty table state ([72e3760](https://github.com/8base/boost/commit/72e3760))
+
+
+
 <a name="0.8.15"></a>
 ## [0.8.15](https://github.com/8base/boost/compare/v0.8.14...v0.8.15) (2018-11-19)
 

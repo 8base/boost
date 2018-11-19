@@ -1,3 +1,13 @@
+<a name="0.8.15"></a>
+## [0.8.15](https://github.com/8base/boost/compare/v0.8.14...v0.8.15) (2018-11-19)
+
+
+### Features
+
+* **Loader:** add role ([353f481](https://github.com/8base/boost/commit/353f481))
+
+
+
 <a name="0.8.14"></a>
 ## [0.8.14](https://github.com/8base/boost/compare/v0.8.13...v0.8.14) (2018-11-16)
 

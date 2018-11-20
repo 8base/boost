@@ -14825,6 +14825,153 @@ exports[`Storyshots ATOMS/Scrollable with default modifiers 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/SecondaryNavigation secondary navigation 1`] = `
+.emotion-34 {
+  margin: 2rem;
+}
+
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  background-color: #f4f5f6;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  background-color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.emotion-6:hover {
+  background-color: #FFFFFF;
+}
+
+.emotion-6.active {
+  background-color: #FFFFFF;
+}
+
+.emotion-0 {
+  width: 0.5rem;
+  background-color: inherit;
+}
+
+.active > .emotion-0 {
+  background-color: #1c252e;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 2.0rem;
+  background-color: inherit;
+  opacity: 0.9;
+}
+
+.emotion-2 {
+  line-height: 1.4;
+  margin: 0;
+  color: #323c47;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+<div
+  className="emotion-34 emotion-35"
+>
+  <nav
+    className="emotion-32 emotion-3"
+  >
+    <div
+      className="emotion-6 emotion-3"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <span
+          className="emotion-2 emotion-3"
+        >
+          First item
+        </span>
+      </div>
+    </div>
+    <div
+      className="active emotion-6 emotion-3"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <span
+          className="emotion-2 emotion-3"
+        >
+          Second item
+        </span>
+      </div>
+    </div>
+    <div
+      className="emotion-6 emotion-3"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <span
+          className="emotion-2 emotion-3"
+        >
+          Third item
+        </span>
+      </div>
+    </div>
+    <div
+      className="emotion-6 emotion-3"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <span
+          className="emotion-2 emotion-3"
+        >
+          Fourth item
+        </span>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
 exports[`Storyshots ATOMS/Stars with default modifiers 1`] = `
 .emotion-2 {
   margin: 2rem;
@@ -20342,18 +20489,18 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
   margin: 2rem;
 }
 
-.emotion-0 {
-  color: #FFCB00;
-  line-height: normal;
-  font-size: 24px;
-}
-
 .emotion-4 {
   line-height: 1.4;
   margin: 0;
   color: #323c47;
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+.emotion-0 {
+  color: #FFCB00;
+  line-height: normal;
+  font-size: 24px;
 }
 
 .emotion-8 {

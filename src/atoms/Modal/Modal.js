@@ -53,6 +53,7 @@ const OverlayTag = createStyledTag(name, (props): * => ({
 const ModalTag = createStyledTag(name, {
   height: '100%',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
 });

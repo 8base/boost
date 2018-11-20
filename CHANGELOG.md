@@ -1,3 +1,13 @@
+<a name="0.8.20"></a>
+## [0.8.20](https://github.com/8base/boost/compare/v0.8.19...v0.8.20) (2018-11-20)
+
+
+### Bug Fixes
+
+* **atoms:** fix dialog aligment ([f744042](https://github.com/8base/boost/commit/f744042))
+
+
+
 <a name="0.8.19"></a>
 ## [0.8.19](https://github.com/8base/boost/compare/v0.8.18...v0.8.19) (2018-11-20)
 

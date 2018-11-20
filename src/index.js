@@ -6,6 +6,7 @@ export {
   resetGlobal,
   Z_INDEX,
   DSM_COLORS,
+  COLORS,
 } from './theme';
 export * from './atoms';
 export * from './molecules';

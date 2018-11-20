@@ -1,3 +1,18 @@
+## [0.8.18](https://github.com/8base/boost/compare/v0.8.17...v0.8.18) (2018-11-20)
+
+
+### Bug Fixes
+
+* **atoms:** fix table border ([5f00a45](https://github.com/8base/boost/commit/5f00a45))
+
+
+### Features
+
+* **atoms:** add feature to auto scroll body in the dialog ([3e996ae](https://github.com/8base/boost/commit/3e996ae))
+* **atoms:** add tagName prop to the flex layout ([26b304b](https://github.com/8base/boost/commit/26b304b))
+
+
+
 <a name="0.8.17"></a>
 ## [0.8.17](https://github.com/8base/boost/compare/v0.8.16...v0.8.17) (2018-11-19)
 

@@ -44,12 +44,11 @@ const theme = createTheme(name, {
 });
 
 const StyledTag = createStyledTag(name, {
-  boxSizing: 'border-box',
-  border: '1px solid #E9EFF4',
-  borderRadius: '6px',
-  backgroundColor: '#FFFFFF',
-  boxShadow: '0 4px 8px 0 rgba(0,0,0,0.1)',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
   maxHeight: '90%',
+  flex: '0 1 90%',
 });
 
 function DialogPlate({

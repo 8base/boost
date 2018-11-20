@@ -12,6 +12,7 @@ type DialogPlateProps = {|
   onOpen?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
   padding?: PropSizes,
+  tagName?: string,
 |};
 
 const name = 'dialogPlate';
@@ -48,6 +49,7 @@ const StyledTag = createStyledTag(name, {
   borderRadius: '6px',
   backgroundColor: '#FFFFFF',
   boxShadow: '0 4px 8px 0 rgba(0,0,0,0.1)',
+  maxHeight: '90%',
 });
 
 function DialogPlate({
@@ -59,13 +61,14 @@ function DialogPlate({
   shouldCloseOnOverlayClick,
   size,
   args,
+  tagName,
   ...rest
   }: DialogPlateProps) {
   return (
     <Modal id={ id } isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } args={ args } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
       {
         ({ args, onClose }) => (
-          <StyledTag tagName="div" size={ size }>
+          <StyledTag tagName={ tagName } size={ size }>
             <Card.Plate { ...rest } args={ args } onClose={ onClose }>
               { children }
             </Card.Plate>
@@ -76,6 +79,9 @@ function DialogPlate({
   );
 }
 
-DialogPlate.defaultProps = theme[name].defaults;
+DialogPlate.defaultProps = {
+  ...theme[name].defaults,
+  tagName: 'div',
+};
 
 export { DialogPlate, theme };

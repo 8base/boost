@@ -15,15 +15,17 @@ const name = 'dialogBody';
 const theme = createTheme(name, {
   modifiers: {
     scrollable: {
-      maxHeight: 'calc(60vh - 14rem)',
+      overflow: 'auto',
     },
   },
   defaults: {
-    scrollable: false,
+    scrollable: true,
   },
 });
 
-const DialogBodyTag = createStyledTag(name, {});
+const DialogBodyTag = createStyledTag(name, {
+  flexShrink: 1,
+});
 
 const DialogBody = ({ children, ...rest }: DialogBodyProps) => (
   <DialogBodyTag tagName={ Card.Body } { ...rest }>

@@ -1875,6 +1875,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -1954,6 +1955,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -2033,6 +2035,7 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -2168,6 +2171,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -2234,6 +2238,7 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -2291,6 +2296,7 @@ exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -12104,6 +12110,7 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -14722,6 +14729,7 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
@@ -16461,6 +16469,10 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   height: 6rem;
 }
 
+.emotion-38:last-child {
+  border-bottom: none;
+}
+
 .emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -17136,6 +17148,10 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   display: grid;
   border-bottom: 1px solid #d0d7dd;
   height: 6rem;
+}
+
+.emotion-38:last-child {
+  border-bottom: none;
 }
 
 .emotion-15 {
@@ -20243,6 +20259,7 @@ exports[`Storyshots MOLECULES/Menu with some items 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-height: 100%;
   background: #FFFFFF;
   color: #000000;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);

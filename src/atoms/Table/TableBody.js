@@ -66,12 +66,12 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
     const hasBodyRows = data && data.length > 0;
 
     return (
-      <TableBodyWrapperTag>
+      <TableBodyWrapperTag { ...rest }>
         <AsyncContent loading={ loading } stretch>
           {
             hasBodyRows
               ? (
-                <TableBodyTag { ...rest } tagName={ Grid.Layout }>
+                <TableBodyTag tagName={ Grid.Layout }>
                   { React.Children.toArray(data && children && data.map(children)) }
                 </TableBodyTag>
               )

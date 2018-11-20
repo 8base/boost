@@ -21,6 +21,10 @@ const TableBodyRowTag = createStyledTag(name, (props: *) => ({
   display: 'grid',
   borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
   height: '6rem',
+
+  '&:last-child': {
+    borderBottom: 'none',
+  },
 }));
 
 function TableBodyRow({

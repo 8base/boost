@@ -1,6 +1,7 @@
 // @flow
 import React, { PureComponent } from 'react';
 import { FlexLayout } from '../../FlexLayout';
+import { RadioItem } from './RadioItem';
 import type { PropSizes } from '../../../types';
 
 
@@ -18,6 +19,8 @@ type RadioProps = {
   onChange?: (string | number, SyntheticInputEvent<HTMLInputElement>) => void,
   /** then true when show error styles */
   hasError?: boolean,
+  /** options to define radio items */
+  options?: ({ value: any, label: string }) => void,
 }
 
 class RadioGroup extends PureComponent<RadioProps> {
@@ -38,13 +41,23 @@ class RadioGroup extends PureComponent<RadioProps> {
     return name || `radio-group-${RadioGroup.instanceCounter}`;
   }
 
+  renderChildren = () => {
+    const { options, children } = this.props;
+
+    return !options
+      ? children
+      : options.map(({ value, label }) => (
+        <RadioItem key={ value } label={ label } value={ value } />
+      ));
+  }
+
   render() {
-    const { children, value, direction, gap, onChange, hasError } = this.props;
+    const { children, value, direction, gap, onChange, hasError, ...rest } = this.props;
 
     return (
-      <FlexLayout direction={ direction } gap={ gap }>
+      <FlexLayout { ...rest } direction={ direction } gap={ gap }>
         {
-          React.Children.map(children, child =>
+          React.Children.map(this.renderChildren(), child =>
             React.cloneElement(child, {
               onChange,
               selectedValue: value,

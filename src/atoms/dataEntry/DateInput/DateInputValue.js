@@ -7,7 +7,8 @@ import { Input } from '../Input';
 
 type DateInputValueProps = {|
   onChange: (value: Object) => void,
-  value: string,
+  value: ?string,
+  mask: string,
 |};
 
 const DateInputValue = ({ value, onChange, ...props }: DateInputValueProps) => (

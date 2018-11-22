@@ -1,3 +1,19 @@
+<a name="0.8.21"></a>
+## [0.8.21](https://github.com/8base/boost/compare/v0.8.20...v0.8.21) (2018-11-22)
+
+
+### Bug Fixes
+
+* **atoms:** fix cutting the text in select ([24512e7](https://github.com/8base/boost/commit/24512e7))
+
+
+### Features
+
+* **atoms:** add options feature to render radio items ([75620ae](https://github.com/8base/boost/commit/75620ae))
+* **DateInput:** next ([dd7961b](https://github.com/8base/boost/commit/dd7961b))
+
+
+
 <a name="0.8.20"></a>
 ## [0.8.20](https://github.com/8base/boost/compare/v0.8.19...v0.8.20) (2018-11-20)
 

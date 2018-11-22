@@ -30,6 +30,16 @@ export default (asStory: *) => {
           <Radio.Item label="Radio" color="primary" value={ 3 } />
         </Radio.Group>
       ))
+      .add('with options', () => (
+        <Radio.Group
+          value={ 2 }
+          options={ [
+            { label: 'Radio 1', value: 1 },
+            { label: 'Radio 2', value: 2 },
+            { label: 'Radio 3', value: 3 },
+          ] }
+        />
+      ))
       .add('with row direction', () => (
         <Radio.Group value={ 1 } direction="row">
           <Radio.Item label="Radio" color="primary" value={ 1 } />

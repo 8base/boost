@@ -16,6 +16,8 @@ type RadioGroupFieldProps = {
   input?: InputType,
   /** form meta object */
   meta?: MetaType,
+  /** options to define radio items */
+  options?: ({ value: any, label: string }) => void,
 };
 
 const RadioGroupField = ({

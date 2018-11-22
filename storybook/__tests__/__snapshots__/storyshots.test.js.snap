@@ -9949,6 +9949,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select default 1`] = `
 
 .emotion-9 {
   width: 100%;
+  line-height: normal;
 }
 
 .emotion-8 {
@@ -10240,6 +10241,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select filled 1`] = `
 
 .emotion-9 {
   width: 100%;
+  line-height: normal;
 }
 
 .emotion-8 {
@@ -10534,6 +10536,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Select stretch 1`] = `
 
 .emotion-9 {
   width: 100%;
+  line-height: normal;
 }
 
 .emotion-8 {
@@ -10823,10 +10826,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   margin: 2rem;
 }
 
-.emotion-11 {
-  width: 100%;
-}
-
 .emotion-15 {
   position: relative;
   display: -webkit-inline-box;
@@ -10860,6 +10859,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/SelectField default 1`] = `
   font-size: 1.2rem;
   color: #878c93;
   line-height: 2;
+}
+
+.emotion-11 {
+  width: 100%;
+  line-height: normal;
 }
 
 .emotion-10 {

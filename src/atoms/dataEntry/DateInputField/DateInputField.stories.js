@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('ATOMS/DATA ENTRY/DateInput', module, (story, { DateInput }) => {
-    class DateInputContainer extends React.Component {
+  asStory('ATOMS/DATA ENTRY/DateInputField', module, (story, { DateInputField }) => {
+    class DateInputFieldContainer extends React.Component {
       constructor(props) {
         super(props);
 
@@ -18,16 +18,16 @@ export default (asStory) => {
       render() {
         const { value } = this.state;
 
-        return <DateInput { ...this.props } value={ value } onChange={ this.onChange } />;
+        return <DateInputField { ...this.props } input={{ value, onChange: this.onChange }} />;
       }
     }
 
     story
       .add('default', () => (
         <React.Fragment>
-          <DateInputContainer value={ null } />
-          <DateInputContainer value="2018-11-07" />
-          <DateInputContainer value={ null } withTime />
+          <DateInputFieldContainer label="Date" value={ null } />
+          <DateInputFieldContainer label="Date" value="2018-11-07" />
+          <DateInputFieldContainer label="Datetime" value={ null } withTime />
         </React.Fragment>
       ));
   });

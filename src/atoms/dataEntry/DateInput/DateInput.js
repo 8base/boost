@@ -2,57 +2,140 @@
 
 import React from 'react';
 import DatePicker from 'react-datepicker';
-import moment from 'moment';
 import { injectGlobal } from 'emotion';
-import 'react-datepicker/dist/react-datepicker.css';
+import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-import { createStyledTag, createTheme } from '../../../utils';
 import { DateInputValue } from './DateInputValue';
+import { Dropdown } from '../../Dropdown';
+import * as utils from './DateInput.utils';
 
-injectGlobal(`
-  .react-datepicker-wrapper, .react-datepicker__input-container {
-    display: block;
+injectGlobal`
+  .react-datepicker__time-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-`);
+`;
 
 type DateInputProps = {|
   onChange: (value: ?string) => void,
-  value: string,
+  value: ?string,
+  withTime?: boolean,
+  stretch?: boolean,
 |};
 
-const name = 'dateInput';
+type DateInputState = {|
+  isOpen: boolean,
+  textValue: ?string,
+|};
 
-const theme = createTheme(name, {});
+class DateInput extends React.Component<DateInputProps, DateInputState> {
+  static defaultProps = {
+    stretch: true,
+  };
 
-const DateInputTag = createStyledTag(name, {
-  display: 'flex',
-  width: '100%',
-  '> div': {
-    flex: '1',
-  },
-});
+  constructor(props: DateInputProps) {
+    super(props);
 
-class DateInput extends React.Component<DateInputProps> {
-  onChange = (value: any) => {
-    this.props.onChange(value ? value.format('YYYY-MM-DD') : null);
+    this.state = {
+      textValue: utils.fromISOToViewFormat(props.value, props.withTime),
+      isOpen: false,
+    };
+  }
+
+  componentDidUpdate(prevProps: DateInputProps) {
+    const { value, withTime } = this.props;
+
+    if (value && value !== prevProps.value) {
+      this.setState({
+        textValue: utils.fromISOToViewFormat(value, withTime),
+      });
+    }
+  }
+
+  onChangeText = ({ target: { value }}: Object) => {
+    const { withTime } = this.props;
+
+    this.setState({ textValue: value });
+
+    if (!value) {
+      this.props.onChange(value);
+
+      return;
+    }
+
+    if (value) {
+      const luxonValue = utils.fromViewFormatToLuxon(value, withTime);
+
+      if (luxonValue && luxonValue.isValid) {
+        value = utils.fromLuxonToISO(luxonValue, withTime);
+
+        this.props.onChange(value);
+      }
+    }
+  };
+
+  onChangeDate = (selected: Date) => {
+    const { withTime, value } = this.props;
+
+    const isoValue = utils.fromJSDateToISO(selected, withTime);
+
+    this.props.onChange(isoValue);
+
+    if (!withTime || Math.abs(selected - (value ? new Date(value) : 0)) <= 24 * 60 * 60 * 1000) {
+      this.close();
+    }
   };
 
   collectProps() {
-    const { value } = this.props;
+    const { value, withTime, ...rest } = this.props;
+
+    const dateFormat = withTime ? utils.DATETIME_FORMAT : utils.DATE_FORMAT;
 
     return {
-      selected: value ? moment(value) : null,
-      onChange: this.onChange,
-      // $FlowFixMe
-      customInput: <DateInputValue />,
+      selected: value ? new Date(value) : null,
+      dateFormat,
+      ...rest,
+      showTimeSelect: withTime,
+      onChange: this.onChangeDate,
+      inline: true,
     };
   }
+
+  open = () => {
+    this.setState({ isOpen: true });
+  };
+
+  close = () => {
+    this.setState({ isOpen: false });
+  };
 
   render() {
     const collectedProps = this.collectProps();
 
-    return <DateInputTag><DatePicker { ...collectedProps } /></DateInputTag>;
+    const { value, withTime, stretch, onChange, ...rest } = this.props;
+
+    const { textValue, isOpen } = this.state;
+
+    const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
+
+    return (
+      <Dropdown.Plate
+        isOpen={ isOpen }
+        stretch={ stretch }
+        onCloseDropdown={ this.close }
+        onOpenDropdown={ this.open }
+        { ...rest }
+      >
+        <Dropdown.Head onClick={ this.open }>
+          <DateInputValue mask={ mask } value={ textValue } onChange={ this.onChangeText } />
+        </Dropdown.Head>
+        <Dropdown.Body withPortal preventOverflow>
+          <DatePicker { ...collectedProps } />
+        </Dropdown.Body>
+      </Dropdown.Plate>
+    );
   }
 }
 
-export { DateInput, theme };
+export { DateInput };

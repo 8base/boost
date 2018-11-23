@@ -59,7 +59,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     this.setState({ textValue: value });
 
     if (!value) {
-      this.props.onChange(value);
+      this.props.onChange(null);
 
       return;
     }
@@ -93,7 +93,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     const dateFormat = withTime ? utils.DATETIME_FORMAT : utils.DATE_FORMAT;
 
     return {
-      selected: value ? new Date(value) : null,
+      selected: utils.fromISOtoJSDate(value),
       dateFormat,
       ...rest,
       showTimeSelect: withTime,

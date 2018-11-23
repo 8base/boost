@@ -1,3 +1,14 @@
+<a name="0.8.22"></a>
+## [0.8.22](https://github.com/8base/boost/compare/v0.8.21...v0.8.22) (2018-11-23)
+
+
+### Bug Fixes
+
+* **DateInput:** handle invalid dates ([d5c1508](https://github.com/8base/boost/commit/d5c1508))
+* **Dialog:** update stories ([efc8e22](https://github.com/8base/boost/commit/efc8e22))
+
+
+
 <a name="0.8.21"></a>
 ## [0.8.21](https://github.com/8base/boost/compare/v0.8.20...v0.8.21) (2018-11-22)
 

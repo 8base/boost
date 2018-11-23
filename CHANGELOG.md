@@ -1,3 +1,13 @@
+<a name="0.8.24"></a>
+## [0.8.24](https://github.com/8base/boost/compare/v0.8.23...v0.8.24) (2018-11-23)
+
+
+### Features
+
+* **DateInput:** revert last valid value on blur ([9f6c676](https://github.com/8base/boost/commit/9f6c676))
+
+
+
 <a name="0.8.23"></a>
 ## [0.8.23](https://github.com/8base/boost/compare/v0.8.22...v0.8.23) (2018-11-23)
 

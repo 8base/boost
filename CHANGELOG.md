@@ -1,3 +1,14 @@
+<a name="0.8.23"></a>
+## [0.8.23](https://github.com/8base/boost/compare/v0.8.22...v0.8.23) (2018-11-23)
+
+
+### Bug Fixes
+
+* **DateInput:** fix format to ISO ([ad647ad](https://github.com/8base/boost/commit/ad647ad))
+* **DateInput:** rid of extra render ([97a474b](https://github.com/8base/boost/commit/97a474b))
+
+
+
 <a name="0.8.22"></a>
 ## [0.8.22](https://github.com/8base/boost/compare/v0.8.21...v0.8.22) (2018-11-23)
 

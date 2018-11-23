@@ -75,6 +75,17 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     }
   };
 
+  onBlur = () => {
+    const { withTime } = this.props;
+    const { textValue } = this.state;
+
+    const luxonValue = utils.fromViewFormatToLuxon(textValue, withTime);
+
+    if (luxonValue && !luxonValue.isValid) {
+      this.setState({ textValue: utils.fromISOToViewFormat(this.props.value, withTime) });
+    }
+  }
+
   onChangeDate = (selected: Date) => {
     const { withTime, value } = this.props;
 
@@ -132,7 +143,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
         { ...rest }
       >
         <Dropdown.Head onClick={ this.open }>
-          <DateInputValue mask={ mask } value={ textValue } onChange={ this.onChangeText } />
+          <DateInputValue mask={ mask } value={ textValue } onChange={ this.onChangeText } onBlur={ this.onBlur } />
         </Dropdown.Head>
         <Dropdown.Body withPortal preventOverflow>
           <DatePicker { ...collectedProps } />

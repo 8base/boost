@@ -18,6 +18,8 @@ type SelectFieldProps = {|
   input?: InputType,
   /** form meta object */
   meta?: MetaType,
+  /** custom value component */
+  valueComponent ?: React$Node,
 |};
 
 const name = 'selectField';

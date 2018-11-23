@@ -50,7 +50,13 @@ class Checkbox extends PureComponent<CheckboxProps> {
             <Icon name="Check" size="sm" />
           </CheckboxIconTag>
         </CheckboxSquareTag>
-        <CheckboxTag checked={ checked } onChange={ this.onChange } type="checkbox" tagName="input" />
+        <CheckboxTag
+          disabled={ disabled }
+          checked={ checked }
+          onChange={ this.onChange }
+          type="checkbox"
+          tagName="input"
+        />
         <CheckboxTextTag tagName="div">{ label }</CheckboxTextTag>
       </CheckboxWrapperTag>
     );

@@ -64,11 +64,7 @@ export const fromViewFormatToLuxon = (value: ?string, withTime: ?boolean) => {
 
 export const fromLuxonToISO = (value: ?Object, withTime: ?boolean) => {
   if (value && value.isValid) {
-    value = value.setZone('utc').toISO();
-
-    if (!withTime) {
-      value = value.slice(0, 10);
-    }
+    value = withTime ? value.setZone('utc').toISO() : value.toISODate();
   } else {
     value = null;
   }

@@ -7,6 +7,7 @@ import { Input } from '../Input';
 
 type DateInputValueProps = {|
   onChange: (value: Object) => void,
+  onBlur: () => void,
   value: ?string,
   mask: string,
 |};

@@ -10,7 +10,31 @@ export const DATETIME_FORMAT = 'MM/dd/yyyy, hh:mm a';
 
 export const fromISOToViewFormat = (value: ?string, withTime: ?boolean) => {
   if (value) {
-    value = DateTime.fromISO(value).toFormat(withTime ? DATETIME_FORMAT : DATE_FORMAT);
+    value = DateTime.fromISO(value);
+
+    if (value.isValid) {
+      value = value.toFormat(withTime ? DATETIME_FORMAT : DATE_FORMAT);
+    } else {
+      value = null;
+    }
+  } else {
+    value = null;
+  }
+
+  return value;
+};
+
+export const fromISOtoJSDate = (value: ?string) => {
+  if (value) {
+    value = DateTime.fromISO(value);
+
+    if (value.isValid) {
+      value = value.toJSDate();
+    } else {
+      value = null;
+    }
+  } else {
+    value = null;
   }
 
   return value;
@@ -18,11 +42,11 @@ export const fromISOToViewFormat = (value: ?string, withTime: ?boolean) => {
 
 export const fromJSDateToISO = (value: ?Date, withTime: ?boolean) => {
   if (value) {
-    value = DateTime.fromJSDate(value).toISO();
+    value = DateTime.fromJSDate(value);
 
-    if (!withTime) {
-      value = value.slice(0, 10);
-    }
+    value = fromLuxonToISO(value, withTime);
+  } else {
+    value = null;
   }
 
   return value;
@@ -31,14 +55,16 @@ export const fromJSDateToISO = (value: ?Date, withTime: ?boolean) => {
 export const fromViewFormatToLuxon = (value: ?string, withTime: ?boolean) => {
   if (value) {
     value = DateTime.fromFormat(value, withTime ? DATETIME_FORMAT : DATE_FORMAT);
+  } else {
+    value = null;
   }
 
   return value;
 };
 
 export const fromLuxonToISO = (value: ?Object, withTime: ?boolean) => {
-  if (value) {
-    value = value.toISO();
+  if (value && value.isValid) {
+    value = value.setZone('utc').toISO();
 
     if (!withTime) {
       value = value.slice(0, 10);

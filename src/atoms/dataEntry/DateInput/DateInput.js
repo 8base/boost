@@ -103,7 +103,11 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   }
 
   open = () => {
-    this.setState({ isOpen: true });
+    const { isOpen } = this.state;
+
+    if (!isOpen) {
+      this.setState({ isOpen: true });
+    }
   };
 
   close = () => {

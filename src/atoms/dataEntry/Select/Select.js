@@ -16,6 +16,7 @@ type SelectProps = {|
   multiple?: boolean,
   hasError?: boolean,
   zIndex?: string | number,
+  valueComponent?: React$Node,
 |};
 
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
@@ -44,7 +45,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-const Select = ({ value, loading, disabled, multiple, options, onChange, placeholder, ...props }: SelectProps) => (
+const Select = ({ value, loading, disabled, multiple, options, onChange, placeholder, valueComponent, ...props }: SelectProps) => (
   <SelectTag { ...props }>
     <ReactSelect
       isClearable={ false }
@@ -56,6 +57,7 @@ const Select = ({ value, loading, disabled, multiple, options, onChange, placeho
       onChange={ onChange }
       options={ options }
       placeholder={ placeholder }
+      valueComponent={ valueComponent }
       styles={ customStyles(props) }
       value={ value }
     />

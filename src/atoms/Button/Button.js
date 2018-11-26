@@ -218,7 +218,7 @@ const getSquaredStyle = (props: ButtonProps) => {
   return {};
 };
 
-const StyledTag = createStyledTag(name, props => ({
+const ButtonTag = createStyledTag(name, props => ({
   outline: 'none',
   textAlign: 'center',
   textDecoration: 'none',
@@ -257,15 +257,16 @@ class Button extends Component<ButtonProps> {
     const { text, children, type, onClick, loading, ...rest } = this.props;
 
     return (
-      <StyledTag
+      <ButtonTag
+        { ...rest }
         tagName="button"
         type={ type }
         loading={ loading }
         onClick={ this.onClick }
-        { ...rest }
+        aria-busy={ String(loading) }
       >
         { children || text }
-      </StyledTag>
+      </ButtonTag>
     );
   }
 }

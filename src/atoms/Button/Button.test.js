@@ -6,9 +6,9 @@ import { Button } from './Button';
 describe('<Button />', () => {
   it('should call onClick callback', () => {
     const onClick = jest.fn();
-    const wrapper = shallow(<Button onClick={ onClick } />);
+    const wrapper = mount(<Button onClick={ onClick } />);
 
-    wrapper.simulate('click');
+    wrapper.find('button').simulate('click');
     expect(onClick).toHaveBeenCalled();
   });
 });

@@ -3973,6 +3973,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
     >
       <span
         className="emotion-14 emotion-1"
+        role="alert"
       >
         Required
       </span>
@@ -7350,6 +7351,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
     >
       <span
         className="emotion-10 emotion-1"
+        role="alert"
       >
         Required
       </span>
@@ -7524,6 +7526,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
     >
       <span
         className="emotion-10 emotion-1"
+        role="alert"
       >
         Required
       </span>
@@ -10342,6 +10345,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
     >
       <span
         className="emotion-34 emotion-1"
+        role="alert"
       >
         Required
       </span>
@@ -14838,6 +14842,7 @@ exports[`Storyshots ATOMS/Loader with stretch 1`] = `
 >
   <div
     className="emotion-2 emotion-1"
+    role="loader"
   >
     <svg
       className="emotion-0 emotion-1"
@@ -17671,6 +17676,7 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
       >
         <div
           className="emotion-17 emotion-1"
+          role="loader"
         >
           <svg
             className="emotion-15 emotion-1"

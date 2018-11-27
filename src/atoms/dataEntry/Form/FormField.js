@@ -85,7 +85,7 @@ const FormField = ({
       </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
         <ControlErrorWrapperTag tagName="div">
-          <ControlErrorTag tagName="span">{ error }</ControlErrorTag>
+          <ControlErrorTag role="alert" tagName="span">{ error }</ControlErrorTag>
         </ControlErrorWrapperTag>
       </If>
     </FormFieldTag>

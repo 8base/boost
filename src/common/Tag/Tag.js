@@ -64,6 +64,7 @@ const COLLECTED_PROPS = [
   'options',
   'placeholder',
   'rows',
+  'role',
   'src',
   'style',
   'to',

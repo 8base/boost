@@ -31,7 +31,7 @@ const App = () => {
 import { EightBaseBoostProvider, defaultTheme } from '@8base/boost';
 import merge from 'deepmerge';
 
-/** You can use deepmerge package to merge objects or any other. */
+/** You can use deepmerge package to override properties of the default theme. */
 const customTheme = merge(defaultTheme, {
   /** Change the pallete of the color. */
   COLORS: {

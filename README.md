@@ -29,9 +29,10 @@ const App = () => {
 
 ```js
 import { EightBaseBoostProvider, defaultTheme } from '@8base/boost';
+import merge from 'deepmerge';
 
-/** Use any deep merge to merging default theme with custom changes. */
-const customTheme = deepMerge(defaultTheme, {
+/** You can use deepmerge package to merge objects or any other. */
+const customTheme = merge(defaultTheme, {
   /** Change the pallete of the color. */
   COLORS: {
     PRIMARY: '#FFFFFF'

@@ -8,13 +8,50 @@ Storybook - https://8base.github.io/boost/
 yarn storybook
 ```
 
-## Add commit
-```
-yarn commit
+## Usage
+
+### Basic usage
+
+```js
+import { EightBaseBoostProvider, Button } from '@8base/boost';
+
+const App = () => {
+  return (
+    <EightBaseBoostProvider>
+      ...
+      <Button>Some Text</Button>
+    </EightBaseBoostProvider>
+  )
+}
 ```
 
-## Publish to NPM
-```
-npm version
-yarn push-tags
+### Usage with custom theme
+
+```js
+import { EightBaseBoostProvider, defaultTheme } from '@8base/boost';
+import merge from 'deepmerge';
+
+/** You can use deepmerge package to merge objects or any other. */
+const customTheme = merge(defaultTheme, {
+  /** Change the pallete of the color. */
+  COLORS: {
+    PRIMARY: '#FFFFFF'
+  },
+  /** Change the custom components styles if it needed. */
+  button: {
+    modifiers: {
+      disabled: {
+        backgroundColor: '#000000',
+      }
+    }
+  }
+})
+
+const App = () => {
+  return (
+    <EightBaseBoostProvider theme={ customTheme }>
+      ...
+    </EightBaseBoostProvider>
+  )
+}
 ```

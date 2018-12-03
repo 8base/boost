@@ -64,7 +64,7 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
         <RadioCircleTag tagName="div" hasError={ hasError }>
           <RadioInnerCircleTag tagName="div" color={ color } selected={ checked } disabled={ disabled } />
         </RadioCircleTag>
-        <RadioTag name={ name } tagName="input" type="radio" value={ value } onChange={ this.onChange } />
+        <RadioTag name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
         <If condition={ hasLabel }>
           <RadioTextTag tagName="div">{ label }</RadioTextTag>
         </If>

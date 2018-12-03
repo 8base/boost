@@ -43,6 +43,27 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
     ...style,
     backgroundColor: PALETTE.WHITE,
   }),
+  multiValue: (style) => ({
+    ...style,
+    borderRadius: '13px',
+    padding: '0 7px',
+    color: '#878c93',
+    border: '1px solid #d0d7dd',
+    backgroundColor: '#fff',
+  }),
+  multiValueLabel: (style) => ({
+    ...style,
+    color: 'inherit',
+  }),
+  multiValueRemove: (style) => ({
+    ...style,
+    color: 'inherit',
+    '&:hover': {
+      backgroundColor: 'transparent',
+      color: 'inherit',
+      cursor: 'pointer',
+    },
+  }),
 });
 
 const Select = ({ value, loading, disabled, multiple, options, onChange, placeholder, valueComponent, ...props }: SelectProps) => (

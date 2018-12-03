@@ -1,3 +1,19 @@
+<a name="0.8.27"></a>
+## [0.8.27](https://github.com/8base/boost/compare/v0.8.26...v0.8.27) (2018-12-03)
+
+
+### Bug Fixes
+
+* **atoms:** fix passing the rest in the form fields ([90059b6](https://github.com/8base/boost/commit/90059b6))
+* **atoms:** pass checked attribute to the radio input ([40ddd0f](https://github.com/8base/boost/commit/40ddd0f))
+
+
+### Features
+
+* **atoms:** change styles in the react-select ([5e3c88b](https://github.com/8base/boost/commit/5e3c88b))
+
+
+
 <a name="0.8.26"></a>
 ## [0.8.26](https://github.com/8base/boost/compare/v0.8.25...v0.8.26) (2018-11-27)
 

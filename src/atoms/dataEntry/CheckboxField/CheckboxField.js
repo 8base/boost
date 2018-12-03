@@ -14,6 +14,10 @@ type CheckboxFieldProps = {|
   input?: InputType,
   /** form meta object */
   meta?: MetaType,
+  /** color of the check */
+  color ?: 'primary' | 'secondary',
+  /** show disabled styles  */
+  disabled ?: boolean,
 |};
 
 const CheckboxField = ({
@@ -21,16 +25,16 @@ const CheckboxField = ({
   stretch,
   input = {},
   meta = {},
+  disabled,
+  color,
   ...rest
   }: CheckboxFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
-
   const hasError = formUtils.hasError(meta);
 
   return (
-    <FormField input={ input } meta={ meta }>
+    <FormField { ...rest } input={ input } meta={ meta }>
       <Checkbox
-        { ...rest }
         label={ label }
         name={ name }
         onChange={ onChange }
@@ -38,6 +42,8 @@ const CheckboxField = ({
         onFocus={ onFocus }
         checked={ value }
         hasError={ hasError }
+        disabled={ disabled }
+        color={ color }
       />
     </FormField>
   );

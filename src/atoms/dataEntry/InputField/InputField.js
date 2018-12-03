@@ -22,6 +22,8 @@ type InputFieldProps = {|
   hideErrorIndicator?: boolean,
   /** align of the input value */
   align?: 'center' | 'left' | 'right',
+  /** input placeholder */
+  placeholder?: string,
   /** form input object */
   input?: InputType,
   /** form meta object */
@@ -45,11 +47,14 @@ const InputField = ({
   hideErrorIndicator,
   hideErrorLabel,
   input = {},
+  insideRef,
   label,
   maxLength,
   meta = {},
+  placeholder,
   square,
   stretch,
+  width,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -57,19 +62,29 @@ const InputField = ({
   const hasError = formUtils.hasError(meta);
 
   return (
-    <FormField label={ label } stretch={ stretch } direction={ direction } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
+    <FormField
+      { ...rest }
+      label={ label }
+      stretch={ stretch }
+      direction={ direction }
+      hideErrorLabel={ hideErrorLabel }
+      input={ input }
+      meta={ meta }
+    >
       <Input
-        { ...rest }
         align={ align }
         hasError={ hasError }
         hideErrorIndicator={ hideErrorIndicator }
+        insideRef={ insideRef }
         maxLength={ maxLength }
         name={ name }
+        onBlur={ onBlur }
         onChange={ onChange }
         onFocus={ onFocus }
-        onBlur={ onBlur }
+        placeholder={ placeholder }
         square={ square }
         value={ value }
+        width={ width }
       />
     </FormField>
   );

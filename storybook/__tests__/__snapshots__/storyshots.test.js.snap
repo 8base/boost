@@ -4752,6 +4752,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
       >
         <div
           className="emotion-16 emotion-1"
+          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4782,6 +4783,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
+          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4812,6 +4814,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
+          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4842,6 +4845,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
+          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4872,6 +4876,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
+          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -5078,6 +5083,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
       >
         <div
           className="emotion-8 emotion-1"
+          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5108,6 +5114,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
+          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5138,6 +5145,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
+          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5168,6 +5176,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
+          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5198,6 +5207,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
+          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5445,6 +5455,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
         >
           <div
             className="emotion-10 emotion-1"
+            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5475,6 +5486,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
+            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5505,6 +5517,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
+            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5548,6 +5561,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
         >
           <div
             className="emotion-10 emotion-1"
+            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5578,6 +5592,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
+            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5754,6 +5769,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
     >
       <div
         className="emotion-8 emotion-1"
+        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5784,6 +5800,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
+        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5814,6 +5831,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
+        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5844,6 +5862,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
+        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5874,6 +5893,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
+        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -7026,6 +7046,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 >
   <div
     className="emotion-6 emotion-1"
+    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -7154,6 +7175,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7316,6 +7338,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 >
   <div
     className="emotion-14 emotion-1"
+    type="text"
   >
     <div
       className="emotion-8 emotion-1"
@@ -7491,6 +7514,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 >
   <div
     className="emotion-14 emotion-1"
+    type="text"
   >
     <div
       className="emotion-8 emotion-1"
@@ -7637,6 +7661,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7770,6 +7795,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7903,6 +7929,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8036,6 +8063,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8169,6 +8197,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8296,6 +8325,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 >
   <div
     className="emotion-6 emotion-1"
+    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -8417,6 +8447,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 >
   <div
     className="emotion-6 emotion-1"
+    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -8545,6 +8576,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
+    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8698,11 +8730,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-4"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -8722,11 +8754,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-4"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -8746,11 +8778,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-4"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -8884,11 +8916,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-6"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -8908,11 +8940,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-6"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -8932,11 +8964,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-6"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9070,11 +9102,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-1"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9094,11 +9126,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-1"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9118,11 +9150,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-1"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9272,11 +9304,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with options 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-2"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9296,11 +9328,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with options 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-2"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9320,11 +9352,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with options 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-2"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9458,11 +9490,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-3"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9482,11 +9514,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-3"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9506,11 +9538,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-3"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9601,11 +9633,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with secondary color 1`] = `
       />
     </div>
     <input
+      checked={false}
       className="emotion-4 emotion-1"
       name={undefined}
       onChange={[Function]}
       type="radio"
-      value={1}
     />
     <div
       className="emotion-6 emotion-1"
@@ -9695,11 +9727,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with selected value 1`] = `
       />
     </div>
     <input
+      checked={true}
       className="emotion-4 emotion-1"
       name={undefined}
       onChange={[Function]}
       type="radio"
-      value={1}
     />
     <div
       className="emotion-6 emotion-1"
@@ -9832,11 +9864,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-5"
         onChange={[Function]}
         type="radio"
-        value={1}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9856,11 +9888,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
         />
       </div>
       <input
+        checked={true}
         className="emotion-4 emotion-1"
         name="radio-group-5"
         onChange={[Function]}
         type="radio"
-        value={2}
       />
       <div
         className="emotion-6 emotion-1"
@@ -9880,11 +9912,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
         />
       </div>
       <input
+        checked={false}
         className="emotion-4 emotion-1"
         name="radio-group-5"
         onChange={[Function]}
         type="radio"
-        value={3}
       />
       <div
         className="emotion-6 emotion-1"
@@ -10040,6 +10072,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
       <div
         className="emotion-30 emotion-1"
         name={undefined}
+        options={undefined}
       >
         <label
           className="emotion-8 emotion-1"
@@ -10053,11 +10086,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
             />
           </div>
           <input
+            checked={true}
             className="emotion-4 emotion-1"
             name="radio-group-7"
             onChange={[Function]}
             type="radio"
-            value={1}
           />
           <div
             className="emotion-6 emotion-1"
@@ -10077,11 +10110,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
             />
           </div>
           <input
+            checked={false}
             className="emotion-4 emotion-1"
             name="radio-group-7"
             onChange={[Function]}
             type="radio"
-            value={2}
           />
           <div
             className="emotion-6 emotion-1"
@@ -10101,11 +10134,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
             />
           </div>
           <input
+            checked={false}
             className="emotion-4 emotion-1"
             name="radio-group-7"
             onChange={[Function]}
             type="radio"
-            value={3}
           />
           <div
             className="emotion-6 emotion-1"
@@ -10265,6 +10298,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
       <div
         className="emotion-30 emotion-1"
         name={undefined}
+        options={undefined}
       >
         <label
           className="emotion-8 emotion-1"
@@ -10278,11 +10312,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
             />
           </div>
           <input
+            checked={false}
             className="emotion-4 emotion-1"
             name="radio-group-8"
             onChange={[Function]}
             type="radio"
-            value={1}
           />
           <div
             className="emotion-6 emotion-1"
@@ -10302,11 +10336,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
             />
           </div>
           <input
+            checked={false}
             className="emotion-4 emotion-1"
             name="radio-group-8"
             onChange={[Function]}
             type="radio"
-            value={2}
           />
           <div
             className="emotion-6 emotion-1"
@@ -10326,11 +10360,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
             />
           </div>
           <input
+            checked={false}
             className="emotion-4 emotion-1"
             name="radio-group-8"
             onChange={[Function]}
             type="radio"
-            value={3}
           />
           <div
             className="emotion-6 emotion-1"

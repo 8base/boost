@@ -16,7 +16,7 @@ type CheckboxProps = {
   checked?: boolean,
   /** when error then show error styles */
   hasError?: boolean,
-  /** when error then show disabled styles  */
+  /** show disabled styles  */
   disabled?: boolean,
 
   /** callback to change chcked state */

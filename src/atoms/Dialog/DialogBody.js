@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTheme, createStyledTag } from '../../utils';
+import { createComponentTheme, createStyledTag } from '../../utils';
 import { Card } from '../Card';
 import type { PropSizes } from '../../types';
 
@@ -12,7 +12,7 @@ type DialogBodyProps = {|
 
 const name = 'dialogBody';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     scrollable: {
       overflow: 'auto',

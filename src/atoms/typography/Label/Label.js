@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type LabelProps = {|
   kind?: 'primary' | 'secondary' | 'disabled',
@@ -11,7 +11,7 @@ type LabelProps = {|
 
 const name = 'label';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createComponentTheme(name, (colors) => ({
   modifiers: {
     kind: {
       primary: {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type HeadingProps = {|
   children?: React$Node,
@@ -12,7 +12,7 @@ type HeadingProps = {|
 
 const name = 'heading';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createComponentTheme(name, (colors) => ({
   modifiers: {
     type: {
       h1: {

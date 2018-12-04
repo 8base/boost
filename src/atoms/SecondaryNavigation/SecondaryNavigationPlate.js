@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { GREY_COLORS } from '../../theme/dsmColors';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type SecondaryNavigationPlateProps = {
   children: React$Node,
@@ -11,7 +11,7 @@ type SecondaryNavigationPlateProps = {
 
 const THEME_NAME = 'secondaryNavigationPlate';
 
-export const theme = createTheme(THEME_NAME, {});
+export const theme = createComponentTheme(THEME_NAME, {});
 
 const StyledTag = createStyledTag(THEME_NAME, {
   display: 'flex',

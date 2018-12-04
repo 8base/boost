@@ -5,7 +5,7 @@ import styled from 'react-emotion';
 
 import { NAVIGATION_COLORS } from '../../theme/dsmColors';
 import { COLORS } from '../../theme/colors';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { Text } from '../typography/Text';
 
 type SecondaryNavigationItemProps = {
@@ -14,7 +14,7 @@ type SecondaryNavigationItemProps = {
 
 const THEME_NAME = 'secondaryNavigationItem';
 
-export const theme = createTheme(THEME_NAME, {});
+export const theme = createComponentTheme(THEME_NAME, {});
 
 const StyledTag = createStyledTag(THEME_NAME, {
   display: 'flex',

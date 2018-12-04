@@ -4,7 +4,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 
 import { PALETTE } from '../../../theme';
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import type { PropSizes } from '../../../types';
 
 type TextProps = {|
@@ -30,7 +30,7 @@ type TextProps = {|
 
 const name = 'text';
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createComponentTheme(name, (colors: *): * => ({
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),

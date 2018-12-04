@@ -3,11 +3,11 @@ import React from 'react';
 
 import { Icon } from '../typography/Icon';
 import { Column } from '../FlexLayout';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'tableNoData';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

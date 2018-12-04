@@ -5,10 +5,10 @@ import fp from 'lodash/fp';
 import { Tag } from '../common';
 
 const getThemeModifiers = (themeName: string, props: *) =>
-  fp.getOr({}, ['theme', themeName, 'modifiers'], props);
+  fp.getOr({}, ['theme', 'components', themeName, 'modifiers'], props);
 
 const getModifierValue = (themeName: string, modifierName: string, props: Object) => {
-  const defaultModifiers = props.theme[themeName].defaults || {};
+  const defaultModifiers = props.theme.components[themeName].defaults || {};
 
   return props[modifierName] || defaultModifiers[modifierName];
 };

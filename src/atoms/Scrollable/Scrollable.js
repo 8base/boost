@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type ScrollableProps = {|
   children: React$Node,
@@ -9,7 +9,7 @@ type ScrollableProps = {|
 
 const name = 'scrollable';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

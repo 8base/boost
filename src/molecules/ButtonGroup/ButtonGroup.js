@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle } from '../../utils';
 
 type ButtonGroupProps = {|
   children: React$Node,
@@ -10,7 +10,7 @@ type ButtonGroupProps = {|
 
 const name = 'buttonGroup';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
 
   buttonGroup: {
     '& > *': {

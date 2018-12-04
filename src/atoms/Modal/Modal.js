@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { Portal } from 'react-portal';
 import { injectGlobal } from 'emotion';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { withModalState } from './withModalState';
 
 type ModalProps = {
@@ -30,7 +30,7 @@ injectGlobal`
 
 const name = 'modal';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

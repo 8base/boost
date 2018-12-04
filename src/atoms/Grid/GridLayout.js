@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type GridLayoutProps = {|
   children?: React$Node,
@@ -25,7 +25,7 @@ type GridLayoutProps = {|
 
 const name = 'gridLayout';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     gap: {
       xs: {

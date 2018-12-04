@@ -1,10 +1,9 @@
 // @flow
-import { PALETTE } from '../../../theme';
-import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle, getThemeStyleByCond, getThemeColors } from '../../../utils';
 
 const name = 'input';
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createComponentTheme(name, (colors: *): * => ({
   input: {
     color: colors.PRIMARY_TEXT_COLOR,
     fontSize: '1.4rem',
@@ -14,7 +13,7 @@ const theme = createTheme(name, (colors: *): * => ({
     transition: 'all .15s ease-in-out',
 
     '&::placeholder': {
-      color: colors.LIGHT_GRAY1,
+      color: colors.PRIMARY,
     },
   },
 
@@ -95,18 +94,14 @@ const getInputStyles = props => ({
   ...getThemeStyle(props, name).input,
   ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
 
-  backgroundColor: PALETTE[
-    (props.disabled || props.readOnly) ?
-      'LIGHT_GRAY5' :
-      'WHITE'
-  ],
+  backgroundColor: (props.disabled || props.readOnly)
+    ? getThemeColors(props).LIGHT_GRAY5
+    : getThemeColors(props).WHITE,
 
   '&:focus': {
-    borderColor: PALETTE[
-      (props.disabled || props.readOnly) ?
-        'LIGHT_GRAY1' :
-        'LIGHT_BLUE'
-    ],
+    borderColor: (props.disabled || props.readOnly)
+      ? getThemeColors(props).PRIMARY_BORDER_COLOR
+      : getThemeColors(props).PRIMARY,
   },
 
   '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { Card } from '../Card';
 import { Text } from '../typography/Text';
 import type { PropSizes } from '../../types';
@@ -13,7 +13,7 @@ type DialogHeaderProps = {|
 
 const name = 'dialogHeader';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

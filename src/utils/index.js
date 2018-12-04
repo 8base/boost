@@ -1,5 +1,5 @@
 // @flow
 
 export { createStyledTag } from './createStyledTag';
-export { createTheme } from './createTheme';
+export { createComponentTheme } from './createComponentTheme';
 export * from './themeSelectors';

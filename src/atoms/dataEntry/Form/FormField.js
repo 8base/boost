@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import * as formUtils from '../../../utils/forms';
 import type { MetaType } from '../formTypes';
 
@@ -17,7 +17,7 @@ type FormFieldProps = {
 
 const name = 'formField';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {},
   defaults: {},
 });

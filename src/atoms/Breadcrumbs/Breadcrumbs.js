@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-key */
 import React, { Fragment } from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import type { BreadcrumbsRoutes, BreadcrumbsMatchPath } from './Breadcrumbs.types';
 import { getBreadcrumbs } from './Breadcrumbs.utils';
 import { BreadcrumbsItem } from './BreadcrumbsItem';
@@ -21,7 +21,7 @@ type BreadcrumbsProps = {|
 
 const name = 'breadcrumbs';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

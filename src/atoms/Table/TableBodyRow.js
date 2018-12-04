@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { Grid } from '../Grid';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableBodyRowProps = {
   children?: React$Node,
@@ -10,7 +10,7 @@ type TableBodyRowProps = {
 
 const name = 'tableBodyRow';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

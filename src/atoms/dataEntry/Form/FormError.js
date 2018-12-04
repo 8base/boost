@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme, getThemeStyle } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle } from '../../../utils';
 import { Row } from '../../FlexLayout/FlexLayout';
 import { Text } from '../../typography/Text';
 import { Icon } from '../../typography/Icon';
@@ -16,7 +16,7 @@ type FormErrorProps = {
 
 const name = 'formError';
 
-const theme = createTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
   errorPlate: {
     border: `1px solid ${colors.DANGER}`,
     borderRadius: sizes.MAIN_BORDER_RADIUS,

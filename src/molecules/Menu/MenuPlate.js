@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { Paper } from '../../atoms/';
 
 type MenuPlateProps = {|
@@ -9,7 +9,7 @@ type MenuPlateProps = {|
 
 const NAME = 'menuPlate';
 
-const theme = createTheme(NAME, {});
+const theme = createComponentTheme(NAME, {});
 
 const StyledTag = createStyledTag(NAME, () => ({
   display: 'flex',

@@ -1,7 +1,7 @@
 import React from 'react';
 import fp from 'lodash/fp';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { PALETTE } from '../../theme';
 
 type NavigationPlateProps = {|
@@ -11,7 +11,7 @@ type NavigationPlateProps = {|
 
 const name = 'navigationPlate';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,

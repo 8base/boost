@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { GREY_COLORS } from '../../theme/dsmColors';
 
 type MenuItemProps = {|
@@ -9,7 +9,7 @@ type MenuItemProps = {|
 
 const NAME = 'menuItem';
 
-const theme = createTheme(NAME, {});
+const theme = createComponentTheme(NAME, {});
 
 const StyledTag = createStyledTag(NAME, () => ({
   color: GREY_COLORS.DSM_DARK_GREY_2,

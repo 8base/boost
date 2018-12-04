@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type AvatarProps = {|
   src?: string,
@@ -13,7 +13,7 @@ type AvatarProps = {|
 
 const name = 'avatar';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       xs: {

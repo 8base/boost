@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 import { keyframes } from 'react-emotion';
-import { createStyledTag, createTheme, getThemeStyle, getThemeColors } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } from '../../utils';
 
 export type ButtonProps = {
   /** callback to handle click */
@@ -55,7 +55,7 @@ const spinner = keyframes`
   to   { transform: rotate(360deg) }
 `;
 
-const theme = createTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
   button: {
     cursor: 'pointer',
     fontSize: '1.4rem',

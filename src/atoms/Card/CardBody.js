@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { offsetModifier } from './common';
 import type { PropSizes } from '../../types';
 
@@ -14,7 +14,7 @@ type CardBodyProps = {|
 
 const name = 'cardBody';
 
-const cardBodyTheme = createTheme(name, {
+const cardBodyTheme = createComponentTheme(name, {
   modifiers: {
     stretch: {
       display: 'flex',

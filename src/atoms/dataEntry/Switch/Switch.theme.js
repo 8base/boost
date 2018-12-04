@@ -1,10 +1,10 @@
 // @flow
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'Switch';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {},
   defaults: {},
 });

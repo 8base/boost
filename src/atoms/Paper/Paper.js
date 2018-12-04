@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle } from '../../utils';
 import type { PropSizes } from '../../types';
 
 type PaperProps = {
@@ -19,7 +19,7 @@ type PaperProps = {
 
 const name = 'paper';
 
-const theme = createTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
   paper: {
     background: colors.WHITE,
     color: colors.BLACK,

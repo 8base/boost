@@ -1,10 +1,10 @@
 // @flow
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'code';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
 });
 
 const CodeWrapperTag = createStyledTag(name, (props) => ({

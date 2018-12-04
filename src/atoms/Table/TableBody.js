@@ -6,7 +6,7 @@ import { TableNoData } from './TableNoData';
 import { TableAction } from './TableAction';
 import { Grid } from '../Grid';
 import { Button } from '../Button';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableBodyProps<T: Object> = {
   children?: (T, index: number) => React$Node,
@@ -18,7 +18,7 @@ type TableBodyProps<T: Object> = {
 
 const name = 'tableBody';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { createStyledTag, createTheme, getThemeStyle } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle } from '../../utils';
 import { offsetModifier } from './common';
 import type { PropSizes } from '../../types';
 
@@ -11,7 +11,7 @@ type CardFooterProps = {|
 
 const name = 'cardFooter';
 
-const cardFooterTheme = createTheme(name, (colors: *): * => ({
+const cardFooterTheme = createComponentTheme(name, (colors: *): * => ({
   cardFooter: {
     borderTop: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
     flexShrink: 0,

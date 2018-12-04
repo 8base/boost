@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type GridBoxProps = {|
   children?: React$Node,
@@ -22,7 +22,7 @@ type GridBoxProps = {|
 
 const name = 'gridBox';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     direction: {
       column: {

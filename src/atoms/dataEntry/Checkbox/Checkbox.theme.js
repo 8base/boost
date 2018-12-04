@@ -1,10 +1,10 @@
 // @flow
 
-import { createStyledTag, createTheme, getThemeColors } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeColors } from '../../../utils';
 
 const name = 'checkbox';
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createComponentTheme(name, (colors: *): * => ({
   modifiers: {
     hasError: {
       borderColor: 'red',

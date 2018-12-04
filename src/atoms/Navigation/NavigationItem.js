@@ -3,7 +3,7 @@ import color from 'color';
 import fp from 'lodash/fp';
 
 import { Icon } from '../typography/Icon';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { PALETTE } from '../../theme';
 
 type NavigationItemProps = {|
@@ -15,7 +15,7 @@ type NavigationItemProps = {|
 
 const name = 'navigationItem';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,

@@ -35,7 +35,7 @@ import merge from 'deepmerge';
 const customTheme = merge(defaultTheme, {
   /** Change the pallete of the color. */
   COLORS: {
-    PRIMARY: '#FFFFFF'
+    PRIMARY_BUTTON_BACKGROUND_COLOR: '#FFFFFF'
   },
   /** Change the custom components styles if it needed. */
   button: {

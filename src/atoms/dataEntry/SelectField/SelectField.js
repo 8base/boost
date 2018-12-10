@@ -33,9 +33,13 @@ const theme = createTheme(name, {
 
 class SelectField extends React.Component<SelectFieldProps> {
   onChange = (selectedOption) => {
-    const value = Array.isArray(selectedOption)
-      ? selectedOption.map(({ value }) => value)
-      : (selectedOption.value || null);
+    let value = null;
+
+    if (Array.isArray(selectedOption)) {
+      value = selectedOption.map(({ value }) => value);
+    } else if (selectedOption) {
+      ({ value } = selectedOption);
+    }
 
     this.props.input.onChange(value);
   };

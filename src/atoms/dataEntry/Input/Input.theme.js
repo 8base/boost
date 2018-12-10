@@ -1,19 +1,19 @@
 // @flow
-import { createStyledTag, createComponentTheme, getThemeStyle, getThemeStyleByCond, getThemeColors } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } from '../../../utils';
 
 const name = 'input';
 
-const theme = createComponentTheme(name, (colors: *): * => ({
-  input: {
+const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
+  root: {
     color: colors.PRIMARY_TEXT_COLOR,
-    fontSize: '1.4rem',
+    fontSize: sizes.MAIN_FONT_SIZE,
     fontWeight: 400,
-    height: '4rem',
+    height: sizes.INPUT_HEIGHT,
     lineHeight: 'normal',
     transition: 'all .15s ease-in-out',
 
     '&::placeholder': {
-      color: colors.PRIMARY,
+      color: colors.PLACEHOLDER_COLOR,
     },
   },
 
@@ -33,20 +33,9 @@ const theme = createComponentTheme(name, (colors: *): * => ({
         borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
       },
     },
-  },
-
-  inputError: {
-    borderColor: `${colors.DANGER} !important`,
-  },
-
-  inputIndicator: {
-    right: '1rem',
-    top: '50%',
-    marginTop: '-.3rem',
-    width: '.6rem',
-    height: '.6rem',
-    backgroundColor: colors.DANGER,
-    borderRadius: '50%',
+    hasError: {
+      borderColor: `${colors.DANGER} !important`,
+    },
   },
 
   defaults: {
@@ -63,7 +52,13 @@ const InputWrapperTag = createStyledTag(`${name}Wrapper`, props => ({
 const InputIndicatorTag = createStyledTag(`${name}Indicator`, props => ({
   display: props.hasRightIcon ? 'none' : 'block',
   position: 'absolute',
-  ...getThemeStyle(props, name).inputIndicator,
+  right: '1rem',
+  top: '50%',
+  marginTop: '-.3rem',
+  width: '.6rem',
+  height: '.6rem',
+  backgroundColor: getThemeColors(props).DANGER,
+  borderRadius: '50%',
 }));
 
 const iconsStyles = {
@@ -92,7 +87,6 @@ const getInputStyles = props => ({
   paddingRight: props.hasRightIcon ? '5rem' : '2rem',
 
   ...getThemeStyle(props, name).input,
-  ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
 
   backgroundColor: (props.disabled || props.readOnly)
     ? getThemeColors(props).LIGHT_GRAY5

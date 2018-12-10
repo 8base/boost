@@ -1,3 +1,5 @@
+//@flow
+
 import React from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../../utils';
@@ -11,7 +13,13 @@ type ParagraphProps = {|
 
 const name = 'paragraph';
 
-const theme = createComponentTheme(name, (colors) => ({
+const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+  root: {
+    fontWeight: 400,
+    fontSize: sizes.MAIN_FONT_SIZE,
+    lineHeight: 2,
+    margin: 0,
+  },
   modifiers: {
     kind: {
       primary: {
@@ -42,13 +50,7 @@ const theme = createComponentTheme(name, (colors) => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  fontFamily: 'Poppins',
-  fontWeight: 400,
-  fontSize: '14px',
-  lineHeight: '28px',
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Paragraph({
   text,

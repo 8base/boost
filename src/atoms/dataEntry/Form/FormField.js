@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeSizes } from '../../../utils';
 import * as formUtils from '../../../utils/forms';
 import type { MetaType } from '../formTypes';
 
@@ -28,7 +28,7 @@ const FormFieldTag = createStyledTag(name, props => ({
   width: props.stretch ? '100%' : 'auto',
 }));
 
-const FormFieldDirectionTag = createStyledTag(name, props => ({
+const FormFieldDirectionTag = createStyledTag(`${name}Direction`, props => ({
   display: 'inline-flex',
   flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
   alignItems: props.direction === 'row' ? 'center' : 'flex-start',
@@ -36,7 +36,7 @@ const FormFieldDirectionTag = createStyledTag(name, props => ({
   width: props.stretch ? '100%' : 'auto',
 }));
 
-const ControlErrorWrapperTag = createStyledTag(name, {
+const ControlErrorWrapperTag = createStyledTag(`${name}ErrorWrapper`, {
   display: 'block',
   position: 'absolute',
   bottom: 0,
@@ -44,7 +44,7 @@ const ControlErrorWrapperTag = createStyledTag(name, {
   lineHeight: 1,
 });
 
-export const ControlErrorTag = createStyledTag(name, props => ({
+export const ControlErrorTag = createStyledTag(`${name}Error`, props => ({
   fontSize: '1rem',
   color: props.theme.COLORS.DANGER,
   lineHeight: 1,
@@ -52,9 +52,11 @@ export const ControlErrorTag = createStyledTag(name, props => ({
   top: '-2px',
 }));
 
-const ControlLabelTag = createStyledTag(name, props => ({
+const ControlLabelTag = createStyledTag(`${name}Label`, props => ({
   marginLeft: props.direction === 'row' ? '1rem' : 0,
-  fontSize: props.direction === 'row' ? '1.4rem' : '1.2rem',
+  fontSize: props.direction === 'row'
+    ? getThemeSizes(props).MAIN_FONT_SIZE
+    : getThemeSizes(props).SMALL_FONT_SIZE,
   color: props.theme.COLORS.SECONDARY_TEXT_COLOR,
   lineHeight: 2,
 }));

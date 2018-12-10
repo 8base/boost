@@ -10,6 +10,10 @@ type TableActionProps = {
 const name = 'tableAction';
 
 const theme = createComponentTheme(name, {
+  root: {
+    paddingTop: '2rem',
+    paddingBottom: '2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -21,8 +25,6 @@ const TableActionTag = createStyledTag(name, {
   bottom: 0,
   display: 'flex',
   justifyContent: 'center',
-  paddingTop: '2rem',
-  paddingBottom: '2rem',
 });
 
 function TableAction({ children }: TableActionProps) {

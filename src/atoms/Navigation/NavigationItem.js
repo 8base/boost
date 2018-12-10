@@ -25,7 +25,7 @@ const theme = createComponentTheme(name, {
 });
 
 const StyledTag = createStyledTag(name, (props) => ({
-  color: props.theme.COLORS.DARK_PRIMARY_TEXT_COLOR,
+  color: props.theme.COLORS.LIGHT_PRIMARY_TEXT_COLOR,
   cursor: 'pointer',
   position: 'relative',
   textDecoration: 'none',
@@ -45,14 +45,14 @@ const NavigationItemIcon = createStyledTag(`${name}Icon`, {
   alignItems: 'center',
 });
 
-const NavigationItemLabel = createStyledTag(`${name}Label`, {
-  color: '#fff',
+const NavigationItemLabel = createStyledTag(`${name}Label`, ({ theme }) => ({
+  color: theme.COLORS.LIGHT_PRIMARY_TEXT_COLOR,
   display: 'none',
   alignItems: 'center',
   textTransform: 'uppercase',
   fontWeight: 600,
   paddingRight: '2rem',
-});
+}));
 
 const NavigationItem = ({ icon, label, ...rest }: NavigationItemProps) => (
   <StyledTag { ...rest }>

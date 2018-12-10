@@ -6,6 +6,10 @@ import type { PropSizes } from '../../types';
 const name = 'dropdownBody';
 
 const theme = createComponentTheme(name, {
+  root: {
+    borderRadius: '.25rem',
+  },
+
   modifiers: {
     stretch: {
       width: '100%',
@@ -51,9 +55,7 @@ const offsetSizes: { [PropSizes]: string } = {
   lg: '0, 15px',
 };
 
-const DropdownBodyTag = createStyledTag(name, {
-  borderRadius: '.25rem',
-});
+const DropdownBodyTag = createStyledTag(name, {});
 
 const defaultTheme = theme[name].defaults;
 

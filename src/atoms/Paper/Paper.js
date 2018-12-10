@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createComponentTheme, getThemeStyle } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import type { PropSizes } from '../../types';
 
 type PaperProps = {
@@ -20,7 +20,7 @@ type PaperProps = {
 const name = 'paper';
 
 const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
-  paper: {
+  root: {
     background: colors.WHITE,
     color: colors.BLACK,
     boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
@@ -63,13 +63,11 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, props => ({
+const StyledTag = createStyledTag(name, {
   display: 'flex',
   flexDirection: 'column',
   maxHeight: '100%',
-
-  ...getThemeStyle(props, name).paper,
-}));
+});
 
 function Paper({
   children,

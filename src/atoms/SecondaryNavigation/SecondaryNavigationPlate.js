@@ -9,17 +9,19 @@ type SecondaryNavigationPlateProps = {
   children: React$Node,
 };
 
-const THEME_NAME = 'secondaryNavigationPlate';
+const name = 'secondaryNavigationPlate';
 
-export const theme = createComponentTheme(THEME_NAME, {});
+export const theme = createComponentTheme(name, {
+  root: {
+    backgroundColor: GREY_COLORS.DSM_LIGHT_GREY_3,
+  },
+});
 
-const StyledTag = createStyledTag(THEME_NAME, {
+const StyledTag = createStyledTag(name, {
   display: 'flex',
   flexDirection: 'column',
   height: '100%',
   width: 'auto',
-
-  backgroundColor: GREY_COLORS.DSM_LIGHT_GREY_3,
 });
 
 export const SecondaryNavigationPlate = ({ children, ...rest }: SecondaryNavigationPlateProps) => (

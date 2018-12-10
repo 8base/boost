@@ -18,7 +18,7 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const TablePlateTag = createStyledTag(name, () => ({}));
+const TablePlateTag = createStyledTag(name);
 
 function TablePlate({
   children,

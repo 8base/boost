@@ -40,7 +40,7 @@ const Breadcrumbs = ({ itemTagName, pathname, routes, matchPath, ...rest }: Brea
           breadcrumbs.map((item, index) => (
             <Fragment>
               <BreadcrumbsItem to={ item.originalPath } { ...{ ...rest, ...item, tagName: itemTagName } } />
-              { index !== breadcrumbs.length - 1 && <BreadcrumbsDivider>></BreadcrumbsDivider> }
+              { index !== breadcrumbs.length - 1 && <BreadcrumbsDividerTag tagName="span">></BreadcrumbsDividerTag> }
             </Fragment>
           )),
         )

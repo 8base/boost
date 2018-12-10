@@ -7,17 +7,19 @@ type StarsProps = {|
 
 const name = 'stars';
 
-const theme = createComponentTheme(name, {
+const theme = createComponentTheme(name, (colors: *) => ({
+  root: {
+    color: colors.YELLOW,
+    fontSize: '24px',
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
 const StyledTag = createStyledTag(name, {
-  color: '#FFCB00',
   lineHeight: 'normal',
-  fontSize: '24px',
 });
 
 function Stars(props: StarsProps) {

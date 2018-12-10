@@ -9,21 +9,23 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const theme = createComponentTheme(name, {
+const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+  root: {
+    padding: '0 2rem',
+    fontSize: sizes.SMALL_FONT_SIZE,
+    textTransform: 'uppercase',
+    fontWeight: 700,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const TableHeaderCellTag = createStyledTag(name, () => ({
+const TableHeaderCellTag = createStyledTag(name, {
   display: 'flex',
   alignItems: 'center',
-  padding: '0 2rem',
-  fontSize: '1.2rem',
-  textTransform: 'uppercase',
-  fontWeight: 700,
-}));
+});
 
 function TableHeaderCell({
   children,

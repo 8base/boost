@@ -11,7 +11,13 @@ type LabelProps = {|
 
 const name = 'label';
 
-const theme = createComponentTheme(name, (colors) => ({
+const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+  root: {
+    fontWeight: 400,
+    fontSize: sizes.SMALL_FONT_SIZE,
+    lineHeight: 2,
+    margin: 0,
+  },
   modifiers: {
     kind: {
       primary: {
@@ -28,12 +34,7 @@ const theme = createComponentTheme(name, (colors) => ({
   defaults: { },
 }));
 
-const StyledTag = createStyledTag(name, {
-  fontWeight: 400,
-  fontSize: '1.2rem',
-  lineHeight: 2,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Label({
   text,

@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 
-import { COLORS } from '../../theme';
 import { createStyledTag, createComponentTheme } from '../../utils';
 import { offsetModifier } from './common';
 import type { PropSizes } from '../../types';
@@ -15,7 +14,12 @@ type CardSectionProps = {|
 
 const name = 'cardSection';
 
-const cardSectionTheme = createComponentTheme(name, {
+const cardSectionTheme = createComponentTheme(name, (colors: *) => ({
+  root: {
+    '&:not(:last-child)': {
+      borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    },
+  },
   modifiers: {
     hoverable: {
       cursor: 'pointer',
@@ -30,13 +34,9 @@ const cardSectionTheme = createComponentTheme(name, {
     },
     ...offsetModifier,
   },
-});
+}));
 
-const CardSectionTag = createStyledTag(name, {
-  '&:not(:last-child)': {
-    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
-  },
-});
+const CardSectionTag = createStyledTag(name, {});
 
 const CardSection = ({ children, ...rest }: CardSectionProps) => (
   <CardSectionTag { ...rest } tagName="div">

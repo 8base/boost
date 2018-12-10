@@ -11,6 +11,9 @@ type TableFooterProps = {
 const name = 'tableFooter';
 
 const theme = createComponentTheme(name, {
+  root: {
+    padding: '2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -19,7 +22,6 @@ const theme = createComponentTheme(name, {
 
 const TableFooterTag = createStyledTag(name, () => ({
   display: 'grid',
-  padding: '2rem',
 }));
 
 function TableFooter({

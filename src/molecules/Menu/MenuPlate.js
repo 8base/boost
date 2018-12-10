@@ -7,16 +7,19 @@ type MenuPlateProps = {|
   children?: React$Node,
 |};
 
-const NAME = 'menuPlate';
+const name = 'menuPlate';
 
-const theme = createComponentTheme(NAME, {});
+const theme = createComponentTheme(name, {
+  root: {
+    paddingTop: '.8rem',
+    paddingBottom: '.8rem',
+  },
+});
 
-const StyledTag = createStyledTag(NAME, () => ({
+const StyledTag = createStyledTag(name, () => ({
   display: 'flex',
   flexDirection: 'column',
   boxSizing: 'border-box',
-  paddingTop: '.8rem',
-  paddingBottom: '.8rem',
   overflow: 'hidden',
 }));
 

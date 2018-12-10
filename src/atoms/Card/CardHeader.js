@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import { createStyledTag, createComponentTheme, getThemeStyle } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { offsetModifier } from './common';
 import type { PropSizes } from '../../types';
 
@@ -12,21 +12,20 @@ type CardHeaderProps = {|
 const name = 'cardHeader';
 
 const cardHeaderTheme = createComponentTheme(name, (colors: *): * => ({
-  cardHeader: {
+  root: {
     borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
-    display: 'flex',
-    alignItems: 'center',
-    position: 'relative',
-    flexShrink: 0,
   },
   modifiers: {
     ...offsetModifier,
   },
 }));
 
-const CardHeaderTag = createStyledTag(name, props => ({
-  ...getThemeStyle(props, name).cardHeader,
-}));
+const CardHeaderTag = createStyledTag(name, {
+  display: 'flex',
+  alignItems: 'center',
+  position: 'relative',
+  flexShrink: 0,
+});
 
 const CardHeader = ({
   children,

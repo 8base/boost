@@ -225,17 +225,17 @@ exports[`Storyshots ATOMS/Avatar with pick 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
-.emotion-17 {
+.emotion-21 {
   margin: 2rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   padding: 0 1rem;
   font-size: 1.6rem;
   font-family: Poppins;
 }
 
-.emotion-15 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,11 +257,18 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   cursor: inherit;
 }
 
-.emotion-15 > *:not(:last-child) {
+.emotion-19 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.emotion-0 {
+.emotion-1 {
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.4rem;
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -298,71 +305,76 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   padding: 0 4rem;
 }
 
-.emotion-0:hover {
+.emotion-1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-0 > *:not(:last-child) {
+.emotion-1 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
 <div
-  className="emotion-17 emotion-18"
+  className="emotion-21 emotion-22"
 >
   <div
-    className="emotion-1 emotion-15 emotion-1"
+    className="emotion-0 emotion-19 emotion-0"
   >
-    <button
+    <a
       aria-busy="undefined"
-      className="emotion-0 emotion-1"
+      className="emotion-0 emotion-1 emotion-0"
       onClick={[Function]}
       to="/"
       type={undefined}
     >
       Dashboard
-    </button>
+    </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-3 emotion-4"
     >
       &gt;
     </span>
-    <button
+    <a
       aria-busy="undefined"
-      className="emotion-0 emotion-1"
+      className="emotion-0 emotion-1 emotion-0"
       onClick={[Function]}
       to="/app"
       type={undefined}
     >
       1
-    </button>
+    </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-3 emotion-4"
     >
       &gt;
     </span>
-    <button
+    <a
       aria-busy="undefined"
-      className="emotion-0 emotion-1"
+      className="emotion-0 emotion-1 emotion-0"
       onClick={[Function]}
       to="/app/settings"
       type={undefined}
     >
       Settings
-    </button>
+    </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-3 emotion-4"
     >
       &gt;
     </span>
-    <button
+    <a
       aria-busy="undefined"
-      className="emotion-0 emotion-1"
+      className="emotion-0 emotion-1 emotion-0"
       onClick={[Function]}
       to="/app/settings/security"
       type={undefined}
     >
       Security
-    </button>
+    </a>
   </div>
 </div>
 `;

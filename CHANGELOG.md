@@ -1,3 +1,14 @@
+<a name="0.8.28"></a>
+## [0.8.28](https://github.com/8base/boost/compare/v0.8.27...v0.8.28) (2018-12-10)
+
+
+### Bug Fixes
+
+* **Button:** fix ability to pass custom tag ([bf93f2d](https://github.com/8base/boost/commit/bf93f2d))
+* **Select:** fix ability to pass clearable ([371c3f1](https://github.com/8base/boost/commit/371c3f1))
+
+
+
 <a name="0.8.27"></a>
 ## [0.8.27](https://github.com/8base/boost/compare/v0.8.26...v0.8.27) (2018-12-03)
 

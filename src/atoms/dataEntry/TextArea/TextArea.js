@@ -20,7 +20,7 @@ const theme = createTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, {
+const StyledTag = createStyledTag(name, ({ theme }) => ({
   border: '1px solid #D0D7DD',
   borderRadius: '5px',
   fontFamily: 'Poppins',
@@ -30,10 +30,14 @@ const StyledTag = createStyledTag(name, {
   lineHeight: '28px',
   outline: 'none',
   padding: '1rem',
-});
 
-function TextArea(props: TextAreaProps) {
-  return <StyledTag { ...props } tagName="textarea" />;
-}
+  '&::placeholder': {
+    color: theme.COLORS.LIGHT_GRAY1,
+  },
+}));
+
+const TextArea = (props: TextAreaProps) => (
+  <StyledTag { ...props } tagName="textarea" />
+);
 
 export { TextArea, theme };

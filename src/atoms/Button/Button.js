@@ -254,12 +254,12 @@ class Button extends Component<ButtonProps> {
   }
 
   render() {
-    const { text, children, type, onClick, loading, ...rest } = this.props;
+    const { text, children, type, loading, ...rest } = this.props;
 
     return (
       <ButtonTag
-        { ...rest }
         tagName="button"
+        { ...rest }
         type={ type }
         loading={ loading }
         onClick={ this.onClick }

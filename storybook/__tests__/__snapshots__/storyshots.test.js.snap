@@ -11801,6 +11801,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea with placeholder 1`] = `
   padding: 1rem;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -11832,6 +11848,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea with value 1`] = `
   padding: 1rem;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -11861,6 +11893,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea without value 1`] = `
   line-height: 28px;
   outline: none;
   padding: 1rem;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-0::placeholder {
+  color: #d0d7dd;
 }
 
 <div
@@ -11926,6 +11974,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
   line-height: 28px;
   outline: none;
   padding: 1rem;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::placeholder {
+  color: #d0d7dd;
 }
 
 <div
@@ -12008,6 +12072,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
   padding: 1rem;
 }
 
+.emotion-2::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::placeholder {
+  color: #d0d7dd;
+}
+
 <div
   className="emotion-8 emotion-9"
 >
@@ -12086,6 +12166,22 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
   line-height: 28px;
   outline: none;
   padding: 1rem;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #d0d7dd;
+}
+
+.emotion-2::placeholder {
+  color: #d0d7dd;
 }
 
 <div

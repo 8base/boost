@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 import { keyframes } from 'react-emotion';
-import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeColors } from '../../utils';
 
 export type ButtonProps = {
   /** callback to handle click */
@@ -25,9 +25,9 @@ export type ButtonProps = {
   /** possible button types */
   type?: 'submit' | 'button' | 'reset',
   /** possible button colors */
-  color?: 'primary' | 'secondary' | 'neutral' | 'red' | 'white',
+  color?: 'primary' | 'secondary' | 'neutral' | 'danger',
   /** the type of button */
-  variant?: 'outlined' | 'raised',
+  variant?: 'outlined' | 'raised' | 'ghost',
   /** posible sizes */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
   /** possible to reassign the button tag */
@@ -56,12 +56,14 @@ const spinner = keyframes`
 `;
 
 const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
-  button: {
+  root: {
     cursor: 'pointer',
     fontSize: '1.4rem',
     fontWeight: '600',
     transition: 'all .15s ease-in-out',
     borderRadius: sizes.MAIN_BORDER_RADIUS,
+    borderStyle: 'solid',
+    borderWidth: '1px',
 
     '&:hover': {
       boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
@@ -74,6 +76,40 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
     },
   },
   modifiers: {
+    color: {
+      primary: {
+        backgroundColor: colors.PRIMARY,
+        borderColor: colors.PRIMARY,
+        color: colors.WHITE,
+      },
+      secondary: {
+        backgroundColor: colors.SECONDARY,
+        borderColor: colors.SECONDARY,
+        color: colors.WHITE,
+      },
+      neutral: {
+        backgroundColor: colors.WHITE,
+        borderColor: colors.PRIMARY_BORDER_COLOR,
+        color: colors.BLACK,
+      },
+      danger: {
+        backgroundColor: colors.DANGER_DARK,
+        borderColor: colors.DANGER_DARK,
+        color: colors.WHITE,
+      },
+    },
+
+    variant: {
+      outlined: {
+        backgroundColor: colors.WHITE,
+        color: colors.BLACK,
+      },
+      ghost: {
+        backgroundColor: colors.TRANSPARENT,
+        color: colors.WHITE,
+      },
+    },
+
     size: {
       xs: {
         height: BUTTON_HEIGHT_BY_SIZE.xs,
@@ -122,6 +158,7 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
       borderRadius: '5rem',
       padding: '0 2rem',
     },
+
   },
   defaults: {
     ...DEFAULT_MODIFIERS,
@@ -160,53 +197,6 @@ const getLoading = (props: ButtonProps) => {
     : {};
 };
 
-const getBackgroundColor = (props: ButtonProps) => {
-  if (props.variant === 'raised') {
-    switch (props.color) {
-      case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
-      case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
-      case 'red': return getThemeColors(props).RED_BUTTON_BACKGROUND_COLOR;
-      case 'neutral': return getThemeColors(props).NEUTRAL_BUTTON_BACKGROUND_COLOR;
-      case 'white': return getThemeColors(props).WHITE;
-      default: return '';
-    }
-  } else {
-    switch (props.color) {
-      case 'white': return getThemeColors(props).TRANSPARENT;
-      default: return '';
-    }
-  }
-};
-
-const getColor = (props: ButtonProps) => {
-  if (props.variant === 'raised') {
-    switch (props.color) {
-      case 'primary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
-      case 'secondary': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
-      case 'neutral': return getThemeColors(props).PRIMARY_TEXT_COLOR;
-      case 'red': return getThemeColors(props).LIGHT_PRIMARY_TEXT_COLOR;
-      case 'white': return getThemeColors(props).PRIMARY_TEXT_COLOR;
-      default: return '';
-    }
-  } else {
-    switch (props.color) {
-      case 'white': return getThemeColors(props).WHITE;
-      default: return getThemeColors(props).PRIMARY_TEXT_COLOR;
-    }
-  }
-};
-
-const getBorderColor = (props: ButtonProps) => {
-  switch (props.color) {
-    case 'primary': return getThemeColors(props).PRIMARY_BUTTON_BACKGROUND_COLOR;
-    case 'secondary': return getThemeColors(props).SECONDARY_BUTTON_BACKGROUND_COLOR;
-    case 'red': return getThemeColors(props).RED_BUTTON_BACKGROUND_COLOR;
-    case 'neutral': return getThemeColors(props).PRIMARY_BORDER_COLOR;
-    case 'white': return getThemeColors(props).WHITE;
-    default: return '';
-  }
-};
-
 const getSquaredStyle = (props: ButtonProps) => {
   if (props.squared) {
     return {
@@ -228,15 +218,11 @@ const ButtonTag = createStyledTag(name, props => ({
   userSelect: 'none',
   whiteSpace: 'nowrap',
 
-  ...getThemeStyle(props, name).button,
-
   ...getSquaredStyle(props),
 
-  borderStyle: 'solid',
-  borderWidth: '1px',
-  borderColor: getBorderColor(props),
-  backgroundColor: getBackgroundColor(props),
-  color: getColor(props),
+  // borderColor: getBorderColor(props),
+  // backgroundColor: getBackgroundColor(props),
+  // color: getColor(props),
 
   ...getLoading(props),
 }));

@@ -200,7 +200,6 @@ exports[`Storyshots ATOMS/Avatar with pick 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #d0d7dd;
 }
 
 <div
@@ -520,11 +519,11 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
-.emotion-26 {
+.emotion-32 {
   margin: 2rem;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -546,7 +545,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-10 > *:not(:last-child) {
+.emotion-8 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -595,7 +594,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-24 {
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -617,7 +616,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-24 > *:not(:last-child) {
+.emotion-30 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -756,7 +755,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-8 {
+.emotion-10 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -786,18 +785,18 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #FFFFFF;
+  border-color: #4DA1FF;
   background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
 }
 
-.emotion-8:hover {
+.emotion-10:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-8 > *:not(:last-child) {
+.emotion-10 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -831,8 +830,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
-  background-color: px;
+  border-color: #00bb6e;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -876,8 +875,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
-  background-color: px;
+  border-color: #eb4235;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -888,96 +887,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
 }
 
 .emotion-14 > *:not(:last-child) {
-  margin-right: .5rem;
-}
-
-.emotion-16 {
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  border-radius: .5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eb4235;
-  background-color: px;
-  color: #323c47;
-  height: 4rem;
-  padding: 0 4rem;
-}
-
-.emotion-16:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-16 > *:not(:last-child) {
-  margin-right: .5rem;
-}
-
-.emotion-18 {
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  border-radius: .5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d0d7dd;
-  background-color: px;
-  color: #323c47;
-  height: 4rem;
-  padding: 0 4rem;
-}
-
-.emotion-18:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-18 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -1011,9 +920,9 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #FFFFFF;
+  border-color: #4DA1FF;
   background-color: transparent;
-  color: #FFFFFF;
+  color: rgba(255,255,255,1);
   height: 4rem;
   padding: 0 4rem;
 }
@@ -1026,19 +935,155 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
+.emotion-22 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00bb6e;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-22:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-22 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-24 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eb4235;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-24:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-24 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-26 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d7dd;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-26:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-26 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
 <div
-  className="emotion-26 emotion-27"
+  className="emotion-32 emotion-33"
 >
   <div
-    className="emotion-24 emotion-1"
+    className="emotion-30 emotion-1"
     style={
       Object {
         "background": "#999",
+        "padding": "10px",
       }
     }
   >
     <div
-      className="emotion-10 emotion-1"
+      className="emotion-8 emotion-1"
     >
       <button
         aria-busy="undefined"
@@ -1072,18 +1117,18 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       >
         Raised
       </button>
+    </div>
+    <div
+      className="emotion-8 emotion-1"
+    >
       <button
         aria-busy="undefined"
-        className="emotion-8 emotion-1"
+        className="emotion-10 emotion-1"
         onClick={[Function]}
         type={undefined}
       >
-        Raised
+        Outlined
       </button>
-    </div>
-    <div
-      className="emotion-10 emotion-1"
-    >
       <button
         aria-busy="undefined"
         className="emotion-12 emotion-1"
@@ -1102,27 +1147,47 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       </button>
       <button
         aria-busy="undefined"
-        className="emotion-16 emotion-1"
+        className="emotion-6 emotion-1"
         onClick={[Function]}
         type={undefined}
       >
         Outlined
       </button>
-      <button
-        aria-busy="undefined"
-        className="emotion-18 emotion-1"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Outlined
-      </button>
+    </div>
+    <div
+      className="emotion-8 emotion-1"
+    >
       <button
         aria-busy="undefined"
         className="emotion-20 emotion-1"
         onClick={[Function]}
         type={undefined}
       >
-        Outlined
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-22 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-24 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-26 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
       </button>
     </div>
   </div>
@@ -1483,7 +1548,7 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
-  background-color: px;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -4055,19 +4120,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -4296,19 +4361,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInputField default 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -4584,19 +4649,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 }
 
 .emotion-10::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-10::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-10:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-10::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-10:focus {
@@ -4979,19 +5044,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -5305,19 +5370,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 }
 
 .emotion-4::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-4::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-4:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-4::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-4:focus {
@@ -5686,19 +5751,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -5952,19 +6017,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6037,19 +6102,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6123,19 +6188,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6223,19 +6288,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6308,19 +6373,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6417,19 +6482,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6502,19 +6567,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6631,19 +6696,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6712,19 +6777,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6806,19 +6871,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -6891,19 +6956,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -7004,19 +7069,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -7132,19 +7197,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -7282,19 +7347,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -7431,19 +7496,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -7608,19 +7673,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -7722,19 +7787,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -7846,19 +7911,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -8007,19 +8072,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -8140,19 +8205,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -8274,19 +8339,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -8395,19 +8460,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 }
 
 .emotion-0::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-0:focus {
@@ -8516,19 +8581,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2::placeholder {
-  color: #d0d7dd;
+  color: #4DA1FF;
 }
 
 .emotion-2:focus {
@@ -20267,7 +20332,7 @@ exports[`Storyshots ATOMS/Table with custom action button 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #00bb6e;
-  background-color: px;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -21217,7 +21282,7 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-style: solid;
   border-width: 1px;
   border-color: #4DA1FF;
-  background-color: px;
+  background-color: #FFFFFF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;

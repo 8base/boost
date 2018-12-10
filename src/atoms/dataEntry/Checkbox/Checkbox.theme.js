@@ -1,17 +1,27 @@
 // @flow
 
-import { createStyledTag, createComponentTheme, getThemeColors } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'checkbox';
 
-const theme = createComponentTheme(name, (colors: *): * => ({
+const themeSquare = createComponentTheme(`${name}Square`, (colors: *, sizes: *): * => ({
+  root: {
+    background: colors.WHITE,
+    border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    borderRadius: sizes.MAIN_BORDER_RADIUS,
+  },
   modifiers: {
     hasError: {
-      borderColor: 'red',
+      borderColor: colors.DANGER,
     },
     disabled: {
       backgroundColor: colors.LIGHT_GRAY4,
     },
+  },
+}));
+
+const themeIcon = createComponentTheme(`${name}Icon`, (colors: *): * => ({
+  modifiers: {
     color: {
       primary: { color: colors.PRIMARY },
       secondary: { color: colors.SECONDARY },
@@ -19,24 +29,32 @@ const theme = createComponentTheme(name, (colors: *): * => ({
   },
 }));
 
-const CheckboxWrapperTag = createStyledTag(name, {
+const themeText = createComponentTheme(`${name}Text`, (colors: *): * => ({
+  color: colors.SECONDARY_TEXT_COLOR,
+  fontSize: colors.MAIN_FONT_SIZE,
+}));
+
+const theme = {
+  ...themeSquare,
+  ...themeIcon,
+  ...themeText,
+};
+
+
+const CheckboxWrapperTag = createStyledTag(`${name}Wrapper`, {
   display: 'flex',
   alignItems: 'center',
   cursor: 'pointer',
 });
 
-const CheckboxSquareTag = createStyledTag(name, props => ({
+const CheckboxSquareTag = createStyledTag(`${name}Square`, {
   position: 'relative',
   width: '2.5rem',
   height: '2.5rem',
+  transition: 'all .15s ease-in-out',
+});
 
-  background: 'white',
-  border: `1px solid ${getThemeColors(props).PRIMARY_BORDER_COLOR}`,
-  borderRadius: '.5rem',
-  transition: 'all .3s ease',
-}));
-
-const CheckboxIconTag = createStyledTag(name, props => ({
+const CheckboxIconTag = createStyledTag(`${name}Icon`, props => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -50,16 +68,14 @@ const CheckboxIconTag = createStyledTag(name, props => ({
   transition: 'all .15s ease-in-out',
 }));
 
-const CheckboxTag = createStyledTag(name, {
+const CheckboxTag = createStyledTag(`${name}Tag`, {
   display: 'none',
 });
 
-const CheckboxTextTag = createStyledTag(name, props => ({
+const CheckboxTextTag = createStyledTag(`${name}Text`, {
   paddingLeft: '1.2rem',
-  fontSize: '1.4rem',
   cursor: 'pointer',
-  color: getThemeColors(props).SECONDARY_TEXT_COLOR,
-}));
+});
 
 export { theme, CheckboxSquareTag, CheckboxTag, CheckboxWrapperTag, CheckboxTextTag, CheckboxIconTag };
 

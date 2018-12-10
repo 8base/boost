@@ -10,22 +10,24 @@ type TableBodyRowProps = {
 
 const name = 'tableBodyRow';
 
-const theme = createComponentTheme(name, {
+const theme = createComponentTheme(name, (colors: *) => ({
+  root: {
+    height: '6rem',
+    borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const TableBodyRowTag = createStyledTag(name, (props: *) => ({
+const TableBodyRowTag = createStyledTag(name, {
   display: 'grid',
-  borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
-  height: '6rem',
 
   '&:last-child': {
     borderBottom: 'none',
   },
-}));
+});
 
 function TableBodyRow({
   children,

@@ -56,7 +56,7 @@ const spinner = keyframes`
 `;
 
 const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
-  root: {
+  button: {
     cursor: 'pointer',
     fontSize: '1.4rem',
     fontWeight: '600',
@@ -219,11 +219,6 @@ const ButtonTag = createStyledTag(name, props => ({
   whiteSpace: 'nowrap',
 
   ...getSquaredStyle(props),
-
-  // borderColor: getBorderColor(props),
-  // backgroundColor: getBackgroundColor(props),
-  // color: getColor(props),
-
   ...getLoading(props),
 }));
 

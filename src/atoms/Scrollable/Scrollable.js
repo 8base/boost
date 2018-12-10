@@ -22,7 +22,7 @@ const ScrollableWrapper = createStyledTag(name, {
   overflowY: 'auto',
 });
 
-const ScrollableContent = createStyledTag(name, {
+const ScrollableContent = createStyledTag(`${name}Content`, {
   height: '100%',
 });
 

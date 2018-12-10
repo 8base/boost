@@ -10,15 +10,16 @@ type FormSectionTitleProps = {|
 
 const name = 'formSectionTitle';
 
-const theme = createComponentTheme(name, {
+const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+  root: {
+    fontWeight: 600,
+    fontSize: sizes.SMALL_FONT_SIZE,
+  },
   modifiers: {},
   defaults: {},
-});
+}));
 
-const FormSectionTitleTag = createStyledTag(name, {
-  fontWeight: 600,
-  fontSize: '1.2rem',
-});
+const FormSectionTitleTag = createStyledTag(name, {});
 
 const FormSectionTitle = ({ children, text, ...rest }: FormSectionTitleProps) => (
   <FormSectionTitleTag { ...rest } tagName="span">{ children || text }</FormSectionTitleTag>

@@ -8,18 +8,15 @@ import { createStyledTag, createComponentTheme } from '../../utils';
 const name = 'tableNoData';
 
 const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
+  root: {
+    height: '80rem',
   },
 });
 
-const TableNoDataIconTag = createStyledTag(name, () => ({
-  height: '80px',
-}));
+const TableNoDataIconTag = createStyledTag(name);
 
-const TableNoDataTextTag = createStyledTag(name, (props) => ({
-  color: props.theme.COLORS.LIGHT_GRAY1,
+const TableNoDataTextTag = createStyledTag(`${name}Text`, (props) => ({
+  color: props.theme.COLORS.DISABLED_TEXT_COLOR,
   fontSize: '3rem',
   fontWeight: 500,
   textTransform: 'uppercase',

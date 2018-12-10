@@ -10,20 +10,22 @@ type TableHeaderProps = {
 
 const name = 'tableHeader';
 
-const theme = createComponentTheme(name, {
+const theme = createComponentTheme(name, (colors: *) => ({
+  root: {
+    height: '5rem',
+    backgroundColor: colors.LIGHT_GRAY5,
+    borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    color: colors.GRAY4,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
-
-const TableHeaderTag = createStyledTag(name, (props) => ({
-  display: 'grid',
-  height: '5rem',
-  backgroundColor: '#F4F7F9',
-  borderBottom: '1px solid #ccc',
-  color: props.theme.COLORS.GRAY4,
 }));
+
+const TableHeaderTag = createStyledTag(name, {
+  display: 'grid',
+});
 
 function TableHeader({
   children,

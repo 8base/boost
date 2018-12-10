@@ -1,5 +1,6 @@
 // @flow
 
+import { theme as tableActionTheme } from './TableAction';
 import { TablePlate as Plate, theme as tablePlateTheme } from './TablePlate';
 import { TableHeader as Header, theme as tableHeaderTheme } from './TableHeader';
 import { TableBody as Body, theme as tableBodyTheme } from './TableBody';
@@ -19,6 +20,7 @@ const Table = {
 };
 
 const theme = {
+  ...tableActionTheme,
   ...tablePlateTheme,
   ...tableHeaderTheme,
   ...tableBodyTheme,

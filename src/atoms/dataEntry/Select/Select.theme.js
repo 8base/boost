@@ -1,6 +1,4 @@
 // @flow
-import styled from 'react-emotion';
-
 import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'select';
@@ -17,7 +15,7 @@ const SelectTag = createStyledTag(name, {
   lineHeight: 'normal',
 });
 
-const SelectChevron = styled('div')({
+const SelectChevron = createStyledTag(`${name}Chevron`, {
   paddingLeft: '1rem',
   display: 'inline-flex',
 });

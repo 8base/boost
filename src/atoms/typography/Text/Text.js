@@ -31,6 +31,11 @@ type TextProps = {|
 const name = 'text';
 
 const theme = createComponentTheme(name, (colors: *): * => ({
+  root: {
+    lineHeight: 1.4,
+    margin: 0,
+  },
+
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),
@@ -107,10 +112,7 @@ const theme = createComponentTheme(name, (colors: *): * => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  lineHeight: 1.4,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Text({
   text,

@@ -37,7 +37,7 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const OverlayTag = createStyledTag(name, (props): * => ({
+const OverlayTag = createStyledTag(`${name}Overlay`, (props): * => ({
   alignItems: 'center',
   bottom: 0,
   display: 'flex',

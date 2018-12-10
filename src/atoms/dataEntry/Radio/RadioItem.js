@@ -1,7 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { RadioCircleTag, RadioTag, RadioWrapperTag, RadioInnerCircleTag, RadioTextTag } from './Radio.theme';
+import { RadioCircleTag, RadioTag, RadioWrapperTag, RadioCircleInnerTag, RadioTextTag } from './Radio.theme';
 
 
 type EqualsFuncArgument = {
@@ -62,7 +62,7 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
     return (
       <RadioWrapperTag tagName="label">
         <RadioCircleTag tagName="div" hasError={ hasError }>
-          <RadioInnerCircleTag tagName="div" color={ color } selected={ checked } disabled={ disabled } />
+          <RadioCircleInnerTag tagName="div" color={ color } selected={ checked } disabled={ disabled } />
         </RadioCircleTag>
         <RadioTag name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
         <If condition={ hasLabel }>

@@ -10,6 +10,9 @@ type TableBodyCellProps = {
 const name = 'tableBodyCell';
 
 const theme = createComponentTheme(name, {
+  root: {
+    padding: '0 2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -19,7 +22,6 @@ const theme = createComponentTheme(name, {
 const TableBodyCellTag = createStyledTag(name, () => ({
   display: 'flex',
   alignItems: 'center',
-  padding: '0 2rem',
   wordBreak: 'break-all',
 }));
 

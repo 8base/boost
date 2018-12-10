@@ -12,6 +12,9 @@ type NavigationPlateProps = {|
 const name = 'navigationPlate';
 
 const theme = createComponentTheme(name, {
+  root: {
+    width: '6rem',
+  },
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,
@@ -23,7 +26,6 @@ const StyledTag = createStyledTag(name, {
   display: 'flex',
   flexDirection: 'column',
   height: '100%',
-  width: '6rem',
 
   '&:hover': {
     width: 'auto',

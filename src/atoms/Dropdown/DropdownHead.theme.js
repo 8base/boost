@@ -24,7 +24,7 @@ const DropdownHeadTag = createStyledTag(name, {
 });
 
 
-const DropdownPopperTarget = createStyledTag(name, {
+const DropdownPopperTarget = createStyledTag(`${name}Target`, {
   display: 'flex',
   width: '100%',
   height: ' 100%',

@@ -13,6 +13,11 @@ type HeadingProps = {|
 const name = 'heading';
 
 const theme = createComponentTheme(name, (colors) => ({
+  root: {
+    lineHeight: 1.1,
+    fontWeight: 400,
+    margin: 0,
+  },
   modifiers: {
     type: {
       h1: {
@@ -69,12 +74,7 @@ const theme = createComponentTheme(name, (colors) => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  lineHeight: 1.1,
-  fontFamily: 'Poppins',
-  fontWeight: 400,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Heading({
   text,

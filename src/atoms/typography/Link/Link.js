@@ -51,7 +51,6 @@ const theme = createComponentTheme(name, () => ({
 
 const StyledTag = createStyledTag(name, () => ({
   cursor: 'pointer',
-  fontFamily: 'Poppins',
   fontWeight: 400,
   lineHeight: '1',
   textDecoration: 'none',

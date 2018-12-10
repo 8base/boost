@@ -4,8 +4,18 @@ import styled from 'react-emotion';
 import fp from 'lodash/fp';
 import { Tag } from '../common';
 
+
 const getThemeModifiers = (themeName: string, props: *) =>
   fp.getOr({}, ['theme', 'components', themeName, 'modifiers'], props);
+
+const getThemeRoot = (themeName: string, props: *) => {
+  const themeRoot = fp.get(['theme', 'components', themeName, 'root'], props);
+  const omittedProps = fp.omit(['theme'], props);
+
+  return typeof themeRoot === 'function'
+    ? themeRoot(omittedProps)
+    : themeRoot || {};
+};
 
 const getModifierValue = (themeName: string, modifierName: string, props: Object) => {
   const defaultModifiers = props.theme.components[themeName].defaults || {};
@@ -30,6 +40,7 @@ const getModifierStyles = (themeName: string, modifierName: string, props: Objec
   return styles;
 };
 
+
 const getAllModifiersStyles = (themeName: string, props: Object) =>
   Object.keys(getThemeModifiers(themeName, props))
     .reduce((result, modifierName) => ({
@@ -37,11 +48,11 @@ const getAllModifiersStyles = (themeName: string, props: Object) =>
       ...getModifierStyles(themeName, modifierName, props),
     }), {});
 
-const createStyledTag = (themeName: string, styles: Object) => {
-
+const createStyledTag = (themeName: string, styles?: Object = {}) => {
   const StyledTag = styled(Tag)(
     (props: Object) => ({
       ...(typeof styles === 'function' ? styles(props) : styles),
+      ...getThemeRoot(themeName, props),
       ...getAllModifiersStyles(themeName, props),
     }),
   );

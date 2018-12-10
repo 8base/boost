@@ -46,7 +46,7 @@ const OverlayTag = createStyledTag(name, (props): * => ({
   position: 'fixed',
   right: 0,
   top: 0,
-  background: 'rgba(0, 0, 0, 0.5)',
+  background: 'rgba(60, 87, 118, 0.6)',
   zIndex: props.theme.Z_INDEX.MODAL,
 }));
 

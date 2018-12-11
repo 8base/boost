@@ -4764,7 +4764,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
       >
         <div
           className="emotion-16 emotion-1"
-          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4795,7 +4794,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
-          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4826,7 +4824,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
-          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4857,7 +4854,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
-          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -4888,7 +4884,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
         </div>
         <div
           className="emotion-16 emotion-1"
-          type="text"
         >
           <div
             className="emotion-14 emotion-1"
@@ -5095,7 +5090,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
       >
         <div
           className="emotion-8 emotion-1"
-          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5126,7 +5120,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
-          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5157,7 +5150,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
-          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5188,7 +5180,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
-          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5219,7 +5210,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
         </div>
         <div
           className="emotion-8 emotion-1"
-          type="text"
         >
           <div
             className="emotion-6 emotion-1"
@@ -5467,7 +5457,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
         >
           <div
             className="emotion-10 emotion-1"
-            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5498,7 +5487,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
-            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5529,7 +5517,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
-            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5573,7 +5560,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
         >
           <div
             className="emotion-10 emotion-1"
-            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5604,7 +5590,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
           </div>
           <div
             className="emotion-10 emotion-1"
-            type="text"
           >
             <div
               className="emotion-8 emotion-1"
@@ -5781,7 +5766,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
     >
       <div
         className="emotion-8 emotion-1"
-        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5812,7 +5796,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
-        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5843,7 +5826,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
-        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5874,7 +5856,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
-        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -5905,7 +5886,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
       </div>
       <div
         className="emotion-8 emotion-1"
-        type="text"
       >
         <div
           className="emotion-6 emotion-1"
@@ -7058,7 +7038,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 >
   <div
     className="emotion-6 emotion-1"
-    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -7187,7 +7166,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7350,7 +7328,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 >
   <div
     className="emotion-14 emotion-1"
-    type="text"
   >
     <div
       className="emotion-8 emotion-1"
@@ -7526,7 +7503,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 >
   <div
     className="emotion-14 emotion-1"
-    type="text"
   >
     <div
       className="emotion-8 emotion-1"
@@ -7673,7 +7649,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7807,7 +7782,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -7941,7 +7915,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8075,7 +8048,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8209,7 +8181,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"
@@ -8337,7 +8308,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 >
   <div
     className="emotion-6 emotion-1"
-    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -8459,7 +8429,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 >
   <div
     className="emotion-6 emotion-1"
-    type="text"
   >
     <div
       className="emotion-4 emotion-1"
@@ -8588,7 +8557,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 >
   <div
     className="emotion-8 emotion-1"
-    type="text"
   >
     <div
       className="emotion-6 emotion-1"

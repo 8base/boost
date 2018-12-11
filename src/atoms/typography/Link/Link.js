@@ -17,7 +17,7 @@ type LinkProps = {|
 
 const name = 'link';
 
-const theme = createComponentTheme(name, () => ({
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       lg: {
@@ -47,7 +47,7 @@ const theme = createComponentTheme(name, () => ({
     color: 'LIGHT_BLUE',
     underline: false,
   },
-}));
+});
 
 const StyledTag = createStyledTag(name, () => ({
   cursor: 'pointer',

@@ -11,12 +11,18 @@ const theme = {
   ...moleculesTheme,
 };
 
+export type ThemeConstatns = {
+  COLORS: typeof COLORS,
+  SIZES: typeof SIZES,
+  Z_INDEX: typeof Z_INDEX,
+}
+
 export type RawTheme = {
   COLORS: typeof COLORS,
   SIZES: typeof SIZES,
   Z_INDEX: typeof Z_INDEX,
   components: {
-    [key: string]: (COLORS: typeof COLORS, SIZES: typeof SIZES, Z_INDEX: typeof Z_INDEX) => Object,
+    [key: string]: (ThemeConstatns) => Object,
   },
 }
 

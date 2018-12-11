@@ -9,10 +9,10 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+const theme = createComponentTheme(name, ({ SIZES }: *) => ({
   root: {
     padding: '0 2rem',
-    fontSize: sizes.SMALL_FONT_SIZE,
+    fontSize: SIZES.SMALL_FONT_SIZE,
     textTransform: 'uppercase',
     fontWeight: 700,
   },

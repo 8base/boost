@@ -11,9 +11,9 @@ type CardFooterProps = {|
 
 const name = 'cardFooter';
 
-const cardFooterTheme = createComponentTheme(name, (colors: *): * => ({
+const cardFooterTheme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
-    borderTop: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    borderTop: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {
     ...offsetModifier,

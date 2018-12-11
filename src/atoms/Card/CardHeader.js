@@ -11,9 +11,9 @@ type CardHeaderProps = {|
 
 const name = 'cardHeader';
 
-const cardHeaderTheme = createComponentTheme(name, (colors: *): * => ({
+const cardHeaderTheme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
-    borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {
     ...offsetModifier,

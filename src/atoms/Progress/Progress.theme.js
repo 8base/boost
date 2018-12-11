@@ -1,27 +1,29 @@
+// @flow
+
 import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'progress';
 
-const themeInner = createComponentTheme(`${name}Inner`, (colors: *) => ({
+const themeInner = createComponentTheme(`${name}Inner`, ({ COLORS }: *) => ({
   root: {
     heigth: '1.2rem',
-    background: colors.LIGHT_GRAY4,
+    background: COLORS.LIGHT_GRAY4,
     borderRadius: '1.2rem',
   },
 }));
 
-const themeValue = createComponentTheme(`${name}Value`, (colors: *) => ({
+const themeValue = createComponentTheme(`${name}Value`, ({ COLORS }: *) => ({
   root: {
-    backgroundColor: colors.PRIMARY,
+    backgroundColor: COLORS.PRIMARY,
     borderRadius: '1.2rem',
   },
 }));
 
-const themeText = createComponentTheme(`${name}Text`, (colors: *, sizes: *) => ({
+const themeText = createComponentTheme(`${name}Text`, ({ COLORS, SIZES }: *) => ({
   root: {
-    fontSize: sizes.MEDIUM_FONT_SIZE,
+    fontSize: SIZES.MEDIUM_FONT_SIZE,
     fontWeight: '600',
-    color: colors.PRIMARY,
+    color: COLORS.PRIMARY,
   },
 }));
 

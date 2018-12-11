@@ -6,7 +6,7 @@ import { createStyledTag, createComponentTheme } from '../../utils';
 import type { BreadcrumbsRoutes, BreadcrumbsMatchPath } from './Breadcrumbs.types';
 import { getBreadcrumbs } from './Breadcrumbs.utils';
 import { BreadcrumbsItem } from './BreadcrumbsItem';
-import { BreadcrumbsDivider } from './BreadcrumbsDivider';
+import { BreadcrumbsDividerTag } from './BreadcrumbsDivider';
 
 type BreadcrumbsProps = {|
   /* the location pathname */

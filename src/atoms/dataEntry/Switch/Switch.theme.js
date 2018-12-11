@@ -18,10 +18,10 @@ const themeApperance = createComponentTheme(`${name}Appearance`, {
   },
 });
 
-const themeLabel = createComponentTheme(`${name}Label`, (colors: *) => ({
+const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS }: *) => ({
   root: {
-    fontSize: colors.SMALL_FONT_SIZE,
-    color: colors.GRAY1,
+    fontSize: COLORS.SMALL_FONT_SIZE,
+    color: COLORS.GRAY1,
   },
 }));
 

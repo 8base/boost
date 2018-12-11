@@ -7,9 +7,9 @@ type DividerProps = {|
 
 const name = 'divider';
 
-const theme = createComponentTheme(name, (colors: *) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
-    backgroundColor: colors.LIGHT_GRAY4,
+    backgroundColor: COLORS.LIGHT_GRAY4,
     height: '1px',
   },
   modifiers: {

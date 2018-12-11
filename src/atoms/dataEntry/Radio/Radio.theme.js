@@ -4,35 +4,35 @@ import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'radio';
 
-const themeCircle = createComponentTheme(`${name}Circle`, (colors: *): * => ({
+const themeCircle = createComponentTheme(`${name}Circle`, ({ COLORS }: *): * => ({
   root: {
-    background: colors.WHITE,
-    border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    background: COLORS.WHITE,
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {
     hasError: {
-      borderColor: colors.DANGER,
+      borderColor: COLORS.DANGER,
     },
   },
 }));
 
 
-const themeCircleInner = createComponentTheme(`${name}CircleInner`, (colors: *): * => ({
+const themeCircleInner = createComponentTheme(`${name}CircleInner`, ({ COLORS }: *): * => ({
   modifiers: {
     color: {
-      primary: { backgroundColor: colors.PRIMARY },
-      secondary: { backgroundColor: colors.SECONDARY },
+      primary: { backgroundColor: COLORS.PRIMARY },
+      secondary: { backgroundColor: COLORS.SECONDARY },
     },
     disabled: {
-      backgroundColor: colors.GRAY4,
+      backgroundColor: COLORS.GRAY4,
     },
   },
 }));
 
-const themeText = createComponentTheme(`${name}Text`, (colors: *): * => ({
+const themeText = createComponentTheme(`${name}Text`, ({ COLORS }: *): * => ({
   root: {
-    color: colors.SECONDARY_TEXT_COLOR,
-    fontSize: colors.MAIN_FONT_SIZE,
+    color: COLORS.SECONDARY_TEXT_COLOR,
+    fontSize: COLORS.MAIN_FONT_SIZE,
   },
 }));
 

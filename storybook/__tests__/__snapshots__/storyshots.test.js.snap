@@ -15524,6 +15524,141 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
 </div>
 `;
 
+exports[`Storyshots ATOMS/Progress with default modifiers 1`] = `
+.emotion-32 {
+  margin: 2rem;
+}
+
+.emotion-6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  heigth: 1.2rem;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #EDF0F2;
+  border-radius: 1.2rem;
+}
+
+.emotion-0 {
+  background-color: #4DA1FF;
+  border-radius: 1.2rem;
+  height: 100%;
+}
+
+.emotion-4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 1.2rem;
+  white-space: nowrap;
+  color: #4DA1FF;
+  width: 3.6rem;
+}
+
+<div
+  className="emotion-32 emotion-33"
+>
+  <div
+    className="emotion-6 emotion-1"
+  >
+    <div
+      className="emotion-2 emotion-1"
+    >
+      <div
+        className="emotion-0 emotion-1"
+        style={
+          Object {
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="emotion-4 emotion-1"
+    >
+      0
+       %
+    </div>
+  </div>
+  <br />
+  <div
+    className="emotion-6 emotion-1"
+  >
+    <div
+      className="emotion-2 emotion-1"
+    >
+      <div
+        className="emotion-0 emotion-1"
+        style={
+          Object {
+            "width": "30%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="emotion-4 emotion-1"
+    >
+      30
+       %
+    </div>
+  </div>
+  <br />
+  <div
+    className="emotion-6 emotion-1"
+  >
+    <div
+      className="emotion-2 emotion-1"
+    >
+      <div
+        className="emotion-0 emotion-1"
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="emotion-4 emotion-1"
+    >
+      50
+       %
+    </div>
+  </div>
+  <br />
+  <div
+    className="emotion-6 emotion-1"
+  >
+    <div
+      className="emotion-2 emotion-1"
+    >
+      <div
+        className="emotion-0 emotion-1"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="emotion-4 emotion-1"
+    >
+      100
+       %
+    </div>
+  </div>
+  <br />
+</div>
+`;
+
 exports[`Storyshots ATOMS/Scrollable with default modifiers 1`] = `
 .emotion-4 {
   margin: 2rem;

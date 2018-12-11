@@ -32,6 +32,7 @@ import { theme as switchTheme } from './dataEntry/Switch';
 import { theme as textTheme } from './typography/Text';
 import { theme as loaderTheme } from './Loader';
 import { theme as tableTheme } from './Table';
+import { theme as progressTheme } from './Progress';
 import { theme as secondaryNavigationTheme } from './SecondaryNavigation';
 
 export const theme = {
@@ -68,4 +69,5 @@ export const theme = {
   ...tableTheme,
   ...switchTheme,
   ...secondaryNavigationTheme,
+  ...progressTheme,
 };

@@ -38,5 +38,6 @@ export { TextArea } from './dataEntry/TextArea';
 export { TextAreaField } from './dataEntry/TextAreaField';
 export { Loader } from './Loader';
 export { Table } from './Table';
+export { Progress } from './Progress';
 export { SecondaryNavigation } from './SecondaryNavigation';
 

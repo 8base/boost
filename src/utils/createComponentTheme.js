@@ -1,11 +1,9 @@
 // @flow
-import { COLORS } from '../theme/colors';
-import { SIZES } from '../theme/sizes';
-import { Z_INDEX } from '../theme/zIndex';
+import { type ThemeConstatns } from '../theme/defaultTheme';
 
 const createComponentTheme = <T: Object>(
   name: string,
-  theme: ((typeof COLORS, typeof SIZES, typeof Z_INDEX) => T) | T,
+  theme: ((any) => T) | T,
 ): { [string]: T } => ({
   [name]: theme,
 });

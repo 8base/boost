@@ -15,6 +15,7 @@ import { withTabsContext } from './TabsContext';
 type TabTitleProps = {|
   children: React$Node | ({ selected: boolean, disabled: boolean }) => React$Node,
   disabled?: boolean,
+  forceRender?: boolean,
   tabId: string,
 |}
 

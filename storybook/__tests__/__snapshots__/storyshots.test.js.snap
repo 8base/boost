@@ -230,8 +230,8 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
 }
 
 .emotion-3 {
-  padding: 0 1rem;
   font-size: 1.6rem;
+  padding: 0 1rem;
 }
 
 .emotion-19 {
@@ -288,6 +288,14 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
@@ -298,6 +306,14 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
 .emotion-1:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-1:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-1 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -315,11 +331,11 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
     >
       Dashboard
     </a>
-    <span
-      className="emotion-3 emotion-4"
+    <div
+      className="emotion-3 emotion-0"
     >
       &gt;
-    </span>
+    </div>
     <a
       aria-busy="undefined"
       className="emotion-0 emotion-1 emotion-0"
@@ -329,11 +345,11 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
     >
       1
     </a>
-    <span
-      className="emotion-3 emotion-4"
+    <div
+      className="emotion-3 emotion-0"
     >
       &gt;
-    </span>
+    </div>
     <a
       aria-busy="undefined"
       className="emotion-0 emotion-1 emotion-0"
@@ -343,11 +359,11 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
     >
       Settings
     </a>
-    <span
-      className="emotion-3 emotion-4"
+    <div
+      className="emotion-3 emotion-0"
     >
       &gt;
-    </span>
+    </div>
     <a
       aria-busy="undefined"
       className="emotion-0 emotion-1 emotion-0"
@@ -382,8 +398,8 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
 }
 
 .emotion-2 {
-  padding: 0 1rem;
   font-size: 1.6rem;
+  padding: 0 1rem;
 }
 
 <div
@@ -398,33 +414,33 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
     >
       Dashboard
     </a>
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="emotion-2 emotion-1"
     >
       &gt;
-    </span>
+    </div>
     <a
       className="emotion-0 emotion-1"
       to="/app"
     >
       1
     </a>
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="emotion-2 emotion-1"
     >
       &gt;
-    </span>
+    </div>
     <a
       className="emotion-0 emotion-1"
       to="/app/settings"
     >
       Settings
     </a>
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="emotion-2 emotion-1"
     >
       &gt;
-    </span>
+    </div>
     <a
       className="emotion-0 emotion-1"
       to="/app/settings/security"
@@ -462,11 +478,27 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -536,11 +568,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-30 {
@@ -591,11 +639,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #00bb6e;
   border-color: #00bb6e;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -620,11 +684,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #eb4235;
   border-color: #eb4235;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-4 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-6 {
@@ -649,11 +729,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #d0d7dd;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-6:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-6 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-10 {
@@ -678,11 +774,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #4DA1FF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-10:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-12 {
@@ -707,11 +819,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-12:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-12 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-14 {
@@ -736,11 +864,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #eb4235;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-14:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-14 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-20 {
@@ -765,11 +909,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: transparent;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-20:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-20 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-22 {
@@ -794,11 +954,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: transparent;
   border-color: #00bb6e;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-22:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-22 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-24 {
@@ -823,11 +999,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: transparent;
   border-color: #eb4235;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-24:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-24 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-26 {
@@ -852,11 +1044,27 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: transparent;
   border-color: #d0d7dd;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-26:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-26 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1036,11 +1244,27 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-0 {
@@ -1065,11 +1289,27 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 3rem;
   padding: 0 2rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -1094,11 +1334,27 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 5rem;
   padding: 0 6rem;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-4 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1188,21 +1444,32 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: default;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #f4f7f9;
   border-color: #E5E9EC;
   color: #E5E9EC;
   height: 4rem;
   padding: 0 4rem;
-  cursor: default;
   pointer-events: none;
-}
-
-.emotion-0 svg {
-  color: #E5E9EC;
 }
 
 .emotion-0:hover {
   box-shadow: none;
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-0 svg {
+  color: #E5E9EC;
 }
 
 <div
@@ -1269,11 +1536,27 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-0 {
@@ -1347,6 +1630,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   position: relative;
   color: #323c47;
   pointer-events: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #d0d7dd;
   height: 4rem;
@@ -1369,6 +1660,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: 50%;
   -webkit-animation: animation-13owpa8 .7s infinite linear;
   animation: animation-13owpa8 .7s infinite linear;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -1396,6 +1695,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   position: relative;
   color: #FFFFFF;
   pointer-events: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #00bb6e;
   border-color: #00bb6e;
   height: 4rem;
@@ -1418,6 +1725,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: 50%;
   -webkit-animation: animation-13owpa8 .7s infinite linear;
   animation: animation-13owpa8 .7s infinite linear;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1470,12 +1785,28 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1519,11 +1850,27 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1567,11 +1914,27 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -11902,11 +12265,27 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12012,11 +12391,27 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12122,11 +12517,27 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12232,11 +12643,27 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12343,11 +12770,27 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12628,11 +13071,27 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -12738,12 +13197,28 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -12823,12 +13298,28 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -12934,11 +13425,27 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -13044,11 +13551,27 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -16867,11 +17390,27 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-68:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-68 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-31 {
@@ -17236,11 +17775,27 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-19:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-19 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-15 {
@@ -17518,11 +18073,27 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-768:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-768 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-31 {
@@ -19707,11 +20278,27 @@ exports[`Storyshots ATOMS/Table with custom action button 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-23:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-23 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-30 {
@@ -20132,11 +20719,27 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-8 {
@@ -20241,11 +20844,27 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-8 {
@@ -20359,11 +20978,27 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-12 {
@@ -20495,11 +21130,27 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #4DA1FF;
   border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -20524,11 +21175,27 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #00bb6e;
   border-color: #00bb6e;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-4 {
@@ -20553,11 +21220,27 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
   background-color: #FFFFFF;
   border-color: #4DA1FF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-4 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-6 {

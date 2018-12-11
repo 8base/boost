@@ -55,6 +55,7 @@ const InputField = ({
   square,
   stretch,
   width,
+  type,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -85,6 +86,7 @@ const InputField = ({
         square={ square }
         value={ value }
         width={ width }
+        type={ type }
       />
     </FormField>
   );

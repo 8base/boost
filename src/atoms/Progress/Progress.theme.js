@@ -1,3 +1,5 @@
+// @flow
+
 import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'progress';

@@ -12,16 +12,16 @@ type SecondaryNavigationItemProps = {
 
 const name = 'secondaryNavigationItem';
 
-export const theme = createComponentTheme(name, (colors: *) => ({
+export const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
     height: '3rem',
 
     '&:hover': {
-      backgroundColor: colors.WHITE,
+      backgroundColor: COLORS.WHITE,
     },
 
     '&.active': {
-      backgroundColor: colors.WHITE,
+      backgroundColor: COLORS.WHITE,
     },
   },
 }));

@@ -1,9 +1,15 @@
 // @flow
-import styled from 'react-emotion';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
-const BreadcrumbsDivider = styled('span')({
-  padding: '0 1rem',
-  fontSize: '1.6rem',
-});
+const name = 'breadcrumbsDivider';
 
-export { BreadcrumbsDivider };
+const theme = createComponentTheme(name, ({ SIZES }: *) => ({
+  root: {
+    fontSize: SIZES.LARGE_FONT_SIZE,
+    padding: '0 1rem',
+  },
+}));
+
+const BreadcrumbsDividerTag = createStyledTag(name, {});
+
+export { BreadcrumbsDividerTag, theme };

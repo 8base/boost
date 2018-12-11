@@ -22,7 +22,7 @@ type TabTitleProps = {|
 const TabTitleTag = createStyledTag('tabTitle', {});
 
 const tabTitleEnhancer: HOC<*, TabTitleProps> = compose(
-  setDisplayName('TabTitle'),
+  (setDisplayName: any)('TabTitle'),
   withTabsContext,
 );
 

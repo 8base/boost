@@ -10,10 +10,10 @@ type TableBodyRowProps = {
 
 const name = 'tableBodyRow';
 
-const theme = createComponentTheme(name, (colors: *) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
     height: '6rem',
-    borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {
   },

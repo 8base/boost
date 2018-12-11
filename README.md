@@ -48,13 +48,13 @@ const customTheme = createTheme({
         }
       }
     },
-    button: (colors, sizes) => ({
+    button: ({ COLORS, SIZES }) => ({
       root: {
-        fontSize: sizes.SMALL_FONT_SIZE,
+        fontSize: SIZES.SMALL_FONT_SIZE,
       },
       modifiers: {
         disabled: {
-          backgroundColor: colors.RED,
+          backgroundColor: COLORS.RED,
         },
       },
     }),

@@ -30,7 +30,7 @@ type TextProps = {|
 
 const name = 'text';
 
-const theme = createComponentTheme(name, (colors: *): * => ({
+const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
     lineHeight: 1.4,
     margin: 0,
@@ -49,7 +49,7 @@ const theme = createComponentTheme(name, (colors: *): * => ({
     },
 
     disabled: {
-      color: colors.DISABLED_TEXT_COLOR,
+      color: COLORS.DISABLED_TEXT_COLOR,
     },
 
     weight: {

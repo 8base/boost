@@ -14,10 +14,10 @@ type CardSectionProps = {|
 
 const name = 'cardSection';
 
-const cardSectionTheme = createComponentTheme(name, (colors: *) => ({
+const cardSectionTheme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
     '&:not(:last-child)': {
-      borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+      borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     },
   },
   modifiers: {

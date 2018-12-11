@@ -7,9 +7,9 @@ type StarsProps = {|
 
 const name = 'stars';
 
-const theme = createComponentTheme(name, (colors: *) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
-    color: colors.YELLOW,
+    color: COLORS.YELLOW,
     fontSize: '24px',
   },
   modifiers: {

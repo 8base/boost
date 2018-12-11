@@ -4,31 +4,31 @@ import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'code';
 
-const themeWrapper = createComponentTheme(`${name}Wrapper`, (colors: *, sizes: *) => ({
+const themeWrapper = createComponentTheme(`${name}Wrapper`, ({ COLORS, SIZES }: *) => ({
   root: {
-    border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
-    borderRadius: sizes.MAIN_BORDER_RADIUS,
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
   },
 }));
 
-const themeCounter = createComponentTheme(`${name}Counter`, (colors: *) => ({
+const themeCounter = createComponentTheme(`${name}Counter`, ({ COLORS }: *) => ({
   root: {
-    color: colors.DARK_GRAY1,
+    color: COLORS.DARK_GRAY1,
     fontFamily: 'Courier',
   },
 }));
 
-const themeBody = createComponentTheme(`${name}Body`, (colors: *) => ({
+const themeBody = createComponentTheme(`${name}Body`, ({ COLORS }: *) => ({
   root: {
-    color: colors.DARK_GRAY1,
+    color: COLORS.DARK_GRAY1,
     fontFamily: 'Courier',
   },
 }));
 
-const themeNumberic = createComponentTheme(`${name}Numberic`, (colors: *) => ({
+const themeNumberic = createComponentTheme(`${name}Numberic`, ({ COLORS }: *) => ({
   root: {
-    backgroundColor: colors.LIGHT_GRAY5,
-    borderRight: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+    backgroundColor: COLORS.LIGHT_GRAY5,
+    borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
 }));
 

@@ -3,17 +3,17 @@ import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } 
 
 const name = 'input';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
   root: {
-    color: colors.PRIMARY_TEXT_COLOR,
-    fontSize: sizes.MAIN_FONT_SIZE,
+    color: COLORS.PRIMARY_TEXT_COLOR,
+    fontSize: SIZES.MAIN_FONT_SIZE,
     fontWeight: 400,
-    height: sizes.INPUT_HEIGHT,
+    height: SIZES.INPUT_HEIGHT,
     lineHeight: 'normal',
     transition: 'all .15s ease-in-out',
 
     '&::placeholder': {
-      color: colors.PLACEHOLDER_COLOR,
+      color: COLORS.PLACEHOLDER_COLOR,
     },
   },
 
@@ -25,16 +25,16 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
     },
     kind: {
       bordered: {
-        border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+        border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
         borderRadius: '5px',
       },
       underline: {
         border: 0,
-        borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+        borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
       },
     },
     hasError: {
-      borderColor: `${colors.DANGER} !important`,
+      borderColor: `${COLORS.DANGER} !important`,
     },
   },
 

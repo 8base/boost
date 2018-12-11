@@ -6,7 +6,7 @@ import { createStyledTag, createComponentTheme } from '../../utils';
 import type { BreadcrumbsRoutes, BreadcrumbsMatchPath } from './Breadcrumbs.types';
 import { getBreadcrumbs } from './Breadcrumbs.utils';
 import { BreadcrumbsItem } from './BreadcrumbsItem';
-import { BreadcrumbsDivider } from './BreadcrumbsDivider';
+import { BreadcrumbsDividerTag } from './BreadcrumbsDivider';
 
 type BreadcrumbsProps = {|
   /* the location pathname */
@@ -40,7 +40,7 @@ const Breadcrumbs = ({ itemTagName, pathname, routes, matchPath, ...rest }: Brea
           breadcrumbs.map((item, index) => (
             <Fragment>
               <BreadcrumbsItem to={ item.originalPath } { ...{ ...rest, ...item, tagName: itemTagName } } />
-              { index !== breadcrumbs.length - 1 && <BreadcrumbsDivider>></BreadcrumbsDivider> }
+              { index !== breadcrumbs.length - 1 && <BreadcrumbsDividerTag>></BreadcrumbsDividerTag> }
             </Fragment>
           )),
         )

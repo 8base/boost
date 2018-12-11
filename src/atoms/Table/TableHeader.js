@@ -10,12 +10,12 @@ type TableHeaderProps = {
 
 const name = 'tableHeader';
 
-const theme = createComponentTheme(name, (colors: *) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
     height: '5rem',
-    backgroundColor: colors.LIGHT_GRAY5,
-    borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
-    color: colors.GRAY4,
+    backgroundColor: COLORS.LIGHT_GRAY5,
+    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    color: COLORS.GRAY4,
   },
   modifiers: {
   },

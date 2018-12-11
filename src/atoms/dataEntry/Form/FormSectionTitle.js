@@ -10,10 +10,10 @@ type FormSectionTitleProps = {|
 
 const name = 'formSectionTitle';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+const theme = createComponentTheme(name, ({ SIZES }: *) => ({
   root: {
     fontWeight: 600,
-    fontSize: sizes.SMALL_FONT_SIZE,
+    fontSize: SIZES.SMALL_FONT_SIZE,
   },
   modifiers: {},
   defaults: {},

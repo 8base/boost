@@ -16,10 +16,10 @@ type FormErrorProps = {
 
 const name = 'formError';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
   root: {
-    border: `1px solid ${colors.DANGER}`,
-    borderRadius: sizes.MAIN_BORDER_RADIUS,
+    border: `1px solid ${COLORS.DANGER}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
     padding: '1.6rem',
   },
   modifiers: {},

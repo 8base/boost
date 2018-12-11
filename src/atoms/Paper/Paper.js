@@ -19,10 +19,10 @@ type PaperProps = {
 
 const name = 'paper';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
-    background: colors.WHITE,
-    color: colors.BLACK,
+    background: COLORS.WHITE,
+    color: COLORS.BLACK,
     boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
     position: 'relative',
   },
@@ -39,15 +39,15 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
     },
     borderRadius: {
       top: {
-        borderTopLeftRadius: sizes.MAIN_BORDER_RADIUS,
-        borderTopRightRadius: sizes.MAIN_BORDER_RADIUS,
+        borderTopLeftRadius: SIZES.MAIN_BORDER_RADIUS,
+        borderTopRightRadius: SIZES.MAIN_BORDER_RADIUS,
       },
       bottom: {
-        borderBottomLeftRadius: sizes.MAIN_BORDER_RADIUS,
-        borderBottomhtRadius: sizes.MAIN_BORDER_RADIUS,
+        borderBottomLeftRadius: SIZES.MAIN_BORDER_RADIUS,
+        borderBottomhtRadius: SIZES.MAIN_BORDER_RADIUS,
       },
       all: {
-        borderRadius: sizes.MAIN_BORDER_RADIUS,
+        borderRadius: SIZES.MAIN_BORDER_RADIUS,
       },
     },
     stretch: {

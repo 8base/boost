@@ -11,23 +11,23 @@ type LabelProps = {|
 
 const name = 'label';
 
-const theme = createComponentTheme(name, (colors: *, sizes: *) => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
     fontWeight: 400,
-    fontSize: sizes.SMALL_FONT_SIZE,
+    fontSize: SIZES.SMALL_FONT_SIZE,
     lineHeight: 2,
     margin: 0,
   },
   modifiers: {
     kind: {
       primary: {
-        color: colors.PRIMARY_TEXT_COLOR,
+        color: COLORS.PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: colors.SECONDARY_TEXT_COLOR,
+        color: COLORS.SECONDARY_TEXT_COLOR,
       },
       disabled: {
-        color: colors.DISABLED_TEXT_COLOR,
+        color: COLORS.DISABLED_TEXT_COLOR,
       },
     },
   },

@@ -22,7 +22,7 @@ type IconProps = {
 
 const name = 'icon';
 
-const theme : Theme<IconProps> = createComponentTheme(name, () => ({
+const theme : Theme<IconProps> = createComponentTheme(name, {
   modifiers: {
     color: {
       ...fp.mapValues(
@@ -62,7 +62,7 @@ const theme : Theme<IconProps> = createComponentTheme(name, () => ({
     },
   },
   defaults: {},
-}));
+});
 
 const IconTag = createStyledTag(name, {
   display: 'inline-flex',

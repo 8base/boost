@@ -55,13 +55,13 @@ const spinner = keyframes`
   to   { transform: rotate(360deg) }
 `;
 
-const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
-  button: {
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
+  root: {
     cursor: 'pointer',
     fontSize: '1.4rem',
     fontWeight: '600',
     transition: 'all .15s ease-in-out',
-    borderRadius: sizes.MAIN_BORDER_RADIUS,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
     borderStyle: 'solid',
     borderWidth: '1px',
 
@@ -78,35 +78,35 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
   modifiers: {
     color: {
       primary: {
-        backgroundColor: colors.PRIMARY,
-        borderColor: colors.PRIMARY,
-        color: colors.WHITE,
+        backgroundColor: COLORS.PRIMARY,
+        borderColor: COLORS.PRIMARY,
+        color: COLORS.WHITE,
       },
       secondary: {
-        backgroundColor: colors.SECONDARY,
-        borderColor: colors.SECONDARY,
-        color: colors.WHITE,
+        backgroundColor: COLORS.SECONDARY,
+        borderColor: COLORS.SECONDARY,
+        color: COLORS.WHITE,
       },
       neutral: {
-        backgroundColor: colors.WHITE,
-        borderColor: colors.PRIMARY_BORDER_COLOR,
-        color: colors.BLACK,
+        backgroundColor: COLORS.WHITE,
+        borderColor: COLORS.PRIMARY_BORDER_COLOR,
+        color: COLORS.BLACK,
       },
       danger: {
-        backgroundColor: colors.DANGER_DARK,
-        borderColor: colors.DANGER_DARK,
-        color: colors.WHITE,
+        backgroundColor: COLORS.DANGER_DARK,
+        borderColor: COLORS.DANGER_DARK,
+        color: COLORS.WHITE,
       },
     },
 
     variant: {
       outlined: {
-        backgroundColor: colors.WHITE,
-        color: colors.BLACK,
+        backgroundColor: COLORS.WHITE,
+        color: COLORS.BLACK,
       },
       ghost: {
-        backgroundColor: colors.TRANSPARENT,
-        color: colors.WHITE,
+        backgroundColor: COLORS.TRANSPARENT,
+        color: COLORS.WHITE,
       },
     },
 
@@ -134,14 +134,14 @@ const theme = createComponentTheme(name, (colors: *, sizes: *): * => ({
       },
     },
     disabled: {
-      backgroundColor: colors.LIGHT_GRAY5,
-      borderColor: colors.LIGHT_GRAY3,
-      color: colors.LIGHT_GRAY3,
+      backgroundColor: COLORS.LIGHT_GRAY5,
+      borderColor: COLORS.LIGHT_GRAY3,
+      color: COLORS.LIGHT_GRAY3,
       cursor: 'default',
       pointerEvents: 'none',
 
       svg: {
-        color: colors.LIGHT_GRAY3,
+        color: COLORS.LIGHT_GRAY3,
       },
 
       '&:hover': {

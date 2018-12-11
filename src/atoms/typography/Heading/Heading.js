@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../../utils';
@@ -12,7 +14,7 @@ type HeadingProps = {|
 
 const name = 'heading';
 
-const theme = createComponentTheme(name, (colors) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
   root: {
     lineHeight: 1.1,
     fontWeight: 400,
@@ -41,16 +43,16 @@ const theme = createComponentTheme(name, (colors) => ({
     },
     kind: {
       primary: {
-        color: colors.TEXT_PRIMARY,
+        color: COLORS.TEXT_PRIMARY,
       },
       secondary: {
-        color: colors.TEXT_SECONDARY,
+        color: COLORS.TEXT_SECONDARY,
       },
       disabled: {
-        color: colors.DISABLED_TEXT_COLOR,
+        color: COLORS.DISABLED_TEXT_COLOR,
       },
       white: {
-        color: colors.WHITE,
+        color: COLORS.WHITE,
       },
     },
     weight: {

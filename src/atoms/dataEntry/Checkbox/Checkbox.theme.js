@@ -4,34 +4,34 @@ import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'checkbox';
 
-const themeSquare = createComponentTheme(`${name}Square`, (colors: *, sizes: *): * => ({
+const themeSquare = createComponentTheme(`${name}Square`, ({ COLORS, SIZES }: *): * => ({
   root: {
-    background: colors.WHITE,
-    border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
-    borderRadius: sizes.MAIN_BORDER_RADIUS,
+    background: COLORS.WHITE,
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
   },
   modifiers: {
     hasError: {
-      borderColor: colors.DANGER,
+      borderColor: COLORS.DANGER,
     },
     disabled: {
-      backgroundColor: colors.LIGHT_GRAY4,
+      backgroundColor: COLORS.LIGHT_GRAY4,
     },
   },
 }));
 
-const themeIcon = createComponentTheme(`${name}Icon`, (colors: *): * => ({
+const themeIcon = createComponentTheme(`${name}Icon`, ({ COLORS }: *): * => ({
   modifiers: {
     color: {
-      primary: { color: colors.PRIMARY },
-      secondary: { color: colors.SECONDARY },
+      primary: { color: COLORS.PRIMARY },
+      secondary: { color: COLORS.SECONDARY },
     },
   },
 }));
 
-const themeText = createComponentTheme(`${name}Text`, (colors: *): * => ({
-  color: colors.SECONDARY_TEXT_COLOR,
-  fontSize: colors.MAIN_FONT_SIZE,
+const themeText = createComponentTheme(`${name}Text`, ({ COLORS }: *): * => ({
+  color: COLORS.SECONDARY_TEXT_COLOR,
+  fontSize: COLORS.MAIN_FONT_SIZE,
 }));
 
 const theme = {

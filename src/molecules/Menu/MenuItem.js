@@ -8,10 +8,10 @@ type MenuItemProps = {|
 
 const name = 'menuItem';
 
-const theme = createComponentTheme(name, (colors:*, sizes: *) => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
-    color: colors.DSM.GREY_COLORS.DSM_DARK_GREY_2,
-    fontSize: sizes.MAIN_FONT_SIZE,
+    color: COLORS.DSM.GREY_COLORS.DSM_DARK_GREY_2,
+    fontSize: SIZES.MAIN_FONT_SIZE,
     fontWeight: 400,
     lineHeight: '2.3rem',
     height: '4rem',
@@ -19,8 +19,8 @@ const theme = createComponentTheme(name, (colors:*, sizes: *) => ({
     paddingLeft: '1.9rem',
 
     '&:hover': {
-      backgroundColor: colors.PRIMARY_HOVER_GRAY_COLOR,
-      color: colors.BLACK,
+      backgroundColor: COLORS.PRIMARY_HOVER_GRAY_COLOR,
+      color: COLORS.BLACK,
     },
   },
 }));

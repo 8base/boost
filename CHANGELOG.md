@@ -1,3 +1,21 @@
+<a name="0.8.29"></a>
+## [0.8.29](https://github.com/8base/boost/compare/v0.8.28...v0.8.29) (2018-12-11)
+
+
+### Bug Fixes
+
+* **InputField:** pass type to the input ([4fe2760](https://github.com/8base/boost/commit/4fe2760))
+* **Modal:** overlay color ([b97367a](https://github.com/8base/boost/commit/b97367a))
+* **SelectField:** handle clear select ([55430b6](https://github.com/8base/boost/commit/55430b6))
+* **TextArea:** placeholder color ([f5ee30a](https://github.com/8base/boost/commit/f5ee30a))
+
+
+### Features
+
+* **Progress:** add initial progress ([3cae270](https://github.com/8base/boost/commit/3cae270))
+
+
+
 <a name="0.8.28"></a>
 ## [0.8.28](https://github.com/8base/boost/compare/v0.8.27...v0.8.28) (2018-12-10)
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTheme } from '../../../utils';
+import { createComponentTheme } from '../../../utils';
 import { DateInput } from '../DateInput';
 import { FormField } from '../Form/FormField';
 
@@ -15,7 +15,7 @@ type DateInputFieldProps = {|
 
 const name = 'DateInputField';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

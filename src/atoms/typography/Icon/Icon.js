@@ -5,7 +5,7 @@ import fp from 'lodash/fp';
 
 import { PALETTE } from '../../../theme';
 import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../../theme/dsmColors';
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import type { Theme } from '../../../types';
 import * as glyphs from './glyphs';
 
@@ -22,7 +22,7 @@ type IconProps = {
 
 const name = 'icon';
 
-const theme : Theme<IconProps> = createTheme(name, () => ({
+const theme : Theme<IconProps> = createComponentTheme(name, {
   modifiers: {
     color: {
       ...fp.mapValues(
@@ -62,7 +62,7 @@ const theme : Theme<IconProps> = createTheme(name, () => ({
     },
   },
   defaults: {},
-}));
+});
 
 const IconTag = createStyledTag(name, {
   display: 'inline-flex',

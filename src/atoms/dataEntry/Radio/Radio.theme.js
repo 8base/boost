@@ -1,28 +1,56 @@
 // @flow
 
-import { createStyledTag, createTheme, getThemeColors } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 const name = 'radio';
 
-const theme = createTheme(name, (colors: *): * => ({
+const themeCircle = createComponentTheme(`${name}Circle`, ({ COLORS }: *): * => ({
+  root: {
+    background: COLORS.WHITE,
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+  },
   modifiers: {
-    color: {
-      primary: { backgroundColor: colors.PRIMARY },
-      secondary: { backgroundColor: colors.SECONDARY },
-    },
-    disabled: {
-      backgroundColor: colors.GRAY4,
+    hasError: {
+      borderColor: COLORS.DANGER,
     },
   },
 }));
 
-const RadioWrapperTag = createStyledTag(name, {
+
+const themeCircleInner = createComponentTheme(`${name}CircleInner`, ({ COLORS }: *): * => ({
+  modifiers: {
+    color: {
+      primary: { backgroundColor: COLORS.PRIMARY },
+      secondary: { backgroundColor: COLORS.SECONDARY },
+    },
+    disabled: {
+      backgroundColor: COLORS.GRAY4,
+    },
+  },
+}));
+
+const themeText = createComponentTheme(`${name}Text`, ({ COLORS }: *): * => ({
+  root: {
+    color: COLORS.SECONDARY_TEXT_COLOR,
+    fontSize: COLORS.MAIN_FONT_SIZE,
+  },
+}));
+
+
+const theme = {
+  ...themeCircle,
+  ...themeCircleInner,
+  ...themeText,
+};
+
+
+const RadioWrapperTag = createStyledTag(`${name}Wrapper`, {
   display: 'flex',
   alignItems: 'center',
   cursor: 'pointer',
 });
 
-const RadioCircleTag = createStyledTag(name, props => ({
+const RadioCircleTag = createStyledTag(`${name}Circle`, {
   position: 'relative',
   display: 'flex',
   alignItems: 'center',
@@ -31,13 +59,11 @@ const RadioCircleTag = createStyledTag(name, props => ({
   width: '2.5rem',
   height: '2.5rem',
 
-  background: 'white',
-  border: `1px solid ${getThemeColors(props)[props.hasError ? 'DANGER' : 'PRIMARY_BORDER_COLOR']}`,
   borderRadius: '50%',
   transition: 'opacity .3s ease',
-}));
+});
 
-const RadioInnerCircleTag = createStyledTag(name, props => ({
+const RadioCircleInnerTag = createStyledTag(`${name}CircleInner`, props => ({
   display: 'block',
   position: 'absolute',
   top: '50%',
@@ -55,11 +81,9 @@ const RadioTag = createStyledTag(name, {
   display: 'none',
 });
 
-const RadioTextTag = createStyledTag(name, props => ({
-  paddingLeft: '1.2rem',
-  fontSize: '1.4rem',
+const RadioTextTag = createStyledTag(`${name}Text`, {
   cursor: 'pointer',
-  color: getThemeColors(props).DARK_SECONDARY_TEXT_COLOR,
-}));
+  paddingLeft: '1.2rem',
+});
 
-export { theme, RadioCircleTag, RadioTag, RadioWrapperTag, RadioInnerCircleTag, RadioTextTag };
+export { theme, RadioCircleTag, RadioTag, RadioWrapperTag, RadioCircleInnerTag, RadioTextTag };

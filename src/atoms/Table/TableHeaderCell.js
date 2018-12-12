@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableHeaderCellProps = {
   children?: React$Node,
@@ -9,21 +9,23 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ SIZES }: *) => ({
+  root: {
+    padding: '0 2rem',
+    fontSize: SIZES.SMALL_FONT_SIZE,
+    textTransform: 'uppercase',
+    fontWeight: 700,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const TableHeaderCellTag = createStyledTag(name, () => ({
+const TableHeaderCellTag = createStyledTag(name, {
   display: 'flex',
   alignItems: 'center',
-  padding: '0 2rem',
-  fontSize: '1.2rem',
-  textTransform: 'uppercase',
-  fontWeight: 700,
-}));
+});
 
 function TableHeaderCell({
   children,

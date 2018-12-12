@@ -1,45 +1,72 @@
 // @flow
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'code';
 
-const theme = createTheme(name, {
-});
+const themeWrapper = createComponentTheme(`${name}Wrapper`, ({ COLORS, SIZES }: *) => ({
+  root: {
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
+  },
+}));
 
-const CodeWrapperTag = createStyledTag(name, (props) => ({
+const themeCounter = createComponentTheme(`${name}Counter`, ({ COLORS }: *) => ({
+  root: {
+    color: COLORS.DARK_GRAY1,
+    fontFamily: 'Courier',
+  },
+}));
+
+const themeBody = createComponentTheme(`${name}Body`, ({ COLORS }: *) => ({
+  root: {
+    color: COLORS.DARK_GRAY1,
+    fontFamily: 'Courier',
+  },
+}));
+
+const themeNumberic = createComponentTheme(`${name}Numberic`, ({ COLORS }: *) => ({
+  root: {
+    backgroundColor: COLORS.LIGHT_GRAY5,
+    borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+  },
+}));
+
+const theme = {
+  ...themeWrapper,
+  ...themeCounter,
+  ...themeBody,
+  ...themeNumberic,
+};
+
+
+const CodeWrapperTag = createStyledTag(`${name}Wrapper`, (props) => ({
   height: props.height ? `${props.height}px` : '100%',
-  border: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
-  borderRadius: props.theme.SIZES.MAIN_BORDER_RADIUS,
   overflow: 'hidden',
 }));
 
-const CodePlateTag = createStyledTag(name, {
+const CodePlateTag = createStyledTag(`${name}Plate`, {
   display: 'flex',
   width: '100%',
   overflow: 'hidden',
   alignItems: 'stretch',
 });
 
-const CodeLineCounterTag = createStyledTag(name, (props) => ({
+const CodeLineCounterTag = createStyledTag(`${name}Counter`, (props) => ({
   opacity: '0.5',
-  color: props.theme.COLORS.DARK_GRAY1,
-  fontSize: '1.4rem',
-  fontFamily: 'Courier',
-  lineHeight: '2',
   textAlign: 'center',
+  fontSize: props.theme.SIZES.MAIN_FONT_SIZE,
+  lineHeight: '2',
 }));
 
-const CodeNumericTag = createStyledTag(name, (props) => ({
+const CodeNumericTag = createStyledTag(`${name}Numberic`, (props) => ({
   height: props.height ? 'auto' : '100%',
   padding: '2rem 0 4rem',
-  backgroundColor: props.theme.COLORS.LIGHT_GRAY5,
-  borderRight: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
   borderTopLeftRadius: props.theme.SIZES.MAIN_BORDER_RADIUS,
   borderBottomLeftRadius: props.theme.SIZES.MAIN_BORDER_RADIUS,
 }));
 
-const CodeNumberWrapperTag = createStyledTag(name, (props) => ({
+const CodeNumberWrapperTag = createStyledTag(`${name}NumberWrapper`, (props) => ({
   height: props.height ? `${props.height}px` : 'auto',
   display: 'block',
   width: '3rem',
@@ -47,7 +74,7 @@ const CodeNumberWrapperTag = createStyledTag(name, (props) => ({
   position: 'relative',
 }));
 
-const CodeNumberPlateTag = createStyledTag(name, {
+const CodeNumberPlateTag = createStyledTag(`${name}NumberPlate`, {
   height: '100%',
   display: 'block',
   width: '3rem',
@@ -55,21 +82,22 @@ const CodeNumberPlateTag = createStyledTag(name, {
   overflow: 'hidden',
 });
 
-const CodeBodyWrapperTag = createStyledTag(name, (props) => ({
+const CodeBodyWrapperTag = createStyledTag(`${name}BodyWrapper`, (props) => ({
   overflow: 'hidden',
   height: props.height ? `${props.height}px` : '100%',
   width: '100%',
 }));
 
-const CodeBodyTag = createStyledTag(name, (props) => ({
+const CodeBodyTag = createStyledTag(`${name}Body`, {
   overflow: 'auto',
-  padding: '2rem',
-  fontFamily: 'Courier',
-  lineHeight: '2',
-  color: props.theme.COLORS.DARK_GRAY1,
-  fontWeight: 'normal',
   height: '100%',
-}));
+  padding: '2rem',
+  lineHeight: '2',
+  fontWeight: 'normal',
+
+
+  fontFamily: 'Courier',
+});
 
 export {
   theme,

@@ -4,7 +4,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 
 import { PALETTE } from '../../../theme';
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import type { PropSizes } from '../../../types';
 
 type TextProps = {|
@@ -30,7 +30,12 @@ type TextProps = {|
 
 const name = 'text';
 
-const theme = createTheme(name, (colors: *): * => ({
+const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
+  root: {
+    lineHeight: 1.4,
+    margin: 0,
+  },
+
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),
@@ -44,7 +49,7 @@ const theme = createTheme(name, (colors: *): * => ({
     },
 
     disabled: {
-      color: colors.DISABLED_TEXT_COLOR,
+      color: COLORS.DISABLED_TEXT_COLOR,
     },
 
     weight: {
@@ -107,10 +112,7 @@ const theme = createTheme(name, (colors: *): * => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  lineHeight: 1.4,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Text({
   text,

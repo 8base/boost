@@ -5,7 +5,7 @@ import * as DSM_COLORS from './dsmColors';
 export { COLORS, PALETTE } from './colors';
 export { SIZES } from './sizes';
 export { Z_INDEX } from './zIndex';
-export { defaultTheme } from './defaultTheme';
+export { createTheme } from './createTheme';
 export { resetGlobal } from './resetGlobal';
 export { DSM_COLORS };
-
+export type { Theme } from './defaultTheme';

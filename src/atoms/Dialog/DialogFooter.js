@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTheme } from '../../utils';
+import { createComponentTheme } from '../../utils';
 import { Card } from '../Card';
 import { Row } from '../FlexLayout';
 import type { PropSizes } from '../../types';
@@ -12,7 +12,7 @@ type DialogFooterProps = {|
 
 const name = 'dialogFooter';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

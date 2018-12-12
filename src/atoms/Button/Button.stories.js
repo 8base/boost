@@ -27,20 +27,24 @@ export default (asStory) => {
         </Row>
       ))
       .add('with custom colors and variant', () => (
-        <Column style={{ background: '#999' }}>
+        <Column style={{ background: '#999', padding: '10px' }}>
           <Row>
-            <Button text="Raised" color="primary" />
-            <Button text="Raised" color="secondary" />
-            <Button text="Raised" color="red" />
-            <Button text="Raised" color="neutral" />
-            <Button text="Raised" color="white" />
+            <Button text="Primary" color="primary" />
+            <Button text="Secondary" color="secondary" />
+            <Button text="Danger" color="danger" />
+            <Button text="Neutral" color="neutral" />
           </Row>
           <Row>
             <Button text="Outlined" color="primary" variant="outlined" />
             <Button text="Outlined" color="secondary" variant="outlined" />
-            <Button text="Outlined" color="red" variant="outlined" />
+            <Button text="Outlined" color="danger" variant="outlined" />
             <Button text="Outlined" color="neutral" variant="outlined" />
-            <Button text="Outlined" color="white" variant="outlined" />
+          </Row>
+          <Row>
+            <Button text="Ghost" color="primary" variant="ghost" />
+            <Button text="Ghost" color="secondary" variant="ghost" />
+            <Button text="Ghost" color="danger" variant="ghost" />
+            <Button text="Ghost" color="neutral" variant="ghost" />
           </Row>
         </Column>
       ))

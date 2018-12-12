@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type LabelProps = {|
   kind?: 'primary' | 'secondary' | 'disabled',
@@ -11,29 +11,30 @@ type LabelProps = {|
 
 const name = 'label';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
+  root: {
+    fontWeight: 400,
+    fontSize: SIZES.SMALL_FONT_SIZE,
+    lineHeight: 2,
+    margin: 0,
+  },
   modifiers: {
     kind: {
       primary: {
-        color: colors.PRIMARY_TEXT_COLOR,
+        color: COLORS.PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: colors.SECONDARY_TEXT_COLOR,
+        color: COLORS.SECONDARY_TEXT_COLOR,
       },
       disabled: {
-        color: colors.DISABLED_TEXT_COLOR,
+        color: COLORS.DISABLED_TEXT_COLOR,
       },
     },
   },
   defaults: { },
 }));
 
-const StyledTag = createStyledTag(name, {
-  fontWeight: 400,
-  fontSize: '1.2rem',
-  lineHeight: 2,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Label({
   text,

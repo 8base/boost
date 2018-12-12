@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme, getThemeStyle } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import { Row } from '../../FlexLayout/FlexLayout';
 import { Text } from '../../typography/Text';
 import { Icon } from '../../typography/Icon';
@@ -16,20 +16,17 @@ type FormErrorProps = {
 
 const name = 'formError';
 
-const theme = createTheme(name, (colors: *, sizes: *): * => ({
-  errorPlate: {
-    border: `1px solid ${colors.DANGER}`,
-    borderRadius: sizes.MAIN_BORDER_RADIUS,
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
+  root: {
+    border: `1px solid ${COLORS.DANGER}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
     padding: '1.6rem',
   },
-
-  modifiers: { },
-  defaults: { },
+  modifiers: {},
+  defaults: {},
 }));
 
-const FormErrorPlateTag = createStyledTag(name, props => ({
-  ...getThemeStyle(props, name).errorPlate,
-}));
+const FormErrorPlateTag = createStyledTag(name, {});
 
 function FormError({ error, children, ...rest }: FormErrorProps) {
   const errorText = error || children;

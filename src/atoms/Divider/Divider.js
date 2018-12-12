@@ -1,26 +1,28 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type DividerProps = {|
 |};
 
-const name = 'stars';
+const name = 'divider';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
+  root: {
+    backgroundColor: COLORS.LIGHT_GRAY4,
+    height: '1px',
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const StyledTag = createStyledTag(name, (props) => ({
-  backgroundColor: props.theme.COLORS.DARK_DIVIDER_COLOR,
-  height: '1px',
+const StyledTag = createStyledTag(name, {
   border: 'none',
   width: '100%',
   margin: '1rem 0',
-}));
+});
 
 function Divider(props: DividerProps) {
   return <StyledTag { ...props } tagName="hr" />;

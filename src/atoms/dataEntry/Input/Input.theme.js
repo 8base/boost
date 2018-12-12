@@ -1,20 +1,19 @@
 // @flow
-import { PALETTE } from '../../../theme';
-import { createStyledTag, createTheme, getThemeStyle, getThemeStyleByCond } from '../../../utils';
+import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } from '../../../utils';
 
 const name = 'input';
 
-const theme = createTheme(name, (colors: *): * => ({
-  input: {
-    color: colors.PRIMARY_TEXT_COLOR,
-    fontSize: '1.4rem',
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
+  root: {
+    color: COLORS.PRIMARY_TEXT_COLOR,
+    fontSize: SIZES.MAIN_FONT_SIZE,
     fontWeight: 400,
-    height: '4rem',
+    height: SIZES.INPUT_HEIGHT,
     lineHeight: 'normal',
     transition: 'all .15s ease-in-out',
 
     '&::placeholder': {
-      color: colors.LIGHT_GRAY1,
+      color: COLORS.PLACEHOLDER_COLOR,
     },
   },
 
@@ -26,28 +25,17 @@ const theme = createTheme(name, (colors: *): * => ({
     },
     kind: {
       bordered: {
-        border: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+        border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
         borderRadius: '5px',
       },
       underline: {
         border: 0,
-        borderBottom: `1px solid ${colors.PRIMARY_BORDER_COLOR}`,
+        borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
       },
     },
-  },
-
-  inputError: {
-    borderColor: `${colors.DANGER} !important`,
-  },
-
-  inputIndicator: {
-    right: '1rem',
-    top: '50%',
-    marginTop: '-.3rem',
-    width: '.6rem',
-    height: '.6rem',
-    backgroundColor: colors.DANGER,
-    borderRadius: '50%',
+    hasError: {
+      borderColor: `${COLORS.DANGER} !important`,
+    },
   },
 
   defaults: {
@@ -64,7 +52,13 @@ const InputWrapperTag = createStyledTag(`${name}Wrapper`, props => ({
 const InputIndicatorTag = createStyledTag(`${name}Indicator`, props => ({
   display: props.hasRightIcon ? 'none' : 'block',
   position: 'absolute',
-  ...getThemeStyle(props, name).inputIndicator,
+  right: '1rem',
+  top: '50%',
+  marginTop: '-.3rem',
+  width: '.6rem',
+  height: '.6rem',
+  backgroundColor: getThemeColors(props).DANGER,
+  borderRadius: '50%',
 }));
 
 const iconsStyles = {
@@ -93,20 +87,15 @@ const getInputStyles = props => ({
   paddingRight: props.hasRightIcon ? '5rem' : '2rem',
 
   ...getThemeStyle(props, name).input,
-  ...getThemeStyleByCond(props, name, 'inputError', props.hasError),
 
-  backgroundColor: PALETTE[
-    (props.disabled || props.readOnly) ?
-      'LIGHT_GRAY5' :
-      'WHITE'
-  ],
+  backgroundColor: (props.disabled || props.readOnly)
+    ? getThemeColors(props).LIGHT_GRAY5
+    : getThemeColors(props).WHITE,
 
   '&:focus': {
-    borderColor: PALETTE[
-      (props.disabled || props.readOnly) ?
-        'LIGHT_GRAY1' :
-        'LIGHT_BLUE'
-    ],
+    borderColor: (props.disabled || props.readOnly)
+      ? getThemeColors(props).PRIMARY_BORDER_COLOR
+      : getThemeColors(props).PRIMARY,
   },
 
   '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {

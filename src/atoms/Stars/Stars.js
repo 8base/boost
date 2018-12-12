@@ -1,23 +1,25 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type StarsProps = {|
 |};
 
 const name = 'stars';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
+  root: {
+    color: COLORS.YELLOW,
+    fontSize: '24px',
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
 const StyledTag = createStyledTag(name, {
-  color: '#FFCB00',
   lineHeight: 'normal',
-  fontSize: '24px',
 });
 
 function Stars(props: StarsProps) {

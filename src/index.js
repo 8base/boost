@@ -2,7 +2,7 @@
 
 export { ThemeProvider } from 'emotion-theming';
 export {
-  defaultTheme,
+  createTheme,
   resetGlobal,
   Z_INDEX,
   DSM_COLORS,

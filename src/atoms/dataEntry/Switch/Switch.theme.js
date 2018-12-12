@@ -1,31 +1,50 @@
 // @flow
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
-const name = 'Switch';
+const name = 'switch';
 
-const theme = createTheme(name, {
-  modifiers: {},
-  defaults: {},
+const themeSwitch = createComponentTheme(name, {
+  root: {
+    height: '4rem',
+  },
 });
+
+const themeApperance = createComponentTheme(`${name}Appearance`, {
+  root: {
+    height: '2.6rem',
+    width: '5.2rem',
+    borderRadius: '2.6rem',
+  },
+});
+
+const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS }: *) => ({
+  root: {
+    fontSize: COLORS.SMALL_FONT_SIZE,
+    color: COLORS.GRAY1,
+  },
+}));
+
+const theme = {
+  ...themeSwitch,
+  ...themeApperance,
+  ...themeLabel,
+};
+
 
 const SwitchTag = createStyledTag(name, {
   display: 'flex',
   alignItems: 'center',
-  height: '4rem',
   cursor: 'pointer',
 });
 
-const SwitchInputTag = createStyledTag(name, {
+const SwitchInputTag = createStyledTag(`${name}Input`, {
   display: 'none',
 });
 
-const SwitchApperanceTag = createStyledTag(name, props => ({
+const SwitchApperanceTag = createStyledTag(`${name}Appearance`, props => ({
   display: 'flex',
-  height: '2.6rem',
-  width: '5.2rem',
-  borderRadius: '2.6rem',
-  backgroundColor: props.theme.COLORS[props.value ? 'LIGHT_BLUE' : 'LIGHT_GRAY1'],
+  backgroundColor: props.theme.COLORS[props.value ? 'PRIMARY' : 'DISABLED_COLOR'],
   position: 'relative',
 
   '&:before': {
@@ -42,12 +61,9 @@ const SwitchApperanceTag = createStyledTag(name, props => ({
   },
 }));
 
-const SwitchLabelTag = createStyledTag(name, props => ({
-  fontFamily: 'Poppins',
-  fontSize: '1.2rem',
+const SwitchLabelTag = createStyledTag(`${name}Label`, {
   marginLeft: '1rem',
   userSelect: 'none',
-  color: props.theme.COLORS.GRAY1,
-}));
+});
 
 export { theme, SwitchTag, SwitchInputTag, SwitchApperanceTag, SwitchLabelTag };

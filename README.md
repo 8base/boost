@@ -28,24 +28,39 @@ const App = () => {
 ### Usage with custom theme
 
 ```js
-import { EightBaseBoostProvider, defaultTheme } from '@8base/boost';
-import merge from 'deepmerge';
+import { EightBaseBoostProvider, createTheme } from '@8base/boost';
 
-/** You can use deepmerge package to override properties of the default theme. */
-const customTheme = merge(defaultTheme, {
+
+const customTheme = createTheme({
   /** Change the pallete of the color. */
   COLORS: {
-    PRIMARY_BUTTON_BACKGROUND_COLOR: '#FFFFFF'
+    PRIMARY: '#3EB7F9',
   },
   /** Change the custom components styles if it needed. */
-  button: {
-    modifiers: {
-      disabled: {
-        backgroundColor: '#000000',
+  components: {
+    input: {
+      root: {
+        borderColor: 'gray',
+      },
+      modifiers: {
+        hasError: {
+          borderColor: 'red',
+        }
       }
-    }
-  }
-})
+    },
+    button: ({ COLORS, SIZES }) => ({
+      root: {
+        fontSize: SIZES.SMALL_FONT_SIZE,
+      },
+      modifiers: {
+        disabled: {
+          backgroundColor: COLORS.RED,
+        },
+      },
+    }),
+  },
+});
+
 
 const App = () => {
   return (

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableActionProps = {
   children: React$Node,
@@ -9,7 +9,11 @@ type TableActionProps = {
 
 const name = 'tableAction';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
+  root: {
+    paddingTop: '2rem',
+    paddingBottom: '2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -21,8 +25,6 @@ const TableActionTag = createStyledTag(name, {
   bottom: 0,
   display: 'flex',
   justifyContent: 'center',
-  paddingTop: '2rem',
-  paddingBottom: '2rem',
 });
 
 function TableAction({ children }: TableActionProps) {

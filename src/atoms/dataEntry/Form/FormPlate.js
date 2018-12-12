@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 import { FlexLayout } from '../../FlexLayout/FlexLayout';
 
 type FormPlateProps = {
@@ -18,7 +18,7 @@ type FormPlateProps = {
 
 const name = 'formPlate';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     stretch: {
       height: '100%',

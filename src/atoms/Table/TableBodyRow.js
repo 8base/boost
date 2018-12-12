@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { Grid } from '../Grid';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableBodyRowProps = {
   children?: React$Node,
@@ -10,22 +10,24 @@ type TableBodyRowProps = {
 
 const name = 'tableBodyRow';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
+  root: {
+    height: '6rem',
+    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const TableBodyRowTag = createStyledTag(name, (props: *) => ({
+const TableBodyRowTag = createStyledTag(name, {
   display: 'grid',
-  borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
-  height: '6rem',
 
   '&:last-child': {
     borderBottom: 'none',
   },
-}));
+});
 
 function TableBodyRow({
   children,

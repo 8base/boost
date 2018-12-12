@@ -1,37 +1,62 @@
-import { createStyledTag, createTheme } from '../../utils';
+// @flow
+
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 const name = 'progress';
 
-export const theme = createTheme(name, {
-  modifiers: {
+const themeInner = createComponentTheme(`${name}Inner`, ({ COLORS }: *) => ({
+  root: {
+    heigth: '1.2rem',
+    background: COLORS.LIGHT_GRAY4,
+    borderRadius: '1.2rem',
   },
-  defaults: {
-  },
-});
+}));
 
-export const ProgressOuterTag = createStyledTag(name, {
+const themeValue = createComponentTheme(`${name}Value`, ({ COLORS }: *) => ({
+  root: {
+    backgroundColor: COLORS.PRIMARY,
+    borderRadius: '1.2rem',
+  },
+}));
+
+const themeText = createComponentTheme(`${name}Text`, ({ COLORS, SIZES }: *) => ({
+  root: {
+    fontSize: SIZES.MEDIUM_FONT_SIZE,
+    fontWeight: '600',
+    color: COLORS.PRIMARY,
+  },
+}));
+
+const theme = {
+  ...themeInner,
+  ...themeValue,
+  ...themeText,
+};
+
+
+const ProgressOuterTag = createStyledTag(name, {
   width: '100%',
   display: 'flex',
 });
 
-export const ProgressInnerTag = createStyledTag(`${name}Inner`, ({ theme }) => ({
-  heigth: '1.2rem',
+const ProgressInnerTag = createStyledTag(`${name}Inner`, {
   flex: '1',
-  background: theme.COLORS.LIGHT_GRAY4,
-  borderRadius: '1.2rem',
-}));
+});
 
-export const ProgressValueTag = createStyledTag(`${name}Value`, ({ theme }) => ({
-  backgroundColor: theme.COLORS.PRIMARY,
-  borderRadius: '1.2rem',
+const ProgressValueTag = createStyledTag(`${name}Value`, {
   height: '100%',
-}));
+});
 
-export const ProgressTextTag = createStyledTag(`${name}Text`, ({ theme }) => ({
-  fontSize: '13px',
-  fontWeight: '600',
+const ProgressTextTag = createStyledTag(`${name}Text`, {
   marginLeft: '1.2rem',
-  whiteSpace: 'nowrap',
-  color: theme.COLORS.PRIMARY,
   width: '3.6rem',
-}));
+});
+
+
+export {
+  theme,
+  ProgressOuterTag,
+  ProgressInnerTag,
+  ProgressValueTag,
+  ProgressTextTag,
+};

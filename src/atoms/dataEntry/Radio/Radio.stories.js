@@ -78,6 +78,7 @@ export default (asStory: *) => {
               </Radio.Group>
             )
           }
-        </RadioState>));
+        </RadioState>
+      ));
   });
 };

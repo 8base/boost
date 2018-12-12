@@ -4,7 +4,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 import { PALETTE } from '../../../theme';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type LinkProps = {|
   children?: React$Node,
@@ -17,7 +17,7 @@ type LinkProps = {|
 
 const name = 'link';
 
-const theme = createTheme(name, () => ({
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       lg: {
@@ -47,11 +47,10 @@ const theme = createTheme(name, () => ({
     color: 'LIGHT_BLUE',
     underline: false,
   },
-}));
+});
 
 const StyledTag = createStyledTag(name, () => ({
   cursor: 'pointer',
-  fontFamily: 'Poppins',
   fontWeight: 400,
   lineHeight: '1',
   textDecoration: 'none',

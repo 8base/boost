@@ -4,7 +4,6 @@ exports[`As developer, I can create tag by provided theme and passed styles. wit
 .emotion-0 {
   height: 10px;
   grid-gap: 10px;
-  color: #000;
 }
 
 <div
@@ -17,8 +16,6 @@ exports[`As developer, I can create tag by provided theme and passed styles. wit
 exports[`As developer, I can create tag by provided theme and passed styles. with style object 1`] = `
 .emotion-0 {
   height: 10px;
-  color: #000;
-  width: 200px;
 }
 
 <div

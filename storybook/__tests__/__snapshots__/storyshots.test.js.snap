@@ -230,9 +230,8 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
 }
 
 .emotion-3 {
-  padding: 0 1rem;
   font-size: 1.6rem;
-  font-family: Poppins;
+  padding: 0 1rem;
 }
 
 .emotion-19 {
@@ -263,7 +262,6 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
 
 .emotion-1 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -298,9 +296,9 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -334,7 +332,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
       Dashboard
     </a>
     <span
-      className="emotion-3 emotion-4"
+      className="emotion-3 emotion-0"
     >
       &gt;
     </span>
@@ -348,7 +346,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
       1
     </a>
     <span
-      className="emotion-3 emotion-4"
+      className="emotion-3 emotion-0"
     >
       &gt;
     </span>
@@ -362,7 +360,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with custom tagName 1`] = `
       Settings
     </a>
     <span
-      className="emotion-3 emotion-4"
+      className="emotion-3 emotion-0"
     >
       &gt;
     </span>
@@ -386,7 +384,6 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
 
 .emotion-0 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -401,9 +398,8 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
 }
 
 .emotion-2 {
-  padding: 0 1rem;
   font-size: 1.6rem;
-  font-family: Poppins;
+  padding: 0 1rem;
 }
 
 <div
@@ -419,7 +415,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
       Dashboard
     </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-2 emotion-1"
     >
       &gt;
     </span>
@@ -430,7 +426,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
       1
     </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-2 emotion-1"
     >
       &gt;
     </span>
@@ -441,7 +437,7 @@ exports[`Storyshots ATOMS/Breadcrumbs with default modifiers 1`] = `
       Settings
     </a>
     <span
-      className="emotion-2 emotion-3"
+      className="emotion-2 emotion-1"
     >
       &gt;
     </span>
@@ -490,9 +486,9 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -520,11 +516,11 @@ exports[`Storyshots ATOMS/Button with children 1`] = `
 `;
 
 exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
-.emotion-26 {
+.emotion-32 {
   margin: 2rem;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -546,7 +542,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-10 > *:not(:last-child) {
+.emotion-8 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -580,9 +576,9 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -595,7 +591,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-24 {
+.emotion-30 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -617,7 +613,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   cursor: inherit;
 }
 
-.emotion-24 > *:not(:last-child) {
+.emotion-30 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -651,9 +647,9 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
   background-color: #00bb6e;
-  color: rgba(255,255,255,1);
+  border-color: #00bb6e;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -696,9 +692,9 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #eb4235;
   background-color: #eb4235;
-  color: rgba(255,255,255,1);
+  border-color: #eb4235;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -741,8 +737,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d7dd;
   background-color: #FFFFFF;
+  border-color: #d0d7dd;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -756,7 +752,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
-.emotion-8 {
+.emotion-10 {
   outline: none;
   text-align: center;
   -webkit-text-decoration: none;
@@ -786,18 +782,18 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #FFFFFF;
   background-color: #FFFFFF;
+  border-color: #4DA1FF;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
 }
 
-.emotion-8:hover {
+.emotion-10:hover {
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
 }
 
-.emotion-8 > *:not(:last-child) {
+.emotion-10 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -831,8 +827,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
-  background-color: px;
+  background-color: #FFFFFF;
+  border-color: #00bb6e;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -876,8 +872,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
-  background-color: px;
+  background-color: #FFFFFF;
+  border-color: #eb4235;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -888,96 +884,6 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
 }
 
 .emotion-14 > *:not(:last-child) {
-  margin-right: .5rem;
-}
-
-.emotion-16 {
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  border-radius: .5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eb4235;
-  background-color: px;
-  color: #323c47;
-  height: 4rem;
-  padding: 0 4rem;
-}
-
-.emotion-16:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-16 > *:not(:last-child) {
-  margin-right: .5rem;
-}
-
-.emotion-18 {
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  border-radius: .5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #d0d7dd;
-  background-color: px;
-  color: #323c47;
-  height: 4rem;
-  padding: 0 4rem;
-}
-
-.emotion-18:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-18 > *:not(:last-child) {
   margin-right: .5rem;
 }
 
@@ -1011,8 +917,8 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #FFFFFF;
   background-color: transparent;
+  border-color: #4DA1FF;
   color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
@@ -1026,19 +932,155 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
   margin-right: .5rem;
 }
 
+.emotion-22 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #00bb6e;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-22:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-22 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-24 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #eb4235;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-24:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-24 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.emotion-26 {
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #d0d7dd;
+  color: #FFFFFF;
+  height: 4rem;
+  padding: 0 4rem;
+}
+
+.emotion-26:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-26 > *:not(:last-child) {
+  margin-right: .5rem;
+}
+
 <div
-  className="emotion-26 emotion-27"
+  className="emotion-32 emotion-33"
 >
   <div
-    className="emotion-24 emotion-1"
+    className="emotion-30 emotion-1"
     style={
       Object {
         "background": "#999",
+        "padding": "10px",
       }
     }
   >
     <div
-      className="emotion-10 emotion-1"
+      className="emotion-8 emotion-1"
     >
       <button
         aria-busy="undefined"
@@ -1046,7 +1088,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
         onClick={[Function]}
         type={undefined}
       >
-        Raised
+        Primary
       </button>
       <button
         aria-busy="undefined"
@@ -1054,7 +1096,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
         onClick={[Function]}
         type={undefined}
       >
-        Raised
+        Secondary
       </button>
       <button
         aria-busy="undefined"
@@ -1062,7 +1104,7 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
         onClick={[Function]}
         type={undefined}
       >
-        Raised
+        Danger
       </button>
       <button
         aria-busy="undefined"
@@ -1070,20 +1112,20 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
         onClick={[Function]}
         type={undefined}
       >
-        Raised
-      </button>
-      <button
-        aria-busy="undefined"
-        className="emotion-8 emotion-1"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Raised
+        Neutral
       </button>
     </div>
     <div
-      className="emotion-10 emotion-1"
+      className="emotion-8 emotion-1"
     >
+      <button
+        aria-busy="undefined"
+        className="emotion-10 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Outlined
+      </button>
       <button
         aria-busy="undefined"
         className="emotion-12 emotion-1"
@@ -1102,27 +1144,47 @@ exports[`Storyshots ATOMS/Button with custom colors and variant 1`] = `
       </button>
       <button
         aria-busy="undefined"
-        className="emotion-16 emotion-1"
+        className="emotion-6 emotion-1"
         onClick={[Function]}
         type={undefined}
       >
         Outlined
       </button>
-      <button
-        aria-busy="undefined"
-        className="emotion-18 emotion-1"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Outlined
-      </button>
+    </div>
+    <div
+      className="emotion-8 emotion-1"
+    >
       <button
         aria-busy="undefined"
         className="emotion-20 emotion-1"
         onClick={[Function]}
         type={undefined}
       >
-        Outlined
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-22 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-24 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
+      </button>
+      <button
+        aria-busy="undefined"
+        className="emotion-26 emotion-1"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Ghost
       </button>
     </div>
   </div>
@@ -1190,9 +1252,9 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -1235,9 +1297,9 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 3rem;
   padding: 0 2rem;
 }
@@ -1280,9 +1342,9 @@ exports[`Storyshots ATOMS/Button with custom sizes 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 5rem;
   padding: 0 6rem;
 }
@@ -1390,8 +1452,8 @@ exports[`Storyshots ATOMS/Button with disabled modifiers 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #E5E9EC;
   background-color: #f4f7f9;
+  border-color: #E5E9EC;
   color: #E5E9EC;
   height: 4rem;
   padding: 0 4rem;
@@ -1482,8 +1544,8 @@ exports[`Storyshots ATOMS/Button with icon 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
+  background-color: #FFFFFF;
   border-color: #00bb6e;
-  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -1565,6 +1627,9 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  position: relative;
+  color: #323c47;
+  pointer-events: none;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: 600;
@@ -1573,21 +1638,10 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d7dd;
   background-color: #FFFFFF;
-  color: transparent;
-  position: relative;
-  pointer-events: none;
+  border-color: #d0d7dd;
   height: 4rem;
   padding: 0 4rem;
-}
-
-.emotion-0:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-0 > *:not(:last-child) {
-  margin-right: .5rem;
 }
 
 .emotion-0:after {
@@ -1606,6 +1660,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: 50%;
   -webkit-animation: animation-13owpa8 .7s infinite linear;
   animation: animation-13owpa8 .7s infinite linear;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 .emotion-2 {
@@ -1630,6 +1692,9 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
+  position: relative;
+  color: #FFFFFF;
+  pointer-events: none;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: 600;
@@ -1638,21 +1703,10 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
   background-color: #00bb6e;
-  color: transparent;
-  position: relative;
-  pointer-events: none;
+  border-color: #00bb6e;
   height: 4rem;
   padding: 0 4rem;
-}
-
-.emotion-2:hover {
-  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
-}
-
-.emotion-2 > *:not(:last-child) {
-  margin-right: .5rem;
 }
 
 .emotion-2:after {
@@ -1671,6 +1725,14 @@ exports[`Storyshots ATOMS/Button with loading 1`] = `
   border-radius: 50%;
   -webkit-animation: animation-13owpa8 .7s infinite linear;
   animation: animation-13owpa8 .7s infinite linear;
+}
+
+.emotion-2:hover {
+  box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
+}
+
+.emotion-2 > *:not(:last-child) {
+  margin-right: .5rem;
 }
 
 <div
@@ -1731,9 +1793,9 @@ exports[`Storyshots ATOMS/Button with stretch 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
@@ -1796,9 +1858,9 @@ exports[`Storyshots ATOMS/Button with submit type 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -1860,9 +1922,9 @@ exports[`Storyshots ATOMS/Button with text 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -1904,7 +1966,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -1912,7 +1974,6 @@ exports[`Storyshots ATOMS/Card default 1`] = `
 }
 
 .emotion-0 {
-  border-bottom: 1px solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1925,6 +1986,7 @@ exports[`Storyshots ATOMS/Card default 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-bottom: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -1933,10 +1995,10 @@ exports[`Storyshots ATOMS/Card default 1`] = `
 }
 
 .emotion-4 {
-  border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-top: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -1984,7 +2046,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -1992,7 +2054,6 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 }
 
 .emotion-0 {
-  border-bottom: 1px solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2005,6 +2066,7 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-bottom: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2013,10 +2075,10 @@ exports[`Storyshots ATOMS/Card with custom offsets 1`] = `
 }
 
 .emotion-4 {
-  border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-top: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2064,7 +2126,7 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -2072,7 +2134,6 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
 }
 
 .emotion-0 {
-  border-bottom: 1px solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2085,14 +2146,15 @@ exports[`Storyshots ATOMS/Card with scrollable body 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-bottom: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
 .emotion-10 {
-  border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-top: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2200,7 +2262,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -2208,7 +2270,6 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
 }
 
 .emotion-0 {
-  border-bottom: 1px solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2221,6 +2282,7 @@ exports[`Storyshots ATOMS/Card without footer 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-bottom: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2267,7 +2329,7 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -2279,10 +2341,10 @@ exports[`Storyshots ATOMS/Card without header 1`] = `
 }
 
 .emotion-2 {
-  border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-top: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2325,7 +2387,7 @@ exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -2333,7 +2395,6 @@ exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
 }
 
 .emotion-0 {
-  border-bottom: 1px solid #d0d7dd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2346,14 +2407,15 @@ exports[`Storyshots ATOMS/Card without multiple sections 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-bottom: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
 .emotion-10 {
-  border-top: 1px solid #d0d7dd;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  border-top: 1px solid #d0d7dd;
   padding: 2rem;
 }
 
@@ -2427,9 +2489,9 @@ exports[`Storyshots ATOMS/Code default 1`] = `
 
 .emotion-12 {
   height: 100%;
+  overflow: hidden;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  overflow: hidden;
 }
 
 .emotion-10 {
@@ -2466,10 +2528,10 @@ exports[`Storyshots ATOMS/Code default 1`] = `
 .emotion-0 {
   height: 100%;
   padding: 2rem 0 4rem;
-  background-color: #f4f7f9;
-  border-right: 1px solid #d0d7dd;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
+  background-color: #f4f7f9;
+  border-right: 1px solid #d0d7dd;
 }
 
 .emotion-8 {
@@ -2480,12 +2542,12 @@ exports[`Storyshots ATOMS/Code default 1`] = `
 
 .emotion-6 {
   overflow: auto;
-  padding: 2rem;
-  font-family: Courier;
-  line-height: 2;
-  color: #323c47;
-  font-weight: normal;
   height: 100%;
+  padding: 2rem;
+  line-height: 2;
+  font-weight: normal;
+  font-family: Courier;
+  color: #323c47;
 }
 
 <div
@@ -2557,19 +2619,19 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
 
 .emotion-48 {
   overflow: auto;
-  padding: 2rem;
-  font-family: Courier;
-  line-height: 2;
-  color: #323c47;
-  font-weight: normal;
   height: 100%;
+  padding: 2rem;
+  line-height: 2;
+  font-weight: normal;
+  font-family: Courier;
+  color: #323c47;
 }
 
 .emotion-54 {
   height: 200px;
+  overflow: hidden;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  overflow: hidden;
 }
 
 .emotion-46 {
@@ -2585,19 +2647,19 @@ exports[`Storyshots ATOMS/Code with custom height 1`] = `
 .emotion-42 {
   height: auto;
   padding: 2rem 0 4rem;
-  background-color: #f4f7f9;
-  border-right: 1px solid #d0d7dd;
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
+  background-color: #f4f7f9;
+  border-right: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
   opacity: 0.5;
-  color: #323c47;
-  font-size: 1.4rem;
-  font-family: Courier;
-  line-height: 2;
   text-align: center;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #323c47;
+  font-family: Courier;
 }
 
 .emotion-50 {
@@ -2794,11 +2856,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-2 {
@@ -2837,9 +2899,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with check 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 <div
@@ -2894,6 +2954,10 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
   margin: 2rem;
 }
 
+.emotion-6 {
+  display: none;
+}
+
 .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2942,25 +3006,18 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with disabled 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-4 {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  background-color: #EDF0F2;
-}
-
-.emotion-6 {
-  display: none;
   background-color: #EDF0F2;
 }
 
@@ -3068,21 +3125,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with error 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-4 {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  border-color: red;
+  border-color: #ff6d4a;
 }
 
 <div
@@ -3157,11 +3212,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-0 {
@@ -3175,9 +3230,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox with state 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-2 {
@@ -3277,11 +3330,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-2 {
@@ -3320,9 +3373,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without label 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 <div
@@ -3395,11 +3446,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-0 {
@@ -3413,9 +3464,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Checkbox without secondary color 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-2 {
@@ -3515,11 +3564,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-0 {
@@ -3533,9 +3582,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField default 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-2 {
@@ -3674,11 +3721,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .emotion-2 {
@@ -3717,9 +3764,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with checked 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-14 {
@@ -3840,21 +3885,19 @@ exports[`Storyshots ATOMS/DATA ENTRY/CheckboxField with error 1`] = `
 
 .emotion-8 {
   padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
-  color: #878c93;
 }
 
 .emotion-4 {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  background: #FFFFFF;
   border: 1px solid #d0d7dd;
   border-radius: .5rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  border-color: red;
+  border-color: #ff6d4a;
 }
 
 .emotion-2 {
@@ -4041,6 +4084,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4048,10 +4092,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -4068,20 +4125,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInput default 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -4282,6 +4325,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInputField default 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4289,10 +4333,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInputField default 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -4309,20 +4366,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/DateInputField default 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -4570,6 +4613,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4577,10 +4621,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-10:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-10::-webkit-outer-spin-button,
+.emotion-10::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-10::-ms-clear {
+  display: none;
 }
 
 .emotion-10::-webkit-input-placeholder {
@@ -4597,20 +4654,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error 1`] = `
 
 .emotion-10::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-10:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-10::-webkit-outer-spin-button,
-.emotion-10::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-10::-ms-clear {
-  display: none;
 }
 
 .emotion-8 {
@@ -4965,6 +5008,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -4972,10 +5016,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -4992,20 +5049,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with form error is null 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -5291,6 +5334,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5298,10 +5342,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-4:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-4::-webkit-outer-spin-button,
+.emotion-4::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-4::-ms-clear {
+  display: none;
 }
 
 .emotion-4::-webkit-input-placeholder {
@@ -5318,20 +5375,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form with groups 1`] = `
 
 .emotion-4::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-4:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-4::-webkit-outer-spin-button,
-.emotion-4::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-4::-ms-clear {
-  display: none;
 }
 
 .emotion-2 {
@@ -5672,6 +5715,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5679,10 +5723,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -5699,20 +5756,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Form without groups 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -5938,6 +5981,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -5945,10 +5989,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: center;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -5965,20 +6022,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with center align 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6023,6 +6066,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6030,10 +6074,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6050,20 +6107,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with custom width 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6108,6 +6151,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6115,11 +6159,24 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-color: #ff6d4a !important;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6136,20 +6193,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with error 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 .emotion-2 {
@@ -6209,6 +6252,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6216,10 +6260,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6236,20 +6293,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with html auto-complete 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6294,6 +6337,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   outline: none;
   padding-left: 4rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6301,10 +6345,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6321,20 +6378,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with left icon 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 .emotion-2 {
@@ -6403,6 +6446,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6410,10 +6454,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6430,20 +6487,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with placeholder 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6488,6 +6531,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 5rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6495,10 +6539,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6515,20 +6572,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 .emotion-2 {
@@ -6616,6 +6659,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 5rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6623,11 +6667,24 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-color: #ff6d4a !important;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6644,20 +6701,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with right icon and error 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6698,6 +6741,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6705,10 +6749,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6725,20 +6782,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with stretch=false 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 .emotion-2 {
@@ -6792,6 +6835,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6799,10 +6843,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6819,20 +6876,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input with value 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6877,6 +6920,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6884,10 +6928,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -6904,20 +6961,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Input without value 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -6990,6 +7033,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -6997,10 +7041,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: center;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -7017,20 +7074,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with center align 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -7118,6 +7161,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7125,10 +7169,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7145,20 +7202,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with custom width input 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 <div
@@ -7267,6 +7310,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7274,11 +7318,24 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-color: #ff6d4a !important;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7295,20 +7352,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-4 {
@@ -7416,6 +7459,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7423,11 +7467,24 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-color: #ff6d4a !important;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7444,20 +7501,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with error and row direction 1`]
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-4 {
@@ -7594,6 +7637,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7601,10 +7645,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7621,20 +7678,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with placeholder 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -7708,6 +7751,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7715,10 +7759,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7735,20 +7792,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-6 {
@@ -7832,6 +7875,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -7839,10 +7883,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -7859,20 +7916,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with row direction and stretch=f
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -7993,6 +8036,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -8000,10 +8044,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -8020,20 +8077,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with stretch 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -8126,6 +8169,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -8133,10 +8177,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -8153,20 +8210,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField with value 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -8259,6 +8302,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -8266,11 +8310,24 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  border-color: #ff6d4a !important;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+  border-color: #ff6d4a !important;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -8287,20 +8344,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without error label and indicato
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -8381,6 +8424,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -8388,10 +8432,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-0:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-0::-webkit-outer-spin-button,
+.emotion-0::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-0::-ms-clear {
+  display: none;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -8408,20 +8465,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without label 1`] = `
 
 .emotion-0::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-0:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-0::-webkit-outer-spin-button,
-.emotion-0::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-0::-ms-clear {
-  display: none;
 }
 
 <div
@@ -8502,6 +8545,7 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   outline: none;
   padding-left: 1rem;
   padding-right: 2rem;
+  background-color: #FFFFFF;
   color: #323c47;
   font-size: 1.4rem;
   font-weight: 400;
@@ -8509,10 +8553,23 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
   line-height: normal;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  background-color: #FFFFFF;
   text-align: left;
   border: 1px solid #d0d7dd;
   border-radius: 5px;
+}
+
+.emotion-2:focus {
+  border-color: #4DA1FF;
+}
+
+.emotion-2::-webkit-outer-spin-button,
+.emotion-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emotion-2::-ms-clear {
+  display: none;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -8529,20 +8586,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/InputField without value 1`] = `
 
 .emotion-2::placeholder {
   color: #d0d7dd;
-}
-
-.emotion-2:focus {
-  border-color: #4DA1FF;
-}
-
-.emotion-2::-webkit-outer-spin-button,
-.emotion-2::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.emotion-2::-ms-clear {
-  display: none;
 }
 
 .emotion-0 {
@@ -8625,11 +8668,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
@@ -8647,9 +8690,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with custom gap 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-10 {
@@ -8811,17 +8854,17 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with disabled 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-30 {
@@ -8997,11 +9040,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
@@ -9019,9 +9062,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with group 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-30 {
@@ -9183,11 +9226,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with options 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-10 {
@@ -9205,9 +9248,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with options 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-30 {
@@ -9411,11 +9454,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
@@ -9433,9 +9476,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with row direction 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-10 {
@@ -9571,17 +9614,17 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with secondary color 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-0 {
@@ -9665,11 +9708,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with selected value 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
@@ -9687,9 +9730,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with selected value 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 <div
@@ -9759,11 +9802,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-10 {
@@ -9781,9 +9824,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/Radio with state 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-30 {
@@ -9999,11 +10042,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #d0d7dd;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
 }
 
 .emotion-0 {
@@ -10021,9 +10064,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField default 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-10 {
@@ -10224,9 +10267,9 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
 }
 
 .emotion-6 {
-  padding-left: 1.2rem;
-  font-size: 1.4rem;
   cursor: pointer;
+  padding-left: 1.2rem;
+  color: #878c93;
 }
 
 .emotion-0 {
@@ -10259,11 +10302,12 @@ exports[`Storyshots ATOMS/DATA ENTRY/RadioGroupField with error 1`] = `
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: white;
-  border: 1px solid #ff6d4a;
   border-radius: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  background: #FFFFFF;
+  border: 1px solid #d0d7dd;
+  border-color: #ff6d4a;
 }
 
 <div
@@ -11635,8 +11679,8 @@ exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 4rem;
   cursor: pointer;
+  height: 4rem;
 }
 
 .emotion-2 {
@@ -11644,11 +11688,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #d0d7dd;
+  position: relative;
   height: 2.6rem;
   width: 5.2rem;
   border-radius: 2.6rem;
-  background-color: #d0d7dd;
-  position: relative;
 }
 
 .emotion-2:before {
@@ -11666,8 +11710,6 @@ exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
 }
 
 .emotion-4 {
-  font-family: Poppins;
-  font-size: 1.2rem;
   margin-left: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -11681,11 +11723,11 @@ exports[`Storyshots ATOMS/DATA ENTRY/Switch with label 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #4DA1FF;
+  position: relative;
   height: 2.6rem;
   width: 5.2rem;
   border-radius: 2.6rem;
-  background-color: #4DA1FF;
-  position: relative;
 }
 
 .emotion-10:before {
@@ -11758,14 +11800,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea with placeholder 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -11805,14 +11846,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea with value 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -11852,14 +11892,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextArea without value 1`] = `
 }
 
 .emotion-0 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -11933,14 +11972,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with placeholder 1`] = `
 }
 
 .emotion-2 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -12029,14 +12067,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField with value 1`] = `
 }
 
 .emotion-2 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -12125,14 +12162,13 @@ exports[`Storyshots ATOMS/DATA ENTRY/TextAreaField without value 1`] = `
 }
 
 .emotion-2 {
-  border: 1px solid #D0D7DD;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.87);
-  line-height: 28px;
   outline: none;
+  border: 1px solid #d0d7dd;
+  border-radius: .5rem;
+  font-size: 1.4rem;
+  color: #323c47;
+  font-weight: 400;
+  line-height: 2;
   padding: 1rem;
 }
 
@@ -12186,10 +12222,11 @@ exports[`Storyshots ATOMS/Divider with default modifiers 1`] = `
 }
 
 .emotion-0 {
-  height: 1px;
   border: none;
   width: 100%;
   margin: 1rem 0;
+  background-color: #EDF0F2;
+  height: 1px;
 }
 
 <div
@@ -12236,9 +12273,9 @@ exports[`Storyshots ATOMS/Dropdown default 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -12362,9 +12399,9 @@ exports[`Storyshots ATOMS/Dropdown with custom body width 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -12488,9 +12525,9 @@ exports[`Storyshots ATOMS/Dropdown with custom offset 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -12614,9 +12651,9 @@ exports[`Storyshots ATOMS/Dropdown with dark background 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -12741,9 +12778,9 @@ exports[`Storyshots ATOMS/Dropdown with force render 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -12847,7 +12884,7 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -12902,17 +12939,12 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  overflow: hidden;
 }
 
 .emotion-6 {
-  color: #939ea7;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.3rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12923,6 +12955,10 @@ exports[`Storyshots ATOMS/Dropdown with menu 1`] = `
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
+  color: #939ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.3rem;
   height: 4rem;
   padding-right: 1.9rem;
   padding-left: 1.9rem;
@@ -13043,9 +13079,9 @@ exports[`Storyshots ATOMS/Dropdown with pin to right 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -13169,9 +13205,9 @@ exports[`Storyshots ATOMS/Dropdown with stretch body 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
@@ -13270,9 +13306,9 @@ exports[`Storyshots ATOMS/Dropdown with stretch target 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
   width: 100%;
@@ -13397,9 +13433,9 @@ exports[`Storyshots ATOMS/Dropdown without background 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -13523,9 +13559,9 @@ exports[`Storyshots ATOMS/Dropdown without close on outside click 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -15292,6 +15328,7 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
 }
 
 .emotion-6 {
+  color: rgba(255,255,255,1);
   cursor: pointer;
   position: relative;
   -webkit-text-decoration: none;
@@ -15340,7 +15377,7 @@ exports[`Storyshots ATOMS/Navigation without groups 1`] = `
 }
 
 .emotion-4 {
-  color: #fff;
+  color: rgba(255,255,255,1);
   display: none;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -15472,7 +15509,7 @@ exports[`Storyshots ATOMS/Paper with header and sections 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -15538,27 +15575,26 @@ exports[`Storyshots ATOMS/Progress with default modifiers 1`] = `
 }
 
 .emotion-2 {
-  heigth: 1.2rem;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  heigth: 1.2rem;
   background: #EDF0F2;
   border-radius: 1.2rem;
 }
 
 .emotion-0 {
+  height: 100%;
   background-color: #4DA1FF;
   border-radius: 1.2rem;
-  height: 100%;
 }
 
 .emotion-4 {
-  font-size: 13px;
-  font-weight: 600;
   margin-left: 1.2rem;
-  white-space: nowrap;
-  color: #4DA1FF;
   width: 3.6rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4DA1FF;
 }
 
 <div
@@ -15724,7 +15760,6 @@ exports[`Storyshots ATOMS/SecondaryNavigation secondary navigation 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 3rem;
   background-color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -15733,6 +15768,7 @@ exports[`Storyshots ATOMS/SecondaryNavigation secondary navigation 1`] = `
   -ms-user-select: none;
   user-select: none;
   position: relative;
+  height: 3rem;
 }
 
 .emotion-6:hover {
@@ -15778,67 +15814,67 @@ exports[`Storyshots ATOMS/SecondaryNavigation secondary navigation 1`] = `
   className="emotion-34 emotion-35"
 >
   <nav
-    className="emotion-32 emotion-3"
+    className="emotion-32 emotion-1"
   >
     <div
-      className="emotion-6 emotion-3"
+      className="emotion-6 emotion-1"
     >
       <div
         className="emotion-0 emotion-1"
       />
       <div
-        className="emotion-4 emotion-5"
+        className="emotion-4 emotion-1"
       >
         <span
-          className="emotion-2 emotion-3"
+          className="emotion-2 emotion-1"
         >
           First item
         </span>
       </div>
     </div>
     <div
-      className="active emotion-6 emotion-3"
+      className="active emotion-6 emotion-1"
     >
       <div
         className="emotion-0 emotion-1"
       />
       <div
-        className="emotion-4 emotion-5"
+        className="emotion-4 emotion-1"
       >
         <span
-          className="emotion-2 emotion-3"
+          className="emotion-2 emotion-1"
         >
           Second item
         </span>
       </div>
     </div>
     <div
-      className="emotion-6 emotion-3"
+      className="emotion-6 emotion-1"
     >
       <div
         className="emotion-0 emotion-1"
       />
       <div
-        className="emotion-4 emotion-5"
+        className="emotion-4 emotion-1"
       >
         <span
-          className="emotion-2 emotion-3"
+          className="emotion-2 emotion-1"
         >
           Third item
         </span>
       </div>
     </div>
     <div
-      className="emotion-6 emotion-3"
+      className="emotion-6 emotion-1"
     >
       <div
         className="emotion-0 emotion-1"
       />
       <div
-        className="emotion-4 emotion-5"
+        className="emotion-4 emotion-1"
       >
         <span
-          className="emotion-2 emotion-3"
+          className="emotion-2 emotion-1"
         >
           Fourth item
         </span>
@@ -15854,8 +15890,8 @@ exports[`Storyshots ATOMS/Stars with default modifiers 1`] = `
 }
 
 .emotion-0 {
-  color: #FFCB00;
   line-height: normal;
+  color: #ffd012;
   font-size: 24px;
 }
 
@@ -15877,7 +15913,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-0 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 6.2rem;
@@ -15886,7 +15921,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-2 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 4.6rem;
@@ -15895,7 +15929,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with kind modifiers  1`] = `
 
 .emotion-4 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 3rem;
@@ -15933,7 +15966,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-0 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 6.2rem;
@@ -15942,7 +15974,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-2 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 4.6rem;
@@ -15951,7 +15982,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-4 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 3rem;
@@ -15960,7 +15990,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-6 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 2rem;
@@ -15969,7 +15998,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-8 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 1.4rem;
@@ -15978,7 +16006,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Heading with type modifiers 1`] = `
 
 .emotion-10 {
   line-height: 1.1;
-  font-family: Poppins;
   font-weight: 400;
   margin: 0;
   font-size: 1rem;
@@ -16841,7 +16868,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with children 1`] = `
 
 .emotion-4 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -16882,7 +16908,6 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Link with text 1`] = `
 
 .emotion-0 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -16914,10 +16939,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with children 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
 }
 
@@ -16938,10 +16962,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with kind modifiers  1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
 }
 
@@ -16972,10 +16995,9 @@ exports[`Storyshots ATOMS/TYPOGRAPHY/Paragraph with text 1`] = `
 }
 
 .emotion-0 {
-  font-family: Poppins;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 28px;
+  line-height: 2;
   margin: 0;
 }
 
@@ -17333,7 +17355,6 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
 
 .emotion-17 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -17377,9 +17398,9 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -17440,8 +17461,8 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   grid-template-columns: repeat(6,1fr);
   display: grid;
   height: 5rem;
-  background-color: #F4F7F9;
-  border-bottom: 1px solid #ccc;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #d0d7dd;
   color: #7e868e;
 }
 
@@ -17488,8 +17509,8 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   display: grid;
   grid-template-columns: repeat(6,1fr);
   display: grid;
-  border-bottom: 1px solid #d0d7dd;
   height: 6rem;
+  border-bottom: 1px solid #d0d7dd;
 }
 
 .emotion-38:last-child {
@@ -17505,8 +17526,8 @@ exports[`Storyshots ATOMS/Table table with data 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 2rem;
   word-break: break-all;
+  padding: 0 2rem;
 }
 
 .emotion-70 {
@@ -17762,9 +17783,9 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -17817,8 +17838,8 @@ exports[`Storyshots ATOMS/Table table with loader 1`] = `
   grid-template-columns: repeat(6,1fr);
   display: grid;
   height: 5rem;
-  background-color: #F4F7F9;
-  border-bottom: 1px solid #ccc;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #d0d7dd;
   color: #7e868e;
 }
 
@@ -18017,7 +18038,6 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
 
 .emotion-17 {
   cursor: pointer;
-  font-family: Poppins;
   font-weight: 400;
   line-height: 1;
   -webkit-text-decoration: none;
@@ -18061,9 +18081,9 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -18124,8 +18144,8 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   grid-template-columns: repeat(6,1fr);
   display: grid;
   height: 5rem;
-  background-color: #F4F7F9;
-  border-bottom: 1px solid #ccc;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #d0d7dd;
   color: #7e868e;
 }
 
@@ -18172,8 +18192,8 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   display: grid;
   grid-template-columns: repeat(6,1fr);
   display: grid;
-  border-bottom: 1px solid #d0d7dd;
   height: 6rem;
+  border-bottom: 1px solid #d0d7dd;
 }
 
 .emotion-38:last-child {
@@ -18189,8 +18209,8 @@ exports[`Storyshots ATOMS/Table table with scroll 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 2rem;
   word-break: break-all;
+  padding: 0 2rem;
 }
 
 .emotion-770 {
@@ -20266,8 +20286,8 @@ exports[`Storyshots ATOMS/Table with custom action button 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
+  background-color: #FFFFFF;
   border-color: #00bb6e;
-  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -20296,8 +20316,8 @@ exports[`Storyshots ATOMS/Table with custom action button 1`] = `
   grid-template-columns: repeat(6,1fr);
   display: grid;
   height: 5rem;
-  background-color: #F4F7F9;
-  border-bottom: 1px solid #ccc;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #d0d7dd;
   color: #7e868e;
 }
 
@@ -20512,8 +20532,8 @@ exports[`Storyshots ATOMS/Table without data 1`] = `
   grid-template-columns: repeat(6,1fr);
   display: grid;
   height: 5rem;
-  background-color: #F4F7F9;
-  border-bottom: 1px solid #ccc;
+  background-color: #f4f7f9;
+  border-bottom: 1px solid #d0d7dd;
   color: #7e868e;
 }
 
@@ -20715,9 +20735,9 @@ exports[`Storyshots ATOMS/Tabs default 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -20840,9 +20860,9 @@ exports[`Storyshots ATOMS/Tabs with force render 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -20974,9 +20994,9 @@ exports[`Storyshots ATOMS/Tabs with selected title 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -21126,9 +21146,9 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #4DA1FF;
   background-color: #4DA1FF;
-  color: rgba(255,255,255,1);
+  border-color: #4DA1FF;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -21171,9 +21191,9 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: #00bb6e;
   background-color: #00bb6e;
-  color: rgba(255,255,255,1);
+  border-color: #00bb6e;
+  color: #FFFFFF;
   height: 4rem;
   padding: 0 4rem;
 }
@@ -21216,8 +21236,8 @@ exports[`Storyshots MOLECULES/ButtonGroup default 1`] = `
   border-radius: .5rem;
   border-style: solid;
   border-width: 1px;
+  background-color: #FFFFFF;
   border-color: #4DA1FF;
-  background-color: px;
   color: #323c47;
   height: 4rem;
   padding: 0 4rem;
@@ -21299,7 +21319,7 @@ exports[`Storyshots MOLECULES/Menu with some items 1`] = `
   flex-direction: column;
   max-height: 100%;
   background: #FFFFFF;
-  color: #000000;
+  color: #323c47;
   box-shadow: 0 1px 3px 0 rgba(50,50,93,.14),0 4px 6px 0 rgba(112,157,199,.08);
   position: relative;
   padding: 0px;
@@ -21315,17 +21335,12 @@ exports[`Storyshots MOLECULES/Menu with some items 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  overflow: hidden;
 }
 
 .emotion-0 {
-  color: #939ea7;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.3rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21336,6 +21351,10 @@ exports[`Storyshots MOLECULES/Menu with some items 1`] = `
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
+  color: #939ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.3rem;
   height: 4rem;
   padding-right: 1.9rem;
   padding-left: 1.9rem;
@@ -21389,8 +21408,8 @@ exports[`Storyshots MOLECULES/Rating with default modifiers 1`] = `
 }
 
 .emotion-0 {
-  color: #FFCB00;
   line-height: normal;
+  color: #ffd012;
   font-size: 24px;
 }
 
@@ -21486,7 +21505,7 @@ exports[`Storyshots Theme palette 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "#000000",
+          "backgroundColor": "#323c47",
           "color": "#fff",
           "display": "flex",
           "height": "30px",
@@ -21836,6 +21855,54 @@ exports[`Storyshots Theme palette 1`] = `
       style={
         Object {
           "alignItems": "center",
+          "backgroundColor": Object {
+            "GREY_COLORS": Object {
+              "DSM_BLACK": "#323c47",
+              "DSM_DARK_GREY_1": "#7e828b",
+              "DSM_DARK_GREY_2": "#939ea7",
+              "DSM_DARK_GREY_3": "#a5afb6",
+              "DSM_LIGHT_GREY_1": "#d0d7dd",
+              "DSM_LIGHT_GREY_2": "#e9eff4",
+              "DSM_LIGHT_GREY_3": "#f4f5f6",
+            },
+            "MAIN_BRAND_COLORS": Object {
+              "DSM_BLUE": "#4da1ff",
+              "DSM_CHARCOAL": "#323c47",
+              "DSM_RED": "#eb4235",
+              "DSM_YELLOW": "#ffd012",
+            },
+            "NAVIGATION_COLORS": Object {
+              "DSM_DB": "#323c47",
+              "DSM_DB_SELECTED": "#1c252e",
+              "DSM_HOME": "#4da1ff",
+              "DSM_HOME_SELECTED": "#1f7ae0",
+              "DSM_SETTINGS": "#687695",
+              "DSM_SETTINGS_SELECTED": "#4d5a78",
+            },
+            "SECONDARY_COLORS": Object {
+              "DSM_CORAL": "#f17b71",
+              "DSM_DARK_BLUE": "#1968cb",
+              "DSM_GREEN": "#00bb6e",
+              "DSM_MAGENTA": "#ea518e",
+              "DSM_NEON": "#a6e50f",
+              "DSM_ORANGE": "#ff6d4a",
+              "DSM_PURPLE": "#9975d0",
+              "DSM_SPACE": "#687695",
+            },
+          },
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DSM
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
           "backgroundColor": "#4DA1FF",
           "color": "#fff",
           "display": "flex",
@@ -21887,6 +21954,20 @@ exports[`Storyshots Theme palette 1`] = `
       }
     >
       DANGER
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#eb4235",
+          "color": "#fff",
+          "display": "flex",
+          "height": "30px",
+          "width": "400px",
+        }
+      }
+    >
+      DANGER_DARK
     </div>
     <div
       style={

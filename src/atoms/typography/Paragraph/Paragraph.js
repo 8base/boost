@@ -1,6 +1,8 @@
+//@flow
+
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type ParagraphProps = {|
   children?: React$Node,
@@ -11,20 +13,26 @@ type ParagraphProps = {|
 
 const name = 'paragraph';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
+  root: {
+    fontWeight: 400,
+    fontSize: SIZES.MAIN_FONT_SIZE,
+    lineHeight: 2,
+    margin: 0,
+  },
   modifiers: {
     kind: {
       primary: {
-        color: colors.DARK_PRIMARY_TEXT_COLOR,
+        color: COLORS.DARK_PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: colors.DARK_SECONDARY_TEXT_COLOR,
+        color: COLORS.DARK_SECONDARY_TEXT_COLOR,
       },
       disabled: {
-        color: colors.DARK_DISABLED_TEXT_COLOR,
+        color: COLORS.DARK_DISABLED_TEXT_COLOR,
       },
       white: {
-        color: colors.WHITE,
+        color: COLORS.WHITE,
       },
     },
     size: {
@@ -42,13 +50,7 @@ const theme = createTheme(name, (colors) => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  fontFamily: 'Poppins',
-  fontWeight: 400,
-  fontSize: '14px',
-  lineHeight: '28px',
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Paragraph({
   text,

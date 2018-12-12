@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableBodyCellProps = {
   children?: React$Node,
@@ -9,7 +9,10 @@ type TableBodyCellProps = {
 
 const name = 'tableBodyCell';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
+  root: {
+    padding: '0 2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -19,7 +22,6 @@ const theme = createTheme(name, {
 const TableBodyCellTag = createStyledTag(name, () => ({
   display: 'flex',
   alignItems: 'center',
-  padding: '0 2rem',
   wordBreak: 'break-all',
 }));
 

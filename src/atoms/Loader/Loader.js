@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import LoaderIcon from './Loader.svg';
 
 type LoaderProps = {|
@@ -9,7 +9,7 @@ type LoaderProps = {|
 
 const name = 'loader';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       sm: {

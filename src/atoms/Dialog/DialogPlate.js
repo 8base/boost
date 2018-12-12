@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 import { Modal } from '../Modal';
 import { Card } from '../Card';
 import type { PropSizes } from '../../types';
@@ -17,7 +17,7 @@ type DialogPlateProps = {|
 
 const name = 'dialogPlate';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       xs: {

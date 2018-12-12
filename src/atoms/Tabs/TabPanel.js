@@ -19,7 +19,7 @@ const TabPanelTag = createStyledTag('tabPlate', props => ({
 
 
 const tabPanelEnhancer: HOC<*, TabPanelProps> = compose(
-  setDisplayName('TabPanel'),
+  (setDisplayName: any)('TabPanel'),
   withTabsContext,
 );
 

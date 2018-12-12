@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTheme } from '../../../utils';
+import { createComponentTheme } from '../../../utils';
 import * as formUtils from '../../../utils/forms';
 import { Input } from '../Input';
 import { FormField } from '../Form/FormField';
@@ -34,7 +34,7 @@ type InputFieldProps = {|
 
 const name = 'inputField';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
   },
   defaults: {

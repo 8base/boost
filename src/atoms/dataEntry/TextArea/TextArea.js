@@ -1,11 +1,13 @@
+// @flow
+
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type TextAreaProps = {|
   cols?: number,
   name: string,
-  onChange: (event?: SyntheticInputEvent) => void,
+  onChange: (event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
   rows?: number,
   value?: string,
@@ -13,28 +15,30 @@ type TextAreaProps = {|
 
 const name = 'textArea';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
+  root: {
+    border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderRadius: SIZES.MAIN_BORDER_RADIUS,
+    fontSize: SIZES.MAIN_FONT_SIZE,
+    color: COLORS.DARK_GRAY1,
+    fontWeight: 400,
+    lineHeight: 2,
+    padding: '1rem',
+
+    '&::placeholder': {
+      color: COLORS.PLACEHOLDER_COLOR,
+    },
+  },
+
   modifiers: {
   },
   defaults: {
   },
-});
-
-const StyledTag = createStyledTag(name, ({ theme }) => ({
-  border: '1px solid #D0D7DD',
-  borderRadius: '5px',
-  fontFamily: 'Poppins',
-  fontSize: '14px',
-  fontWeight: 400,
-  color: 'rgba(0, 0, 0, 0.87)',
-  lineHeight: '28px',
-  outline: 'none',
-  padding: '1rem',
-
-  '&::placeholder': {
-    color: theme.COLORS.LIGHT_GRAY1,
-  },
 }));
+
+const StyledTag = createStyledTag(name, {
+  outline: 'none',
+});
 
 const TextArea = (props: TextAreaProps) => (
   <StyledTag { ...props } tagName="textarea" />

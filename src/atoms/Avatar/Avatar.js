@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type AvatarProps = {|
   src?: string,
@@ -13,7 +13,7 @@ type AvatarProps = {|
 
 const name = 'avatar';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
   modifiers: {
     size: {
       xs: {
@@ -47,7 +47,7 @@ const theme = createTheme(name, {
   },
 });
 
-const AvatarHandleTag = createStyledTag(`${name}Handle`, {
+const AvatarHandleTag = createStyledTag(`${name}Handle`, (props: *) => ({
   position: 'absolute',
   bottom: '-30%',
   left: '0',
@@ -63,8 +63,8 @@ const AvatarHandleTag = createStyledTag(`${name}Handle`, {
   fontSize: '0.8rem',
   transition: 'all .15s ease-in-out',
   userSelect: 'none',
-  color: '#d0d7dd',
-});
+  color: props.theme.COLORS.LIGHT_GRAY1,
+}));
 
 const COLORS = ['#ffd012', '#a6e50f', '#00bb6e', '#9975d0', '#4da1ff', '#1968cb', '#ff6d4a', '#EB518E', '#eb4235'];
 

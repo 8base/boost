@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { Grid } from '../Grid';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableFooterProps = {
   children?: React$Node,
@@ -10,7 +10,10 @@ type TableFooterProps = {
 
 const name = 'tableFooter';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, {
+  root: {
+    padding: '2rem',
+  },
   modifiers: {
   },
   defaults: {
@@ -19,7 +22,6 @@ const theme = createTheme(name, {
 
 const TableFooterTag = createStyledTag(name, () => ({
   display: 'grid',
-  padding: '2rem',
 }));
 
 function TableFooter({

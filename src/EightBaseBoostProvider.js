@@ -2,29 +2,32 @@
 
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
-
 import { ModalProvider } from './atoms/Modal/ModalProvider';
-import { defaultTheme, resetGlobal } from './theme';
+import { createTheme, resetGlobal, type Theme } from './theme';
 
 type EightBaseBoostProviderProps = {
-  theme?: Object,
+  theme?: Theme,
   children: React$Node,
 };
 
 class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps> {
-  static defaultProps = {
-    theme: defaultTheme,
-  };
+  theme: *;
+
+  constructor(props: EightBaseBoostProviderProps) {
+    super(props);
+
+    this.theme = props.theme || createTheme();
+  }
 
   componentDidMount() {
     resetGlobal();
   }
 
   render() {
-    const { theme, children } = this.props;
+    const { children } = this.props;
 
     return (
-      <ThemeProvider theme={ theme }>
+      <ThemeProvider theme={ this.theme }>
         <ModalProvider>
           { children }
         </ModalProvider>

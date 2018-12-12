@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "color": "^3.0.0",
+    "deepmerge": "^3.0.0",
     "emotion": "^9.1.1",
     "emotion-theming": "^9.1.2",
     "luxon": "^1.7.1",

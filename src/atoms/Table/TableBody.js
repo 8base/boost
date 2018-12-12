@@ -6,7 +6,7 @@ import { TableNoData } from './TableNoData';
 import { TableAction } from './TableAction';
 import { Grid } from '../Grid';
 import { Button } from '../Button';
-import { createStyledTag, createTheme } from '../../utils';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TableBodyProps<T: Object> = {
   children?: (T, index: number) => React$Node,
@@ -18,22 +18,24 @@ type TableBodyProps<T: Object> = {
 
 const name = 'tableBody';
 
-const theme = createTheme(name, {
+const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
+  root: {
+    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+  },
   modifiers: {
   },
   defaults: {
   },
-});
+}));
 
-const TableBodyWrapperTag = createStyledTag(name, props => ({
+const TableBodyTag = createStyledTag(name, {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
   height: '100%',
-  borderBottom: `1px solid ${props.theme.COLORS.LIGHT_GRAY1}`,
-}));
+});
 
-const TableBodyTag = createStyledTag(name, {
+const TableBodyInnerTag = createStyledTag(`${name}Inner`, {
   display: 'grid',
   position: 'relative',
   gridAutoRows: 'min-content',
@@ -66,20 +68,20 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
     const hasBodyRows = data && data.length > 0;
 
     return (
-      <TableBodyWrapperTag { ...rest }>
+      <TableBodyTag { ...rest }>
         <AsyncContent loading={ loading } stretch>
           {
             hasBodyRows
               ? (
-                <TableBodyTag tagName={ Grid.Layout }>
+                <TableBodyInnerTag tagName={ Grid.Layout }>
                   { React.Children.toArray(data && children && data.map(children)) }
-                </TableBodyTag>
+                </TableBodyInnerTag>
               )
               : <TableNoData />
           }
         </AsyncContent>
         { this.renderTableAction() }
-      </TableBodyWrapperTag>
+      </TableBodyTag>
     );
   }
 }

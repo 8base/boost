@@ -1,36 +1,36 @@
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../utils';
-import { GREY_COLORS } from '../../theme/dsmColors';
+import { createStyledTag, createComponentTheme } from '../../utils';
 
 type MenuItemProps = {|
   children?: React$Node,
 |};
 
-const NAME = 'menuItem';
+const name = 'menuItem';
 
-const theme = createTheme(NAME, {});
+const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
+  root: {
+    color: COLORS.DSM.GREY_COLORS.DSM_DARK_GREY_2,
+    fontSize: SIZES.MAIN_FONT_SIZE,
+    fontWeight: 400,
+    lineHeight: '2.3rem',
+    height: '4rem',
+    paddingRight: '1.9rem',
+    paddingLeft: '1.9rem',
 
-const StyledTag = createStyledTag(NAME, () => ({
-  color: GREY_COLORS.DSM_DARK_GREY_2,
-  fontFamily: 'Poppins',
-  fontSize: '14px',
-  fontWeight: 400,
-  lineHeight: '2.3rem',
+    '&:hover': {
+      backgroundColor: COLORS.PRIMARY_HOVER_GRAY_COLOR,
+      color: COLORS.BLACK,
+    },
+  },
+}));
 
+const StyledTag = createStyledTag(name, {
   display: 'flex',
   alignItems: 'center',
   cursor: 'pointer',
   whiteSpace: 'nowrap',
-  height: '4rem',
-  paddingRight: '1.9rem',
-  paddingLeft: '1.9rem',
-
-  '&:hover': {
-    backgroundColor: GREY_COLORS.DSM_LIGHT_GREY_3,
-    color: GREY_COLORS.DSM_BLACK,
-  },
-}));
+});
 
 const MenuItem = ({ children, ...rest }: MenuItemProps) => (
   <StyledTag tagName="div" { ...rest } >

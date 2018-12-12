@@ -1,6 +1,8 @@
+// @flow
+
 import React from 'react';
 
-import { createStyledTag, createTheme } from '../../../utils';
+import { createStyledTag, createComponentTheme } from '../../../utils';
 
 type HeadingProps = {|
   children?: React$Node,
@@ -12,7 +14,12 @@ type HeadingProps = {|
 
 const name = 'heading';
 
-const theme = createTheme(name, (colors) => ({
+const theme = createComponentTheme(name, ({ COLORS }: *) => ({
+  root: {
+    lineHeight: 1.1,
+    fontWeight: 400,
+    margin: 0,
+  },
   modifiers: {
     type: {
       h1: {
@@ -36,16 +43,16 @@ const theme = createTheme(name, (colors) => ({
     },
     kind: {
       primary: {
-        color: colors.TEXT_PRIMARY,
+        color: COLORS.TEXT_PRIMARY,
       },
       secondary: {
-        color: colors.TEXT_SECONDARY,
+        color: COLORS.TEXT_SECONDARY,
       },
       disabled: {
-        color: colors.DISABLED_TEXT_COLOR,
+        color: COLORS.DISABLED_TEXT_COLOR,
       },
       white: {
-        color: colors.WHITE,
+        color: COLORS.WHITE,
       },
     },
     weight: {
@@ -69,12 +76,7 @@ const theme = createTheme(name, (colors) => ({
   },
 }));
 
-const StyledTag = createStyledTag(name, {
-  lineHeight: 1.1,
-  fontFamily: 'Poppins',
-  fontWeight: 400,
-  margin: 0,
-});
+const StyledTag = createStyledTag(name);
 
 function Heading({
   text,

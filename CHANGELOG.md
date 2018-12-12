@@ -1,3 +1,20 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/8base/boost/compare/v0.8.29...v0.9.0) (2018-12-12)
+
+
+### Bug Fixes
+
+* **theme:** replace params with object in theme functions ([90eeb83](https://github.com/8base/boost/commit/90eeb83))
+
+
+### Features
+
+* **atoms:** change button api ([5a8400e](https://github.com/8base/boost/commit/5a8400e))
+* **theme:** add create theme helper ([4174921](https://github.com/8base/boost/commit/4174921))
+* **theme:** add possibility to define each component default styles ([2814b71](https://github.com/8base/boost/commit/2814b71))
+
+
+
 <a name="0.8.29"></a>
 ## [0.8.29](https://github.com/8base/boost/compare/v0.8.28...v0.8.29) (2018-12-11)
 

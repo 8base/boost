@@ -3,10 +3,11 @@
 import React from 'react';
 import fp from 'lodash/fp';
 
+import { IconsConsumer } from './IconsProvider';
 import { PALETTE } from '../../../theme';
 import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../../theme/dsmColors';
 import { createStyledTag, createComponentTheme } from '../../../utils';
-import type { Theme } from '../../../types';
+
 import * as glyphs from './glyphs';
 
 type IconProps = {
@@ -18,11 +19,13 @@ type IconProps = {
     | $Keys<typeof MAIN_BRAND_COLORS>,
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
+  /** custom icon class */
+  className?: string,
 };
 
 const name = 'icon';
 
-const theme : Theme<IconProps> = createComponentTheme(name, {
+const themeWrapper = createComponentTheme(`${name}Wrapper`, {
   modifiers: {
     color: {
       ...fp.mapValues(
@@ -34,47 +37,99 @@ const theme : Theme<IconProps> = createComponentTheme(name, {
         },
       ),
     },
+  },
+});
+
+
+const themeSvg = createComponentTheme(`${name}Svg`, {
+  modifiers: {
     size: {
       xs: {
-        width: '1rem',
         height: '1rem',
+        width: '1rem',
       },
       sm: {
-        width: '1.4rem',
         height: '1.4rem',
+        width: '1.4rem',
       },
       md: {
-        width: '1.8rem',
         height: '1.8rem',
+        width: '1.8rem',
       },
       lg: {
-        width: '2.4rem',
         height: '2.4rem',
+        width: '2.4rem',
       },
       xl: {
-        width: '3.6rem',
         height: '3.6rem',
+        width: '3.6rem',
       },
       stretch: {
-        width: '100%',
         height: '100%',
+        width: '100%',
       },
     },
   },
-  defaults: {},
 });
 
-const IconTag = createStyledTag(name, {
+const themeFonts = createComponentTheme(`${name}Font`, {
+  modifiers: {
+    size: {
+      xs: {
+        fontSize: '1rem',
+      },
+      sm: {
+        fontSize: '1.4rem',
+      },
+      md: {
+        fontSize: '1.8rem',
+      },
+      lg: {
+        fontSize: '2.4rem',
+      },
+      xl: {
+        fontSize: '3.6rem',
+      },
+    },
+  },
+});
+
+const theme = {
+  ...themeWrapper,
+  ...themeFonts,
+  ...themeSvg,
+};
+
+const IconWrapperTag = createStyledTag(`${name}Wrapper`, {
   display: 'inline-flex',
 });
 
-const Icon = ({ name, ...rest }: IconProps) => {
-  const Glyph = glyphs[name];
+
+const IconSvgTag = createStyledTag(`${name}Svg`, {});
+const IconFontTag = createStyledTag(`${name}Font`, {});
+
+const Icon = ({ name, color, className, ...rest }: IconProps) => {
 
   return (
-    <IconTag { ...rest } tagName="div">
-      <Glyph width="100%" height="100%" />
-    </IconTag>
+    <IconsConsumer>
+      { ({ icons }) => {
+        const Glyph: any = glyphs[name] || icons[name];
+
+        return (
+          <IconWrapperTag tagName="span" color={ color }>
+            <Choose>
+              <When condition={ !!className && !Glyph }>
+                <IconFontTag tagName="i" className={ className } { ...rest } />
+              </When>
+              <When condition={ !className && !!Glyph }>
+                <IconSvgTag tagName="i" { ...rest }>
+                  <Glyph width="100%" height="100%" />
+                </IconSvgTag>
+              </When>
+            </Choose>
+          </IconWrapperTag>
+        ); } }
+    </IconsConsumer>
   );
 };
 

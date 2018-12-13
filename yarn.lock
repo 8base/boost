@@ -3940,27 +3940,28 @@ entities@^1.1.1, entities@~1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
   integrity sha1-blwtClYhtdra7O+AuQ7ftc13cvA=
 
-enzyme-adapter-react-16@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.1.1.tgz#a8f4278b47e082fbca14f5bfb1ee50ee650717b4"
-  integrity sha512-kC8pAtU2Jk3OJ0EG8Y2813dg9Ol0TXi7UNxHzHiWs30Jo/hj7alc//G1YpKUsPP1oKl9X+Lkx+WlGJpPYA+nvw==
+enzyme-adapter-react-16@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.7.1.tgz#c37c4cb0fd75e88a063154a7a88096474914496a"
+  integrity sha512-OQXKgfHWyHN3sFu2nKj3mhgRcqIPIJX6aOzq5AHVFES4R9Dw/vCBZFMPyaG81g2AZ5DogVh39P3MMNUbqNLTcw==
   dependencies:
-    enzyme-adapter-utils "^1.3.0"
-    lodash "^4.17.4"
-    object.assign "^4.0.4"
+    enzyme-adapter-utils "^1.9.0"
+    function.prototype.name "^1.1.0"
+    object.assign "^4.1.0"
     object.values "^1.0.4"
-    prop-types "^15.6.0"
-    react-reconciler "^0.7.0"
+    prop-types "^15.6.2"
+    react-is "^16.6.1"
     react-test-renderer "^16.0.0-0"
 
-enzyme-adapter-utils@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.3.0.tgz#d6c85756826c257a8544d362cc7a67e97ea698c7"
-  integrity sha512-vVXSt6uDv230DIv+ebCG66T1Pm36Kv+m74L1TrF4kaE7e1V7Q/LcxO0QRkajk5cA6R3uu9wJf5h13wOTezTbjA==
+enzyme-adapter-utils@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.9.0.tgz#3997c20f3387fdcd932b155b3740829ea10aa86c"
+  integrity sha512-uMe4xw4l/Iloh2Fz+EO23XUYMEQXj5k/5ioLUXCNOUCI8Dml5XQMO9+QwUq962hBsY5qftfHHns+d990byWHvg==
   dependencies:
-    lodash "^4.17.4"
-    object.assign "^4.0.4"
-    prop-types "^15.6.0"
+    function.prototype.name "^1.1.0"
+    object.assign "^4.1.0"
+    prop-types "^15.6.2"
+    semver "^5.6.0"
 
 enzyme@^3.3.0:
   version "3.3.0"
@@ -7747,7 +7748,7 @@ object-visit@^1.0.0:
   dependencies:
     isobject "^3.0.0"
 
-object.assign@^4.0.4, object.assign@^4.1.0:
+object.assign@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
   integrity sha512-exHJeq6kBKj58mqGyTQ9DFvrZC/eR6OwxzoM9YRoGBqrXYonaFyGiFMuc9VZrXf7DarreEwMpurG3dd+CNyW5w==
@@ -9065,6 +9066,11 @@ react-is@^16.3.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
   integrity sha512-ybEM7YOr4yBgFd6w8dJqwxegqZGJNBZl6U27HnGKuTZmDvVrD5quWOK/wAnMywiZzW+Qsk+l4X2c70+thp/A8Q==
 
+react-is@^16.6.1:
+  version "16.6.3"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.6.3.tgz#d2d7462fcfcbe6ec0da56ad69047e47e56e7eac0"
+  integrity sha512-u7FDWtthB4rWibG/+mFbVd5FvdI20yde86qKGx4lVUTWmPlSWQ4QxbBIrrs+HnXGbxOUlUzTAP/VDmvCwaP2yA==
+
 react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.2.tgz#7279047275bd727a912e25f734c0559527e84eff"
@@ -9116,16 +9122,6 @@ react-portal@^4.1.5:
   integrity sha512-jJMy9DoVr4HRWPdO8IP/mDHP1Q972/aKkulVQeIrttOIyRNmCkR2IH7gK3HVjhzxy6M+k9TopSWN5q41wO/o6A==
   dependencies:
     prop-types "^15.5.8"
-
-react-reconciler@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d"
-  integrity sha512-50JwZ3yNyMS8fchN+jjWEJOH3Oze7UmhxeoJLn2j6f3NjpfCRbcmih83XTWmzqtar/ivd5f7tvQhvvhism2fgg==
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
 
 react-router-dom@^4.3.1:
   version "4.3.1"
@@ -9810,6 +9806,11 @@ schema-utils@^0.4.0, schema-utils@^0.4.5:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
   integrity sha512-4SJ3dm0WAwWy/NVeioZh5AntkdJoWKxHxcmyP622fOkgHa4z3R0TdBJICINyaSDE6uNwVc8gZr+ZinwZAH4xIA==
+
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
+  integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 send@0.16.2:
   version "0.16.2"

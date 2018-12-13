@@ -17,7 +17,7 @@ const themeCircle = createComponentTheme(`${name}Circle`, ({ COLORS }: *): * => 
 }));
 
 
-const themeCircleInner = createComponentTheme(`${name}CircleInner`, ({ COLORS }: *): * => ({
+const themeCircleInner = createComponentTheme(`${name}InnerCircle`, ({ COLORS }: *): * => ({
   modifiers: {
     color: {
       primary: { backgroundColor: COLORS.PRIMARY },
@@ -63,7 +63,7 @@ const RadioCircleTag = createStyledTag(`${name}Circle`, {
   transition: 'opacity .3s ease',
 });
 
-const RadioCircleInnerTag = createStyledTag(`${name}CircleInner`, props => ({
+const RadioInnerCircleTag = createStyledTag(`${name}InnerCircle`, props => ({
   display: 'block',
   position: 'absolute',
   top: '50%',
@@ -86,4 +86,4 @@ const RadioTextTag = createStyledTag(`${name}Text`, {
   paddingLeft: '1.2rem',
 });
 
-export { theme, RadioCircleTag, RadioTag, RadioWrapperTag, RadioCircleInnerTag, RadioTextTag };
+export { theme, RadioCircleTag, RadioTag, RadioWrapperTag, RadioInnerCircleTag, RadioTextTag };

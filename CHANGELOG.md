@@ -1,3 +1,13 @@
+<a name="0.9.2"></a>
+## [0.9.2](https://github.com/8base/boost/compare/v0.9.1...v0.9.2) (2018-12-14)
+
+
+### Features
+
+* **icon:** add possibility to extend icons pack or using fontawesome ([05e025b](https://github.com/8base/boost/commit/05e025b))
+
+
+
 <a name="0.9.1"></a>
 ## [0.9.1](https://github.com/8base/boost/compare/v0.9.0...v0.9.1) (2018-12-12)
 

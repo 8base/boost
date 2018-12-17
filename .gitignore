@@ -11,3 +11,4 @@ npm-debug.log
 out*
 wallaby.conf.js
 yarn-error.log
+__diff_output__

@@ -4,16 +4,38 @@ node_js: node
 env:
   - NODE_PATH=src/
 
+addons:
+  apt:
+    packages:
+      - docker-ce
+  artifacts:
+    debug: true
+
+services:
+  - docker
+
+before_install:
+  - docker build -t=e2e-chrome e2e
+  - docker run --name dockerhost --cap-add=NET_ADMIN --cap-add=NET_RAW -d qoomon/docker-host
+  - docker run --privileged --name e2e-chrome --link dockerhost -p 9222:9222 -d e2e-chrome:latest
+  - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
+
 install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.6.0
+  - export ARTIFACTS_TARGET_PATHS="artifacts/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER/$TRAVIS_JOB_NUMBER:artifacts/$TRAVIS_REPO_SLUG/$TRAVIS_COMMIT"
   - export PATH="$HOME/.yarn/bin:$PATH"
   - yarn install
 
 script:
   - yarn eslint
-  - yarn test --coverage --verbose
+  - yarn test --verbose
   - yarn flow
   - yarn build
+  - yarn storybook &
+  - sleep 40
+  - yarn e2e:ci
+  - artifacts upload e2e/
+  - killall5 node || echo "Server is stopped"
 
 deploy:
   provider: npm

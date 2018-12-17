@@ -9,7 +9,7 @@ import { withInfo } from '@storybook/addon-info';
 const { EightBaseBoostProvider, ...components } = boost;
 
 const Root = styled('div')`
-  margin: 2rem;
+  margin: 32px;
 `;
 
 const ThemeDecorator = (storyFn) => (

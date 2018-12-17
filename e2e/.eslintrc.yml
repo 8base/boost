@@ -1,0 +1,3 @@
+globals:
+  __BROWSER_CONTEXT__: true
+  jasmine: true

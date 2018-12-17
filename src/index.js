@@ -8,9 +8,8 @@ export {
   DSM_COLORS,
   COLORS,
 } from './theme';
-export * from './atoms';
-export * from './molecules';
-export { ModalContext } from './atoms/Modal/ModalContext';
-export { withModal } from './atoms/Modal/withModal';
+export * from './components';
+export { ModalContext } from './components/Modal/ModalContext';
+export { withModal } from './components/Modal/withModal';
 export { EightBaseBoostProvider } from './EightBaseBoostProvider';
 

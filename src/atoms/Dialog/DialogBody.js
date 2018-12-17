@@ -12,16 +12,7 @@ type DialogBodyProps = {|
 
 const name = 'dialogBody';
 
-const theme = createComponentTheme(name, {
-  modifiers: {
-    scrollable: {
-      overflow: 'auto',
-    },
-  },
-  defaults: {
-    scrollable: true,
-  },
-});
+const theme = createComponentTheme(name, {});
 
 const DialogBodyTag = createStyledTag(name, {
   flexShrink: 1,

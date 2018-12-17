@@ -1,3 +1,13 @@
+<a name="0.9.3"></a>
+## [0.9.3](https://github.com/8base/boost/compare/v0.9.2...v0.9.3) (2018-12-17)
+
+
+### Bug Fixes
+
+* **Dialog:** removes redundant scrollable prop ([0bcb8b2](https://github.com/8base/boost/commit/0bcb8b2))
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/8base/boost/compare/v0.9.1...v0.9.2) (2018-12-14)
 

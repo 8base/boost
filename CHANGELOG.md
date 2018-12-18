@@ -1,3 +1,13 @@
+<a name="0.9.4"></a>
+## [0.9.4](https://github.com/8base/boost/compare/v0.9.3...v0.9.4) (2018-12-18)
+
+
+### Bug Fixes
+
+* **Icon:** fixes stretch size ([478cf61](https://github.com/8base/boost/commit/478cf61))
+
+
+
 <a name="0.9.3"></a>
 ## [0.9.3](https://github.com/8base/boost/compare/v0.9.2...v0.9.3) (2018-12-17)
 

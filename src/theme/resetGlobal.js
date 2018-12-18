@@ -10,7 +10,7 @@ const resetGlobal = () => injectGlobal`
 
   body {
     font-family: 'Poppins', sans-serif !important;
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
   }
   
   *, *:after, *:before {

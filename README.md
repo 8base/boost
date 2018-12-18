@@ -50,7 +50,7 @@ const customTheme = createTheme({
     },
     button: ({ COLORS, SIZES }) => ({
       root: {
-        fontSize: SIZES.SMALL_FONT_SIZE,
+        fontSize: SIZES.OVERLINE_1,
       },
       modifiers: {
         disabled: {

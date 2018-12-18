@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
-import { ModalProvider } from './atoms/Modal/ModalProvider';
-import { IconsProvider } from './atoms/typography/Icon/IconsProvider';
+import { IconsProvider } from './components/Icon/IconsProvider';
+import { ModalProvider } from './components/Modal/ModalProvider';
 import { createTheme, resetGlobal, type Theme } from './theme';
 
 type EightBaseBoostProviderProps = {

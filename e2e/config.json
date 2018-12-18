@@ -1,0 +1,12 @@
+{
+  "setupFiles": [
+    "./setup/setup.js"
+  ],
+  "testMatch": [
+    "**/__tests__/**/*test.js?(x)"
+  ],
+  "setupTestFrameworkScriptFile": "./setup/setupTestFramework.js",
+  "globalSetup": "./setup/globalSetup.js",
+  "globalTeardown": "./setup/globalTeardown.js",
+  "testEnvironment": "./setup/testEnvironment.js"
+}

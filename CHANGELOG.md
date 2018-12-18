@@ -1,3 +1,13 @@
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/8base/boost/compare/v0.9.4...v0.10.0) (2018-12-18)
+
+
+### Features
+
+* **global:** changes according DSM and new grid size ([9877f4f](https://github.com/8base/boost/commit/9877f4f))
+
+
+
 <a name="0.9.4"></a>
 ## [0.9.4](https://github.com/8base/boost/compare/v0.9.3...v0.9.4) (2018-12-18)
 

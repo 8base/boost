@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react';
 import { CodeNumberPlateTag, CodeWrapperTag, CodeBodyTag, CodeNumericTag, CodePlateTag, CodeLineCounterTag, CodeBodyWrapperTag, CodeNumberWrapperTag } from './Code.theme';
 
 type CodeProps = {
-  children: string,
+  children: string | React$Node,
   height?: number,
 }
 

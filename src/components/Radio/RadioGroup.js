@@ -6,7 +6,7 @@ import type { PropSizes } from '../../types';
 
 
 type RadioProps = {
-  children: React$Node,
+  children?: React$Node,
   /** optional name of the group */
   name?: string,
   /** selected value */
@@ -20,7 +20,7 @@ type RadioProps = {
   /** then true when show error styles */
   hasError?: boolean,
   /** options to define radio items */
-  options?: ({ value: any, label: string }) => void,
+  options?: Array<({ value: any, label: string })>,
 }
 
 class RadioGroup extends PureComponent<RadioProps> {

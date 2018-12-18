@@ -8,24 +8,34 @@ import { PALETTE } from '../../theme';
 
 type NavigationItemProps = {|
   exact?: boolean,
-  to: string,
+  to?: string,
   component?: React$Node,
   color?: $Keys<typeof PALETTE>
 |};
 
 const name = 'navigationItem';
 
-const theme = createComponentTheme(name, {
+const themeMain = createComponentTheme(name, ({ COLORS }) => ({
+  root: {
+    color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+  },
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,
     }), PALETTE),
   },
-  defaults: {},
-});
+}));
+
+const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS }) => ({
+  color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+}));
+
+const theme = {
+  ...themeMain,
+  ...themeLabel,
+};
 
 const StyledTag = createStyledTag(name, (props) => ({
-  color: props.theme.COLORS.LIGHT_PRIMARY_TEXT_COLOR,
   cursor: 'pointer',
   position: 'relative',
   textDecoration: 'none',
@@ -45,14 +55,13 @@ const NavigationItemIcon = createStyledTag(`${name}Icon`, {
   alignItems: 'center',
 });
 
-const NavigationItemLabel = createStyledTag(`${name}Label`, ({ theme }) => ({
-  color: theme.COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+const NavigationItemLabel = createStyledTag(`${name}Label`, {
   display: 'none',
   alignItems: 'center',
   textTransform: 'uppercase',
   fontWeight: 600,
   paddingRight: '20px',
-}));
+});
 
 const NavigationItem = ({ icon, label, ...rest }: NavigationItemProps) => (
   <StyledTag { ...rest }>

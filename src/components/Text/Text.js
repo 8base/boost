@@ -6,7 +6,7 @@ import fp from 'lodash/fp';
 import { PALETTE } from '../../theme';
 import { createStyledTag, createComponentTheme } from '../../utils';
 
-type TextProps = {|
+type TextProps = {
   /** text to display in the component */
   children?: React$Node | string | number,
   /** another way to set displayed text */
@@ -21,7 +21,7 @@ type TextProps = {|
   align?: 'left' | 'center' | 'right',
   /** when true then cut text with ellipsis */
   ellipsis?: boolean,
-|};
+};
 
 const name = 'text';
 

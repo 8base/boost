@@ -11,7 +11,7 @@ type CheckboxFieldProps = {|
   /** field label */
   label?: string,
   /** form input object */
-  input?: InputType,
+  input: InputType,
   /** form meta object */
   meta?: MetaType,
   /** color of the check */
@@ -23,8 +23,8 @@ type CheckboxFieldProps = {|
 const CheckboxField = ({
   label,
   stretch,
-  input = {},
-  meta = {},
+  input,
+  meta,
   disabled,
   color,
   ...rest

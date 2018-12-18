@@ -11,6 +11,7 @@ type DialogPlateProps = {|
   onClose?: (any) => void,
   onOpen?: (any) => void,
   shouldCloseOnOverlayClick?: boolean,
+  shouldCloseOnEscPress ?: boolean,
   padding?: PropSizes,
   tagName?: string,
 |};
@@ -58,13 +59,22 @@ function DialogPlate({
   onOpen,
   onClose,
   shouldCloseOnOverlayClick,
+  shouldCloseOnEscPress,
   size,
   args,
   tagName,
   ...rest
   }: DialogPlateProps) {
   return (
-    <Modal id={ id } isOpen={ isOpen } onOpen={ onOpen } onClose={ onClose } args={ args } shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }>
+    <Modal
+      id={ id }
+      isOpen={ isOpen }
+      onOpen={ onOpen }
+      onClose={ onClose }
+      args={ args }
+      shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }
+      shouldCloseOnEscPress={ shouldCloseOnEscPress }
+    >
       {
         ({ args, onClose }) => (
           <StyledTag tagName={ tagName } size={ size }>

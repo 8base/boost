@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
-import LoaderIcon from './Loader.svg';
+import LoaderSvg from './Loader.svg';
 
 type LoaderProps = {|
   size?: 'sm' | 'md' | 'lg',
@@ -31,7 +31,8 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, () => ({}));
+const LoaderTag = createStyledTag(name);
+LoaderTag.displayName = 'LoaderTag';
 
 const WrapperTag = createStyledTag(`${name}Wrapper`, () => ({
   display: 'flex',
@@ -41,13 +42,16 @@ const WrapperTag = createStyledTag(`${name}Wrapper`, () => ({
   width: '100%',
   height: '100%',
 }));
+WrapperTag.displayName = 'WrapperTag';
+
+const LoaderIcon = () => <LoaderSvg />;
 
 function Loader(props: LoaderProps) {
   if (props.stretch) {
-    return <WrapperTag role="loader"><StyledTag { ...props } tagName={ LoaderIcon } /></WrapperTag>;
+    return <WrapperTag role="loader"><LoaderTag { ...props } tagName={ LoaderIcon } /></WrapperTag>;
   }
 
-  return <StyledTag { ...props } tagName={ LoaderIcon } role="loader" />;
+  return <LoaderTag { ...props } tagName={ LoaderIcon } role="loader" />;
 }
 
 Loader.defaultProps = {

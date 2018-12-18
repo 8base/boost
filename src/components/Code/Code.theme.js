@@ -1,6 +1,6 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeSizes } from '../../utils';
 
 const name = 'code';
 
@@ -55,15 +55,15 @@ const CodePlateTag = createStyledTag(`${name}Plate`, {
 const CodeLineCounterTag = createStyledTag(`${name}Counter`, (props) => ({
   opacity: '0.5',
   textAlign: 'center',
-  fontSize: props.theme.SIZES.BODY_TEXT,
+  fontSize: getThemeSizes(props).BODY_TEXT,
   lineHeight: 2,
 }));
 
 const CodeNumericTag = createStyledTag(`${name}Numberic`, (props) => ({
   height: props.height ? 'auto' : '100%',
   padding: '20px 0 40px',
-  borderTopLeftRadius: props.theme.SIZES.MAIN_BORDER_RADIUS,
-  borderBottomLeftRadius: props.theme.SIZES.MAIN_BORDER_RADIUS,
+  borderTopLeftRadius: getThemeSizes(props).MAIN_BORDER_RADIUS,
+  borderBottomLeftRadius: getThemeSizes(props).MAIN_BORDER_RADIUS,
 }));
 
 const CodeNumberWrapperTag = createStyledTag(`${name}NumberWrapper`, (props) => ({

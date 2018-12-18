@@ -38,7 +38,7 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const StyledTag = createStyledTag(name, (props) => {
+const GridBoxTag = createStyledTag(name, (props) => {
   const style = {
     display: 'flex',
     position: 'relative',
@@ -99,6 +99,8 @@ const StyledTag = createStyledTag(name, (props) => {
   return style;
 });
 
+GridBoxTag.displayName = 'GridBoxTag';
+
 function GridBox({
   children,
   scrollable,
@@ -107,14 +109,14 @@ function GridBox({
   }: GridBoxProps) {
   if (scrollable) {
     return (
-      <StyledTag { ...rest } tagName="div" direction={ direction }>
+      <GridBoxTag { ...rest } tagName="div" direction={ direction }>
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: direction }}>{ children }</div>
-      </StyledTag>
+      </GridBoxTag>
     );
   }
 
   return (
-    <StyledTag { ...rest } tagName="div" direction={ direction }>{ children }</StyledTag>
+    <GridBoxTag { ...rest } tagName="div" direction={ direction }>{ children }</GridBoxTag>
   );
 }
 

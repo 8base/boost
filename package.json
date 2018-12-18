@@ -97,6 +97,7 @@
     "collectCoverageFrom": [
       "src/**/*.js",
       "!src/**/*.stories.js",
+      "!src/**/*.theme.js",
       "!src/**/*.index.js"
     ],
     "transformIgnorePatterns": [

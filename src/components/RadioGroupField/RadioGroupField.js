@@ -9,11 +9,11 @@ import type { InputType, MetaType, PropSizes } from '../../types';
 
 type RadioGroupFieldProps = {
   /** Grop.Item components */
-  children: React$Node,
+  children?: React$Node,
   /** when true then don't show error label */
   hideErrorLabel?: boolean,
   /** form input object */
-  input?: InputType,
+  input: InputType,
   /** form meta object */
   meta?: MetaType,
   /** offset between radio items */
@@ -21,7 +21,7 @@ type RadioGroupFieldProps = {
   /** direction of the radio items */
   direction?: 'row' | 'column',
   /** options to define radio items */
-  options?: ({ value: any, label: string }) => void,
+  options?: Array<({ value: any, label: string })>,
 };
 
 const RadioGroupField = ({
@@ -29,8 +29,8 @@ const RadioGroupField = ({
   direction,
   gap,
   hideErrorLabel,
-  input = {},
-  meta = {},
+  input,
+  meta,
   options,
   ...rest
   }: RadioGroupFieldProps) => {

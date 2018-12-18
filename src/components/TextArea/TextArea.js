@@ -6,8 +6,8 @@ import { createStyledTag, createComponentTheme } from '../../utils';
 
 type TextAreaProps = {|
   cols?: number,
-  name: string,
-  onChange: (event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  name?: string,
+  onChange?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
   rows?: number,
   value?: string,
@@ -29,19 +29,25 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
       color: COLORS.PLACEHOLDER_COLOR,
     },
   },
-
-  modifiers: {
-  },
-  defaults: {
-  },
 }));
 
 const StyledTag = createStyledTag(name, {
   outline: 'none',
 });
 
-const TextArea = (props: TextAreaProps) => (
-  <StyledTag { ...props } tagName="textarea" />
-);
+class TextArea extends React.Component<TextAreaProps> {
+
+  onChange = (event: *) => {
+    const { onChange } = this.props;
+
+    onChange && onChange(event.target.value, event);
+  }
+
+  render() {
+    const { onChange, ...rest } = this.props;
+
+    return <StyledTag { ...rest } onChange={ this.onChange }tagName="textarea" />;
+  }
+}
 
 export { TextArea, theme };

@@ -11,6 +11,7 @@ declare var Otherwise: React$ComponentType<$Exact<{ children: React$Node }>>;
 declare var render: typeof __enzume.render;
 declare var mount: typeof __enzume.mount;
 declare var shallow: typeof __enzume.shallow;
+declare var EightBaseBoostProvider: React$ComponentType<*>;
 
 /** hocs helpers */
 type UnaryFn<A, R> = (a: A) => R

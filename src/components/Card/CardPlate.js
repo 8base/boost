@@ -3,19 +3,18 @@ import React from 'react';
 import { Paper } from '../Paper';
 import type { PropSizes } from '../../types';
 
-type CardPlateProps = {|
-  children: React$Node,
+type CardPlateProps = {
+  children: React$Node | (Object) => React$Node,
   padding?: PropSizes,
   paddingOuter?: PropSizes,
   style?: Object,
   stretch?: boolean,
   borderRadius?: 'top' | 'bottom' | 'all',
-|};
+};
 
 const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
   <Paper { ...rest } padding={ paddingOuter }>
     {
-
       typeof children === 'function'
         ?
         children(rest)

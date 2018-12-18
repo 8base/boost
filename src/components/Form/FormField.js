@@ -1,9 +1,9 @@
 // @flow
 
 import React from 'react';
-
-import { createStyledTag, createComponentTheme, getThemeSizes } from '../../utils';
+import { createComponentTheme, createStyledTag } from '../../utils';
 import * as formUtils from '../../utils/forms';
+
 import type { MetaType } from '../../types';
 
 type FormFieldProps = {
@@ -12,15 +12,27 @@ type FormFieldProps = {
   stretch?: boolean,
   hideErrorLabel?: boolean,
   direction?: 'row' | 'column',
-  meta: MetaType,
+  meta?: MetaType,
 };
 
 const name = 'formField';
 
-const theme = createComponentTheme(name, {
-  modifiers: {},
-  defaults: {},
-});
+const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+  fontSize: SIZES.OVERLINE_1,
+  color: COLORS.SECONDARY_TEXT_COLOR,
+  lineHeight: 2,
+}));
+
+const themeError = createComponentTheme(`${name}Error`, ({ COLORS, SIZES }: *) => ({
+  fontSize: SIZES.OVERLINE_2,
+  lineHeight: SIZES.OVERLINE_2_LH,
+  color: COLORS.DANGER,
+}));
+
+const theme = {
+  ...themeLabel,
+  ...themeError,
+};
 
 const FormFieldTag = createStyledTag(name, props => ({
   position: 'relative',
@@ -43,23 +55,21 @@ const ControlErrorWrapperTag = createStyledTag(`${name}ErrorWrapper`, {
   height: 0,
 });
 
-export const ControlErrorTag = createStyledTag(`${name}Error`, props => ({
-  fontSize: props.theme.SIZES.OVERLINE_2,
-  lineHeight: props.theme.SIZES.OVERLINE_2_LH,
-  color: props.theme.COLORS.DANGER,
+
+export const ControlErrorTag = createStyledTag(`${name}Error`, {
+  lineHeight: 1,
   position: 'relative',
   top: '-2px',
-}));
+});
+ControlErrorTag.displayName = 'ControlErrorTag';
 
 const ControlLabelTag = createStyledTag(`${name}Label`, props => ({
   marginLeft: props.direction === 'row' ? '8px' : 0,
-  fontSize: getThemeSizes(props).OVERLINE_1,
-  lineHeight: getThemeSizes(props).OVERLINE_1_LH,
-  color: props.theme.COLORS.SECONDARY_TEXT_COLOR,
 }));
+ControlLabelTag.displayName = 'ControlLabelTag ';
 
 const FormField = ({
-  meta,
+  meta = {},
   label,
   children,
   direction,
@@ -98,3 +108,4 @@ FormField.defaultProps = {
 };
 
 export { FormField, theme };
+

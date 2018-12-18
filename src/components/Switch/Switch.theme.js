@@ -1,6 +1,6 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createStyledTag, createComponentTheme, getThemeColors } from '../../utils';
 
 const name = 'switch';
 
@@ -44,7 +44,7 @@ const SwitchInputTag = createStyledTag(`${name}Input`, {
 
 const SwitchApperanceTag = createStyledTag(`${name}Appearance`, props => ({
   display: 'flex',
-  backgroundColor: props.theme.COLORS[props.value ? 'PRIMARY' : 'DISABLED_COLOR'],
+  backgroundColor: getThemeColors(props)[props.value ? 'PRIMARY' : 'DISABLED_COLOR'],
   position: 'relative',
 
   '&:before': {

@@ -16,7 +16,7 @@ type TabPanelProps = {|
 const TabPanelTag = createStyledTag('tabPlate', props => ({
   display: props.selected ? 'block' : 'none',
 }));
-
+TabPanelTag.displayName = 'TabPanelTag';
 
 const tabPanelEnhancer: HOC<*, TabPanelProps> = compose(
   (setDisplayName: any)('TabPanel'),
@@ -39,8 +39,8 @@ const TabPanelBase = ({
   }
   else {
     return selected
-      ? null
-      : <TabPanelTag { ...rest } selected tagName="div">{ children }</TabPanelTag>;
+      ? <TabPanelTag { ...rest } selected={ selected } tagName="div">{ children }</TabPanelTag>
+      : null;
   }
 };
 

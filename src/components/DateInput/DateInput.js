@@ -20,8 +20,8 @@ injectGlobal`
 type DateInputProps = {|
   onChange: (value: ?string) => void,
   value: ?string,
-  withTime?: boolean,
-  stretch?: boolean,
+  withTime ?: boolean,
+  stretch ?: boolean,
 |};
 
 type DateInputState = {|
@@ -60,11 +60,8 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
 
     if (!value) {
       this.props.onChange(null);
-
       return;
-    }
-
-    if (value) {
+    } else {
       const luxonValue = utils.fromViewFormatToLuxon(value, withTime);
 
       if (luxonValue && luxonValue.isValid) {
@@ -131,7 +128,6 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     const { value, withTime, stretch, onChange, ...rest } = this.props;
 
     const { textValue, isOpen } = this.state;
-
     const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (

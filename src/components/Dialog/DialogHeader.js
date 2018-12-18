@@ -21,7 +21,7 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const CloseTag = createStyledTag(name, {
+const CloseTag = createStyledTag(`${name}Close`, {
   cursor: 'pointer',
   userSelect: 'none',
   position: 'absolute',
@@ -31,6 +31,7 @@ const CloseTag = createStyledTag(name, {
     color: '#8698a7',
   },
 });
+CloseTag.displayName = 'CloseTag';
 
 function DialogHeader({
   title,

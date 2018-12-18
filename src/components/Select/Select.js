@@ -23,7 +23,8 @@ type SelectProps = {|
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   control: (style, { isFocused }) => ({
     ...style,
-    minHeight: '32px',
+    maxHeight: '36px',
+    minHeight: '36px',
     backgroundColor: PALETTE.WHITE,
     borderColor: hasError ? PALETTE.DANGER : (isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1),
     boxShadow: null,

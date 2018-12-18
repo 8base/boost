@@ -41,7 +41,7 @@ function DialogHeader({
     <Card.Header offset="lg" { ...rest }>
       <Text weight="semibold" color="DARK_GRAY1">{ title }</Text>
       <CloseTag onClick={ onClose }>
-        <Icon size="sm" name="Delete" />
+        <Icon size="sm" name="Delete" title="Close Dialog" />
       </CloseTag>
     </Card.Header>
   );

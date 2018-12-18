@@ -17047,14 +17047,6 @@ Array [
   width: 1.8rem;
 }
 
-.emotion-18 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: #d0d7dd;
-}
-
 .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -17077,6 +17069,14 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #1968cb;
+}
+
+.emotion-18 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #d0d7dd;
 }
 
 <div
@@ -21219,6 +21219,8 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #d0d7dd;
+  height: 100%;
+  width: 100%;
 }
 
 .emotion-15 {
@@ -21430,6 +21432,8 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #d0d7dd;
+  height: 100%;
+  width: 100%;
 }
 
 .emotion-15 {

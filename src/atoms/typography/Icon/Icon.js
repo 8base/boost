@@ -37,6 +37,12 @@ const themeWrapper = createComponentTheme(`${name}Wrapper`, {
         },
       ),
     },
+    size: {
+      stretch: {
+        height: '100%',
+        width: '100%',
+      },
+    },
   },
 });
 
@@ -108,7 +114,7 @@ const IconWrapperTag = createStyledTag(`${name}Wrapper`, {
 const IconSvgTag = createStyledTag(`${name}Svg`, {});
 const IconFontTag = createStyledTag(`${name}Font`, {});
 
-const Icon = ({ name, color, className, ...rest }: IconProps) => {
+const Icon = ({ name, color, className, size, ...rest }: IconProps) => {
 
   return (
     <IconsConsumer>
@@ -116,13 +122,18 @@ const Icon = ({ name, color, className, ...rest }: IconProps) => {
         const Glyph: any = glyphs[name] || icons[name];
 
         return (
-          <IconWrapperTag tagName="span" color={ color }>
+          <IconWrapperTag tagName="span" color={ color } size={ size }>
             <Choose>
               <When condition={ !!className && !Glyph }>
-                <IconFontTag tagName="i" className={ className } { ...rest } />
+                <IconFontTag
+                  tagName="i"
+                  size={ size }
+                  className={ className }
+                  { ...rest }
+                />
               </When>
               <When condition={ !className && !!Glyph }>
-                <IconSvgTag tagName="i" { ...rest }>
+                <IconSvgTag tagName="i" size={ size } { ...rest }>
                   <Glyph width="100%" height="100%" />
                 </IconSvgTag>
               </When>

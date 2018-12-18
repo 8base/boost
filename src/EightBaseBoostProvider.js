@@ -33,7 +33,7 @@ class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps
         <ModalProvider>
           <IconsProvider icons={ icons }>
             { children }
-          </IconsProvider>s
+          </IconsProvider>
         </ModalProvider>
       </ThemeProvider>
     );

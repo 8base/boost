@@ -3,8 +3,10 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
-import * as boost from '../src';
 import { withInfo } from '@storybook/addon-info';
+
+import * as boost from '../src';
+import { StateContainer } from './StateContainer';
 
 const { EightBaseBoostProvider, createTheme, ...components } = boost;
 
@@ -27,6 +29,6 @@ export const asStory = (name: string, module: *, init: *) => {
       .addDecorator((story, context) => withInfo()(story)(context))
       .addDecorator(story => story())
       .addDecorator(ThemeDecorator)
-    , components,
+    , { ...components, StateContainer },
   );
 };

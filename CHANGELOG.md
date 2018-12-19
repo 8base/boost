@@ -1,3 +1,15 @@
+<a name="0.10.2"></a>
+## [0.10.2](https://github.com/8base/boost/compare/v0.10.1...v0.10.2) (2018-12-19)
+
+
+### Bug Fixes
+
+* **DateInput:** fix stories ([8d9f0db](https://github.com/8base/boost/commit/8d9f0db))
+* **Icon:** add all icons to the story ([c5b2319](https://github.com/8base/boost/commit/c5b2319))
+* **SecondaryNavigation:** ability to customize item ([6fbfedd](https://github.com/8base/boost/commit/6fbfedd))
+
+
+
 <a name="0.10.1"></a>
 ## [0.10.1](https://github.com/8base/boost/compare/v0.10.0...v0.10.1) (2018-12-19)
 

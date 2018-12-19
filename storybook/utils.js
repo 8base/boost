@@ -6,14 +6,17 @@ import { storiesOf } from '@storybook/react';
 import * as boost from '../src';
 import { withInfo } from '@storybook/addon-info';
 
-const { EightBaseBoostProvider, ...components } = boost;
+const { EightBaseBoostProvider, createTheme, ...components } = boost;
+
+const theme = createTheme({
+});
 
 const Root = styled('div')`
   margin: 32px;
 `;
 
 const ThemeDecorator = (storyFn) => (
-  <EightBaseBoostProvider>
+  <EightBaseBoostProvider theme={ theme }>
     <Root>{ storyFn() }</Root>
   </EightBaseBoostProvider>
 );

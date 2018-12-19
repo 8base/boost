@@ -1,44 +1,16 @@
 import React from 'react';
 
+import * as glyphs from './glyphs';
+
 export default (asStory) => {
-  asStory('Components/Icon', module, (story, { Icon }) => {
+  asStory('Components/Icon', module, (story, { Icon, Column, Row, Text }) => {
     story
       .add('all icons', () => (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Icon name="Alert" />
-          <Icon name="PaperClip" />
-          <Icon name="APIToken" />
-          <Icon name="Check" />
-          <Icon name="ChevronDown" />
-          <Icon name="CloudDatabase" />
-          <Icon name="Delete" />
-          <Icon name="Diagram" />
-          <Icon name="DismissData" />
-          <Icon name="Dots" />
-          <Icon name="EditPencil" />
-          <Icon name="Environment" />
-          <Icon name="FirewallOn" />
-          <Icon name="Gear" />
-          <Icon name="GraphQL" />
-          <Icon name="Group" />
-          <Icon name="HelpCenter" />
-          <Icon name="Home" />
-          <Icon name="Lock" />
-          <Icon name="Mail" />
-          <Icon name="MapPin" />
-          <Icon name="Planet" />
-          <Icon name="Search" />
-          <Icon name="SpeedMeter" />
-          <Icon name="Trashcan" />
-          <Icon name="TreeView" />
-          <Icon name="Contract" />
-          <Icon name="Customers" />
-          <Icon name="House" />
-          <Icon name="Screens" />
-          <Icon name="Settings" />
-          <Icon name="DataBuilder" />
-          <Icon name="Logic" />
-        </div>
+        <Column>
+          {
+            Object.keys(glyphs).map((name) => <Row key={ name }><Icon name={ name } /><Text>{ name }</Text></Row>)
+          }
+        </Column>
       ))
       .add('with custom color', () => (
         <div style={{ display: 'flex', alignItems: 'center' }}>

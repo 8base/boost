@@ -34,6 +34,10 @@ import Screens from './Screens.svg';
 import Settings from './Settings.svg';
 import DataBuilder from './DataBuilder.svg';
 import Logic from './Logic.svg';
+import EightBase from './EightBase.svg';
+import Schema from './Schema.svg';
+import Table from './Table.svg';
+import Tables from './Tables.svg';
 
 export {
   Alert,
@@ -69,5 +73,8 @@ export {
   Settings,
   DataBuilder,
   Logic,
+  EightBase,
+  Schema,
+  Table,
+  Tables,
 };
-

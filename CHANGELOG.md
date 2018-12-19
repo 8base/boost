@@ -1,3 +1,14 @@
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/8base/boost/compare/v0.10.0...v0.10.1) (2018-12-19)
+
+
+### Bug Fixes
+
+* **EightBaseBoostProvider:** rid of unnecessary trash ([64c82a3](https://github.com/8base/boost/commit/64c82a3))
+* **Select:** fix height ([c40f2b2](https://github.com/8base/boost/commit/c40f2b2))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/8base/boost/compare/v0.9.4...v0.10.0) (2018-12-18)
 

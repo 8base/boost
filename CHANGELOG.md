@@ -1,3 +1,13 @@
+<a name="0.10.3"></a>
+## [0.10.3](https://github.com/8base/boost/compare/v0.10.2...v0.10.3) (2018-12-19)
+
+
+### Features
+
+* **Icon:** add icons ([19dde78](https://github.com/8base/boost/commit/19dde78))
+
+
+
 <a name="0.10.2"></a>
 ## [0.10.2](https://github.com/8base/boost/compare/v0.10.1...v0.10.2) (2018-12-19)
 

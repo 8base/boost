@@ -36,7 +36,6 @@ const StyledTag = createStyledTag(name, () => ({
   cursor: 'pointer',
   fontWeight: 400,
   fontSize: 'inherit',
-  lineHeight: '1',
   textDecoration: 'none',
 
   '&:hover': {

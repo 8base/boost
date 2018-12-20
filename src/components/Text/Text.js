@@ -27,7 +27,6 @@ const name = 'text';
 
 const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
-    lineHeight: 1.4,
     margin: 0,
   },
 

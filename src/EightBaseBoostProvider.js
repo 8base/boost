@@ -22,7 +22,7 @@ class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps
   }
 
   componentDidMount() {
-    resetGlobal();
+    resetGlobal(this.theme);
   }
 
   render() {

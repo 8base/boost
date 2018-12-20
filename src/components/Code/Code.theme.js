@@ -56,7 +56,7 @@ const CodeLineCounterTag = createStyledTag(`${name}Counter`, (props) => ({
   opacity: '0.5',
   textAlign: 'center',
   fontSize: props.theme.SIZES.BODY_TEXT,
-  lineHeight: '2',
+  lineHeight: 2,
 }));
 
 const CodeNumericTag = createStyledTag(`${name}Numberic`, (props) => ({
@@ -92,11 +92,9 @@ const CodeBodyTag = createStyledTag(`${name}Body`, {
   overflow: 'auto',
   height: '100%',
   padding: '20px',
-  lineHeight: '2',
   fontWeight: 'normal',
-
-
   fontFamily: 'Courier',
+  lineHeight: 2,
 });
 
 export {

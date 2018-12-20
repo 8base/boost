@@ -13,6 +13,7 @@ const theme = createComponentTheme(name, ({ SIZES }: *) => ({
   root: {
     padding: '0 16px',
     fontSize: SIZES.OVERLINE_1,
+    lineHeight: SIZES.OVERLINE_1_LH,
     textTransform: 'uppercase',
     fontWeight: 700,
   },

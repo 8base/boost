@@ -22,6 +22,7 @@ const themeValue = createComponentTheme(`${name}Value`, ({ COLORS }: *) => ({
 const themeText = createComponentTheme(`${name}Text`, ({ COLORS, SIZES }: *) => ({
   root: {
     fontSize: SIZES.BODY_TEXT,
+    lineHeight: SIZES.BODY_TEXT_LH,
     fontWeight: '600',
     color: COLORS.PRIMARY,
   },

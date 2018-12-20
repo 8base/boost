@@ -12,7 +12,7 @@ const name = 'cardHeader';
 
 const cardHeaderTheme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
-    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderBottom: `1px solid ${COLORS.DSM.GREY_COLORS.DSM_LIGHT_GREY_2}`,
   },
   modifiers: {
     padding: {

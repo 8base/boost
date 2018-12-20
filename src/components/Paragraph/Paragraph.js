@@ -16,7 +16,7 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
     fontWeight: 400,
     fontSize: SIZES.BODY_TEXT,
-    lineHeight: 2,
+    lineHeight: SIZES.BODY_TEXT_LH,
     margin: 0,
   },
   modifiers: {

@@ -41,13 +41,12 @@ const ControlErrorWrapperTag = createStyledTag(`${name}ErrorWrapper`, {
   position: 'absolute',
   bottom: 0,
   height: 0,
-  lineHeight: 1,
 });
 
 export const ControlErrorTag = createStyledTag(`${name}Error`, props => ({
   fontSize: props.theme.SIZES.OVERLINE_2,
+  lineHeight: props.theme.SIZES.OVERLINE_2_LH,
   color: props.theme.COLORS.DANGER,
-  lineHeight: 1,
   position: 'relative',
   top: '-2px',
 }));
@@ -55,8 +54,8 @@ export const ControlErrorTag = createStyledTag(`${name}Error`, props => ({
 const ControlLabelTag = createStyledTag(`${name}Label`, props => ({
   marginLeft: props.direction === 'row' ? '8px' : 0,
   fontSize: getThemeSizes(props).OVERLINE_1,
+  lineHeight: getThemeSizes(props).OVERLINE_1_LH,
   color: props.theme.COLORS.SECONDARY_TEXT_COLOR,
-  lineHeight: 2,
 }));
 
 const FormField = ({

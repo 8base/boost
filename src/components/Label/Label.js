@@ -15,7 +15,7 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
     fontWeight: 400,
     fontSize: SIZES.OVERLINE_1,
-    lineHeight: 2,
+    lineHeight: SIZES.OVERLINE_1_LH,
     margin: 0,
   },
   modifiers: {

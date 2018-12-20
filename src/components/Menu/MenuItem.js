@@ -12,8 +12,8 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
   root: {
     color: COLORS.DSM.GREY_COLORS.DSM_DARK_GREY_2,
     fontSize: SIZES.BODY_TEXT,
+    lineHeight: SIZES.BODY_TEXT_LH,
     fontWeight: 400,
-    lineHeight: '21px',
     height: '32px',
     paddingRight: '16px',
     paddingLeft: '16px',

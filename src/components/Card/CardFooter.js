@@ -13,7 +13,7 @@ const name = 'cardFooter';
 
 const cardFooterTheme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
-    borderTop: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderTop: `1px solid ${COLORS.DSM.GREY_COLORS.DSM_LIGHT_GREY_2}`,
   },
   modifiers: {
     ...offsetModifier,

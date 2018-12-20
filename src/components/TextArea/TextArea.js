@@ -20,9 +20,9 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     fontSize: SIZES.BODY_TEXT,
+    lineHeight: SIZES.BODY_TEXT_LH,
     color: COLORS.DARK_GRAY1,
     fontWeight: 400,
-    lineHeight: 2,
     padding: '8px',
 
     '&::placeholder': {

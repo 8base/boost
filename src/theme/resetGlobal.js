@@ -2,7 +2,7 @@
 
 import { injectGlobal } from 'emotion';
 
-const resetGlobal = () => injectGlobal`
+const resetGlobal = ({ SIZES }: *) => injectGlobal`
   html {
     -webkit-font-smoothing: antialiased;
     font-size: 62.5% !important;
@@ -10,7 +10,8 @@ const resetGlobal = () => injectGlobal`
 
   body {
     font-family: 'Poppins', sans-serif !important;
-    font-size: 1.3rem !important;
+    font-size: ${SIZES.BODY_TEXT} !important;
+    line-height: ${SIZES.BODY_TEXT_LH} !important;
   }
   
   *, *:after, *:before {
@@ -41,9 +42,6 @@ const resetGlobal = () => injectGlobal`
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {
     display: block;
-  }
-  body {
-    line-height: 1;
   }
   ol, ul {
     list-style: none;

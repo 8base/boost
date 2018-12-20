@@ -7,9 +7,9 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
   root: {
     color: COLORS.PRIMARY_TEXT_COLOR,
     fontSize: SIZES.BODY_TEXT,
+    lineHeight: SIZES.BODY_TEXT_LH,
     fontWeight: 400,
     height: '36px',
-    lineHeight: 'normal',
     transition: 'all .15s ease-in-out',
 
     '&::placeholder': {

@@ -65,7 +65,6 @@ const CheckboxIconTag = createStyledTag(`${name}Icon`, props => ({
   top: 0,
   bottom: 0,
   opacity: props.checked ? 1 : 0,
-  lineHeight: 1,
   transition: 'all .15s ease-in-out',
 }));
 

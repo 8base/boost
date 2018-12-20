@@ -1,3 +1,15 @@
+<a name="0.10.4"></a>
+## [0.10.4](https://github.com/8base/boost/compare/v0.10.3...v0.10.4) (2018-12-20)
+
+
+### Bug Fixes
+
+* **Card:** fix border color ([b586134](https://github.com/8base/boost/commit/b586134))
+* **global:** fix line height ([60f4680](https://github.com/8base/boost/commit/60f4680))
+* **Icon:** reset line height ([d1282a1](https://github.com/8base/boost/commit/d1282a1))
+
+
+
 <a name="0.10.3"></a>
 ## [0.10.3](https://github.com/8base/boost/compare/v0.10.2...v0.10.3) (2018-12-19)
 

@@ -106,6 +106,7 @@ const theme = {
 
 const IconWrapperTag = createStyledTag(`${name}Wrapper`, {
   display: 'inline-flex',
+  lineHeight: 1,
 });
 
 const IconSvgTag = createStyledTag(`${name}Svg`, {});

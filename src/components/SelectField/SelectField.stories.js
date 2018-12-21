@@ -12,17 +12,20 @@ const OPTIONS = [{
 }];
 
 export default (asStory) => {
-  asStory('Components/SelectField', module, (story, { SelectField }) => {
+  asStory('Components/SelectField', module, (story, { SelectField, StateContainer, Column }) => {
     story
-      .add('default', () => (
-        <SelectField
-          label="Select Label"
-          input={{ name: 'input', onChange: () => null, value: OPTIONS[0].value }}
-          meta={{}}
-          placeholder="Select an option"
-          options={ OPTIONS }
-          stretch
-        />
+      .add('common', () => (
+        <Column>
+          <StateContainer value={ null } withForm>
+            <SelectField label="Select" name="name" placeholder="Select an option" options={ OPTIONS } />
+          </StateContainer>
+          <StateContainer value={ OPTIONS[1].value } withForm>
+            <SelectField label="Clearable select" name="name" placeholder="Select an option" options={ OPTIONS } clearable />
+          </StateContainer>
+          <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] } withForm>
+            <SelectField label="Multiple select" name="name" placeholder="Select an option" options={ OPTIONS } multiple />
+          </StateContainer>
+        </Column>
       ));
   });
 };

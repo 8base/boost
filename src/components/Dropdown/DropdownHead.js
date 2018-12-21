@@ -1,7 +1,7 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { Target } from 'react-popper';
+import { Reference } from 'react-popper';
 import { compose, setDisplayName } from 'recompose';
 
 import { withDropdownContext } from './DropdownContext';
@@ -48,9 +48,13 @@ const DropdownHead = dropdownHeadEnhancer(
 
       return (
         <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
-          <DropdownPopperTarget tagName={ Target }>
-            { children }
-          </DropdownPopperTarget>
+          <Reference>
+            { ({ ref }) => (
+              <DropdownPopperTarget tagName="div" insideRef={ ref }>
+                { children }
+              </DropdownPopperTarget>
+            ) }
+          </Reference>
         </DropdownHeadTag>
       );
     }

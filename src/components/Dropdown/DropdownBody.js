@@ -119,6 +119,7 @@ const DropdownBody = dropdownBodyEnhancer(
       : children;
   }
 
+
   render() {
       const { withPortal, forceRender, dropdown: { isOpen }, ...rest } = this.props;
 
@@ -134,15 +135,23 @@ const DropdownBody = dropdownBodyEnhancer(
             <Popper
               placement={ popperPlacement }
               modifiers={ popperModifiers }
-              style={{
-                zIndex: DropdownBodyBase.zIndex,
-                width: bodyWidth,
-                display: isOpen ? 'block' : 'none',
-              }}
             >
-              <DropdownBodyTag { ...rest } tagName="div">
-                { renderChildren }
-              </DropdownBodyTag>
+              { ({ ref, style, placement }) => (
+                <DropdownBodyTag
+                  { ...rest }
+                  insideRef={ ref }
+                  data-placement={ placement }
+                  tagName="div"
+                  style={{
+                    ...style,
+                    zIndex: DropdownBodyBase.zIndex,
+                    width: bodyWidth,
+                    display: isOpen ? 'block' : 'none',
+                  }}
+                >
+                  { renderChildren }
+                </DropdownBodyTag>
+              ) }
             </Popper>
           </PortalCondComponent>
         )

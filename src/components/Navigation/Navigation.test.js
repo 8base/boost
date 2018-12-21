@@ -3,14 +3,28 @@ import React from 'react';
 import { Navigation } from './Navigation';
 
 describe('<Navigation />', () => {
-  it('should render navigation with correct props', () => {
-    const wrapper = mount(
+  it('should render navigation', () => {
+    const wrapper = shallow(
       <Navigation.Plate color="GREEN">
         <Navigation.Item icon="Trashcan" label="Jobs" href="/jobs" />
       </Navigation.Plate>,
     );
 
-    expect(wrapper.find('a').props().href).toBe('/jobs');
+    expect(wrapper).toMatchInlineSnapshot(`
+<Styled(navigationPlate)
+  color="GREEN"
+  tagName="nav"
+>
+  <NavigationItem
+    color="GREEN"
+    href="/jobs"
+    icon="Trashcan"
+    key=".0"
+    label="Jobs"
+    tagName="a"
+  />
+</Styled(navigationPlate)>
+`);
   });
 
   it('should render navigation with custom tag', () => {
@@ -18,7 +32,12 @@ describe('<Navigation />', () => {
 
     const wrapper = mount(
       <Navigation.Plate color="GREEN">
-        <Navigation.Item icon="Trashcan" label="Jobs" tagName={ Link } to="/jobs" />
+        <Navigation.Item
+          icon="Trashcan"
+          label="Jobs"
+          tagName={ Link }
+          to="/jobs"
+        />
       </Navigation.Plate>,
     );
 

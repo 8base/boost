@@ -41,7 +41,7 @@ describe('<Breadcrumbs />', () => {
     expect(wrapper.find(Link).at(1).prop('to')).toBe('/app');
   });
 
-  it('should render piece of breadcrumbs with not valid path', () => {
+  it('should render piece of breadcrumbs when some path is not valid', () => {
     const routes = [
       { path: '/', label: 'Dashboard' },
       { path: '/app/settings', label: 'Settings' },

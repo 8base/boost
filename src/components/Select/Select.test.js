@@ -22,22 +22,28 @@ describe('<Select />', () => {
         onChange={ onChange }
         placeholder={ placeholder }
         options={ options }
+        value={ options[0] }
       />,
     );
 
-    const reactSelect = wrapper.find(ReactSelect);
-    const styledTag = wrapper.find(SelectTag);
+    const { children, ...passedStyledProps } = wrapper.find(SelectTag).props();
+    const { styles, menuPortalTarget, ...passedSelectProps } = wrapper.find(ReactSelect).props();
 
-    expect(reactSelect.props().isClearable).toBe(clearable);
-    expect(reactSelect.props().isMulti).toBe(multiple);
-    expect(reactSelect.props().placeholder).toBe(placeholder);
-    expect(reactSelect.props().onChange).toBe(onChange);
-    expect(reactSelect.props().options).toBe(options);
-    expect(styledTag.props().hasError).toBe(hasError);
+    expect(passedSelectProps).toEqual({
+      isClearable: clearable,
+      isMulti: multiple,
+      placeholder,
+      onChange,
+      options,
+      value: options[0],
+      defaultInputValue: '',
+      defaultMenuIsOpen: false,
+      defaultValue: null,
+      menuPlacement: 'auto',
+    });
 
-    wrapper.setProps({ value: options[0] });
-    expect(wrapper.find(ReactSelect).props().value).toBe(options[0]);
+    expect(passedStyledProps).toEqual({
+      hasError,
+    });
   });
-
-
 });

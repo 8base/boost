@@ -3,11 +3,41 @@ import React from 'react';
 import { InputField } from './InputField';
 
 describe('<InputField />', () => {
-  it('should call onCahnge with text value', () => {
+  it('should pass props to the children', () => {
     const onChange = jest.fn();
-    const wrapper = mount(<InputField input={{ onChange }} />);
+    const wrapper = shallow(
+      <InputField
+        meta={{}}
+        input={{ onChange, value: 'some input value', touched: true }}
+      />,
+    );
 
-    wrapper.find('input').simulate('change', { target: { value: 'val' }});
-    expect(onChange.mock.calls[0][0]).toBe('val');
+    expect(wrapper).toMatchInlineSnapshot(`
+<FormField
+  direction="column"
+  hideErrorLabel={false}
+  input={
+    Object {
+      "onChange": [MockFunction],
+      "touched": true,
+      "value": "some input value",
+    }
+  }
+  meta={Object {}}
+  stretch={true}
+>
+  <Input
+    align="left"
+    autoComplete={false}
+    hasError={false}
+    hideErrorIndicator={false}
+    kind="bordered"
+    onChange={[MockFunction]}
+    stretch={true}
+    type="text"
+    value="some input value"
+  />
+</FormField>
+`);
   });
 });

@@ -13,37 +13,53 @@ describe('<SelectField />', () => {
 
   it('should pass props to Select and to Form', () => {
     const label = 'Select Label';
-    const onChange = jest.fn();
     const placeholder = 'Select an option';
     const clearable = true;
     const multiple = true;
+    const input = { name: 'input', onChange: jest.fn() };
+    const meta = { error: 'asdasd', touched: true };
 
     const wrapper = shallow(
       <SelectField
         label={ label }
-        input={{ name: 'input', onChange }}
-        meta={{ error: 'asdasd', touched: true }}
+        input={ input }
+        meta={ meta }
         stretch
         clearable={ clearable }
         multiple={ multiple }
-        onChange={ onChange }
         placeholder={ placeholder }
         options={ options }
       />,
     );
 
-    const select = wrapper.find(Select);
-    const formField = wrapper.find(FormField);
 
-    expect(select.props().clearable).toBe(clearable);
-    expect(select.props().multiple).toBe(multiple);
-    expect(select.props().placeholder).toBe(placeholder);
-    expect(select.props().options).toBe(options);
-    expect(select.props().hasError).toBe(true);
+    const { onChange, ...passedSelectProps } = wrapper.find(Select).props();
+    const { children, ...passedFormFieldProps } = wrapper.find(FormField).props();
 
-    expect(formField.props().stretch).toBe(true);
-    expect(formField.props().label).toBe(label);
+    expect(passedSelectProps).toEqual({
+      clearable,
+      hasError: true,
+      input,
+      label,
+      meta,
+      multiple,
+      name: 'input',
+      options,
+      placeholder,
+      stretch: true,
+      value: null,
+    });
+
+    expect(passedFormFieldProps).toEqual({
+      direction: 'column',
+      hideErrorLabel: false,
+      input,
+      label,
+      meta,
+      stretch: true,
+    });
   });
+
 
   it('should pass correct value', () => {
     const onChange = jest.fn();
@@ -56,7 +72,10 @@ describe('<SelectField />', () => {
       />,
     );
 
-    expect(wrapper.find(Select).props().value).toEqual({ label: 'serjeant', value: 'serjeant' });
+    expect(wrapper.find(Select).props().value).toEqual({
+      label: 'serjeant',
+      value: 'serjeant',
+    });
 
     wrapper.setProps({ input: { value: ['ovenlike', 'serjeant'] }});
     expect(wrapper.find(Select).props().value).toEqual([
@@ -65,13 +84,14 @@ describe('<SelectField />', () => {
     ]);
   });
 
+
   it('should pass call onChange callback', () => {
     const onChange = jest.fn();
 
     const wrapper = shallow(
       <SelectField
         input={{ name: 'input', onChange }}
-        meta={{ }}
+        meta={{}}
         options={ options }
       />,
     );

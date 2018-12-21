@@ -3,7 +3,6 @@ import React from 'react';
 import { Button } from './Button';
 
 describe('<Button />', () => {
-
   it('should render button with text', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
@@ -13,6 +12,7 @@ describe('<Button />', () => {
     expect(wrapper.find('button').text()).toBe('some-text');
   });
 
+
   it('should call onClick callback', () => {
     const onClick = jest.fn();
     const wrapper = shallow(<Button onClick={ onClick } />);
@@ -21,13 +21,6 @@ describe('<Button />', () => {
     expect(onClick).toHaveBeenCalled();
   });
 
-  it('shouldn\'c call onClick callback on disabled button', () => {
-    const onClick = jest.fn();
-    const wrapper = shallow(<Button disabled onClick={ onClick } />);
-
-    wrapper.simulate('click');
-    expect(onClick).not.toHaveBeenCalled();
-  });
 
   it('should pass children to the button body', () => {
     const wrapper = mount(
@@ -43,6 +36,7 @@ describe('<Button />', () => {
     expect(wrapper.text()).toBe('some-text');
   });
 
+
   it('should pass custom tag to the button', () => {
     const wrapper = mount(
       <Button tagName="a" href="https://break-core.ch" />,
@@ -52,9 +46,23 @@ describe('<Button />', () => {
     expect(wrapper.find('a').props().href).toBe('https://break-core.ch');
   });
 
+
+  it('shouldn\'c call onClick callback on disabled button', () => {
+    const onClick = jest.fn();
+    const wrapper = shallow(<Button disabled onClick={ onClick } />);
+
+    wrapper.simulate('click');
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+
   it('should not click on button while it loading', () => {
     const onClick = jest.fn();
-    const wrapper = mount(<Button onClick={ onClick } loading />);
+    const wrapper = mount(
+      <EightBaseBoostProvider>
+        <Button onClick={ onClick } loading />
+      </EightBaseBoostProvider>,
+    );
 
     wrapper.simulate('click');
     expect(onClick).not.toHaveBeenCalled();

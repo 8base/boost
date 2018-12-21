@@ -1,35 +1,42 @@
 // @flow
 import React from 'react';
 import { RadioGroupField } from './';
-import { Radio } from '../Radio';
 
 describe('<RadioGroupField />', () => {
-  it('should render radio group by the options', () => {
+  it('should pass props to the children', () => {
     const onChange = jest.fn();
-    const wrapper = mount(
+    const options = [
+      { label: 'Radio 1', value: 1 },
+      { label: 'Radio 2', value: 2 },
+      { label: 'Radio 3', value: 3 },
+    ];
+    const input = { onChange, value: 2 };
+
+    const wrapper = shallow(
       <RadioGroupField
         meta={{}}
-        input={{
-          onChange,
-          value: 2,
-        }}
-        options={ [
-          { label: 'Radio 1', value: 1 },
-          { label: 'Radio 2', value: 2 },
-          { label: 'Radio 3', value: 3 },
-        ] }
+        input={ input }
+        options={ options }
       />,
     );
 
-    const firstItem = wrapper.find(Radio.Item).at(0);
-    const secondItem = wrapper.find(Radio.Item).at(1);
-    const thirdItem = wrapper.find(Radio.Item).at(2);
+    const { children, ...formFieldPassedProps } = wrapper.find('FormField').props();
 
-    expect(firstItem.find('RadioTag').prop('checked')).toBeFalsy();
-    expect(secondItem.find('RadioTag').prop('checked')).toBeTruthy();
-    expect(thirdItem.find('RadioTag').prop('checked')).toBeFalsy();
+    expect(formFieldPassedProps).toEqual({
+      direction: 'column',
+      hideErrorLabel: false,
+      input,
+      meta: {},
+      stretch: true,
+    });
 
-    firstItem.find('input').simulate('change');
-    expect(onChange).toHaveBeenCalled();
+    expect(wrapper.find('RadioGroup').props()).toEqual({
+      direction: 'column',
+      gap: 'md',
+      hasError: false,
+      onChange,
+      options,
+      value: 2,
+    });
   });
 });

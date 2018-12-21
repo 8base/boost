@@ -20,8 +20,8 @@ injectGlobal`
 type DateInputProps = {|
   onChange: (value: ?string) => void,
   value: ?string,
-  withTime ?: boolean,
-  stretch ?: boolean,
+  withTime?: boolean,
+  stretch?: boolean,
 |};
 
 type DateInputState = {|

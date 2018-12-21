@@ -13,7 +13,9 @@ describe('<AsyncContent />', () => {
 
     expect(wrapper.find('.some-children')).toHaveLength(0);
     expect(wrapper.find(Loader)).toHaveLength(1);
-    expect(wrapper.find(Loader).props().stretch).toBeTruthy();
+    expect(wrapper.find(Loader).props()).toEqual({
+      stretch: true,
+    });
   });
 
   it('should render children ', () => {

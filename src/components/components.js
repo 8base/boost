@@ -41,3 +41,4 @@ export { Tabs } from './Tabs';
 export { Text } from './Text';
 export { TextArea } from './TextArea';
 export { TextAreaField } from './TextAreaField';
+export { Tooltip } from './Tooltip';

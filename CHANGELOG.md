@@ -1,3 +1,13 @@
+<a name="0.10.5"></a>
+## [0.10.5](https://github.com/8base/boost/compare/v0.10.4...v0.10.5) (2018-12-21)
+
+
+### Features
+
+* **Select:** add ability to customize subcomponents ([2f1483d](https://github.com/8base/boost/commit/2f1483d))
+
+
+
 <a name="0.10.4"></a>
 ## [0.10.4](https://github.com/8base/boost/compare/v0.10.3...v0.10.4) (2018-12-20)
 

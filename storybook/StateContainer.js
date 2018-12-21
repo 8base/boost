@@ -19,7 +19,7 @@ export class StateContainer extends React.Component {
 
     if (withForm) {
       return React.Children.map(children, child =>
-        React.cloneElement(child, { input: { value, onChange: this.onChange }}),
+        React.cloneElement(child, { input: { value, onChange: this.onChange }, meta: {}}),
       );
     }
 

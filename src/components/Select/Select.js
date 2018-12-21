@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import ReactSelect from 'react-select';
+import ReactSelect, { components } from 'react-select';
 
 import { SelectTag } from './Select.theme';
 import { PALETTE, Z_INDEX } from '../../theme';
@@ -18,6 +18,7 @@ type SelectProps = {|
   hasError?: boolean,
   zIndex?: string | number,
   valueComponent?: React$Node,
+  components?: Object,
 |};
 
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
@@ -68,24 +69,41 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-const Select = ({ value, loading, clearable, disabled, multiple, options, onChange, placeholder, valueComponent, ...props }: SelectProps) => (
-  <SelectTag { ...props }>
-    <ReactSelect
-      isClearable={ clearable }
-      isDisabled={ disabled }
-      isLoading={ loading }
-      isMulti={ multiple }
-      menuPlacement="auto"
-      menuPortalTarget={ document.body }
-      onChange={ onChange }
-      options={ options }
-      placeholder={ placeholder }
-      valueComponent={ valueComponent }
-      styles={ customStyles(props) }
-      value={ value }
-    />
-  </SelectTag>
-);
+const Select = ({
+  value,
+  loading,
+  clearable,
+  disabled,
+  multiple,
+  options,
+  onChange,
+  placeholder,
+  valueComponent,
+  components,
+  ...props
+  }: SelectProps) => {
+  return (
+    <SelectTag { ...props }>
+      <ReactSelect
+        isClearable={ clearable }
+        isDisabled={ disabled }
+        isLoading={ loading }
+        isMulti={ multiple }
+        menuPlacement="auto"
+        menuPortalTarget={ document.body }
+        onChange={ onChange }
+        options={ options }
+        placeholder={ placeholder }
+        valueComponent={ valueComponent }
+        styles={ customStyles(props) }
+        value={ value }
+        components={ components }
+      />
+    </SelectTag>
+  );
+};
+
+Select.components = components;
 
 export { Select };
 

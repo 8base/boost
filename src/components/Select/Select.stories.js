@@ -12,7 +12,7 @@ const OPTIONS = [{
 }];
 
 export default (asStory) => {
-  asStory('Components/Select', module, (story, { Select, StateContainer, Column }) => {
+  asStory('Components/Select', module, (story, { Select, StateContainer, Column, Icon, Row }) => {
     story
       .add('common', () => (
         <Column>
@@ -24,6 +24,24 @@ export default (asStory) => {
           </StateContainer>
           <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } multiple />
+          </StateContainer>
+          <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
+            <Select
+              name="name"
+              placeholder="Select an option"
+              options={ OPTIONS }
+              components={{
+                MultiValueLabel: ({ children, ...props }) => (
+                  <Select.components.MultiValueLabel { ...props }>
+                    <Row>
+                      <Icon name="Table" size="sm" />
+                      <span>{ children }</span>
+                    </Row>
+                  </Select.components.MultiValueLabel>
+                ),
+              }}
+              multiple
+            />
           </StateContainer>
         </Column>
       ));

@@ -1,3 +1,13 @@
+<a name="0.10.8"></a>
+## [0.10.8](https://github.com/8base/boost/compare/v0.10.7...v0.10.8) (2018-12-24)
+
+
+### Features
+
+* **Icon:** add Discord icon ([b92ed26](https://github.com/8base/boost/commit/b92ed26))
+
+
+
 <a name="0.10.7"></a>
 ## [0.10.7](https://github.com/8base/boost/compare/v0.10.6...v0.10.7) (2018-12-24)
 

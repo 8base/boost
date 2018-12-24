@@ -1,3 +1,20 @@
+<a name="0.10.7"></a>
+## [0.10.7](https://github.com/8base/boost/compare/v0.10.6...v0.10.7) (2018-12-24)
+
+
+### Bug Fixes
+
+* **Icons:** use currentColor for data/schema icons ([7069a8f](https://github.com/8base/boost/commit/7069a8f))
+* **Tag:** increase left/right-side paddings ([07eb4cb](https://github.com/8base/boost/commit/07eb4cb))
+* **Tag:** use primary colors ([67d7961](https://github.com/8base/boost/commit/67d7961))
+
+
+### Features
+
+* **Tooltip:** add Tooltip component ([d5041e9](https://github.com/8base/boost/commit/d5041e9))
+
+
+
 <a name="0.10.6"></a>
 ## [0.10.6](https://github.com/8base/boost/compare/v0.10.5...v0.10.6) (2018-12-24)
 

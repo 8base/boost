@@ -30,7 +30,10 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
     color: fp.mapValues(
       (color) => ({
         backgroundColor: color,
-        color: getContrastColor(color),
+        color: getContrastColor(color, {
+          lightColor: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+          darkColor: COLORS.PRIMARY_TEXT_COLOR,
+        }),
       }),
       COLORS,
     ),

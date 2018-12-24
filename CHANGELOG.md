@@ -1,3 +1,13 @@
+<a name="0.10.6"></a>
+## [0.10.6](https://github.com/8base/boost/compare/v0.10.5...v0.10.6) (2018-12-24)
+
+
+### Features
+
+* **Tag:** initial tag ([9b99810](https://github.com/8base/boost/commit/9b99810))
+
+
+
 <a name="0.10.5"></a>
 ## [0.10.5](https://github.com/8base/boost/compare/v0.10.4...v0.10.5) (2018-12-21)
 

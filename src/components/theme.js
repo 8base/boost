@@ -33,6 +33,8 @@ import { theme as tagTheme } from './Tag';
 import { theme as textAreaFieldTheme } from './TextAreaField';
 import { theme as textAreaTheme } from './TextArea';
 import { theme as textTheme } from './Text';
+import { theme as tooltipTheme } from './Tooltip';
+
 
 export const theme = {
   ...avatarTheme,
@@ -68,4 +70,5 @@ export const theme = {
   ...textAreaFieldTheme,
   ...textAreaTheme,
   ...textTheme,
+  ...tooltipTheme,
 };

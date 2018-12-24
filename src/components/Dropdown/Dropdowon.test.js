@@ -1,18 +1,18 @@
 // @flow
 
 import * as React from 'react';
-import { Dropdown } from './Dropdown';
+import { Dropdown } from './';
 
 
 describe('<Dropdown />', () => {
   it('should open and close dropdwon by changing the props', () => {
     const wrapper = mount(
-      <Dropdown.Plate isOpen={ false }>
+      <Dropdown isOpen={ false }>
         <Dropdown.Head>Head</Dropdown.Head>
         <Dropdown.Body>
           <div className="body">Body</div>
         </Dropdown.Body>
-      </Dropdown.Plate>,
+      </Dropdown>,
     );
 
     expect(wrapper.find(Dropdown.Head).text()).toBe('Head');
@@ -32,12 +32,12 @@ describe('<Dropdown />', () => {
     const onCloseDropdown = jest.fn();
 
     const wrapper = mount(
-      <Dropdown.Plate isOpen={ false } onCloseDropdown={ onCloseDropdown } onOpenDropdown={ onOpenDropdown }>
+      <Dropdown isOpen={ false } onCloseDropdown={ onCloseDropdown } onOpenDropdown={ onOpenDropdown }>
         <Dropdown.Head>Head</Dropdown.Head>
         <Dropdown.Body>
           <div className="body">Body</div>
         </Dropdown.Body>
-      </Dropdown.Plate>,
+      </Dropdown>,
     );
 
     wrapper.find(Dropdown.Head).simulate('click');
@@ -51,12 +51,12 @@ describe('<Dropdown />', () => {
 
   it('should open and close dropdwon by clicking to head', () => {
     const wrapper = mount(
-      <Dropdown.Plate defaultOpen>
+      <Dropdown defaultOpen>
         <Dropdown.Head>Head</Dropdown.Head>
         <Dropdown.Body>
           <div className="body">Body</div>
         </Dropdown.Body>
-      </Dropdown.Plate>,
+      </Dropdown>,
     );
 
     expect(wrapper.find('.body')).toHaveLength(1);
@@ -75,14 +75,14 @@ describe('<Dropdown />', () => {
     const onCloseDropdown = jest.fn();
 
     const wrapper = mount(
-      <Dropdown.Plate isOpen onCloseDropdown={ onCloseDropdown }>
+      <Dropdown isOpen onCloseDropdown={ onCloseDropdown }>
         <Dropdown.Head>Head</Dropdown.Head>
         <Dropdown.Body stretch>
           { ({ closeDropdown }: *) => (
             <div className="close-dropdown" onClick={ closeDropdown } />
           ) }
         </Dropdown.Body>
-      </Dropdown.Plate>,
+      </Dropdown>,
     );
 
 

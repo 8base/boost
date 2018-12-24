@@ -4,7 +4,7 @@ export default (asStory) => {
   asStory('Components/Dialog', module, (story, { ModalContext, Dialog, Paragraph, Button }) => {
     story
       .add('with default header, body, actions and footer', () => (
-        <Dialog.Plate size="sm" isOpen>
+        <Dialog size="sm" isOpen>
           <Dialog.Header title="Mark Job as Completed" />
           <Dialog.Body>
             <Paragraph>
@@ -15,14 +15,14 @@ export default (asStory) => {
             <Button color="neutral" variant="outlined">Cancel</Button>
             <Button type="submit">Apply</Button>
           </Dialog.Footer>
-        </Dialog.Plate>
+        </Dialog>
       ))
       .add('with state', () => (
         <ModalContext.Consumer>
           {
             ({ openModal, closeModal }) => (
               <React.Fragment>
-                <Dialog.Plate id="ID" size="sm" onClose={ () => closeModal('ID') }>
+                <Dialog id="ID" size="sm" onClose={ () => closeModal('ID') }>
                   {
                     ({ args, onClose }) => (
                       <React.Fragment>
@@ -39,7 +39,7 @@ export default (asStory) => {
                       </React.Fragment>
                     )
                   }
-                </Dialog.Plate>
+                </Dialog>
                 <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open</Button>
               </React.Fragment>
             )

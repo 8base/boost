@@ -1,5 +1,11 @@
 // @flow
 import React from 'react';
+
+import { CardHeader, cardHeaderTheme } from './CardHeader';
+import { CardBody, cardBodyTheme } from './CardBody';
+import { CardSection, cardSectionTheme } from './CardSection';
+import { CardFooter, cardFooterTheme } from './CardFooter';
+
 import { Paper } from '../Paper';
 import type { PropSizes } from '../../types';
 
@@ -12,7 +18,14 @@ type CardPlateProps = {
   borderRadius?: 'top' | 'bottom' | 'all',
 };
 
-const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
+const theme = {
+  ...cardHeaderTheme,
+  ...cardBodyTheme,
+  ...cardSectionTheme,
+  ...cardFooterTheme,
+};
+
+const Card = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
   <Paper { ...rest } padding={ paddingOuter }>
     {
       typeof children === 'function'
@@ -26,8 +39,13 @@ const CardPlate = ({ children, paddingOuter, padding, ...rest }: CardPlateProps)
   </Paper>
 );
 
-CardPlate.defaultProps = {
+Card.defaultProps = {
   padding: 'md',
 };
 
-export { CardPlate };
+Card.Header = CardHeader;
+Card.Body = CardBody;
+Card.Section = CardSection;
+Card.Footer = CardFooter;
+
+export { Card, theme };

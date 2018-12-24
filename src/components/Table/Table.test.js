@@ -32,7 +32,7 @@ describe('<Table />', () => {
   it('should render table', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
-        <Table.Plate>
+        <Table>
           <Table.Header columns="repeat(6, 1fr)">
             <Table.HeaderCell>Id</Table.HeaderCell>
             <Table.HeaderCell>Name</Table.HeaderCell>
@@ -41,7 +41,7 @@ describe('<Table />', () => {
             { renderTableBody }
           </Table.Body>
           <Table.Footer>Footer</Table.Footer>
-        </Table.Plate>
+        </Table>
       </EightBaseBoostProvider>,
     );
 
@@ -60,7 +60,7 @@ describe('<Table />', () => {
     const onActionClick = jest.fn();
 
     const wrapper = mount(
-      <Table.Plate>
+      <Table>
         <Table.Header columns="repeat(6, 1fr)" >
           <Table.HeaderCell>Id</Table.HeaderCell>
           <Table.HeaderCell>Name</Table.HeaderCell>
@@ -68,7 +68,7 @@ describe('<Table />', () => {
         <Table.Body data={ TABLE_DATA } action="Create Client" onActionClick={ onActionClick }>
           { renderTableBody }
         </Table.Body>
-      </Table.Plate>,
+      </Table>,
     );
 
     expect(wrapper.find(TableAction).text()).toBe('Create Client');
@@ -80,7 +80,7 @@ describe('<Table />', () => {
 
   it('should render with custom action button', () => {
     const wrapper = mount(
-      <Table.Plate>
+      <Table>
         <Table.Header columns="repeat(6, 1fr)" >
           <Table.HeaderCell>Id</Table.HeaderCell>
           <Table.HeaderCell>Name</Table.HeaderCell>
@@ -88,7 +88,7 @@ describe('<Table />', () => {
         <Table.Body data={ TABLE_DATA } action={ <button>Create Client</button> }>
           { renderTableBody }
         </Table.Body>
-      </Table.Plate>,
+      </Table>,
     );
 
     expect(wrapper.find(TableAction).text()).toBe('Create Client');
@@ -96,7 +96,7 @@ describe('<Table />', () => {
 
   it('should render without data', () => {
     const wrapper = mount(
-      <Table.Plate>
+      <Table>
         <Table.Header columns="repeat(6, 1fr)" >
           <Table.HeaderCell>Id</Table.HeaderCell>
           <Table.HeaderCell>Name</Table.HeaderCell>
@@ -104,7 +104,7 @@ describe('<Table />', () => {
         <Table.Body data={ [] } action={ <button>Create Client</button> }>
           { renderTableBody }
         </Table.Body>
-      </Table.Plate>,
+      </Table>,
     );
 
     expect(wrapper.find(Table.BodyRow)).toHaveLength(0);

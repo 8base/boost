@@ -6,11 +6,11 @@ describe('<Menu />', () => {
   it('should render Menu components', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
-        <Menu.Plate>
+        <Menu>
           <Menu.Item>Tramman</Menu.Item>
           <Menu.Item>Gripman</Menu.Item>
           <Menu.Item>Proalliance</Menu.Item>
-        </Menu.Plate>
+        </Menu>
       </EightBaseBoostProvider>,
     );
 

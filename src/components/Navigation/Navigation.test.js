@@ -5,9 +5,9 @@ import { Navigation } from './Navigation';
 describe('<Navigation />', () => {
   it('should render navigation', () => {
     const wrapper = shallow(
-      <Navigation.Plate color="GREEN">
+      <Navigation color="GREEN">
         <Navigation.Item icon="Trashcan" label="Jobs" href="/jobs" />
-      </Navigation.Plate>,
+      </Navigation>,
     );
 
     expect(wrapper).toMatchInlineSnapshot(`
@@ -31,14 +31,14 @@ describe('<Navigation />', () => {
     const Link = () => null;
 
     const wrapper = mount(
-      <Navigation.Plate color="GREEN">
+      <Navigation color="GREEN">
         <Navigation.Item
           icon="Trashcan"
           label="Jobs"
           tagName={ Link }
           to="/jobs"
         />
-      </Navigation.Plate>,
+      </Navigation>,
     );
 
     expect(wrapper.find(Link).props().to).toBe('/jobs');

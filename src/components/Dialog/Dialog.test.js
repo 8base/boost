@@ -7,7 +7,7 @@ import { Modal } from '../Modal';
 describe('<Dialog />', () => {
   it('should render dialog content', () => {
     const wrapper = mount(
-      <Dialog.Plate size="sm" isOpen>
+      <Dialog size="sm" isOpen>
         <Dialog.Header title="header-text" />
         <Dialog.Body>
           body-text
@@ -15,7 +15,7 @@ describe('<Dialog />', () => {
         <Dialog.Footer>
           footer-text
         </Dialog.Footer>
-      </Dialog.Plate>,
+      </Dialog>,
     );
 
     expect(wrapper.find(Dialog.Header).text()).toBe('header-text');
@@ -26,14 +26,15 @@ describe('<Dialog />', () => {
   it('should call onClose callback', () => {
     const onClose = jest.fn();
     const wrapper = mount(
-      <Dialog.Plate size="sm" isOpen>
+      <Dialog size="sm" isOpen>
         <Dialog.Header title="header-text" onClose={ onClose } />
-      </Dialog.Plate>,
+      </Dialog>,
     );
 
     wrapper.find('CloseTag').simulate('click');
     expect(onClose).toHaveBeenCalled();
   });
+
 
   it('should pass props to the Modal component', () => {
     const onClose = jest.fn();
@@ -55,43 +56,46 @@ describe('<Dialog />', () => {
     };
 
     const wrapper = shallow(
-      <Dialog.Plate { ...modalProps } />,
+      <Dialog { ...modalProps } />,
     );
 
     const { children, ...passedProps } = wrapper.find(Modal).props();
     expect(passedProps).toEqual(modalProps);
   });
 
+
   it('should call onClose callback on overlay click', () => {
     const onClose = jest.fn();
     const wrapper = mount(
-      <Dialog.Plate size="sm" isOpen onClose={ onClose }>
+      <Dialog size="sm" isOpen onClose={ onClose }>
         <Dialog.Header title="title" />
-      </Dialog.Plate>,
+      </Dialog>,
     );
 
     wrapper.find('OverlayTag').simulate('mouseDown');
     expect(onClose).toHaveBeenCalled();
   });
+
 
   it('should not call onClose callback on overlay click', () => {
     const onClose = jest.fn();
     const wrapper = mount(
-      <Dialog.Plate size="sm" isOpen onClose={ onClose }>
+      <Dialog size="sm" isOpen onClose={ onClose }>
         <Dialog.Header title="title" />
-      </Dialog.Plate>,
+      </Dialog>,
     );
 
     wrapper.find('OverlayTag').simulate('mouseDown');
     expect(onClose).toHaveBeenCalled();
   });
 
+
   it('should call onClose callback on escape with shouldCloseOnOverlayClick=false', () => {
     const onClose = jest.fn();
     const wrapper = mount(
-      <Dialog.Plate size="sm" isOpen onClose={ onClose } shouldCloseOnOverlayClick={ false }>
+      <Dialog size="sm" isOpen onClose={ onClose } shouldCloseOnOverlayClick={ false }>
         <Dialog.Header title="title" />
-      </Dialog.Plate>,
+      </Dialog>,
     );
 
     wrapper.find('OverlayTag').simulate('mouseDown');

@@ -13,53 +13,53 @@ export default (asStory) => {
   asStory('Components/Card', module, (story, { Card }) => {
     story
       .add('default', () => (
-        <Card.Plate>
+        <Card>
           <Card.Header>Header</Card.Header>
           <Card.Body>Body<br /><br /><br /><br /></Card.Body>
-          <Card.Footer>Footer </Card.Footer>
-        </Card.Plate>
+          <Card.Footer>Footer</Card.Footer>
+        </Card>
       ))
       .add('with custom offsets', () => (
-        <Card.Plate offset="xl">
+        <Card offset="xl">
           <Card.Header>Header</Card.Header>
           <Card.Body >Body<br /><br /><br /><br /></Card.Body>
-          <Card.Footer>Footer </Card.Footer>
-        </Card.Plate>
+          <Card.Footer>Footer</Card.Footer>
+        </Card>
       ))
       .add('without footer', () => (
-        <Card.Plate>
+        <Card>
           <Card.Header>Header</Card.Header>
           <Card.Body>Body<br /><br /><br /><br /></Card.Body>
-        </Card.Plate>
+        </Card>
       ))
       .add('without multiple sections', () => (
-        <Card.Plate>
+        <Card>
           <Card.Header>Header</Card.Header>
           <Card.Body padding="none">
             <Card.Section>Section<br /><br /><br /><br /></Card.Section>
             <Card.Section>Section<br /><br /><br /><br /></Card.Section>
             <Card.Section>Section<br /><br /><br /><br /></Card.Section>
           </Card.Body>
-          <Card.Footer>Footer </Card.Footer>
-        </Card.Plate>
+          <Card.Footer>Footer</Card.Footer>
+        </Card>
       ))
       .add('without header', () => (
-        <Card.Plate>
+        <Card>
           <Card.Body>Body<br /><br /><br /><br /></Card.Body>
-          <Card.Footer>Footer </Card.Footer>
-        </Card.Plate>
+          <Card.Footer>Footer</Card.Footer>
+        </Card>
       ))
       .add('with scrollable body', () => (
         <ShortDiv>
-          <Card.Plate>
+          <Card>
             <Card.Header>Header</Card.Header>
             <Card.Body padding="none" scrollable>
               <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
               <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
               <Card.Section>Section<br /><br /><br /><br /><br /><br /><br /><br /></Card.Section>
             </Card.Body>
-            <Card.Footer>Footer </Card.Footer>
-          </Card.Plate>
+            <Card.Footer>Footer</Card.Footer>
+          </Card>
         </ShortDiv>
       ));
   });

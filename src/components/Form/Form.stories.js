@@ -8,16 +8,16 @@ export default (asStory) => {
   asStory('Components/Form', module, (story, { Form, InputField }) => {
     story
       .add('without groups', () => (
-        <Form.Plate>
+        <Form>
           <FieldMock component={ InputField } name="curple" label="Jobs" />
           <FieldMock component={ InputField } name="provect" label="Posted" />
           <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
           <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
           <FieldMock component={ InputField } name="inertance" label="Applied" />
-        </Form.Plate>
+        </Form>
       ))
       .add('with groups', () => (
-        <Form.Plate>
+        <Form>
           <Form.Section>
             <Form.SectionTitle>Some section 1</Form.SectionTitle>
             <Form.SectionBody>
@@ -33,10 +33,10 @@ export default (asStory) => {
               <FieldMock component={ InputField } name="inertance" label="Applied" />
             </Form.SectionBody>
           </Form.Section>
-        </Form.Plate>
+        </Form>
       ))
       .add('with form error', () => (
-        <Form.Plate>
+        <Form>
           <Form.Error error="Some error" />
           <Form.Section>
             <FieldMock component={ InputField } name="curple" label="Jobs" />
@@ -45,10 +45,10 @@ export default (asStory) => {
             <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
             <FieldMock component={ InputField } name="inertance" label="Applied" />
           </Form.Section>
-        </Form.Plate>
+        </Form>
       ))
       .add('with form error is null', () => (
-        <Form.Plate>
+        <Form>
           <Form.Error error={ null } />
           <Form.Section>
             <FieldMock component={ InputField } name="curple" label="Jobs" />
@@ -57,7 +57,7 @@ export default (asStory) => {
             <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
             <FieldMock component={ InputField } name="inertance" label="Applied" />
           </Form.Section>
-        </Form.Plate>
+        </Form>
       ));
   });
 };

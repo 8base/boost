@@ -22,10 +22,10 @@ const getLuma = (color) => {
   return (0.2126 * rgb[0]) + (0.7152 * rgb[1]) + (0.0722 * rgb[2]);
 };
 
-export const getContrastColor = (color) => {
+export const getContrastColor = (color, { lightColor = '#ffffff', darkColor = '#000000' } = {}) => {
   if (isValidRGB(color)) {
-    return (getLuma(color) >= 165) ? '#000000' : '#ffffff';
+    return (getLuma(color) >= 165) ? darkColor : lightColor;
   }
 
-  return '#000000';
+  return darkColor;
 };

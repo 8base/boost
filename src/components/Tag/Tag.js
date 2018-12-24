@@ -19,7 +19,7 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
     margin: 0,
     height: '24px',
-    padding: '0 8px',
+    padding: '0 12px',
     borderRadius: '24px',
     display: 'flex',
     alignItems: 'center',
@@ -30,7 +30,10 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
     color: fp.mapValues(
       (color) => ({
         backgroundColor: color,
-        color: getContrastColor(color),
+        color: getContrastColor(color, {
+          lightColor: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+          darkColor: COLORS.PRIMARY_TEXT_COLOR,
+        }),
       }),
       COLORS,
     ),

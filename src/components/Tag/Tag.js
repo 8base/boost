@@ -19,7 +19,7 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
   root: {
     margin: 0,
     height: '24px',
-    padding: '0 8px',
+    padding: '0 12px',
     borderRadius: '24px',
     display: 'flex',
     alignItems: 'center',

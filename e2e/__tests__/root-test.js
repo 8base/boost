@@ -36,6 +36,7 @@ const STORIES = [
   ['Components/Breadcrumbs', 'common'],
   ['Components/ButtonGroup', 'common'],
   ['Components/Progress', 'common'],
+  ['Components/Tag', 'common'],
 ];
 
 test.each(STORIES)('%s / %s', async (kind, story) => {

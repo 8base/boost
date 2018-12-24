@@ -38,6 +38,7 @@ export { SelectField } from './SelectField';
 export { Switch } from './Switch';
 export { Table } from './Table';
 export { Tabs } from './Tabs';
+export { Tag } from './Tag';
 export { Text } from './Text';
 export { TextArea } from './TextArea';
 export { TextAreaField } from './TextAreaField';

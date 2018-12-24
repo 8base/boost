@@ -29,6 +29,7 @@ import { theme as selectFieldTheme } from './SelectField';
 import { theme as selectTheme } from './Select';
 import { theme as switchTheme } from './Switch';
 import { theme as tableTheme } from './Table';
+import { theme as tagTheme } from './Tag';
 import { theme as textAreaFieldTheme } from './TextAreaField';
 import { theme as textAreaTheme } from './TextArea';
 import { theme as textTheme } from './Text';
@@ -63,6 +64,7 @@ export const theme = {
   ...selectTheme,
   ...switchTheme,
   ...tableTheme,
+  ...tagTheme,
   ...textAreaFieldTheme,
   ...textAreaTheme,
   ...textTheme,

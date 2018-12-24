@@ -60,6 +60,7 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     borderStyle: 'solid',
     borderWidth: '1px',
+    color: COLORS.WHITE,
 
     '&:hover': {
       boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
@@ -168,10 +169,10 @@ const getLoading = (props: ButtonProps) => {
 };
 
 const getSquaredStyle = (props: ButtonProps) => {
-  if (props.squared) {
+  if (props.squared && props.size) {
     return {
-      width: BUTTON_HEIGHT_BY_SIZE[props.size || DEFAULT_MODIFIERS.size],
-      height: BUTTON_HEIGHT_BY_SIZE[props.size || DEFAULT_MODIFIERS.size],
+      width: BUTTON_HEIGHT_BY_SIZE[props.size],
+      height: BUTTON_HEIGHT_BY_SIZE[props.size],
     };
   }
 
@@ -187,7 +188,6 @@ const ButtonTag = createStyledTag(name, props => ({
   alignItems: 'center',
   userSelect: 'none',
   whiteSpace: 'nowrap',
-  color: props.theme.COLORS.WHITE,
 
   ...getSquaredStyle(props),
   ...getLoading(props),
@@ -200,9 +200,9 @@ class Button extends Component<ButtonProps> {
   };
 
   onClick = (event: *) => {
-    const { onClick, disabled } = this.props;
+    const { onClick, disabled, loading } = this.props;
 
-    !disabled && onClick && onClick(event);
+    !disabled && !loading && onClick && onClick(event);
   }
 
   render() {

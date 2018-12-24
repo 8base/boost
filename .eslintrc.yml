@@ -7,6 +7,8 @@ globals:
   shallow: true
   render: true
   mount: true
+  enzumeToJson: true
+  EightBaseBoostProvider: true
 
 rules:  
   #styles

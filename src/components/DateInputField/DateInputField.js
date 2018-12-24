@@ -24,8 +24,8 @@ const theme = createComponentTheme(name, {
 
 function DateInputField({
   label,
-  input = {},
-  meta = {},
+  input,
+  meta,
   ...rest
   }: DateInputFieldProps) {
   const { name, value, onChange } = input;

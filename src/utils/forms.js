@@ -1,4 +1,4 @@
-export const hasError = (meta: Object) => {
+export const hasError = (meta: Object = {}) => {
   const { submitError, dirtySinceLastSubmit, error, touched } = meta;
 
   return (!!error || !!submitError) && !!touched && !dirtySinceLastSubmit;

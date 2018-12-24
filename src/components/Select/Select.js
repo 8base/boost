@@ -10,7 +10,7 @@ type SelectProps = {|
   options: Array<{ label: mixed, value: string }>,
   onChange: (selectedValue: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
-  value?: Object,
+  value?: Object | Object[],
   loading?: boolean,
   disabled?: boolean,
   multiple?: boolean,

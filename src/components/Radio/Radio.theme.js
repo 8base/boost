@@ -74,12 +74,13 @@ const RadioCircleInnerTag = createStyledTag(`${name}CircleInner`, props => ({
   height: '8px',
 
   borderRadius: '50%',
-  opacity: props.selected ? 1 : 0,
+  opacity: props.checked ? 1 : 0,
 }));
 
 const RadioTag = createStyledTag(name, {
   display: 'none',
 });
+RadioTag.displayName = 'RadioTag';
 
 const RadioTextTag = createStyledTag(`${name}Text`, {
   cursor: 'pointer',

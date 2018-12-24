@@ -16,7 +16,7 @@ type TextAreaFieldProps = {|
   /** when true then stretch to the maximal width */
   stretch?: boolean,
   /** form input object */
-  input?: InputType,
+  input: InputType,
   /** form meta object */
   meta?: MetaType,
 |};
@@ -32,9 +32,9 @@ const theme = createComponentTheme(name, {
 
 function TextAreaField({
   cols,
-  input = {},
+  input,
   label,
-  meta = {},
+  meta,
   placeholder,
   rows,
   stretch,

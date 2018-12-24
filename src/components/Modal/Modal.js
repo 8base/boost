@@ -30,14 +30,16 @@ injectGlobal`
 
 const name = 'modal';
 
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
+const themeOverlay = createComponentTheme(`${name}Overlay`, ({ Z_INDEX }: *) => ({
+  background: 'rgba(60, 87, 118, 0.6)',
+  zIndex: Z_INDEX.MODAL,
+}));
 
-const OverlayTag = createStyledTag(`${name}Overlay`, (props): * => ({
+const theme = {
+  ...themeOverlay,
+};
+
+const OverlayTag = createStyledTag(`${name}Overlay`, {
   alignItems: 'center',
   bottom: 0,
   display: 'flex',
@@ -46,9 +48,8 @@ const OverlayTag = createStyledTag(`${name}Overlay`, (props): * => ({
   position: 'fixed',
   right: 0,
   top: 0,
-  background: 'rgba(60, 87, 118, 0.6)',
-  zIndex: props.theme.Z_INDEX.MODAL,
-}));
+});
+OverlayTag.displayName = 'OverlayTag';
 
 const ModalTag = createStyledTag(name, {
   height: '100%',
@@ -73,16 +74,6 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if (!prevProps.isOpen && this.props.isOpen) {
-      this.addEscPressEventListener();
-    }
-
-    if (prevProps.isOpen && !this.props.isOpen) {
-      this.removeEscPressEventListener();
-    }
-  }
-
   componentWillUnmount() {
     this.removeEscPressEventListener();
   }
@@ -94,33 +85,11 @@ class Modal extends PureComponent<ModalProps, ModalState> {
   }
 
   addEscPressEventListener = () => {
-    if (this.props.shouldCloseOnEscPress) {
-      document.addEventListener('keydown', this.onDocumentKeyPress);
-    }
+    document.addEventListener('keydown', this.onDocumentKeyPress);
   }
 
   removeEscPressEventListener = () => {
     document.removeEventListener('keydown', this.onDocumentKeyPress);
-  }
-
-  updateBlurClass() {
-    if (Modal.openedModals === 0) {
-      this.removeBlurClass();
-    } else if (Modal.openedModals > 0) {
-      this.addBlurClass();
-    }
-  }
-
-  addBlurClass() {
-    if (!document.body.classList.contains(MODAL_BLUR_CLASS)) {
-      document.body.classList.add(MODAL_BLUR_CLASS);
-    }
-  }
-
-  removeBlurClass() {
-    if (document.body.classList.contains(MODAL_BLUR_CLASS)) {
-      document.body.classList.remove(MODAL_BLUR_CLASS);
-    }
   }
 
   onDocumentKeyPress = (event) => {

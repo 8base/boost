@@ -8,7 +8,7 @@ import { getBreadcrumbs } from './Breadcrumbs.utils';
 import { BreadcrumbsItem } from './BreadcrumbsItem';
 import { BreadcrumbsDividerTag } from './BreadcrumbsDivider';
 
-type BreadcrumbsProps = {|
+type BreadcrumbsProps = {
   /* the location pathname */
   pathname: string,
   /* list of breadcrumbs routes */
@@ -17,7 +17,7 @@ type BreadcrumbsProps = {|
   matchPath?: BreadcrumbsMatchPath,
   /* custom breadcrum's item tag */
   itemTagName?: string | React$ComponentType<*>,
-|};
+};
 
 const name = 'breadcrumbs';
 

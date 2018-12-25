@@ -27,7 +27,9 @@ const themeMain = createComponentTheme(name, ({ COLORS }) => ({
 }));
 
 const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS }) => ({
-  color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+  root: {
+    color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
+  },
 }));
 
 const theme = {

@@ -31,8 +31,10 @@ injectGlobal`
 const name = 'modal';
 
 const themeOverlay = createComponentTheme(`${name}Overlay`, ({ Z_INDEX }: *) => ({
-  background: 'rgba(60, 87, 118, 0.6)',
-  zIndex: Z_INDEX.MODAL,
+  root: {
+    background: 'rgba(60, 87, 118, 0.6)',
+    zIndex: Z_INDEX.MODAL,
+  },
 }));
 
 const theme = {

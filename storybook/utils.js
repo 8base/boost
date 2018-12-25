@@ -14,12 +14,16 @@ const theme = createTheme({
 });
 
 const Root = styled('div')`
-  margin: 32px;
+  margin-top: 32px;
+  padding: 32px;
 `;
+
 
 const ThemeDecorator = (storyFn) => (
   <EightBaseBoostProvider theme={ theme }>
-    <Root>{ storyFn() }</Root>
+    <Root>
+      { storyFn() }
+    </Root>
   </EightBaseBoostProvider>
 );
 

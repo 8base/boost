@@ -34,6 +34,7 @@ import { theme as textAreaFieldTheme } from './TextAreaField';
 import { theme as textAreaTheme } from './TextArea';
 import { theme as textTheme } from './Text';
 import { theme as tooltipTheme } from './Tooltip';
+import { theme as menuTheme } from './Menu';
 
 
 export const theme = {
@@ -71,4 +72,5 @@ export const theme = {
   ...textAreaTheme,
   ...textTheme,
   ...tooltipTheme,
+  ...menuTheme,
 };

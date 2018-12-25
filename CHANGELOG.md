@@ -1,3 +1,13 @@
+<a name="0.10.10"></a>
+## [0.10.10](https://github.com/8base/boost/compare/v0.10.9...v0.10.10) (2018-12-25)
+
+
+### Bug Fixes
+
+* **styles:** fixes theme definitions ([c8b414b](https://github.com/8base/boost/commit/c8b414b))
+
+
+
 <a name="0.10.9"></a>
 ## [0.10.9](https://github.com/8base/boost/compare/v0.10.8...v0.10.9) (2018-12-25)
 

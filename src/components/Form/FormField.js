@@ -18,15 +18,19 @@ type FormFieldProps = {
 const name = 'formField';
 
 const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS, SIZES }: *) => ({
-  fontSize: SIZES.OVERLINE_1,
-  color: COLORS.SECONDARY_TEXT_COLOR,
-  lineHeight: 2,
+  root: {
+    fontSize: SIZES.OVERLINE_1,
+    lineHeight: SIZES.OVERLINE_1_LH,
+    color: COLORS.SECONDARY_TEXT_COLOR,
+  },
 }));
 
 const themeError = createComponentTheme(`${name}Error`, ({ COLORS, SIZES }: *) => ({
-  fontSize: SIZES.OVERLINE_2,
-  lineHeight: SIZES.OVERLINE_2_LH,
-  color: COLORS.DANGER,
+  root: {
+    fontSize: SIZES.OVERLINE_2,
+    lineHeight: SIZES.OVERLINE_2_LH,
+    color: COLORS.DANGER,
+  },
 }));
 
 const theme = {
@@ -57,7 +61,6 @@ const ControlErrorWrapperTag = createStyledTag(`${name}ErrorWrapper`, {
 
 
 export const ControlErrorTag = createStyledTag(`${name}Error`, {
-  lineHeight: 1,
   position: 'relative',
   top: '-2px',
 });

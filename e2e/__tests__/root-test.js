@@ -26,20 +26,20 @@ const testStory = async (kind, story) => {
     `,
   });
 
-  const test = await iframe.waitForXPath('//body');
+  const test = await iframe.waitForXPath('//*[@id="root"]');
 
   expect(await test.screenshot()).toMatchImageSnapshot();
 };
 
 const STORIES = [
-  ['Components/Button', 'common'],
   ['Components/Breadcrumbs', 'common'],
+  ['Components/Button', 'common'],
   ['Components/ButtonGroup', 'common'],
+  ['Components/Menu', 'common'],
   ['Components/Progress', 'common'],
   ['Components/Tag', 'common'],
-  ['Components/Menu', 'common'],
 ];
 
 test.each(STORIES)('%s / %s', async (kind, story) => {
-  await testStory(kind, story);  
-});
+  await testStory(kind, story);
+}, 10000);

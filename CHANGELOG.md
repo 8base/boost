@@ -1,3 +1,13 @@
+<a name="0.10.9"></a>
+## [0.10.9](https://github.com/8base/boost/compare/v0.10.8...v0.10.9) (2018-12-25)
+
+
+### Bug Fixes
+
+* **menu:** adds theme import ([0d2aa3e](https://github.com/8base/boost/commit/0d2aa3e))
+
+
+
 <a name="0.10.8"></a>
 ## [0.10.8](https://github.com/8base/boost/compare/v0.10.7...v0.10.8) (2018-12-24)
 

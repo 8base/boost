@@ -3,7 +3,27 @@ import React from 'react';
 import { SecondaryNavigation } from './';
 
 describe('<SecondaryNavigation />', () => {
-  it('should render SecondaryNavigation components', () => {
+  it('should shallow SecondaryNavigation', () => {
+    const wrapper = shallow(
+      <SecondaryNavigation>
+        <SecondaryNavigation.Item label="First item" />
+      </SecondaryNavigation>,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+
+  it('should shallow SecondaryNavigation item', () => {
+    const wrapper = shallow(
+      <SecondaryNavigation.Item label="First item" />,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+
+  it('should render SecondaryNavigation components content', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
         <SecondaryNavigation>

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should shallow Menu 1`] = `
+<Paper
+  borderRadius="all"
+  padding="none"
+>
+  <Styled(menu)
+    tagName="div"
+  >
+    <Menu.Item>
+      Tramman
+    </Menu.Item>
+  </Styled(menu)>
+</Paper>
+`;
+
+exports[`<Menu /> should shallow Menu item 1`] = `
+<Styled(menuItem)
+  tagName="div"
+>
+  Tramman
+</Styled(menuItem)>
+`;

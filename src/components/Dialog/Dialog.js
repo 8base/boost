@@ -104,6 +104,8 @@ Dialog.defaultProps = {
   tagName: 'div',
 };
 
+Dialog.displayName = 'Dialog';
+
 Dialog.Body = DialogBody;
 Dialog.Header = DialogHeader;
 Dialog.Footer = DialogFooter;

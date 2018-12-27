@@ -60,6 +60,8 @@ const Navigation = ({
   );
 };
 
+Navigation.displayName = 'Navigation';
+
 Navigation.Item = NavigationItem;
 
 export { Navigation, theme };

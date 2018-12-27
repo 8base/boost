@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> should shallow form 1`] = `
+<Styled(form)
+  tagName="form"
+>
+  <FlexLayout
+    alignItems="stretch"
+    direction="column"
+    gap="md"
+    stretch={false}
+    tagName="div"
+  >
+    <div />
+  </FlexLayout>
+</Styled(form)>
+`;
+
+exports[`<Form /> should shallow form error 1`] = `
+<Styled(formError)
+  component="form"
+  direction="column"
+  tagName="div"
+>
+  <Row
+    gap="md"
+  >
+    <Icon
+      color="DANGER"
+      name="Alert"
+      size="md"
+    />
+    <Text
+      color="GRAY1"
+    >
+      Some error
+    </Text>
+  </Row>
+</Styled(formError)>
+`;
+
+exports[`<Form /> should shallow form field 1`] = `
+<Styled(formField)
+  stretch={true}
+  tagName="div"
+>
+  <Styled(formFieldDirection)
+    direction="column"
+    stretch={true}
+    tagName="div"
+  >
+    <ControlLabelTag 
+      direction="column"
+      tagName="div"
+    >
+      Field label
+    </ControlLabelTag >
+  </Styled(formFieldDirection)>
+</Styled(formField)>
+`;
+
+exports[`<Form /> should shallow form section 1`] = `
+<FlexLayout
+  direction="column"
+  gap="sm"
+  stretch={true}
+  tagName="div"
+>
+  <div />
+</FlexLayout>
+`;
+
+exports[`<Form /> should shallow form section body 1`] = `
+<FlexLayout
+  alignItems="stretch"
+  direction="column"
+  gap="md"
+  stretch={true}
+  tagName="div"
+>
+  <div />
+</FlexLayout>
+`;

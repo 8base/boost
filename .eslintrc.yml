@@ -7,7 +7,7 @@ globals:
   shallow: true
   render: true
   mount: true
-  enzumeToJson: true
+  enzymeToJson: true
   EightBaseBoostProvider: true
 
 rules:  

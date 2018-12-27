@@ -3,7 +3,27 @@ import React from 'react';
 import { Menu } from './';
 
 describe('<Menu />', () => {
-  it('should render Menu components', () => {
+  it('should shallow Menu', () => {
+    const wrapper = shallow(
+      <Menu>
+        <Menu.Item>Tramman</Menu.Item>
+      </Menu>,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+
+  it('should shallow Menu item', () => {
+    const wrapper = shallow(
+      <Menu.Item>Tramman</Menu.Item>,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+
+  it('should render Menu components content', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
         <Menu>

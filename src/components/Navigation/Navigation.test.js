@@ -3,29 +3,25 @@ import React from 'react';
 import { Navigation } from './Navigation';
 
 describe('<Navigation />', () => {
-  it('should render navigation', () => {
+  it('should shallow navigation', () => {
     const wrapper = shallow(
       <Navigation color="GREEN">
         <Navigation.Item icon="Trashcan" label="Jobs" href="/jobs" />
       </Navigation>,
     );
 
-    expect(wrapper).toMatchInlineSnapshot(`
-<Styled(navigationPlate)
-  color="GREEN"
-  tagName="nav"
->
-  <NavigationItem
-    color="GREEN"
-    href="/jobs"
-    icon="Trashcan"
-    key=".0"
-    label="Jobs"
-    tagName="a"
-  />
-</Styled(navigationPlate)>
-`);
+    expect(wrapper).toMatchSnapshot();
   });
+
+
+  it('should shallow navigation item', () => {
+    const wrapper = shallow(
+      <Navigation.Item icon="Trashcan" label="Jobs" href="/jobs" />,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
 
   it('should render navigation with custom tag', () => {
     const Link = () => null;

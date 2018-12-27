@@ -42,6 +42,8 @@ const Menu = ({ children, ...rest }: MenuProps) => (
   </Paper>
 );
 
+Menu.displayName = 'Menu';
+
 Menu.Item = MenuItem;
 
 

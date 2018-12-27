@@ -51,8 +51,8 @@ const offsetSizes: { [PropSizes]: string } = {
   xs: '0, 2px',
   sm: '0, 4px',
   md: '0, 8px',
-  xl: '0, 16px',
-  lg: '0, 24px',
+  lg: '0, 16px',
+  xl: '0, 24px',
 };
 
 const DropdownBodyTag = createStyledTag(name, {});

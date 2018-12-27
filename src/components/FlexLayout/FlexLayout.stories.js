@@ -3,22 +3,32 @@
 import React, { Fragment } from 'react';
 import styled from 'react-emotion';
 
-const Block = styled('div')(props => ({
+const ColorBlock = styled('div')(props => ({
   display: 'flex',
-  minWidth: '100px',
-  minHeight: '100px',
+  minWidth: '70px',
+  minHeight: '70px',
   backgroundColor: props.color,
 }));
 
 const Blocks = () => (
   <Fragment>
-    <Block color="chocolate" />
-    <Block color="red" />
-    <Block color="orange" />
-    <Block color="green" />
-    <Block color="purple" />
+    <ColorBlock color="#805500" />
+    <ColorBlock color="#990000" />
+    <ColorBlock color="#e68a00" />
+    <ColorBlock color="#008000" />
+    <ColorBlock color="#5900b3" />
   </Fragment>
 );
+
+
+const BorderBlock = styled('div')({
+  border: '1px solid gray',
+});
+
+const Block = () => (
+  <ColorBlock color="#e68a00" />
+);
+
 
 export default (asStory: *) => {
   asStory('Components/FlexLayout', module, (story, { Row, Column }) => {
@@ -38,26 +48,56 @@ export default (asStory: *) => {
           <Blocks />
         </Row>
       ))
+
       .add('with custom alignContent', () => (
         <Column alignItems="stretch">
           <Blocks />
         </Column>
       ))
+
       .add('with custom gap', () => (
-        <Fragment>
+        <Column>
+          <Row gap="xs">
+            <Blocks />
+          </Row>
+          <Row gap="sm">
+            <Blocks />
+          </Row>
           <Row gap="md">
             <Blocks />
           </Row>
-          <Column gap="md" offsetY="md">
+          <Row gap="lg">
             <Blocks />
-          </Column>
-        </Fragment>
+          </Row>
+          <Row gap="xl">
+            <Blocks />
+          </Row>
+        </Column>
       ))
+
       .add('with custom offset', () => (
-        <Row offsetY="xl" offsetX="xl">
-          <Blocks />
+        <Row>
+          <BorderBlock>
+            <Row offsetY="none" offsetX="none"><Block /></Row>
+          </BorderBlock>
+          <BorderBlock>
+            <Row offsetY="xs" offsetX="xs"><Block /></Row>
+          </BorderBlock>
+          <BorderBlock>
+            <Row offsetY="sm" offsetX="sm"><Block /></Row>
+          </BorderBlock>
+          <BorderBlock>
+            <Row offsetY="md" offsetX="md"><Block /></Row>
+          </BorderBlock>
+          <BorderBlock>
+            <Row offsetY="lg" offsetX="lg"><Block /></Row>
+          </BorderBlock>
+          <BorderBlock>
+            <Row offsetY="xl" offsetX="xl"><Block /></Row>
+          </BorderBlock>
         </Row>
       ))
+
       .add('with grow children', () => (
         <Row growChildren>
           <Blocks />

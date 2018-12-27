@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Menu', module, (story, { Menu }) => {
     story
-      .add('with some items', () => (
+      .add('common', () => (
         <Menu>
           <Menu.Item>Tramman</Menu.Item>
           <Menu.Item>Gripman</Menu.Item>

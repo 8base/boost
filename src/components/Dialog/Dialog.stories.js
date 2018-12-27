@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Dialog', module, (story, { ModalContext, Dialog, Paragraph, Button }) => {
     story
-      .add('with default header, body, actions and footer', () => (
+      .add('common', () => (
         <Dialog size="sm" isOpen>
           <Dialog.Header title="Mark Job as Completed" />
           <Dialog.Body>

@@ -10,8 +10,6 @@ type CheckboxProps = {
   name?: string,
   /** checkbox label */
   label?: string,
-  /** color of the check */
-  color?: 'primary' | 'secondary',
   /** checked state */
   checked?: boolean,
   /** when error then show error styles */
@@ -27,7 +25,6 @@ type CheckboxProps = {
 
 class Checkbox extends PureComponent<CheckboxProps> {
   static defaultProps = {
-    color: 'primary',
     checked: false,
     hasError: false,
     disabled: false,
@@ -41,12 +38,12 @@ class Checkbox extends PureComponent<CheckboxProps> {
   }
 
   render() {
-    const { onChange, checked, hasError, disabled, label, color, ...rest } = this.props;
+    const { onChange, checked, hasError, disabled, label, ...rest } = this.props;
 
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
         <CheckboxSquareTag hasError={ hasError } disabled={ disabled } tagName="div">
-          <CheckboxIconTag checked={ checked } color={ color } tagName="div">
+          <CheckboxIconTag checked={ checked } tagName="div">
             <Icon name="Check" size="xs" />
           </CheckboxIconTag>
         </CheckboxSquareTag>

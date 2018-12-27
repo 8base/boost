@@ -15,22 +15,16 @@ class CheckboxState extends Component<*, Object> {
 }
 
 export default (asStory: *) => {
-  asStory('Components/Checkbox', module, (story, { Checkbox }) => {
+  asStory('Components/Checkbox', module, (story, { Checkbox, Column }) => {
     story
-      .add('with check', () => (
-        <Checkbox label="Checkbox" checked />
-      ))
-      .add('with error', () => (
-        <Checkbox label="Checkbox" checked hasError />
-      ))
-      .add('with disabled', () => (
-        <Checkbox label="Checkbox" checked disabled />
-      ))
-      .add('without label', () => (
-        <Checkbox checked />
-      ))
-      .add('without secondary color', () => (
-        <Checkbox color="secondary" label="Checkbox" checked />
+      .add('commmon', () => (
+        <Column>
+          <Checkbox checked />
+          <Checkbox label="Without Check" />
+          <Checkbox label="With Check" checked />
+          <Checkbox label="With error" checked hasError />
+          <Checkbox label="With disabled" checked disabled />
+        </Column>
       ))
       .add('with state', () => (
         <CheckboxState>

@@ -1,3 +1,13 @@
+<a name="0.11.2"></a>
+## [0.11.2](https://github.com/8base/boost/compare/v0.11.1...v0.11.2) (2018-12-27)
+
+
+### Bug Fixes
+
+* add manual displayName for components with other components in static fields ([7a96799](https://github.com/8base/boost/commit/7a96799))
+
+
+
 <a name="0.11.1"></a>
 ## [0.11.1](https://github.com/8base/boost/compare/v0.11.0...v0.11.1) (2018-12-27)
 

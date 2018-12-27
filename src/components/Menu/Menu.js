@@ -8,9 +8,9 @@ import { Paper } from '../Paper';
 import { MenuItem, theme as menuItemTheme } from './MenuItem';
 
 
-type MenuPlateProps = {|
+type MenuProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'menu';
 
@@ -34,7 +34,7 @@ const MenuTag = createStyledTag(name, () => ({
   overflow: 'hidden',
 }));
 
-const Menu = ({ children, ...rest }: MenuPlateProps) => (
+const Menu = ({ children, ...rest }: MenuProps) => (
   <Paper padding="none" borderRadius="all">
     <MenuTag tagName="div" { ...rest } >
       { children }

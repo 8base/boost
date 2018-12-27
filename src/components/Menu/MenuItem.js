@@ -4,9 +4,9 @@ import React from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
 
-type MenuItemProps = {|
+type MenuItemProps = {
   children?: React$Node,
-|};
+};
 
 const name = 'menuItem';
 

@@ -131,7 +131,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (
-      <Dropdown.Plate
+      <Dropdown
         isOpen={ isOpen }
         stretch={ stretch }
         onCloseDropdown={ this.close }
@@ -144,7 +144,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
         <Dropdown.Body withPortal preventOverflow>
           <DatePicker { ...collectedProps } />
         </Dropdown.Body>
-      </Dropdown.Plate>
+      </Dropdown>
     );
   }
 }

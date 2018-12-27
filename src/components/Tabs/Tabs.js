@@ -3,8 +3,11 @@
 import React from 'react';
 import fp from 'lodash/fp';
 import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
+
 import { createStyledTag } from '../../utils';
 import { TabsContext } from './TabsContext';
+import { TabPanel } from './TabPanel';
+import { TabTitle } from './TabTitle';
 
 
 type TabsProps = {
@@ -23,7 +26,21 @@ type WithStateTabsProps = {
 
 const TabPlateTag = createStyledTag('tabPlate', {});
 
-const TabsPlateBase = ({
+
+const tabsEnhancer: { (any): React$ComponentType<WithStateTabsProps | { ...TabsProps, ...WithStateTabsProps }> } = compose(
+  setDisplayName('TabsPlate'),
+  branch(
+    (props) => !fp.isNil(props.defaultSelectedTabId),
+    withStateHandlers(
+      (props) => ({ selectedTabId: props.defaultSelectedTabId }),
+      {
+        onSelect: () => (tabId) => ({ selectedTabId: tabId }),
+      },
+    ),
+  ),
+);
+
+const TabsPlate = tabsEnhancer(({
   children,
   onSelect,
   selectedTabId,
@@ -41,21 +58,12 @@ const TabsPlateBase = ({
       </TabPlateTag>
     </TabsContext.Provider>
   );
-};
+});
 
-const tabsEnhancer: { (any): React$ComponentType<WithStateTabsProps | { ...TabsProps, ...WithStateTabsProps }> } = compose(
-  setDisplayName('TabsPlate'),
-  branch(
-    (props) => !fp.isNil(props.defaultSelectedTabId),
-    withStateHandlers(
-      (props) => ({ selectedTabId: props.defaultSelectedTabId }),
-      {
-        onSelect: () => (tabId) => ({ selectedTabId: tabId }),
-      },
-    ),
-  ),
-);
+const Tabs = (props: *) => <TabsPlate { ...props } />;
 
-const TabsPlate = tabsEnhancer(TabsPlateBase);
+Tabs.Title = TabTitle;
+Tabs.Panel = TabPanel;
 
-export { TabsPlate };
+
+export { Tabs };

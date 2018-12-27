@@ -7,7 +7,7 @@ describe('<Form />', () => {
   it('should render form components', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
-        <Form.Plate>
+        <Form>
           <Form.Error error="Some error" />
           <Form.Section>
             <Form.SectionTitle>Some section 1</Form.SectionTitle>
@@ -21,7 +21,7 @@ describe('<Form />', () => {
               <Form.Field direction="row" stretch={ false } meta={{}} label="Field label" />
             </Form.SectionBody>
           </Form.Section>
-        </Form.Plate>
+        </Form>
       </EightBaseBoostProvider>,
     );
 

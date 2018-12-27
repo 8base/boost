@@ -28,7 +28,7 @@ type DropdownHeadPropsEnhanced = HOCBase<typeof dropdownHeadEnhancer>;
 
 
 const DropdownHead = dropdownHeadEnhancer(
-  class DropdownHeadBase extends PureComponent<DropdownHeadPropsEnhanced> {
+  class DropdownHead extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
     const { dropdown: { toggleDropdown }, stopClickPropagation, onClick } = this.props;

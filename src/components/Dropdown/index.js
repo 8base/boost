@@ -1,3 +1,4 @@
 // @flow
 
-export { Dropdown, theme } from './Dropdown';
+export { Dropdown } from './Dropdown';
+export { theme } from './Dropdown.theme';

@@ -219,7 +219,7 @@ export default (asStory) => {
     story
       .add('table with data', () => (
         <div style={{ display: 'flex', height: '600px' }}>
-          <Table.Plate>
+          <Table>
             <Table.Header columns="repeat(6, 1fr)">
               <Table.HeaderCell>Id</Table.HeaderCell>
               <Table.HeaderCell>Name</Table.HeaderCell>
@@ -248,27 +248,27 @@ export default (asStory) => {
                     { client.updatedAt }
                   </Table.BodyCell>
                   <Table.BodyCell>
-                    <Dropdown.Plate defaultOpen={ false }>
+                    <Dropdown defaultOpen={ false }>
                       <Dropdown.Head>
                         <Icon name="Dots" color="LIGHT_GRAY2" />
                       </Dropdown.Head>
                       <Dropdown.Body pin="right">
-                        <Menu.Plate>
+                        <Menu>
                           <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                        </Menu.Plate>
+                        </Menu>
                       </Dropdown.Body>
-                    </Dropdown.Plate>
+                    </Dropdown>
                   </Table.BodyCell>
                 </Table.BodyRow>
               ) }
             </Table.Body>
-          </Table.Plate>
+          </Table>
         </div>
       ))
 
       .add('table with scroll', () => (
         <div style={{ display: 'flex', height: '600px' }}>
-          <Table.Plate>
+          <Table>
             <Table.Header columns="repeat(6, 1fr)">
               <Table.HeaderCell>Id</Table.HeaderCell>
               <Table.HeaderCell>Name</Table.HeaderCell>
@@ -297,27 +297,27 @@ export default (asStory) => {
                     { client.updatedAt }
                   </Table.BodyCell>
                   <Table.BodyCell>
-                    <Dropdown.Plate defaultOpen={ false }>
+                    <Dropdown defaultOpen={ false }>
                       <Dropdown.Head>
                         <Icon name="Dots" color="LIGHT_GRAY2" />
                       </Dropdown.Head>
                       <Dropdown.Body pin="right">
-                        <Menu.Plate>
+                        <Menu>
                           <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                        </Menu.Plate>
+                        </Menu>
                       </Dropdown.Body>
-                    </Dropdown.Plate>
+                    </Dropdown>
                   </Table.BodyCell>
                 </Table.BodyRow>
               ) }
             </Table.Body>
-          </Table.Plate>
+          </Table>
         </div>
       ))
 
       .add('table with loader', () => (
         <div style={{ display: 'flex', height: '600px' }}>
-          <Table.Plate>
+          <Table>
             <Table.Header columns="repeat(6, 1fr)">
               <Table.HeaderCell>Id</Table.HeaderCell>
               <Table.HeaderCell>Name</Table.HeaderCell>
@@ -327,13 +327,13 @@ export default (asStory) => {
               <Table.HeaderCell />
             </Table.Header>
             <Table.Body loading action="Create Client" onActionClick={ () => alert('Create') } />
-          </Table.Plate>
+          </Table>
         </div>
       ))
 
       .add('without data', () => (
         <div style={{ display: 'flex', height: '600px' }}>
-          <Table.Plate stretch>
+          <Table stretch>
             <Table.Header columns="repeat(6, 1fr)">
               <Table.HeaderCell>Id</Table.HeaderCell>
               <Table.HeaderCell>Name</Table.HeaderCell>
@@ -344,13 +344,13 @@ export default (asStory) => {
             </Table.Header>
 
             <Table.Body />
-          </Table.Plate>
+          </Table>
         </div>
       ))
 
       .add('with custom action button', () => (
         <div style={{ display: 'flex', height: '600px' }}>
-          <Table.Plate stretch>
+          <Table stretch>
             <Table.Header columns="repeat(6, 1fr)">
               <Table.HeaderCell>Id</Table.HeaderCell>
               <Table.HeaderCell>Name</Table.HeaderCell>
@@ -371,7 +371,7 @@ export default (asStory) => {
                 </Button>
               ) }
             />
-          </Table.Plate>
+          </Table>
         </div>
       ));
   });

@@ -6,12 +6,12 @@ describe('<SecondaryNavigation />', () => {
   it('should render SecondaryNavigation components', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
-        <SecondaryNavigation.Plate>
+        <SecondaryNavigation>
           <SecondaryNavigation.Item label="First item" />
           <SecondaryNavigation.Item label="Second item" className="active" />
           <SecondaryNavigation.Item label="Third item" />
           <SecondaryNavigation.Item label="Fourth item" />
-        </SecondaryNavigation.Plate>
+        </SecondaryNavigation>
       </EightBaseBoostProvider>,
     );
 

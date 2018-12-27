@@ -5,6 +5,13 @@ import React from 'react';
 import { createStyledTag, createComponentTheme } from '../../utils';
 import { FlexLayout } from '../FlexLayout';
 
+import { FormField, theme as formFieldTheme } from './FormField';
+import { FormSection } from './FormSection';
+import { FormSectionBody } from './FormSectionBody';
+import { FormError, theme as formErrorTheme } from './FormError';
+import { FormSectionTitle, theme as formSectionTitleTheme } from './FormSectionTitle';
+
+
 type FormPlateProps = {
   /** callback called on form submit */
   onSubmit?: Function,
@@ -16,9 +23,9 @@ type FormPlateProps = {
   component?: React$Node,
 };
 
-const name = 'formPlate';
+const name = 'form';
 
-const theme = createComponentTheme(name, {
+const formTheme = createComponentTheme(name, {
   modifiers: {
     stretch: {
       height: '100%',
@@ -30,37 +37,47 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const FormStyledTag = createStyledTag(name, {
+const theme = {
+  ...formTheme,
+  ...formFieldTheme,
+  ...formSectionTitleTheme,
+  ...formErrorTheme,
+};
+
+const FormTag = createStyledTag(name, {
   flex: 1,
 });
 
-function FormPlate({
+const Form = ({
   children,
   onSubmit,
   component,
   ...rest
-  }: FormPlateProps) {
+  }: FormPlateProps) => {
   return (
-    <FormStyledTag
+    <FormTag
       tagName={ component }
       onSubmit={ onSubmit }
     >
-      <FlexLayout
-        { ...rest }
-      >
+      <FlexLayout { ...rest } >
         { children }
       </FlexLayout>
-    </FormStyledTag>
+    </FormTag>
   );
-}
+};
 
-FormPlate.defaultProps = {
+Form.defaultProps = {
   ...theme[name].defaults,
   component: 'form',
   direction: 'column',
   gap: 'md',
   alignItems: 'stretch',
-
 };
 
-export { FormPlate, theme };
+Form.Field = FormField;
+Form.Section = FormSection;
+Form.SectionBody = FormSectionBody;
+Form.SectionTitle = FormSectionTitle;
+Form.Error = FormError;
+
+export { Form, theme };

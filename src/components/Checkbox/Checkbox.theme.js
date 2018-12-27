@@ -21,11 +21,8 @@ const themeSquare = createComponentTheme(`${name}Square`, ({ COLORS, SIZES }: *)
 }));
 
 const themeIcon = createComponentTheme(`${name}Icon`, ({ COLORS }: *): * => ({
-  modifiers: {
-    color: {
-      primary: { color: COLORS.PRIMARY },
-      secondary: { color: COLORS.SECONDARY },
-    },
+  root: {
+    color: COLORS.PRIMARY,
   },
 }));
 

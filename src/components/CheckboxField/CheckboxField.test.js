@@ -24,7 +24,6 @@ describe('<Checkbox />', () => {
 >
   <Checkbox
     checked={true}
-    color="primary"
     disabled={false}
     hasError={false}
     onChange={[MockFunction]}

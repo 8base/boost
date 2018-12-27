@@ -1,3 +1,13 @@
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/8base/boost/compare/v0.10.10...v0.11.0) (2018-12-27)
+
+
+### Features
+
+* rid of the .Plate suffix in components ([18bc78b](https://github.com/8base/boost/commit/18bc78b))
+
+
+
 <a name="0.10.10"></a>
 ## [0.10.10](https://github.com/8base/boost/compare/v0.10.9...v0.10.10) (2018-12-25)
 

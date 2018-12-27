@@ -1,3 +1,13 @@
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/8base/boost/compare/v0.11.0...v0.11.1) (2018-12-27)
+
+
+### Bug Fixes
+
+* **Menu:** fix flow types ([d118df4](https://github.com/8base/boost/commit/d118df4))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/8base/boost/compare/v0.10.10...v0.11.0) (2018-12-27)
 

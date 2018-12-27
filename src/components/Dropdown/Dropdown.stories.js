@@ -2,69 +2,176 @@
 
 import React from 'react';
 
+const BodyContent = () => <div style={{ padding: '8px' }}>Body</div>;
+
 export default (asStory: *) => {
-  asStory('Components/Dropdown', module, (story, { Dropdown, Button, Icon, Menu }) => {
+  asStory('Components/Dropdown', module, (story, { Dropdown, Button, Icon, Menu, Column, Text, Row }) => {
     story
-      .add('default', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body>Body</Dropdown.Body>
-        </Dropdown>
+
+      .add('common', () => (
+        <Column stretch growChildren alignItems="stretch">
+          <Row>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="none" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="xs" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="sm" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="md" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="lg" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body offset="xl" background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+          </Row>
+          <br />
+          <br />
+          <br />
+          <br />
+          <Row>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body background="dark" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body background="white" closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+            <Dropdown defaultOpen>
+              <Dropdown.Head>
+                <Button>Head</Button>
+              </Dropdown.Head>
+              <Dropdown.Body closeOnClickOutside={ false }>
+                <BodyContent />
+              </Dropdown.Body>
+            </Dropdown>
+          </Row>
+        </Column>
       ))
-      .add('with pin to right', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body pin="right">Body</Dropdown.Body>
-        </Dropdown>
+
+
+      .add('with pin', () => (
+        <Column stretch growChildren alignItems="stretch">
+          <Text>With default pin</Text>
+          <Dropdown defaultOpen>
+            <Dropdown.Head stretch><Button stretch>Head</Button></Dropdown.Head>
+            <Dropdown.Body background="white">
+              <BodyContent />
+            </Dropdown.Body>
+          </Dropdown>
+          <br />
+          <br />
+          <br />
+          <Text>With pin to right</Text>
+          <Dropdown defaultOpen>
+            <Dropdown.Head stretch><Button stretch>Head</Button></Dropdown.Head>
+            <Dropdown.Body pin="right" background="white">
+              <BodyContent />
+            </Dropdown.Body>
+          </Dropdown>
+        </Column>
       ))
-      .add('with stretch target', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head stretch><Button stretch>Head</Button></Dropdown.Head>
-          <Dropdown.Body>Body</Dropdown.Body>
-        </Dropdown>
+
+      .add('with stretch', () => (
+        <Column stretch growChildren alignItems="stretch">
+          <Text>With target stretch</Text>
+          <Dropdown defaultOpen>
+            <Dropdown.Head stretch>
+              <Button stretch>Head</Button>
+            </Dropdown.Head>
+            <Dropdown.Body closeOnClickOutside={ false } background="white">
+              <BodyContent />
+            </Dropdown.Body>
+          </Dropdown>
+          <br />
+          <br />
+          <br />
+          <Text>With body stretch</Text>
+          <Dropdown defaultOpen>
+            <Dropdown.Head stretch>
+              <Button stretch>Head</Button>
+            </Dropdown.Head>
+            <Dropdown.Body stretch closeOnClickOutside={ false } background="white">
+              <BodyContent />
+            </Dropdown.Body>
+          </Dropdown>
+          <br />
+          <br />
+          <br />
+          <Text>With custom body width</Text>
+          <Dropdown defaultOpen>
+            <Dropdown.Head stretch>
+              <Button stretch>Head</Button>
+            </Dropdown.Head>
+            <Dropdown.Body width={ 170 } closeOnClickOutside={ false } background="white">
+              <BodyContent />
+            </Dropdown.Body>
+          </Dropdown>
+        </Column>
       ))
-      .add('with stretch body', () => (
-        <Dropdown defaultOpen={ false }>
-          <Dropdown.Head stretch><Button stretch>Head</Button></Dropdown.Head>
-          <Dropdown.Body stretch>Body</Dropdown.Body>
-        </Dropdown>
-      ))
-      .add('with custom body width', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body width={ 40 }>Body</Dropdown.Body>
-        </Dropdown>
-      ))
-      .add('with custom offset', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body offset="lg">Body</Dropdown.Body>
-        </Dropdown>
-      ))
-      .add('with dark background', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body background="dark">Body</Dropdown.Body>
-        </Dropdown>
-      ))
-      .add('without background', () => (
-        <Dropdown defaultOpen>
-          <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body background="none">Body</Dropdown.Body>
-        </Dropdown>
-      ))
+
       .add('without close on outside click', () => (
         <Dropdown defaultOpen>
           <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body closeOnClickOutside={ false }>Body</Dropdown.Body>
+          <Dropdown.Body closeOnClickOutside={ false } background="white">
+            <BodyContent />
+          </Dropdown.Body>
         </Dropdown>
       ))
+
       .add('with force render', () => (
         <Dropdown defaultOpen>
           <Dropdown.Head><Button>Head</Button></Dropdown.Head>
-          <Dropdown.Body forceRender>Body</Dropdown.Body>
+          <Dropdown.Body forceRender background="white">
+            <BodyContent />
+          </Dropdown.Body>
         </Dropdown>
       ))
+
       .add('with menu', () => (
         <Dropdown defaultOpen={ false }>
           <Dropdown.Head>

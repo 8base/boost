@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Code', module, (story, { Code }) => {
     story
-      .add('default', () => (
+      .add('common', () => (
         <Code>
           <p>npm i -g 8base</p>
           <p>8base init my-project</p>

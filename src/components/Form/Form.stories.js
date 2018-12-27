@@ -7,17 +7,9 @@ const FieldMock = ({ component: Component, label, name }) => (
 export default (asStory) => {
   asStory('Components/Form', module, (story, { Form, InputField }) => {
     story
-      .add('without groups', () => (
+      .add('common', () => (
         <Form>
-          <FieldMock component={ InputField } name="curple" label="Jobs" />
-          <FieldMock component={ InputField } name="provect" label="Posted" />
-          <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
-          <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
-          <FieldMock component={ InputField } name="inertance" label="Applied" />
-        </Form>
-      ))
-      .add('with groups', () => (
-        <Form>
+          <Form.Error error="Some error" />
           <Form.Section>
             <Form.SectionTitle>Some section 1</Form.SectionTitle>
             <Form.SectionBody>
@@ -35,28 +27,13 @@ export default (asStory) => {
           </Form.Section>
         </Form>
       ))
-      .add('with form error', () => (
+      .add('without groups', () => (
         <Form>
-          <Form.Error error="Some error" />
-          <Form.Section>
-            <FieldMock component={ InputField } name="curple" label="Jobs" />
-            <FieldMock component={ InputField } name="provect" label="Posted" />
-            <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
-            <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
-            <FieldMock component={ InputField } name="inertance" label="Applied" />
-          </Form.Section>
-        </Form>
-      ))
-      .add('with form error is null', () => (
-        <Form>
-          <Form.Error error={ null } />
-          <Form.Section>
-            <FieldMock component={ InputField } name="curple" label="Jobs" />
-            <FieldMock component={ InputField } name="provect" label="Posted" />
-            <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
-            <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
-            <FieldMock component={ InputField } name="inertance" label="Applied" />
-          </Form.Section>
+          <FieldMock component={ InputField } name="curple" label="Jobs" />
+          <FieldMock component={ InputField } name="provect" label="Posted" />
+          <FieldMock component={ InputField } name="inlaying" label="My Active Jobs" />
+          <FieldMock component={ InputField } name="saccharifier" label="Active Requests" />
+          <FieldMock component={ InputField } name="inertance" label="Applied" />
         </Form>
       ));
   });

@@ -19,20 +19,14 @@ export default (asStory) => {
           <Card.Footer>Footer</Card.Footer>
         </Card>
       ))
-      .add('with custom offsets', () => (
-        <Card offset="xl">
+      .add('with custom paddings', () => (
+        <Card padding="xl">
           <Card.Header>Header</Card.Header>
           <Card.Body >Body<br /><br /><br /><br /></Card.Body>
           <Card.Footer>Footer</Card.Footer>
         </Card>
       ))
-      .add('without footer', () => (
-        <Card>
-          <Card.Header>Header</Card.Header>
-          <Card.Body>Body<br /><br /><br /><br /></Card.Body>
-        </Card>
-      ))
-      .add('without multiple sections', () => (
+      .add('with multiple sections', () => (
         <Card>
           <Card.Header>Header</Card.Header>
           <Card.Body padding="none">
@@ -40,12 +34,6 @@ export default (asStory) => {
             <Card.Section>Section<br /><br /><br /><br /></Card.Section>
             <Card.Section>Section<br /><br /><br /><br /></Card.Section>
           </Card.Body>
-          <Card.Footer>Footer</Card.Footer>
-        </Card>
-      ))
-      .add('without header', () => (
-        <Card>
-          <Card.Body>Body<br /><br /><br /><br /></Card.Body>
           <Card.Footer>Footer</Card.Footer>
         </Card>
       ))
@@ -61,6 +49,18 @@ export default (asStory) => {
             <Card.Footer>Footer</Card.Footer>
           </Card>
         </ShortDiv>
+      ))
+      .add('without footer', () => (
+        <Card>
+          <Card.Header>Header</Card.Header>
+          <Card.Body>Body<br /><br /><br /><br /></Card.Body>
+        </Card>
+      ))
+      .add('without header', () => (
+        <Card>
+          <Card.Body>Body<br /><br /><br /><br /></Card.Body>
+          <Card.Footer>Footer</Card.Footer>
+        </Card>
       ));
   });
 };

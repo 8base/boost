@@ -1,45 +1,56 @@
-const { E2E_URL } = process.env;
+import { baisy } from '../setup/TestSuiter';
 
-let page = null;
 
-beforeAll(async () => {
-  page = await __BROWSER_CONTEXT__.newPage();
-});
+const SUITES = [
+  baisy.suite('Components/Avatar', 'common'),
+  baisy.suite('Components/Button', 'common'),
+  baisy.suite('Components/ButtonGroup', 'common'),
+  baisy.suite('Components/Breadcrumbs', 'common'),
 
-afterAll(async () => {
-  await page.close();
-});
+  baisy.suite('Components/Card', 'common'),
+  baisy.suite('Components/Card', 'with custom paddings'),
+  baisy.suite('Components/Card', 'with multiple sections'),
 
-const testStory = async (kind, story) => {
-  await page.goto(`${E2E_URL}/?selectedKind=${encodeURIComponent(kind)}&selectedStory=${encodeURIComponent(story)}`, { waitUntil: 'networkidle2' });
+  baisy.suite('Components/Checkbox', 'common'),
+  baisy.suite('Components/CheckboxField', 'common'),
 
-  const iframe = page.frames()[1];
+  baisy.suite('Components/Code', 'common'),
+  baisy.suite('Components/Code', 'with custom height'),
 
-  await iframe.addStyleTag({
-    content: `
-      *, *:before, *:after {
-        -webkit-transition-duration: unset !important;
-        transition-duration: unset !important;
-        -webkit-animation-duration: unset !important;
-        animation-duration: unset !important;
-      }
-    `,
-  });
+  baisy.suite('Components/DateInput', 'common'),
+  baisy.suite('Components/DateInput', 'common')
+    .setStateName('open date')
+    .setHeight(300)
+    .setEnhancer(async (iframe) => {
+      await (await iframe.waitForXPath('//input')).click();
+    }),
+  baisy.suite('Components/DateInput', 'common')
+    .setStateName('open datetime')
+    .setHeight(400)
+    .setEnhancer(async (iframe) => {
+      await (await iframe.waitForXPath('(//input)[2]')).click();
+    }),
+  baisy.suite('Components/DateInputField', 'common'),
 
-  const test = await iframe.waitForXPath('//*[@id="root"]');
+  baisy.suite('Components/Dropdown', 'common')
+    .addHeight(50),
+  baisy.suite('Components/Dropdown', 'with pin')
+    .addHeight(50),,
+  baisy.suite('Components/Dropdown', 'with stretch')
+    .addHeight(50),,
 
-  expect(await test.screenshot()).toMatchImageSnapshot();
-};
+  baisy.suite('Components/FlexLayout', 'with custom gap'),
+  baisy.suite('Components/FlexLayout', 'with custom offset'),
 
-const STORIES = [
-  ['Components/Breadcrumbs', 'common'],
-  ['Components/Button', 'common'],
-  ['Components/ButtonGroup', 'common'],
-  ['Components/Menu', 'common'],
-  ['Components/Progress', 'common'],
-  ['Components/Tag', 'common'],
+  baisy.suite('Components/Form', 'common'),
+
+  baisy.suite('Components/Menu', 'common'),
+  baisy.suite('Components/Progress', 'common'),
+  baisy.suite('Components/Tag', 'common'),
 ];
 
-test.each(STORIES)('%s / %s', async (kind, story) => {
-  await testStory(kind, story);
-}, 10000);
+
+SUITES.map(suite => {
+  it(suite.getTestName(), suite.testStory, 10000);
+});
+

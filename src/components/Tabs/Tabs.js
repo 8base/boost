@@ -2,7 +2,7 @@
 
 import React from 'react';
 import fp from 'lodash/fp';
-import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
+import { compose, withStateHandlers, branch } from 'recompose';
 
 import { createStyledTag } from '../../utils';
 import { TabsContext } from './TabsContext';
@@ -27,8 +27,7 @@ type WithStateTabsProps = {
 const TabPlateTag = createStyledTag('tabPlate', {});
 
 
-const tabsEnhancer: { (any): React$ComponentType<WithStateTabsProps | { ...TabsProps, ...WithStateTabsProps }> } = compose(
-  setDisplayName('TabsPlate'),
+const tabsEnhancer: any = compose(
   branch(
     (props) => !fp.isNil(props.defaultSelectedTabId),
     withStateHandlers(
@@ -60,7 +59,9 @@ const TabsPlate = tabsEnhancer(({
   );
 });
 
-const Tabs = (props: *) => <TabsPlate { ...props } />;
+const Tabs = (props: WithStateTabsProps | TabsProps) => <TabsPlate { ...props } />;
+
+Tabs.displayName = 'Tabs';
 
 Tabs.Title = TabTitle;
 Tabs.Panel = TabPanel;

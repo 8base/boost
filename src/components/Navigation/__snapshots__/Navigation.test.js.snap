@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation /> should shallow navigation 1`] = `
+<Styled(navigationPlate)
+  color="GREEN"
+  tagName="nav"
+>
+  <NavigationItem
+    color="GREEN"
+    href="/jobs"
+    icon="Trashcan"
+    key=".0"
+    label="Jobs"
+    tagName="a"
+  />
+</Styled(navigationPlate)>
+`;
+
+exports[`<Navigation /> should shallow navigation item 1`] = `
+<Styled(navigationItem)
+  href="/jobs"
+  tagName="a"
+>
+  <Styled(navigationItemIcon)>
+    <Icon
+      color="WHITE"
+      name="Trashcan"
+      size="md"
+    />
+  </Styled(navigationItemIcon)>
+  <Styled(navigationItemLabel)
+    className="NavigationItem-label"
+  >
+    Jobs
+  </Styled(navigationItemLabel)>
+</Styled(navigationItem)>
+`;

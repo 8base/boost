@@ -3,6 +3,24 @@ import React from 'react';
 import { Tabs } from './';
 
 describe('<Tabs />', () => {
+
+  it('should render Tabs', () => {
+    const wrapper = mount(
+      <Tabs defaultSelectedTabId="1">
+        <Tabs.Title tabId="1"><div>Tab-1</div></Tabs.Title>
+        <Tabs.Title tabId="2"><div>Tab-2</div></Tabs.Title>
+        <Tabs.Panel tabId="1">
+          <div className="body-1">Body-1</div>
+        </Tabs.Panel>
+        <Tabs.Panel tabId="2">
+          <div className="body-2">Body-2</div>
+        </Tabs.Panel>
+      </Tabs>,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('should render selected tab', () => {
     const wrapper = mount(
       <Tabs selectedTabId="1">

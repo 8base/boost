@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> should render Tabs 1`] = `
+.emotion-8 {
+  display: block;
+}
+
+<Tabs
+  defaultSelectedTabId="1"
+>
+  <branch(Component)
+    defaultSelectedTabId="1"
+  >
+    <withStateHandlers(Component)
+      defaultSelectedTabId="1"
+    >
+      <Component
+        defaultSelectedTabId="1"
+        onSelect={[Function]}
+        selectedTabId="1"
+      >
+        <Styled(tabPlate)
+          defaultSelectedTabId="1"
+          tagName="div"
+        >
+          <Tag
+            className="emotion-0 emotion-1"
+            defaultSelectedTabId="1"
+            tagName="div"
+          >
+            <div
+              className="emotion-0 emotion-1"
+            >
+              <TabTitle
+                tabId="1"
+              >
+                <TabTitleBase
+                  tabId="1"
+                  tabs={
+                    Object {
+                      "onSelect": [Function],
+                      "selectedTabId": "1",
+                    }
+                  }
+                >
+                  <Styled(tabTitle)
+                    onClick={[Function]}
+                    tagName="div"
+                  >
+                    <Tag
+                      className="emotion-0 emotion-1"
+                      onClick={[Function]}
+                      tagName="div"
+                    >
+                      <div
+                        className="emotion-0 emotion-1"
+                        onClick={[Function]}
+                      >
+                        <div>
+                          Tab-1
+                        </div>
+                      </div>
+                    </Tag>
+                  </Styled(tabTitle)>
+                </TabTitleBase>
+              </TabTitle>
+              <TabTitle
+                tabId="2"
+              >
+                <TabTitleBase
+                  tabId="2"
+                  tabs={
+                    Object {
+                      "onSelect": [Function],
+                      "selectedTabId": "1",
+                    }
+                  }
+                >
+                  <Styled(tabTitle)
+                    onClick={[Function]}
+                    tagName="div"
+                  >
+                    <Tag
+                      className="emotion-0 emotion-1"
+                      onClick={[Function]}
+                      tagName="div"
+                    >
+                      <div
+                        className="emotion-0 emotion-1"
+                        onClick={[Function]}
+                      >
+                        <div>
+                          Tab-2
+                        </div>
+                      </div>
+                    </Tag>
+                  </Styled(tabTitle)>
+                </TabTitleBase>
+              </TabTitle>
+              <TabPanel
+                tabId="1"
+              >
+                <TabPanelBase
+                  forceRender={false}
+                  selected={false}
+                  tabId="1"
+                  tabs={
+                    Object {
+                      "onSelect": [Function],
+                      "selectedTabId": "1",
+                    }
+                  }
+                >
+                  <TabPanelTag
+                    selected={true}
+                    tagName="div"
+                  >
+                    <Tag
+                      className="emotion-8 emotion-1"
+                      selected={true}
+                      tagName="div"
+                    >
+                      <div
+                        className="emotion-8 emotion-1"
+                      >
+                        <div
+                          className="body-1"
+                        >
+                          Body-1
+                        </div>
+                      </div>
+                    </Tag>
+                  </TabPanelTag>
+                </TabPanelBase>
+              </TabPanel>
+              <TabPanel
+                tabId="2"
+              >
+                <TabPanelBase
+                  forceRender={false}
+                  selected={false}
+                  tabId="2"
+                  tabs={
+                    Object {
+                      "onSelect": [Function],
+                      "selectedTabId": "1",
+                    }
+                  }
+                />
+              </TabPanel>
+            </div>
+          </Tag>
+        </Styled(tabPlate)>
+      </Component>
+    </withStateHandlers(Component)>
+  </branch(Component)>
+</Tabs>
+`;

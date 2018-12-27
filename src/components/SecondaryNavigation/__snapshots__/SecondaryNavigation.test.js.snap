@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SecondaryNavigation /> should shallow SecondaryNavigation 1`] = `
+<Styled(secondaryNavigation)
+  tagName="nav"
+>
+  <SecondaryNavigationItem
+    label="First item"
+  />
+</Styled(secondaryNavigation)>
+`;
+
+exports[`<SecondaryNavigation /> should shallow SecondaryNavigation item 1`] = `
+<Styled(secondaryNavigationItem)>
+  <Styled(secondaryNavigationItemBar) />
+  <Styled(secondaryNavigationItemLabel)>
+    <Text>
+      First item
+    </Text>
+  </Styled(secondaryNavigationItemLabel)>
+</Styled(secondaryNavigationItem)>
+`;

@@ -5,6 +5,21 @@ import { Dropdown } from './';
 
 
 describe('<Dropdown />', () => {
+
+  it('should render dropdown', () => {
+    const wrapper = mount(
+      <Dropdown isOpen={ false }>
+        <Dropdown.Head>Head</Dropdown.Head>
+        <Dropdown.Body>
+          <div className="body">Body</div>
+        </Dropdown.Body>
+      </Dropdown>,
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+
   it('should open and close dropdwon by changing the props', () => {
     const wrapper = mount(
       <Dropdown isOpen={ false }>

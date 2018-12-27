@@ -4,7 +4,37 @@ import { Form } from './';
 
 describe('<Form />', () => {
 
-  it('should render form components', () => {
+  it('should shallow form', () => {
+    const wrapperForm = shallow(<Form><div /></Form>);
+    expect(wrapperForm).toMatchSnapshot();
+  });
+
+
+  it('should shallow form error', () => {
+    const wrapperFormError = shallow(<Form.Error error="Some error" />);
+    expect(wrapperFormError).toMatchSnapshot();
+  });
+
+
+  it('should shallow form section', () => {
+    const wrapperFormSection = shallow(<Form.Section><div /></Form.Section>);
+    expect(wrapperFormSection).toMatchSnapshot();
+  });
+
+
+  it('should shallow form section body', () => {
+    const wrapperFormSectionBody = shallow(<Form.SectionBody><div /></Form.SectionBody>);
+    expect(wrapperFormSectionBody).toMatchSnapshot();
+  });
+
+
+  it('should shallow form field', () => {
+    const wrapperFormField = shallow(<Form.Field meta={{}} label="Field label" />);
+    expect(wrapperFormField).toMatchSnapshot();
+  });
+
+
+  it('should render form components content', () => {
     const wrapper = mount(
       <EightBaseBoostProvider>
         <Form>

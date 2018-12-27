@@ -74,6 +74,9 @@ Form.defaultProps = {
   alignItems: 'stretch',
 };
 
+
+Form.displayName = 'Form';
+
 Form.Field = FormField;
 Form.Section = FormSection;
 Form.SectionBody = FormSectionBody;

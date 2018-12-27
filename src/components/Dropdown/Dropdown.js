@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import fp from 'lodash/fp';
-import { compose, withStateHandlers, branch, setDisplayName } from 'recompose';
+import { compose, withStateHandlers, branch } from 'recompose';
 import { Manager } from 'react-popper';
 
 import { DropdownContext } from './DropdownContext';
@@ -41,7 +41,6 @@ type DropdownContextData = {|
 
 /** When component has defaultOpen prop then adds hoc with isOpen state */
 const dropDownEnhancer: any = compose(
-  setDisplayName('Dropdown'),
   branch(
     (props) => !fp.isNil(props.defaultOpen),
     withStateHandlers(
@@ -56,7 +55,7 @@ const dropDownEnhancer: any = compose(
 
 
 const DropdownPlate = dropDownEnhancer(
-  class DropdownPlateBase extends Component<DropdownControlledProps> {
+  class DropdownPlate extends Component<DropdownControlledProps> {
   instanceIndex: number;
   dropdownRef: ?HTMLElement;
 
@@ -66,7 +65,7 @@ const DropdownPlate = dropDownEnhancer(
   constructor(props: DropdownControlledProps) {
       super(props);
 
-      this.instanceIndex = DropdownPlateBase.instancesCount++;
+      this.instanceIndex = DropdownPlate.instancesCount++;
     }
 
   toggleDropdown = () => {
@@ -114,6 +113,8 @@ const DropdownPlate = dropDownEnhancer(
 const Dropdown = (props: DropdownControlledProps | DropdownUncontroledProps) => (
   <DropdownPlate { ...props } />
 );
+
+Dropdown.displayName = 'Dropdown';
 
 Dropdown.Head = DropdownHead;
 Dropdown.Body = DropdownBody;

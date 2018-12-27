@@ -36,6 +36,8 @@ const SecondaryNavigation = ({ children, ...rest }: SecondaryNavigationProps) =>
   </SecondaryNavigationTag>
 );
 
+SecondaryNavigation.displayName = 'SecondaryNavigation';
+
 SecondaryNavigation.Item = SecondaryNavigationItem;
 
 export { SecondaryNavigation, theme };

@@ -50,7 +50,7 @@ const ProgressValueTag = createStyledTag(`${name}Value`, {
 
 const ProgressTextTag = createStyledTag(`${name}Text`, {
   marginLeft: '12px',
-  width: '36px',
+  width: '40px',
 });
 
 

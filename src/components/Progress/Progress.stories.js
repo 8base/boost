@@ -12,7 +12,6 @@ export default (asStory) => {
           <Progress value={ 50 } />
           <br />
           <Progress value={ 100 } />
-          <br />
         </Column>
       ));
   });

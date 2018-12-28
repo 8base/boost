@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import 'react-datepicker/dist/react-datepicker.css';
 
 import { Input } from '../Input';
 
@@ -10,6 +9,7 @@ type DateInputValueProps = {|
   onBlur: () => void,
   value: ?string,
   mask: string,
+  clearable?: boolean,
 |};
 
 const DateInputValue = ({ value, onChange, ...props }: DateInputValueProps) => (

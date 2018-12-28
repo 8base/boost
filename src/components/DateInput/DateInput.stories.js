@@ -12,10 +12,10 @@ export default (asStory) => {
             <DateInput withTime />
           </StateContainer>
           <StateContainer value="2018-11-07">
-            <DateInput />
+            <DateInput clearable />
           </StateContainer>
           <StateContainer value="2018-11-29T21:00:00.000Z">
-            <DateInput withTime />
+            <DateInput withTime clearable />
           </StateContainer>
         </Column>
       ));

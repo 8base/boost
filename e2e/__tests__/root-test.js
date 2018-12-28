@@ -20,13 +20,13 @@ const SUITES = [
   baisy.suite('Components/DateInput', 'common'),
   baisy.suite('Components/DateInput', 'common')
     .setStateName('open date')
-    .setHeight(300)
+    .setHeight(400)
     .setEnhancer(async (iframe) => {
       await (await iframe.waitForXPath('//input')).click();
     }),
   baisy.suite('Components/DateInput', 'common')
     .setStateName('open datetime')
-    .setHeight(400)
+    .setHeight(500)
     .setEnhancer(async (iframe) => {
       await (await iframe.waitForXPath('(//input)[2]')).click();
     }),

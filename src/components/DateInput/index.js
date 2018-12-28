@@ -1,3 +1,3 @@
 // @flow
 
-export { DateInput } from './DateInput';
+export { DateInput, theme } from './DateInput';

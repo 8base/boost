@@ -54,8 +54,11 @@ const InputField = ({
   placeholder,
   square,
   stretch,
+  clearable,
   width,
   type,
+  leftIcon,
+  rightIcon,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -87,6 +90,10 @@ const InputField = ({
         value={ value }
         width={ width }
         type={ type }
+        stretch={ stretch }
+        clearable={ clearable }
+        leftIcon={ leftIcon }
+        rightIcon={ rightIcon }
       />
     </FormField>
   );

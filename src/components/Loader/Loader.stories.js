@@ -1,19 +1,19 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Components/Loader', module, (story, { Loader }) => {
+  asStory('Components/Loader', module, (story, { Loader, Row }) => {
     story
-      .add('with various size', () => (
-        <React.Fragment>
+      .add('common', () => (
+        <Row alignItems="center" gap="md">
           <Loader size="sm" />
           <Loader size="md" />
           <Loader size="lg" />
-        </React.Fragment>
+        </Row>
       ))
       .add('with stretch', () => (
-        <React.Fragment>
+        <div style={{ border: '1px solid gray', height: '300px' }}>
           <Loader stretch />
-        </React.Fragment>
+        </div>
       ));
   });
 };

@@ -137,6 +137,7 @@ class Input extends PureComponent<InputProps> {
       kind,
       disabled,
       readOnly,
+      stretch,
     };
 
     return (

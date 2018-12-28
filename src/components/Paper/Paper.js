@@ -9,7 +9,7 @@ type PaperProps = {
   children?: React$Node,
   /** possible padding */
   padding?: PropSizes | 'xxl',
-  /** when true then stetch cpontainer to the parent */
+  /** when true then stetch container to the parent */
   stretch?: boolean,
   /** modifier to regulate border radius */
   borderRadius?: 'top' | 'bottom' | 'all',

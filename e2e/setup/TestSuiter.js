@@ -5,14 +5,16 @@ const { E2E_URL } = (process.env: any);
 class TestSuiter {
   kind: string;
   story: string;
-  state: string;
+  stateName: void | string;
   page: *;
   iframe: *;
+  root: *;
   enhancers: Array<$await<any>> = [];
 
-  constructor(kind: string, story: string) {
+  constructor(kind: string, story: string, stateName?: string) {
     this.kind = kind;
     this.story = story;
+    this.stateName = stateName;
   }
 
 
@@ -27,26 +29,12 @@ class TestSuiter {
     // eslint-disable-next-line
     this.iframe = this.page.frames()[1];
 
-    return this;
-  }
-
-  _stop = async () => {
-    await this.page.close();
+    this.root = await this.iframe.waitForXPath('//*[@id="root"]');
 
     return this;
   }
 
-  _getRoot = async () => {
-    return await this.iframe.waitForXPath('//*[@id="root"]');
-  }
-
-  _executeEnhancers = async () => {
-    for (let i = 0; i < this.enhancers.length; i++) {
-      await this.enhancers[i](this.iframe, this.page);
-    }
-  }
-
-  _addGlobalStyles = async () => {
+  _prepareStyles = async () => {
     await this.iframe.addStyleTag({
       content: `
       *, *:before, *:after {
@@ -57,43 +45,65 @@ class TestSuiter {
       }
     `,
     });
+
+    const showInfoButton = await this.iframe.waitForXPath('//button[contains(text(),"Show Info")]');
+
+    await this.iframe.evaluate((showInfoButtonDom) => {
+      showInfoButtonDom.style.display = 'none';
+    }, showInfoButton);
   }
 
-
-  getTestName = () => {
-    return this.state
-      ? `${this.kind} / ${this.story} / ${this.state}`
-      : `${this.kind} / ${this.story}`;
+  _executeEnhancers = async () => {
+    for (let i = 0; i < this.enhancers.length; i++) {
+      await this.enhancers[i](this.iframe, this.page);
+    }
   }
 
-  setStateName = (state: string) => {
-    this.state = state;
+  _stop = async () => {
+    await this.page.close();
 
     return this;
   }
 
-  setHeight = (height: number) => {
+
+  getTestName = () => {
+    return this.stateName
+      ? `${this.kind} / ${this.story} / ${this.stateName}`
+      : `${this.kind} / ${this.story}`;
+  }
+
+  setStateName = (stateName: string) => {
+    this.stateName = stateName;
+
+    return this;
+  }
+
+  setRoot = (rootSetter: (iframe: any, page: any) => Promise<*>) => {
+    this.enhancers.push(async (iframe, page) => {
+      this.root = await rootSetter(iframe, page);
+    });
+
+    return this;
+  }
+
+  setRootHeight = (height: number) => {
     this.enhancers.push(
       async () => {
-        const root = await this._getRoot();
-
         await this.iframe.evaluate((root, height) => {
           root.style.height = `${height}px`;
-        }, root, height);
+        }, this.root, height);
       },
     );
 
     return this;
   }
 
-  addHeight = (height: number) => {
+  addRootHeight = (height: number) => {
     this.enhancers.push(
       async () => {
-        const root = await this._getRoot();
-
         await this.iframe.evaluate((root, height) => {
           root.style.height = `${root.clientHeight + height}px`;
-        }, root, height);
+        }, this.root, height);
       },
     );
 
@@ -109,13 +119,12 @@ class TestSuiter {
   testStory = async () => {
     await this._init();
 
-    await this._addGlobalStyles();
+    await this._prepareStyles();
 
     await this._executeEnhancers();
 
-    const root = await this._getRoot();
     // $FlowIgnore
-    expect(await root.screenshot()).toMatchImageSnapshot();
+    expect(await this.root.screenshot()).toMatchImageSnapshot();
 
     await this._stop();
 
@@ -124,7 +133,7 @@ class TestSuiter {
 }
 
 const baisy = {
-  suite: (kind: string, story: string) => new TestSuiter(kind, story),
+  suite: (kind: string, story: string, stateName?: string) => new TestSuiter(kind, story, stateName),
 };
 
 export {

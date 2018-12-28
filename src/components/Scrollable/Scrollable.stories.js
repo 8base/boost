@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Scrollable', module, (story, { Scrollable }) => {
     story
-      .add('with default modifiers', () => (
+      .add('default', () => (
         <div style={{ width: '100px', height: '300px' }}>
           <h1>Heading</h1>
           <Scrollable>

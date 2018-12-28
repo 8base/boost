@@ -3,6 +3,49 @@ import React from 'react';
 import { Input } from './Input';
 
 describe('<Input />', () => {
+  it('should shallow input', () => {
+    const onChange = jest.fn();
+    const wrapper = shallow(
+      <Input onChange={ onChange } value="val" leftIcon="i" clearable />,
+    );
+
+    expect(wrapper).toMatchInlineSnapshot(`
+<Styled(inputWrapper)
+  stretch={true}
+  tagName="div"
+>
+  <Styled(input)
+    align="left"
+    autoComplete="off"
+    hasError={false}
+    hasLeftIcon={true}
+    hasRightIcon={false}
+    kind="bordered"
+    onChange={[Function]}
+    stretch={true}
+    tagName="input"
+    type="text"
+    value="val"
+  />
+  <Styled(inputLeftIcon)
+    tagName="div"
+  >
+    i
+  </Styled(inputLeftIcon)>
+  <Styled(inputClearButton)
+    onClick={[Function]}
+    tagName="div"
+  >
+    <Icon
+      name="Delete"
+      size="sm"
+    />
+  </Styled(inputClearButton)>
+</Styled(inputWrapper)>
+`);
+  });
+
+
   it('should call onCahnge with text value', () => {
     const onChange = jest.fn();
     const wrapper = mount(<Input onChange={ onChange } />);
@@ -10,6 +53,7 @@ describe('<Input />', () => {
     wrapper.find('input').simulate('change', { target: { value: 'val' }});
     expect(onChange.mock.calls[0][0]).toBe('val');
   });
+
 
   it('should call onChange with number value', () => {
     const onChange = jest.fn();

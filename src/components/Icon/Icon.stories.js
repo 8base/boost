@@ -3,30 +3,38 @@ import React from 'react';
 import * as glyphs from './glyphs';
 
 export default (asStory) => {
-  asStory('Components/Icon', module, (story, { Icon, Column, Row, Text }) => {
+  asStory('Components/Icon', module, (story, { Icon, Row, Text, Grid }) => {
     story
       .add('all icons', () => (
-        <Column>
+        <Grid.Layout columns="auto auto auto auto auto" gap="sm">
           {
-            Object.keys(glyphs).map((name) => <Row key={ name }><Icon name={ name } /><Text>{ name }</Text></Row>)
+            Object.keys(glyphs).map((name) => (
+              <Grid.Box key={ name } >
+                <Row ><Icon name={ name } /><Text>{ name }</Text></Row>
+              </Grid.Box>
+            ))
           }
-        </Column>
+        </Grid.Layout>
       ))
-      .add('with custom color', () => (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+
+      .add('with color', () => (
+        <Row alignItems="center">
           <Icon name="Alert" color="DANGER" />
-          <Icon name="CloudDatabase" color="LIGHT_BLUE" />
+          <Icon name="DismissData" color="LIGHT_BLUE" />
           <Icon name="FirewallOn" color="BLUE" />
           <Icon name="Search" color="GREEN" />
-          <Icon name="Dots" color="LIGHT_GRAY1" />
-        </div>
+          <Icon name="House" color="LIGHT_GRAY1" />
+        </Row>
       ))
-      .add('with custom sizes', () => (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Icon name="Check" size="sm" />
-          <Icon name="Check" size="md" />
-          <Icon name="Check" size="lg" />
-        </div>
+
+      .add('with size', () => (
+        <Row alignItems="center">
+          <Icon name="Search" size="xs" />
+          <Icon name="Search" size="sm" />
+          <Icon name="Search" size="md" />
+          <Icon name="Search" size="lg" />
+          <Icon name="Search" size="xl" />
+        </Row>
       ));
   });
 };

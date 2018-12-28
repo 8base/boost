@@ -80,6 +80,17 @@ const InputRightIconTag = createStyledTag(`${name}RightIcon`, {
   right: '8px',
 });
 
+const InputClearButtonTag = createStyledTag(`${name}ClearButton`, (props) => ({
+  position: 'absolute',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100%',
+  right: '8px',
+  color: getThemeColors(props).LIGHT_GRAY1,
+  cursor: 'pointer',
+}));
+
 const getInputStyles = props => ({
   width: props.width ? `${props.width}rem` : '100%',
   outline: 'none',
@@ -118,5 +129,6 @@ export {
   InputIndicatorTag,
   InputRightIconTag,
   InputLeftIconTag,
+  InputClearButtonTag,
   theme,
 };

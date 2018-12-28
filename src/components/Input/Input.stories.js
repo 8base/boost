@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Components/Input', module, (story, { Input }) => {
+  asStory('Components/Input', module, (story, { Input, StateContainer }) => {
     story
       .add('without value', () => (
         <Input name="input" onChange={ () => null } />
@@ -35,6 +35,11 @@ export default (asStory) => {
       ))
       .add('with center align', () => (
         <Input name="input" align="center" />
+      ))
+      .add('with clear button', () => (
+        <StateContainer value="Text">
+          <Input name="input" clearable />
+        </StateContainer>
       ));
   });
 };

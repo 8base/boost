@@ -162,7 +162,7 @@ class Input extends PureComponent<InputProps> {
         <If condition={ hasLeftIcon }>
           <InputLeftIconTag tagName="div">{ leftIcon }</InputLeftIconTag>
         </If>
-        <If condition={ hasRightIcon }>
+        <If condition={ hasRightIcon && !clearable }>
           <InputRightIconTag tagName="div">{ rightIcon }</InputRightIconTag>
         </If>
         <If condition={ !!clearable && !!value }>

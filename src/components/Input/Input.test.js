@@ -20,6 +20,14 @@ describe('<Input />', () => {
     expect(typeof onChange.mock.calls[0][0]).toBe('number');
   });
 
+  it('should call onChange with empty value after click on clear button', () => {
+    const onChange = jest.fn();
+    const wrapper = mount(<Input value="Text" onChange={ onChange } clearable />);
+
+    wrapper.find({ name: 'Delete' }).simulate('click');
+    expect(onChange.mock.calls).toEqual([['']]);
+  });
+
   it('should not call onCahnge with max value', () => {
     const onChange = jest.fn();
     const wrapper = mount(<Input onChange={ onChange } maxLength={ 2 } />);

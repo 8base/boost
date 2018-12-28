@@ -3,7 +3,9 @@
 import React, { PureComponent } from 'react';
 import fp from 'lodash/fp';
 import InputMask from 'react-input-mask';
-import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag } from './Input.theme';
+
+import { Icon } from '../Icon';
+import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputClearButtonTag } from './Input.theme';
 
 type InputCommonProps = {
   /** field placeholder */
@@ -30,6 +32,8 @@ type InputCommonProps = {
   kind?: 'bordered' | 'underline',
   /** readonly */
   readOnly?: boolean,
+  /** clearable */
+  clearable?: boolean,
 };
 
 type InputProps = {
@@ -79,6 +83,14 @@ class Input extends PureComponent<InputProps> {
     }
   }
 
+  onClear = () => {
+    const { onChange } = this.props;
+
+    if (typeof onChange === 'function') {
+      onChange('');
+    }
+  };
+
   render() {
     const {
       align,
@@ -101,6 +113,7 @@ class Input extends PureComponent<InputProps> {
       kind,
       disabled,
       readOnly,
+      clearable,
       ...rest
     } = this.props;
     const hasLeftIcon = !!leftIcon;
@@ -151,6 +164,11 @@ class Input extends PureComponent<InputProps> {
         </If>
         <If condition={ hasRightIcon }>
           <InputRightIconTag tagName="div">{ rightIcon }</InputRightIconTag>
+        </If>
+        <If condition={ !!clearable && !!value }>
+          <InputClearButtonTag onClick={ this.onClear } tagName="div">
+            <Icon name="Delete" size="sm" />
+          </InputClearButtonTag>
         </If>
       </InputWrapperTag>
     );

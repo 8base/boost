@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import { injectGlobal } from 'emotion';
 import { ThemeProvider } from 'emotion-theming';
 import { IconsProvider } from './components/Icon/IconsProvider';
 import { ModalProvider } from './components/Modal/ModalProvider';
@@ -23,6 +24,12 @@ class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps
 
   componentDidMount() {
     resetGlobal(this.theme);
+
+    Object.keys(this.theme.components).forEach((name) => {
+      if (this.theme.components[name].globals) {
+        injectGlobal(this.theme.components[name].globals);
+      }
+    });
   }
 
   render() {

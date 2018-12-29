@@ -31,6 +31,12 @@ const themeText = createComponentTheme(`${name}Text`, ({ COLORS }: *): * => ({
     color: COLORS.SECONDARY_TEXT_COLOR,
     fontSize: COLORS.BODY_TEXT,
   },
+
+  modifiers: {
+    nowrap: {
+      whiteSpace: 'nowrap',
+    },
+  },
 }));
 
 const theme = {

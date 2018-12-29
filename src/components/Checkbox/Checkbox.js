@@ -16,6 +16,8 @@ type CheckboxProps = {
   hasError?: boolean,
   /** show disabled styles  */
   disabled?: boolean,
+  /** no wrap text  */
+  nowrap?: boolean,
 
   /** callback to change chcked state */
   onChange?: (boolean, SyntheticInputEvent<HTMLInputElement>) => void,
@@ -38,7 +40,7 @@ class Checkbox extends PureComponent<CheckboxProps> {
   }
 
   render() {
-    const { onChange, checked, hasError, disabled, label, ...rest } = this.props;
+    const { onChange, checked, hasError, disabled, label, nowrap, ...rest } = this.props;
 
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
@@ -54,7 +56,7 @@ class Checkbox extends PureComponent<CheckboxProps> {
           type="checkbox"
           tagName="input"
         />
-        <CheckboxTextTag tagName="div">{ label }</CheckboxTextTag>
+        <CheckboxTextTag tagName="div" nowrap={ nowrap }>{ label }</CheckboxTextTag>
       </CheckboxWrapperTag>
     );
   }

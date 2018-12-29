@@ -1,3 +1,23 @@
+<a name="0.11.3"></a>
+## [0.11.3](https://github.com/8base/boost/compare/v0.11.2...v0.11.3) (2018-12-29)
+
+
+### Bug Fixes
+
+* **Input:** override right icon with clearable ([53351ff](https://github.com/8base/boost/commit/53351ff))
+* **Progress:** fix progress label width ([65fc2dc](https://github.com/8base/boost/commit/65fc2dc))
+
+
+### Features
+
+* **Checkbox:** nowrap modifier ([916de2c](https://github.com/8base/boost/commit/916de2c))
+* **DateInput:** restyle ([27fb462](https://github.com/8base/boost/commit/27fb462))
+* **global:** add ability to customize global css ([9233991](https://github.com/8base/boost/commit/9233991))
+* **Input:** clear button ([8fc589a](https://github.com/8base/boost/commit/8fc589a))
+* **TextArea:** stretch modifier ([209fb49](https://github.com/8base/boost/commit/209fb49))
+
+
+
 <a name="0.11.2"></a>
 ## [0.11.2](https://github.com/8base/boost/compare/v0.11.1...v0.11.2) (2018-12-27)
 

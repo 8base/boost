@@ -11,6 +11,7 @@ type TextAreaProps = {|
   placeholder?: string,
   rows?: number,
   value?: string,
+  stretch?: boolean,
 |};
 
 const name = 'textArea';
@@ -27,6 +28,12 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
 
     '&::placeholder': {
       color: COLORS.PLACEHOLDER_COLOR,
+    },
+  },
+  modifiers: {
+    stretch: {
+      height: '100%',
+      width: '100%',
     },
   },
 }));

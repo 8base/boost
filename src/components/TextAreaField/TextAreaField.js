@@ -52,6 +52,7 @@ function TextAreaField({
         value={ value }
         cols={ cols }
         rows={ rows }
+        stretch={ stretch }
       />
     </FormField>
   );

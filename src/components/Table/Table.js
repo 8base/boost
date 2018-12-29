@@ -22,6 +22,9 @@ type TablePlateProps = {
 const name = 'tablePlate';
 
 const tableTheme = createComponentTheme(name, {
+  root: {
+    overflow: 'auto',
+  },
   modifiers: {
   },
   defaults: {

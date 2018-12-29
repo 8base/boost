@@ -18,6 +18,8 @@ type CheckboxFieldProps = {|
   color ?: 'primary' | 'secondary',
   /** show disabled styles  */
   disabled ?: boolean,
+  /** no wrap text  */
+  nowrap?: boolean,
 |};
 
 const CheckboxField = ({
@@ -27,6 +29,7 @@ const CheckboxField = ({
   meta,
   disabled,
   color,
+  nowrap,
   ...rest
   }: CheckboxFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -44,6 +47,7 @@ const CheckboxField = ({
         hasError={ hasError }
         disabled={ disabled }
         color={ color }
+        nowrap={ nowrap }
       />
     </FormField>
   );

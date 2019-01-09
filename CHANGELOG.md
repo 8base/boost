@@ -1,3 +1,14 @@
+<a name="0.12.1"></a>
+## [0.12.1](https://github.com/8base/boost/compare/v0.12.0...v0.12.1) (2019-01-09)
+
+
+### Bug Fixes
+
+* **Card:** fix padding ([627d383](https://github.com/8base/boost/commit/627d383))
+* **date:** fix date tests ([200f324](https://github.com/8base/boost/commit/200f324))
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/8base/boost/compare/v0.11.3...v0.12.0) (2019-01-09)
 

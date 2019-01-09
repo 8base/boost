@@ -1,3 +1,14 @@
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/8base/boost/compare/v0.11.3...v0.12.0) (2019-01-09)
+
+
+### Bug Fixes
+
+* **Card:** fix card padding props ([dff5b54](https://github.com/8base/boost/commit/dff5b54))
+* **table:** fixes scroll ([8d50511](https://github.com/8base/boost/commit/8d50511))
+
+
+
 <a name="0.11.3"></a>
 ## [0.11.3](https://github.com/8base/boost/compare/v0.11.2...v0.11.3) (2018-12-29)
 

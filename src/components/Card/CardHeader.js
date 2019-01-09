@@ -45,8 +45,4 @@ const CardHeader = ({
   );
 };
 
-CardHeader.defaultProps = {
-  padding: 'md',
-};
-
 export { cardHeaderTheme, CardHeader };

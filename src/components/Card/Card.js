@@ -33,11 +33,16 @@ const Card = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
         children(rest)
         :
         React.Children.map(children, child =>
-          React.cloneElement(child, { padding: padding || child.props.padding }),
+          React.cloneElement(child, { padding: child.props.padding || padding }),
         )
     }
   </Paper>
 );
+
+
+Card.defaultProps = {
+  padding: 'md',
+};
 
 Card.Header = CardHeader;
 Card.Body = CardBody;

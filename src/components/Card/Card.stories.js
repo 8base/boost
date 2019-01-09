@@ -22,7 +22,7 @@ export default (asStory) => {
       .add('with custom paddings', () => (
         <Card padding="xl">
           <Card.Header>Header</Card.Header>
-          <Card.Body >Body<br /><br /><br /><br /></Card.Body>
+          <Card.Body>Body<br /><br /><br /><br /></Card.Body>
           <Card.Footer>Footer</Card.Footer>
         </Card>
       ))

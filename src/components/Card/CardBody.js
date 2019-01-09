@@ -41,4 +41,8 @@ const CardBody = ({ children, ...rest }: CardBodyProps) => (
   </CardBodyTag>
 );
 
+CardBody.defaultProps = {
+  padding: 'md',
+};
+
 export { cardBodyTheme, CardBody };

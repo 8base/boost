@@ -91,7 +91,7 @@ const Dialog = ({
       {
         ({ args, onClose }) => (
           <DialogTag tagName={ tagName } size={ size }>
-            <Card padding={ padding }args={ args } onClose={ onClose }>
+            <Card padding={ padding } args={ args } onClose={ onClose }>
               { children }
             </Card>
           </DialogTag>

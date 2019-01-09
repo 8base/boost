@@ -49,16 +49,15 @@ exports[`<Card /> should render Card components 1`] = `
           className="emotion-16 emotion-1"
         >
           <CardHeader
-            key=".0"
-            padding="sm"
+            padding="md"
           >
             <Styled(cardHeader)
-              padding="sm"
+              padding="md"
               tagName="div"
             >
               <Tag
                 className="emotion-0 emotion-1"
-                padding="sm"
+                padding="md"
                 tagName="div"
               >
                 <div
@@ -70,16 +69,15 @@ exports[`<Card /> should render Card components 1`] = `
             </Styled(cardHeader)>
           </CardHeader>
           <CardBody
-            key=".1"
-            padding="sm"
+            padding="lg"
           >
             <Styled(cardBody)
-              padding="sm"
+              padding="lg"
               tagName="div"
             >
               <Tag
                 className="emotion-8 emotion-1"
-                padding="sm"
+                padding="lg"
                 tagName="div"
               >
                 <div
@@ -110,16 +108,15 @@ exports[`<Card /> should render Card components 1`] = `
             </Styled(cardBody)>
           </CardBody>
           <CardFooter
-            key=".2"
-            padding="sm"
+            padding="xl"
           >
             <Styled(cardFooter)
-              padding="sm"
+              padding="xl"
               tagName="div"
             >
               <Tag
                 className="emotion-12 emotion-1"
-                padding="sm"
+                padding="xl"
                 tagName="div"
               >
                 <div

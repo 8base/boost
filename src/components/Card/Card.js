@@ -11,7 +11,6 @@ import type { PropSizes } from '../../types';
 
 type CardPlateProps = {
   children: React$Node | (Object) => React$Node,
-  padding?: PropSizes,
   paddingOuter?: PropSizes,
   style?: Object,
   stretch?: boolean,
@@ -32,17 +31,11 @@ const Card = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
         ?
         children(rest)
         :
-        React.Children.map(children, child =>
-          React.cloneElement(child, { padding: child.props.padding || padding }),
-        )
+        children
     }
   </Paper>
 );
 
-
-Card.defaultProps = {
-  padding: 'md',
-};
 
 Card.Header = CardHeader;
 Card.Body = CardBody;

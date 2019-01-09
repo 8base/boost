@@ -30,4 +30,9 @@ const CardFooter = ({ children, ...rest }: CardFooterProps) => (
   </CardFooterTag>
 );
 
+CardFooter.defaultProps = {
+  padding: 'md',
+};
+
+
 export { cardFooterTheme, CardFooter };

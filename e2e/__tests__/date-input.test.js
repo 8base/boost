@@ -17,7 +17,10 @@ const SUITES = [
       const input = await iframe.waitForXPath('(//input)[2]');
 
       await input.click();
-      await input.type('01/01/2019, 12:00 AM');
+      await input.type('01/01/2019, 12:00 PM');
+
+      await (await iframe.waitForXPath('//input')).click();
+      await input.click();
     }),
   baisy.suite('Components/DateInputField', 'common'),
 ];

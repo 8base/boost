@@ -14,7 +14,6 @@ const theme = createTheme({
 });
 
 const Root = styled('div')`
-  margin-top: 32px;
   padding: 32px;
   height: 100%;
 `;

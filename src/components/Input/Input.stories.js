@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Input', module, (story, { Input, StateContainer }) => {
     story
-      .add('without value', () => (
+      .add('default', () => (
         <Input name="input" onChange={ () => null } />
       ))
       .add('with value', () => (

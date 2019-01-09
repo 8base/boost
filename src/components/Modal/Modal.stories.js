@@ -1,28 +1,50 @@
 import React from 'react';
 
+const CustomBackground = ({ children }) => <div style={{ backgroundColor: '#fff', padding: '10px' }}>{ children }</div>;
+
 export default (asStory) => {
   asStory('Components/Modal', module, (story, { Modal, ModalContext, Button }) => {
     story
-      .add('multiple modals', () => (
+      .add('default', () => (
+        <Modal isOpen data-e2e-id="default-modal">
+          <CustomBackground>
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+            XXXXXXXXXX<br />
+          </CustomBackground>
+        </Modal>
+      ))
+      .add('with multiple modals', () => (
         <React.Fragment>
           <Modal isOpen>
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
-            XXXXXXXXXX<br />
+            <CustomBackground>
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+              XXXXXXXXXX<br />
+            </CustomBackground>
           </Modal>
-          <Modal isOpen>
-            00000<br />
-            00000<br />
-            00000<br />
-            00000<br />
-            00000<br />
+          <Modal isOpen data-e2e-id="multiple-modal">
+            <CustomBackground>
+              00000<br />
+              00000<br />
+              00000<br />
+              00000<br />
+              00000<br />
+            </CustomBackground>
           </Modal>
         </React.Fragment>
       ))
@@ -31,7 +53,7 @@ export default (asStory) => {
           <Modal id="ID">
             {
               ({ args }) => (
-                <React.Fragment>
+                <CustomBackground>
                   XXXXXXXXXX<br />
                   XXXXXXXXXX<br />
                   XXXXXXXXXX<br />
@@ -42,7 +64,7 @@ export default (asStory) => {
                   XXXXXXXXXX<br />
                   XXXXXXXXXX<br />
                   XXXXXXXXXX<br />
-                </React.Fragment>
+                </CustomBackground>
               )
             }
           </Modal>

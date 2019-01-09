@@ -217,56 +217,7 @@ const TABLE_DATA = [{
 export default (asStory) => {
   asStory('Components/Table', module, (story, { Table, Link, Dropdown, Icon, Menu, Button }) => {
     story
-      .add('table with data', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
-
-            <Table.Body data={ [TABLE_DATA[0], TABLE_DATA[1]] } action="Create Client" onActionClick={ () => alert('Create') }>
-              { (client) => (
-                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
-                  <Table.BodyCell>
-                    { client.id }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.email }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.createdAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.updatedAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Dropdown defaultOpen={ false }>
-                      <Dropdown.Head>
-                        <Icon name="Dots" color="LIGHT_GRAY2" />
-                      </Dropdown.Head>
-                      <Dropdown.Body pin="right">
-                        <Menu>
-                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                        </Menu>
-                      </Dropdown.Body>
-                    </Dropdown>
-                  </Table.BodyCell>
-                </Table.BodyRow>
-              ) }
-            </Table.Body>
-          </Table>
-        </div>
-      ))
-
-      .add('table with scroll', () => (
+      .add('default', () => (
         <div style={{ display: 'flex', height: '600px' }}>
           <Table>
             <Table.Header columns="repeat(6, 1fr)">
@@ -315,7 +266,7 @@ export default (asStory) => {
         </div>
       ))
 
-      .add('table with loader', () => (
+      .add('with loader', () => (
         <div style={{ display: 'flex', height: '600px' }}>
           <Table>
             <Table.Header columns="repeat(6, 1fr)">
@@ -344,6 +295,55 @@ export default (asStory) => {
             </Table.Header>
 
             <Table.Body />
+          </Table>
+        </div>
+      ))
+
+      .add('with data', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <Table>
+            <Table.Header columns="repeat(6, 1fr)">
+              <Table.HeaderCell>Id</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Email</Table.HeaderCell>
+              <Table.HeaderCell>Created At</Table.HeaderCell>
+              <Table.HeaderCell>Updated At</Table.HeaderCell>
+              <Table.HeaderCell />
+            </Table.Header>
+
+            <Table.Body data={ [TABLE_DATA[0], TABLE_DATA[1]] } action="Create Client" onActionClick={ () => alert('Create') }>
+              { (client) => (
+                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+                  <Table.BodyCell>
+                    { client.id }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.email }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.createdAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    { client.updatedAt }
+                  </Table.BodyCell>
+                  <Table.BodyCell>
+                    <Dropdown defaultOpen={ false }>
+                      <Dropdown.Head>
+                        <Icon name="Dots" color="LIGHT_GRAY2" />
+                      </Dropdown.Head>
+                      <Dropdown.Body pin="right">
+                        <Menu>
+                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
+                        </Menu>
+                      </Dropdown.Body>
+                    </Dropdown>
+                  </Table.BodyCell>
+                </Table.BodyRow>
+              ) }
+            </Table.Body>
           </Table>
         </div>
       ))

@@ -5,28 +5,31 @@ import styled from 'react-emotion';
 
 const ColorBlock = styled('div')(props => ({
   display: 'flex',
-  minWidth: '70px',
-  minHeight: '70px',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minWidth: '100px',
+  padding: '0 10px',
+  minHeight: '30px',
   backgroundColor: props.color,
+  border: '1px solid gray',
 }));
-
-const Blocks = () => (
-  <Fragment>
-    <ColorBlock color="#805500" />
-    <ColorBlock color="#990000" />
-    <ColorBlock color="#e68a00" />
-    <ColorBlock color="#008000" />
-    <ColorBlock color="#5900b3" />
-  </Fragment>
-);
-
 
 const BorderBlock = styled('div')({
   border: '1px solid gray',
 });
 
-const Block = () => (
-  <ColorBlock color="#e68a00" />
+const Blocks = ({ children }: any) => (
+  <Fragment>
+    <ColorBlock color="#e2e4e9">{ children }</ColorBlock>
+    <ColorBlock color="#e2e4e9" />
+    <ColorBlock color="#e2e4e9" />
+    <ColorBlock color="#e2e4e9" />
+    <ColorBlock color="#e2e4e9" />
+  </Fragment>
+);
+
+const Block = ({ children }: any) => (
+  <ColorBlock color="#e2e4e9" >{ children }</ColorBlock>
 );
 
 
@@ -35,77 +38,92 @@ export default (asStory: *) => {
     story
       .add('default Row', () => (
         <Row>
-          <Blocks />
+          <Blocks>Row</Blocks>
         </Row>
       ))
+
       .add('default Column', () => (
         <Column>
-          <Blocks />
+          <Blocks>Column</Blocks>
         </Column>
       ))
-      .add('with custom justifyContent', () => (
+
+      .add('with justifyContent', () => (
         <Row justifyContent="end">
-          <Blocks />
+          <Blocks>justifyContent="end"</Blocks>
         </Row>
       ))
 
-      .add('with custom alignContent', () => (
+      .add('with alignContent', () => (
         <Column alignItems="stretch">
-          <Blocks />
+          <Blocks>alignItems="stretch"</Blocks>
         </Column>
       ))
 
-      .add('with custom gap', () => (
+      .add('with gap', () => (
         <Column>
           <Row gap="xs">
-            <Blocks />
+            <Blocks>xs</Blocks>
           </Row>
           <Row gap="sm">
-            <Blocks />
+            <Blocks>sm</Blocks>
           </Row>
           <Row gap="md">
-            <Blocks />
+            <Blocks>md</Blocks>
           </Row>
           <Row gap="lg">
-            <Blocks />
+            <Blocks>lg</Blocks>
           </Row>
           <Row gap="xl">
-            <Blocks />
+            <Blocks>xl</Blocks>
           </Row>
         </Column>
       ))
 
-      .add('with custom offset', () => (
+      .add('with offset', () => (
         <Row>
           <BorderBlock>
-            <Row offsetY="none" offsetX="none"><Block /></Row>
+            <Row offsetY="none" offsetX="none">
+              <Block>none</Block>
+            </Row>
           </BorderBlock>
           <BorderBlock>
-            <Row offsetY="xs" offsetX="xs"><Block /></Row>
+            <Row offsetY="xs" offsetX="xs">
+              <Block>xs</Block>
+            </Row>
           </BorderBlock>
           <BorderBlock>
-            <Row offsetY="sm" offsetX="sm"><Block /></Row>
+            <Row offsetY="sm" offsetX="sm">
+              <Block>sm</Block>
+            </Row>
           </BorderBlock>
           <BorderBlock>
-            <Row offsetY="md" offsetX="md"><Block /></Row>
+            <Row offsetY="md" offsetX="md">
+              <Block>md</Block>
+            </Row>
           </BorderBlock>
           <BorderBlock>
-            <Row offsetY="lg" offsetX="lg"><Block /></Row>
+            <Row offsetY="lg" offsetX="lg">
+              <Block>lg</Block>
+            </Row>
           </BorderBlock>
           <BorderBlock>
-            <Row offsetY="xl" offsetX="xl"><Block /></Row>
+            <Row offsetY="xl" offsetX="xl">
+              <Block>xl</Block>
+            </Row>
           </BorderBlock>
         </Row>
       ))
 
       .add('with grow children', () => (
         <Row growChildren>
-          <Blocks />
+          <Blocks>growChildren</Blocks>
         </Row>
       ))
+
       .add('with pointer cursor', () => (
         <Row cursor="pointer">
-          <Blocks />
+          <Blocks>cursor="pointer"</Blocks>
         </Row>
       ));
   });

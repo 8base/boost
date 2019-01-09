@@ -3,8 +3,8 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/Dialog', module, (story, { ModalContext, Dialog, Paragraph, Button }) => {
     story
-      .add('common', () => (
-        <Dialog size="sm" isOpen>
+      .add('default', () => (
+        <Dialog size="sm" isOpen data-e2e-id="default-dialog">
           <Dialog.Header title="Mark Job as Completed" />
           <Dialog.Body>
             <Paragraph>

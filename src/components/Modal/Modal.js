@@ -116,7 +116,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     return (
       <If condition={ isOpen }>
         <Portal>
-          <OverlayTag tagName="div" onMouseDown={ this.onOverlayMouseDown }>
+          <OverlayTag tagName="div" onMouseDown={ this.onOverlayMouseDown } data-e2e-id={ rest['data-e2e-id'] }>
             <ModalTag tagName="div" onMouseDown={ this.onModalMouseDown }>
               { typeof children === 'function' ? children(rest) : children }
             </ModalTag>

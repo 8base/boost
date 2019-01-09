@@ -10,6 +10,9 @@ type LoaderProps = {|
 const name = 'loader';
 
 const theme = createComponentTheme(name, {
+  root: {
+    display: 'inline-flex',
+  },
   modifiers: {
     size: {
       sm: {
@@ -44,14 +47,23 @@ const WrapperTag = createStyledTag(`${name}Wrapper`, () => ({
 }));
 WrapperTag.displayName = 'WrapperTag';
 
-const LoaderIcon = () => <LoaderSvg />;
 
 function Loader(props: LoaderProps) {
   if (props.stretch) {
-    return <WrapperTag role="loader"><LoaderTag { ...props } tagName={ LoaderIcon } /></WrapperTag>;
+    return (
+      <WrapperTag role="loader">
+        <LoaderTag { ...props } tagName="div">
+          <LoaderSvg width="100%" height="100%" />
+        </LoaderTag>
+      </WrapperTag>
+    );
   }
 
-  return <LoaderTag { ...props } tagName={ LoaderIcon } role="loader" />;
+  return (
+    <LoaderTag { ...props } tagName="div" role="loader">
+      <LoaderSvg width="100%" height="100%" />
+    </LoaderTag>
+  );
 }
 
 Loader.defaultProps = {

@@ -19,7 +19,7 @@
     "e2e:ci": "E2E_DOCKER=true E2E_URL=http://dockerhost:9001 jest --config e2e/config.json --forceExit",
     "eslint": "eslint --ext .jsx,.js --max-warnings=0 src/ storybook/",
     "flow": "flow",
-    "checks": "yarn eslint && yarn flow && yarn test",
+    "checks": "yarn eslint && yarn flow && yarn test && yarn e2e",
     "changelog-overwrite": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "version": "yarn changelog && git add CHANGELOG.md",

@@ -3,7 +3,7 @@ import React from 'react';
 export default (asStory) => {
   asStory('Components/SecondaryNavigation', module, (story, { SecondaryNavigation }) => {
     story
-      .add('secondary navigation', () => (
+      .add('default', () => (
         <SecondaryNavigation>
           <SecondaryNavigation.Item label="First item" />
           <SecondaryNavigation.Item label="Second item" className="active" />

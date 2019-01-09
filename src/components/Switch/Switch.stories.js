@@ -5,10 +5,10 @@ import React from 'react';
 export default (asStory: *) => {
   asStory('Components/Switch', module, (story, { Switch, Column }) => {
     story
-      .add('with label', () => (
+      .add('common', () => (
         <Column>
-          <Switch label="Switch Label" value={ false } />
-          <Switch label="Switch Label" value />
+          <Switch label="Unchecked" value={ false } />
+          <Switch label="Checked" value />
         </Column>
       ));
   });

@@ -11,8 +11,8 @@ type GridLayoutProps = {|
   gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'none',
   /** when true then set inline-grid */
   inline?: boolean,
-  /** possible offsets of the grid layout */
-  offset?: 'sm' | 'md' | 'lg' | 'none',
+  /** possible paddings of the grid layout */
+  padding?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none',
   /** justify-content css rule*/
   justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
   /** align-content css rule*/
@@ -49,6 +49,10 @@ const theme = createComponentTheme(name, {
       none: {},
     },
     padding: {
+      none: { },
+      xs: {
+        padding: '4px',
+      },
       sm: {
         padding: '8px',
       },
@@ -58,7 +62,9 @@ const theme = createComponentTheme(name, {
       lg: {
         padding: '20px',
       },
-      none: {},
+      xl: {
+        padding: '28px',
+      },
     },
     stretch: {
       flex: 1,
@@ -107,6 +113,10 @@ const StyledTag = createStyledTag(name, (props) => {
 
   if (props.alignItems) {
     style.alignItems = props.alignItems;
+  }
+
+  if (props.autoFlow) {
+    style.gridAutoFlow = props.autoFlow;
   }
 
   return style;

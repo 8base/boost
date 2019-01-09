@@ -92,7 +92,7 @@ const InputClearButtonTag = createStyledTag(`${name}ClearButton`, (props) => ({
 }));
 
 const getInputStyles = props => ({
-  width: props.width ? `${props.width}rem` : '100%',
+  width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
   outline: 'none',
   paddingLeft: props.hasLeftIcon ? '36px' : '8px',
   paddingRight: props.hasRightIcon ? '48px' : '16px',

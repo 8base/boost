@@ -73,11 +73,13 @@ const Dialog = ({
   shouldCloseOnEscPress,
   size,
   args,
+  padding,
   tagName,
   ...rest
   }: DialogPlateProps) => {
   return (
     <Modal
+      { ...rest }
       id={ id }
       isOpen={ isOpen }
       onOpen={ onOpen }
@@ -89,7 +91,7 @@ const Dialog = ({
       {
         ({ args, onClose }) => (
           <DialogTag tagName={ tagName } size={ size }>
-            <Card { ...rest } args={ args } onClose={ onClose }>
+            <Card padding={ padding }args={ args } onClose={ onClose }>
               { children }
             </Card>
           </DialogTag>

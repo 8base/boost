@@ -2,6 +2,27 @@
 
 import React from 'react';
 
+const TABLE_COLUMNS = [{
+  name: 'id',
+  title: 'Id',
+  width: '300px',
+}, {
+  name: 'createdAt',
+  title: 'Created At',
+}, {
+  name: 'updatedAt',
+  title: 'Updated At',
+}, {
+  name: 'firstName',
+  title: 'First Name',
+}, {
+  name: 'lastName',
+  title: 'Last Name',
+}, {
+  name: 'email',
+  title: 'Email',
+}];
+
 const TABLE_DATA = [{
   id: '1',
   createdAt: '2018-09-03T09:59:43.000Z',
@@ -214,8 +235,26 @@ const TABLE_DATA = [{
   email: 'zouxuoz@gmail.com',
 }];
 
+
+class TableState extends React.Component {
+  state = {
+    tableState: {},
+  }
+
+  setTableState = (tableState) => {
+    this.setState({ tableState });
+  }
+
+  render() {
+    const { children } = this.props;
+    const { tableState } = this.state;
+
+    return children({ tableState, setTableState: this.setTableState });
+  }
+}
+
 export default (asStory) => {
-  asStory('Components/Table', module, (story, { Table, Link, Dropdown, Icon, Menu, Button }) => {
+  asStory('Components/Table', module, (story, { Table, TableBuilder, Link, Dropdown, Icon, Menu, Button }) => {
     story
       .add('default', () => (
         <div style={{ display: 'flex', height: '600px' }}>
@@ -372,6 +411,38 @@ export default (asStory) => {
               ) }
             />
           </Table>
+        </div>
+      ))
+
+      .add('with sort', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <TableState>
+            { ({ tableState, setTableState }) => (
+              <TableBuilder
+                columns={ TABLE_COLUMNS }
+                data={ TABLE_DATA }
+                action="Create Client" onActionClick={ () => alert('Create') }
+                onChange={ setTableState }
+                tableState={ tableState }
+              />
+            ) }
+          </TableState>
+        </div>
+      ))
+      .add('with selection', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <TableState>
+            { ({ tableState, setTableState }) => (
+              <TableBuilder
+                columns={ TABLE_COLUMNS }
+                data={ TABLE_DATA }
+                action="Create Client" onActionClick={ () => alert('Create') }
+                onChange={ setTableState }
+                tableState={ tableState }
+                withSelection
+              />
+            ) }
+          </TableState>
         </div>
       ));
   });

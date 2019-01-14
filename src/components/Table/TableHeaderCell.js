@@ -1,10 +1,18 @@
 // @flow
-import React from 'react';
+import React, { PureComponent } from 'react';
+import styled from 'react-emotion';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
+import { Row } from '../FlexLayout';
+import { Icon } from '../Icon';
+
+const DEFAULT_SORT = 'DESC';
 
 type TableHeaderCellProps = {
   children?: React$Node,
+  onSort?: ('ASC' | 'DESC') => void,
+  order?: 'ASC' | 'DESC',
+  cursor?: 'pointer' | 'default' | 'inherit',
 };
 
 const name = 'tableHeaderCell';
@@ -23,16 +31,48 @@ const theme = createComponentTheme(name, ({ SIZES }: *) => ({
   },
 }));
 
-const TableHeaderCellTag = createStyledTag(name, {
+const TableHeaderCellTag = createStyledTag(name, props => ({
   display: 'flex',
   alignItems: 'center',
+  cursor: props.cursor,
+}));
+
+const IconTransform = styled('div')(props => {
+  const styles = {};
+
+  if (props.order === 'ASC') {
+    styles.transform = 'rotate(180deg)';
+  }
+
+  return styles;
 });
 
-function TableHeaderCell({
-  children,
-  ...rest
-  }: TableHeaderCellProps) {
-  return <TableHeaderCellTag { ...rest } tagName="div">{ children }</TableHeaderCellTag>;
+class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
+
+  onSort = () => {
+    const { onSort, order } = this.props;
+
+    switch (order) {
+      case 'ASC': return onSort && onSort('DESC');
+      case 'DESC': return onSort && onSort('ASC');
+      default: return onSort && onSort(DEFAULT_SORT);
+    }
+  }
+
+  render() {
+    const { children, order, cursor, ...rest } = this.props;
+
+    return (
+      <TableHeaderCellTag { ...rest } cursor={ cursor } onClick={ this.onSort } tagName={ Row }>
+        <span>{ children }</span>
+        <If condition={ !!order }>
+          <IconTransform order={ order }>
+            <Icon name="ChevronDown" size="md" />
+          </IconTransform>
+        </If>
+      </TableHeaderCellTag>
+    );
+  }
 }
 
 export { TableHeaderCell, theme };

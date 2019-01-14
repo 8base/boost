@@ -17,7 +17,7 @@ import { TableBodyCell, theme as tableBodyCellTheme } from './TableBodyCell';
 type TablePlateProps = {
   children?: React$Node,
   stretch?: boolean,
-};
+}
 
 const name = 'tablePlate';
 
@@ -46,10 +46,18 @@ const theme = {
 const TableTag = createStyledTag(name);
 
 function Table({
+  action,
   children,
+  columns,
+  data,
+  onActionClick,
   ...rest
   }: TablePlateProps) {
-  return <TableTag { ...rest } tagName={ Grid.Layout }>{ children }</TableTag>;
+  return (
+    <TableTag { ...rest } tagName={ Grid.Layout }>
+      { children }
+    </TableTag>
+  );
 }
 
 Table.defaultProps = {

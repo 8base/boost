@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
+import { Row } from '../FlexLayout';
 
 type TableBodyCellProps = {
   children?: React$Node,
@@ -29,7 +30,7 @@ function TableBodyCell({
   children,
   ...rest
   }: TableBodyCellProps) {
-  return <TableBodyCellTag { ...rest } tagName="div">{ children }</TableBodyCellTag>;
+  return <TableBodyCellTag { ...rest } tagName={ Row }>{ children }</TableBodyCellTag>;
 }
 
 export { TableBodyCell, theme };

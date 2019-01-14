@@ -5,7 +5,9 @@ import { Checkbox } from './Checkbox';
 describe('<Checkbox />', () => {
   it('should shallow chekbox', () => {
     const onChange = jest.fn();
-    const wrapper = shallow(<Checkbox onChange={ onChange } checked />);
+    const wrapper = shallow(
+      <Checkbox onChange={ onChange } label="Label" checked />,
+    );
 
     expect(wrapper).toMatchInlineSnapshot(`
 <Styled(checkboxWrapper)
@@ -35,11 +37,12 @@ describe('<Checkbox />', () => {
   />
   <Styled(checkboxText)
     tagName="div"
-  />
+  >
+    Label
+  </Styled(checkboxText)>
 </Styled(checkboxWrapper)>
 `);
   });
-
 
   it('should call onChange callback with false', () => {
     const onChange = jest.fn();
@@ -49,7 +52,6 @@ describe('<Checkbox />', () => {
     expect(onChange.mock.calls[0][0]).toBe(false);
   });
 
-
   it('should call onChange callback with true', () => {
     const onChange = jest.fn();
     const wrapper = mount(<Checkbox onChange={ onChange } />);
@@ -57,7 +59,6 @@ describe('<Checkbox />', () => {
     wrapper.find('input').simulate('change', { target: { checked: true }});
     expect(onChange.mock.calls[0][0]).toBe(true);
   });
-
 
   it('should not call onChange callback with disabled prop', () => {
     const onChange = jest.fn();

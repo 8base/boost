@@ -56,7 +56,9 @@ class Checkbox extends PureComponent<CheckboxProps> {
           type="checkbox"
           tagName="input"
         />
-        <CheckboxTextTag tagName="div" nowrap={ nowrap }>{ label }</CheckboxTextTag>
+        <If condition={ !!label }>
+          <CheckboxTextTag tagName="div" nowrap={ nowrap }>{ label }</CheckboxTextTag>
+        </If>
       </CheckboxWrapperTag>
     );
   }

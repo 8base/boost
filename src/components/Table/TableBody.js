@@ -29,10 +29,12 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
 }));
 
 const TableBodyTag = createStyledTag(name, {
-  display: 'flex',
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  gridTemplateRows: '1fr',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  height: '100%',
+  overflow: 'auto',
 });
 
 const TableBodyInnerTag = createStyledTag(`${name}Inner`, {

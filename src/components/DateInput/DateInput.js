@@ -305,7 +305,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
         <Dropdown.Head onClick={ this.open }>
           <DateInputValue mask={ mask } value={ textValue } onChange={ this.onChangeText } onBlur={ this.onBlur } clearable={ clearable } />
         </Dropdown.Head>
-        <Dropdown.Body withPortal preventOverflow>
+        <Dropdown.Body placement="auto" withPortal preventOverflow>
           <DatePicker { ...collectedProps } todayButton="Today" />
         </Dropdown.Body>
       </Dropdown>

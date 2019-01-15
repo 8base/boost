@@ -1,3 +1,19 @@
+<a name="0.12.2"></a>
+## [0.12.2](https://github.com/8base/boost/compare/v0.12.1...v0.12.2) (2019-01-15)
+
+
+### Bug Fixes
+
+* **Checkbox:** rid of unnessasary padding when label is empty ([d66aaf7](https://github.com/8base/boost/commit/d66aaf7))
+* **DateInput:** auto placement ([68fb450](https://github.com/8base/boost/commit/68fb450))
+
+
+### Features
+
+* **Table:** add sort and selection ([20703bb](https://github.com/8base/boost/commit/20703bb))
+
+
+
 <a name="0.12.1"></a>
 ## [0.12.1](https://github.com/8base/boost/compare/v0.12.0...v0.12.1) (2019-01-09)
 

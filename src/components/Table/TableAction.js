@@ -25,10 +25,21 @@ const TableActionTag = createStyledTag(name, {
   bottom: 0,
   display: 'flex',
   justifyContent: 'center',
+  pointerEvents: 'none',
+});
+
+const TableActionInnerTag = createStyledTag(`${name}Inner`, {
+  pointerEvents: 'all',
 });
 
 function TableAction({ children }: TableActionProps) {
-  return <TableActionTag tagName="div">{ children }</TableActionTag>;
+  return (
+    <TableActionTag tagName="div">
+      <TableActionInnerTag>
+        { children }
+      </TableActionInnerTag>
+    </TableActionTag>
+  );
 }
 
 export { TableAction, theme };

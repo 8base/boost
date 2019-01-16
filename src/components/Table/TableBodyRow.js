@@ -23,10 +23,6 @@ const theme = createComponentTheme(name, ({ COLORS }: *) => ({
 
 const TableBodyRowTag = createStyledTag(name, {
   display: 'grid',
-
-  '&:last-child': {
-    borderBottom: 'none',
-  },
 });
 
 function TableBodyRow({

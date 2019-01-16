@@ -34,7 +34,7 @@ const TableNoDataTextTag = createStyledTag(`${name}Text`, {});
 
 const TableNoData = () => {
   return (
-    <Column stretch justifyContent="center" alignItems="center" gap="lg">
+    <Column stretch justifyContent="center" alignItems="center" gap="lg" offsetY="lg">
       <TableNoDataIconTag>
         <Icon size="stretch" name="DismissData" color="LIGHT_GRAY1" />
       </TableNoDataIconTag>

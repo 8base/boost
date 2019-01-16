@@ -5,7 +5,7 @@ import React from 'react';
 const TABLE_COLUMNS = [{
   name: 'id',
   title: 'Id',
-  width: '300px',
+  width: '50px',
 }, {
   name: 'createdAt',
   title: 'Created At',
@@ -424,11 +424,13 @@ export default (asStory) => {
                 action="Create Client" onActionClick={ () => alert('Create') }
                 onChange={ setTableState }
                 tableState={ tableState }
+                withMultipleSort
               />
             ) }
           </TableState>
         </div>
       ))
+
       .add('with selection', () => (
         <div style={{ display: 'flex', height: '600px' }}>
           <TableState>

@@ -11,6 +11,7 @@ const DEFAULT_SORT = 'DESC';
 type TableHeaderCellProps = {
   children?: React$Node,
   onSort?: ('ASC' | 'DESC') => void,
+  enableSort?: boolean,
   order?: 'ASC' | 'DESC',
   cursor?: 'pointer' | 'default' | 'inherit',
 };
@@ -50,12 +51,14 @@ const IconTransform = styled('div')(props => {
 class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
 
   onSort = () => {
-    const { onSort, order } = this.props;
+    const { onSort, order, enableSort } = this.props;
 
-    switch (order) {
-      case 'ASC': return onSort && onSort('DESC');
-      case 'DESC': return onSort && onSort('ASC');
-      default: return onSort && onSort(DEFAULT_SORT);
+    if (enableSort && onSort) {
+      switch (order) {
+        case 'ASC': return onSort && onSort('DESC');
+        case 'DESC': return onSort && onSort('ASC');
+        default: return onSort && onSort(DEFAULT_SORT);
+      }
     }
   }
 

@@ -9,7 +9,7 @@ const SUITES = [
     .setEnhancer(async (iframe) => {
       await (await await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
       await (await await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
-      await (await await iframe.waitForXPath('//*[contains(text(),"Email")]')).click();
+      await (await await iframe.waitForXPath('//*[contains(text(),"Created At")]')).click();
     }),
   baisy.suite('Components/Table', 'with selection')
     .setEnhancer(async (iframe) => {

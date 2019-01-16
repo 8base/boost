@@ -1,3 +1,14 @@
+<a name="0.12.4"></a>
+## [0.12.4](https://github.com/8base/boost/compare/v0.12.3...v0.12.4) (2019-01-16)
+
+
+### Bug Fixes
+
+* **DateInput:** fix dropown placement ([a9ec256](https://github.com/8base/boost/commit/a9ec256))
+* **Table:** fix Table markup ([34466e7](https://github.com/8base/boost/commit/34466e7))
+
+
+
 <a name="0.12.3"></a>
 ## [0.12.3](https://github.com/8base/boost/compare/v0.12.2...v0.12.3) (2019-01-16)
 

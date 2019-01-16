@@ -19,7 +19,7 @@ type Sort = {
 }
 
 type ColumnType = {
-  title: string,
+  title?: string,
   name: string,
   sortEnable?: boolean,
   width?: string,
@@ -182,7 +182,7 @@ class TableBuilder extends Component<TableBulderProps> {
     const { tableState: { selectedIds } = {}, data } = this.props;
     const allIds = fp.map('id', data);
 
-    return fp.isEmpty(fp.xor(selectedIds, allIds));
+    return !fp.isEmpty(allIds) && fp.isEmpty(fp.xor(selectedIds, allIds));
   }
 
 
@@ -207,7 +207,7 @@ class TableBuilder extends Component<TableBulderProps> {
             onSort={ this.onSort(column.name) }
             order={ this.getColumnOrder(column.name) }
           >
-            { renderHeadCell ? renderHeadCell(column) : column.title }
+            { renderHeadCell ? renderHeadCell(column) : column.title || '' }
           </TableHeaderCell>
         )) }
       </TableHeader>

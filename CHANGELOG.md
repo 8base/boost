@@ -1,3 +1,13 @@
+<a name="0.12.3"></a>
+## [0.12.3](https://github.com/8base/boost/compare/v0.12.2...v0.12.3) (2019-01-16)
+
+
+### Features
+
+* **Table:** add fixed head, column width ([b61b147](https://github.com/8base/boost/commit/b61b147))
+
+
+
 <a name="0.12.2"></a>
 ## [0.12.2](https://github.com/8base/boost/compare/v0.12.1...v0.12.2) (2019-01-15)
 

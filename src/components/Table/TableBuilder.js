@@ -90,7 +90,7 @@ class TableBuilder extends Component<TableBulderProps> {
     return fp.find(
       ({ name }) => columnName === name,
       columns,
-    );
+    ) || {};
   }
 
   getColumnSortEnable = (name: string) => {
@@ -170,7 +170,8 @@ class TableBuilder extends Component<TableBulderProps> {
   })
 
   hasRowSelection = (id: string) => {
-    const { tableState: { selectedIds } = {}} = this.props;
+    const { tableState = {}} = this.props;
+    const { selectedIds = [] } = tableState;
 
     return fp.findIndex(
       fp.equals(id),
@@ -179,7 +180,9 @@ class TableBuilder extends Component<TableBulderProps> {
   }
 
   hasAllRowsSelection = () => {
-    const { tableState: { selectedIds } = {}, data } = this.props;
+    const { tableState = {}, data } = this.props;
+    const { selectedIds = [] } = tableState;
+
     const allIds = fp.map('id', data);
 
     return !fp.isEmpty(allIds) && fp.isEmpty(fp.xor(selectedIds, allIds));

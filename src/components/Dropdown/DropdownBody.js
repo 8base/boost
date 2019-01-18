@@ -33,6 +33,8 @@ type DropdownBodyProps = {
   /** When true then close dropdown on outside clicking */
   closeOnClickOutside?: boolean,
 
+  /**  */
+  modifiers?: Object,
   /** Options for background color */
   background?: 'white' | 'dark' | 'none',
   /** Options for body padding */
@@ -50,8 +52,10 @@ const setOffset = (offset?: PropSizes) => offset && offset !== 'none'
   : fp.identity;
 
 const setFlip = fp.merge({
-  flip: { behavior: ['bottom'] },
-  boundariesElement: 'window',
+  flip: {
+    behavior: ['bottom'],
+    boundariesElement: 'viewport',
+  },
 });
 
 const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
@@ -94,12 +98,13 @@ const DropdownBody = dropdownBodyEnhancer(
   }
 
   getPopperModifiers = () => {
-    const { preventOverflow, offset } = this.props;
+    const { preventOverflow, offset, modifiers } = this.props;
 
     return fp.pipe(
       setFlip,
       setPreventOverflow(preventOverflow),
       setOffset(offset),
+      fp.merge(modifiers),
     )({});
   }
 

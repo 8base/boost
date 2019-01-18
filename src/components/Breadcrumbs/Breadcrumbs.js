@@ -1,6 +1,6 @@
 // @flow
 /* eslint-disable react/jsx-key */
-import React, { Fragment } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
 import type { BreadcrumbsRoutes, BreadcrumbsMatchPath } from './Breadcrumbs.types';
@@ -33,23 +33,27 @@ const theme = createComponentTheme(name, ({ SIZES }: *) => ({
 
 const BreadcrumbsTag = createStyledTag(name);
 
-const Breadcrumbs = ({ itemTagName, pathname, routes, matchPath, ...rest }: BreadcrumbsProps) => {
-  const breadcrumbs = getBreadcrumbs(pathname, routes, matchPath);
+class Breadcrumbs extends PureComponent<BreadcrumbsProps> {
 
-  return (
-    <BreadcrumbsTag { ...rest }>
-      {
-        React.Children.toArray(
-          breadcrumbs.map((item, index) => (
-            <Fragment>
-              <BreadcrumbsItem to={ item.originalPath } { ...{ ...rest, ...item, tagName: itemTagName } } />
-              { index !== breadcrumbs.length - 1 && <BreadcrumbsDividerTag tagName="span">></BreadcrumbsDividerTag> }
-            </Fragment>
-          )),
-        )
-      }
-    </BreadcrumbsTag>
-  );
-};
+  render() {
+    const { itemTagName, pathname, routes, matchPath, ...rest } = this.props;
+    const breadcrumbs = getBreadcrumbs(pathname, routes, matchPath);
+
+    return (
+      <BreadcrumbsTag { ...rest }>
+        {
+          React.Children.toArray(
+            breadcrumbs.map((item, index) => (
+              <Fragment>
+                <BreadcrumbsItem to={ item.originalPath } { ...{ ...rest, ...item, tagName: itemTagName } } />
+                { index !== breadcrumbs.length - 1 && <BreadcrumbsDividerTag tagName="span">></BreadcrumbsDividerTag> }
+              </Fragment>
+            )),
+          )
+        }
+      </BreadcrumbsTag>
+    );
+  }
+}
 
 export { Breadcrumbs, theme };

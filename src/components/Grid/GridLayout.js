@@ -122,11 +122,13 @@ const StyledTag = createStyledTag(name, (props) => {
   return style;
 });
 
-function GridLayout({
-  children,
-  ...rest
-  }: GridLayoutProps) {
-  return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
+class GridLayout extends React.PureComponent<GridLayoutProps> {
+
+  render() {
+    const { children, ...rest } = this.props;
+
+    return <StyledTag { ...rest } tagName="div">{ children }</StyledTag>;
+  }
 }
 
 export { GridLayout, theme };

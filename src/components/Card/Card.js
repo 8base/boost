@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { PureComponent } from 'react';
 
 import { CardHeader, cardHeaderTheme } from './CardHeader';
 import { CardBody, cardBodyTheme } from './CardBody';
@@ -24,22 +24,31 @@ const theme = {
   ...cardFooterTheme,
 };
 
-const Card = ({ children, paddingOuter, padding, ...rest }: CardPlateProps) => (
-  <Paper { ...rest } padding={ paddingOuter }>
-    {
-      typeof children === 'function'
-        ?
-        children(rest)
-        :
-        children
-    }
-  </Paper>
-);
+
+class Card extends PureComponent<CardPlateProps> {
+
+  static Header = CardHeader;
+  static Body = CardBody;
+  static Section = CardSection;
+  static Footer = CardFooter;
 
 
-Card.Header = CardHeader;
-Card.Body = CardBody;
-Card.Section = CardSection;
-Card.Footer = CardFooter;
+  render() {
+    const { children, paddingOuter, ...rest } = this.props;
+
+    return (
+      <Paper { ...rest } padding={ paddingOuter }>
+        {
+          typeof children === 'function'
+            ?
+            children(rest)
+            :
+            children
+        }
+      </Paper>
+    );
+  }
+}
+
 
 export { Card, theme };

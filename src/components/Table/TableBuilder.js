@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import fp from 'lodash/fp';
 import { TableHeader } from './TableHeader';
@@ -55,7 +55,7 @@ type TableBulderProps = {
   renderHeadCell?: (column: ColumnType) => React$Node,
 }
 
-class TableBuilder extends Component<TableBulderProps> {
+class TableBuilder extends PureComponent<TableBulderProps> {
 
   static defaultProps = {
     columns: [],

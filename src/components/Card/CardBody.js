@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { PureComponent } from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
 import type { PropSizes } from '../../types';
@@ -35,14 +35,21 @@ const CardBodyTag = createStyledTag(name, (props: CardBodyProps) => ({
   overflow: props.scrollable && 'auto',
 }));
 
-const CardBody = ({ children, ...rest }: CardBodyProps) => (
-  <CardBodyTag { ...rest } tagName="div">
-    { children }
-  </CardBodyTag>
-);
+class CardBody extends PureComponent<CardBodyProps> {
+  static defaultProps = {
+    padding: 'md',
+  };
 
-CardBody.defaultProps = {
-  padding: 'md',
-};
+  render() {
+    const { children, ...rest } = this.props;
+
+    return (
+      <CardBodyTag { ...rest } tagName="div">
+        { children }
+      </CardBodyTag>
+    );
+  }
+}
+
 
 export { cardBodyTheme, CardBody };

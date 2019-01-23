@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import pickBy from 'lodash/pickBy';
 
 type TagProps = {|
@@ -97,12 +97,15 @@ const HTML_TAGS = [
 
 const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));
 
-function Tag({ tagName, ...props }: TagProps) {
-  const TagComponent = tagName;
 
-  const collectedProps = HTML_TAGS.indexOf(tagName) === -1 ? props : collectProps(props);
+class Tag extends PureComponent<TagProps> {
+  render() {
+    const { tagName: TagComponent, ...props } = this.props;
 
-  return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
+    const collectedProps = HTML_TAGS.indexOf(TagComponent) === -1 ? props : collectProps(props);
+
+    return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
+  }
 }
 
 Tag.defaultProps = {

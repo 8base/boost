@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { createStyledTag, createComponentTheme } from '../../utils';
 import type { PropSizes } from '../../types';
 
@@ -34,20 +34,22 @@ const CardHeaderTag = createStyledTag(name, {
   height: '64px',
 });
 
-const CardHeader = ({
-  children,
-  ...rest
-  }: CardHeaderProps) => {
-  return (
-    <CardHeaderTag { ...rest } tagName="div">
-      { children }
-    </CardHeaderTag>
-  );
-};
 
-CardHeader.defaultProps = {
-  padding: 'md',
-};
+class CardHeader extends PureComponent<CardHeaderProps> {
+  static defaultProps = {
+    padding: 'md',
+  };
+
+  render() {
+    const { children, ...rest } = this.props;
+
+    return (
+      <CardHeaderTag { ...rest } tagName="div">
+        { children }
+      </CardHeaderTag>
+    );
+  }
+}
 
 
 export { cardHeaderTheme, CardHeader };

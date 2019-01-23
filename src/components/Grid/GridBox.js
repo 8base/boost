@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
 import { createStyledTag, createComponentTheme } from '../../utils';
 
 type GridBoxProps = {|
   children?: React$Node,
+  /** grid-box direction */
   direction?: 'column' | 'row',
+  /** when true then set box scrollable */
   scrollable?: boolean,
   /** align-self css rule */
   alignSelf?: 'start' | 'end' | 'center' | 'stretch',
@@ -101,23 +103,23 @@ const GridBoxTag = createStyledTag(name, (props) => {
 
 GridBoxTag.displayName = 'GridBoxTag';
 
-function GridBox({
-  children,
-  scrollable,
-  direction = 'column',
-  ...rest
-  }: GridBoxProps) {
-  if (scrollable) {
+class GridBox extends PureComponent<GridBoxProps> {
+
+  render() {
+    const { children, scrollable, direction = 'column', ...rest } = this.props;
+
+    if (scrollable) {
+      return (
+        <GridBoxTag { ...rest } tagName="div" direction={ direction }>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: direction }}>{ children }</div>
+        </GridBoxTag>
+      );
+    }
+
     return (
-      <GridBoxTag { ...rest } tagName="div" direction={ direction }>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: direction }}>{ children }</div>
-      </GridBoxTag>
+      <GridBoxTag { ...rest } tagName="div" direction={ direction }>{ children }</GridBoxTag>
     );
   }
-
-  return (
-    <GridBoxTag { ...rest } tagName="div" direction={ direction }>{ children }</GridBoxTag>
-  );
 }
 
 export { GridBox, theme };

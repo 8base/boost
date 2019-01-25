@@ -1,1 +1,4 @@
-export { Loader, theme } from './Loader';
+// @flow
+
+export { Loader } from './Loader';
+export { theme } from './Loader.theme';

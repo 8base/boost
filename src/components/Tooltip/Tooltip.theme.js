@@ -1,8 +1,9 @@
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'tooltip';
 
-const tooltipMessageTheme = createComponentTheme(`${name}Message`, ({ COLORS, SIZES }: *) => ({
+const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES }: *) => ({
   root: {
     padding: '12px',
     backgroundColor: COLORS.BLACK,
@@ -13,13 +14,13 @@ const tooltipMessageTheme = createComponentTheme(`${name}Message`, ({ COLORS, SI
   },
 }));
 
+const [TooltipTargetTag, themeTarget] = createThemeTag(`${name}Target`);
+
 const theme = {
   ...tooltipMessageTheme,
+  ...themeTarget,
 };
 
-const TooltipMessageTag = createStyledTag(`${name}Message`);
-
-const TooltipTargetTag = createStyledTag(`${name}Target`);
 
 export {
   theme,

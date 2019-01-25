@@ -42,20 +42,27 @@ type FlexLayoutProps = {
   direction?: 'row' | 'column',
 }
 
-/** component provides interface to render flex layout */
 const FlexLayout = ({ tagName, ...rest }: FlexLayoutProps) => {
   return <FlexLayoutTag { ...rest } tagName={ tagName } />;
 };
 
 FlexLayout.defaultProps = {
-  gap: 'sm',
   tagName: 'div',
+  gap: 'sm',
+  direction: 'row',
+  justifyContent: 'start',
+  alignContent: 'start',
+  alignItems: 'start',
+  offestX: 'none',
+  offestY: 'none',
+  cursor: 'inherit',
+  stretch: false,
+  grow: false,
+  growChildren: false,
 };
 
-/** component provides interface to render flex row */
 const Row = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="row" />;
 
-/** component provides interface to render flex column */
 const Column = (props: FlexLayoutCommonProps) => <FlexLayout { ...props } direction="column" />;
 
 export { Row, Column, FlexLayout };

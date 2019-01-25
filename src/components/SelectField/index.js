@@ -1,1 +1,1 @@
-export { SelectField, theme } from './SelectField';
+export { SelectField } from './SelectField';

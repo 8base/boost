@@ -1,3 +1,4 @@
 // @flow
 
-export * from './Button';
+export { Button } from './Button';
+export { theme } from './Button.theme';

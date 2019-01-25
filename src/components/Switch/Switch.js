@@ -24,8 +24,8 @@ class Switch extends React.Component<SwitchProps> {
 
     return (
       <SwitchTag tagName="label" { ...rest }>
-        <SwitchInputTag tagName="input" type="checkbox" name={ name } checked={ value } onChange={ this.onChange } />
-        <SwitchApperanceTag value={ value } />
+        <SwitchInputTag modifiers={ rest } tagName="input" type="checkbox" name={ name } checked={ value } onChange={ this.onChange } />
+        <SwitchApperanceTag modifiers={ rest } value={ value } />
         { label && <SwitchLabelTag>{ label }</SwitchLabelTag> }
       </SwitchTag>
     );

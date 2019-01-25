@@ -1,3 +1,4 @@
 // @flow
 
-export { Paper, theme } from './Paper';
+export { Paper } from './Paper';
+export { theme } from './Paper.theme';

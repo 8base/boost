@@ -1,14 +1,14 @@
 // @flow
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'breadcrumbsDivider';
 
-const theme = createComponentTheme(name, {
+
+const [BreadcrumbsDividerTag, theme] = createThemeTag(name, {
   root: {
     padding: '0 8px',
   },
 });
-
-const BreadcrumbsDividerTag = createStyledTag(name, {});
 
 export { BreadcrumbsDividerTag, theme };

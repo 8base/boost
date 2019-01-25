@@ -3,7 +3,8 @@
 import React, { PureComponent } from 'react';
 import fp from 'lodash/fp';
 import { compose, setDisplayName } from 'recompose';
-import { createStyledTag } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { withTabsContext } from './TabsContext';
 
 /**
@@ -19,7 +20,7 @@ type TabTitleProps = {|
   tabId: string,
 |}
 
-const TabTitleTag = createStyledTag('tabTitle', {});
+const [TabTitleTag] = createThemeTag('tabTitle', {});
 
 const tabTitleEnhancer: HOC<*, TabTitleProps> = compose(
   (setDisplayName: any)('TabTitle'),

@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Portal } from 'react-portal';
-import { injectGlobal } from 'emotion';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { ModalTag, OverlayTag } from './Modal.theme';
 import { withModalState } from './withModalState';
 
 type ModalProps = {
@@ -18,48 +17,6 @@ type ModalState = {};
 
 const ESCAPE_KEY = 'Escape';
 
-const MODAL_BLUR_CLASS = 'modal-blur';
-
-injectGlobal`
-  body.${MODAL_BLUR_CLASS} {
-    #root {
-      filter: blur(3px);
-    }
-  }
-`;
-
-const name = 'modal';
-
-const themeOverlay = createComponentTheme(`${name}Overlay`, ({ Z_INDEX }: *) => ({
-  root: {
-    background: 'rgba(60, 87, 118, 0.6)',
-    zIndex: Z_INDEX.MODAL,
-  },
-}));
-
-const theme = {
-  ...themeOverlay,
-};
-
-const OverlayTag = createStyledTag(`${name}Overlay`, {
-  alignItems: 'center',
-  bottom: 0,
-  display: 'flex',
-  justifyContent: 'center',
-  left: 0,
-  position: 'fixed',
-  right: 0,
-  top: 0,
-});
-OverlayTag.displayName = 'OverlayTag';
-
-const ModalTag = createStyledTag(name, {
-  height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
 
 class Modal extends PureComponent<ModalProps, ModalState> {
   static openedModals: number = 0;
@@ -116,8 +73,17 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     return (
       <If condition={ isOpen }>
         <Portal>
-          <OverlayTag tagName="div" onMouseDown={ this.onOverlayMouseDown } data-e2e-id={ rest['data-e2e-id'] }>
-            <ModalTag tagName="div" onMouseDown={ this.onModalMouseDown }>
+          <OverlayTag
+            modifiers={ rest }
+            tagName="div"
+            onMouseDown={ this.onOverlayMouseDown }
+            data-e2e-id={ rest['data-e2e-id'] }
+          >
+            <ModalTag
+              modifiers={ rest }
+              tagName="div"
+              onMouseDown={ this.onModalMouseDown }
+            >
               { typeof children === 'function' ? children(rest) : children }
             </ModalTag>
           </OverlayTag>
@@ -129,5 +95,5 @@ class Modal extends PureComponent<ModalProps, ModalState> {
 
 Modal = withModalState(Modal);
 
-export { Modal, theme };
+export { Modal };
 

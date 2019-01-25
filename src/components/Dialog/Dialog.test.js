@@ -2,7 +2,9 @@
 
 import * as React from 'react';
 import { Dialog } from './Dialog';
+import { HeaderCloseTag } from './Dialog.theme';
 import { Modal } from '../Modal';
+import { OverlayTag } from '../Modal/Modal.theme';
 
 describe('<Dialog />', () => {
   it('should render dialog content', () => {
@@ -31,7 +33,7 @@ describe('<Dialog />', () => {
       </Dialog>,
     );
 
-    wrapper.find('CloseTag').simulate('click');
+    wrapper.find(HeaderCloseTag).simulate('click');
     expect(onClose).toHaveBeenCalled();
   });
 
@@ -72,7 +74,7 @@ describe('<Dialog />', () => {
       </Dialog>,
     );
 
-    wrapper.find('OverlayTag').simulate('mouseDown');
+    wrapper.find(OverlayTag).simulate('mouseDown');
     expect(onClose).toHaveBeenCalled();
   });
 
@@ -85,7 +87,7 @@ describe('<Dialog />', () => {
       </Dialog>,
     );
 
-    wrapper.find('OverlayTag').simulate('mouseDown');
+    wrapper.find(OverlayTag).simulate('mouseDown');
     expect(onClose).toHaveBeenCalled();
   });
 
@@ -98,7 +100,7 @@ describe('<Dialog />', () => {
       </Dialog>,
     );
 
-    wrapper.find('OverlayTag').simulate('mouseDown');
+    wrapper.find(OverlayTag).simulate('mouseDown');
     expect(onClose).not.toHaveBeenCalled();
   });
 });

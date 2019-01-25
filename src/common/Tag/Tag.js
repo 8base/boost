@@ -33,7 +33,7 @@ type TagProps = {|
   tagName: string | React$Component<*>,
   to?: string,
   type?: string,
-  value?: number | string,
+  value?: number | string | boolean,
 |};
 
 const COLLECTED_PROPS = [
@@ -97,19 +97,18 @@ const HTML_TAGS = [
 
 const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));
 
-
 class Tag extends PureComponent<TagProps> {
+  static defaultProps = {
+    tagName: 'div',
+  };
+
   render() {
-    const { tagName: TagComponent, ...props } = this.props;
+    const { tagName: TagComponent, insideRef, modifiers, ...props } = this.props;
 
     const collectedProps = HTML_TAGS.indexOf(TagComponent) === -1 ? props : collectProps(props);
 
-    return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
+    return <TagComponent { ...collectedProps } ref={ insideRef } />;
   }
 }
-
-Tag.defaultProps = {
-  tagName: 'div',
-};
 
 export { Tag };

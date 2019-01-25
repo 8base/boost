@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navigation /> should shallow navigation 1`] = `
-<Styled(navigationPlate)
+<Boost(navigation)
   color="GREEN"
   tagName="nav"
 >
@@ -13,25 +13,38 @@ exports[`<Navigation /> should shallow navigation 1`] = `
     label="Jobs"
     tagName="a"
   />
-</Styled(navigationPlate)>
+</Boost(navigation)>
 `;
 
 exports[`<Navigation /> should shallow navigation item 1`] = `
-<Styled(navigationItem)
+<Boost(navigationItem)
   href="/jobs"
   tagName="a"
 >
-  <Styled(navigationItemIcon)>
+  <Boost(navigationItemIcon)
+    modifiers={
+      Object {
+        "href": "/jobs",
+        "tagName": "a",
+      }
+    }
+  >
     <Icon
       color="WHITE"
       name="Trashcan"
       size="md"
     />
-  </Styled(navigationItemIcon)>
-  <Styled(navigationItemLabel)
+  </Boost(navigationItemIcon)>
+  <Boost(navigationItemLabel)
     className="NavigationItem-label"
+    modifiers={
+      Object {
+        "href": "/jobs",
+        "tagName": "a",
+      }
+    }
   >
     Jobs
-  </Styled(navigationItemLabel)>
-</Styled(navigationItem)>
+  </Boost(navigationItemLabel)>
+</Boost(navigationItem)>
 `;

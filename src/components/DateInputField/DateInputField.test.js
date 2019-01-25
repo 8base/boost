@@ -5,7 +5,10 @@ import { DateInputField } from './DateInputField';
 describe('<DateInputField />', () => {
   it('should pass props to the children', () => {
     const wrapper = shallow(
-      <DateInputField label="Date" input={{ value: '2018-11-07' }} />,
+      <DateInputField
+        label="Date"
+        input={{ value: '2018-11-07', onChange: jest.fn() }}
+      />,
     );
 
     expect(wrapper).toMatchInlineSnapshot(`
@@ -14,6 +17,7 @@ describe('<DateInputField />', () => {
   hideErrorLabel={false}
   input={
     Object {
+      "onChange": [MockFunction],
       "value": "2018-11-07",
     }
   }
@@ -21,6 +25,7 @@ describe('<DateInputField />', () => {
   stretch={true}
 >
   <DateInput
+    onChange={[MockFunction]}
     stretch={true}
     value="2018-11-07"
   />

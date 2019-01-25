@@ -1,7 +1,8 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type TableActionProps = {
   children: React$Node,
@@ -9,8 +10,14 @@ type TableActionProps = {
 
 const name = 'tableAction';
 
-const theme = createComponentTheme(name, {
+const [TableActionTag, themeAction] = createThemeTag(name, {
   root: {
+    position: 'sticky',
+    bottom: 0,
+    display: 'flex',
+    justifyContent: 'center',
+    pointerEvents: 'none',
+
     paddingTop: '16px',
     paddingBottom: '16px',
   },
@@ -20,22 +27,21 @@ const theme = createComponentTheme(name, {
   },
 });
 
-const TableActionTag = createStyledTag(name, {
-  position: 'sticky',
-  bottom: 0,
-  display: 'flex',
-  justifyContent: 'center',
-  pointerEvents: 'none',
+const [TableActionInnerTag, themeInner] = createThemeTag(`${name}Inner`, {
+  root: {
+    pointerEvents: 'all',
+  },
 });
 
-const TableActionInnerTag = createStyledTag(`${name}Inner`, {
-  pointerEvents: 'all',
-});
+const theme = {
+  ...themeAction,
+  ...themeInner,
+};
 
-function TableAction({ children }: TableActionProps) {
+function TableAction({ children, ...rest }: TableActionProps) {
   return (
-    <TableActionTag tagName="div">
-      <TableActionInnerTag>
+    <TableActionTag tagName="div" { ...rest }>
+      <TableActionInnerTag modifiers={ rest }>
         { children }
       </TableActionInnerTag>
     </TableActionTag>

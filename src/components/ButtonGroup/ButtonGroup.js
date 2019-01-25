@@ -2,34 +2,12 @@
 
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { ButtonGroupTag } from './ButtonGroup.theme';
 
 type ButtonGroupProps = {|
   children: React$Node,
 |};
 
-const name = 'buttonGroup';
-
-const theme = createComponentTheme(name, {});
-
-const ButtonGroupTag = createStyledTag(name, props => ({
-  display: 'flex',
-  flexDirection: props.direction,
-
-  '& > *': {
-    '&:not(:last-child)': {
-      borderRightColor: 'none',
-      borderTopRightRadius: 0,
-      borderBottomRightRadius: 0,
-    },
-    '&:not(:first-child)': {
-      borderLeftColor: 'none',
-      borderTopLeftRadius: 0,
-      borderBottomLeftRadius: 0,
-      marginLeft: '-1px',
-    },
-  },
-}));
 
 const ButtonGroup = ({ children, ...rest }: ButtonGroupProps) => {
   return (
@@ -39,4 +17,4 @@ const ButtonGroup = ({ children, ...rest }: ButtonGroupProps) => {
   );
 };
 
-export { ButtonGroup, theme };
+export { ButtonGroup };

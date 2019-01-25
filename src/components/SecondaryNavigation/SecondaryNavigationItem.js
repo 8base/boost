@@ -11,13 +11,12 @@ import {
 
 type SecondaryNavigationItemProps = {
   label: string,
-  theme: Object,
 };
 
-export const SecondaryNavigationItem = ({ label, theme, ...rest }: SecondaryNavigationItemProps) => (
+export const SecondaryNavigationItem = ({ label, ...rest }: SecondaryNavigationItemProps) => (
   <SecondaryNavigationItemTag { ...rest } >
-    <SecondaryNavigationItemBarTag theme={ theme } />
-    <SecondaryNavigationItemLabelTag theme={ theme } >
+    <SecondaryNavigationItemBarTag modifiers={ rest } />
+    <SecondaryNavigationItemLabelTag modifiers={ rest } >
       <Text>
         { label }
       </Text>

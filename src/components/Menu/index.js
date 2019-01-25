@@ -1,3 +1,4 @@
 // @flow
 
-export { Menu, theme } from './Menu';
+export { Menu } from './Menu';
+export { theme } from './Menu.theme';

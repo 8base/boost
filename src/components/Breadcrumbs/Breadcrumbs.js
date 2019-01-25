@@ -2,7 +2,8 @@
 /* eslint-disable react/jsx-key */
 import React, { Fragment, PureComponent } from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import type { BreadcrumbsRoutes, BreadcrumbsMatchPath } from './Breadcrumbs.types';
 import { getBreadcrumbs } from './Breadcrumbs.utils';
 import { BreadcrumbsItem } from './BreadcrumbsItem';
@@ -21,17 +22,11 @@ type BreadcrumbsProps = {
 
 const name = 'breadcrumbs';
 
-const theme = createComponentTheme(name, ({ SIZES }: *) => ({
+const [BreadcrumbsTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
   root: {
     fontSize: SIZES.SUBTITLE_1,
   },
-  modifiers: {
-  },
-  defaults: {
-  },
 }));
-
-const BreadcrumbsTag = createStyledTag(name);
 
 class Breadcrumbs extends PureComponent<BreadcrumbsProps> {
 

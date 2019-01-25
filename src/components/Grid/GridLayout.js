@@ -1,7 +1,8 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type GridLayoutProps = {|
   children?: React$Node,
@@ -25,7 +26,50 @@ type GridLayoutProps = {|
 
 const name = 'gridLayout';
 
-const theme = createComponentTheme(name, {
+const [StyledTag, theme] = createThemeTag(name, {
+  root: (props) => {
+    const style = props.style || {};
+
+    style.display = props.inline ? 'inline-grid' : 'grid';
+
+    if (props.columns) {
+      style.gridTemplateColumns = props.columns;
+    }
+
+    if (props.rows) {
+      style.gridTemplateRows = props.rows;
+    }
+
+    if (props.autoColumns) {
+      style.gridAutoColumns = props.autoColumns;
+    }
+
+    if (props.areas) {
+      style.gridTemplateAreas = props.areas.map((item) => `"${item.join(' ')}"`).join(' ');
+    }
+
+    if (props.justifyContent) {
+      style.justifyContent = props.justifyContent;
+    }
+
+    if (props.alignContent) {
+      style.alignContent = props.alignContent;
+    }
+
+    if (props.justifyItems) {
+      style.justifyItems = props.justifyItems;
+    }
+
+    if (props.alignItems) {
+      style.alignItems = props.alignItems;
+    }
+
+    if (props.autoFlow) {
+      style.gridAutoFlow = props.autoFlow;
+    }
+
+    return style;
+  },
   modifiers: {
     gap: {
       xs: {
@@ -49,7 +93,7 @@ const theme = createComponentTheme(name, {
       none: {},
     },
     padding: {
-      none: { },
+      none: {},
       xs: {
         padding: '4px',
       },
@@ -72,57 +116,13 @@ const theme = createComponentTheme(name, {
       maxWidth: '100%',
     },
   },
-  defaults: {
-    gap: 'none',
-    padding: 'none',
-  },
-});
-
-const StyledTag = createStyledTag(name, (props) => {
-  const style = props.style || {};
-
-  style.display = props.inline ? 'inline-grid' : 'grid';
-
-  if (props.columns) {
-    style.gridTemplateColumns = props.columns;
-  }
-
-  if (props.rows) {
-    style.gridTemplateRows = props.rows;
-  }
-
-  if (props.autoColumns) {
-    style.gridAutoColumns = props.autoColumns;
-  }
-
-  if (props.areas) {
-    style.gridTemplateAreas = props.areas.map((item) => `"${item.join(' ')}"`).join(' ');
-  }
-
-  if (props.justifyContent) {
-    style.justifyContent = props.justifyContent;
-  }
-
-  if (props.alignContent) {
-    style.alignContent = props.alignContent;
-  }
-
-  if (props.justifyItems) {
-    style.justifyItems = props.justifyItems;
-  }
-
-  if (props.alignItems) {
-    style.alignItems = props.alignItems;
-  }
-
-  if (props.autoFlow) {
-    style.gridAutoFlow = props.autoFlow;
-  }
-
-  return style;
 });
 
 class GridLayout extends React.PureComponent<GridLayoutProps> {
+  static defaultProps = {
+    gap: 'none',
+    padding: 'none',
+  };
 
   render() {
     const { children, ...rest } = this.props;

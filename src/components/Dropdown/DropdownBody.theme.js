@@ -1,11 +1,12 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import type { PropSizes } from '../../types';
 
 const name = 'dropdownBody';
 
-const theme = createComponentTheme(name, {
+const [DropdownBodyTag, theme] = createThemeTag(name, {
   root: {
     borderRadius: '4px',
   },
@@ -14,7 +15,6 @@ const theme = createComponentTheme(name, {
     stretch: {
       width: '100%',
     },
-
     background: {
       white: {
         backgroundColor: '#fff',
@@ -39,11 +39,6 @@ const theme = createComponentTheme(name, {
       xl: { padding: '32px' },
     },
   },
-  defaults: {
-    background: 'none',
-    padding: 'none',
-    borderRadius: 'md',
-  },
 });
 
 const offsetSizes: { [PropSizes]: string } = {
@@ -55,8 +50,5 @@ const offsetSizes: { [PropSizes]: string } = {
   xl: '0, 24px',
 };
 
-const DropdownBodyTag = createStyledTag(name, {});
 
-const defaultTheme = theme[name].defaults;
-
-export { theme, defaultTheme, offsetSizes, DropdownBodyTag };
+export { theme, offsetSizes, DropdownBodyTag };

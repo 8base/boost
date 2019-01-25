@@ -1,1 +1,1 @@
-export { InputField, theme } from './InputField';
+export { InputField } from './InputField';

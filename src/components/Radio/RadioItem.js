@@ -51,22 +51,21 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
       label,
       value,
       selectedValue,
-      color,
-      disabled,
       equalsFunc,
-      hasError,
+      onChange,
+      ...rest
     } = this.props;
     const hasLabel = !!label;
     const checked = value !== undefined && equalsFunc && equalsFunc({ selectedValue, value });
 
     return (
-      <RadioWrapperTag tagName="label">
-        <RadioCircleTag tagName="div" hasError={ hasError }>
-          <RadioCircleInnerTag tagName="div" color={ color } checked={ checked } disabled={ disabled } />
+      <RadioWrapperTag tagName="label" { ...rest }>
+        <RadioCircleTag modifiers={ rest } tagName="div" >
+          <RadioCircleInnerTag modifiers={ rest } tagName="div" checked={ checked } />
         </RadioCircleTag>
-        <RadioTag name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
+        <RadioTag modifiers={ rest } name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
         <If condition={ hasLabel }>
-          <RadioTextTag tagName="div">{ label }</RadioTextTag>
+          <RadioTextTag modifiers={ rest } tagName="div">{ label }</RadioTextTag>
         </If>
       </RadioWrapperTag>
     );

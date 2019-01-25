@@ -1,7 +1,8 @@
 // @flow
 
 import React from 'react';
-import { createComponentTheme, createStyledTag } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import * as formUtils from '../../utils/forms';
 
 import type { MetaType } from '../../types';
@@ -17,66 +18,69 @@ type FormFieldProps = {
 
 const name = 'formField';
 
-const themeLabel = createComponentTheme(`${name}Label`, ({ COLORS, SIZES }: *) => ({
-  root: {
+
+const [FormFieldTag, themeField] = createThemeTag(name, {
+  root: props => ({
+    position: 'relative',
+    display: 'inline-flex',
+    width: props.stretch ? '100%' : 'auto',
+  }),
+});
+
+const [ControlLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+  root: props => ({
     fontSize: SIZES.OVERLINE_1,
     lineHeight: SIZES.OVERLINE_1_LH,
     color: COLORS.SECONDARY_TEXT_COLOR,
-  },
+    marginLeft: props.direction === 'row' ? '8px' : 0,
+  }),
 }));
 
-const themeError = createComponentTheme(`${name}Error`, ({ COLORS, SIZES }: *) => ({
+const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, SIZES }: *) => ({
   root: {
+    position: 'relative',
+    top: '-2px',
+
     fontSize: SIZES.OVERLINE_2,
     lineHeight: SIZES.OVERLINE_2_LH,
     color: COLORS.DANGER,
   },
 }));
 
+
+const [FormFieldDirectionTag, themeDirection] = createThemeTag(`${name}Direction`, {
+  root: props => ({
+    display: 'inline-flex',
+    flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
+    alignItems: props.direction === 'row' ? 'center' : 'flex-start',
+    justifyContent: props.direction === 'row' ? 'flex-end' : 'flex-start',
+    width: props.stretch ? '100%' : 'auto',
+  }),
+});
+
+const [ControlErrorWrapperTag, themeErrorWrapper] = createThemeTag(`${name}ErrorWrapper`, {
+  root: {
+    display: 'block',
+    position: 'absolute',
+    bottom: 0,
+    height: 0,
+  },
+});
+
+
 const theme = {
+  ...themeErrorWrapper,
+  ...themeDirection,
   ...themeLabel,
   ...themeError,
+  ...themeField,
 };
 
-const FormFieldTag = createStyledTag(name, props => ({
-  position: 'relative',
-  display: 'inline-flex',
-  width: props.stretch ? '100%' : 'auto',
-}));
-
-const FormFieldDirectionTag = createStyledTag(`${name}Direction`, props => ({
-  display: 'inline-flex',
-  flexDirection: props.direction === 'row' ? 'row-reverse' : 'column',
-  alignItems: props.direction === 'row' ? 'center' : 'flex-start',
-  justifyContent: props.direction === 'row' ? 'flex-end' : 'flex-start',
-  width: props.stretch ? '100%' : 'auto',
-}));
-
-const ControlErrorWrapperTag = createStyledTag(`${name}ErrorWrapper`, {
-  display: 'block',
-  position: 'absolute',
-  bottom: 0,
-  height: 0,
-});
-
-
-export const ControlErrorTag = createStyledTag(`${name}Error`, {
-  position: 'relative',
-  top: '-2px',
-});
-ControlErrorTag.displayName = 'ControlErrorTag';
-
-const ControlLabelTag = createStyledTag(`${name}Label`, props => ({
-  marginLeft: props.direction === 'row' ? '8px' : 0,
-}));
-ControlLabelTag.displayName = 'ControlLabelTag ';
 
 const FormField = ({
   meta = {},
   label,
   children,
-  direction,
-  stretch,
   hideErrorLabel,
   ...rest
   }: FormFieldProps) => {
@@ -86,18 +90,18 @@ const FormField = ({
   const hasLabel = !!label;
 
   return (
-    <FormFieldTag { ...rest } stretch={ stretch } tagName="div">
-      <FormFieldDirectionTag direction={ direction } stretch={ stretch } tagName="div">
+    <FormFieldTag { ...rest } tagName="div">
+      <FormFieldDirectionTag modifiers={ rest } tagName="div">
         <If condition={ hasLabel }>
-          <ControlLabelTag direction={ direction } tagName="div">
+          <ControlLabelTag modifiers={ rest } tagName="div">
             { label }
           </ControlLabelTag>
         </If>
         { children }
       </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
-        <ControlErrorWrapperTag tagName="div">
-          <ControlErrorTag role="alert" tagName="span">{ error }</ControlErrorTag>
+        <ControlErrorWrapperTag modifiers={ rest } tagName="div">
+          <ControlErrorTag modifiers={ rest } role="alert" tagName="span">{ error }</ControlErrorTag>
         </ControlErrorWrapperTag>
       </If>
     </FormFieldTag>
@@ -110,5 +114,5 @@ FormField.defaultProps = {
   direction: 'column',
 };
 
-export { FormField, theme };
+export { FormField, theme, ControlLabelTag, ControlErrorTag };
 

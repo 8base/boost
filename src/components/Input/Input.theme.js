@@ -1,10 +1,36 @@
 // @flow
-import { createStyledTag, createComponentTheme, getThemeStyle, getThemeColors } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'input';
 
-const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
-  root: {
+
+const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * => ({
+  root: props => ({
+    width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
+    outline: 'none',
+    paddingLeft: props.hasLeftIcon ? '36px' : '8px',
+    paddingRight: props.hasRightIcon ? '48px' : '16px',
+
+    backgroundColor: (props.disabled || props.readOnly)
+      ? COLORS.LIGHT_GRAY5
+      : COLORS.WHITE,
+
+    '&:focus': {
+      borderColor: (props.disabled || props.readOnly)
+        ? COLORS.PRIMARY_BORDER_COLOR
+        : COLORS.PRIMARY,
+    },
+
+    '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
+      '-webkit-appearance': 'none',
+      margin: 0,
+    },
+
+    '&::-ms-clear': {
+      display: 'none',
+    },
+
     color: COLORS.PRIMARY_TEXT_COLOR,
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
@@ -15,7 +41,7 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
     '&::placeholder': {
       color: COLORS.PLACEHOLDER_COLOR,
     },
-  },
+  }),
 
   modifiers: {
     align: {
@@ -37,28 +63,28 @@ const theme = createComponentTheme(name, ({ COLORS, SIZES }: *): * => ({
       borderColor: `${COLORS.DANGER} !important`,
     },
   },
-
-  defaults: {
-    kind: 'app',
-  },
 }));
 
-const InputWrapperTag = createStyledTag(`${name}Wrapper`, props => ({
-  display: 'inline-flex',
-  position: 'relative',
-  width: props.stretch && !props.width ? '100%' : 'auto',
-}));
+const [InputWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
+  root: props => ({
+    display: 'inline-flex',
+    position: 'relative',
+    width: props.stretch && !props.width ? '100%' : 'auto',
+  }),
+});
 
-const InputIndicatorTag = createStyledTag(`${name}Indicator`, props => ({
-  display: props.hasRightIcon ? 'none' : 'block',
-  position: 'absolute',
-  right: '8px',
-  top: '50%',
-  transform: 'translateY(-50%)',
-  width: '6px',
-  height: '6px',
-  backgroundColor: getThemeColors(props).DANGER,
-  borderRadius: '50%',
+const [InputIndicatorTag, themeIndicator] = createThemeTag(`${name}Indicator`, ({ COLORS }: *) => ({
+  root: props => ({
+    display: props.hasRightIcon ? 'none' : 'block',
+    position: 'absolute',
+    right: '8px',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    width: '6px',
+    height: '6px',
+    backgroundColor: COLORS.DANGER,
+    borderRadius: '50%',
+  }),
 }));
 
 const iconsStyles = {
@@ -70,58 +96,42 @@ const iconsStyles = {
   width: '32px',
 };
 
-const InputLeftIconTag = createStyledTag(`${name}LeftIcon`, {
-  ...iconsStyles,
-  left: '8px',
+const [InputLeftIconTag, themeLeftIcon] = createThemeTag(`${name}LeftIcon`, {
+  root: {
+    ...iconsStyles,
+    left: '8px',
+  },
 });
 
-const InputRightIconTag = createStyledTag(`${name}RightIcon`, {
-  ...iconsStyles,
-  right: '8px',
+const [InputRightIconTag, themeRightIcon] = createThemeTag(`${name}RightIcon`, {
+  root: {
+    ...iconsStyles,
+    right: '8px',
+  },
 });
 
-const InputClearButtonTag = createStyledTag(`${name}ClearButton`, (props) => ({
-  position: 'absolute',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100%',
-  right: '8px',
-  color: getThemeColors(props).LIGHT_GRAY1,
-  cursor: 'pointer',
+const [InputClearButtonTag, themeClearButton] = createThemeTag(`${name}ClearButton`, ({ COLORS }: *) => ({
+  root: {
+    position: 'absolute',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    right: '8px',
+    color: COLORS.LIGHT_GRAY1,
+    cursor: 'pointer',
+  },
 }));
 
-const getInputStyles = props => ({
-  width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
-  outline: 'none',
-  paddingLeft: props.hasLeftIcon ? '36px' : '8px',
-  paddingRight: props.hasRightIcon ? '48px' : '16px',
 
-  ...getThemeStyle(props, name).input,
-
-  backgroundColor: (props.disabled || props.readOnly)
-    ? getThemeColors(props).LIGHT_GRAY5
-    : getThemeColors(props).WHITE,
-
-  '&:focus': {
-    borderColor: (props.disabled || props.readOnly)
-      ? getThemeColors(props).PRIMARY_BORDER_COLOR
-      : getThemeColors(props).PRIMARY,
-  },
-
-  '&::-webkit-outer-spin-button, &::-webkit-inner-spin-button': {
-    '-webkit-appearance': 'none',
-    margin: 0,
-  },
-
-  '&::-ms-clear': {
-    display: 'none',
-  },
-});
-
-const InputTag = createStyledTag(name, props => ({
-  ...getInputStyles(props),
-}));
+const theme = {
+  ...themeInput,
+  ...themeClearButton,
+  ...themeRightIcon,
+  ...themeLeftIcon,
+  ...themeIndicator,
+  ...themeWrapper,
+};
 
 export {
   InputWrapperTag,

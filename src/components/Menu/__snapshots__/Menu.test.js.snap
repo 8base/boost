@@ -5,20 +5,20 @@ exports[`<Menu /> should shallow Menu 1`] = `
   borderRadius="all"
   padding="none"
 >
-  <Styled(menu)
+  <Boost(menu)
     tagName="div"
   >
     <Menu.Item>
       Tramman
     </Menu.Item>
-  </Styled(menu)>
+  </Boost(menu)>
 </Paper>
 `;
 
 exports[`<Menu /> should shallow Menu item 1`] = `
-<Styled(menuItem)
+<Boost(menuItem)
   tagName="div"
 >
   Tramman
-</Styled(menuItem)>
+</Boost(menuItem)>
 `;

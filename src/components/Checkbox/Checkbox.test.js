@@ -10,37 +10,63 @@ describe('<Checkbox />', () => {
     );
 
     expect(wrapper).toMatchInlineSnapshot(`
-<Styled(checkboxWrapper)
+<Boost(checkboxWrapper)
+  checked={true}
+  disabled={false}
+  hasError={false}
   tagName="label"
 >
-  <Styled(checkboxSquare)
-    disabled={false}
-    hasError={false}
+  <Boost(checkboxSquare)
+    modifiers={
+      Object {
+        "checked": true,
+        "disabled": false,
+        "hasError": false,
+      }
+    }
     tagName="div"
   >
-    <Styled(checkboxIcon)
-      checked={true}
+    <Boost(checkboxIcon)
+      modifiers={
+        Object {
+          "checked": true,
+          "disabled": false,
+          "hasError": false,
+        }
+      }
       tagName="div"
     >
       <Icon
         name="Check"
         size="xs"
       />
-    </Styled(checkboxIcon)>
-  </Styled(checkboxSquare)>
-  <Styled(checkboxTag)
-    checked={true}
-    disabled={false}
+    </Boost(checkboxIcon)>
+  </Boost(checkboxSquare)>
+  <Boost(checkboxTag)
+    modifiers={
+      Object {
+        "checked": true,
+        "disabled": false,
+        "hasError": false,
+      }
+    }
     onChange={[Function]}
     tagName="input"
     type="checkbox"
   />
-  <Styled(checkboxText)
+  <Boost(checkboxText)
+    modifiers={
+      Object {
+        "checked": true,
+        "disabled": false,
+        "hasError": false,
+      }
+    }
     tagName="div"
   >
     Label
-  </Styled(checkboxText)>
-</Styled(checkboxWrapper)>
+  </Boost(checkboxText)>
+</Boost(checkboxWrapper)>
 `);
   });
 

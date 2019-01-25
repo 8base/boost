@@ -11,6 +11,14 @@ import { StateContainer } from './StateContainer';
 const { EightBaseBoostProvider, createTheme, ...components } = boost;
 
 const theme = createTheme({
+  components: {
+    codeNumeric: {
+      /* root: (props, styles) => ({
+        ...styles,
+        backgroundColor: 'red',
+      }), */
+    },
+  },
 });
 
 const Root = styled('div')`

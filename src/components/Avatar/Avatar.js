@@ -21,15 +21,20 @@ function Avatar({
   return (
     <AvatarTag { ...rest } name={ name } tagName="div">
       {
-        src ? <AvatarImgTag tagName="img" src={ src } /> : (name ? name[0].toUpperCase() : 'A')
+        src ? <AvatarImgTag modifiers={ rest } tagName="img" src={ src } /> : (name ? name[0].toUpperCase() : 'A')
       }
       {
         (onPick && pickLabel)
         &&
-        <AvatarHandleTag onClick={ onPick }>{ pickLabel }</AvatarHandleTag>
+        <AvatarHandleTag modifiers={ rest } onClick={ onPick }>{ pickLabel }</AvatarHandleTag>
       }
     </AvatarTag>
   );
 }
+
+
+Avatar.defaultProps = {
+  size: 'lg',
+};
 
 export { Avatar, theme };

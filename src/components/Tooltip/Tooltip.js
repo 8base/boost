@@ -62,7 +62,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     };
 
     renderTooltipMessage = () => {
-      const { placement, message } = this.props;
+      const { placement, message, ...rest } = this.props;
       const { isOpen } = this.state;
 
       return (
@@ -70,6 +70,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
           { ({ ref, style, placement }) => (
             <If condition={ isOpen }>
               <TooltipMessageTag
+                modifiers={ rest }
                 tagName="div"
                 insideRef={ ref }
                 data-placement={ placement }

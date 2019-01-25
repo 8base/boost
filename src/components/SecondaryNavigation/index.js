@@ -1,1 +1,4 @@
-export { SecondaryNavigation, theme } from './SecondaryNavigation';
+// @flow
+
+export { SecondaryNavigation } from './SecondaryNavigation';
+export { theme } from './SecondaryNavigation.theme';

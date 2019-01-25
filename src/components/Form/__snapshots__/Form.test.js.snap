@@ -1,23 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Form /> should shallow form 1`] = `
-<Styled(form)
+<Boost(form)
   tagName="form"
 >
   <FlexLayout
+    alignContent="start"
     alignItems="stretch"
+    cursor="inherit"
     direction="column"
     gap="md"
+    grow={false}
+    growChildren={false}
+    justifyContent="start"
+    offestX="none"
+    offestY="none"
     stretch={false}
     tagName="div"
   >
     <div />
   </FlexLayout>
-</Styled(form)>
+</Boost(form)>
 `;
 
 exports[`<Form /> should shallow form error 1`] = `
-<Styled(formError)
+<Boost(formError)
   component="form"
   direction="column"
   tagName="div"
@@ -32,37 +39,57 @@ exports[`<Form /> should shallow form error 1`] = `
     />
     <Text
       color="GRAY1"
+      ellipsis={false}
+      weight="normal"
     >
       Some error
     </Text>
   </Row>
-</Styled(formError)>
+</Boost(formError)>
 `;
 
 exports[`<Form /> should shallow form field 1`] = `
-<Styled(formField)
+<Boost(formField)
+  direction="column"
   stretch={true}
   tagName="div"
 >
-  <Styled(formFieldDirection)
-    direction="column"
-    stretch={true}
+  <Boost(formFieldDirection)
+    modifiers={
+      Object {
+        "direction": "column",
+        "stretch": true,
+      }
+    }
     tagName="div"
   >
-    <ControlLabelTag 
-      direction="column"
+    <Boost(formFieldLabel)
+      modifiers={
+        Object {
+          "direction": "column",
+          "stretch": true,
+        }
+      }
       tagName="div"
     >
       Field label
-    </ControlLabelTag >
-  </Styled(formFieldDirection)>
-</Styled(formField)>
+    </Boost(formFieldLabel)>
+  </Boost(formFieldDirection)>
+</Boost(formField)>
 `;
 
 exports[`<Form /> should shallow form section 1`] = `
 <FlexLayout
+  alignContent="start"
+  alignItems="start"
+  cursor="inherit"
   direction="column"
   gap="sm"
+  grow={false}
+  growChildren={false}
+  justifyContent="start"
+  offestX="none"
+  offestY="none"
   stretch={true}
   tagName="div"
 >
@@ -72,9 +99,16 @@ exports[`<Form /> should shallow form section 1`] = `
 
 exports[`<Form /> should shallow form section body 1`] = `
 <FlexLayout
+  alignContent="start"
   alignItems="stretch"
+  cursor="inherit"
   direction="column"
   gap="md"
+  grow={false}
+  growChildren={false}
+  justifyContent="start"
+  offestX="none"
+  offestY="none"
   stretch={true}
   tagName="div"
 >

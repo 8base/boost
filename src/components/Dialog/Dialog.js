@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
 import { Modal } from '../Modal';
 import { Card } from '../Card';
 import type { PropSizes } from '../../types';
 
-import { DialogBody, theme as dialogBodyTheme } from './DialogBody';
-import { DialogFooter, theme as dialogFooterTheme } from './DialogFooter';
-import { DialogHeader, theme as dialogHeaderTheme } from './DialogHeader';
+import { DialogBody } from './DialogBody';
+import { DialogFooter } from './DialogFooter';
+import { DialogHeader } from './DialogHeader';
+import { DialogTag } from './Dialog.theme';
 
 type DialogPlateProps = {|
   children?: React$Node,
@@ -20,48 +20,6 @@ type DialogPlateProps = {|
   tagName?: string,
 |};
 
-const name = 'dialog';
-
-const dialogTheme = createComponentTheme(name, {
-  modifiers: {
-    size: {
-      xs: {
-        width: '300px',
-      },
-      sm: {
-        width: '400px',
-      },
-      md: {
-        width: '500px',
-      },
-      lg: {
-        width: '600px',
-      },
-      xl: {
-        width: '800px',
-      },
-    },
-  },
-  defaults: {
-    size: 'md',
-    padding: 'md',
-  },
-});
-
-const theme = {
-  ...dialogTheme,
-  ...dialogBodyTheme,
-  ...dialogFooterTheme,
-  ...dialogHeaderTheme,
-};
-
-const DialogTag = createStyledTag(name, {
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  maxHeight: '90%',
-  flex: '0 1 90%',
-});
 
 const Dialog = ({
   children,
@@ -102,7 +60,8 @@ const Dialog = ({
 };
 
 Dialog.defaultProps = {
-  ...dialogTheme[name].defaults,
+  size: 'md',
+  padding: 'md',
   tagName: 'div',
 };
 
@@ -112,4 +71,4 @@ Dialog.Body = DialogBody;
 Dialog.Header = DialogHeader;
 Dialog.Footer = DialogFooter;
 
-export { Dialog, theme };
+export { Dialog };

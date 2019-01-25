@@ -1,12 +1,11 @@
 // @flow
 
 import React from 'react';
-import fp from 'lodash/fp';
 
+import { IconWrapperTag, IconFontTag, IconSvgTag } from './Icon.theme';
 import { IconsConsumer } from './IconsProvider';
 import { PALETTE } from '../../theme';
 import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../theme/dsmColors';
-import { createStyledTag, createComponentTheme } from '../../utils';
 import * as glyphs from './glyphs';
 
 type IconProps = {
@@ -22,97 +21,7 @@ type IconProps = {
   className?: string,
 };
 
-const name = 'icon';
-
-const themeWrapper = createComponentTheme(`${name}Wrapper`, {
-  modifiers: {
-    color: {
-      ...fp.mapValues(
-        (color) => ({ color }),
-        {
-          ...PALETTE,
-          ...SECONDARY_COLORS,
-          ...MAIN_BRAND_COLORS,
-        },
-      ),
-    },
-    size: {
-      stretch: {
-        height: '100%',
-        width: '100%',
-      },
-    },
-  },
-});
-
-const themeSvg = createComponentTheme(`${name}Svg`, {
-  modifiers: {
-    size: {
-      xs: {
-        width: '12px',
-        height: '12px',
-      },
-      sm: {
-        width: '18px',
-        height: '18px',
-      },
-      md: {
-        width: '24px',
-        height: '24px',
-      },
-      lg: {
-        width: '36px',
-        height: '36px',
-      },
-      xl: {
-        width: '48px',
-        height: '48px',
-      },
-      stretch: {
-        height: '100%',
-        width: '100%',
-      },
-    },
-  },
-});
-
-const themeFonts = createComponentTheme(`${name}Font`, {
-  modifiers: {
-    size: {
-      xs: {
-        fontSize: '12px',
-      },
-      sm: {
-        fontSize: '18px',
-      },
-      md: {
-        fontSize: '24px',
-      },
-      lg: {
-        fontSize: '36px',
-      },
-      xl: {
-        fontSize: '48px',
-      },
-    },
-  },
-});
-
-const theme = {
-  ...themeWrapper,
-  ...themeFonts,
-  ...themeSvg,
-};
-
-const IconWrapperTag = createStyledTag(`${name}Wrapper`, {
-  display: 'inline-flex',
-  lineHeight: 1,
-});
-
-const IconSvgTag = createStyledTag(`${name}Svg`, {});
-const IconFontTag = createStyledTag(`${name}Font`, {});
-
-const Icon = ({ name, color, className, size, ...rest }: IconProps) => {
+const Icon = ({ name, className, ...rest }: IconProps) => {
 
   return (
     <IconsConsumer>
@@ -120,18 +29,16 @@ const Icon = ({ name, color, className, size, ...rest }: IconProps) => {
         const Glyph: any = glyphs[name] || icons[name];
 
         return (
-          <IconWrapperTag tagName="span" color={ color } size={ size }>
+          <IconWrapperTag tagName="span" { ...rest }>
             <Choose>
               <When condition={ !!className && !Glyph }>
                 <IconFontTag
                   tagName="i"
-                  size={ size }
-                  className={ className }
-                  { ...rest }
+                  modifiers={ rest }
                 />
               </When>
               <When condition={ !className && !!Glyph }>
-                <IconSvgTag tagName="i" size={ size } { ...rest }>
+                <IconSvgTag tagName="i" modifiers={ rest }>
                   <Glyph width="100%" height="100%" />
                 </IconSvgTag>
               </When>
@@ -145,4 +52,4 @@ Icon.defaultProps = {
   size: 'md',
 };
 
-export { Icon, theme };
+export { Icon };

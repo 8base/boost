@@ -3,18 +3,19 @@ import React from 'react';
 
 import { Icon } from '../Icon';
 import { Column } from '../FlexLayout';
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'tableNoData';
 
-const themeIcon = createComponentTheme(`${name}Icon`, {
+const [TableNoDataIconTag, themeIcon] = createThemeTag(`${name}Icon`, {
   root: {
     height: '80px',
   },
 });
 
 
-const themeText = createComponentTheme(`${name}Text`, ({ COLORS }: *) => ({
+const [TableNoDataTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: *) => ({
   root: {
     color: COLORS.DISABLED_TEXT_COLOR,
     fontSize: '32px',
@@ -28,17 +29,13 @@ const theme = {
   ...themeText,
 };
 
-const TableNoDataIconTag = createStyledTag(`${name}Icon`, {});
-
-const TableNoDataTextTag = createStyledTag(`${name}Text`, {});
-
-const TableNoData = () => {
+const TableNoData = (props: *) => {
   return (
     <Column stretch justifyContent="center" alignItems="center" gap="lg" offsetY="lg">
-      <TableNoDataIconTag>
+      <TableNoDataIconTag modifiers={ props }>
         <Icon size="stretch" name="DismissData" color="LIGHT_GRAY1" />
       </TableNoDataIconTag>
-      <TableNoDataTextTag>no data</TableNoDataTextTag>
+      <TableNoDataTextTag modifiers={ props }>no data</TableNoDataTextTag>
     </Column>
   );
 };

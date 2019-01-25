@@ -1,57 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card /> should render Card components 1`] = `
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-height: 100%;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 64px;
-}
-
-.emotion-12 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
 <Card
   padding="sm"
 >
-  <Paper>
-    <Styled(paper)
+  <Paper
+    borderRadius="all"
+    padding="none"
+  >
+    <Boost(paper)
+      borderRadius="all"
+      padding="none"
       tagName="div"
     >
       <Tag
-        className="emotion-16 emotion-1"
+        borderRadius="all"
+        className="emotion-0 emotion-1"
+        padding="none"
         tagName="div"
       >
         <div
-          className="emotion-16 emotion-1"
+          className="emotion-0 emotion-1"
         >
           <CardHeader
             padding="md"
           >
-            <Styled(cardHeader)
+            <Boost(cardHeader)
               padding="md"
               tagName="div"
             >
@@ -66,70 +40,70 @@ exports[`<Card /> should render Card components 1`] = `
                   Header
                 </div>
               </Tag>
-            </Styled(cardHeader)>
+            </Boost(cardHeader)>
           </CardHeader>
           <CardBody
             padding="lg"
           >
-            <Styled(cardBody)
+            <Boost(cardBody)
               padding="lg"
               tagName="div"
             >
               <Tag
-                className="emotion-8 emotion-1"
+                className="emotion-0 emotion-1"
                 padding="lg"
                 tagName="div"
               >
                 <div
-                  className="emotion-8 emotion-1"
+                  className="emotion-0 emotion-1"
                 >
                   <CardSection
                     padding="md"
                   >
-                    <Styled(cardSection)
+                    <Boost(cardSection)
                       padding="md"
                       tagName="div"
                     >
                       <Tag
-                        className="emotion-4 emotion-1"
+                        className="emotion-0 emotion-1"
                         padding="md"
                         tagName="div"
                       >
                         <div
-                          className="emotion-4 emotion-1"
+                          className="emotion-0 emotion-1"
                         >
                           Body
                         </div>
                       </Tag>
-                    </Styled(cardSection)>
+                    </Boost(cardSection)>
                   </CardSection>
                 </div>
               </Tag>
-            </Styled(cardBody)>
+            </Boost(cardBody)>
           </CardBody>
           <CardFooter
             padding="xl"
           >
-            <Styled(cardFooter)
+            <Boost(cardFooter)
               padding="xl"
               tagName="div"
             >
               <Tag
-                className="emotion-12 emotion-1"
+                className="emotion-0 emotion-1"
                 padding="xl"
                 tagName="div"
               >
                 <div
-                  className="emotion-12 emotion-1"
+                  className="emotion-0 emotion-1"
                 >
                   Footer
                 </div>
               </Tag>
-            </Styled(cardFooter)>
+            </Boost(cardFooter)>
           </CardFooter>
         </div>
       </Tag>
-    </Styled(paper)>
+    </Boost(paper)>
   </Paper>
 </Card>
 `;

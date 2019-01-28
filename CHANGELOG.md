@@ -1,3 +1,19 @@
+<a name="0.12.6"></a>
+## [0.12.6](https://github.com/8base/boost/compare/v0.12.5...v0.12.6) (2019-01-28)
+
+
+### Bug Fixes
+
+* **DateInput:** fix dropdown overflow ([07f255d](https://github.com/8base/boost/commit/07f255d))
+* **Select:** handle long select options ([8f458e1](https://github.com/8base/boost/commit/8f458e1))
+
+
+### Features
+
+* **Dropdown:** add popperjs modifiers to the props ([a3b4c09](https://github.com/8base/boost/commit/a3b4c09))
+
+
+
 <a name="0.12.5"></a>
 ## [0.12.5](https://github.com/8base/boost/compare/v0.12.4...v0.12.5) (2019-01-17)
 

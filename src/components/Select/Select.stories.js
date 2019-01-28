@@ -11,6 +11,17 @@ const OPTIONS = [{
   value: 'wiseheartedly',
 }];
 
+const LONG_OPTIONS = [{
+  label: 'Geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness topia antiorthodox cerebropedal Sothis whispered basilica idealizer outvalue thwacking unafraid coining nak friskily renishly stringsman',
+  value: 'ovenlike',
+}, {
+  label: 'backhander unpersecuted platch antisymmetrical fumaroid chromitite Microthelyphonida epigraphically myope supramechanical pageant ankle camphory nitronaphthalene thieve umquhile mornings gynomonoecism unvulgarize rickmatic saltless sternoglossal pungi pronumber',
+  value: 'serjeant',
+}, {
+  label: 'juju tattlery nonperpetual nonexternal vocabularied umber lichenological repressure unpoled blepharosynechia peragration reduplicature acarid citizenism nongelatinizing splenoptosia unpoisoned tympanic tachogram unhardness dovetail transonic cuinage tributariness',
+  value: 'wiseheartedly',
+}];
+
 export default (asStory) => {
   asStory('Components/Select', module, (story, { Select, StateContainer, Column, Icon, Row }) => {
     story
@@ -24,6 +35,9 @@ export default (asStory) => {
           </StateContainer>
           <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } multiple />
+          </StateContainer>
+          <StateContainer value={ [LONG_OPTIONS[1], LONG_OPTIONS[2]] }>
+            <Select name="name" placeholder="Select an option" options={ LONG_OPTIONS } multiple />
           </StateContainer>
           <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
             <Select

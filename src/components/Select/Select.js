@@ -24,7 +24,6 @@ type SelectProps = {|
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   control: (style, { isFocused }) => ({
     ...style,
-    maxHeight: '36px',
     minHeight: '36px',
     backgroundColor: PALETTE.WHITE,
     borderColor: hasError ? PALETTE.DANGER : (isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1),
@@ -44,7 +43,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
   indicatorSeparator: (style) => ({
     ...style,
-    backgroundColor: PALETTE.WHITE,
+    display: 'none',
   }),
   multiValue: (style) => ({
     ...style,
@@ -53,6 +52,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
     color: '#878c93',
     border: '1px solid #d0d7dd',
     backgroundColor: '#fff',
+    height: 26,
   }),
   multiValueLabel: (style) => ({
     ...style,
@@ -66,6 +66,14 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
       color: 'inherit',
       cursor: 'pointer',
     },
+  }),
+  dropdownIndicator: (style) => ({
+    ...style,
+    padding: '0 8px',
+  }),
+  clearIndicator: (style) => ({
+    ...style,
+    padding: '0 8px',
   }),
 });
 

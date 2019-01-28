@@ -1,0 +1,73 @@
+h1 {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+h2 {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+h3 {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+h4 {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+p {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #fafafa !important;
+  box-shadow: 0 0 0 1px #e7e7e7 !important;
+  border-radius: 2px !important;
+  font-size: 11px !important;
+  padding: 2px 4px !important;
+}
+
+.prism-code {
+  font-family: Monaco;
+  padding: 16px;
+  margin-top: 8px !important;
+  margin-bottom: 16px !important;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+}
+
+.Playground {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.Playground-notice {
+  padding: 0 16px;
+}
+
+.Playground-preview {
+  margin-bottom: 8px;
+  background: #fff;
+  padding: 16px;
+}
+
+.react-live-error {
+  background-color: #b32c2c;
+  color: #fff;
+  padding: 16px;
+}

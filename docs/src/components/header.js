@@ -1,42 +1,39 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'react-emotion';
+import { Grid } from '@8base/boost';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import logo from '../images/8base-logo-red-black.svg';
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const HeaderTag = styled(Grid.Layout)({
+  height: '6rem',
+  padding: '0 2rem',
+  backgroundColor: '#fff',
+  borderBottom: '1px solid #D0D7DD',
+  flex: 1,
+  position: 'sticky',
+  top: 0,
+  marginBottom: 48,
+  zIndex: 100,
+});
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const HeaderLogoTag = styled('img')({
+  height: '3rem',
+});
 
-export default Header
+const Header = () => (
+  <HeaderTag columns="1fr auto" gap="lg">
+    <Grid.Box justifyContent="center">
+      <Link to="/">
+        <HeaderLogoTag src={logo} alt="8base logo" />
+      </Link>
+    </Grid.Box>
+    <Grid.Box justifyContent="center">
+      <Link to="/components">
+        Components
+      </Link>
+    </Grid.Box>
+  </HeaderTag>
+);
+
+export { Header };

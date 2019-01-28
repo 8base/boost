@@ -78,6 +78,7 @@ const CheckboxTag = createStyledTag(`${name}Tag`, {
 const CheckboxTextTag = createStyledTag(`${name}Text`, {
   paddingLeft: '12px',
   cursor: 'pointer',
+  userSelect: 'none',
 });
 
 export { theme, CheckboxSquareTag, CheckboxTag, CheckboxWrapperTag, CheckboxTextTag, CheckboxIconTag };

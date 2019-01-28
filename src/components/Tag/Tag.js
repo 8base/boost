@@ -21,7 +21,7 @@ const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
     height: '24px',
     padding: '0 12px',
     borderRadius: '24px',
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
   },

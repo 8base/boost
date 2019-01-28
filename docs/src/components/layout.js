@@ -1,9 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
+import { EightBaseBoostProvider } from '@8base/boost';
 
-import Header from './header'
-import './layout.css'
+import { DocsMDXProvider } from './DocsMDXProvider';
+import { Header } from './Header';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,7 +18,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <EightBaseBoostProvider>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -27,14 +28,11 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          {children}
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <DocsMDXProvider>
+            {children}
+          </DocsMDXProvider>
         </div>
-      </>
+      </EightBaseBoostProvider>
     )}
   />
 )

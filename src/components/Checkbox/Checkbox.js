@@ -6,24 +6,25 @@ import { Icon } from '../Icon';
 import { CheckboxSquareTag, CheckboxTag, CheckboxWrapperTag, CheckboxTextTag, CheckboxIconTag } from './Checkbox.theme';
 
 type CheckboxProps = {
-  /** checkbox name */
+  /** The name of the checkbox. */
   name?: string,
-  /** checkbox label */
+  /** The label of the checkbox. */
   label?: string,
-  /** checked state */
+  /** The checked state of the checkbox. */
   checked?: boolean,
-  /** when error then show error styles */
+  /** When true, show the checkbox with error styles. */
   hasError?: boolean,
-  /** show disabled styles  */
+  /** When true, the checkbox is disabled. */
   disabled?: boolean,
-  /** no wrap text  */
+  /** When true, apply no wrap for the checkbox label. */
   nowrap?: boolean,
-
-  /** callback to change chcked state */
-  onChange?: (boolean, SyntheticInputEvent<HTMLInputElement>) => void,
-  onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
-  onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
-}
+  /** The callback function to change checked state */
+  onChange?: (value: boolean, event: SyntheticInputEvent<HTMLInputElement>) => void,
+  /** The callback function to on focus */
+  onFocus?: (event: ?SyntheticFocusEvent<HTMLInputElement>) => void,
+  /** The callback function to on blur */
+  onBlur?: (event: ?SyntheticFocusEvent<HTMLInputElement>) => void,
+};
 
 class Checkbox extends PureComponent<CheckboxProps> {
   static defaultProps = {

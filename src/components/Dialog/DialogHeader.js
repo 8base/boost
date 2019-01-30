@@ -6,11 +6,11 @@ import { Text } from '../Text';
 import { Icon } from '../Icon';
 import type { PropSizes } from '../../types';
 
-type DialogHeaderProps = {|
+type DialogHeaderProps = {
   children?: React$Node,
   title: string,
   padding?: PropSizes,
-|};
+};
 
 
 function DialogHeader({

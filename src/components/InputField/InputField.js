@@ -4,7 +4,7 @@ import * as formUtils from '../../utils/forms';
 import { Input } from '../Input';
 import { FormField } from '../Form/FormField';
 
-type InputFieldProps = {|
+type InputFieldProps = {
   /** field label */
   label?: string,
   /** when true then stretch to the maximal width */
@@ -29,7 +29,7 @@ type InputFieldProps = {|
   meta?: MetaType,
   /** callback to set input ref */
   insideRef?:(HTMLInputElement) => void,
-|};
+};
 
 const InputField = ({
   align,

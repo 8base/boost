@@ -4,10 +4,10 @@ import React from 'react';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 
-type FormSectionTitleProps = {|
+type FormSectionTitleProps = {
   children?: React$Node,
   text?: string,
-|}
+}
 
 const name = 'formSectionTitle';
 

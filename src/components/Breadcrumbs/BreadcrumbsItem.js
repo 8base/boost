@@ -3,12 +3,12 @@ import React from 'react';
 
 import { Link } from '../Link';
 
-type BreadcrumbsItemProps = {|
+type BreadcrumbsItemProps = {
   tagName: string | React$ComponentType<*>,
   to: string,
   label?: string,
   component?: React$ComponentType<*>,
-|};
+};
 
 const BreadcrumbsItem = ({ tagName, to, label, component: Component, ...rest }: BreadcrumbsItemProps) => React.createElement(
   tagName,

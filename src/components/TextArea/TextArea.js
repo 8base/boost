@@ -4,7 +4,7 @@ import React from 'react';
 
 import { TextAreaTag } from './TextArea.theme';
 
-type TextAreaProps = {|
+type TextAreaProps = {
   cols?: number,
   name?: string,
   onChange?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
@@ -12,7 +12,7 @@ type TextAreaProps = {|
   rows?: number,
   value?: string,
   stretch?: boolean,
-|};
+};
 
 class TextArea extends React.Component<TextAreaProps> {
 

@@ -3,9 +3,9 @@
 import React from 'react';
 import { ScrollableWrapper, ScrollableContent } from './Scrollable.theme';
 
-type ScrollableProps = {|
+type ScrollableProps = {
   children: React$Node,
-|};
+};
 
 function Scrollable({
   children,

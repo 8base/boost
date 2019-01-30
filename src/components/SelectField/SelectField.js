@@ -4,7 +4,7 @@ import * as formUtils from '../../utils/forms';
 import { Select } from '../Select';
 import { FormField } from '../Form/FormField';
 
-type SelectFieldProps = {|
+type SelectFieldProps = {
   /** array of select options */
   options: Array<Object>,
   /** placeholder */
@@ -19,7 +19,7 @@ type SelectFieldProps = {|
   meta?: MetaType,
   /** custom value component */
   valueComponent ?: React$Node,
-|};
+};
 
 class SelectField extends React.Component<SelectFieldProps> {
   onChange = (selectedOption) => {

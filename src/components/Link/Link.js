@@ -3,13 +3,13 @@
 import React from 'react';
 import { LinkTag } from './Link.theme';
 
-type LinkProps = {|
+type LinkProps = {
   children?: React$Node,
   color?: string,
-  tagName?: string | React$Component<*>,
+  tagName?: any,
   text?: string,
   underline?: boolean,
-|};
+};
 
 function Link({
   text,

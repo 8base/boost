@@ -10,7 +10,7 @@ import {
 } from './SecondaryNavigationItem.theme';
 
 type SecondaryNavigationItemProps = {
-  label: string,
+  label?: string,
 };
 
 export const SecondaryNavigationItem = ({ label, ...rest }: SecondaryNavigationItemProps) => (

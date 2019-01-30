@@ -9,13 +9,13 @@ import { Dropdown } from '../Dropdown';
 import * as utils from './DateInput.utils';
 
 
-type DateInputProps = {|
+type DateInputProps = {
   onChange: (value: ?string) => void,
   value: ?string,
   withTime?: boolean,
   stretch?: boolean,
   clearable?: boolean,
-|};
+};
 
 type DateInputState = {|
   isOpen: boolean,

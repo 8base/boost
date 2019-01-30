@@ -1,9 +1,11 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
 
-type GridBoxProps = {|
+type GridBoxProps = {
   children?: React$Node,
   /** grid-box direction */
   direction?: 'column' | 'row',
@@ -21,13 +23,13 @@ type GridBoxProps = {|
   alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
   /** text-align css rule*/
   textAlign?: 'left' | 'right' | 'center' | 'justify',
-|};
+};
 
 const name = 'gridBox';
 
 const [GridBoxTag, theme] = createThemeTag(name, {
   root: (props) => {
-    const style = {
+    const style: any = {
       display: 'flex',
       position: 'relative',
     };

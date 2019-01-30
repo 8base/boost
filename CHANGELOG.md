@@ -1,3 +1,8 @@
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/8base/boost/compare/v0.12.6...v0.13.0) (2019-01-30)
+
+
+
 <a name="0.12.6"></a>
 ## [0.12.6](https://github.com/8base/boost/compare/v0.12.5...v0.12.6) (2019-01-28)
 

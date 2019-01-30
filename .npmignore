@@ -1,7 +1,11 @@
 .*
+__mocks__
 coverage
 flow-typed
+src
+e2e
 jest.setup.js
 rollup.config.js
 storybook
 yarn.lock
+wallaby.js

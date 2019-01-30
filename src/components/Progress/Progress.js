@@ -16,10 +16,10 @@ const Progress = ({ value, ...rest }: ProgressProps) => {
 
   return (
     <ProgressOuterTag { ...rest }>
-      <ProgressInnerTag>
-        <ProgressValueTag style={{ width: `${value}%` }} />
+      <ProgressInnerTag modifiers={ rest }>
+        <ProgressValueTag modifiers={ rest } style={{ width: `${value}%` }} />
       </ProgressInnerTag>
-      <ProgressTextTag>{ value } %</ProgressTextTag>
+      <ProgressTextTag modifiers={ rest }>{ value } %</ProgressTextTag>
     </ProgressOuterTag>
   );
 };

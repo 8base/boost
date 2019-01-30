@@ -1,3 +1,4 @@
 // @flow
 
-export * from './Text';
+export { Text } from './Text';
+export { theme } from './Text.theme';

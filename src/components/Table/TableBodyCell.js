@@ -1,7 +1,8 @@
 // @flow
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { Row } from '../FlexLayout';
 
 type TableBodyCellProps = {
@@ -10,21 +11,15 @@ type TableBodyCellProps = {
 
 const name = 'tableBodyCell';
 
-const theme = createComponentTheme(name, {
+const [TableBodyCellTag, theme] = createThemeTag(name, {
   root: {
+    display: 'flex',
+    alignItems: 'center',
+    wordBreak: 'break-all',
+
     padding: '0 16px',
   },
-  modifiers: {
-  },
-  defaults: {
-  },
 });
-
-const TableBodyCellTag = createStyledTag(name, () => ({
-  display: 'flex',
-  alignItems: 'center',
-  wordBreak: 'break-all',
-}));
 
 function TableBodyCell({
   children,

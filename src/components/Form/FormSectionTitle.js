@@ -1,7 +1,8 @@
 // @flow
 
 import React from 'react';
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type FormSectionTitleProps = {|
   children?: React$Node,
@@ -10,7 +11,7 @@ type FormSectionTitleProps = {|
 
 const name = 'formSectionTitle';
 
-const theme = createComponentTheme(name, ({ SIZES }: *) => ({
+const [FormSectionTitleTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
   root: {
     fontWeight: 600,
     fontSize: SIZES.OVERLINE_1,
@@ -19,8 +20,6 @@ const theme = createComponentTheme(name, ({ SIZES }: *) => ({
   modifiers: {},
   defaults: {},
 }));
-
-const FormSectionTitleTag = createStyledTag(name, {});
 
 const FormSectionTitle = ({ children, text, ...rest }: FormSectionTitleProps) => (
   <FormSectionTitleTag { ...rest } tagName="span">{ children || text }</FormSectionTitleTag>

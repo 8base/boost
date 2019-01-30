@@ -1,9 +1,11 @@
 // @flow
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'secondaryNavigationItem';
 
-const rootTheme = createComponentTheme(name, ({ COLORS }: *) => ({
+
+const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     height: '32px',
     display: 'flex',
@@ -23,7 +25,7 @@ const rootTheme = createComponentTheme(name, ({ COLORS }: *) => ({
 }));
 
 
-const barTheme = createComponentTheme(`${name}Bar`, ({ COLORS }: *) => ({
+const [SecondaryNavigationItemBarTag, barTheme] = createThemeTag(`${name}Bar`, ({ COLORS }: *) => ({
   root: {
     width: '4px',
     backgroundColor: 'inherit',
@@ -34,7 +36,7 @@ const barTheme = createComponentTheme(`${name}Bar`, ({ COLORS }: *) => ({
   },
 }));
 
-const labelTheme = createComponentTheme(`${name}Label`, () => ({
+const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Label`, () => ({
   root: {
     display: 'flex',
     alignItems: 'center',
@@ -44,14 +46,17 @@ const labelTheme = createComponentTheme(`${name}Label`, () => ({
   },
 }));
 
-export const theme = {
+const theme = {
   ...rootTheme,
   ...barTheme,
   ...labelTheme,
 };
 
-export const SecondaryNavigationItemTag = createStyledTag(name);
 
-export const SecondaryNavigationItemBarTag = createStyledTag(`${name}Bar`);
+export {
+  theme,
+  SecondaryNavigationItemTag,
+  SecondaryNavigationItemBarTag,
+  SecondaryNavigationItemLabelTag,
+};
 
-export const SecondaryNavigationItemLabelTag = createStyledTag(`${name}Label`);

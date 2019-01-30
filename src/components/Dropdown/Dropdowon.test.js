@@ -5,7 +5,6 @@ import { Dropdown } from './';
 
 
 describe('<Dropdown />', () => {
-
   it('should render dropdown', () => {
     const wrapper = mount(
       <Dropdown isOpen={ false }>

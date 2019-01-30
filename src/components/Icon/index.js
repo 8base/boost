@@ -1,4 +1,5 @@
 // @flow
 
-export { Icon, theme } from './Icon';
+export { Icon } from './Icon';
+export { theme } from './Icon.theme';
 export { IconsProvider } from './IconsProvider';

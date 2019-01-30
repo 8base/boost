@@ -1,10 +1,7 @@
 // @flow
 
 import React from 'react';
-import fp from 'lodash/fp';
-import { PALETTE } from '../../theme';
-
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { LinkTag } from './Link.theme';
 
 type LinkProps = {|
   children?: React$Node,
@@ -14,47 +11,26 @@ type LinkProps = {|
   underline?: boolean,
 |};
 
-const name = 'link';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-    color: fp.mapValues(
-      (color) => ({ color }),
-      PALETTE,
-    ),
-    underline: {
-      textDecoration: 'underline',
-    },
-  },
-  defaults: {
-    color: 'LIGHT_BLUE',
-    underline: false,
-  },
-});
-
-const StyledTag = createStyledTag(name, () => ({
-  cursor: 'pointer',
-  fontWeight: 400,
-  fontSize: 'inherit',
-  textDecoration: 'none',
-
-  '&:hover': {
-    textDecoration: 'underline',
-  },
-}));
-
 function Link({
   text,
   children,
   tagName,
   ...rest
   }: LinkProps) {
-  return <StyledTag { ...rest } tagName={ tagName }>{ text || children }</StyledTag>;
+  return (
+    <LinkTag
+      { ...rest }
+      tagName={ tagName }
+    >
+      { text || children }
+    </LinkTag>
+  );
 }
 
 Link.defaultProps = {
-  ...theme[name].defaults,
+  color: 'LIGHT_BLUE',
+  underline: false,
   tagName: 'a',
 };
 
-export { Link, theme };
+export { Link };

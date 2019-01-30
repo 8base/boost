@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { Form } from './';
+import { ControlErrorTag } from './FormField';
 
 describe('<Form />', () => {
 
@@ -76,9 +77,9 @@ describe('<Form />', () => {
   it('should render field error', () => {
     const wrapper = mount(<Form.Field meta={{ error: 'Field error', touched: true }} />);
 
-    expect(wrapper.find('ControlErrorTag').text()).toBe('Field error');
+    expect(wrapper.find(ControlErrorTag).text()).toBe('Field error');
 
     wrapper.setProps({ hideErrorLabel: true });
-    expect(wrapper.find('ControlErrorTag')).toHaveLength(0);
+    expect(wrapper.find(ControlErrorTag)).toHaveLength(0);
   });
 });

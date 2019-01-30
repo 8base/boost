@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tabs /> should render Tabs 1`] = `
-.emotion-8 {
-  display: block;
-}
-
 <Tabs
   defaultSelectedTabId="1"
 >
@@ -19,7 +15,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
         onSelect={[Function]}
         selectedTabId="1"
       >
-        <Styled(tabPlate)
+        <Boost(tabPlate)
           defaultSelectedTabId="1"
           tagName="div"
         >
@@ -43,7 +39,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     }
                   }
                 >
-                  <Styled(tabTitle)
+                  <Boost(tabTitle)
                     onClick={[Function]}
                     tagName="div"
                   >
@@ -61,7 +57,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
                         </div>
                       </div>
                     </Tag>
-                  </Styled(tabTitle)>
+                  </Boost(tabTitle)>
                 </TabTitleBase>
               </TabTitle>
               <TabTitle
@@ -76,7 +72,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     }
                   }
                 >
-                  <Styled(tabTitle)
+                  <Boost(tabTitle)
                     onClick={[Function]}
                     tagName="div"
                   >
@@ -94,7 +90,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
                         </div>
                       </div>
                     </Tag>
-                  </Styled(tabTitle)>
+                  </Boost(tabTitle)>
                 </TabTitleBase>
               </TabTitle>
               <TabPanel
@@ -111,17 +107,17 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     }
                   }
                 >
-                  <TabPanelTag
+                  <Boost(tabPlate)
                     selected={true}
                     tagName="div"
                   >
                     <Tag
-                      className="emotion-8 emotion-1"
+                      className="emotion-0 emotion-1"
                       selected={true}
                       tagName="div"
                     >
                       <div
-                        className="emotion-8 emotion-1"
+                        className="emotion-0 emotion-1"
                       >
                         <div
                           className="body-1"
@@ -130,7 +126,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
                         </div>
                       </div>
                     </Tag>
-                  </TabPanelTag>
+                  </Boost(tabPlate)>
                 </TabPanelBase>
               </TabPanel>
               <TabPanel
@@ -150,7 +146,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
               </TabPanel>
             </div>
           </Tag>
-        </Styled(tabPlate)>
+        </Boost(tabPlate)>
       </Component>
     </withStateHandlers(Component)>
   </branch(Component)>

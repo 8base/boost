@@ -6,17 +6,23 @@ import { SIZES } from './sizes';
 import { Z_INDEX } from './zIndex';
 
 export type ThemeConstatns = {
-  COLORS: typeof COLORS,
-  SIZES: typeof SIZES,
-  Z_INDEX: typeof Z_INDEX,
+  COLORS: Object,
+  SIZES: Object,
+  Z_INDEX: Object,
 };
 
+export type ComponentTheme = {
+  root?: Object | (props: Object) => Object,
+  modifiers?: Object,
+  globals?: Object | string,
+}
+
 export type RawTheme = {
-  COLORS: typeof COLORS,
-  SIZES: typeof SIZES,
-  Z_INDEX: typeof Z_INDEX,
+  COLORS: Object,
+  SIZES: Object,
+  Z_INDEX: Object,
   components: {
-    [key: string]: (ThemeConstatns) => Object,
+    [key: string]: ComponentTheme | (ThemeConstatns) => ComponentTheme,
   },
 };
 
@@ -25,7 +31,7 @@ export type Theme = {
   SIZES: typeof SIZES,
   Z_INDEX: typeof Z_INDEX,
   components: {
-    [key: string]: Object,
+    [key: string]: ComponentTheme,
   },
 };
 

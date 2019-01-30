@@ -6,7 +6,8 @@ import { TableNoData } from './TableNoData';
 import { TableAction } from './TableAction';
 import { Grid } from '../Grid';
 import { Button } from '../Button';
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type TableBodyProps<T: Object> = {
   children?: (T, index: number) => React$Node,
@@ -18,31 +19,32 @@ type TableBodyProps<T: Object> = {
 
 const name = 'tableBody';
 
-const theme = createComponentTheme(name, ({ COLORS }: *): * => ({
+const [TableBodyTag, themeBody] = createThemeTag(name, ({ COLORS }: *): * => ({
   root: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    gridTemplateRows: '1fr',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    overflow: 'auto',
+
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
-  },
-  modifiers: {
-  },
-  defaults: {
   },
 }));
 
-const TableBodyTag = createStyledTag(name, {
-  display: 'grid',
-  gridTemplateColumns: '1fr',
-  gridTemplateRows: '1fr',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  overflow: 'auto',
+const [TableBodyInnerTag, themeInner] = createThemeTag(`${name}Inner`, {
+  root: {
+    display: 'grid',
+    position: 'relative',
+    gridAutoRows: 'min-content',
+    height: '100%',
+  },
 });
 
-const TableBodyInnerTag = createStyledTag(`${name}Inner`, {
-  display: 'grid',
-  position: 'relative',
-  gridAutoRows: 'min-content',
-  height: '100%',
-});
+const theme = {
+  ...themeBody,
+  ...themeInner,
+};
 
 class TableBody extends PureComponent<TableBodyProps<*>> {
   renderTableAction = () => {
@@ -75,7 +77,7 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
           {
             hasBodyRows
               ? (
-                <TableBodyInnerTag tagName={ Grid.Layout }>
+                <TableBodyInnerTag modifiers={ rest } tagName={ Grid.Layout }>
                   { React.Children.toArray(data && children && data.map(children)) }
                 </TableBodyInnerTag>
               )

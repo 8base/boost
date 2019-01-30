@@ -10,29 +10,44 @@ describe('<Input />', () => {
     );
 
     expect(wrapper).toMatchInlineSnapshot(`
-<Styled(inputWrapper)
+<Boost(inputWrapper)
   stretch={true}
   tagName="div"
 >
-  <Styled(input)
+  <Boost(input)
     align="left"
     autoComplete="off"
     hasError={false}
     hasLeftIcon={true}
     hasRightIcon={false}
     kind="bordered"
+    modifiers={
+      Object {
+        "onChange": [MockFunction],
+      }
+    }
     onChange={[Function]}
     stretch={true}
     tagName="input"
     type="text"
     value="val"
   />
-  <Styled(inputLeftIcon)
+  <Boost(inputLeftIcon)
+    modifiers={
+      Object {
+        "onChange": [MockFunction],
+      }
+    }
     tagName="div"
   >
     i
-  </Styled(inputLeftIcon)>
-  <Styled(inputClearButton)
+  </Boost(inputLeftIcon)>
+  <Boost(inputClearButton)
+    modifiers={
+      Object {
+        "onChange": [MockFunction],
+      }
+    }
     onClick={[Function]}
     tagName="div"
   >
@@ -40,11 +55,10 @@ describe('<Input />', () => {
       name="Delete"
       size="sm"
     />
-  </Styled(inputClearButton)>
-</Styled(inputWrapper)>
+  </Boost(inputClearButton)>
+</Boost(inputWrapper)>
 `);
   });
-
 
   it('should call onCahnge with text value', () => {
     const onChange = jest.fn();
@@ -53,7 +67,6 @@ describe('<Input />', () => {
     wrapper.find('input').simulate('change', { target: { value: 'val' }});
     expect(onChange.mock.calls[0][0]).toBe('val');
   });
-
 
   it('should call onChange with number value', () => {
     const onChange = jest.fn();

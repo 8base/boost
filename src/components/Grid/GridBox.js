@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type GridBoxProps = {|
   children?: React$Node,
@@ -24,7 +25,67 @@ type GridBoxProps = {|
 
 const name = 'gridBox';
 
-const theme = createComponentTheme(name, {
+const [GridBoxTag, theme] = createThemeTag(name, {
+  root: (props) => {
+    const style = {
+      display: 'flex',
+      position: 'relative',
+    };
+
+    if (props.columnStart) {
+      style.gridColumnStart = props.columnStart;
+    }
+
+    if (props.columnEnd) {
+      style.gridColumnEnd = props.columnEnd;
+    }
+
+    if (props.rowStart) {
+      style.gridRowStart = props.rowStart;
+    }
+
+    if (props.rowEnd) {
+      style.gridRowEnd = props.rowEnd;
+    }
+
+    if (props.column) {
+      style.gridColumn = props.column;
+    }
+
+    if (props.row) {
+      style.gridRow = props.row;
+    }
+
+    if (props.justifySelf) {
+      style.justifySelf = props.justifySelf;
+    }
+
+    if (props.alignSelf) {
+      style.alignSelf = props.alignSelf;
+    }
+
+    if (props.justifyContent) {
+      style.justifyContent = props.justifyContent;
+    }
+
+    if (props.alignItems) {
+      style.alignItems = props.alignItems;
+    }
+
+    if (props.alignContent) {
+      style.alignContent = props.alignContent;
+    }
+
+    if (props.area) {
+      style.gridArea = props.area;
+    }
+
+    if (props.textAlign) {
+      style.textAlign = props.textAlign;
+    }
+
+    return style;
+  },
   modifiers: {
     direction: {
       column: {
@@ -35,75 +96,12 @@ const theme = createComponentTheme(name, {
       },
     },
   },
-  defaults: {
-    direction: 'column',
-  },
 });
-
-const GridBoxTag = createStyledTag(name, (props) => {
-  const style = {
-    display: 'flex',
-    position: 'relative',
-  };
-
-  if (props.columnStart) {
-    style.gridColumnStart = props.columnStart;
-  }
-
-  if (props.columnEnd) {
-    style.gridColumnEnd = props.columnEnd;
-  }
-
-  if (props.rowStart) {
-    style.gridRowStart = props.rowStart;
-  }
-
-  if (props.rowEnd) {
-    style.gridRowEnd = props.rowEnd;
-  }
-
-  if (props.column) {
-    style.gridColumn = props.column;
-  }
-
-  if (props.row) {
-    style.gridRow = props.row;
-  }
-
-  if (props.justifySelf) {
-    style.justifySelf = props.justifySelf;
-  }
-
-  if (props.alignSelf) {
-    style.alignSelf = props.alignSelf;
-  }
-
-  if (props.justifyContent) {
-    style.justifyContent = props.justifyContent;
-  }
-
-  if (props.alignItems) {
-    style.alignItems = props.alignItems;
-  }
-
-  if (props.alignContent) {
-    style.alignContent = props.alignContent;
-  }
-
-  if (props.area) {
-    style.gridArea = props.area;
-  }
-
-  if (props.textAlign) {
-    style.textAlign = props.textAlign;
-  }
-
-  return style;
-});
-
-GridBoxTag.displayName = 'GridBoxTag';
 
 class GridBox extends PureComponent<GridBoxProps> {
+  static defaultProps = {
+    direction: 'column',
+  };
 
   render() {
     const { children, scrollable, direction = 'column', ...rest } = this.props;

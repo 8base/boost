@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { createComponentTheme } from '../../utils';
 import { DateInput } from '../DateInput';
 import { FormField } from '../Form/FormField';
 
@@ -12,15 +11,6 @@ type DateInputFieldProps = {|
   /** form meta object */
   meta?: MetaType,
 |};
-
-const name = 'DateInputField';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
 
 function DateInputField({
   label,
@@ -42,4 +32,4 @@ function DateInputField({
   );
 }
 
-export { DateInputField, theme };
+export { DateInputField };

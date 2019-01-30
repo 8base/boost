@@ -1,26 +1,39 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'progress';
 
-const themeInner = createComponentTheme(`${name}Inner`, ({ COLORS }: *) => ({
+
+const [ProgressOuterTag, themeProgress] = createThemeTag(name, {
   root: {
+    width: '100%',
+    display: 'flex',
+  },
+});
+
+const [ProgressInnerTag, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }: *) => ({
+  root: {
+    flex: '1',
     heigth: '12px',
     background: COLORS.LIGHT_GRAY4,
     borderRadius: '12px',
   },
 }));
 
-const themeValue = createComponentTheme(`${name}Value`, ({ COLORS }: *) => ({
+const [ProgressValueTag, themeValue] = createThemeTag(`${name}Value`, ({ COLORS }: *) => ({
   root: {
+    height: '100%',
     backgroundColor: COLORS.PRIMARY,
     borderRadius: '12px',
   },
 }));
 
-const themeText = createComponentTheme(`${name}Text`, ({ COLORS, SIZES }: *) => ({
+const [ProgressTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, SIZES }: *) => ({
   root: {
+    marginLeft: '12px',
+    width: '40px',
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
     fontWeight: '600',
@@ -29,29 +42,11 @@ const themeText = createComponentTheme(`${name}Text`, ({ COLORS, SIZES }: *) => 
 }));
 
 const theme = {
+  ...themeProgress,
   ...themeInner,
   ...themeValue,
   ...themeText,
 };
-
-
-const ProgressOuterTag = createStyledTag(name, {
-  width: '100%',
-  display: 'flex',
-});
-
-const ProgressInnerTag = createStyledTag(`${name}Inner`, {
-  flex: '1',
-});
-
-const ProgressValueTag = createStyledTag(`${name}Value`, {
-  height: '100%',
-});
-
-const ProgressTextTag = createStyledTag(`${name}Text`, {
-  marginLeft: '12px',
-  width: '40px',
-});
 
 
 export {

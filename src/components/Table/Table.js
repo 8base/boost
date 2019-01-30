@@ -2,7 +2,8 @@
 import React from 'react';
 
 import { Grid } from '../Grid';
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 import { theme as tableActionTheme } from './TableAction';
 import { theme as tableNoDataTheme } from './TableNoData';
@@ -21,13 +22,7 @@ type TablePlateProps = {
 
 const name = 'tablePlate';
 
-const tableTheme = createComponentTheme(name, {
-  root: {
-  },
-  modifiers: {
-  },
-  defaults: {
-  },
+const [TableTag, tableTheme] = createThemeTag(name, {
 });
 
 const theme = {
@@ -42,7 +37,6 @@ const theme = {
   ...tableBodyCellTheme,
 };
 
-const TableTag = createStyledTag(name);
 
 function Table({
   action,

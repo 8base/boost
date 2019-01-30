@@ -2,7 +2,8 @@
 import React, { PureComponent } from 'react';
 import styled from 'react-emotion';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { Row } from '../FlexLayout';
 import { Icon } from '../Icon';
 
@@ -18,25 +19,20 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const theme = createComponentTheme(name, ({ SIZES }: *) => ({
-  root: {
+const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
+  root: props => ({
+    display: 'flex',
+    alignItems: 'center',
+    cursor: props.cursor,
+
     padding: '0 16px',
     fontSize: SIZES.OVERLINE_1,
     lineHeight: SIZES.OVERLINE_1_LH,
     textTransform: 'uppercase',
     fontWeight: 700,
-  },
-  modifiers: {
-  },
-  defaults: {
-  },
+  }),
 }));
 
-const TableHeaderCellTag = createStyledTag(name, props => ({
-  display: 'flex',
-  alignItems: 'center',
-  cursor: props.cursor,
-}));
 
 const IconTransform = styled('div')(props => {
   const styles = {};
@@ -63,13 +59,13 @@ class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
   }
 
   render() {
-    const { children, order, cursor, ...rest } = this.props;
+    const { children, ...rest } = this.props;
 
     return (
-      <TableHeaderCellTag { ...rest } cursor={ cursor } onClick={ this.onSort } tagName={ Row }>
+      <TableHeaderCellTag { ...rest } onClick={ this.onSort } tagName={ Row }>
         <span>{ children }</span>
-        <If condition={ !!order }>
-          <IconTransform order={ order }>
+        <If condition={ !!rest.order }>
+          <IconTransform modifiers={ rest }>
             <Icon name="ChevronDown" size="md" />
           </IconTransform>
         </If>

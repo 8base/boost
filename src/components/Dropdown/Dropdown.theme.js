@@ -1,12 +1,13 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { theme as dropdownHeadTheme } from './DropdownHead.theme';
 import { theme as dropdownBodyTheme } from './DropdownBody.theme';
 
 const name = 'dropdown';
 
-const dropdownTheme = createComponentTheme(name, {
+const [DropdownTag, dropdownTheme] = createThemeTag(name, {
   modifiers: {
     stretch: {
       height: '100%',
@@ -15,8 +16,6 @@ const dropdownTheme = createComponentTheme(name, {
   },
   defaults: {},
 });
-
-const DropdownTag = createStyledTag(name, {});
 
 const theme = {
   ...dropdownTheme,

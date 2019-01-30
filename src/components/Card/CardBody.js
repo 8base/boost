@@ -1,7 +1,7 @@
 // @flow
 import React, { PureComponent } from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { CardBodyTag } from './Card.theme';
 import type { PropSizes } from '../../types';
 
 type CardBodyProps = {|
@@ -11,29 +11,6 @@ type CardBodyProps = {|
   stretch?: boolean,
 |}
 
-const name = 'cardBody';
-
-const cardBodyTheme = createComponentTheme(name, {
-  modifiers: {
-    stretch: {
-      display: 'flex',
-      flex: 1,
-      width: '100%',
-    },
-    padding: {
-      none: { padding: '0' },
-      xs: { padding: '4px' },
-      sm: { padding: '12px' },
-      md: { padding: '20px' },
-      lg: { padding: '24px' },
-      xl: { padding: '32px' },
-    },
-  },
-});
-
-const CardBodyTag = createStyledTag(name, (props: CardBodyProps) => ({
-  overflow: props.scrollable && 'auto',
-}));
 
 class CardBody extends PureComponent<CardBodyProps> {
   static defaultProps = {
@@ -52,4 +29,4 @@ class CardBody extends PureComponent<CardBodyProps> {
 }
 
 
-export { cardBodyTheme, CardBody };
+export { CardBody };

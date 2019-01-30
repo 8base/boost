@@ -15,6 +15,7 @@ describe('<AsyncContent />', () => {
     expect(wrapper.find(Loader)).toHaveLength(1);
     expect(wrapper.find(Loader).props()).toEqual({
       stretch: true,
+      size: 'md',
     });
   });
 

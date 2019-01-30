@@ -2,7 +2,8 @@
 
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { FlexLayout } from '../FlexLayout';
 
 import { FormField, theme as formFieldTheme } from './FormField';
@@ -25,15 +26,15 @@ type FormPlateProps = {
 
 const name = 'form';
 
-const formTheme = createComponentTheme(name, {
+const [FormTag, formTheme] = createThemeTag(name, {
+  root: {
+    flex: 1,
+  },
   modifiers: {
     stretch: {
       height: '100%',
       width: '100%',
     },
-  },
-  defaults: {
-    stretch: false,
   },
 });
 
@@ -43,10 +44,6 @@ const theme = {
   ...formSectionTitleTheme,
   ...formErrorTheme,
 };
-
-const FormTag = createStyledTag(name, {
-  flex: 1,
-});
 
 const Form = ({
   children,
@@ -67,7 +64,7 @@ const Form = ({
 };
 
 Form.defaultProps = {
-  ...theme[name].defaults,
+  stretch: false,
   component: 'form',
   direction: 'column',
   gap: 'md',

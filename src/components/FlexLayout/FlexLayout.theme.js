@@ -1,6 +1,7 @@
 // @flow
 
-import { createStyledTag } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'flex-layout';
 
@@ -57,59 +58,43 @@ const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes
       },
     };
 
-const getStretchStyles = (stretchProp: boolean) =>
-  stretchProp
-    ? { width: '100%', height: '100%' }
-    : {};
-
 const getGrowChildrenStyles = (growChildren: boolean) =>
   growChildren
     ? { flexGrow: '1' }
     : {};
 
-const getGrowStyles = (grow: boolean) =>
-  grow
-    ? { flexGrow: '1' }
-    : {};
 
-const FlexLayoutTag = createStyledTag(name, props => ({
-  display: 'flex',
+const [FlexLayoutTag, theme] = createThemeTag(name, {
+  root: props => ({
+    display: 'flex',
+    flexDirection: props.direction,
 
-  flexDirection: props.direction,
+    justifyContent: justifyContentStyles[props.justifyContent],
+    alignContent: alignContentStyles[props.alignContent],
+    alignItems: alignItemsStyles[props.alignItems],
 
-  justifyContent: justifyContentStyles[props.justifyContent],
-  alignContent: alignContentStyles[props.alignContent],
-  alignItems: alignItemsStyles[props.alignItems],
+    paddingLeft: paddingSizes[props.offsetX] || paddingSizes[props.offsetLeft],
+    paddingRight: paddingSizes[props.offsetX] || paddingSizes[props.offsetRight],
+    paddingTop: paddingSizes[props.offsetY] || paddingSizes[props.offsetTop],
+    paddingBottom: paddingSizes[props.offsetY] || paddingSizes[props.offsetBottom],
 
-  paddingLeft: paddingSizes[props.offsetX] || paddingSizes[props.offsetLeft],
-  paddingRight: paddingSizes[props.offsetX] || paddingSizes[props.offsetRight],
-  paddingTop: paddingSizes[props.offsetY] || paddingSizes[props.offsetTop],
-  paddingBottom: paddingSizes[props.offsetY] || paddingSizes[props.offsetBottom],
+    cursor: props.cursor,
 
-  cursor: props.cursor,
-
-  ...getStretchStyles(props.stretch),
-  ...getGrowStyles(props.grow),
-
-  '& > *': {
-    ...getGapStyle(props.direction, props.gap),
-    ...getGrowChildrenStyles(props.growChildren),
+    '& > *': {
+      ...getGapStyle(props.direction, props.gap),
+      ...getGrowChildrenStyles(props.growChildren),
+    },
+  }),
+  modifiers: {
+    stretch: {
+      width: '100%',
+      height: '100%',
+    },
+    grow: {
+      flexGrow: '1',
+    },
   },
+});
 
-}));
 
-FlexLayoutTag.defaultProps = {
-  direction: 'row',
-  justifyContent: 'start',
-  alignContent: 'start',
-  alignItems: 'start',
-  gap: 'none',
-  offestX: 'none',
-  offestY: 'none',
-  cursor: 'inherit',
-  stretch: false,
-  grow: false,
-  growChildren: false,
-};
-
-export { FlexLayoutTag };
+export { FlexLayoutTag, theme };

@@ -4,7 +4,8 @@ import React from 'react';
 import fp from 'lodash/fp';
 import { compose, withStateHandlers, branch } from 'recompose';
 
-import { createStyledTag } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { TabsContext } from './TabsContext';
 import { TabPanel } from './TabPanel';
 import { TabTitle } from './TabTitle';
@@ -24,7 +25,7 @@ type WithStateTabsProps = {
   defaultSelectedTabId: string,
 }
 
-const TabPlateTag = createStyledTag('tabPlate', {});
+const [TabPlateTag] = createThemeTag('tabPlate', {});
 
 
 const tabsEnhancer: any = compose(

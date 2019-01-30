@@ -1,101 +1,105 @@
 // @flow
 
-import { createStyledTag, createComponentTheme, getThemeSizes } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'code';
 
-const themeWrapper = createComponentTheme(`${name}Wrapper`, ({ COLORS, SIZES }: *) => ({
-  root: {
+const [CodeWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLORS, SIZES }: *) => ({
+  root: props => ({
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
-  },
+    height: props.height ? `${props.height}px` : '100%',
+    overflow: 'hidden',
+  }),
 }));
 
-const themeCounter = createComponentTheme(`${name}Counter`, ({ COLORS }: *) => ({
+const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ COLORS, SIZES }: *) => ({
   root: {
     color: COLORS.DARK_GRAY1,
     fontFamily: 'Courier',
+    opacity: '0.5',
+    textAlign: 'center',
+    lineHeight: 2,
+    fontSize: SIZES.BODY_TEXT,
   },
 }));
 
-const themeBody = createComponentTheme(`${name}Body`, ({ COLORS }: *) => ({
+const [CodeBodyTag, themeBody] = createThemeTag(`${name}Body`, ({ COLORS }: *) => ({
   root: {
     color: COLORS.DARK_GRAY1,
     fontFamily: 'Courier',
+    overflow: 'auto',
+    height: '100%',
+    padding: '20px',
+    lineHeight: 2,
   },
 }));
 
-const themeNumberic = createComponentTheme(`${name}Numberic`, ({ COLORS }: *) => ({
-  root: {
+
+const [CodeNumericTag, themeNumeric] = createThemeTag(`${name}Numeric`, ({ COLORS, SIZES }: *) => ({
+  root: (props) => ({
+    height: props.height ? 'auto' : '100%',
     backgroundColor: COLORS.LIGHT_GRAY5,
     borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
-  },
+    padding: '20px 0 40px',
+    borderTopLeftRadius: SIZES.MAIN_BORDER_RADIUS,
+    borderBottomLeftRadius: SIZES.MAIN_BORDER_RADIUS,
+  }),
 }));
 
+
+const [CodePlateTag, themePlate] = createThemeTag(`${name}Plate`, {
+  root: {
+    display: 'flex',
+    width: '100%',
+    overflow: 'hidden',
+    alignItems: 'stretch',
+  },
+});
+
+
+const [CodeNumberWrapperTag, themeNumberWrapper] = createThemeTag(`${name}NumberWrapper`, {
+  root: (props) => ({
+    height: props.height ? `${props.height}px` : 'auto',
+    display: 'block',
+    width: '32px',
+    flexShrink: 0,
+    position: 'relative',
+  }),
+});
+
+
+const [CodeNumberPlateTag, themeNumberPlate] = createThemeTag(`${name}NumberPlate`, {
+  root: {
+    height: '100%',
+    display: 'block',
+    position: 'absolute',
+    overflow: 'hidden',
+    width: '32px',
+  },
+});
+
+
+const [CodeBodyWrapperTag, themeBodyWrapper] = createThemeTag(`${name}BodyWrapper`, {
+  root: (props) => ({
+    overflow: 'hidden',
+    height: props.height ? `${props.height}px` : '100%',
+    width: '100%',
+  }),
+});
+
+
 const theme = {
+  ...themeBodyWrapper,
+  ...themeNumberWrapper,
+  ...themeNumberPlate,
+  ...themePlate,
   ...themeWrapper,
   ...themeCounter,
   ...themeBody,
-  ...themeNumberic,
+  ...themeNumeric,
 };
-
-
-const CodeWrapperTag = createStyledTag(`${name}Wrapper`, (props) => ({
-  height: props.height ? `${props.height}px` : '100%',
-  overflow: 'hidden',
-}));
-
-const CodePlateTag = createStyledTag(`${name}Plate`, {
-  display: 'flex',
-  width: '100%',
-  overflow: 'hidden',
-  alignItems: 'stretch',
-});
-
-const CodeLineCounterTag = createStyledTag(`${name}Counter`, (props) => ({
-  opacity: '0.5',
-  textAlign: 'center',
-  fontSize: getThemeSizes(props).BODY_TEXT,
-  lineHeight: 2,
-}));
-
-const CodeNumericTag = createStyledTag(`${name}Numberic`, (props) => ({
-  height: props.height ? 'auto' : '100%',
-  padding: '20px 0 40px',
-  borderTopLeftRadius: getThemeSizes(props).MAIN_BORDER_RADIUS,
-  borderBottomLeftRadius: getThemeSizes(props).MAIN_BORDER_RADIUS,
-}));
-
-const CodeNumberWrapperTag = createStyledTag(`${name}NumberWrapper`, (props) => ({
-  height: props.height ? `${props.height}px` : 'auto',
-  display: 'block',
-  width: '32px',
-  flexShrink: 0,
-  position: 'relative',
-}));
-
-const CodeNumberPlateTag = createStyledTag(`${name}NumberPlate`, {
-  height: '100%',
-  display: 'block',
-  width: '32px',
-  position: 'absolute',
-  overflow: 'hidden',
-});
-
-const CodeBodyWrapperTag = createStyledTag(`${name}BodyWrapper`, (props) => ({
-  overflow: 'hidden',
-  height: props.height ? `${props.height}px` : '100%',
-  width: '100%',
-}));
-
-const CodeBodyTag = createStyledTag(`${name}Body`, {
-  overflow: 'auto',
-  height: '100%',
-  padding: '20px',
-  fontWeight: 'normal',
-  fontFamily: 'Courier',
-  lineHeight: 2,
-});
 
 export {
   theme,

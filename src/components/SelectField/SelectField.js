@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { createComponentTheme } from '../../utils';
 import * as formUtils from '../../utils/forms';
 import { Select } from '../Select';
 import { FormField } from '../Form/FormField';
@@ -21,15 +20,6 @@ type SelectFieldProps = {|
   /** custom value component */
   valueComponent ?: React$Node,
 |};
-
-const name = 'selectField';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
 
 class SelectField extends React.Component<SelectFieldProps> {
   onChange = (selectedOption) => {
@@ -85,5 +75,5 @@ class SelectField extends React.Component<SelectFieldProps> {
   }
 }
 
-export { SelectField, theme };
+export { SelectField };
 

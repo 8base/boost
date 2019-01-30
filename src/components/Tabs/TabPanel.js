@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { compose, setDisplayName } from 'recompose';
-import { createStyledTag } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 import { withTabsContext } from './TabsContext';
 
 type TabPanelProps = {|
@@ -13,10 +14,11 @@ type TabPanelProps = {|
   forceRender?: boolean,
 |}
 
-const TabPanelTag = createStyledTag('tabPlate', props => ({
-  display: props.selected ? 'block' : 'none',
-}));
-TabPanelTag.displayName = 'TabPanelTag';
+const [TabPanelTag, themeTabPanel] = createThemeTag('tabPlate', {
+  root: props => ({
+    display: props.selected ? 'block' : 'none',
+  }),
+});
 
 const tabPanelEnhancer: HOC<*, TabPanelProps> = compose(
   (setDisplayName: any)('TabPanel'),
@@ -51,4 +53,4 @@ TabPanelBase.defaultProps = {
 
 const TabPanel = tabPanelEnhancer(TabPanelBase);
 
-export { TabPanel };
+export { TabPanel, themeTabPanel };

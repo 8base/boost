@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { createComponentTheme } from '../../utils';
 import * as formUtils from '../../utils/forms';
 import { Input } from '../Input';
 import { FormField } from '../Form/FormField';
@@ -31,15 +30,6 @@ type InputFieldProps = {|
   /** callback to set input ref */
   insideRef?:(HTMLInputElement) => void,
 |};
-
-const name = 'inputField';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
 
 const InputField = ({
   align,
@@ -106,4 +96,4 @@ InputField.defaultProps = {
   meta: {},
 };
 
-export { InputField, theme };
+export { InputField };

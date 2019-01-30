@@ -1,48 +1,14 @@
 import React from 'react';
-import fp from 'lodash/fp';
-
-import { createStyledTag, createComponentTheme } from '../../utils';
 import { PALETTE } from '../../theme';
 
-import { NavigationItem, theme as navigationItemTheme } from './NavigationItem';
+import { NavigationTag } from './Navigation.theme';
+import { NavigationItem } from './NavigationItem';
 
 
 type NavigationProps = {|
   children?: React.Node,
   color: $Keys<typeof PALETTE>
 |};
-
-const name = 'navigationPlate';
-
-const navigationTheme = createComponentTheme(name, {
-  root: {
-    width: '60px',
-  },
-  modifiers: {
-    color: fp.mapValues((color) => ({
-      backgroundColor: color,
-    }), PALETTE),
-  },
-});
-
-const theme = {
-  ...navigationTheme,
-  ...navigationItemTheme,
-};
-
-const NavigationTag = createStyledTag(name, {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-
-  '&:hover': {
-    width: 'auto',
-
-    '.NavigationItem-label': {
-      display: 'flex',
-    },
-  },
-});
 
 const Navigation = ({
   children,
@@ -64,4 +30,4 @@ Navigation.displayName = 'Navigation';
 
 Navigation.Item = NavigationItem;
 
-export { Navigation, theme };
+export { Navigation };

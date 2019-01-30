@@ -1,35 +1,40 @@
 // @flow
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 const name = 'dropdownHead';
 
-const theme = createComponentTheme(name, {
+const [DropdownHeadTag, themeHead] = createThemeTag(name, {
+  root: {
+    cursor: 'pointer',
+    display: 'flex',
+    flexWrap: 'nowrap',
+    height: 'auto',
+    width: 'auto',
+    zIndex: 2,
+
+  },
   modifiers: {
     stretch: {
       height: '100%',
       width: '100%',
     },
   },
-  defaults: {},
 });
 
-const DropdownHeadTag = createStyledTag(name, {
-  cursor: 'pointer',
-  display: 'flex',
-  flexWrap: 'nowrap',
-  height: 'auto',
-  width: 'auto',
-  zIndex: 2,
+const [DropdownPopperTarget, themePopperTarget] = createThemeTag(`${name}Target`, {
+  root: {
+    display: 'flex',
+    width: '100%',
+    height: ' 100%',
+  },
 });
 
-
-const DropdownPopperTarget = createStyledTag(`${name}Target`, {
-  display: 'flex',
-  width: '100%',
-  height: ' 100%',
-});
-
+const theme = {
+  ...themeHead,
+  ...themePopperTarget,
+};
 
 export {
   theme,

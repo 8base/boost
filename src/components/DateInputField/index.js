@@ -1,1 +1,3 @@
-export { DateInputField, theme } from './DateInputField';
+// @flow
+
+export { DateInputField } from './DateInputField';

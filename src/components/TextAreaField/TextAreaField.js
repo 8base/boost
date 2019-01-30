@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { createComponentTheme } from '../../utils';
 import { TextArea } from '../TextArea';
 import { FormField } from '../Form/FormField';
 
@@ -21,14 +20,6 @@ type TextAreaFieldProps = {|
   meta?: MetaType,
 |};
 
-const name = 'textAreaField';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
 
 function TextAreaField({
   cols,
@@ -58,4 +49,4 @@ function TextAreaField({
   );
 }
 
-export { TextAreaField, theme };
+export { TextAreaField };

@@ -7,7 +7,7 @@ import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
 
 import { withDropdownContext } from './DropdownContext';
-import { offsetSizes, defaultTheme, DropdownBodyTag } from './DropdownBody.theme';
+import { offsetSizes, DropdownBodyTag } from './DropdownBody.theme';
 import type { PropSizes } from '../../types';
 import { Z_INDEX } from '../../theme';
 
@@ -74,7 +74,9 @@ const DropdownBody = dropdownBodyEnhancer(
   static zIndex = Z_INDEX.DROPDOWN;
 
   static defaultProps = {
-    ...defaultTheme,
+    background: 'none',
+    padding: 'none',
+    borderRadius: 'md',
     placement: 'bottom',
     pin: 'left',
     offset: 'xs',

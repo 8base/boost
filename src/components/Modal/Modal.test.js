@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { Modal } from './Modal';
+import { OverlayTag } from './Modal.theme';
 
 const map = {};
 
@@ -64,7 +65,7 @@ describe('<Modal />', () => {
       </Modal>,
     );
 
-    wrapper.find('OverlayTag').simulate('mouseDown');
+    wrapper.find(OverlayTag).simulate('mouseDown');
     expect(onClose).toHaveBeenCalled();
   });
 
@@ -77,7 +78,7 @@ describe('<Modal />', () => {
       </Modal>,
     );
 
-    wrapper.find('OverlayTag').simulate('mouseDown');
+    wrapper.find(OverlayTag).simulate('mouseDown');
     expect(onClose).not.toHaveBeenCalled();
   });
 

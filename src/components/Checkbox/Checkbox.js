@@ -40,24 +40,23 @@ class Checkbox extends PureComponent<CheckboxProps> {
   }
 
   render() {
-    const { onChange, checked, hasError, disabled, label, nowrap, ...rest } = this.props;
+    const { onChange, label, ...rest } = this.props;
 
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
-        <CheckboxSquareTag hasError={ hasError } disabled={ disabled } tagName="div">
-          <CheckboxIconTag checked={ checked } tagName="div">
+        <CheckboxSquareTag modifiers={ rest } tagName="div">
+          <CheckboxIconTag modifiers={ rest } tagName="div">
             <Icon name="Check" size="xs" />
           </CheckboxIconTag>
         </CheckboxSquareTag>
         <CheckboxTag
-          disabled={ disabled }
-          checked={ checked }
+          modifiers={ rest }
           onChange={ this.onChange }
           type="checkbox"
           tagName="input"
         />
         <If condition={ !!label }>
-          <CheckboxTextTag tagName="div" nowrap={ nowrap }>{ label }</CheckboxTextTag>
+          <CheckboxTextTag modifiers={ rest } tagName="div">{ label }</CheckboxTextTag>
         </If>
       </CheckboxWrapperTag>
     );

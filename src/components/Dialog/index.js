@@ -1,1 +1,4 @@
-export { Dialog, theme } from './Dialog';
+// @flow
+
+export { Dialog } from './Dialog';
+export { theme } from './Dialog.theme';

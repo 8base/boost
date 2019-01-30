@@ -36,18 +36,23 @@ class Code extends PureComponent<CodeProps> {
   }
 
   render() {
-    const { children, height } = this.props;
+    const { children, ...rest } = this.props;
 
     return (
-      <CodeWrapperTag height={ height }>
+      <CodeWrapperTag { ...rest }>
         <CodePlateTag>
-          <CodeNumberWrapperTag height={ height }>
-            <CodeNumberPlateTag insideRef={ this.setNumbersRef }>
-              <CodeNumericTag height={ height }>{ this.renderNumbs() }</CodeNumericTag>
+          <CodeNumberWrapperTag modifiers={ rest }>
+            <CodeNumberPlateTag imodifiers={ rest } insideRef={ this.setNumbersRef }>
+              <CodeNumericTag modifiers={ rest }>{ this.renderNumbs() }</CodeNumericTag>
             </CodeNumberPlateTag>
           </CodeNumberWrapperTag>
-          <CodeBodyWrapperTag height={ height }>
-            <CodeBodyTag tagName="pre" insideRef={ this.setBodyRef } onScroll={ this.onBodyScroll }>
+          <CodeBodyWrapperTag modifiers={ rest }>
+            <CodeBodyTag
+              modifiers={ rest }
+              tagName="pre"
+              insideRef={ this.setBodyRef }
+              onScroll={ this.onBodyScroll }
+            >
               { children }
             </CodeBodyTag>
           </CodeBodyWrapperTag>

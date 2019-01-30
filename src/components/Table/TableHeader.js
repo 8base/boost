@@ -2,7 +2,8 @@
 import React from 'react';
 
 import { Grid } from '../Grid';
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { createThemeTag } from '../../theme/createThemeTag';
+
 
 type TableHeaderProps = {
   children?: React$Node,
@@ -10,22 +11,16 @@ type TableHeaderProps = {
 
 const name = 'tableHeader';
 
-const theme = createComponentTheme(name, ({ COLORS }: *) => ({
+const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
+    display: 'grid',
+
     height: '52px',
     backgroundColor: COLORS.LIGHT_GRAY5,
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     color: COLORS.GRAY4,
   },
-  modifiers: {
-  },
-  defaults: {
-  },
 }));
-
-const TableHeaderTag = createStyledTag(name, {
-  display: 'grid',
-});
 
 function TableHeader({
   children,

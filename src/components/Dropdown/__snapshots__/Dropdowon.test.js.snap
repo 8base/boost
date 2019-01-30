@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dropdown /> should render dropdown 1`] = `
-.emotion-4 {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  height: auto;
-  width: auto;
-  z-index: 2;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
 <Dropdown
   isOpen={false}
 >
@@ -33,18 +10,18 @@ exports[`<Dropdown /> should render dropdown 1`] = `
     <DropdownPlate
       isOpen={false}
     >
-      <Styled(dropdown)
+      <Boost(dropdown)
         insideRef={[Function]}
         tag="div"
       >
         <Tag
-          className="emotion-8 emotion-1"
+          className="emotion-0 emotion-1"
           insideRef={[Function]}
           tag="div"
           tagName="div"
         >
           <div
-            className="emotion-8 emotion-1"
+            className="emotion-0 emotion-1"
           >
             <Manager
               tag={false}
@@ -61,25 +38,25 @@ exports[`<Dropdown /> should render dropdown 1`] = `
                     }
                   }
                 >
-                  <Styled(dropdownHead)
+                  <Boost(dropdownHead)
                     className="ignore-react-onclickoutside-0"
                     onClick={[Function]}
                     tagName="div"
                   >
                     <Tag
-                      className="ignore-react-onclickoutside-0 emotion-4 emotion-1"
+                      className="ignore-react-onclickoutside-0 emotion-0 emotion-1"
                       onClick={[Function]}
                       tagName="div"
                     >
                       <div
-                        className="ignore-react-onclickoutside-0 emotion-4 emotion-1"
+                        className="ignore-react-onclickoutside-0 emotion-0 emotion-1"
                         onClick={[Function]}
                       >
                         <Reference>
                           <InnerReference
                             getReferenceRef={[Function]}
                           >
-                            <Styled(dropdownHeadTarget)
+                            <Boost(dropdownHeadTarget)
                               insideRef={[Function]}
                               tagName="div"
                             >
@@ -94,12 +71,12 @@ exports[`<Dropdown /> should render dropdown 1`] = `
                                   Head
                                 </div>
                               </Tag>
-                            </Styled(dropdownHeadTarget)>
+                            </Boost(dropdownHeadTarget)>
                           </InnerReference>
                         </Reference>
                       </div>
                     </Tag>
-                  </Styled(dropdownHead)>
+                  </Boost(dropdownHead)>
                 </DropdownHead>
               </Dropdown.Head>
               <Dropdown.Body>
@@ -173,7 +150,7 @@ exports[`<Dropdown /> should render dropdown 1`] = `
             </Manager>
           </div>
         </Tag>
-      </Styled(dropdown)>
+      </Boost(dropdown)>
     </DropdownPlate>
   </branch(DropdownPlate)>
 </Dropdown>

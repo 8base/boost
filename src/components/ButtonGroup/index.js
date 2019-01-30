@@ -1,3 +1,4 @@
 // @flow
 
-export { ButtonGroup, theme } from './ButtonGroup';
+export { ButtonGroup } from './ButtonGroup';
+export { theme } from './ButtonGroup.theme';

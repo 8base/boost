@@ -146,28 +146,30 @@ class Input extends PureComponent<InputProps> {
           <When condition={ !mask }>
             <InputTag
               { ...inputProps }
+              modifiers={ rest }
               tagName="input"
             />
           </When>
           <Otherwise >
             <InputTag
               { ...inputProps }
+              modifiers={ rest }
               mask={ mask }
               tagName={ InputMask }
             />
           </Otherwise>
         </Choose>
         <If condition={ !!hasError && !hideErrorIndicator }>
-          <InputIndicatorTag hasError={ hasError } tagName="div" />
+          <InputIndicatorTag modifiers={ rest } hasError={ hasError } tagName="div" />
         </If>
         <If condition={ hasLeftIcon }>
-          <InputLeftIconTag tagName="div">{ leftIcon }</InputLeftIconTag>
+          <InputLeftIconTag modifiers={ rest } tagName="div">{ leftIcon }</InputLeftIconTag>
         </If>
         <If condition={ hasRightIcon && !clearable }>
-          <InputRightIconTag tagName="div">{ rightIcon }</InputRightIconTag>
+          <InputRightIconTag modifiers={ rest } tagName="div">{ rightIcon }</InputRightIconTag>
         </If>
         <If condition={ !!clearable && !!value }>
-          <InputClearButtonTag onClick={ this.onClear } tagName="div">
+          <InputClearButtonTag modifiers={ rest } onClick={ this.onClear } tagName="div">
             <Icon name="Delete" size="sm" />
           </InputClearButtonTag>
         </If>

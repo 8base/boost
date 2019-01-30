@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { createComponentTheme } from '../../utils';
 import { Card } from '../Card';
 import { Row } from '../FlexLayout';
 import type { PropSizes } from '../../types';
@@ -9,15 +8,6 @@ type DialogFooterProps = {|
   children?: React$Node,
   padding?: PropSizes,
 |};
-
-const name = 'dialogFooter';
-
-const theme = createComponentTheme(name, {
-  modifiers: {
-  },
-  defaults: {
-  },
-});
 
 function DialogFooter({
   children,
@@ -32,4 +22,4 @@ function DialogFooter({
   );
 }
 
-export { DialogFooter, theme };
+export { DialogFooter };

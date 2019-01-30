@@ -1,6 +1,7 @@
+// @flow
 import React from 'react';
 
-import { createStyledTag, createComponentTheme } from '../../utils';
+import { LabelTag } from './Label.theme';
 
 type LabelProps = {|
   kind?: 'primary' | 'secondary' | 'disabled',
@@ -9,43 +10,23 @@ type LabelProps = {|
   text?: string,
 |};
 
-const name = 'label';
-
-const theme = createComponentTheme(name, ({ COLORS, SIZES }: *) => ({
-  root: {
-    fontWeight: 400,
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: SIZES.OVERLINE_1_LH,
-    margin: 0,
-  },
-  modifiers: {
-    kind: {
-      primary: {
-        color: COLORS.PRIMARY_TEXT_COLOR,
-      },
-      secondary: {
-        color: COLORS.SECONDARY_TEXT_COLOR,
-      },
-      disabled: {
-        color: COLORS.DISABLED_TEXT_COLOR,
-      },
-    },
-  },
-  defaults: { },
-}));
-
-const StyledTag = createStyledTag(name);
-
 function Label({
   text,
   children,
   ...rest
   }: LabelProps) {
-  return <StyledTag { ...rest } tagName="label">{ children || text }</StyledTag>;
+  return (
+    <LabelTag
+      { ...rest }
+      tagName="label"
+    >
+      { children || text }
+    </LabelTag>
+  );
 }
 
 Label.defaultProps = {
   kind: 'primary',
 };
 
-export { Label, theme };
+export { Label };

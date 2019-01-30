@@ -12,15 +12,15 @@ type GridBoxProps = {
   /** when true then set box scrollable */
   scrollable?: boolean,
   /** align-self css rule */
-  alignSelf?: 'start' | 'end' | 'center' | 'stretch',
+  alignSelf?: 'start' | 'end' | 'center' | 'stretch' | 'flex-end' | 'flex-start',
   /** justify-self css rule */
-  justifySelf?: 'start' | 'end' | 'center' | 'stretch',
+  justifySelf?: 'start' | 'end' | 'center' | 'stretch' | 'flex-end' | 'flex-start',
   /** justify-content css rule*/
-  justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  justifyContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly' | 'flex-end' | 'flex-start',
   /** justify-content css rule*/
-  alignItems?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  alignItems?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly' | 'flex-end' | 'flex-start',
   /** align-content css rule*/
-  alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly',
+  alignContent?: 'start' | 'end' | 'center' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly' | 'flex-end' | 'flex-start',
   /** text-align css rule*/
   textAlign?: 'left' | 'right' | 'center' | 'justify',
 };

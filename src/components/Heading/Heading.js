@@ -9,7 +9,7 @@ type HeadingProps = {
   kind?: 'primary' | 'secondary' | 'disabled' | 'white',
   text?: string,
   type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  weight?: 'light' | 'normal' | 'semibold' | 'bold',
+  weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
 };
 
 

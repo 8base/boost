@@ -3,12 +3,12 @@ import React from 'react';
 
 import { LabelTag } from './Label.theme';
 
-type LabelProps = {|
+type LabelProps = {
   kind?: 'primary' | 'secondary' | 'disabled',
   for?: string,
   children?: string,
   text?: string,
-|};
+};
 
 function Label({
   text,

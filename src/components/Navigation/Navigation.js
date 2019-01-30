@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { PALETTE } from '../../theme';
 
@@ -5,10 +7,10 @@ import { NavigationTag } from './Navigation.theme';
 import { NavigationItem } from './NavigationItem';
 
 
-type NavigationProps = {|
-  children?: React.Node,
+type NavigationProps = {
+  children?: React$Node,
   color: $Keys<typeof PALETTE>
-|};
+};
 
 const Navigation = ({
   children,

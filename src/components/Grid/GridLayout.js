@@ -4,7 +4,7 @@ import React from 'react';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 
-type GridLayoutProps = {|
+type GridLayoutProps = {
   children?: React$Node,
   /** when true then stretch to full width */
   stretch?: boolean,
@@ -22,7 +22,7 @@ type GridLayoutProps = {|
   justifyItems?: 'start' | 'end' | 'center' | 'stretch',
   /** align-items css rule */
   alignItems?: 'start' | 'end' | 'center' | 'stretch',
-|};
+};
 
 const name = 'gridLayout';
 

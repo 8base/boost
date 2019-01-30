@@ -1,3 +1,5 @@
+//@flow
+
 import React from 'react';
 
 import {
@@ -7,9 +9,9 @@ import {
   ProgressTextTag,
 } from './Progress.theme';
 
-type ProgressProps = {|
+type ProgressProps = {
   value: number,
-|};
+};
 
 const Progress = ({ value, ...rest }: ProgressProps) => {
   value = value > 100 ? value % 100 : value;

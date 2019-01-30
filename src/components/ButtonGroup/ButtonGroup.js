@@ -4,9 +4,9 @@ import React from 'react';
 
 import { ButtonGroupTag } from './ButtonGroup.theme';
 
-type ButtonGroupProps = {|
+type ButtonGroupProps = {
   children: React$Node,
-|};
+};
 
 
 const ButtonGroup = ({ children, ...rest }: ButtonGroupProps) => {

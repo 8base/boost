@@ -4,10 +4,10 @@ import { Card } from '../Card';
 import { Row } from '../FlexLayout';
 import type { PropSizes } from '../../types';
 
-type DialogFooterProps = {|
+type DialogFooterProps = {
   children?: React$Node,
   padding?: PropSizes,
-|};
+};
 
 function DialogFooter({
   children,

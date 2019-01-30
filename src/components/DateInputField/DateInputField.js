@@ -1,16 +1,18 @@
+// @flow
+
 import React from 'react';
 
 import { DateInput } from '../DateInput';
 import { FormField } from '../Form/FormField';
 
-type DateInputFieldProps = {|
+type DateInputFieldProps = {
   /** field label */
   label?: string,
   /** form input object */
-  input?: InputType,
+  input?: Object,
   /** form meta object */
-  meta?: MetaType,
-|};
+  meta?: Object,
+};
 
 function DateInputField({
   label,
@@ -18,7 +20,7 @@ function DateInputField({
   meta,
   ...rest
   }: DateInputFieldProps) {
-  const { name, value, onChange } = input;
+  const { name, value, onChange } = input || {};
 
   return (
     <FormField label={ label } input={ input } meta={ meta }>

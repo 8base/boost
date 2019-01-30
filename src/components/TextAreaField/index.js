@@ -1,1 +1,3 @@
-export { TextAreaField, theme } from './TextAreaField';
+// @flow
+
+export { TextAreaField } from './TextAreaField';

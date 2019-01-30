@@ -1,3 +1,5 @@
+// @flow
+
 import { GridBox as Box, theme as gridBoxTheme } from './GridBox';
 import { GridLayout as Layout, theme as gridLayoutTheme } from './GridLayout';
 

@@ -4,11 +4,11 @@ import React from 'react';
 
 import { ParagraphTag } from './Paragraph.theme';
 
-type ParagraphProps = {|
+type ParagraphProps = {
   children?: React$Node,
   kind?: 'primary' | 'secondary' | 'disabled' | 'white',
   text?: string,
-|};
+};
 
 const Paragraph = ({
   text,

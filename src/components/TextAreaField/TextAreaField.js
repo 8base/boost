@@ -1,9 +1,11 @@
+// @flow
+
 import React from 'react';
 
 import { TextArea } from '../TextArea';
 import { FormField } from '../Form/FormField';
 
-type TextAreaFieldProps = {|
+type TextAreaFieldProps = {
   /** number of textarea columns */
   cols?: number,
   /** number of textarea rows */
@@ -15,10 +17,10 @@ type TextAreaFieldProps = {|
   /** when true then stretch to the maximal width */
   stretch?: boolean,
   /** form input object */
-  input: InputType,
+  input: Object,
   /** form meta object */
-  meta?: MetaType,
-|};
+  meta?: Object,
+};
 
 
 function TextAreaField({

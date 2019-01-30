@@ -4,10 +4,10 @@ import React, { PureComponent } from 'react';
 import { CardHeaderTag } from './Card.theme';
 import type { PropSizes } from '../../types';
 
-type CardHeaderProps = {|
+type CardHeaderProps = {
   children: React$Node,
   padding?: PropSizes,
-|}
+}
 
 class CardHeader extends PureComponent<CardHeaderProps> {
   static defaultProps = {

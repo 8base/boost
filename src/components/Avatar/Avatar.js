@@ -3,13 +3,13 @@
 import React from 'react';
 import { theme, AvatarImgTag, AvatarTag, AvatarHandleTag } from './Avatar.theme';
 
-type AvatarProps = {|
+type AvatarProps = {
   src?: string,
   name?: string,
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
   onPick?: () => void,
   pickLabel?: string,
-|};
+};
 
 function Avatar({
   src,

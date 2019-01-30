@@ -4,12 +4,12 @@ import React, { PureComponent } from 'react';
 import { CardBodyTag } from './Card.theme';
 import type { PropSizes } from '../../types';
 
-type CardBodyProps = {|
+type CardBodyProps = {
   children: React$Node,
   padding?: PropSizes,
   scrollable?: boolean,
   stretch?: boolean,
-|}
+}
 
 
 class CardBody extends PureComponent<CardBodyProps> {

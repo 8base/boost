@@ -9,7 +9,7 @@ import { DialogFooter } from './DialogFooter';
 import { DialogHeader } from './DialogHeader';
 import { DialogTag } from './Dialog.theme';
 
-type DialogPlateProps = {|
+type DialogPlateProps = {
   children?: React$Node,
   isOpen?: boolean,
   onClose?: (any) => void,
@@ -18,7 +18,7 @@ type DialogPlateProps = {|
   shouldCloseOnEscPress ?: boolean,
   padding?: PropSizes,
   tagName?: string,
-|};
+};
 
 
 const Dialog = ({

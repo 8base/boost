@@ -4,13 +4,13 @@ import React from 'react';
 
 import { Input } from '../Input';
 
-type DateInputValueProps = {|
+type DateInputValueProps = {
   onChange: (value: Object) => void,
   onBlur: () => void,
   value: ?string,
   mask: string,
   clearable?: boolean,
-|};
+};
 
 const DateInputValue = ({ value, onChange, ...props }: DateInputValueProps) => (
   <Input onChange={ (val) => onChange({ target: { value: val }}) } value={ value } { ...props } />

@@ -7,7 +7,7 @@ import * as formUtils from '../../utils/forms';
 import { Checkbox } from '../Checkbox';
 import { FormField } from '../Form/FormField';
 
-type CheckboxFieldProps = {|
+type CheckboxFieldProps = {
   /** field label */
   label?: string,
   /** form input object */
@@ -20,7 +20,7 @@ type CheckboxFieldProps = {|
   disabled ?: boolean,
   /** no wrap text  */
   nowrap?: boolean,
-|};
+};
 
 const CheckboxField = ({
   label,

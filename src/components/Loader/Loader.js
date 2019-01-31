@@ -3,6 +3,7 @@ import React from 'react';
 
 import { LoaderTag, LoaderWrapperTag } from './Loader.theme';
 
+// $FlowIgnore
 import LoaderSvg from './Loader.svg';
 
 type LoaderProps = {

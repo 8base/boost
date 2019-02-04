@@ -1,3 +1,13 @@
+<a name="0.13.5"></a>
+## [0.13.5](https://github.com/8base/boost/compare/v0.13.4...v0.13.5) (2019-02-04)
+
+
+### Bug Fixes
+
+* **Dialog:** fix dialog body to avoid scrollable bug ([3882329](https://github.com/8base/boost/commit/3882329))
+
+
+
 <a name="0.13.4"></a>
 ## [0.13.4](https://github.com/8base/boost/compare/v0.13.3...v0.13.4) (2019-01-31)
 

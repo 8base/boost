@@ -16,4 +16,8 @@ const DialogBody = ({ children, ...rest }: DialogBodyProps) => (
   </DialogBodyTag>
 );
 
+DialogBody.defaultProps = {
+  scrollable: true,
+};
+
 export { DialogBody };

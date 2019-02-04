@@ -4,7 +4,10 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 
 const [DialogBodyTag, themeBody] = createThemeTag('dialogBody', {
-  flexShrink: 1,
+  root: {
+    display: 'flex',
+    flexShrink: 1,
+  },
 });
 
 

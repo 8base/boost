@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (asStory) => {
-  asStory('Components/Dialog', module, (story, { ModalContext, Dialog, Paragraph, Button }) => {
+  asStory('Components/Dialog', module, (story, { ModalContext, Dialog, Paragraph, Button, Column }) => {
     story
       .add('default', () => (
         <Dialog size="sm" isOpen data-e2e-id="default-dialog">
@@ -10,6 +10,24 @@ export default (asStory) => {
             <Paragraph>
               Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics
             </Paragraph>
+          </Dialog.Body>
+          <Dialog.Footer>
+            <Button color="neutral" variant="outlined">Cancel</Button>
+            <Button type="submit">Apply</Button>
+          </Dialog.Footer>
+        </Dialog>
+      ))
+      .add('with scroll', () => (
+        <Dialog size="sm" isOpen data-e2e-id="default-dialog">
+          <Dialog.Header title="Mark Job as Completed" />
+          <Dialog.Body>
+            <Column>
+              { (new Array(100)).fill('').map(() => (
+                <Paragraph key="">
+                Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics
+                </Paragraph>
+              )) }
+            </Column>
           </Dialog.Body>
           <Dialog.Footer>
             <Button color="neutral" variant="outlined">Cancel</Button>

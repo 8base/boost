@@ -3,7 +3,7 @@ import React from 'react';
 import { Checkbox } from './Checkbox';
 
 describe('<Checkbox />', () => {
-  it('should shallow chekbox', () => {
+  it('should shallow checkbox', () => {
     const onChange = jest.fn();
     const wrapper = shallow(
       <Checkbox onChange={ onChange } label="Label" checked />,
@@ -27,6 +27,7 @@ describe('<Checkbox />', () => {
     tagName="div"
   >
     <Boost(checkboxIcon)
+      checked={true}
       modifiers={
         Object {
           "checked": true,
@@ -43,6 +44,8 @@ describe('<Checkbox />', () => {
     </Boost(checkboxIcon)>
   </Boost(checkboxSquare)>
   <Boost(checkboxTag)
+    checked={true}
+    disabled={false}
     modifiers={
       Object {
         "checked": true,

@@ -19,6 +19,8 @@ type IconProps = {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
   /** custom icon class */
   className?: string,
+  /** title attribute for the icon */
+  title?: string,
 };
 
 const Icon = ({ name, className, ...rest }: IconProps) => {
@@ -34,11 +36,16 @@ const Icon = ({ name, className, ...rest }: IconProps) => {
               <When condition={ !!className && !Glyph }>
                 <IconFontTag
                   tagName="i"
+                  title={ rest.title }
                   modifiers={ rest }
                 />
               </When>
               <When condition={ !className && !!Glyph }>
-                <IconSvgTag tagName="i" modifiers={ rest }>
+                <IconSvgTag
+                  tagName="i"
+                  title={ rest.title }
+                  modifiers={ rest }
+                >
                   <Glyph width="100%" height="100%" />
                 </IconSvgTag>
               </When>
@@ -48,6 +55,7 @@ const Icon = ({ name, className, ...rest }: IconProps) => {
     </IconsConsumer>
   );
 };
+
 Icon.defaultProps = {
   size: 'md',
 };

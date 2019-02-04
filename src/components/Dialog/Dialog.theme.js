@@ -6,6 +6,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const [DialogBodyTag, themeBody] = createThemeTag('dialogBody', {
   root: {
     display: 'flex',
+    flexDirection: 'column',
     flexShrink: 1,
   },
 });

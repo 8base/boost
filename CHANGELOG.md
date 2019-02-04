@@ -1,3 +1,13 @@
+<a name="0.13.6"></a>
+## [0.13.6](https://github.com/8base/boost/compare/v0.13.5...v0.13.6) (2019-02-04)
+
+
+### Bug Fixes
+
+* fix passing props ([42a0c5b](https://github.com/8base/boost/commit/42a0c5b))
+
+
+
 <a name="0.13.5"></a>
 ## [0.13.5](https://github.com/8base/boost/compare/v0.13.4...v0.13.5) (2019-02-04)
 

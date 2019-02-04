@@ -11,7 +11,7 @@ type CheckboxProps = {
   /** checkbox label */
   label?: string,
   /** checked state */
-  checked?: boolean,
+  checked?: boolean | string,
   /** when error then show error styles */
   hasError?: boolean,
   /** show disabled styles  */
@@ -45,12 +45,14 @@ class Checkbox extends PureComponent<CheckboxProps> {
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
         <CheckboxSquareTag modifiers={ rest } tagName="div">
-          <CheckboxIconTag modifiers={ rest } tagName="div">
+          <CheckboxIconTag modifiers={ rest } checked={ rest.checked } tagName="div">
             <Icon name="Check" size="xs" />
           </CheckboxIconTag>
         </CheckboxSquareTag>
         <CheckboxTag
           modifiers={ rest }
+          checked={ rest.checked }
+          disabled={ rest.disabled }
           onChange={ this.onChange }
           type="checkbox"
           tagName="input"

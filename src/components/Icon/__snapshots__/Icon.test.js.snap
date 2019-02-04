@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> should shallow input 1`] = `
+<Icon
+  color="DANGER"
+  name="Alert"
+  size="md"
+  title="Alert icon"
+>
+  <Boost(iconWrapper)
+    color="DANGER"
+    size="md"
+    tagName="span"
+    title="Alert icon"
+  >
+    <Tag
+      className="emotion-0 emotion-1"
+      color="DANGER"
+      size="md"
+      tagName="span"
+      title="Alert icon"
+    >
+      <span
+        className="emotion-0 emotion-1"
+      >
+        <Boost(iconSvg)
+          modifiers={
+            Object {
+              "color": "DANGER",
+              "size": "md",
+              "title": "Alert icon",
+            }
+          }
+          tagName="i"
+          title="Alert icon"
+        >
+          <Tag
+            className="emotion-0 emotion-1"
+            modifiers={
+              Object {
+                "color": "DANGER",
+                "size": "md",
+                "title": "Alert icon",
+              }
+            }
+            tagName="i"
+            title="Alert icon"
+          >
+            <i
+              className="emotion-0 emotion-1"
+              title="Alert icon"
+            >
+              <Alert
+                height="100%"
+                viewBox="0 0 35 31"
+                width="100%"
+              >
+                <svg
+                  height="100%"
+                  viewBox="0 0 35 31"
+                  width="100%"
+                >
+                  <g
+                    fill="none"
+                    fillRule="evenodd"
+                  >
+                    <path
+                      d="M2.147 30.005c-1.913 0-2.696-1.319-1.739-2.931L15.761 1.209c.957-1.612 2.523-1.612 3.48 0l15.354 25.865c.957 1.612.174 2.931-1.74 2.931H2.147z"
+                      fill="currentColor"
+                    />
+                    <text
+                      fill="#FFF"
+                      fontFamily="Poppins-Bold, Poppins"
+                      fontSize="18"
+                      fontWeight="bold"
+                    >
+                      <tspan
+                        x="14"
+                        y="25"
+                      >
+                        !
+                      </tspan>
+                    </text>
+                  </g>
+                </svg>
+              </Alert>
+            </i>
+          </Tag>
+        </Boost(iconSvg)>
+      </span>
+    </Tag>
+  </Boost(iconWrapper)>
+</Icon>
+`;

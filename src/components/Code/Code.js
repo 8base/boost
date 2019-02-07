@@ -1,13 +1,24 @@
 // @flow
 
 import React, { PureComponent } from 'react';
-import { CodeNumberPlateTag, CodeWrapperTag, CodeBodyTag, CodeNumericTag, CodePlateTag, CodeLineCounterTag, CodeBodyWrapperTag, CodeNumberWrapperTag } from './Code.theme';
+import {
+  CodeNumberPlateTag,
+  CodeWrapperTag,
+  CodeBodyTag,
+  CodeNumericTag,
+  CodePlateTag,
+  CodeLineCounterTag,
+  CodeBodyWrapperTag,
+  CodeNumberWrapperTag,
+  CodeCopyButtonWrapper,
+} from './Code.theme';
+import { Button } from '../Button';
 
 type CodeProps = {
   children: string | React$Node,
   height?: number,
-}
-
+  withCopyButton?: boolean,
+};
 
 class Code extends PureComponent<CodeProps> {
   numbersRef: *;
@@ -35,8 +46,29 @@ class Code extends PureComponent<CodeProps> {
     return counters;
   }
 
+  handleCopyButtonClick = () => {
+    const tempTextarea = document.createElement('TEXTAREA');
+
+    const lastFocusedElement = document.activeElement;
+
+    // $FlowIgnore
+    tempTextarea.value = this.bodyRef.innerText;
+    // $FlowIgnore
+    document.body.appendChild(tempTextarea);
+    // $FlowIgnore
+    tempTextarea.select();
+
+    document.execCommand('copy');
+    // $FlowIgnore
+    document.body.removeChild(tempTextarea);
+
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  };
+
   render() {
-    const { children, ...rest } = this.props;
+    const { children, withCopyButton, ...rest } = this.props;
 
     return (
       <CodeWrapperTag { ...rest }>
@@ -56,6 +88,13 @@ class Code extends PureComponent<CodeProps> {
               { children }
             </CodeBodyTag>
           </CodeBodyWrapperTag>
+          <If condition={ !!withCopyButton }>
+            <CodeCopyButtonWrapper>
+              <Button type="button" size="sm" onClick={ this.handleCopyButtonClick }>
+                Copy
+              </Button>
+            </CodeCopyButtonWrapper>
+          </If>
         </CodePlateTag>
       </CodeWrapperTag>
     );

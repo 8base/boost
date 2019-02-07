@@ -2,7 +2,6 @@
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
-
 const name = 'code';
 
 const [CodeWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLORS, SIZES }: *) => ({
@@ -55,6 +54,7 @@ const [CodePlateTag, themePlate] = createThemeTag(`${name}Plate`, {
     width: '100%',
     overflow: 'hidden',
     alignItems: 'stretch',
+    position: 'relative',
   },
 });
 
@@ -89,6 +89,14 @@ const [CodeBodyWrapperTag, themeBodyWrapper] = createThemeTag(`${name}BodyWrappe
   }),
 });
 
+const [CodeCopyButtonWrapper, themeCopyButtonWrapper] = createThemeTag(`${name}CopyButtonWrapper`, {
+  root: {
+    position: 'absolute',
+    top: '10px',
+    right: '32px',
+  },
+});
+
 
 const theme = {
   ...themeBodyWrapper,
@@ -99,6 +107,7 @@ const theme = {
   ...themeCounter,
   ...themeBody,
   ...themeNumeric,
+  ...themeCopyButtonWrapper,
 };
 
 export {
@@ -111,4 +120,5 @@ export {
   CodeBodyWrapperTag,
   CodeNumberWrapperTag,
   CodeNumberPlateTag,
+  CodeCopyButtonWrapper,
 };

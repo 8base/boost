@@ -35,6 +35,28 @@ npm i -g 8base
 `
 	     }
         </Code>
+      ))
+      .add('with copy button', () => (
+        <Code height={ 200 } withCopyButton>
+          { `
+<p>
+  npm i -g 8base
+  8base init my-project
+</p>
+<p>
+  npm i -g 8base
+  8base init my-project
+</p>
+<p>
+  npm i -g 8base
+  8base init my-project
+</p>
+<p>
+  npm i -g 8base
+  8base init my-project
+</p>
+          ` }
+        </Code>
       ));
   });
 };

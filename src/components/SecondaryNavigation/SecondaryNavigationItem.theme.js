@@ -1,37 +1,37 @@
 // @flow
 import { createThemeTag } from '../../theme/createThemeTag';
 
-
 const name = 'secondaryNavigationItem';
-
 
 const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
-    height: '32px',
+    height: 28,
     display: 'flex',
     backgroundColor: 'inherit',
     textDecoration: 'none',
     userSelect: 'none',
     position: 'relative',
+    paddingLeft: 4,
+    paddingRight: 20,
+    justifyContent: 'space-between',
 
-    '&:hover': {
-      backgroundColor: COLORS.WHITE,
+    [`&.active ${SecondaryNavigationItemActionsTag}`]: {
+      visibility: 'visible',
     },
 
     '&.active': {
       backgroundColor: COLORS.WHITE,
+      paddingLeft: 0,
+      borderLeft: `4px solid ${COLORS.DSM.NAVIGATION_COLORS.DSM_DB_SELECTED}`,
     },
   },
-}));
+  modifiers: {
+    hovered: {
+      backgroundColor: COLORS.WHITE,
 
-
-const [SecondaryNavigationItemBarTag, barTheme] = createThemeTag(`${name}Bar`, ({ COLORS }: *) => ({
-  root: {
-    width: '4px',
-    backgroundColor: 'inherit',
-
-    '.active > &': {
-      backgroundColor: COLORS.DSM.NAVIGATION_COLORS.DSM_DB_SELECTED,
+      [`& ${SecondaryNavigationItemActionsTag}`]: {
+        visibility: 'visible',
+      },
     },
   },
 }));
@@ -46,17 +46,26 @@ const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Lab
   },
 }));
 
+const [SecondaryNavigationItemActionsTag, actionsTheme] = createThemeTag(`${name}Actions`, () => ({
+  root: {
+    display: 'flex',
+    alignItems: 'center',
+    position: 'relative',
+    visibility: 'hidden',
+  },
+}));
+
 const theme = {
   ...rootTheme,
-  ...barTheme,
   ...labelTheme,
+  ...actionsTheme,
 };
 
 
 export {
   theme,
   SecondaryNavigationItemTag,
-  SecondaryNavigationItemBarTag,
   SecondaryNavigationItemLabelTag,
+  SecondaryNavigationItemActionsTag,
 };
 

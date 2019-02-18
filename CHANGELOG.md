@@ -1,3 +1,13 @@
+<a name="0.13.7"></a>
+## [0.13.7](https://github.com/8base/boost/compare/v0.13.6...v0.13.7) (2019-02-18)
+
+
+### Features
+
+* **Code:** adds copy button ([f7915a3](https://github.com/8base/boost/commit/f7915a3))
+
+
+
 <a name="0.13.6"></a>
 ## [0.13.6](https://github.com/8base/boost/compare/v0.13.5...v0.13.6) (2019-02-04)
 

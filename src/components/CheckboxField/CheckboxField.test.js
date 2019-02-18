@@ -6,7 +6,7 @@ describe('<Checkbox />', () => {
   it('should pass props to the children', () => {
     const onChange = jest.fn();
     const wrapper = shallow(
-      <CheckboxField meta={{}} input={{ onChange, value: true }} />,
+      <CheckboxField input={{ onChange, value: true }} />,
     );
 
     expect(wrapper).toMatchInlineSnapshot(`
@@ -19,7 +19,6 @@ describe('<Checkbox />', () => {
       "value": true,
     }
   }
-  meta={Object {}}
   stretch={true}
 >
   <Checkbox

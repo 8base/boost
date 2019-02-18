@@ -11,20 +11,16 @@ exports[`<SecondaryNavigation /> should shallow SecondaryNavigation 1`] = `
 `;
 
 exports[`<SecondaryNavigation /> should shallow SecondaryNavigation item 1`] = `
-<Boost(secondaryNavigationItem)>
-  <Boost(secondaryNavigationItemBar)
-    modifiers={Object {}}
-  />
+<Boost(secondaryNavigationItem)
+  hovered={false}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
   <Boost(secondaryNavigationItemLabel)
     modifiers={Object {}}
+    tagName={[Function]}
   >
-    <Text
-      color="DARK_GRAY1"
-      ellipsis={false}
-      weight="normal"
-    >
-      First item
-    </Text>
+    First item
   </Boost(secondaryNavigationItemLabel)>
 </Boost(secondaryNavigationItem)>
 `;

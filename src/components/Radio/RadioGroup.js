@@ -44,11 +44,14 @@ class RadioGroup extends PureComponent<RadioProps> {
   renderChildren = () => {
     const { options, children } = this.props;
 
-    return !options
-      ? children
-      : options.map(({ value, label }) => (
-        <RadioItem key={ value } label={ label } value={ value } />
-      ));
+    if (!options) {
+      return children;
+    }
+
+    // $FlowFixMe
+    return options.map(({ value, label }) => (
+      <RadioItem key={ value } label={ label } value={ value } />
+    ));
   }
 
   render() {

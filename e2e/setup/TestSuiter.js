@@ -9,7 +9,7 @@ class TestSuiter {
   page: *;
   iframe: *;
   root: *;
-  enhancers: Array<$await<any>> = [];
+  enhancers: Array<(iframe: Object, page: Object) => Promise<any>> = [];
 
   constructor(kind: string, story: string, stateName?: string) {
     this.kind = kind;

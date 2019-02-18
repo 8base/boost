@@ -53,9 +53,4 @@ const CheckboxField = ({
   );
 };
 
-CheckboxField.defaultProps = {
-  input: {},
-  meta: {},
-};
-
 export { CheckboxField };

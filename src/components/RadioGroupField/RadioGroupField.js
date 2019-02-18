@@ -55,9 +55,4 @@ const RadioGroupField = ({
   );
 };
 
-RadioGroupField.defaultProps = {
-  input: {},
-  meta: {},
-};
-
 export { RadioGroupField };

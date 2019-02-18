@@ -1,3 +1,18 @@
+<a name="0.13.8"></a>
+## [0.13.8](https://github.com/8base/boost/compare/v0.13.7...v0.13.8) (2019-02-18)
+
+
+### Bug Fixes
+
+* **e2e:** updates icon image snapshot ([32f8d3e](https://github.com/8base/boost/commit/32f8d3e))
+
+
+### Features
+
+* **SecondaryNavigation:** add actions ([a913763](https://github.com/8base/boost/commit/a913763))
+
+
+
 <a name="0.13.7"></a>
 ## [0.13.7](https://github.com/8base/boost/compare/v0.13.6...v0.13.7) (2019-02-18)
 

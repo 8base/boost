@@ -1,3 +1,13 @@
+<a name="0.13.9"></a>
+## [0.13.9](https://github.com/8base/boost/compare/v0.13.8...v0.13.9) (2019-02-19)
+
+
+### Bug Fixes
+
+* **Dropdown:** prevent default for head ([202f716](https://github.com/8base/boost/commit/202f716))
+
+
+
 <a name="0.13.8"></a>
 ## [0.13.8](https://github.com/8base/boost/compare/v0.13.7...v0.13.8) (2019-02-18)
 

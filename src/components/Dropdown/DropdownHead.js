@@ -40,6 +40,8 @@ const DropdownHead = dropdownHeadEnhancer(
       toggleDropdown && toggleDropdown();
     }
 
+    event.preventDefault();
+
     stopClickPropagation && event.stopPropagation();
   }
 

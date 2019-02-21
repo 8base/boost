@@ -29,6 +29,15 @@ type InputFieldProps = {
   meta?: MetaType,
   /** callback to set input ref */
   insideRef?:(HTMLInputElement) => void,
+  /** readonly */
+  readOnly?: boolean,
+  /** clearable */
+  clearable?: boolean,
+  /** html auto-complete representation */
+  autoComplete?: boolean,
+  /** disabled */
+  disabled?: boolean,
+
 };
 
 const InputField = ({
@@ -49,6 +58,9 @@ const InputField = ({
   type,
   leftIcon,
   rightIcon,
+  disabled,
+  readOnly,
+  autoComplete,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -82,6 +94,9 @@ const InputField = ({
         type={ type }
         stretch={ stretch }
         clearable={ clearable }
+        disabled={ disabled }
+        readOnly={ readOnly }
+        autoComplete={ autoComplete }
         leftIcon={ leftIcon }
         rightIcon={ rightIcon }
       />

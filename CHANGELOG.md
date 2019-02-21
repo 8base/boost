@@ -1,3 +1,13 @@
+<a name="0.13.10"></a>
+## [0.13.10](https://github.com/8base/boost/compare/v0.13.9...v0.13.10) (2019-02-21)
+
+
+### Bug Fixes
+
+* **InputField:** add passing props ([052fe1c](https://github.com/8base/boost/commit/052fe1c))
+
+
+
 <a name="0.13.9"></a>
 ## [0.13.9](https://github.com/8base/boost/compare/v0.13.8...v0.13.9) (2019-02-19)
 

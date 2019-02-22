@@ -21,6 +21,8 @@ type IconProps = {
   className?: string,
   /** title attribute for the icon */
   title?: string,
+  /** possible types of the css cursor property */
+  cursor?: 'pointer' | 'default' | 'auto',
 };
 
 const Icon = ({ name, className, ...rest }: IconProps) => {

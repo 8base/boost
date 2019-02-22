@@ -20,6 +20,8 @@ type TextProps = {
   align?: 'left' | 'center' | 'right',
   /** when true then cut text with ellipsis */
   ellipsis?: boolean,
+  /** possible types of the css cursor property */
+  cursor?: 'pointer' | 'default' | 'auto',
 };
 
 function Text({

@@ -9,7 +9,7 @@ const name = 'tag';
 const [TagOuter, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
   root: {
     margin: 0,
-    height: '24px',
+    minHeight: '24px',
     padding: '0 12px',
     borderRadius: '24px',
     display: 'flex',

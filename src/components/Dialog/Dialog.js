@@ -7,7 +7,7 @@ import type { PropSizes } from '../../types';
 import { DialogBody } from './DialogBody';
 import { DialogFooter } from './DialogFooter';
 import { DialogHeader } from './DialogHeader';
-import { DialogTag } from './Dialog.theme';
+import { DialogTag, DialogInnerTag } from './Dialog.theme';
 
 type DialogPlateProps = {
   children?: React$Node,
@@ -50,7 +50,11 @@ const Dialog = ({
         ({ args, onClose }) => (
           <DialogTag tagName={ tagName } size={ size }>
             <Card padding={ padding } args={ args } onClose={ onClose }>
-              { children }
+              {
+                typeof children === 'function'
+                  ? (args) => <DialogInnerTag>{ children(args) }</DialogInnerTag>
+                  : <DialogInnerTag>{ children }</DialogInnerTag>
+              }
             </Card>
           </DialogTag>
         )

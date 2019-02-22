@@ -56,8 +56,20 @@ const [DialogTag, themeDialog] = createThemeTag('dialog', {
 });
 
 
+const [DialogInnerTag, themeDialogInner] = createThemeTag('dialogInner', {
+  root: {
+    '&, & > form': {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+    },
+  },
+});
+
+
 const theme = {
   ...themeDialog,
+  ...themeDialogInner,
   ...themeBody,
   ...themeHeaderClose,
 };
@@ -68,5 +80,6 @@ export {
   DialogTag,
   HeaderCloseTag,
   DialogBodyTag,
+  DialogInnerTag,
 };
 

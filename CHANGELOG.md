@@ -1,3 +1,22 @@
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/8base/boost/compare/v0.13.10...v0.14.0) (2019-02-25)
+
+
+### Bug Fixes
+
+* **Dialog:** add DialogInner component for using scrollable body with form ([ba384cf](https://github.com/8base/boost/commit/ba384cf))
+* **Form:** fix runtime error when error is object ([7f7af04](https://github.com/8base/boost/commit/7f7af04))
+* **SelectField:** fix passing multiple prop ([2cb2cf3](https://github.com/8base/boost/commit/2cb2cf3))
+* **Table:** fix row height and cell padding ([5dd6810](https://github.com/8base/boost/commit/5dd6810))
+* **Tag:** add stretch for the Tag ([f2ebc09](https://github.com/8base/boost/commit/f2ebc09))
+
+
+### Features
+
+* **Text,Icon:** add cursor prop ([e30ce0b](https://github.com/8base/boost/commit/e30ce0b))
+
+
+
 <a name="0.13.10"></a>
 ## [0.13.10](https://github.com/8base/boost/compare/v0.13.9...v0.13.10) (2019-02-21)
 

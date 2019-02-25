@@ -152,6 +152,10 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
       color: 'transparent',
       position: 'relative',
       pointerEvents: 'none',
+
+      '& > *': {
+        visibility: 'hidden',
+      },
     },
   },
 }));

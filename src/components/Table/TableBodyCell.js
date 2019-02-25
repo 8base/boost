@@ -17,7 +17,7 @@ const [TableBodyCellTag, theme] = createThemeTag(name, {
     alignItems: 'center',
     wordBreak: 'break-all',
 
-    padding: '0 16px',
+    padding: '8px 16px',
   },
 });
 

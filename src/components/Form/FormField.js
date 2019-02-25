@@ -27,7 +27,7 @@ const [FormFieldTag, themeField] = createThemeTag(name, {
   }),
 });
 
-const [ControlLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+const [FormLabel, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
   root: props => ({
     fontSize: SIZES.OVERLINE_1,
     lineHeight: SIZES.OVERLINE_1_LH,
@@ -85,23 +85,27 @@ const FormField = ({
   ...rest
   }: FormFieldProps) => {
   const hasError = formUtils.hasError(meta);
-  const error = formUtils.getError(meta);
+  let error: any = formUtils.getError(meta);
 
   const hasLabel = !!label;
+
+  if (typeof error === 'object') {
+    error = Object.keys(error).map(key => error[key]);
+  }
 
   return (
     <FormFieldTag { ...rest } tagName="div">
       <FormFieldDirectionTag modifiers={ rest } tagName="div">
         <If condition={ hasLabel }>
-          <ControlLabelTag modifiers={ rest } tagName="div">
+          <FormLabel modifiers={ rest } tagName="div">
             { label }
-          </ControlLabelTag>
+          </FormLabel>
         </If>
         { children }
       </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
         <ControlErrorWrapperTag modifiers={ rest } tagName="div">
-          <ControlErrorTag modifiers={ rest } role="alert" tagName="span">{ error }</ControlErrorTag>
+          <ControlErrorTag modifiers={ rest } role="alert" tagName="span">{ error.toString() }</ControlErrorTag>
         </ControlErrorWrapperTag>
       </If>
     </FormFieldTag>
@@ -114,5 +118,5 @@ FormField.defaultProps = {
   direction: 'column',
 };
 
-export { FormField, theme, ControlLabelTag, ControlErrorTag };
+export { FormField, theme, FormLabel, ControlErrorTag };
 

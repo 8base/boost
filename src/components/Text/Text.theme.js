@@ -6,9 +6,10 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'text';
 
 const [TextTag, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
-  root: {
+  root: props => ({
     margin: 0,
-  },
+    cursor: props.cursor,
+  }),
 
   modifiers: {
     color: fp.mapValues(

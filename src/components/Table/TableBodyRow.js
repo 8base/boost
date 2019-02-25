@@ -15,7 +15,7 @@ const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'grid',
 
-    height: '60px',
+    minHeight: '60px',
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {

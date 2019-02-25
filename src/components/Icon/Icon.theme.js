@@ -8,10 +8,11 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'icon';
 
 const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
-  root: {
+  root: props => ({
     display: 'inline-flex',
     lineHeight: 1,
-  },
+    cursor: props.cursor,
+  }),
   modifiers: {
     color: {
       ...fp.mapValues(

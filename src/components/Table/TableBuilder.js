@@ -40,7 +40,7 @@ type TableBulderProps = {
   /** Text of the action or component to  replace standart action button*/
   action?: React$Node,
   /** Callback to pass state of the table */
-  onChange: TableState => void,
+  onChange?: TableState => void,
   /** States of the table sort and selections.  */
   tableState: TableState,
   /** Options to enable row selections */

@@ -14,6 +14,11 @@ export default (asStory: *) => {
           <Tag color="LIGHT_GRAY4">Content</Tag>
           <Tag color="LIGHT_GRAY5">Content</Tag>
         </Column>
+      ))
+      .add('with large content', () => (
+        <Column>
+          <Tag>data-builder-test-js-as-an-authorized-user-i-should-see-require-validation-during-create-the-text-filled.png</Tag>
+        </Column>
       ));
   });
 };

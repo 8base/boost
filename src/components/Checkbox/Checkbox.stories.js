@@ -1,6 +1,11 @@
 // @flow
 
 import React, { Component } from 'react';
+import styled from 'react-emotion';
+
+const Container = styled('div')`
+  max-width: 100px;
+`;
 
 class CheckboxState extends Component<*, Object> {
   state = {
@@ -24,6 +29,9 @@ export default (asStory: *) => {
           <Checkbox label="With Check" checked />
           <Checkbox label="With error" checked hasError />
           <Checkbox label="With disabled" checked disabled />
+          <Container>
+            <Checkbox label="With overflow" checked />
+          </Container>
         </Column>
       ))
       .add('with state', () => (
@@ -33,5 +41,6 @@ export default (asStory: *) => {
           }
         </CheckboxState>
       ));
+
   });
 };

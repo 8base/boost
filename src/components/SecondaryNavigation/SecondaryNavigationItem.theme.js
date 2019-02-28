@@ -14,6 +14,7 @@ const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }
     paddingLeft: 4,
     paddingRight: 20,
     justifyContent: 'space-between',
+    alignItems: 'center',
 
     [`&.active ${SecondaryNavigationItemActionsTag}`]: {
       visibility: 'visible',
@@ -36,13 +37,18 @@ const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }
   },
 }));
 
-const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Label`, () => ({
+const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
   root: {
-    display: 'flex',
-    alignItems: 'center',
     paddingLeft: '20px',
     backgroundColor: 'inherit',
     opacity: '0.9',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    minWidth: 0,
+    marginRight: 8,
+    color: COLORS.PRIMARY_TEXT_COLOR,
+    fontSize: SIZES.BODY_TEXT,
   },
 }));
 
@@ -60,7 +66,6 @@ const theme = {
   ...labelTheme,
   ...actionsTheme,
 };
-
 
 export {
   theme,

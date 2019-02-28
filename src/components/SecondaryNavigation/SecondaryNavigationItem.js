@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-import { Text } from '../Text';
 import { Dropdown } from '../Dropdown';
 import { Menu } from '../Menu';
 import { Icon } from '../Icon';
@@ -68,7 +67,7 @@ class SecondaryNavigationItem extends React.PureComponent<SecondaryNavigationIte
 
     return (
       <SecondaryNavigationItemTag { ...rest } hovered={ hovered } onMouseLeave={ this.onMouseLeave } onMouseEnter={ this.onMouseEnter } >
-        <SecondaryNavigationItemLabelTag tagName={ Text } modifiers={ rest } >
+        <SecondaryNavigationItemLabelTag tagName="span" modifiers={ rest } >
           { label }
         </SecondaryNavigationItemLabelTag>
         {

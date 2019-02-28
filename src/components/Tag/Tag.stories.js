@@ -16,9 +16,9 @@ export default (asStory: *) => {
         </Column>
       ))
       .add('with large content', () => (
-        <Column>
+        <div style={{ width: '200px' }}>
           <Tag>data-builder-test-js-as-an-authorized-user-i-should-see-require-validation-during-create-the-text-filled.png</Tag>
-        </Column>
+        </div>
       ));
   });
 };

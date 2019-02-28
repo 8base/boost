@@ -18,7 +18,7 @@ exports[`<SecondaryNavigation /> should shallow SecondaryNavigation item 1`] = `
 >
   <Boost(secondaryNavigationItemLabel)
     modifiers={Object {}}
-    tagName={[Function]}
+    tagName="span"
   >
     First item
   </Boost(secondaryNavigationItemLabel)>

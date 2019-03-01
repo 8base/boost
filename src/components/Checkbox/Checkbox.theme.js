@@ -11,6 +11,7 @@ const [CheckboxSquareTag, themeSquare] = createThemeTag(`${name}Square`, ({ COLO
     width: '24px',
     height: '24px',
     transition: 'all .15s ease-in-out',
+    flexShrink: 0,
 
     background: COLORS.WHITE,
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
@@ -53,6 +54,9 @@ const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: 
   root: {
     paddingLeft: '12px',
     cursor: 'pointer',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
 
     color: COLORS.SECONDARY_TEXT_COLOR,
     fontSize: COLORS.BODY_TEXT,
@@ -71,6 +75,7 @@ const [CheckboxWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
+    overflow: 'hidden',
   },
 });
 

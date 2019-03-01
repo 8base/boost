@@ -1,3 +1,13 @@
+<a name="0.14.5"></a>
+## [0.14.5](https://github.com/8base/boost/compare/v0.14.4...v0.14.5) (2019-03-01)
+
+
+### Bug Fixes
+
+* **checkbox:** adds overflow ([becce46](https://github.com/8base/boost/commit/becce46))
+
+
+
 <a name="0.14.4"></a>
 ## [0.14.4](https://github.com/8base/boost/compare/v0.14.3...v0.14.4) (2019-03-01)
 

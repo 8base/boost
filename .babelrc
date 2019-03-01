@@ -3,5 +3,5 @@
     "react-app",
     "flow"
   ],
-  "plugins": ["inline-react-svg", "flow-react-proptypes", "jsx-control-statements", "emotion", "babel-plugin-react-css-modules"]
+  "plugins": ["inline-react-svg", "jsx-control-statements", "emotion", "babel-plugin-react-css-modules"]
 }

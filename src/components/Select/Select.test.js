@@ -13,6 +13,7 @@ describe('<Select />', () => {
     const clearable = true;
     const multiple = true;
     const hasError = false;
+    const loading = false;
 
     const wrapper = mount(
       <Select
@@ -23,6 +24,7 @@ describe('<Select />', () => {
         placeholder={ placeholder }
         options={ options }
         value={ options[0] }
+        loading={ loading }
       />,
     );
 
@@ -40,10 +42,12 @@ describe('<Select />', () => {
       defaultMenuIsOpen: false,
       defaultValue: null,
       menuPlacement: 'auto',
+      isLoading: loading,
     });
 
     expect(passedStyledProps).toEqual({
       hasError,
+      'aria-busy': String(loading),
     });
   });
 });

@@ -91,7 +91,7 @@ const Select = ({
   ...props
   }: SelectProps) => {
   return (
-    <SelectTag { ...props }>
+    <SelectTag { ...props } aria-busy={ String(loading || false) }>
       <ReactSelect
         isClearable={ clearable }
         isDisabled={ disabled }

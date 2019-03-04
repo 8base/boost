@@ -1,3 +1,13 @@
+<a name="0.14.6"></a>
+## [0.14.6](https://github.com/8base/boost/compare/v0.14.5...v0.14.6) (2019-03-04)
+
+
+### Bug Fixes
+
+* **Select:** add busy ([beb3eb2](https://github.com/8base/boost/commit/beb3eb2))
+
+
+
 <a name="0.14.5"></a>
 ## [0.14.5](https://github.com/8base/boost/compare/v0.14.4...v0.14.5) (2019-03-01)
 

@@ -79,7 +79,7 @@ class SecondaryNavigationItem extends React.PureComponent<SecondaryNavigationIte
                 <Dropdown.Head stopClickPropagation>
                   <Icon size="sm" name="Dots" color="GRAY5" />
                 </Dropdown.Head>
-                <Dropdown.Body forceRender withPortal>
+                <Dropdown.Body preventOverflow withPortal>
                   <Menu>
                     {
                       finalActions.map(({ label, onClick, ...rest }) => (

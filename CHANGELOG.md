@@ -1,3 +1,13 @@
+<a name="0.14.7"></a>
+## [0.14.7](https://github.com/8base/boost/compare/v0.14.6...v0.14.7) (2019-03-06)
+
+
+### Bug Fixes
+
+* **SecondaryNavigation:** prevent overflow for actions ([b83f01b](https://github.com/8base/boost/commit/b83f01b))
+
+
+
 <a name="0.14.6"></a>
 ## [0.14.6](https://github.com/8base/boost/compare/v0.14.5...v0.14.6) (2019-03-04)
 

@@ -1,3 +1,13 @@
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/8base/boost/compare/v0.14.7...v0.15.0) (2019-03-06)
+
+
+### Features
+
+* **NoData:** adds NoData component ([ee8dde3](https://github.com/8base/boost/commit/ee8dde3))
+
+
+
 <a name="0.14.7"></a>
 ## [0.14.7](https://github.com/8base/boost/compare/v0.14.6...v0.14.7) (2019-03-06)
 

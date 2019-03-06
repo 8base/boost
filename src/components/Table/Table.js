@@ -6,7 +6,6 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 
 import { theme as tableActionTheme } from './TableAction';
-import { theme as tableNoDataTheme } from './TableNoData';
 import { TableHeader, theme as tableHeaderTheme } from './TableHeader';
 import { TableBody, theme as tableBodyTheme } from './TableBody';
 import { TableBodyRow, theme as tableBodyRowTheme } from './TableBodyRow';
@@ -28,7 +27,6 @@ const [TableTag, tableTheme] = createThemeTag(name, {
 const theme = {
   ...tableTheme,
   ...tableActionTheme,
-  ...tableNoDataTheme,
   ...tableHeaderTheme,
   ...tableBodyTheme,
   ...tableBodyRowTheme,

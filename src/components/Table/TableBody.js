@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 
 import { AsyncContent } from '../AsyncContent';
-import { TableNoData } from './TableNoData';
+import { NoData } from '../NoData';
 import { TableAction } from './TableAction';
 import { Grid } from '../Grid';
 import { Button } from '../Button';
@@ -81,7 +81,7 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
                   { React.Children.toArray(data && children && data.map(children)) }
                 </TableBodyInnerTag>
               )
-              : <TableNoData />
+              : <NoData />
           }
         </AsyncContent>
         { this.renderTableAction() }

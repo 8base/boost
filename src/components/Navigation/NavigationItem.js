@@ -19,7 +19,7 @@ type NavigationItemProps = {
 const NavigationItem = ({ icon, label, ...rest }: NavigationItemProps) => (
   <NavigationItemTag { ...rest }>
     <NavigationItemIcon modifiers={ rest }>
-      <If condition={ icon === undefined && typeof label === 'string' }>
+      <If condition={ icon === undefined && typeof label === 'string' && label.length > 0 }>
         <NavigationItemLabelPreview>{ label && label.charAt(0).toUpperCase() }</NavigationItemLabelPreview>
       </If>
       <If condition={ typeof icon === 'string' }>

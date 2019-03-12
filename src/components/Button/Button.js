@@ -36,6 +36,7 @@ class Button extends Component<ButtonProps> {
     variant: 'raised',
     color: 'primary',
     size: 'md',
+    type: 'button',
   };
 
   onClick = (event: *) => {
@@ -54,7 +55,7 @@ class Button extends Component<ButtonProps> {
         type={ type }
         loading={ loading }
         onClick={ this.onClick }
-        aria-busy={ String(loading) }
+        aria-busy={ Boolean(loading).toString() }
       >
         { React.Children.map(children, (child) => typeof child === 'string' ? <span>{ child }</span> : child) }
       </ButtonTag>

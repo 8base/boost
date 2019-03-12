@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Icon } from '../Icon';
-import { NavigationItemTag, NavigationItemLabel, NavigationItemIcon } from './Navigation.theme';
+import { NavigationItemTag, NavigationItemLabel, NavigationItemIcon, NavigationItemLabelPreview } from './Navigation.theme';
 import { PALETTE } from '../../theme';
 
 type NavigationItemProps = {
@@ -19,7 +19,12 @@ type NavigationItemProps = {
 const NavigationItem = ({ icon, label, ...rest }: NavigationItemProps) => (
   <NavigationItemTag { ...rest }>
     <NavigationItemIcon modifiers={ rest }>
-      <Icon name={ icon || '' } color="WHITE" />
+      <If condition={ icon === undefined && typeof label === 'string' && label.length > 0 }>
+        <NavigationItemLabelPreview>{ label && label.charAt(0).toUpperCase() }</NavigationItemLabelPreview>
+      </If>
+      <If condition={ typeof icon === 'string' }>
+        <Icon name={ icon || '' } color="WHITE" />
+      </If>
     </NavigationItemIcon>
     { label && <NavigationItemLabel modifiers={ rest } className="NavigationItem-label">{ label }</NavigationItemLabel> }
   </NavigationItemTag>

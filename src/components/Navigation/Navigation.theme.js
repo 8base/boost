@@ -72,11 +72,21 @@ const [NavigationItemLabel, themeItemLabel] = createThemeTag(`${name}ItemLabel`,
 });
 
 
+const [NavigationItemLabelPreview, themeItemLabelPreview] = createThemeTag(`${name}ItemLabelPreview`, {
+  root: {
+    alignItems: 'center',
+    textTransform: 'uppercase',
+    fontWeight: 600,
+  },
+});
+
+
 const theme = {
   ...themeNavigation,
   ...themeItemMain,
   ...themeItemLabel,
   ...themeItemIcon,
+  ...themeItemLabelPreview,
 };
 
 export {
@@ -85,5 +95,6 @@ export {
   NavigationItemTag,
   NavigationItemLabel,
   NavigationItemIcon,
+  NavigationItemLabelPreview,
 };
 

@@ -36,7 +36,7 @@ class Button extends Component<ButtonProps> {
     variant: 'raised',
     color: 'primary',
     size: 'md',
-    type: 'button',
+    tagName: 'button',
   };
 
   onClick = (event: *) => {
@@ -46,13 +46,12 @@ class Button extends Component<ButtonProps> {
   }
 
   render() {
-    const { children, type, loading, ...rest } = this.props;
+    const { children, tagName, loading, ...rest } = this.props;
 
     return (
       <ButtonTag
-        tagName="button"
         { ...rest }
-        type={ type }
+        tagName={ tagName }
         loading={ loading }
         onClick={ this.onClick }
         aria-busy={ Boolean(loading).toString() }

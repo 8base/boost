@@ -1,3 +1,19 @@
+<a name="0.15.1"></a>
+## [0.15.1](https://github.com/8base/boost/compare/v0.15.0...v0.15.1) (2019-03-12)
+
+
+### Bug Fixes
+
+* **button:** set type as 'button' by default ([0be3328](https://github.com/8base/boost/commit/0be3328))
+
+
+### Features
+
+* **Input:** add a onClear callback ([0faaa4c](https://github.com/8base/boost/commit/0faaa4c))
+* **Navigation:** add label preview when icon not exist ([feb4b7a](https://github.com/8base/boost/commit/feb4b7a))
+
+
+
 <a name="0.15.0"></a>
 # [0.15.0](https://github.com/8base/boost/compare/v0.14.7...v0.15.0) (2019-03-06)
 

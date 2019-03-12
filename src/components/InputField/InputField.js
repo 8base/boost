@@ -37,6 +37,8 @@ type InputFieldProps = {
   autoComplete?: boolean,
   /** disabled */
   disabled?: boolean,
+  /** callback which called on clear */
+  onClear?: () => void,
 
 };
 
@@ -61,6 +63,7 @@ const InputField = ({
   disabled,
   readOnly,
   autoComplete,
+  onClear,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -99,6 +102,7 @@ const InputField = ({
         autoComplete={ autoComplete }
         leftIcon={ leftIcon }
         rightIcon={ rightIcon }
+        onClear={ onClear }
       />
     </FormField>
   );

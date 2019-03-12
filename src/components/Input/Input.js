@@ -55,6 +55,8 @@ type InputProps = {
   onChange?: (value?: string | ?number, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   onFocus?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
   onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
+  /** callback which called on clear */
+  onClear?: () => void,
 } & InputCommonProps;
 
 class Input extends PureComponent<InputProps> {
@@ -84,10 +86,14 @@ class Input extends PureComponent<InputProps> {
   }
 
   onClear = () => {
-    const { onChange } = this.props;
+    const { onClear, onChange } = this.props;
 
     if (typeof onChange === 'function') {
       onChange('');
+    }
+
+    if (typeof onClear === 'function') {
+      onClear();
     }
   };
 
@@ -114,6 +120,7 @@ class Input extends PureComponent<InputProps> {
       disabled,
       readOnly,
       clearable,
+      onClear,
       ...rest
     } = this.props;
     const hasLeftIcon = !!leftIcon;

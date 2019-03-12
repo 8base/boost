@@ -5,6 +5,9 @@ import Alert from './Alert.svg';
 import APIToken from './APIToken.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
+import ChevronLeft from './ChevronLeft.svg';
+import ChevronRight from './ChevronRight.svg';
+import ChevronTop from './ChevronTop.svg';
 import CloudDatabase from './Cloud-Database.svg';
 import Contract from './Contract.svg';
 import Customers from './Customers.svg';
@@ -13,7 +16,6 @@ import Delete from './Delete.svg';
 import Diagram from './Diagram.svg';
 import Discord from './Discord.svg';
 import DismissData from './Dismiss-Data.svg';
-import Dots from './Dots.svg';
 import EditPencil from './EditPencil.svg';
 import EightBase from './EightBase.svg';
 import Environment from './Environment.svg';
@@ -28,6 +30,8 @@ import Lock from './Lock.svg';
 import Logic from './Logic.svg';
 import Mail from './Mail.svg';
 import MapPin from './MapPin.svg';
+import More from './More.svg';
+import MoreVertical from './MoreVertical.svg';
 import PaperClip from './PaperClip.svg';
 import Planet from './Planet.svg';
 import Schema from './Schema.svg';
@@ -45,6 +49,9 @@ export {
   APIToken,
   Check,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronTop,
   CloudDatabase,
   Contract,
   Customers,
@@ -53,7 +60,6 @@ export {
   Diagram,
   Discord,
   DismissData,
-  Dots,
   EditPencil,
   EightBase,
   Environment,
@@ -68,6 +74,8 @@ export {
   Logic,
   Mail,
   MapPin,
+  More,
+  MoreVertical,
   PaperClip,
   Planet,
   Schema,

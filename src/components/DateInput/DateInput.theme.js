@@ -2,7 +2,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 
 // eslint-disable-next-line
-const [_, theme] = createThemeTag(name, ({ COLORS }: *) => ({
+const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
   globals: `
     .react-datepicker {
       border: 1px solid ${COLORS.LIGHT_GRAY1};

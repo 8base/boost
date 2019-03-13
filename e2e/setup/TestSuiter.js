@@ -98,6 +98,18 @@ class TestSuiter {
     return this;
   }
 
+  setRootWidth = (width: number) => {
+    this.enhancers.push(
+      async () => {
+        await this.iframe.evaluate((root, width) => {
+          root.style.width = `${width}px`;
+        }, this.root, width);
+      },
+    );
+
+    return this;
+  }
+
   addRootHeight = (height: number) => {
     this.enhancers.push(
       async () => {

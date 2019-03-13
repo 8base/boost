@@ -42,6 +42,8 @@ export { Tag } from './Tag';
 export { Text } from './Text';
 export { TextArea } from './TextArea';
 export { TextAreaField } from './TextAreaField';
+export { TreeSelect } from './TreeSelect';
+export { TreeSelectField } from './TreeSelectField';
 export { Tooltip } from './Tooltip';
 export { NoData } from './NoData';
 export { Pagination } from './Pagination';

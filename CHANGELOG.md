@@ -1,3 +1,14 @@
+<a name="0.15.2"></a>
+## [0.15.2](https://github.com/8base/boost/compare/v0.15.1...v0.15.2) (2019-03-14)
+
+
+### Bug Fixes
+
+* **Button:** remove default type ([f856f52](https://github.com/8base/boost/commit/f856f52))
+* **Card:** card section border color ([0b1cf8c](https://github.com/8base/boost/commit/0b1cf8c))
+
+
+
 <a name="0.15.1"></a>
 ## [0.15.1](https://github.com/8base/boost/compare/v0.15.0...v0.15.1) (2019-03-12)
 

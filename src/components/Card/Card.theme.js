@@ -59,7 +59,7 @@ const [CardFooterTag, cardFooterTheme] = createThemeTag('cardFooter', ({ COLORS 
 const [CardSectionTag, cardSectionTheme] = createThemeTag('cardSection', ({ COLORS }: *) => ({
   root: {
     '&:not(:last-child)': {
-      borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      borderBottom: `1px solid ${COLORS.DSM.GREY_COLORS.DSM_LIGHT_GREY_2}`,
     },
   },
   modifiers: {

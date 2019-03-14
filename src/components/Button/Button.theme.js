@@ -57,6 +57,7 @@ const getSquaredStyle = (props: *) => {
 
 const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
   root: (props) => ({
+    appearance: 'none',
     outline: 'none',
     textAlign: 'center',
     textDecoration: 'none',

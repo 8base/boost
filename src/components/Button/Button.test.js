@@ -25,7 +25,6 @@ describe('<Button />', () => {
   onClick={[Function]}
   size="md"
   tagName="button"
-  type="button"
   variant="raised"
 >
   <span

@@ -36,6 +36,7 @@ import { theme as tooltipTheme } from './Tooltip';
 import { theme as menuTheme } from './Menu';
 import { theme as dateInputTheme } from './DateInput';
 import { theme as noDataTheme } from './NoData';
+import { theme as paginationTheme } from './Pagination';
 
 
 export const theme = {
@@ -75,4 +76,5 @@ export const theme = {
   ...menuTheme,
   ...dateInputTheme,
   ...noDataTheme,
+  ...paginationTheme,
 };

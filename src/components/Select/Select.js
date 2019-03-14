@@ -8,9 +8,9 @@ import { PALETTE, Z_INDEX } from '../../theme';
 
 type SelectProps = {|
   options: Array<{ label: mixed, value: string }>,
-  onChange: (selectedValue: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  onChange: (value: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
-  value?: Object | Object[],
+  value?: any | any[],
   loading?: boolean,
   disabled?: boolean,
   multiple?: boolean,
@@ -19,6 +19,7 @@ type SelectProps = {|
   zIndex?: string | number,
   valueComponent?: React$Node,
   components?: Object,
+  className?: string,
 |};
 
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
@@ -77,40 +78,63 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-const Select = ({
-  value,
-  loading,
-  clearable,
-  disabled,
-  multiple,
-  options,
-  onChange,
-  placeholder,
-  valueComponent,
-  components,
-  ...props
-  }: SelectProps) => {
-  return (
-    <SelectTag { ...props } aria-busy={ String(loading || false) }>
-      <ReactSelect
-        isClearable={ clearable }
-        isDisabled={ disabled }
-        isLoading={ loading }
-        isMulti={ multiple }
-        menuPlacement="auto"
-        menuPortalTarget={ document.body }
-        onChange={ onChange }
-        options={ options }
-        placeholder={ placeholder }
-        valueComponent={ valueComponent }
-        styles={ customStyles(props) }
-        value={ value }
-        components={ components }
-      />
-    </SelectTag>
-  );
-};
+class Select extends React.Component<SelectProps> {
+  onChange = (option: Object) => {
+    let value = null;
 
+    if (Array.isArray(option)) {
+      value = option.map(({ value }) => value);
+    } else if (option) {
+      ({ value } = option);
+    }
+
+    this.props.onChange(value);
+  };
+
+  render() {
+    const {
+      value,
+      loading,
+      clearable,
+      disabled,
+      multiple,
+      options,
+      placeholder,
+      valueComponent,
+      components,
+      onChange,
+      ...rest
+    } = this.props;
+
+    const selectValue = (
+      Array.isArray(value)
+        ? options.filter((option) => value.indexOf(option.value) !== -1)
+        : options.find((option) => option.value === value)
+    ) || null;
+
+    return (
+      <SelectTag { ...rest } aria-busy={ String(loading || false) }>
+        <ReactSelect
+          isClearable={ clearable }
+          isDisabled={ disabled }
+          isLoading={ loading }
+          isMulti={ multiple }
+          menuPlacement="auto"
+          menuPortalTarget={ document.body }
+          onChange={ this.onChange }
+          options={ options }
+          placeholder={ placeholder }
+          valueComponent={ valueComponent }
+          styles={ customStyles(rest) }
+          value={ selectValue }
+          components={ components }
+        />
+      </SelectTag>
+    );
+  }
+}
+
+// $FlowFixMe
 Select.components = components;
 
 export { Select };

@@ -7,35 +7,38 @@ import { Select } from './';
 
 describe('<Select />', () => {
   it('should pass props to ReactSelect', () => {
-    const onChange = jest.fn();
     const options = [{ label: 'ovenlike', value: 'ovenlike' }];
     const placeholder = 'Select an option';
     const clearable = true;
     const multiple = true;
     const hasError = false;
     const loading = false;
+    const disabled = true;
+    const components = {};
 
     const wrapper = mount(
       <Select
         clearable={ clearable }
         multiple={ multiple }
         hasError={ hasError }
-        onChange={ onChange }
+        onChange={ jest.fn() }
         placeholder={ placeholder }
         options={ options }
-        value={ options[0] }
+        value={ options[0].value }
         loading={ loading }
+        disabled={ disabled }
+        components={ components }
       />,
     );
 
     const { children, ...passedStyledProps } = wrapper.find(SelectTag).props();
-    const { styles, menuPortalTarget, ...passedSelectProps } = wrapper.find(ReactSelect).props();
+    const { styles, menuPortalTarget, onChange, valueComponent, ...passedSelectProps } = wrapper.find(ReactSelect).props();
 
     expect(passedSelectProps).toEqual({
       isClearable: clearable,
       isMulti: multiple,
+      isDisabled: disabled,
       placeholder,
-      onChange,
       options,
       value: options[0],
       defaultInputValue: '',
@@ -43,6 +46,7 @@ describe('<Select />', () => {
       defaultValue: null,
       menuPlacement: 'auto',
       isLoading: loading,
+      components,
     });
 
     expect(passedStyledProps).toEqual({

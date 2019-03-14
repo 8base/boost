@@ -22,18 +22,6 @@ type SelectFieldProps = {
 };
 
 class SelectField extends React.Component<SelectFieldProps> {
-  onChange = (selectedOption) => {
-    let value = null;
-
-    if (Array.isArray(selectedOption)) {
-      value = selectedOption.map(({ value }) => value);
-    } else if (selectedOption) {
-      ({ value } = selectedOption);
-    }
-
-    this.props.input.onChange(value);
-  };
-
   collectFormFieldProps() {
     const { meta, input, stretch, label } = this.props;
 
@@ -45,22 +33,16 @@ class SelectField extends React.Component<SelectFieldProps> {
 
     const hasError = formUtils.hasError(meta);
 
-    const value = (
-      Array.isArray(input.value)
-        ? options.filter((option) => input.value.indexOf(option.value) !== -1)
-        : options.find((option) => option.value === input.value)
-    ) || null;
-
     return {
       ...this.props,
       name: input.name,
-      value,
+      value: input.value,
       hasError,
       placeholder,
       options,
       stretch,
       multiple,
-      onChange: this.onChange,
+      onChange: input.onChange,
     };
   }
 

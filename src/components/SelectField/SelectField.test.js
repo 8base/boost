@@ -16,7 +16,7 @@ describe('<SelectField />', () => {
     const placeholder = 'Select an option';
     const clearable = true;
     const multiple = true;
-    const input = { name: 'input', onChange: jest.fn() };
+    const input = { name: 'input', onChange: jest.fn(), value: null };
     const meta = { error: 'asdasd', touched: true };
 
     const wrapper = shallow(
@@ -72,15 +72,12 @@ describe('<SelectField />', () => {
       />,
     );
 
-    expect(wrapper.find(Select).props().value).toEqual({
-      label: 'serjeant',
-      value: 'serjeant',
-    });
+    expect(wrapper.find(Select).props().value).toEqual('serjeant');
 
     wrapper.setProps({ input: { value: ['ovenlike', 'serjeant'] }});
     expect(wrapper.find(Select).props().value).toEqual([
-      { label: 'ovenlike', value: 'ovenlike' },
-      { label: 'serjeant', value: 'serjeant' },
+      'ovenlike',
+      'serjeant',
     ]);
   });
 
@@ -96,13 +93,13 @@ describe('<SelectField />', () => {
       />,
     );
 
-    wrapper.find(Select).props().onChange(options[0]);
-    expect(onChange.mock.calls[0][0]).toBe(options[0].label);
+    wrapper.find(Select).props().onChange(options[0].value);
+    expect(onChange.mock.calls[0][0]).toBe(options[0].value);
 
-    wrapper.find(Select).props().onChange(options);
+    wrapper.find(Select).props().onChange(['ovenlike', 'serjeant']);
     expect(onChange.mock.calls[1][0]).toEqual(['ovenlike', 'serjeant']);
 
-    wrapper.find(Select).props().onChange();
+    wrapper.find(Select).props().onChange(null);
     expect(onChange.mock.calls[2][0]).toBeNull();
   });
 });

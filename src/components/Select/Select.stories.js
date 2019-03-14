@@ -30,16 +30,16 @@ export default (asStory) => {
           <StateContainer value={ null }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } />
           </StateContainer>
-          <StateContainer value={ OPTIONS[1] }>
+          <StateContainer value={ OPTIONS[1].value }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } clearable />
           </StateContainer>
-          <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
+          <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } multiple />
           </StateContainer>
-          <StateContainer value={ [LONG_OPTIONS[1], LONG_OPTIONS[2]] }>
+          <StateContainer value={ [LONG_OPTIONS[1].value, LONG_OPTIONS[2].value] }>
             <Select name="name" placeholder="Select an option" options={ LONG_OPTIONS } multiple />
           </StateContainer>
-          <StateContainer value={ [OPTIONS[1], OPTIONS[2]] }>
+          <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>
             <Select
               name="name"
               placeholder="Select an option"

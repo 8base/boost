@@ -39,8 +39,8 @@ export default (asStory) => {
     story
       .add('common', () => (
         <Column>
-          <StateContainer value={ [OPTIONS.children[2]] } withForm>
-            <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" data={ OPTIONS } />
+          <StateContainer value={ [OPTIONS.children[2].value] } withForm>
+            <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" options={ OPTIONS } />
           </StateContainer>
         </Column>
       ));

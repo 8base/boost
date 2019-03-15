@@ -3,7 +3,8 @@
 import { createThemeTag } from '../../theme/createThemeTag';
 import 'react-dropdown-tree-select/dist/styles.css';
 
-const WRAPPER_CLASS_NAME = 'tree-select';
+const CLASS_NAME = 'tree-select';
+const CLASS_NAME_FILLED = 'tree-select--filled';
 
 const name = 'treeSelect';
 
@@ -17,9 +18,10 @@ const [TreeSelectWrapperTag, treeSelectWrapperTheme] = createThemeTag(`${name}Wr
 // eslint-disable-next-line
 const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
   globals: theme => ({
-    [`.${WRAPPER_CLASS_NAME}`]: {
+    [`.${CLASS_NAME}`]: {
       '.dropdown': {
         width: '100%',
+        paddingRight: '0 !important',
       },
 
       '.dropdown-trigger': {
@@ -69,10 +71,13 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
           '& input': {
             height: '26px',
             margin: '2px 2px 2px 4px',
-            color: COLORS.PLACEHOLDER_COLOR,
             fontSize: SIZES.BODY_TEXT,
             lineHeight: SIZES.BODY_TEXT_LH,
             borderBottom: 'none !important',
+
+            '&, &::placeholder': {
+              color: COLORS.PLACEHOLDER_COLOR,
+            },
           },
         },
       },
@@ -220,11 +225,18 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
       },
 
       '.dropdown-content': {
+        display: 'block',
         boxShadow: `${theme.components.paper.root.boxShadow} !important`,
         borderRadius: SIZES.MAIN_BORDER_RADIUS,
         width: '100%',
         marginTop: '8px',
         padding: '4px 0 !important',
+      },
+    },
+
+    [`.${CLASS_NAME_FILLED}`]: {
+      '.tag-item input': {
+        display: 'none',
       },
     },
   }),
@@ -236,7 +248,8 @@ const theme = {
 };
 
 export {
-  WRAPPER_CLASS_NAME,
+  CLASS_NAME,
+  CLASS_NAME_FILLED,
   TreeSelectWrapperTag,
   theme,
 };

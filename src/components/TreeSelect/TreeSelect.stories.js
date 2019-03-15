@@ -55,26 +55,26 @@ export default (asStory) => {
             { ({ value, onChange }) => (
               <TreeSelect
                 value={ value }
-                data={ OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes) }
+                options={ OPTIONS }
+                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
               />
             ) }
           </StateContainer>
-          <StateContainer value={ [OPTIONS.children[1], OPTIONS.children[2], OPTIONS.children[0].children[0]] }>
+          <StateContainer value={ [OPTIONS.children[1].value, OPTIONS.children[2].value, OPTIONS.children[0].children[0].value] }>
             { ({ value, onChange }) => (
               <TreeSelect
                 value={ value }
-                data={ OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes) }
+                options={ OPTIONS }
+                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
               />
             ) }
           </StateContainer>
-          <StateContainer value={ [LONG_OPTIONS[0], LONG_OPTIONS[2]] }>
+          <StateContainer value={ [LONG_OPTIONS[0].value, LONG_OPTIONS[2].value] }>
             { ({ value, onChange }) => (
               <TreeSelect
                 value={ value }
-                data={ LONG_OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes) }
+                options={ LONG_OPTIONS }
+                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
               />
             ) }
           </StateContainer>

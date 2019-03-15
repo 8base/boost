@@ -3,7 +3,7 @@ import React from 'react';
 import fp from 'lodash/fp';
 import DropdownTreeSelect from 'react-dropdown-tree-select';
 
-import { TreeSelectWrapperTag, WRAPPER_CLASS_NAME } from './TreeSelect.theme';
+import { TreeSelectWrapperTag, CLASS_NAME_FILLED, CLASS_NAME } from './TreeSelect.theme';
 
 type TreeData = {
   label: string,
@@ -28,8 +28,8 @@ type ToggledNode = {
 }
 
 type TreeSelectProps = {
-  data: TreeData,
-  value: TreeNode[],
+  options: TreeData | TreeData[],
+  value: string[],
   onChange: (currentNode: TreeNode, selectedNodes: TreeNode[]) => void,
   onNodeToggle?: (ToggledNode) => void,
   stretch: boolean,
@@ -62,7 +62,7 @@ const getNodePath = (treeData: TreeData, value: string): null | string[] => {
       ? treeData
       : fp.get(path, treeData);
 
-    if (node.value === value) {
+    if (node && node.value === value) {
       nodePath = path;
     }
   });
@@ -81,12 +81,14 @@ class TreeSelect extends React.PureComponent<TreeSelectProps> {
 
 
   getSelectedData = fp.memoize(
-    ({ value, toggledNodes, data }: *) => {
+    ({ value, toggledNodes, options }: *) => {
+
+      if (!value) { return options; }
 
       const selectedData = value
         .reduce(
-          (accum, node: TreeNode) => {
-            const nodePath = getNodePath(data, node.value);
+          (accum, selectedValue: string) => {
+            const nodePath = getNodePath(options, selectedValue);
 
             if (nodePath === null) return accum;
 
@@ -94,13 +96,13 @@ class TreeSelect extends React.PureComponent<TreeSelectProps> {
               fp.set([...nodePath, 'checked'], true),
             )(accum);
           },
-          data,
+          options,
         );
 
       const expandedData = Object.keys(toggledNodes).reduce(
         (accum, key: string) => {
           const node = toggledNodes[key];
-          const nodePath = getNodePath(data, node.value);
+          const nodePath = getNodePath(options, node.value);
 
           if (nodePath === null) return accum;
           return fp.set([...nodePath, 'expanded'], node.expanded, accum);
@@ -124,16 +126,20 @@ class TreeSelect extends React.PureComponent<TreeSelectProps> {
   }
 
   render () {
-    const { stretch, value, data, placeholder, ...rest } = this.props;
+    const { stretch, value, options, placeholder, ...rest } = this.props;
 
-    const selectedData = this.getSelectedData({ value, data, toggledNodes: this.toggledNodes });
+    const selectedData = this.getSelectedData({ value, options, toggledNodes: this.toggledNodes });
+
+    const className = value.length > 0
+      ? `${CLASS_NAME} ${CLASS_NAME_FILLED}`
+      : CLASS_NAME;
 
     return (
       <TreeSelectWrapperTag tagName="div" stretch={ stretch }>
         <DropdownTreeSelect
           { ...rest }
           data={ selectedData }
-          className={ WRAPPER_CLASS_NAME }
+          className={ className }
           onNodeToggle={ this.onNodeToggle }
           placeholderText={ placeholder }
         />

@@ -8,8 +8,8 @@ import { FormField } from '../Form/FormField';
 import type { InputType, MetaType } from '../../types';
 
 type TreeSelectFieldProps = {
-  /** array of select data option */
-  data: Object,
+  /** array of select options option */
+  options: Object | Object[],
   /** placeholder */
   placeholder?: string,
   /** field label */
@@ -26,7 +26,7 @@ class TreeSelectField extends React.Component<TreeSelectFieldProps> {
 
   onChange = (currenNode: Object, selectedNodes: Object[]) => {
     const { input } = this.props;
-    const value = selectedNodes.map(({ value, label }) => ({ value, label }));
+    const value = selectedNodes.map(({ value }) => (value));
 
     input.onChange && input.onChange(value);
   };
@@ -38,7 +38,7 @@ class TreeSelectField extends React.Component<TreeSelectFieldProps> {
   }
 
   collectSelectProps() {
-    const { input, meta, placeholder, data, stretch } = this.props;
+    const { input, meta, placeholder, options, stretch } = this.props;
 
     const hasError = formUtils.hasError(meta);
 
@@ -48,7 +48,7 @@ class TreeSelectField extends React.Component<TreeSelectFieldProps> {
       value: input.value,
       hasError,
       placeholder,
-      data,
+      options,
       stretch,
       onChange: this.onChange,
     };

@@ -44,4 +44,5 @@ export { TextArea } from './TextArea';
 export { TextAreaField } from './TextAreaField';
 export { Tooltip } from './Tooltip';
 export { NoData } from './NoData';
+export { Pagination } from './Pagination';
 

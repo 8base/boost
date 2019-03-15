@@ -5,30 +5,37 @@ import React, { PureComponent } from 'react';
 import fp from 'lodash/fp';
 import { TableHeader } from './TableHeader';
 import { TableBody } from './TableBody';
+import { TableFooter } from './TableFooter';
 import { TableBodyRow } from './TableBodyRow';
 import { TableHeaderCell } from './TableHeaderCell';
 import { TableBodyCell } from './TableBodyCell';
 import { Table } from './Table';
 import { Checkbox } from '../Checkbox';
+import { Pagination } from '../Pagination';
 
 const DEFAULT_SORT_ENABLE = true;
 
 type Sort = {
   name: string,
   order: 'ASC' | 'DESC',
-}
+};
 
 type ColumnType = {
   title?: string,
   name: string,
   sortEnable?: boolean,
   width?: string,
-}
+};
 
 type TableState = {
   sort?: Sort[],
-  selectedIds?: Array<string>
-}
+  selectedIds?: Array<string>,
+  pagination?: {
+    page: number,
+    pageSize: number,
+    total?: number,
+  }
+};
 
 type TableBulderProps = {
   /** Options of the columns */
@@ -47,16 +54,17 @@ type TableBulderProps = {
   withSelection?: boolean,
   /** Options to enable multiple columns sorting */
   withMultipleSort?: boolean,
+  /** Options to enable multiple columns sorting */
+  withPagination?: boolean,
   /** Options to show loader */
   loading?: boolean,
   /** Calback to render cell */
   renderCell?: (column: ColumnType, data: any) => React$Node,
   /** Callback to render head cell */
   renderHeadCell?: (column: ColumnType) => React$Node,
-}
+};
 
 class TableBuilder extends PureComponent<TableBulderProps> {
-
   static defaultProps = {
     columns: [],
     data: [],
@@ -65,8 +73,12 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     tableState: {
       sort: [],
       selectedIds: [],
+      pagination: {
+        page: 1,
+        pageSize: 10,
+      },
     },
-  }
+  };
 
   getGridColumns = () => {
     const { columns, withSelection } = this.props;
@@ -218,7 +230,15 @@ class TableBuilder extends PureComponent<TableBulderProps> {
   }
 
   renderBody = () => {
-    const { columns, onActionClick, action, data, withSelection, renderCell, loading } = this.props;
+    const {
+      columns,
+      onActionClick,
+      action,
+      data,
+      withSelection,
+      renderCell,
+      loading,
+    } = this.props;
 
     return (
       <TableBody
@@ -251,11 +271,46 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     );
   }
 
+  onChangePagination = (page: number, pageSize: number) => {
+    const { onChange, tableState } = this.props;
+
+    if (typeof onChange === 'function') {
+      onChange({ ...tableState, pagination: { ...tableState.pagination, page, pageSize }});
+    }
+  }
+
+  getPage = () => fp.getOr(1, 'tableState.pagination.page', this.props);
+  getPageSize = () => fp.getOr(10, 'tableState.pagination.pageSize', this.props);
+  getTotal = () => fp.getOr(0, 'tableState.pagination.total', this.props);
+
+  renderFooter = () => {
+    const { withPagination } = this.props;
+
+    let footer = null;
+
+    if (withPagination && this.getTotal()) {
+      footer = (
+        <TableFooter justifyContent="center">
+          <Pagination
+            page={ this.getPage() }
+            pageSize={ this.getPageSize() }
+            total={ this.getTotal() }
+            onChange={ this.onChangePagination }
+            showSizeChanger
+          />
+        </TableFooter>
+      );
+    }
+
+    return footer;
+  };
+
   render() {
     return (
       <Table>
         { this.renderHeader() }
         { this.renderBody() }
+        { this.renderFooter() }
       </Table>
     );
   }

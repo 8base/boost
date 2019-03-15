@@ -1,6 +1,5 @@
 // @flow
 import React, { PureComponent } from 'react';
-import styled from 'react-emotion';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
@@ -33,17 +32,6 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
   }),
 }));
 
-
-const IconTransform = styled('div')(props => {
-  const styles = {};
-
-  if (props.order === 'ASC') {
-    styles.transform = 'rotate(180deg)';
-  }
-
-  return styles;
-});
-
 class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
 
   onSort = () => {
@@ -65,9 +53,7 @@ class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
       <TableHeaderCellTag { ...rest } onClick={ this.onSort } tagName={ Row }>
         <span>{ children }</span>
         <If condition={ !!rest.order }>
-          <IconTransform modifiers={ rest }>
-            <Icon name="ChevronDown" size="md" />
-          </IconTransform>
+          <Icon name={ rest.order === 'ASC' ? 'ChevronTop' : 'ChevronDown' } size="xs" />
         </If>
       </TableHeaderCellTag>
     );

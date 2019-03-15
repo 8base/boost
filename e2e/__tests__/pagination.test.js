@@ -2,8 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/Icon', 'with color'),
-  baisy.suite('Components/Icon', 'with size'),
+  baisy.suite('Components/Pagination', 'common'),
 ];
 
 

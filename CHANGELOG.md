@@ -1,3 +1,19 @@
+<a name="0.15.3"></a>
+## [0.15.3](https://github.com/8base/boost/compare/v0.15.2...v0.15.3) (2019-03-15)
+
+
+### Bug Fixes
+
+* **Select:** scalar value instead of selected option ([eecbc66](https://github.com/8base/boost/commit/eecbc66))
+
+
+### Features
+
+* **Icon:** update icons ([1aec8a1](https://github.com/8base/boost/commit/1aec8a1))
+* **Pagination:** initial ([5fe9708](https://github.com/8base/boost/commit/5fe9708))
+
+
+
 <a name="0.15.2"></a>
 ## [0.15.2](https://github.com/8base/boost/compare/v0.15.1...v0.15.2) (2019-03-14)
 

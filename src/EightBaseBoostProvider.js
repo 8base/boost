@@ -26,8 +26,12 @@ class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps
     resetGlobal(this.theme);
 
     Object.keys(this.theme.components).forEach((name) => {
-      if (this.theme.components[name].globals) {
-        injectGlobal(this.theme.components[name].globals);
+      const { globals } = this.theme.components[name];
+
+      if (globals) {
+        typeof globals === 'function'
+          ? injectGlobal(globals(this.theme))
+          : injectGlobal(globals);
       }
     });
   }

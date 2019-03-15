@@ -8,23 +8,29 @@ export class StateContainer extends React.Component {
   }
 
   onChange = (value) => {
-    // eslint-disable-next-line
-    console.log(value);
     this.setState({ value });
   };
 
+  renderContent = (passedProps) => {
+    const { children } = this.props;
+
+    if (typeof children === 'function') {
+      return children(passedProps);
+    } else {
+      return React.Children.map(children, child =>
+        React.cloneElement(child, passedProps),
+      );
+    }
+  }
+
   render() {
-    const { children, withForm } = this.props;
+    const { withForm } = this.props;
     const { value } = this.state;
 
     if (withForm) {
-      return React.Children.map(children, child =>
-        React.cloneElement(child, { input: { value, onChange: this.onChange }, meta: {}}),
-      );
+      return this.renderContent({ input: { value, onChange: this.onChange }, meta: {}});
     }
 
-    return React.Children.map(children, child =>
-      React.cloneElement(child, { value, onChange: this.onChange }),
-    );
+    return this.renderContent({ value, onChange: this.onChange });
   }
 }

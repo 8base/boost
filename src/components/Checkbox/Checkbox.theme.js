@@ -23,6 +23,7 @@ const [CheckboxSquareTag, themeSquare] = createThemeTag(`${name}Square`, ({ COLO
     },
     disabled: {
       backgroundColor: COLORS.LIGHT_GRAY4,
+      cursor: 'auto',
     },
   },
 }));

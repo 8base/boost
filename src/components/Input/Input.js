@@ -12,6 +12,8 @@ type InputCommonProps = {
   placeholder?: string,
   /** html auto-complete representation */
   autoComplete?: boolean,
+  /** html auto-focus representation */
+  autoFocus?: boolean,
   /** disabled */
   disabled?: boolean,
   /** when true then stretch to the maximal width */
@@ -121,6 +123,7 @@ class Input extends PureComponent<InputProps> {
       readOnly,
       clearable,
       onClear,
+      autoFocus,
       ...rest
     } = this.props;
     const hasLeftIcon = !!leftIcon;
@@ -145,6 +148,7 @@ class Input extends PureComponent<InputProps> {
       disabled,
       readOnly,
       stretch,
+      autoFocus,
     };
 
     return (

@@ -1,3 +1,13 @@
+<a name="0.16.3"></a>
+## [0.16.3](https://github.com/8base/boost/compare/v0.16.2...v0.16.3) (2019-03-18)
+
+
+### Bug Fixes
+
+* **TreeSelect:** fix tree select errors ([015c0b2](https://github.com/8base/boost/commit/015c0b2))
+
+
+
 <a name="0.16.2"></a>
 ## [0.16.2](https://github.com/8base/boost/compare/v0.16.1...v0.16.2) (2019-03-18)
 

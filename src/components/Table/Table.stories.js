@@ -361,7 +361,7 @@ export default (asStory) => {
                   <Table.BodyCell>
                     <Dropdown defaultOpen={ false }>
                       <Dropdown.Head>
-                        <Icon name="Dots" color="LIGHT_GRAY2" />
+                        <Icon name="More" color="LIGHT_GRAY2" />
                       </Dropdown.Head>
                       <Dropdown.Body pin="right">
                         <Menu>
@@ -443,7 +443,7 @@ export default (asStory) => {
                   <Table.BodyCell>
                     <Dropdown defaultOpen={ false }>
                       <Dropdown.Head>
-                        <Icon name="Dots" color="LIGHT_GRAY2" />
+                        <Icon name="More" color="LIGHT_GRAY2" />
                       </Dropdown.Head>
                       <Dropdown.Body pin="right">
                         <Menu>

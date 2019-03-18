@@ -1,3 +1,13 @@
+<a name="0.16.2"></a>
+## [0.16.2](https://github.com/8base/boost/compare/v0.16.1...v0.16.2) (2019-03-18)
+
+
+### Bug Fixes
+
+* **app:** rename dots to more ([e2d3a51](https://github.com/8base/boost/commit/e2d3a51))
+
+
+
 <a name="0.16.1"></a>
 ## [0.16.1](https://github.com/8base/boost/compare/v0.16.0...v0.16.1) (2019-03-18)
 

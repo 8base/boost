@@ -175,7 +175,7 @@ export default (asStory: *) => {
       .add('with menu', () => (
         <Dropdown defaultOpen={ false }>
           <Dropdown.Head>
-            <Icon name="Dots" color="LIGHT_GRAY2" />
+            <Icon name="More" color="LIGHT_GRAY2" />
           </Dropdown.Head>
           <Dropdown.Body forceRender>
             <Menu>

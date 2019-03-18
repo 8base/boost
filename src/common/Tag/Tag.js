@@ -39,6 +39,7 @@ type TagProps = {|
 const COLLECTED_PROPS = [
   'aria-busy',
   'autoComplete',
+  'autoFocus',
   'checked',
   'children',
   'className',

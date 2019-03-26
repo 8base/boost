@@ -1,29 +1,45 @@
-import { createThemeTag } from '../../theme/createThemeTag';
+import fp from 'lodash/fp';
 
+import { createThemeTag } from '../../theme/createThemeTag';
+import { PALETTE } from '../../theme';
 
 const name = 'paragraph';
 
-const [ParagraphTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
-  root: {
-    fontWeight: 400,
+const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
+  root: props => ({
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
     margin: 0,
-  },
+    '& > *': {
+      verticalAlign: props.verticalAlign,
+    },
+  }),
   modifiers: {
-    kind: {
-      primary: {
-        color: COLORS.DARK_PRIMARY_TEXT_COLOR,
+    color: fp.mapValues(
+      (color) => ({ color }),
+      PALETTE,
+    ),
+    weight: {
+      light: {
+        fontWeight: 300,
       },
-      secondary: {
-        color: COLORS.DARK_SECONDARY_TEXT_COLOR,
+      normal: {
+        fontWeight: 400,
       },
-      disabled: {
-        color: COLORS.DARK_DISABLED_TEXT_COLOR,
+      medium: {
+        fontWeight: 500,
       },
-      white: {
-        color: COLORS.WHITE,
+      semibold: {
+        fontWeight: 600,
       },
+      bold: {
+        fontWeight: 700,
+      },
+    },
+    align: {
+      left: { textAlign: 'left' },
+      right: { textAlign: 'right' },
+      center: { textAlign: 'center' },
     },
   },
 }));

@@ -3,30 +3,26 @@
 import React from 'react';
 
 import { ParagraphTag } from './Paragraph.theme';
+import { PALETTE } from '../../theme';
 
 type ParagraphProps = {
-  children?: React$Node,
-  kind?: 'primary' | 'secondary' | 'disabled' | 'white',
-  text?: string,
+  children?: React$Node | string | number,
+  text?: string | number,
+  color?: $Keys<typeof PALETTE>,
+  align?: 'left' | 'center' | 'right',
+  weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
+  verticalAlign?: string,
 };
 
-const Paragraph = ({
-  text,
-  children,
-  ...rest
-  }: ParagraphProps) => {
-  return (
-    <ParagraphTag
-      { ...rest }
-      tagName="p"
-    >
-      { children || text }
-    </ParagraphTag>
-  );
-};
+const Paragraph = ({ text, children, ...rest }: ParagraphProps) => (
+  <ParagraphTag { ...rest } tagName="p">
+    { children || text }
+  </ParagraphTag>
+);
 
 Paragraph.defaultProps = {
-  kind: 'primary',
+  color: 'DARK_GRAY1',
+  weight: 'normal',
 };
 
 export { Paragraph };

@@ -44,7 +44,6 @@ const alignItemsStyles = {
   stretch: 'stretch',
 };
 
-
 const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) =>
   direction === 'row'
     ? {
@@ -72,6 +71,7 @@ const [FlexLayoutTag, theme] = createThemeTag(name, {
     justifyContent: justifyContentStyles[props.justifyContent],
     alignContent: alignContentStyles[props.alignContent],
     alignItems: alignItemsStyles[props.alignItems],
+    flexWrap: props.flexWrap,
 
     paddingLeft: paddingSizes[props.offsetX] || paddingSizes[props.offsetLeft],
     paddingRight: paddingSizes[props.offsetX] || paddingSizes[props.offsetRight],

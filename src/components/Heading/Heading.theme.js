@@ -66,6 +66,11 @@ const [HeadingTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
         fontWeight: 700,
       },
     },
+    ellipsis: {
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+    },
   },
 }));
 

@@ -5,9 +5,9 @@ export default (asStory) => {
     story
       .add('common ', () => (
         <Fragment>
-          <Paragraph kind="primary">Primary Paragraph</Paragraph>
-          <Paragraph kind="secondary">Secondary Paragraph</Paragraph>
-          <Paragraph kind="disabled">Disabled Paragraph</Paragraph>
+          <Paragraph color="DARK_GRAY1">Primary Paragraph</Paragraph>
+          <Paragraph color="GRAY1">Secondary Paragraph</Paragraph>
+          <Paragraph color="LIGHT_GRAY1">Disabled Paragraph</Paragraph>
         </Fragment>
       ))
       .add('with text', () => (

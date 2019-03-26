@@ -10,6 +10,7 @@ type HeadingProps = {
   text?: string,
   type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
+  ellipsis?: boolean,
 };
 
 
@@ -33,6 +34,7 @@ function Heading({
 Heading.defaultProps = {
   kind: 'primary',
   weight: 'normal',
+  ellipsis: false,
 };
 
 export { Heading };

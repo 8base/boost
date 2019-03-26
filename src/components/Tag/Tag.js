@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { TagOuter } from './Tag.theme';
+import { TagOuter, TagInner } from './Tag.theme';
 
 type TagProps = {
   /** tag content */
@@ -11,9 +11,10 @@ type TagProps = {
   color?: string,
 };
 
-
 const Tag = ({ children, ...rest }: TagProps) => (
-  <TagOuter { ...rest } tagName="span">{ children }</TagOuter>
+  <TagOuter { ...rest } tagName="span">
+    <TagInner tagName="span">{ children }</TagInner>
+  </TagOuter>
 );
 
 Tag.defaultProps = {

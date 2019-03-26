@@ -6,7 +6,7 @@ import { getContrastColor } from './Tag.utils';
 
 const name = 'tag';
 
-const [TagOuter, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
+const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS }: *): * => ({
   root: {
     margin: 0,
     minHeight: '24px',
@@ -15,6 +15,7 @@ const [TagOuter, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    whiteSpace: 'nowrap',
   },
 
   modifiers: {
@@ -32,8 +33,22 @@ const [TagOuter, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
 }));
 
 
+const [TagInner, themeInner] = createThemeTag(`${name}Inner`, (): * => ({
+  root: {
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
+}));
+
+const theme = {
+  ...themeOuter,
+  ...themeInner,
+};
+
 export {
   TagOuter,
+  TagInner,
   theme,
 };
 

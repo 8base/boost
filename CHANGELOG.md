@@ -1,3 +1,15 @@
+<a name="0.16.5"></a>
+## [0.16.5](https://github.com/8base/boost/compare/v0.16.4...v0.16.5) (2019-03-26)
+
+
+### Features
+
+* **FlexLayout:** adds flexWrap prop ([30edec7](https://github.com/8base/boost/commit/30edec7))
+* **Heading:** adds ellipsis prop ([034327a](https://github.com/8base/boost/commit/034327a))
+* **Paragraph:** replaces kind by color, adds aling and verticalAlign props ([ab0db22](https://github.com/8base/boost/commit/ab0db22))
+
+
+
 <a name="0.16.4"></a>
 ## [0.16.4](https://github.com/8base/boost/compare/v0.16.3...v0.16.4) (2019-03-26)
 

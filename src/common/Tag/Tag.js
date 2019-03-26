@@ -25,6 +25,7 @@ type TagProps = {|
   onKeyUp?: (event?: SyntheticKeyboardEvent) => void,
   onKeyDown?: (event?: SyntheticKeyboardEvent) => void,
   onSubmit?: () => void,
+  onScroll?: () => void,
   options?: Array<Object>,
   placeholder?: string,
   rows?: number | string,
@@ -62,6 +63,7 @@ const COLLECTED_PROPS = [
   'onKeyUp',
   'onKeyDown',
   'onSubmit',
+  'onScroll',
   'options',
   'placeholder',
   'rows',
@@ -94,6 +96,7 @@ const HTML_TAGS = [
   'label',
   'nav',
   'img',
+  'pre',
 ];
 
 const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));
@@ -108,7 +111,11 @@ class Tag extends PureComponent<TagProps> {
 
     const collectedProps = HTML_TAGS.indexOf(TagComponent) === -1 ? props : collectProps(props);
 
-    return <TagComponent { ...collectedProps } ref={ props.insideRef } />;
+    if (HTML_TAGS.indexOf(TagComponent) !== -1) {
+      collectedProps.ref = props.insideRef;
+    }
+
+    return <TagComponent { ...collectedProps } />;
   }
 }
 

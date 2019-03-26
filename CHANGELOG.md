@@ -1,3 +1,19 @@
+<a name="0.16.4"></a>
+## [0.16.4](https://github.com/8base/boost/compare/v0.16.3...v0.16.4) (2019-03-26)
+
+
+### Bug Fixes
+
+* **Tag:** inside ref ([226617d](https://github.com/8base/boost/commit/226617d))
+* **Tag:** no wrap ([a90635a](https://github.com/8base/boost/commit/a90635a))
+
+
+### Features
+
+* **Table:** add condensed and bordered modifiers ([1cd13a2](https://github.com/8base/boost/commit/1cd13a2))
+
+
+
 <a name="0.16.3"></a>
 ## [0.16.3](https://github.com/8base/boost/compare/v0.16.2...v0.16.3) (2019-03-18)
 

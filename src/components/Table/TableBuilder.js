@@ -62,6 +62,8 @@ type TableBulderProps = {
   renderCell?: (column: ColumnType, data: any) => React$Node,
   /** Callback to render head cell */
   renderHeadCell?: (column: ColumnType) => React$Node,
+  /** Callback to render head cell */
+  condensed?: boolean,
 };
 
 class TableBuilder extends PureComponent<TableBulderProps> {
@@ -202,12 +204,12 @@ class TableBuilder extends PureComponent<TableBulderProps> {
 
 
   renderHeader = () => {
-    const { columns, withSelection, renderHeadCell } = this.props;
+    const { columns, withSelection, renderHeadCell, ...rest } = this.props;
 
     return (
-      <TableHeader columns={ this.getGridColumns() }>
+      <TableHeader columns={ this.getGridColumns() } modifiers={ rest }>
         <If condition={ !!withSelection }>
-          <TableHeaderCell justifyContent="center">
+          <TableHeaderCell justifyContent="center" modifiers={ rest }>
             <Checkbox
               onChange={ this.onSelectAllRows }
               checked={ this.hasAllRowsSelection() }
@@ -221,6 +223,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
             enableSort={ this.getColumnSortEnable(column.name) }
             onSort={ this.onSort(column.name) }
             order={ this.getColumnOrder(column.name) }
+            modifiers={ rest }
           >
             { renderHeadCell ? renderHeadCell(column) : column.title || '' }
           </TableHeaderCell>
@@ -237,7 +240,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       data,
       withSelection,
       renderCell,
-      loading,
+      ...rest
     } = this.props;
 
     return (
@@ -245,15 +248,17 @@ class TableBuilder extends PureComponent<TableBulderProps> {
         data={ data }
         onActionClick={ onActionClick }
         action={ action }
-        loading={ loading }
+        loading={ rest.loading }
+        modifiers={ rest }
       >
         { (rowData) => (
           <TableBodyRow
             columns={ this.getGridColumns() }
             key={ rowData.id }
+            modifiers={ rest }
           >
             <If condition={ !!withSelection }>
-              <TableBodyCell justifyContent="center">
+              <TableBodyCell justifyContent="center" modifiers={ rest }>
                 <Checkbox
                   onChange={ this.onSelectRow(rowData.id) }
                   checked={ this.hasRowSelection(rowData.id) }
@@ -261,7 +266,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
               </TableBodyCell>
             </If>
             { columns.map((column) => (
-              <TableBodyCell key={ column.name }>
+              <TableBodyCell key={ column.name } modifiers={ rest }>
                 { renderCell ? renderCell(column, rowData) : rowData[column.name] }
               </TableBodyCell>
             )) }

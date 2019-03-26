@@ -14,11 +14,13 @@ const name = 'tableBodyRow';
 const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'grid',
-
-    minHeight: '60px',
+    minHeight: '48px',
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
   },
   modifiers: {
+    condensed: {
+      minHeight: '36px',
+    },
   },
   defaults: {
   },

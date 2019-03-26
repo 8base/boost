@@ -14,11 +14,22 @@ const name = 'tableHeader';
 const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'grid',
-
-    height: '52px',
+    height: '48px',
     backgroundColor: COLORS.LIGHT_GRAY5,
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     color: COLORS.GRAY4,
+  },
+
+  modifiers: {
+    condensed: {
+      height: '36px',
+    },
+
+    bordered: {
+      '&:first-child': {
+        borderTop: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      },
+    },
   },
 }));
 

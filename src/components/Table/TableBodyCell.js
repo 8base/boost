@@ -11,7 +11,7 @@ type TableBodyCellProps = {
 
 const name = 'tableBodyCell';
 
-const [TableBodyCellTag, theme] = createThemeTag(name, {
+const [TableBodyCellTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'flex',
     alignItems: 'center',
@@ -19,7 +19,16 @@ const [TableBodyCellTag, theme] = createThemeTag(name, {
 
     padding: '8px 16px',
   },
-});
+  modifiers: {
+    bordered: {
+      borderLeft: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+
+      '&:last-child': {
+        borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      },
+    },
+  },
+}));
 
 function TableBodyCell({
   children,

@@ -18,7 +18,7 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
+const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) => ({
   root: props => ({
     display: 'flex',
     alignItems: 'center',
@@ -30,6 +30,16 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
     textTransform: 'uppercase',
     fontWeight: 700,
   }),
+
+  modifiers: {
+    bordered: {
+      borderLeft: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+
+      '&:last-child': {
+        borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      },
+    },
+  },
 }));
 
 class TableHeaderCell extends PureComponent<TableHeaderCellProps> {

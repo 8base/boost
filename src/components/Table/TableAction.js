@@ -10,7 +10,7 @@ type TableActionProps = {
 
 const name = 'tableAction';
 
-const [TableActionTag, themeAction] = createThemeTag(name, {
+const [TableActionTag, themeAction] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     position: 'sticky',
     bottom: 0,
@@ -22,10 +22,14 @@ const [TableActionTag, themeAction] = createThemeTag(name, {
     paddingBottom: '16px',
   },
   modifiers: {
+    bordered: {
+      borderLeft: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    },
   },
   defaults: {
   },
-});
+}));
 
 const [TableActionInnerTag, themeInner] = createThemeTag(`${name}Inner`, {
   root: {

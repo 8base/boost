@@ -537,6 +537,40 @@ export default (asStory) => {
             ) }
           </TableState>
         </div>
+      ))
+
+      .add('with condensed modifier', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <TableState>
+            { ({ tableState, setTableState }) => (
+              <TableBuilder
+                columns={ TABLE_COLUMNS }
+                data={ TABLE_DATA }
+                action="Create Client" onActionClick={ () => alert('Create') }
+                onChange={ setTableState }
+                tableState={ tableState }
+                condensed
+              />
+            ) }
+          </TableState>
+        </div>
+      ))
+
+      .add('with bordered modifier', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <TableState>
+            { ({ tableState, setTableState }) => (
+              <TableBuilder
+                columns={ TABLE_COLUMNS }
+                data={ TABLE_DATA }
+                action="Create Client" onActionClick={ () => alert('Create') }
+                onChange={ setTableState }
+                tableState={ tableState }
+                bordered
+              />
+            ) }
+          </TableState>
+        </div>
       ));
   });
 };

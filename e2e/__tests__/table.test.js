@@ -19,6 +19,8 @@ const SUITES = [
     .setEnhancer(async (iframe) => {
       await (await await iframe.waitForXPath('//i')).click();
     }),
+  baisy.suite('Components/Table', 'with condensed modifier'),
+  baisy.suite('Components/Table', 'with bordered modifier'),
 ];
 
 

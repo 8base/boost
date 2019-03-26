@@ -15,12 +15,13 @@ type TableBodyProps<T: Object> = {
   loading?: boolean,
   action?: React$Node,
   onActionClick?: () => void,
+  modifiers?: Object,
 };
 
 const name = 'tableBody';
 
 const [TableBodyTag, themeBody] = createThemeTag(name, ({ COLORS }: *): * => ({
-  root: {
+  root: ({ action }) => ({
     display: 'grid',
     gridTemplateColumns: '1fr',
     gridTemplateRows: '1fr',
@@ -28,7 +29,15 @@ const [TableBodyTag, themeBody] = createThemeTag(name, ({ COLORS }: *): * => ({
     justifyContent: 'space-between',
     overflow: 'auto',
 
-    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderBottom: action ? `1px solid ${COLORS.PRIMARY_BORDER_COLOR}` : 'none',
+  }),
+
+  modifiers: {
+    bordered: {
+      '&:first-child': {
+        borderTop: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      },
+    },
   },
 }));
 
@@ -48,17 +57,17 @@ const theme = {
 
 class TableBody extends PureComponent<TableBodyProps<*>> {
   renderTableAction = () => {
-    const { action, onActionClick } = this.props;
+    const { action, onActionClick, modifiers, ...rest } = this.props;
 
     if (typeof action === 'string') {
       return (
-        <TableAction>
+        <TableAction modifiers={{ ...rest, ...modifiers }}>
           <Button onClick={ onActionClick }>{ action }</Button>
         </TableAction>
       );
     } else if (!!action) {
       return (
-        <TableAction>
+        <TableAction modifiers={ rest }>
           { action }
         </TableAction>
       );

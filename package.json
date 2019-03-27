@@ -83,7 +83,7 @@
     "emotion-theming": "^9.1.2",
     "luxon": "^1.7.1",
     "prop-types": "^15.6.1",
-    "react-datepicker": "^2.0.0",
+    "react-datepicker": "^2.3.0",
     "react-dropdown-tree-select": "1.13.0",
     "react-input-mask": "^2.0.4",
     "react-onclickoutside": "^6.7.1",

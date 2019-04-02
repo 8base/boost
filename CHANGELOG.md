@@ -1,3 +1,13 @@
+<a name="0.16.7"></a>
+## [0.16.7](https://github.com/8base/boost/compare/v0.16.6...v0.16.7) (2019-04-02)
+
+
+### Features
+
+* **Card:** sets CardBody scrollable by default ([65afba2](https://github.com/8base/boost/commit/65afba2))
+
+
+
 <a name="0.16.6"></a>
 ## [0.16.6](https://github.com/8base/boost/compare/v0.16.5...v0.16.6) (2019-04-01)
 

@@ -1,3 +1,13 @@
+<a name="0.16.8"></a>
+## [0.16.8](https://github.com/8base/boost/compare/v0.16.7...v0.16.8) (2019-04-02)
+
+
+### Features
+
+* **Input:** adds step, min, max attributes ([ba4c626](https://github.com/8base/boost/commit/ba4c626))
+
+
+
 <a name="0.16.7"></a>
 ## [0.16.7](https://github.com/8base/boost/compare/v0.16.6...v0.16.7) (2019-04-02)
 

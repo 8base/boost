@@ -41,6 +41,9 @@ type InputFieldProps = {
   onClear?: () => void,
   /** html auto-focus representation */
   autoFocus?: boolean,
+  step?: string | number,
+  min?: string | number,
+  max?: string | number,
 };
 
 const InputField = ({
@@ -66,6 +69,9 @@ const InputField = ({
   autoComplete,
   autoFocus,
   onClear,
+  step,
+  min,
+  max,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -106,6 +112,9 @@ const InputField = ({
         rightIcon={ rightIcon }
         onClear={ onClear }
         autoFocus={ autoFocus }
+        step={ step }
+        min={ min }
+        max={ max }
       />
     </FormField>
   );

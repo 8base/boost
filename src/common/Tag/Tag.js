@@ -78,6 +78,9 @@ const COLLECTED_PROPS = [
   'href',
   'target',
   'rel',
+  'step',
+  'min',
+  'max',
 ];
 
 const HTML_TAGS = [

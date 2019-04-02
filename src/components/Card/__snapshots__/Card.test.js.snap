@@ -44,14 +44,17 @@ exports[`<Card /> should render Card components 1`] = `
           </CardHeader>
           <CardBody
             padding="lg"
+            scrollable={true}
           >
             <Boost(cardBody)
               padding="lg"
+              scrollable={true}
               tagName="div"
             >
               <Tag
                 className="emotion-0 emotion-1"
                 padding="lg"
+                scrollable={true}
                 tagName="div"
               >
                 <div

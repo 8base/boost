@@ -59,6 +59,9 @@ type InputProps = {
   onBlur?: (?SyntheticFocusEvent<HTMLInputElement>) => void,
   /** callback which called on clear */
   onClear?: () => void,
+  step?: string | number,
+  min?: string | number,
+  max?: string | number,
 } & InputCommonProps;
 
 class Input extends PureComponent<InputProps> {
@@ -124,6 +127,9 @@ class Input extends PureComponent<InputProps> {
       clearable,
       onClear,
       autoFocus,
+      step,
+      min,
+      max,
       ...rest
     } = this.props;
     const hasLeftIcon = !!leftIcon;
@@ -149,6 +155,9 @@ class Input extends PureComponent<InputProps> {
       readOnly,
       stretch,
       autoFocus,
+      step,
+      min,
+      max,
     };
 
     return (

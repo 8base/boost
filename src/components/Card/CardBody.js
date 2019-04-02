@@ -15,6 +15,7 @@ type CardBodyProps = {
 class CardBody extends PureComponent<CardBodyProps> {
   static defaultProps = {
     padding: 'md',
+    scrollable: true,
   };
 
   render() {

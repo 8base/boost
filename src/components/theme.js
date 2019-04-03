@@ -38,6 +38,7 @@ import { theme as menuTheme } from './Menu';
 import { theme as dateInputTheme } from './DateInput';
 import { theme as noDataTheme } from './NoData';
 import { theme as paginationTheme } from './Pagination';
+import { theme as indicatorTheme } from './Indicator';
 
 
 export const theme = {
@@ -79,4 +80,5 @@ export const theme = {
   ...dateInputTheme,
   ...noDataTheme,
   ...paginationTheme,
+  ...indicatorTheme,
 };

@@ -47,4 +47,5 @@ export { TreeSelectField } from './TreeSelectField';
 export { Tooltip } from './Tooltip';
 export { NoData } from './NoData';
 export { Pagination } from './Pagination';
+export { Indicator } from './Indicator';
 

@@ -1,3 +1,13 @@
+<a name="0.17.1"></a>
+## [0.17.1](https://github.com/8base/boost/compare/v0.17.0...v0.17.1) (2019-04-08)
+
+
+### Bug Fixes
+
+* **e2e:** updates snaphosts ([1d77975](https://github.com/8base/boost/commit/1d77975))
+
+
+
 <a name="0.17.0"></a>
 # [0.17.0](https://github.com/8base/boost/compare/v0.16.8...v0.17.0) (2019-04-08)
 

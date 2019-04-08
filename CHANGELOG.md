@@ -1,3 +1,13 @@
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/8base/boost/compare/v0.16.8...v0.17.0) (2019-04-08)
+
+
+### Features
+
+* **Indicator:** adds Indicator component ([63f73e0](https://github.com/8base/boost/commit/63f73e0))
+
+
+
 <a name="0.16.8"></a>
 ## [0.16.8](https://github.com/8base/boost/compare/v0.16.7...v0.16.8) (2019-04-02)
 

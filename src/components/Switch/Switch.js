@@ -1,7 +1,12 @@
 // @flow
 
 import React from 'react';
-import { SwitchTag, SwitchInputTag, SwitchApperanceTag, SwitchLabelTag } from './Switch.theme';
+import {
+  SwitchTag,
+  SwitchInputTag,
+  SwitchApperanceTag,
+  SwitchLabelTag,
+} from './Switch.theme';
 
 type SwitchProps = {
   label?: string,
@@ -33,3 +38,4 @@ class Switch extends React.Component<SwitchProps> {
 }
 
 export { Switch };
+

@@ -36,6 +36,7 @@ export { SecondaryNavigation } from './SecondaryNavigation';
 export { Select } from './Select';
 export { SelectField } from './SelectField';
 export { Switch } from './Switch';
+export { SwitchField } from './SwitchField';
 export { Table, TableBuilder } from './Table';
 export { Tabs } from './Tabs';
 export { Tag } from './Tag';

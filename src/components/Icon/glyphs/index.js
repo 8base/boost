@@ -30,6 +30,7 @@ import Lock from './Lock.svg';
 import Logic from './Logic.svg';
 import Mail from './Mail.svg';
 import MapPin from './MapPin.svg';
+import Minus from './Minus.svg';
 import More from './More.svg';
 import MoreVertical from './MoreVertical.svg';
 import PaperClip from './PaperClip.svg';
@@ -75,6 +76,7 @@ export {
   Logic,
   Mail,
   MapPin,
+  Minus,
   More,
   MoreVertical,
   PaperClip,

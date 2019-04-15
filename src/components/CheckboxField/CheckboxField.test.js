@@ -25,6 +25,7 @@ describe('<Checkbox />', () => {
     checked={true}
     disabled={false}
     hasError={false}
+    indeterminate={false}
     onChange={[MockFunction]}
   />
 </FormField>

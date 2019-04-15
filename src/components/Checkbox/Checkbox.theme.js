@@ -45,7 +45,7 @@ const [CheckboxIconTag, themeIcon] = createThemeTag(`${name}Icon`, ({ COLORS }: 
     opacity: 0,
   },
   modifiers: {
-    checked: {
+    isShown: {
       opacity: 1,
     },
   },

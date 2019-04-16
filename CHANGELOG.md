@@ -1,3 +1,13 @@
+<a name="0.18.1"></a>
+## [0.18.1](https://github.com/8base/boost/compare/v0.18.0...v0.18.1) (2019-04-16)
+
+
+### Features
+
+* **Icon:** add salesforce icon ([3b64902](https://github.com/8base/boost/commit/3b64902))
+
+
+
 <a name="0.18.0"></a>
 # [0.18.0](https://github.com/8base/boost/compare/v0.17.1...v0.18.0) (2019-04-10)
 

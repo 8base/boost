@@ -35,7 +35,7 @@ script:
   - yarn storybook &
   - sleep 40
   - yarn e2e:ci
-  - artifacts upload e2e/
+  - artifacts upload e2e/ || true
   - killall5 node || echo "Server is stopped"
 
 deploy:

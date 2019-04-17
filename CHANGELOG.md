@@ -1,3 +1,14 @@
+<a name="0.18.2"></a>
+## [0.18.2](https://github.com/8base/boost/compare/v0.18.1...v0.18.2) (2019-04-17)
+
+
+### Features
+
+* **Checkbox:** add indeterminate state ([b935f63](https://github.com/8base/boost/commit/b935f63))
+* **Icon:** new icon Minus ([2151186](https://github.com/8base/boost/commit/2151186))
+
+
+
 <a name="0.18.1"></a>
 ## [0.18.1](https://github.com/8base/boost/compare/v0.18.0...v0.18.1) (2019-04-16)
 

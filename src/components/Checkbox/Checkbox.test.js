@@ -14,6 +14,7 @@ describe('<Checkbox />', () => {
   checked={true}
   disabled={false}
   hasError={false}
+  indeterminate={false}
   tagName="label"
 >
   <Boost(checkboxSquare)
@@ -22,17 +23,19 @@ describe('<Checkbox />', () => {
         "checked": true,
         "disabled": false,
         "hasError": false,
+        "indeterminate": false,
       }
     }
     tagName="div"
   >
     <Boost(checkboxIcon)
-      checked={true}
       modifiers={
         Object {
           "checked": true,
           "disabled": false,
           "hasError": false,
+          "indeterminate": false,
+          "isShown": true,
         }
       }
       tagName="div"
@@ -46,11 +49,17 @@ describe('<Checkbox />', () => {
   <Boost(checkboxTag)
     checked={true}
     disabled={false}
+    insideRef={
+      Object {
+        "current": null,
+      }
+    }
     modifiers={
       Object {
         "checked": true,
         "disabled": false,
         "hasError": false,
+        "indeterminate": false,
       }
     }
     onChange={[Function]}
@@ -63,6 +72,7 @@ describe('<Checkbox />', () => {
         "checked": true,
         "disabled": false,
         "hasError": false,
+        "indeterminate": false,
       }
     }
     tagName="div"

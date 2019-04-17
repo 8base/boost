@@ -29,8 +29,8 @@ const Icon = ({ name, className, ...rest }: IconProps) => {
 
   return (
     <IconsConsumer>
-      { ({ icons }) => {
-        const Glyph: any = glyphs[name] || icons[name];
+      { ({ icons = {}}) => {
+        const Glyph: any = icons[name] || glyphs[name];
 
         return (
           <IconWrapperTag tagName="span" { ...rest }>

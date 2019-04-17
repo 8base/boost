@@ -1,3 +1,14 @@
+<a name="0.18.3"></a>
+## [0.18.3](https://github.com/8base/boost/compare/v0.18.2...v0.18.3) (2019-04-17)
+
+
+### Bug Fixes
+
+* **Navigation:** wrap for item label ([7ceb5ef](https://github.com/8base/boost/commit/7ceb5ef))
+* ability to override default icons ([e0545b5](https://github.com/8base/boost/commit/e0545b5))
+
+
+
 <a name="0.18.2"></a>
 ## [0.18.2](https://github.com/8base/boost/compare/v0.18.1...v0.18.2) (2019-04-17)
 

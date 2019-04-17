@@ -72,6 +72,7 @@ const [NavigationItemLabel, themeItemLabel] = createThemeTag(`${name}ItemLabel`,
     opacity: '0',
     visibility: 'hidden',
     transition: 'all 0.1s',
+    whiteSpace: 'nowrap',
   },
 });
 

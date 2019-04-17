@@ -12,13 +12,13 @@ const [NavigationTag, themeNavigation] = createThemeTag(name, {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    width: '60px',
+    transition: 'width 0.3s',
 
     '&:hover': {
-      width: 'auto',
-
       '.NavigationItem-label': {
-        display: 'flex',
+        transitionDelay: '0.15s',
+        opacity: '1',
+        visibility: 'visible',
       },
     },
   },
@@ -55,6 +55,7 @@ const [NavigationItemIcon, themeItemIcon] = createThemeTag(`${name}ItemIcon`, ({
     display: 'flex',
     width: '60px',
     height: '60px',
+    flexShrink: '0',
     justifyContent: 'center',
     alignItems: 'center',
     color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
@@ -63,11 +64,14 @@ const [NavigationItemIcon, themeItemIcon] = createThemeTag(`${name}ItemIcon`, ({
 
 const [NavigationItemLabel, themeItemLabel] = createThemeTag(`${name}ItemLabel`, {
   root: {
-    display: 'none',
+    display: 'flex',
     alignItems: 'center',
     textTransform: 'uppercase',
     fontWeight: 600,
     paddingRight: '20px',
+    opacity: '0',
+    visibility: 'hidden',
+    transition: 'all 0.1s',
   },
 });
 

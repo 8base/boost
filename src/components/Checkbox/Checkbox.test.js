@@ -31,6 +31,10 @@ describe('<Checkbox />', () => {
     <Boost(checkboxIcon)
       modifiers={
         Object {
+          "checked": true,
+          "disabled": false,
+          "hasError": false,
+          "indeterminate": false,
           "isShown": true,
         }
       }

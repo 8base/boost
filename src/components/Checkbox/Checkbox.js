@@ -85,7 +85,7 @@ class Checkbox extends PureComponent<CheckboxProps, CheckboxState> {
 
   render() {
     const { onChange, label, ...rest } = this.props;
-    const iconModifiers = { isShown: rest.checked || rest.indeterminate };
+    const iconModifiers = { ...rest, isShown: rest.checked || rest.indeterminate };
 
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">

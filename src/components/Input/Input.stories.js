@@ -40,6 +40,11 @@ export default (asStory) => {
         <StateContainer value="Text">
           <Input name="input" clearable />
         </StateContainer>
+      ))
+      .add('with type number', () => (
+        <StateContainer value="0">
+          <Input name="input" type="number" stretch={ false } />
+        </StateContainer>
       ));
   });
 };

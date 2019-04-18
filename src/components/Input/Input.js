@@ -5,7 +5,7 @@ import fp from 'lodash/fp';
 import InputMask from 'react-input-mask';
 
 import { Icon } from '../Icon';
-import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputClearButtonTag } from './Input.theme';
+import { InputWrapperTag, InputTag, InputIndicatorTag, InputRightIconTag, InputLeftIconTag, InputClearButtonTag, InputArrowsTag, InputArrowTag } from './Input.theme';
 
 type InputCommonProps = {
   /** field placeholder */
@@ -90,6 +90,29 @@ class Input extends PureComponent<InputProps> {
     }
   }
 
+  onArrowClick = (changeNumber: number) => {
+    if (this.props.type !== 'number') {
+      return;
+    }
+
+    const { onChange, maxLength } = this.props;
+    const value = this.props.value || 0;
+    const hasNotMaxLength = maxLength === undefined;
+
+    // $FlowFixMe thinks that maxLength can be undefined in second statement
+    if (hasNotMaxLength || value.toString().length <= maxLength) {
+      onChange && onChange(Number(value) + changeNumber);
+    }
+  }
+
+  onIncrementValue = () => {
+    this.onArrowClick(1);
+  }
+
+  onDecrementValue = () => {
+    this.onArrowClick(-1);
+  }
+
   onClear = () => {
     const { onClear, onChange } = this.props;
 
@@ -162,36 +185,35 @@ class Input extends PureComponent<InputProps> {
 
     return (
       <InputWrapperTag { ...fp.omit(['onChange'], rest) } stretch={ stretch } width={ width } tagName="div">
-        <Choose>
-          <When condition={ !mask }>
-            <InputTag
-              { ...inputProps }
-              modifiers={ rest }
-              tagName="input"
-            />
-          </When>
-          <Otherwise >
-            <InputTag
-              { ...inputProps }
-              modifiers={ rest }
-              mask={ mask }
-              tagName={ InputMask }
-            />
-          </Otherwise>
-        </Choose>
+        <InputTag
+          { ...inputProps }
+          modifiers={ rest }
+          mask={ mask }
+          tagName={ mask ? InputMask : 'input' }
+        />
         <If condition={ !!hasError && !hideErrorIndicator }>
           <InputIndicatorTag modifiers={ rest } hasError={ hasError } tagName="div" />
         </If>
         <If condition={ hasLeftIcon }>
           <InputLeftIconTag modifiers={ rest } tagName="div">{ leftIcon }</InputLeftIconTag>
         </If>
-        <If condition={ hasRightIcon && !clearable }>
+        <If condition={ hasRightIcon && !clearable && type !== 'number' }>
           <InputRightIconTag modifiers={ rest } tagName="div">{ rightIcon }</InputRightIconTag>
         </If>
-        <If condition={ !!clearable && !!value }>
+        <If condition={ type !== 'number' && !!clearable && !!value }>
           <InputClearButtonTag modifiers={ rest } onClick={ this.onClear } tagName="div">
             <Icon name="Delete" size="sm" />
           </InputClearButtonTag>
+        </If>
+        <If condition={ type === 'number' }>
+          <InputArrowsTag modifiers={ rest } tagName="div">
+            <InputArrowTag modifiers={ rest } onClick={ this.onIncrementValue } tagName="div">
+              <Icon name="ChevronTop" size="stretch" />
+            </InputArrowTag>
+            <InputArrowTag modifiers={ rest } onClick={ this.onDecrementValue } tagName="div">
+              <Icon name="ChevronDown" size="stretch" />
+            </InputArrowTag>
+          </InputArrowsTag>
         </If>
       </InputWrapperTag>
     );

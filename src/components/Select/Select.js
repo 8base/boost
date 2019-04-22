@@ -16,6 +16,7 @@ type SelectProps = {|
   multiple?: boolean,
   clearable?: boolean,
   hasError?: boolean,
+  withPortal?: boolean,
   zIndex?: string | number,
   valueComponent?: React$Node,
   components?: Object,
@@ -103,6 +104,7 @@ class Select extends React.Component<SelectProps> {
       valueComponent,
       components,
       onChange,
+      withPortal,
       ...rest
     } = this.props;
 
@@ -120,7 +122,7 @@ class Select extends React.Component<SelectProps> {
           isLoading={ loading }
           isMulti={ multiple }
           menuPlacement="auto"
-          menuPortalTarget={ document.body }
+          menuPortalTarget={ withPortal ? document.body : false }
           onChange={ this.onChange }
           options={ options }
           placeholder={ placeholder }

@@ -1,3 +1,13 @@
+<a name="0.18.4"></a>
+## [0.18.4](https://github.com/8base/boost/compare/v0.18.3...v0.18.4) (2019-04-22)
+
+
+### Features
+
+* **Select:** add withPortal flag ([36dbcbf](https://github.com/8base/boost/commit/36dbcbf))
+
+
+
 <a name="0.18.3"></a>
 ## [0.18.3](https://github.com/8base/boost/compare/v0.18.2...v0.18.3) (2019-04-17)
 

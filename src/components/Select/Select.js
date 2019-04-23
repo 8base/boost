@@ -23,6 +23,8 @@ type SelectProps = {|
   components?: Object,
   className?: string,
   formatOptionLabel?: Function,
+  /** when stretch is true, width is 100% */
+  stretch?: boolean,
 |};
 
 type SelectPropsFromHOCs = {|
@@ -94,6 +96,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
   static components = components;
   static defaultProps = {
     withPortal: true,
+    stretch: true,
   };
 
   onChange = (option: Object) => {

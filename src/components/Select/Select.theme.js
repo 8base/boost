@@ -1,14 +1,18 @@
 // @flow
 import { createThemeTag } from '../../theme/createThemeTag';
 
-
 const name = 'select';
 
-const [SelectTag, themeSelect] = createThemeTag(name, {
+const [SelectTag, themeSelect] = createThemeTag(name, ({ SIZES }) => ({
   root: {
-    width: '100%',
+    width: SIZES.FIELD_WIDTH,
   },
-});
+  modifiers: {
+    stretch: {
+      width: '100%',
+    },
+  },
+}));
 
 const [SelectChevron, themeChevron] = createThemeTag(`${name}Chevron`, {
   root: {
@@ -17,11 +21,9 @@ const [SelectChevron, themeChevron] = createThemeTag(`${name}Chevron`, {
   },
 });
 
-
 const theme = {
   ...themeSelect,
   ...themeChevron,
 };
 
 export { SelectTag, SelectChevron, theme };
-

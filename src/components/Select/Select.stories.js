@@ -28,7 +28,7 @@ export default (asStory) => {
       .add('common', () => (
         <Column>
           <StateContainer value={ null }>
-            <Select name="name" placeholder="Select an option" options={ OPTIONS } />
+            <Select name="name" placeholder="Select an option" options={ OPTIONS } stretch={ false } />
           </StateContainer>
           <StateContainer value={ OPTIONS[1].value }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } clearable />

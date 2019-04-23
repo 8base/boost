@@ -35,6 +35,8 @@ const SIZES = {
 
   SUBTITLE_2: '1.2rem',
   SUBTITLE_2_LH: '2.1rem',
+
+  FIELD_WIDTH: '172px',
 };
 
 export {

@@ -17,7 +17,7 @@ export default (asStory) => {
       .add('common', () => (
         <Column>
           <StateContainer value={ null } withForm>
-            <SelectField label="Select" name="name" placeholder="Select an option" options={ OPTIONS } />
+            <SelectField label="Stretch = false" name="name" placeholder="Select an option" options={ OPTIONS } stretch={ false } />
           </StateContainer>
           <StateContainer value={ OPTIONS[1].value } withForm>
             <SelectField label="Clearable select" name="name" placeholder="Select an option" options={ OPTIONS } clearable />
@@ -29,4 +29,3 @@ export default (asStory) => {
       ));
   });
 };
-

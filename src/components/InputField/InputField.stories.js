@@ -15,8 +15,8 @@ export default (asStory) => {
               <InputField label="With clearable" clearable input={{ name: 'input', value: 'value', onChange }} stretch={ false } />
               <InputField label="With left icon" leftIcon={ <Icon name="Search" size="xs" /> } input={{ name: 'input', value: 'value', onChange }} stretch={ false } />
               <InputField label="With right icon" rightIcon={ <Icon name="Alert" color="DANGER" size="xs" /> } input={{ name: 'input', value: 'value', onChange }} stretch={ false } />
+              <InputField label="With type number" type="number" input={{ name: 'input', value: 0, onChange }} stretch={ false } />
               <InputField label="With stretch" input={{ name: 'input', onChange }} />
-
             </Column>
           </Grid.Box>
           <Grid.Box>

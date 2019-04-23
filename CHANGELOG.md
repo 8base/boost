@@ -1,3 +1,13 @@
+<a name="0.18.5"></a>
+## [0.18.5](https://github.com/8base/boost/compare/v0.18.4...v0.18.5) (2019-04-23)
+
+
+### Bug Fixes
+
+* **Select:** default with portal ([bff6acb](https://github.com/8base/boost/commit/bff6acb))
+
+
+
 <a name="0.18.4"></a>
 ## [0.18.4](https://github.com/8base/boost/compare/v0.18.3...v0.18.4) (2019-04-22)
 

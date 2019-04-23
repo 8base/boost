@@ -48,6 +48,7 @@ describe('<SelectField />', () => {
       placeholder,
       stretch: true,
       value: null,
+      withPortal: true,
     });
 
     expect(passedFormFieldProps).toEqual({

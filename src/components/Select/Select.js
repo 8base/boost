@@ -80,6 +80,10 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
 });
 
 class Select extends React.Component<SelectProps> {
+  static defaultProps = {
+    withPortal: true,
+  };
+
   onChange = (option: Object) => {
     let value = null;
 

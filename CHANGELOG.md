@@ -1,3 +1,13 @@
+<a name="0.18.6"></a>
+## [0.18.6](https://github.com/8base/boost/compare/v0.18.5...v0.18.6) (2019-04-24)
+
+
+### Bug Fixes
+
+* **Select:** add text ellipsising to the option ([baa7e88](https://github.com/8base/boost/commit/baa7e88))
+
+
+
 <a name="0.18.5"></a>
 ## [0.18.5](https://github.com/8base/boost/compare/v0.18.4...v0.18.5) (2019-04-23)
 

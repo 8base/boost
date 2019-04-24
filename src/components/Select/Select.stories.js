@@ -12,7 +12,7 @@ const OPTIONS = [{
 }];
 
 const LONG_OPTIONS = [{
-  label: 'Geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness topia antiorthodox cerebropedal Sothis whispered basilica idealizer outvalue thwacking unafraid coining nak friskily renishly stringsman',
+  label: 'GeoglossaceaenontransportationlaemodipodiformgluttonouslyspaeworkankylorrhiniazaincarletironheartednesstopiaantiorthodoxcerebropedalSothiswhisperedbasilicaidealizeroutvaluethwackingunafraidcoiningnakfriskilyrenishlystringsman',
   value: 'ovenlike',
 }, {
   label: 'backhander unpersecuted platch antisymmetrical fumaroid chromitite Microthelyphonida epigraphically myope supramechanical pageant ankle camphory nitronaphthalene thieve umquhile mornings gynomonoecism unvulgarize rickmatic saltless sternoglossal pungi pronumber',
@@ -36,7 +36,7 @@ export default (asStory) => {
           <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>
             <Select name="name" placeholder="Select an option" options={ OPTIONS } multiple />
           </StateContainer>
-          <StateContainer value={ [LONG_OPTIONS[1].value, LONG_OPTIONS[2].value] }>
+          <StateContainer value={ [LONG_OPTIONS[1].value] }>
             <Select name="name" placeholder="Select an option" options={ LONG_OPTIONS } multiple />
           </StateContainer>
           <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>

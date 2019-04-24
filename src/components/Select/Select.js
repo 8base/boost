@@ -77,6 +77,11 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
     ...style,
     padding: '0 8px',
   }),
+  option: (style) => ({
+    ...style,
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+  }),
 });
 
 class Select extends React.Component<SelectProps> {

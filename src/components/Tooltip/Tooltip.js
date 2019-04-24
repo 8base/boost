@@ -2,6 +2,7 @@
 import React from 'react';
 import { Manager, Popper, Reference } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';
+import { Portal } from 'react-portal';
 
 import { TooltipTargetTag, TooltipMessageTag } from './Tooltip.theme';
 
@@ -27,6 +28,8 @@ type TooltipProps = {
   defaultOpen?: boolean,
   /** Possible tooltip trigger */
   trigger?: 'hover' | 'click',
+  /** Replace tooltip message to the dom root by the portal */
+  withPortal?: boolean
 }
 
 type TooltipState = {
@@ -38,6 +41,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
 
     static defaultProps = {
       defaultOpen: false,
+      withPortal: true,
       trigger: 'hover',
       tagName: 'span',
       cursor: 'default',
@@ -55,36 +59,39 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     closeTooltip = () => this.setState({ isOpen: false });
     toggleTooltip = () => this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
 
-
     handleClickOutside = (event: *) => {
       this.closeTooltip();
       event.stopPropagation();
     };
 
     renderTooltipMessage = () => {
-      const { placement, message, ...rest } = this.props;
+      const { placement, withPortal, message, ...rest } = this.props;
       const { isOpen } = this.state;
+      const PortalCondComponent = withPortal ? Portal : React.Fragment;
 
       return (
-        <Popper placement={ placement }>
-          { ({ ref, style, placement }) => (
-            <If condition={ isOpen }>
-              <TooltipMessageTag
-                modifiers={ rest }
-                tagName="div"
-                insideRef={ ref }
-                data-placement={ placement }
-                onClick={ (event: *) => event.stopPropagation() }
-                style={{
-                  ...style,
-                  opacity: 1,
-                }}
-              >
-                { message }
-              </TooltipMessageTag>
-            </If>
-          ) }
-        </Popper>
+        <PortalCondComponent>
+          <Popper placement={ placement }>
+            { ({ ref, style, placement }) => (
+              <If condition={ isOpen }>
+                <TooltipMessageTag
+                  modifiers={ rest }
+                  className="ignore-react-onclickoutside"
+                  tagName="div"
+                  insideRef={ ref }
+                  data-placement={ placement }
+                  onClick={ (event: *) => event.stopPropagation() }
+                  style={{
+                    ...style,
+                    opacity: 1,
+                  }}
+                >
+                  { message }
+                </TooltipMessageTag>
+              </If>
+            ) }
+          </Popper>
+        </PortalCondComponent>
       );
     }
 

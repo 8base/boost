@@ -10,7 +10,7 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
     width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
     outline: 'none',
     paddingLeft: props.hasLeftIcon ? '36px' : '8px',
-    paddingRight: props.hasRightIcon ? '48px' : '16px',
+    paddingRight: props.hasRightIcon || props.type === 'number' ? '48px' : '16px',
 
     backgroundColor: (props.disabled || props.readOnly)
       ? COLORS.LIGHT_GRAY5
@@ -123,6 +123,27 @@ const [InputClearButtonTag, themeClearButton] = createThemeTag(`${name}ClearButt
   },
 }));
 
+const [InputArrowsTag, themeInputArrows] = createThemeTag(`${name}Arrows`, () => ({
+  root: {
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '64%',
+    right: '8px',
+    top: '50%',
+    transform: 'translateY(-50%)',
+  },
+}));
+
+const [InputArrowTag, themeInputArrow] = createThemeTag(`${name}Arrow`, () => ({
+  root: {
+    ...iconsStyles,
+    position: 'relative',
+    height: '50%',
+    cursor: 'pointer',
+    userSelect: 'none',
+  },
+}));
 
 const theme = {
   ...themeInput,
@@ -131,6 +152,8 @@ const theme = {
   ...themeLeftIcon,
   ...themeIndicator,
   ...themeWrapper,
+  ...themeInputArrows,
+  ...themeInputArrow,
 };
 
 export {
@@ -140,5 +163,7 @@ export {
   InputRightIconTag,
   InputLeftIconTag,
   InputClearButtonTag,
+  InputArrowsTag,
+  InputArrowTag,
   theme,
 };

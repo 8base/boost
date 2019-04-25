@@ -95,4 +95,26 @@ describe('<Input />', () => {
     wrapper.find('input').simulate('change', { target: { value: '12' }});
     expect(onChange.mock.calls[0][0]).toBe('12');
   });
+
+  describe('input with type number', () => {
+    it('should increment and decrement number on arrows click', () => {
+      const onChange = jest.fn();
+      const wrapper = mount(
+        <Input value="" onChange={ onChange } type="number" />,
+      );
+
+      // From "" (0) to 1
+      wrapper
+        .find('Boost(inputArrow)')
+        .first()
+        .simulate('click');
+      expect(onChange).toHaveBeenCalledWith(1);
+      // From "" (0) to -1
+      wrapper
+        .find('Boost(inputArrow)')
+        .last()
+        .simulate('click');
+      expect(onChange).toHaveBeenCalledWith(-1);
+    });
+  });
 });

@@ -1,3 +1,19 @@
+<a name="0.18.7"></a>
+## [0.18.7](https://github.com/8base/boost/compare/v0.18.6...v0.18.7) (2019-04-25)
+
+
+### Bug Fixes
+
+* **SelectField:** error when there is no prop 'input' ([2800ca5](https://github.com/8base/boost/commit/2800ca5))
+
+
+### Features
+
+* **Input:** add arrows for number input ([c0d6637](https://github.com/8base/boost/commit/c0d6637))
+* **Tooltip:** add feature to add message to the dom root with portal ([a37512c](https://github.com/8base/boost/commit/a37512c))
+
+
+
 <a name="0.18.6"></a>
 ## [0.18.6](https://github.com/8base/boost/compare/v0.18.5...v0.18.6) (2019-04-24)
 

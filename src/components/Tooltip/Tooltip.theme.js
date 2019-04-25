@@ -5,7 +5,7 @@ const name = 'tooltip';
 
 const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES }: *) => ({
   root: {
-    padding: '12px',
+    padding: '4px 8px',
     backgroundColor: COLORS.BLACK,
     color: COLORS.WHITE,
     fontSize: SIZES.OVERLINE_2,

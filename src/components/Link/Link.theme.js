@@ -2,12 +2,11 @@
 
 import fp from 'lodash/fp';
 
-import { PALETTE } from '../../theme';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'link';
 
-const [LinkTag, theme] = createThemeTag(name, {
+const [LinkTag, theme] = createThemeTag(name, ({ COLORS }) => ({
   root: {
     cursor: 'pointer',
     fontWeight: 400,
@@ -21,16 +20,15 @@ const [LinkTag, theme] = createThemeTag(name, {
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),
-      PALETTE,
+      COLORS,
     ),
     underline: {
       textDecoration: 'underline',
     },
   },
-});
+}));
 
 export {
   LinkTag,
   theme,
 };
-

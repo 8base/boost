@@ -2,9 +2,10 @@
 
 import React from 'react';
 import ReactSelect, { components } from 'react-select';
+import { withTheme } from 'emotion-theming';
 
 import { SelectTag } from './Select.theme';
-import { PALETTE, Z_INDEX } from '../../theme';
+import { type Theme, PALETTE, Z_INDEX } from '../../theme';
 
 type SelectProps = {|
   options: Array<{ label: mixed, value: string }>,
@@ -23,15 +24,19 @@ type SelectProps = {|
   className?: string,
 |};
 
-const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
+type SelectPropsFromHOCs = {|
+  theme: Theme
+|}
+
+const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
   control: (style, { isFocused }) => ({
     ...style,
     minHeight: '36px',
-    backgroundColor: PALETTE.WHITE,
-    borderColor: hasError ? PALETTE.DANGER : (isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1),
+    backgroundColor: COLORS.WHITE,
+    borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.LIGHT_GRAY1),
     boxShadow: null,
     '&:hover': {
-      borderColor: isFocused ? PALETTE.PRIMARY : PALETTE.LIGHT_GRAY1,
+      borderColor: isFocused ? COLORS.PRIMARY : COLORS.LIGHT_GRAY1,
     },
   }),
   menuPortal: (style) => ({
@@ -40,7 +45,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
   placeholder: (style) => ({
     ...style,
-    color: PALETTE.LIGHT_GRAY1,
+    color: COLORS.LIGHT_GRAY1,
     whiteSpace: 'nowrap',
   }),
   indicatorSeparator: (style) => ({
@@ -84,7 +89,8 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN }) => ({
   }),
 });
 
-class Select extends React.Component<SelectProps> {
+class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
+  static components = components;
   static defaultProps = {
     withPortal: true,
   };
@@ -114,6 +120,7 @@ class Select extends React.Component<SelectProps> {
       components,
       onChange,
       withPortal,
+      theme,
       ...rest
     } = this.props;
 
@@ -136,7 +143,7 @@ class Select extends React.Component<SelectProps> {
           options={ options }
           placeholder={ placeholder }
           valueComponent={ valueComponent }
-          styles={ customStyles(rest) }
+          styles={ customStyles({ ...rest, COLORS: theme.COLORS || PALETTE }) }
           value={ selectValue }
           components={ components }
         />
@@ -145,8 +152,6 @@ class Select extends React.Component<SelectProps> {
   }
 }
 
-// $FlowFixMe
-Select.components = components;
+Select = withTheme(Select);
 
 export { Select };
-

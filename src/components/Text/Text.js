@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { TextTag } from './Text.theme';
-import { PALETTE } from '../../theme';
+import { COLORS } from '../../theme';
 
 type TextProps = {
   /** text to display in the component */
@@ -11,7 +11,7 @@ type TextProps = {
   /** another way to set displayed text */
   text?: string | number,
   /** possible text colors */
-  color?: $Keys<typeof PALETTE>,
+  color?: $Keys<typeof COLORS>,
   /** disabled text state*/
   disabled?: boolean,
   /** set style to bold or other weights */

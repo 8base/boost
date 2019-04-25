@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { PALETTE } from '../../theme';
+import { COLORS } from '../../theme';
 
 import { NavigationTag } from './Navigation.theme';
 import { NavigationItem } from './NavigationItem';
@@ -11,7 +11,7 @@ type NavigationProps = {
   children?: React$Node,
   expandedWidth?: string,
   collapsedWidth: string,
-  color: $Keys<typeof PALETTE>
+  color: $Keys<typeof COLORS>
 };
 
 type NavigationState = {

@@ -1,6 +1,5 @@
 import fp from 'lodash/fp';
 
-import { PALETTE } from '../../theme';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'text';
@@ -14,7 +13,7 @@ const [TextTag, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),
-      PALETTE,
+      COLORS,
     ),
 
     align: {
@@ -58,4 +57,3 @@ export {
   theme,
   TextTag,
 };
-

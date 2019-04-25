@@ -1,13 +1,11 @@
 // @flow
 import fp from 'lodash/fp';
 
-import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../theme/dsmColors';
-import { PALETTE } from '../../theme';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'icon';
 
-const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
+const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLORS }) => ({
   root: props => ({
     display: 'inline-flex',
     lineHeight: 1,
@@ -17,11 +15,7 @@ const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
     color: {
       ...fp.mapValues(
         (color) => ({ color }),
-        {
-          ...PALETTE,
-          ...SECONDARY_COLORS,
-          ...MAIN_BRAND_COLORS,
-        },
+        COLORS,
       ),
     },
     size: {
@@ -31,7 +25,7 @@ const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
       },
     },
   },
-});
+}));
 
 
 const [IconSvgTag, themeSvg] = createThemeTag(`${name}Svg`, {
@@ -101,4 +95,3 @@ export {
   IconSvgTag,
   IconFontTag,
 };
-

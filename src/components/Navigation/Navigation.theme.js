@@ -2,12 +2,11 @@
 import fp from 'lodash/fp';
 import color from 'color';
 
-import { PALETTE } from '../../theme';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'navigation';
 
-const [NavigationTag, themeNavigation] = createThemeTag(name, {
+const [NavigationTag, themeNavigation] = createThemeTag(name, ({ COLORS }) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
@@ -25,9 +24,9 @@ const [NavigationTag, themeNavigation] = createThemeTag(name, {
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,
-    }), PALETTE),
+    }), COLORS),
   },
-});
+}));
 
 
 const [NavigationItemTag, themeItemMain] = createThemeTag(`${name}Item`, ({ COLORS }) => ({
@@ -40,13 +39,13 @@ const [NavigationItemTag, themeItemMain] = createThemeTag(`${name}Item`, ({ COLO
     color: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
 
     '&:hover, &.active': {
-      backgroundColor: color(PALETTE[props.color]).darken(0.2).hex(),
+      backgroundColor: color(COLORS[props.color]).darken(0.2).hex(),
     },
   }),
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,
-    }), PALETTE),
+    }), COLORS),
   },
 }));
 
@@ -102,4 +101,3 @@ export {
   NavigationItemIcon,
   NavigationItemLabelPreview,
 };
-

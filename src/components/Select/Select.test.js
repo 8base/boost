@@ -17,18 +17,20 @@ describe('<Select />', () => {
     const components = {};
 
     const wrapper = mount(
-      <Select
-        clearable={ clearable }
-        multiple={ multiple }
-        hasError={ hasError }
-        onChange={ jest.fn() }
-        placeholder={ placeholder }
-        options={ options }
-        value={ options[0].value }
-        loading={ loading }
-        disabled={ disabled }
-        components={ components }
-      />,
+      <EightBaseBoostProvider>
+        <Select
+          clearable={ clearable }
+          multiple={ multiple }
+          hasError={ hasError }
+          onChange={ jest.fn() }
+          placeholder={ placeholder }
+          options={ options }
+          value={ options[0].value }
+          loading={ loading }
+          disabled={ disabled }
+          components={ components }
+        />
+      </EightBaseBoostProvider>,
     );
 
     const { children, ...passedStyledProps } = wrapper.find(SelectTag).props();

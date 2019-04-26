@@ -5,7 +5,7 @@ import ReactSelect, { components } from 'react-select';
 import { withTheme } from 'emotion-theming';
 
 import { SelectTag } from './Select.theme';
-import { type Theme, PALETTE, Z_INDEX } from '../../theme';
+import { type Theme, COLORS, Z_INDEX } from '../../theme';
 
 type SelectProps = {|
   options: Array<{ label: mixed, value: string }>,
@@ -33,10 +33,10 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     ...style,
     minHeight: '36px',
     backgroundColor: COLORS.WHITE,
-    borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.LIGHT_GRAY1),
+    borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR),
     boxShadow: null,
     '&:hover': {
-      borderColor: isFocused ? COLORS.PRIMARY : COLORS.LIGHT_GRAY1,
+      borderColor: isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR,
     },
   }),
   menuPortal: (style) => ({
@@ -45,7 +45,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
   }),
   placeholder: (style) => ({
     ...style,
-    color: COLORS.LIGHT_GRAY1,
+    color: COLORS.PLACEHOLDER_COLOR,
     whiteSpace: 'nowrap',
   }),
   indicatorSeparator: (style) => ({
@@ -143,7 +143,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           options={ options }
           placeholder={ placeholder }
           valueComponent={ valueComponent }
-          styles={ customStyles({ ...rest, COLORS: theme.COLORS || PALETTE }) }
+          styles={ customStyles({ ...rest, COLORS: theme.COLORS || COLORS }) }
           value={ selectValue }
           components={ components }
         />

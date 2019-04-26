@@ -39,7 +39,7 @@ exports[`<Form /> should shallow form error 1`] = `
       size="md"
     />
     <Text
-      color="GRAY1"
+      color="SECONDARY_TEXT_COLOR"
       ellipsis={false}
       weight="normal"
     >

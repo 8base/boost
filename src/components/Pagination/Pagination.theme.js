@@ -27,7 +27,7 @@ const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, (
     userSelect: 'none',
 
     '&:hover': {
-      color: COLORS.DARK_GRAY1,
+      color: COLORS.PRIMARY_TEXT_COLOR,
     },
 
     '&:last-child': {

@@ -35,6 +35,8 @@ const customTheme = createTheme({
   /** Change the pallete of the color. */
   COLORS: {
     PRIMARY: '#3EB7F9',
+    PRIMARY_TEXT_COLOR: 'darkorange',
+    SECONDARY_TEXT_COLOR: 'orange',
   },
   /** Change the custom components styles if it needed. */
   components: {

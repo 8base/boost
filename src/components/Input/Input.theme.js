@@ -122,7 +122,7 @@ const [InputClearButtonTag, themeClearButton] = createThemeTag(`${name}ClearButt
     alignItems: 'center',
     height: '100%',
     right: '8px',
-    color: COLORS.LIGHT_GRAY1,
+    color: COLORS.PRIMARY_BORDER_COLOR,
     cursor: 'pointer',
   },
 }));

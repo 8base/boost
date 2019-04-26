@@ -10,7 +10,7 @@ const [TextAreaTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
-    color: COLORS.DARK_GRAY1,
+    color: COLORS.PRIMARY_TEXT_COLOR,
     fontWeight: 400,
     padding: '8px',
 

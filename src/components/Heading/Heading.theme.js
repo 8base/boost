@@ -37,10 +37,10 @@ const [HeadingTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
     },
     kind: {
       primary: {
-        color: COLORS.TEXT_PRIMARY,
+        color: COLORS.PRIMARY_TEXT_COLOR,
       },
       secondary: {
-        color: COLORS.TEXT_SECONDARY,
+        color: COLORS.SECONDARY_TEXT_COLOR,
       },
       disabled: {
         color: COLORS.DISABLED_TEXT_COLOR,

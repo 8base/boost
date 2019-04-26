@@ -23,7 +23,7 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
     alignItems: 'center',
     position: 'relative',
     backgroundColor: getBackgroundColorByName(props.name),
-    color: COLORS.DARK_GRAY1,
+    color: COLORS.PRIMARY_TEXT_COLOR,
 
     [`&:hover ${AvatarHandleTag}`]: {
       bottom: 0,
@@ -76,7 +76,7 @@ const [AvatarHandleTag, themeHandle] = createThemeTag(`${name}Handle`, ({ COLORS
     fontSize: '8px',
     transition: 'all .15s ease-in-out',
     userSelect: 'none',
-    color: COLORS.LIGHT_GRAY1,
+    color: COLORS.SECONDARY_TEXT_COLOR,
   },
 }));
 

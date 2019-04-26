@@ -5,7 +5,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
   globals: `
     .react-datepicker {
-      border: 1px solid ${COLORS.LIGHT_GRAY1};
+      border: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
       box-shadow: 0 2px 10px 0 rgba(208,215,221,0.5);
       display: flex;
       padding-bottom: 32px;
@@ -61,7 +61,7 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
     .react-datepicker__day--selected {
       border-radius: 24px;
       background-color: ${COLORS.LIGHT_BLUE};
-      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
+      color: ${COLORS.PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__day:hover {
@@ -86,12 +86,12 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
     .react-datepicker__time-container {
       position: initial;
       border: none;
-      border-left: 1px solid ${COLORS.LIGHT_GRAY1};
+      border-left: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
       border-radius: 0;
     }
 
     .react-datepicker__header--time {
-      border-bottom: 1px solid ${COLORS.LIGHT_GRAY1};
+      border-bottom: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
     }
 
     .react-datepicker-time__header {
@@ -117,7 +117,7 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
       font-weight: 600;
-      border-top: 1px solid ${COLORS.LIGHT_GRAY1};
+      border-top: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
     }
 
     .react-datepicker__header {
@@ -129,7 +129,7 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       height: 32px;
       font-size: 12px;
       display: flex;
-      border-bottom: 1px solid ${COLORS.LIGHT_GRAY1};
+      border-bottom: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
     }
 
     .react-datepicker__current-month {

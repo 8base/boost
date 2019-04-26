@@ -22,6 +22,12 @@ type TablePlateProps = {
 const name = 'tablePlate';
 
 const [TableTag, tableTheme] = createThemeTag(name, {
+  modifiers: {
+    stretch: {
+      width: '100%',
+      height: '100%',
+    },
+  },
 });
 
 const theme = {

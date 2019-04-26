@@ -45,6 +45,9 @@ export default (asStory) => {
         <StateContainer value="0">
           <Input name="input" type="number" stretch={ false } />
         </StateContainer>
+      ))
+      .add('with kind="underline"', () => (
+        <Input name="input" kind="underline" placeholder="custom placeholder" onChange={ () => null } />
       ));
   });
 };

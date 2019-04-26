@@ -16,6 +16,8 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
       ? COLORS.LIGHT_GRAY5
       : COLORS.WHITE,
 
+    borderColor: COLORS.PRIMARY_BORDER_COLOR,
+
     '&:focus': {
       borderColor: (props.disabled || props.readOnly)
         ? COLORS.PRIMARY_BORDER_COLOR
@@ -51,16 +53,18 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
     },
     kind: {
       bordered: {
-        border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+        borderStyle: 'solid',
+        borderWidth: '1px',
         borderRadius: '5px',
       },
       underline: {
-        border: 0,
-        borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+        borderWidth: 0,
+        borderBottomStyle: 'solid',
+        borderBottomWidth: '1px',
       },
     },
     hasError: {
-      borderColor: `${COLORS.DANGER} !important`,
+      borderColor: `${COLORS.DANGER}`,
     },
   },
 }));

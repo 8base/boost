@@ -1,3 +1,13 @@
+<a name="0.19.1"></a>
+## [0.19.1](https://github.com/8base/boost/compare/v0.19.0...v0.19.1) (2019-04-29)
+
+
+### Bug Fixes
+
+* **Indicator:** adds rest props ([d888d93](https://github.com/8base/boost/commit/d888d93))
+
+
+
 <a name="0.19.0"></a>
 # [0.19.0](https://github.com/8base/boost/compare/v0.18.7...v0.19.0) (2019-04-29)
 

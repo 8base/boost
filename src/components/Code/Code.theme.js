@@ -15,7 +15,7 @@ const [CodeWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLOR
 
 const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ COLORS, SIZES }: *) => ({
   root: {
-    color: COLORS.DARK_GRAY1,
+    color: COLORS.PRIMARY_TEXT_COLOR,
     fontFamily: 'Courier',
     opacity: '0.5',
     textAlign: 'center',
@@ -26,7 +26,7 @@ const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ C
 
 const [CodeBodyTag, themeBody] = createThemeTag(`${name}Body`, ({ COLORS }: *) => ({
   root: {
-    color: COLORS.DARK_GRAY1,
+    color: COLORS.PRIMARY_TEXT_COLOR,
     fontFamily: 'Courier',
     overflow: 'auto',
     height: '100%',

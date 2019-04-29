@@ -19,7 +19,7 @@ const spinner = keyframes`
 
 
 const getLoading = (props: *, COLORS: *) => {
-  const color = props.variant === 'outlined' ? COLORS.LIGHT_GRAY1 : COLORS.WHITE;
+  const color = props.variant === 'outlined' ? COLORS.PRIMARY_BORDER_COLOR : COLORS.WHITE;
   return props.loading
     ? {
       '&:after': {

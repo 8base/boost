@@ -49,7 +49,7 @@ const [SwitchApperanceTag, themeApperance] = createThemeTag(`${name}Appearance`,
 const [SwitchLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS }: *) => ({
   root: {
     fontSize: COLORS.OVERLINE,
-    color: COLORS.GRAY1,
+    color: COLORS.SECONDARY_TEXT_COLOR,
     marginLeft: '8px',
     userSelect: 'none',
   },

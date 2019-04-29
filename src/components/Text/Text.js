@@ -33,7 +33,7 @@ function Text({
 }
 
 Text.defaultProps = {
-  color: 'DARK_GRAY1',
+  color: 'PRIMARY_TEXT_COLOR',
   weight: 'normal',
   ellipsis: false,
 };

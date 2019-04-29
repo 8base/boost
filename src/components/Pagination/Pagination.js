@@ -68,7 +68,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
     const { total, onChange } = this.props;
     const { page } = this.state;
 
-    const nextPage = Math.min(page, Math.round(total / pageSize));
+    const nextPage = Math.min(page, Math.ceil(total / pageSize));
 
     this.setState(() => ({ pageSize, page: nextPage }));
 

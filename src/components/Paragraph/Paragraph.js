@@ -3,12 +3,12 @@
 import React from 'react';
 
 import { ParagraphTag } from './Paragraph.theme';
-import { PALETTE } from '../../theme';
+import { COLORS } from '../../theme';
 
 type ParagraphProps = {
   children?: React$Node | string | number,
   text?: string | number,
-  color?: $Keys<typeof PALETTE>,
+  color?: $Keys<typeof COLORS>,
   align?: 'left' | 'center' | 'right',
   weight?: 'light' | 'normal' | 'medium' | 'semibold' | 'bold',
   verticalAlign?: string,

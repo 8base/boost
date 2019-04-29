@@ -4,13 +4,13 @@ import React from 'react';
 
 import { Icon } from '../Icon';
 import { NavigationItemTag, NavigationItemLabel, NavigationItemIcon, NavigationItemLabelPreview } from './Navigation.theme';
-import { PALETTE } from '../../theme';
+import { COLORS } from '../../theme';
 
 type NavigationItemProps = {
   exact?: boolean,
   to?: string,
   component?: React$Node,
-  color?: $Keys<typeof PALETTE>,
+  color?: $Keys<typeof COLORS>,
   icon?: string,
   label?: string,
 };

@@ -4,17 +4,14 @@ import React from 'react';
 
 import { IconWrapperTag, IconFontTag, IconSvgTag } from './Icon.theme';
 import { IconsConsumer } from './IconsProvider';
-import { PALETTE } from '../../theme';
-import { SECONDARY_COLORS, MAIN_BRAND_COLORS } from '../../theme/dsmColors';
+import { COLORS } from '../../theme';
 import * as glyphs from './glyphs';
 
 type IconProps = {
   /** icon name */
   name: string,
   /** icon color */
-  color?: $Keys<typeof PALETTE>
-    | $Keys<typeof SECONDARY_COLORS>
-    | $Keys<typeof MAIN_BRAND_COLORS>,
+  color?: $Keys<typeof COLORS>,
   /** icon size */
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
   /** custom icon class */

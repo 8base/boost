@@ -1,11 +1,10 @@
 import fp from 'lodash/fp';
 
 import { createThemeTag } from '../../theme/createThemeTag';
-import { PALETTE } from '../../theme';
 
 const name = 'paragraph';
 
-const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
+const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) => ({
   root: props => ({
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
@@ -17,7 +16,7 @@ const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),
-      PALETTE,
+      COLORS,
     ),
     weight: {
       light: {
@@ -48,4 +47,3 @@ export {
   ParagraphTag,
   theme,
 };
-

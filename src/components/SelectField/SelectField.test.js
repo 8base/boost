@@ -19,17 +19,19 @@ describe('<SelectField />', () => {
     const input = { name: 'input', onChange: jest.fn(), value: null };
     const meta = { error: 'asdasd', touched: true };
 
-    const wrapper = shallow(
-      <SelectField
-        label={ label }
-        input={ input }
-        meta={ meta }
-        stretch
-        clearable={ clearable }
-        multiple={ multiple }
-        placeholder={ placeholder }
-        options={ options }
-      />,
+    const wrapper = mount(
+      <EightBaseBoostProvider>
+        <SelectField
+          label={ label }
+          input={ input }
+          meta={ meta }
+          stretch
+          clearable={ clearable }
+          multiple={ multiple }
+          placeholder={ placeholder }
+          options={ options }
+        />
+      </EightBaseBoostProvider>,
     );
 
 
@@ -48,7 +50,6 @@ describe('<SelectField />', () => {
       placeholder,
       stretch: true,
       value: null,
-      withPortal: true,
     });
 
     expect(passedFormFieldProps).toEqual({

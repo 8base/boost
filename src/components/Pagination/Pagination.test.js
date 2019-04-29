@@ -12,7 +12,9 @@ describe('<Pagination />', () => {
     const onChange = jest.fn();
 
     const pagination = mount(
-      <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />,
+      <EightBaseBoostProvider>
+        <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />
+      </EightBaseBoostProvider>,
     );
 
     expect(pagination.text()).toMatchInlineSnapshot(
@@ -34,7 +36,9 @@ describe('<Pagination />', () => {
     const onChange = jest.fn();
 
     const pagination = mount(
-      <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />,
+      <EightBaseBoostProvider>
+        <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />
+      </EightBaseBoostProvider>,
     );
 
     expect(pagination.text()).toMatchInlineSnapshot(
@@ -56,7 +60,9 @@ describe('<Pagination />', () => {
     const onChange = jest.fn();
 
     const pagination = mount(
-      <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />,
+      <EightBaseBoostProvider>
+        <Pagination onChange={ onChange } defaultPage={ 5 } total={ 500 } />
+      </EightBaseBoostProvider>,
     );
 
     expect(pagination.text()).toMatchInlineSnapshot(
@@ -78,12 +84,14 @@ describe('<Pagination />', () => {
     const onChange = jest.fn();
 
     const pagination = mount(
-      <Pagination
-        onChange={ onChange }
-        defaultPage={ 5 }
-        total={ 500 }
-        showSizeChanger
-      />,
+      <EightBaseBoostProvider>
+        <Pagination
+          onChange={ onChange }
+          defaultPage={ 5 }
+          total={ 500 }
+          showSizeChanger
+        />
+      </EightBaseBoostProvider>,
     );
 
     expect(pagination.text()).toMatchInlineSnapshot(

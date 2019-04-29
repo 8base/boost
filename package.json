@@ -1,6 +1,6 @@
 {
   "name": "@8base/boost",
-  "version": "0.18.7",
+  "version": "0.19.0",
   "author": "8base",
   "license": "MIT",
   "main": "es/index.js",

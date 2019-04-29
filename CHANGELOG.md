@@ -1,3 +1,16 @@
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/8base/boost/compare/v0.18.7...v0.19.0) (2019-04-29)
+
+
+### Bug Fixes
+
+* **Input:** replace borderColor style to the root to avoid problem with custom themes ([051854a](https://github.com/8base/boost/commit/051854a))
+* **Pagination:** handle case when total lower than page size ([88f75e9](https://github.com/8base/boost/commit/88f75e9))
+* **Text:** replace import colors to provide an opportunity to change text color in custom theme ([49223fc](https://github.com/8base/boost/commit/49223fc))
+* **theme:** replace raw colors with palette synonim ([9ee5952](https://github.com/8base/boost/commit/9ee5952))
+
+
+
 <a name="0.18.7"></a>
 ## [0.18.7](https://github.com/8base/boost/compare/v0.18.6...v0.18.7) (2019-04-25)
 

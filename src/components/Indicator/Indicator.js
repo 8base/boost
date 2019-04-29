@@ -10,8 +10,8 @@ type IndicatorProps = {
   children: React$Node,
 };
 
-const Indicator = ({ children, status }: IndicatorProps) => (
-  <IndicatorContainerTag tagName="span">
+const Indicator = ({ children, status, ...rest }: IndicatorProps) => (
+  <IndicatorContainerTag tagName="span" { ...rest }>
     <IndicatorTag tagName="span" status={ status } />
     <Text>
       { children }

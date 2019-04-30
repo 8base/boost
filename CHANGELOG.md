@@ -1,3 +1,16 @@
+<a name="0.19.2"></a>
+## [0.19.2](https://github.com/8base/boost/compare/v0.19.1...v0.19.2) (2019-04-30)
+
+
+### Bug Fixes
+
+* **colors:** adds dsm colors without nesting ([964e96f](https://github.com/8base/boost/commit/964e96f))
+* **DateInput:** optional with portal ([67683ba](https://github.com/8base/boost/commit/67683ba))
+* **DateInputField:** no placeholder ([f21f782](https://github.com/8base/boost/commit/f21f782))
+* **Table:** add styles for stretch modifier ([e808225](https://github.com/8base/boost/commit/e808225))
+
+
+
 <a name="0.19.1"></a>
 ## [0.19.1](https://github.com/8base/boost/compare/v0.19.0...v0.19.1) (2019-04-29)
 

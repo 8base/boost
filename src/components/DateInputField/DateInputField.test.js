@@ -28,6 +28,7 @@ describe('<DateInputField />', () => {
     onChange={[MockFunction]}
     stretch={true}
     value="2018-11-07"
+    withPortal={true}
   />
 </FormField>
 `);

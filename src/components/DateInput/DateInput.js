@@ -13,6 +13,7 @@ type DateInputProps = {
   onChange: (value: ?string) => void,
   value: ?string,
   withTime?: boolean,
+  withPortal?: boolean,
   stretch?: boolean,
   clearable?: boolean,
   placeholder?: string,
@@ -26,6 +27,7 @@ type DateInputState = {|
 class DateInput extends React.Component<DateInputProps, DateInputState> {
   static defaultProps = {
     stretch: true,
+    withPortal: true,
   };
 
   constructor(props: DateInputProps) {
@@ -90,7 +92,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   };
 
   collectProps() {
-    const { value, withTime, ...rest } = this.props;
+    const { value, withTime, withPortal, ...rest } = this.props;
 
     const dateFormat = withTime ? utils.DATETIME_FORMAT : utils.DATE_FORMAT;
 
@@ -119,7 +121,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   render() {
     const collectedProps = this.collectProps();
 
-    const { value, withTime, stretch, onChange, clearable, placeholder, ...rest } = this.props;
+    const { value, withTime, withPortal, stretch, onChange, clearable, placeholder, ...rest } = this.props;
 
     const { textValue, isOpen } = this.state;
     const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
@@ -142,7 +144,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
             clearable={ clearable }
           />
         </Dropdown.Head>
-        <Dropdown.Body withPortal modifiers={{
+        <Dropdown.Body withPortal={ withPortal } modifiers={{
           preventOverflow: {
             boundariesElement: 'viewport',
           },

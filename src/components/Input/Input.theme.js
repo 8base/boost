@@ -10,7 +10,7 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
     width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
     outline: 'none',
     paddingLeft: props.hasLeftIcon ? '36px' : '8px',
-    paddingRight: props.hasRightIcon || props.type === 'number' ? '48px' : '16px',
+    paddingRight: props.hasRightIcon || (props.type === 'number' && !props.hideNumberArrows) ? '48px' : '16px',
 
     backgroundColor: (props.disabled || props.readOnly)
       ? COLORS.LIGHT_GRAY5

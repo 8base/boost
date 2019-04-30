@@ -100,7 +100,7 @@ describe('<Input />', () => {
     it('should increment and decrement number on arrows click', () => {
       const onChange = jest.fn();
       const wrapper = mount(
-        <Input value="" onChange={ onChange } type="number" />,
+        <Input value="" onChange={ onChange } type="number" hideNumberArrows={ false } />,
       );
 
       // From "" (0) to 1

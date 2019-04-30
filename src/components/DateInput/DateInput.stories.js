@@ -6,7 +6,7 @@ export default (asStory) => {
       .add('common', () => (
         <Column>
           <StateContainer value={ null }>
-            <DateInput />
+            <DateInput placeholder="mm/dd/yyyy" />
           </StateContainer>
           <StateContainer value={ null }>
             <DateInput withTime />
@@ -21,4 +21,3 @@ export default (asStory) => {
       ));
   });
 };
-

@@ -1,3 +1,13 @@
+<a name="0.19.3"></a>
+## [0.19.3](https://github.com/8base/boost/compare/v0.19.2...v0.19.3) (2019-04-30)
+
+
+### Bug Fixes
+
+* **Input:** fixes number arrows ([9cbb64f](https://github.com/8base/boost/commit/9cbb64f))
+
+
+
 <a name="0.19.2"></a>
 ## [0.19.2](https://github.com/8base/boost/compare/v0.19.1...v0.19.2) (2019-04-30)
 

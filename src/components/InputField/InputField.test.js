@@ -31,6 +31,7 @@ describe('<InputField />', () => {
     autoComplete={false}
     hasError={false}
     hideErrorIndicator={false}
+    hideNumberArrows={true}
     kind="bordered"
     onChange={[MockFunction]}
     stretch={true}

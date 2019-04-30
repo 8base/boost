@@ -36,6 +36,7 @@ type InputCommonProps = {
   readOnly?: boolean,
   /** clearable */
   clearable?: boolean,
+  hideNumberArrows?: boolean,
 };
 
 type InputProps = {
@@ -73,6 +74,7 @@ class Input extends PureComponent<InputProps> {
     stretch: true,
     type: 'text',
     kind: 'bordered',
+    hideNumberArrows: true,
   }
 
   onChange = (event: *) => {
@@ -153,6 +155,7 @@ class Input extends PureComponent<InputProps> {
       step,
       min,
       max,
+      hideNumberArrows,
       ...rest
     } = this.props;
     const hasLeftIcon = !!leftIcon;
@@ -205,7 +208,7 @@ class Input extends PureComponent<InputProps> {
             <Icon name="Delete" size="sm" />
           </InputClearButtonTag>
         </If>
-        <If condition={ type === 'number' }>
+        <If condition={ type === 'number' && !hideNumberArrows }>
           <InputArrowsTag modifiers={ rest } tagName="div">
             <InputArrowTag modifiers={ rest } onClick={ this.onIncrementValue } tagName="div">
               <Icon name="ChevronTop" size="stretch" />

@@ -38,6 +38,12 @@ const DEFINE_PALETTE = {
   TRANSPARENT: 'transparent',
 
   DSM,
+
+  // TODO: delete after colors collisions resolve
+  ...DSM.MAIN_BRAND_COLORS,
+  ...DSM.GREY_COLORS,
+  ...DSM.NAVIGATION_COLORS,
+  ...DSM.SECONDARY_COLORS,
 };
 
 const PALETTE = {

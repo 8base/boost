@@ -193,6 +193,7 @@ class Input extends PureComponent<InputProps> {
           modifiers={ rest }
           mask={ mask }
           tagName={ mask ? InputMask : 'input' }
+          hideNumberArrows={ hideNumberArrows }
         />
         <If condition={ !!hasError && !hideErrorIndicator }>
           <InputIndicatorTag modifiers={ rest } hasError={ hasError } tagName="div" />

@@ -1,3 +1,13 @@
+<a name="0.19.4"></a>
+## [0.19.4](https://github.com/8base/boost/compare/v0.19.3...v0.19.4) (2019-05-06)
+
+
+### Bug Fixes
+
+* **Select:** multiple value order ([d044ba6](https://github.com/8base/boost/commit/d044ba6))
+
+
+
 <a name="0.19.3"></a>
 ## [0.19.3](https://github.com/8base/boost/compare/v0.19.2...v0.19.3) (2019-04-30)
 

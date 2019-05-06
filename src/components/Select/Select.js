@@ -22,6 +22,7 @@ type SelectProps = {|
   valueComponent?: React$Node,
   components?: Object,
   className?: string,
+  formatOptionLabel?: Function,
 |};
 
 type SelectPropsFromHOCs = {|
@@ -121,6 +122,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       onChange,
       withPortal,
       theme,
+      formatOptionLabel,
       ...rest
     } = this.props;
 
@@ -146,6 +148,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           styles={ customStyles({ ...rest, COLORS: theme.COLORS || COLORS }) }
           value={ selectValue }
           components={ components }
+          formatOptionLabel={ formatOptionLabel }
         />
       </SelectTag>
     );

@@ -61,7 +61,7 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
     .react-datepicker__day--selected {
       border-radius: 24px;
       background-color: ${COLORS.LIGHT_BLUE};
-      color: ${COLORS.PRIMARY_TEXT_COLOR};
+      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__day:hover {

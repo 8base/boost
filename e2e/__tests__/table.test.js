@@ -3,7 +3,7 @@ import { baisy } from '../setup/TestSuiter';
 
 const SUITES = [
   baisy.suite('Components/Table', 'with data'),
-  baisy.suite('Components/Table', 'with loader'),
+  // baisy.suite('Components/Table', 'with loader'),
   baisy.suite('Components/Table', 'without data'),
   baisy.suite('Components/Table', 'with sort')
     .setEnhancer(async (iframe) => {

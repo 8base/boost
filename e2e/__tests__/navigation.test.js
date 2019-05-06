@@ -8,6 +8,8 @@ const SUITES = [
       const navigationItem = await iframe.waitForXPath('//*[@data-e2e-id="default-navigation"]//a');
 
       await navigationItem.hover();
+
+      await iframe.waitFor(500);
     }),
 ];
 

@@ -126,7 +126,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
 
     const selectValue = (
       Array.isArray(value)
-        ? options.filter((option) => value.indexOf(option.value) !== -1)
+        ? value.map((val) => options.find((option) => option.value === val)).filter((option) => option !== null)
         : options.find((option) => option.value === value)
     ) || null;
 

@@ -1,3 +1,14 @@
+<a name="0.19.5"></a>
+## [0.19.5](https://github.com/8base/boost/compare/v0.19.4...v0.19.5) (2019-05-08)
+
+
+### Bug Fixes
+
+* **Select:** component doesn't have stretch prop ([ab21679](https://github.com/8base/boost/commit/ab21679))
+* **Select:** revert format option label prop ([e29ea73](https://github.com/8base/boost/commit/e29ea73))
+
+
+
 <a name="0.19.4"></a>
 ## [0.19.4](https://github.com/8base/boost/compare/v0.19.3...v0.19.4) (2019-05-06)
 

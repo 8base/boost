@@ -14,6 +14,7 @@ describe('<Select />', () => {
     const hasError = false;
     const loading = false;
     const disabled = true;
+    const stretch = true;
     const components = {};
 
     const wrapper = mount(
@@ -29,6 +30,7 @@ describe('<Select />', () => {
           loading={ loading }
           disabled={ disabled }
           components={ components }
+          stretch={ stretch }
         />
       </EightBaseBoostProvider>,
     );
@@ -54,6 +56,7 @@ describe('<Select />', () => {
     expect(passedStyledProps).toEqual({
       hasError,
       'aria-busy': String(loading),
+      stretch,
     });
   });
 });

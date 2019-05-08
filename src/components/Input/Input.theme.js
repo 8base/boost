@@ -7,7 +7,7 @@ const name = 'input';
 
 const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * => ({
   root: props => ({
-    width: props.width ? `${props.width}rem` : props.stretch ? '100%' : '172px',
+    width: props.width ? `${props.width}rem` : props.stretch ? '100%' : SIZES.FIELD_WIDTH,
     outline: 'none',
     paddingLeft: props.hasLeftIcon ? '36px' : '8px',
     paddingRight: props.hasRightIcon || (props.type === 'number' && !props.hideNumberArrows) ? '48px' : '16px',

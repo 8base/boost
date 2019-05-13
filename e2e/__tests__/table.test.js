@@ -21,10 +21,10 @@ const SUITES = [
     }),
   baisy.suite('Components/Table', 'with condensed modifier'),
   baisy.suite('Components/Table', 'with bordered modifier'),
+  baisy.suite('Components/Table', 'with custom NoData component'),
 ];
 
 
 SUITES.map(suite => {
   it(suite.getTestName(), suite.testStory, 20000);
 });
-

@@ -326,7 +326,7 @@ class TableState extends React.Component {
 }
 
 export default (asStory) => {
-  asStory('Components/Table', module, (story, { Table, TableBuilder, Link, Dropdown, Icon, Menu, Button }) => {
+  asStory('Components/Table', module, (story, { Table, TableBuilder, Link, Dropdown, Icon, Column, Text, Menu, Button }) => {
     story
       .add('default', () => (
         <div style={{ display: 'flex', height: '600px' }}>
@@ -571,7 +571,28 @@ export default (asStory) => {
             ) }
           </TableState>
         </div>
+      ))
+
+      .add('with custom NoData component', () => (
+        <div style={{ display: 'flex', height: '600px' }}>
+          <TableState>
+            { ({ tableState, setTableState }) => (
+              <TableBuilder
+                columns={ TABLE_COLUMNS }
+                data={ [] }
+                onChange={ setTableState }
+                tableState={ tableState }
+                noData={
+                  <Column gap="none" justifyContent="center" alignItems="center" stretch>
+                    <Icon name="EightBase" size="xl" color="LIGHT_GRAY1" />
+                    <Text color="LIGHT_GRAY1">Can't find any data</Text>
+                  </Column>
+                }
+                bordered
+              />
+            ) }
+          </TableState>
+        </div>
       ));
   });
 };
-

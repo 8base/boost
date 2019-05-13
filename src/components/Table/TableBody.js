@@ -16,6 +16,7 @@ type TableBodyProps<T: Object> = {
   action?: React$Node,
   onActionClick?: () => void,
   modifiers?: Object,
+  noData?: React$Node,
 };
 
 const name = 'tableBody';
@@ -77,20 +78,22 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
   }
 
   render() {
-    const { loading, data, children, ...rest } = this.props;
+    const { loading, data, children, noData, ...rest } = this.props;
     const hasBodyRows = data && data.length > 0;
 
     return (
       <TableBodyTag { ...rest }>
         <AsyncContent loading={ loading } stretch>
           {
-            hasBodyRows
-              ? (
-                <TableBodyInnerTag modifiers={ rest } tagName={ Grid.Layout }>
-                  { React.Children.toArray(data && children && data.map(children)) }
-                </TableBodyInnerTag>
-              )
-              : <NoData />
+            hasBodyRows ? (
+              <TableBodyInnerTag modifiers={ rest } tagName={ Grid.Layout }>
+                { React.Children.toArray(data && children && data.map(children)) }
+              </TableBodyInnerTag>
+            ) : noData ? (
+              noData
+            ) : (
+              <NoData />
+            )
           }
         </AsyncContent>
         { this.renderTableAction() }

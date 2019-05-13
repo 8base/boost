@@ -64,6 +64,8 @@ type TableBulderProps = {
   renderHeadCell?: (column: ColumnType) => React$Node,
   /** Callback to render head cell */
   condensed?: boolean,
+  /** Component that is displayed when there is no data */
+  noData?: React$Node,
 };
 
 class TableBuilder extends PureComponent<TableBulderProps> {
@@ -240,6 +242,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       data,
       withSelection,
       renderCell,
+      noData,
       ...rest
     } = this.props;
 
@@ -249,6 +252,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
         onActionClick={ onActionClick }
         action={ action }
         loading={ rest.loading }
+        noData={ noData }
         modifiers={ rest }
       >
         { (rowData) => (
@@ -324,4 +328,3 @@ class TableBuilder extends PureComponent<TableBulderProps> {
 export { TableBuilder };
 
 export type { TableBulderProps, ColumnType };
-

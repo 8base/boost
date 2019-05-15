@@ -1,6 +1,5 @@
 import { createThemeTag } from '../../theme/createThemeTag';
 
-
 // eslint-disable-next-line
 const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
   globals: `
@@ -9,12 +8,6 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       box-shadow: 0 2px 10px 0 rgba(208,215,221,0.5);
       display: flex;
       padding-bottom: 32px;
-    }
-
-    .react-datepicker__time-list-item {
-      align-items: center;
-      display: flex;
-      justify-content: center;
     }
 
     .react-datepicker__header,
@@ -61,7 +54,7 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
     .react-datepicker__day--selected {
       border-radius: 24px;
       background-color: ${COLORS.LIGHT_BLUE};
-      color: ${COLORS.PRIMARY_TEXT_COLOR};
+      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__day:hover {
@@ -166,10 +159,17 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       border-left-color: ${COLORS.PRIMARY_TEXT_COLOR};
       outline: none;
     }
+
+    .react-datepicker__navigation--next--with-time {
+      right: 80px;
+    }
+
+    /* Disabled modifier */
+    .react-datepicker__day--disabled,
+    .react-datepicker__time-list-item--disabled {
+      color: ${COLORS.DISABLED_TEXT_COLOR};
+    }
   `,
 }));
 
-export {
-  theme,
-};
-
+export { theme };

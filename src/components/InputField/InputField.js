@@ -44,6 +44,7 @@ type InputFieldProps = {
   step?: string | number,
   min?: string | number,
   max?: string | number,
+  mask?: string,
 };
 
 const InputField = ({
@@ -72,6 +73,7 @@ const InputField = ({
   step,
   min,
   max,
+  mask,
   ...rest
   }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
@@ -115,6 +117,7 @@ const InputField = ({
         step={ step }
         min={ min }
         max={ max }
+        mask={ mask }
       />
     </FormField>
   );

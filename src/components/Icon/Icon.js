@@ -39,11 +39,12 @@ const Icon = ({ name, className, ...rest }: IconProps) => {
                   modifiers={ rest }
                 />
               </When>
-              <When condition={ !className && !!Glyph }>
+              <When condition={ !!Glyph }>
                 <IconSvgTag
                   tagName="i"
                   title={ rest.title }
                   modifiers={ rest }
+                  className={ className }
                 >
                   <Glyph width="100%" height="100%" />
                 </IconSvgTag>

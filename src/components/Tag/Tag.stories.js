@@ -8,11 +8,16 @@ export default (asStory: *) => {
       .add('common', () => (
         <Column>
           <Tag>Content</Tag>
-          <Tag color="LIGHT_GRAY1">Content</Tag>
-          <Tag color="LIGHT_GRAY2">Content</Tag>
-          <Tag color="LIGHT_GRAY3">Content</Tag>
-          <Tag color="LIGHT_GRAY4">Content</Tag>
-          <Tag color="LIGHT_GRAY5">Content</Tag>
+          <Tag color="GRAY1">Content</Tag>
+          <Tag color="GRAY5">Content</Tag>
+          <Tag color="YELLOW">Content</Tag>
+          <Tag color="PURPLE">Content</Tag>
+          <Tag color="PINK">Content</Tag>
+          <Tag color="LIGHT_BLUE">Content</Tag>
+          <Tag color="BLUE">Content</Tag>
+          <Tag color="DARK_BLUE">Content</Tag>
+          <Tag color="BLUE">Content</Tag>
+          <Tag color="GREEN">Content</Tag>
         </Column>
       ))
       .add('with large content', () => (

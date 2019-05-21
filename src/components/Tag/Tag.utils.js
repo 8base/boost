@@ -1,31 +1,26 @@
-// From https://stackoverflow.com/questions/635022/calculating-contrasting-colours-in-javascript/6511606
+// From https://github.com/alesanabria/hex-rgba/blob/master/index.js
 
-const isValidRGB = (color) => /#([0-9a-f]{6})/i.test(color);
+export const hexToRGBA = (hex, opacity) => {
+  opacity = isNaN(opacity) ? 100 : opacity;
 
-const hexToRGBArray = (color) => {
-  if (isValidRGB(color)) {
-    color = RegExp.$1;
+  hex = hex.replace('#', '');
 
-    const rgb = [];
+  let r = 0;
+  let g = 0;
+  let b = 0;
 
-    for (let i = 0; i <= 2; i++) {
-      rgb[i] = parseInt(color.substr(i * 2, 2), 16);
-    }
-
-    return rgb;
-  }
-};
-
-const getLuma = (color) => {
-  const rgb = hexToRGBArray(color);
-
-  return (0.2126 * rgb[0]) + (0.7152 * rgb[1]) + (0.0722 * rgb[2]);
-};
-
-export const getContrastColor = (color, { lightColor = '#ffffff', darkColor = '#000000' } = {}) => {
-  if (isValidRGB(color)) {
-    return (getLuma(color) >= 165) ? darkColor : lightColor;
+  if (hex.length === 6) {
+    r = parseInt(hex.substring(0, 2), 16);
+    g = parseInt(hex.substring(2, 4), 16);
+    b = parseInt(hex.substring(4, 6), 16);
+  } else {
+    const rd = hex.substring(0, 1) + hex.substring(0, 1);
+    const gd = hex.substring(1, 2) + hex.substring(1, 2);
+    const bd = hex.substring(2, 3) + hex.substring(2, 3);
+    r = parseInt(rd, 16);
+    g = parseInt(gd, 16);
+    b = parseInt(bd, 16);
   }
 
-  return darkColor;
+  return `rgba(${r}, ${g}, ${b}, ${opacity / 100})`;
 };

@@ -126,7 +126,7 @@ describe('<DateInnput />', () => {
     wrapper.find(Dropdown.Head).simulate('click');
 
     expect(wrapper.find(DatePicker).props().selected).toBeNull();
-    expect(wrapper.find(Input).props().value).toBeNull();
+    expect(wrapper.find(Input).props().value).toEqual('');
   });
 
 

@@ -15,10 +15,10 @@ export const fromISOToViewFormat = (value: ?string, withTime: ?boolean) => {
     if (value.isValid) {
       value = value.toFormat(withTime ? DATETIME_FORMAT : DATE_FORMAT);
     } else {
-      value = null;
+      value = '';
     }
   } else {
-    value = null;
+    value = '';
   }
 
   return value;

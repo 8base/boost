@@ -42,7 +42,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   componentDidUpdate(prevProps: DateInputProps) {
     const { value, withTime } = this.props;
 
-    if (value && value !== prevProps.value) {
+    if (value !== prevProps.value) {
       this.setState({
         textValue: utils.fromISOToViewFormat(value, withTime),
       });

@@ -24,8 +24,8 @@
     "changelog-overwrite": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "version": "yarn changelog && git add CHANGELOG.md",
-    "commit": "git-cz",
-    "push-tags": "git push --follow-tags && yarn deploy-storybook"
+    "postversion": "git push --follow-tags && yarn deploy-storybook",
+    "commit": "git-cz"
   },
   "peerDependencies": {
     "react": "^16.6",

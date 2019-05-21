@@ -23,6 +23,7 @@ export default (asStory) => {
             <Column gap="md">
               <InputField label="With error" input={{ name: 'input', onChange }} meta={{ error: 'Required', touched: true }} stretch={ false } />
               <InputField label="Without error label" hideErrorLabel hideErrorIndicator input={{ name: 'input', onChange }} meta={{ error: 'Required', touched: true }} stretch={ false } />
+              <InputField label="With mask" input={{ name: 'input', value: '12', onChange }} mask="999-999" stretch={ false } />
             </Column>
           </Grid.Box>
           <Grid.Box>

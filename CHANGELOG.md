@@ -1,3 +1,13 @@
+<a name="0.19.8"></a>
+## [0.19.8](https://github.com/8base/boost/compare/v0.19.7...v0.19.8) (2019-05-21)
+
+
+### Features
+
+* **Dropdown:** add disabled prop to the dropdown head ([ac57b5c](https://github.com/8base/boost/commit/ac57b5c))
+
+
+
 <a name="0.19.7"></a>
 ## [0.19.7](https://github.com/8base/boost/compare/v0.19.6...v0.19.7) (2019-05-21)
 

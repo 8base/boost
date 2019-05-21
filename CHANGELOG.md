@@ -1,3 +1,14 @@
+<a name="0.19.7"></a>
+## [0.19.7](https://github.com/8base/boost/compare/v0.19.6...v0.19.7) (2019-05-21)
+
+
+### Bug Fixes
+
+* **DateInput:** disabled styles aren't applied to date-picker ([7fd7112](https://github.com/8base/boost/commit/7fd7112))
+* **DateInput:** use empty string instead of null for text value ([43d300e](https://github.com/8base/boost/commit/43d300e))
+
+
+
 <a name="0.19.6"></a>
 ## [0.19.6](https://github.com/8base/boost/compare/v0.19.5...v0.19.6) (2019-05-14)
 

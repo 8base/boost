@@ -16,6 +16,8 @@ type DropdownHeadProps = {
   stopClickPropagation?: boolean,
   /** onClick callback. When exists then disalbe auto toogle dropdown on click */
   onClick?: (MouseEvent) => void,
+  /** Prevent toggle action */
+  disabled?: boolean,
 }
 
 
@@ -31,7 +33,11 @@ const DropdownHead = dropdownHeadEnhancer(
   class DropdownHead extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
-    const { dropdown: { toggleDropdown }, stopClickPropagation, onClick } = this.props;
+    const { dropdown: { toggleDropdown }, disabled, stopClickPropagation, onClick } = this.props;
+
+    if (!!disabled) {
+      return;
+    }
 
     if (typeof onClick === 'function') {
       onClick(event);

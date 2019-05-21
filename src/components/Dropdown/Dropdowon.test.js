@@ -85,6 +85,22 @@ describe('<Dropdown />', () => {
   });
 
 
+  it('shouldn\'t open and close dropdwon when disabled=true', () => {
+    const wrapper = mount(
+      <Dropdown>
+        <Dropdown.Head disabled>Head</Dropdown.Head>
+        <Dropdown.Body>
+          <div className="body">Body</div>
+        </Dropdown.Body>
+      </Dropdown>,
+    );
+    expect(wrapper.find('.body')).toHaveLength(0);
+
+    wrapper.find(Dropdown.Head).simulate('click');
+    expect(wrapper.find('.body')).toHaveLength(0);
+  });
+
+
   it('should render with function in body', () => {
     const onCloseDropdown = jest.fn();
 

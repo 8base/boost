@@ -7,7 +7,7 @@ import { IconsConsumer } from './IconsProvider';
 import { COLORS } from '../../theme';
 import * as glyphs from './glyphs';
 
-type IconProps = {
+export type IconProps = {
   /** icon name */
   name: string,
   /** icon color */

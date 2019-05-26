@@ -11,6 +11,7 @@ import ChevronTop from './ChevronTop.svg';
 import CloudDatabase from './Cloud-Database.svg';
 import Contract from './Contract.svg';
 import Customers from './Customers.svg';
+import Database from './Database.svg';
 import DataBuilder from './DataBuilder.svg';
 import Delete from './Delete.svg';
 import Diagram from './Diagram.svg';
@@ -57,6 +58,7 @@ export {
   CloudDatabase,
   Contract,
   Customers,
+  Database,
   DataBuilder,
   Delete,
   Diagram,

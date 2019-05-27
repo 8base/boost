@@ -4,7 +4,6 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'avatar';
 
-
 const COLORS = ['#ffd012', '#a6e50f', '#00bb6e', '#9975d0', '#4da1ff', '#1968cb', '#ff6d4a', '#EB518E', '#eb4235'];
 
 const getBackgroundColorByName = (name: ?string) => {
@@ -12,7 +11,6 @@ const getBackgroundColorByName = (name: ?string) => {
 
   return COLORS[index];
 };
-
 
 const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
   root: (props) => ({
@@ -23,7 +21,8 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
     alignItems: 'center',
     position: 'relative',
     backgroundColor: getBackgroundColorByName(props.name),
-    color: COLORS.PRIMARY_TEXT_COLOR,
+    color: COLORS.WHITE,
+    fontWeight: 600,
 
     [`&:hover ${AvatarHandleTag}`]: {
       bottom: 0,
@@ -34,6 +33,7 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
       xs: {
         width: '16px',
         height: '16px',
+        fontSize: '1rem',
       },
       sm: {
         width: '32px',

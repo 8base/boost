@@ -1,6 +1,7 @@
 // @flow
 
 import { theme as avatarTheme } from './Avatar';
+import { theme as avatarsTheme } from './Avatars';
 import { theme as breadcrumbsTheme } from './Breadcrumbs';
 import { theme as buttonTheme } from './Button';
 import { theme as buttonGroupTheme } from './ButtonGroup';
@@ -43,6 +44,7 @@ import { theme as indicatorTheme } from './Indicator';
 
 export const theme = {
   ...avatarTheme,
+  ...avatarsTheme,
   ...breadcrumbsTheme,
   ...buttonTheme,
   ...buttonGroupTheme,

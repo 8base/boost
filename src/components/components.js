@@ -2,6 +2,7 @@
 
 export { AsyncContent } from './AsyncContent';
 export { Avatar } from './Avatar';
+export { Avatars } from './Avatars';
 export { Breadcrumbs } from './Breadcrumbs';
 export { Button } from './Button';
 export { ButtonGroup } from './ButtonGroup';

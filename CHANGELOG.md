@@ -1,3 +1,14 @@
+<a name="0.19.9"></a>
+## [0.19.9](https://github.com/8base/boost/compare/v0.19.8...v0.19.9) (2019-05-27)
+
+
+### Features
+
+* **CheckboxField:** adds indeterminate prop support ([03af3f5](https://github.com/8base/boost/commit/03af3f5))
+* **Icon:** add Database icon ([4de459c](https://github.com/8base/boost/commit/4de459c))
+
+
+
 <a name="0.19.8"></a>
 ## [0.19.8](https://github.com/8base/boost/compare/v0.19.7...v0.19.8) (2019-05-21)
 

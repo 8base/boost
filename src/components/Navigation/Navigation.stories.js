@@ -11,7 +11,7 @@ export default (asStory) => {
         </Navigation>
       ))
       .add('with icon size', () => (
-        <Navigation color="GREEN" data-e2e-id="default-navigation">
+        <Navigation color="GREEN">
           <Navigation.Item iconSize="lg" icon="Trashcan" label="Jobs" to="/jobs" />
           <Navigation.Item iconSize="lg" icon="Mail" label="Posted" to="/posted" />
           <Navigation.Item iconSize="lg" icon="Search" label="My Active Jobs" to="/my-active-jobs" />

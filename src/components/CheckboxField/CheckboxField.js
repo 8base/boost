@@ -48,6 +48,7 @@ const CheckboxField = ({
         disabled={ disabled }
         color={ color }
         nowrap={ nowrap }
+        indeterminate={ value === null }
       />
     </FormField>
   );

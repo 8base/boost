@@ -1,7 +1,6 @@
 import { configureToMatchImageSnapshot } from 'jest-image-snapshot';
 
 let toMatchImageSnapshot = configureToMatchImageSnapshot({
-  failureThreshold: 0.0025,
   failureThresholdType: 'percent',
 });
 

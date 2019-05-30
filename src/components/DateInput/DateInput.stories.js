@@ -24,6 +24,9 @@ export default (asStory) => {
             withTime
           />
         </StateContainer>
+        <StateContainer value={ null }>
+          <DateInput placeholder="mm/dd/yyyy" disabled />
+        </StateContainer>
       </Column>
     ));
   });

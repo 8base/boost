@@ -25,6 +25,9 @@ export default (asStory) => {
           <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] } withForm>
             <SelectField label="Multiple select" name="name" placeholder="Select an option" options={ OPTIONS } multiple />
           </StateContainer>
+          <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] } withForm>
+            <SelectField label="Multiple select" name="name" placeholder="Select an option" options={ OPTIONS } disabled />
+          </StateContainer>
         </Column>
       ));
   });

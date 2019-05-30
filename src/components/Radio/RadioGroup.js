@@ -21,6 +21,8 @@ type RadioProps = {
   hasError?: boolean,
   /** options to define radio items */
   options?: Array<({ value: any, label: string })>,
+  /** disabled */
+  disabled?: boolean,
 }
 
 class RadioGroup extends PureComponent<RadioProps> {
@@ -55,7 +57,7 @@ class RadioGroup extends PureComponent<RadioProps> {
   }
 
   render() {
-    const { children, value, direction, gap, onChange, hasError, ...rest } = this.props;
+    const { children, value, direction, gap, onChange, hasError, disabled, ...rest } = this.props;
 
     return (
       <FlexLayout { ...rest } direction={ direction } gap={ gap }>
@@ -66,6 +68,7 @@ class RadioGroup extends PureComponent<RadioProps> {
               selectedValue: value,
               name: this.getGroupName(),
               hasError,
+              ...(disabled ? { disabled } : {}),
             }))
         }
       </FlexLayout>

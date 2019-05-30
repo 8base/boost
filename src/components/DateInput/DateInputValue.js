@@ -10,6 +10,7 @@ type DateInputValueProps = {
   value: ?string,
   mask: string,
   clearable?: boolean,
+  disabled?: boolean,
 };
 
 const DateInputValue = ({ value, onChange, ...props }: DateInputValueProps) => (

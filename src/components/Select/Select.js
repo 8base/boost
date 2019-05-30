@@ -32,10 +32,10 @@ type SelectPropsFromHOCs = {|
 |}
 
 const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
-  control: (style, { isFocused }) => ({
+  control: (style, { isFocused, isDisabled }) => ({
     ...style,
     minHeight: '36px',
-    backgroundColor: COLORS.WHITE,
+    backgroundColor: isDisabled ? COLORS.LIGHT_GRAY5 : COLORS.WHITE,
     borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR),
     boxShadow: null,
     '&:hover': {

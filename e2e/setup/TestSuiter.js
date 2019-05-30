@@ -42,6 +42,7 @@ class TestSuiter {
         transition-duration: unset !important;
         -webkit-animation-duration: unset !important;
         animation-duration: unset !important;
+        caret-color: transparent !important;
       }
     `,
     });
@@ -134,6 +135,8 @@ class TestSuiter {
     await this._prepareStyles();
 
     await this._executeEnhancers();
+
+    await this.page.waitFor(500);
 
     // $FlowIgnore
     expect(await this.root.screenshot()).toMatchImageSnapshot();

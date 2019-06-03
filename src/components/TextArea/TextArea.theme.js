@@ -4,7 +4,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'textArea';
 
 const [TextAreaTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
-  root: {
+  root: (props) => ({
     outline: 'none',
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
@@ -14,10 +14,14 @@ const [TextAreaTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
     fontWeight: 400,
     padding: '8px',
 
+    backgroundColor: (props.disabled || props.readOnly)
+      ? COLORS.LIGHT_GRAY5
+      : COLORS.WHITE,
+
     '&::placeholder': {
       color: COLORS.PLACEHOLDER_COLOR,
     },
-  },
+  }),
   modifiers: {
     stretch: {
       height: '100%',

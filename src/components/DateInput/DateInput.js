@@ -16,6 +16,7 @@ type DateInputProps = {
   withPortal?: boolean,
   stretch?: boolean,
   clearable?: boolean,
+  disabled?: boolean,
   placeholder?: string,
 };
 
@@ -121,14 +122,14 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   render() {
     const collectedProps = this.collectProps();
 
-    const { value, withTime, withPortal, stretch, onChange, clearable, placeholder, ...rest } = this.props;
+    const { value, withTime, withPortal, stretch, onChange, clearable, disabled, placeholder, ...rest } = this.props;
 
     const { textValue, isOpen } = this.state;
     const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (
       <Dropdown
-        isOpen={ isOpen }
+        isOpen={ isOpen && !disabled }
         stretch={ stretch }
         onCloseDropdown={ this.close }
         onOpenDropdown={ this.open }
@@ -142,6 +143,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
             onChange={ this.onChangeText }
             onBlur={ this.onBlur }
             clearable={ clearable }
+            disabled={ disabled }
           />
         </Dropdown.Head>
         <Dropdown.Body withPortal={ withPortal } modifiers={{

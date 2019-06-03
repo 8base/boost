@@ -11,6 +11,7 @@ const SUITES = [
     }),
   baisy.suite('Components/TextArea', 'without value'),
   baisy.suite('Components/TextArea', 'with placeholder'),
+  baisy.suite('Components/TextArea', 'with disabled'),
 ];
 
 

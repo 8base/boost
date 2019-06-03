@@ -22,6 +22,8 @@ type RadioGroupFieldProps = {
   direction?: 'row' | 'column',
   /** options to define radio items */
   options?: Array<({ value: any, label: string })>,
+  /** disabled */
+  disabled?: boolean,
 };
 
 const RadioGroupField = ({
@@ -32,6 +34,7 @@ const RadioGroupField = ({
   input,
   meta,
   options,
+  disabled,
   ...rest
   }: RadioGroupFieldProps) => {
   const { name, value, onChange } = input;
@@ -48,6 +51,7 @@ const RadioGroupField = ({
         onChange={ onChange }
         options={ options }
         value={ value }
+        disabled={ disabled }
       >
         { children }
       </Radio.Group>

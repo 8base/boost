@@ -11,6 +11,9 @@ export default (asStory) => {
       ))
       .add('with placeholder', () => (
         <TextArea name="input" placeholder="placeholder" onChange={ () => null } cols={ 100 } rows={ 5 } />
+      ))
+      .add('with disabled', () => (
+        <TextArea name="input" placeholder="placeholder" onChange={ () => null } cols={ 100 } rows={ 5 } disabled />
       ));
   });
 };

@@ -57,6 +57,9 @@ export default (asStory) => {
               multiple
             />
           </StateContainer>
+          <StateContainer value={ null }>
+            <Select name="name" placeholder="Select an option" options={ OPTIONS } disabled />
+          </StateContainer>
         </Column>
       ));
   });

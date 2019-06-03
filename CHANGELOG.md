@@ -1,3 +1,13 @@
+<a name="0.19.10"></a>
+## [0.19.10](https://github.com/8base/boost/compare/v0.19.9...v0.19.10) (2019-06-03)
+
+
+### Features
+
+* **global:** add missing disabled states ([0ace122](https://github.com/8base/boost/commit/0ace122))
+
+
+
 <a name="0.19.9"></a>
 ## [0.19.9](https://github.com/8base/boost/compare/v0.19.8...v0.19.9) (2019-05-27)
 

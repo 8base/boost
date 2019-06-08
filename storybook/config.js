@@ -1,5 +1,13 @@
-import { configure } from '@storybook/react';
+import { addParameters, configure } from '@storybook/react';
 import { asStory } from './utils';
+
+
+addParameters({
+  name: '8base Boost',
+  options: {
+    showPanel: false,
+  },
+});
 
 function loadStories() {
   const storiesRequire = require.context('../src', true, /\.stories\.js$/);

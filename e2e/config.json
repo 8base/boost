@@ -6,7 +6,10 @@
     "**/__tests__/**/*test.js?(x)",
     "**/*test.js?(x)"
   ],
-  "setupTestFrameworkScriptFile": "./setup/setupTestFramework.js",
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest"
+  },
+  "setupFilesAfterEnv": ["./setup/setupTestFramework.js"],
   "globalSetup": "./setup/globalSetup.js",
   "globalTeardown": "./setup/globalTeardown.js",
   "testEnvironment": "./setup/testEnvironment.js"

@@ -1,5 +1,10 @@
 // @flow
+const changeCase = require('change-case')
 const { E2E_URL } = (process.env: any);
+
+const toSlugCase = (str: string) => 
+  changeCase.snakeCase(str)
+    .replace(/_/g, '-');
 
 
 class TestSuiter {
@@ -17,14 +22,22 @@ class TestSuiter {
     this.stateName = stateName;
   }
 
+  _getTransformedKind = () => {
+    return toSlugCase(this.kind);
+  }
+
+  _getTransformedStory = () => {
+    return toSlugCase(this.story);
+  }
 
   _init = async () => {
     // $FlowIgnore
     this.page = await __BROWSER_CONTEXT__.newPage();
+    const path = `${E2E_URL}/?path=/story/${this._getTransformedKind()}--${this._getTransformedStory()}`;
 
-    await this.page.goto(
-      `${E2E_URL}/?selectedKind=${encodeURIComponent(this.kind)}&selectedStory=${encodeURIComponent(this.story)}`, { waitUntil: 'networkidle2' },
-    );
+    await this.page.goto(path, { waitUntil: 'networkidle2' });
+    
+    console.log(path);
 
     // eslint-disable-next-line
     this.iframe = this.page.frames()[1];
@@ -47,9 +60,9 @@ class TestSuiter {
     `,
     });
 
-    const showInfoButton = await this.iframe.waitForXPath('//button[contains(text(),"Show Info")]');
+   const showInfoButton = await this.iframe.waitForXPath('//button[contains(text(),"Show Info")]');
 
-    await this.iframe.evaluate((showInfoButtonDom) => {
+   await this.iframe.evaluate((showInfoButtonDom) => {
       showInfoButtonDom.style.display = 'none';
     }, showInfoButton);
   }
@@ -137,7 +150,7 @@ class TestSuiter {
     await this._executeEnhancers();
 
     await this.page.waitFor(500);
-
+  
     // $FlowIgnore
     expect(await this.root.screenshot()).toMatchImageSnapshot();
 

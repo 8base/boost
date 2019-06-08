@@ -1,7 +1,0 @@
-{
-  "presets": [
-    "react-app",
-    "flow"
-  ],
-  "plugins": ["inline-react-svg", "jsx-control-statements", "emotion", "babel-plugin-react-css-modules"]
-}

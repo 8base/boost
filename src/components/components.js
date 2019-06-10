@@ -24,6 +24,7 @@ export { InputField } from './InputField';
 export { Label } from './Label';
 export { Link } from './Link';
 export { Loader } from './Loader';
+export { Logs } from './Logs';
 export { Menu } from './Menu';
 export { Modal } from './Modal';
 export { Navigation } from './Navigation';

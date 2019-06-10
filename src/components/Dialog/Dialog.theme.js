@@ -8,6 +8,7 @@ const [DialogBodyTag, themeBody] = createThemeTag('dialogBody', {
     display: 'flex',
     flexDirection: 'column',
     flexShrink: 1,
+    maxHeight: '100%',
   },
 });
 
@@ -51,6 +52,9 @@ const [DialogTag, themeDialog] = createThemeTag('dialog', {
       },
       xl: {
         width: '800px',
+      },
+      xxl: {
+        width: '1000px',
       },
     },
   },

@@ -19,6 +19,10 @@ type SelectFieldProps = {
   meta?: MetaType,
   /** custom value component */
   valueComponent ?: React$Node,
+  /** controlled search value */
+  inputValue?: string,
+  /** callback to control search value */
+  onInputChange?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
 };
 
 class SelectField extends React.Component<SelectFieldProps> {

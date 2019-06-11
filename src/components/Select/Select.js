@@ -10,6 +10,8 @@ import { type Theme, COLORS, Z_INDEX } from '../../theme';
 type SelectProps = {|
   options: Array<{ label: mixed, value: string }>,
   onChange: (value: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  inputValue?: string,
+  onInputChange ?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   placeholder?: string,
   value?: any | any[],
   loading?: boolean,
@@ -126,6 +128,8 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       withPortal,
       theme,
       formatOptionLabel,
+      inputValue,
+      onInputChange,
       ...rest
     } = this.props;
 
@@ -152,6 +156,8 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           value={ selectValue }
           components={ components }
           formatOptionLabel={ formatOptionLabel }
+          inputValue={ inputValue }
+          onInputChange={ onInputChange }
         />
       </SelectTag>
     );

@@ -8,7 +8,7 @@ const name = 'avatar';
 const COLORS = ['#ffd012', '#a6e50f', '#00bb6e', '#9975d0', '#4da1ff', '#1968cb', '#ff6d4a', '#EB518E', '#eb4235'];
 
 const getBackgroundColorByName = (name: ?string) => {
-  const index = name ? ((name.charCodeAt(0) - 64) % COLORS.length) : 0;
+  const index = name ? Math.abs(((name.charCodeAt(0) - 64) % COLORS.length)) : 0;
 
   return COLORS[index];
 };

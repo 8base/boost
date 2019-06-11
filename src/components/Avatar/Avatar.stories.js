@@ -10,7 +10,8 @@ export default (asStory) => {
           <Row>
             <Avatar />
             <Avatar name="Madelyn" />
-            <Avatar src="https://randomuser.me/api/portraits/women/76.jpg" />
+            <Avatar name="0 First" />
+            <Avatar src="https://randomuser.me/api/portraits/women/17.jpg" />
           </Row>
           <Row>
             <Avatar size="xl" />
@@ -22,7 +23,7 @@ export default (asStory) => {
         </Column>
       ))
       .add('with pick', () => (
-        <Avatar src="https://randomuser.me/api/portraits/women/76.jpg" onPick={ () => alert(1) } pickLabel="Change" />
+        <Avatar src="https://randomuser.me/api/portraits/women/17.jpg" onPick={ () => alert(1) } pickLabel="Change" />
       ));
   });
 };

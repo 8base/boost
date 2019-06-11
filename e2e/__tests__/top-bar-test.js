@@ -1,0 +1,10 @@
+import { baisy } from '../setup/TestSuiter';
+
+const SUITES = [
+  baisy.suite('Components/TopBar', 'common'),
+];
+
+SUITES.map(suite => {
+  it(suite.getTestName(), suite.testStory, 20000);
+});
+

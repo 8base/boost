@@ -34,6 +34,7 @@ import { theme as tagTheme } from './Tag';
 import { theme as textAreaTheme } from './TextArea';
 import { theme as textTheme } from './Text';
 import { theme as tooltipTheme } from './Tooltip';
+import { theme as topBarTheme } from './TopBar';
 import { theme as treeSelectTheme } from './TreeSelect';
 import { theme as menuTheme } from './Menu';
 import { theme as dateInputTheme } from './DateInput';
@@ -77,6 +78,7 @@ export const theme = {
   ...textAreaTheme,
   ...textTheme,
   ...tooltipTheme,
+  ...topBarTheme,
   ...treeSelectTheme,
   ...menuTheme,
   ...dateInputTheme,

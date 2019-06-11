@@ -18,6 +18,7 @@ const [HeaderCloseTag, themeHeaderClose] = createThemeTag('dialogHeaderClose', {
     userSelect: 'none',
     position: 'absolute',
     right: '20px',
+    display: 'flex',
 
     '&:hover': {
       color: '#8698a7',

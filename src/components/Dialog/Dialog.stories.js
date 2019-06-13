@@ -17,6 +17,20 @@ export default (asStory) => {
           </Dialog.Footer>
         </Dialog>
       ))
+      .add('with stretch', () => (
+        <Dialog stretch size="sm" isOpen data-e2e-id="default-dialog">
+          <Dialog.Header title="Mark Job as Completed" />
+          <Dialog.Body>
+            <Paragraph>
+              Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics
+            </Paragraph>
+          </Dialog.Body>
+          <Dialog.Footer>
+            <Button color="neutral" variant="outlined">Cancel</Button>
+            <Button type="submit">Apply</Button>
+          </Dialog.Footer>
+        </Dialog>
+      ))
       .add('with large size', () => (
         <Dialog size="xl" isOpen data-e2e-id="default-dialog">
           <Dialog.Header title="Mark Job as Completed" />

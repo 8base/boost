@@ -8,6 +8,7 @@ const [DialogBodyTag, themeBody] = createThemeTag('dialogBody', {
     display: 'flex',
     flexDirection: 'column',
     flexShrink: 1,
+    flexGrow: 1,
     maxHeight: '100%',
   },
 });
@@ -37,6 +38,9 @@ const [DialogTag, themeDialog] = createThemeTag('dialog', {
     flex: '0 1 90%',
   },
   modifiers: {
+    stretch: {
+      height: '100%',
+    },
     size: {
       xs: {
         width: '300px',
@@ -66,7 +70,12 @@ const [DialogInnerTag, themeDialogInner] = createThemeTag('dialogInner', {
     '&, & > form': {
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
+    },
+  },
+  modifiers: {
+    stretch: {
+      height: '100%',
     },
   },
 });

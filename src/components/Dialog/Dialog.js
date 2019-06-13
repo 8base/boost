@@ -9,7 +9,7 @@ import { DialogFooter } from './DialogFooter';
 import { DialogHeader } from './DialogHeader';
 import { DialogTag, DialogInnerTag } from './Dialog.theme';
 
-type DialogPlateProps = {
+type DialogProps = {
   children?: React$Node,
   isOpen?: boolean,
   onClose?: (any) => void,
@@ -18,6 +18,7 @@ type DialogPlateProps = {
   shouldCloseOnEscPress ?: boolean,
   padding?: PropSizes,
   tagName?: string,
+  stretch?: boolean,
 };
 
 
@@ -33,8 +34,9 @@ const Dialog = ({
   args,
   padding,
   tagName,
+  stretch,
   ...rest
-  }: DialogPlateProps) => {
+  }: DialogProps) => {
   return (
     <Modal
       { ...rest }
@@ -48,12 +50,12 @@ const Dialog = ({
     >
       {
         ({ args, onClose }) => (
-          <DialogTag tagName={ tagName } size={ size }>
-            <Card padding={ padding } args={ args } onClose={ onClose }>
+          <DialogTag tagName={ tagName } size={ size } stretch={ stretch }>
+            <Card padding={ padding } args={ args } onClose={ onClose } stretch={ stretch }>
               {
                 typeof children === 'function'
-                  ? (args) => <DialogInnerTag>{ children(args) }</DialogInnerTag>
-                  : <DialogInnerTag>{ children }</DialogInnerTag>
+                  ? (args) => <DialogInnerTag stretch={ stretch }>{ children(args) }</DialogInnerTag>
+                  : <DialogInnerTag stretch={ stretch }>{ children }</DialogInnerTag>
               }
             </Card>
           </DialogTag>

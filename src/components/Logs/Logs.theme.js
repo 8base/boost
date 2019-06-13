@@ -6,6 +6,13 @@ const name = 'logs';
 const [LogsContainerTag, themeLogsContainer] = createThemeTag(name, {
   root: {
     overflowX: 'auto',
+    backgroundColor: '#1C252E',
+  },
+  modifiers: {
+    stretch: {
+      height: '100%',
+      width: '100%',
+    },
   },
 });
 

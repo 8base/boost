@@ -22,6 +22,8 @@ type FormPlateProps = {
   children?: React$Node,
   /** component to use instead of form tag */
   component?: React$Node,
+  /** custom class name */
+  className?: string,
 };
 
 const name = 'form';
@@ -49,12 +51,14 @@ const Form = ({
   children,
   onSubmit,
   component,
+  className,
   ...rest
   }: FormPlateProps) => {
   return (
     <FormTag
       tagName={ component }
       onSubmit={ onSubmit }
+      className={ className }
     >
       <FlexLayout { ...rest } >
         { children }

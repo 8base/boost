@@ -2,6 +2,7 @@
 
 export { AsyncContent } from './AsyncContent';
 export { Avatar } from './Avatar';
+export { Avatars } from './Avatars';
 export { Breadcrumbs } from './Breadcrumbs';
 export { Button } from './Button';
 export { ButtonGroup } from './ButtonGroup';
@@ -46,6 +47,7 @@ export { TextAreaField } from './TextAreaField';
 export { TreeSelect } from './TreeSelect';
 export { TreeSelectField } from './TreeSelectField';
 export { Tooltip } from './Tooltip';
+export { TopBar } from './TopBar';
 export { NoData } from './NoData';
 export { Pagination } from './Pagination';
 export { Indicator } from './Indicator';

@@ -6,53 +6,78 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'progress';
 
 
-const [ProgressOuterTag, themeProgress] = createThemeTag(name, {
+const [ProgressTag, themeProgress] = createThemeTag(name, {
   root: {
     width: '100%',
     display: 'flex',
+    flexDirection: 'column',
   },
 });
 
-const [ProgressInnerTag, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }: *) => ({
+const [ProgressBodyTag, themeBody] = createThemeTag(`${name}Body`, {
   root: {
-    flex: '1',
-    heigth: '12px',
-    background: COLORS.LIGHT_GRAY4,
-    borderRadius: '12px',
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
   },
+});
+
+const HEIGHT_BY_SIZE = {
+  sm: 8,
+  md: 12,
+  lg: 16,
+};
+
+const [ProgressInnerTag, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }: *) => ({
+  root: ({ size }) => ({
+    flex: '1',
+    height: HEIGHT_BY_SIZE[size],
+    background: COLORS.LIGHT_GRAY4,
+    borderRadius: '8px',
+  }),
 }));
 
 const [ProgressValueTag, themeValue] = createThemeTag(`${name}Value`, ({ COLORS }: *) => ({
-  root: {
+  root: ({ size, color }) => ({
     height: '100%',
-    backgroundColor: COLORS.PRIMARY,
-    borderRadius: '12px',
-  },
+    backgroundColor: COLORS[color],
+    borderRadius: HEIGHT_BY_SIZE[size],
+  }),
 }));
 
 const [ProgressTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, SIZES }: *) => ({
   root: {
-    marginLeft: '12px',
-    width: '40px',
+    marginLeft: '20px',
+    minWidth: '40px',
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
-    fontWeight: '600',
-    color: COLORS.PRIMARY,
+    color: COLORS.DSM_DARK_GREY_2,
+  },
+}));
+
+const [ProgressLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+  root: {
+    fontSize: SIZES.BODY_TEXT,
+    lineHeight: SIZES.BODY_TEXT_LH,
+    color: COLORS.DSM_DARK_GREY_2,
   },
 }));
 
 const theme = {
   ...themeProgress,
+  ...themeBody,
   ...themeInner,
   ...themeValue,
   ...themeText,
+  ...themeLabel,
 };
-
 
 export {
   theme,
-  ProgressOuterTag,
+  ProgressTag,
+  ProgressBodyTag,
   ProgressInnerTag,
   ProgressValueTag,
   ProgressTextTag,
+  ProgressLabelTag,
 };

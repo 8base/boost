@@ -6,8 +6,8 @@ const offsetSizes = {
   none: '0',
   xs: '4px',
   sm: '12px',
-  md: '20px',
-  lg: '24px',
+  md: '24px',
+  lg: '32px',
   xl: '40px',
 };
 
@@ -37,9 +37,9 @@ const [CardBodyTag, cardBodyTheme] = createThemeTag('cardBody', {
       none: { padding: '0' },
       xs: { padding: '4px' },
       sm: { padding: '12px' },
-      md: { padding: '20px' },
-      lg: { padding: '24px' },
-      xl: { padding: '32px' },
+      md: { padding: '24px' },
+      lg: { padding: '32px' },
+      xl: { padding: '40px' },
     },
   },
 });
@@ -94,9 +94,9 @@ const [CardHeaderTag, cardHeaderTheme] = createThemeTag('cardHeader', ({ COLORS 
       none: { padding: '0' },
       xs: { padding: '0 4px' },
       sm: { padding: '0 12px' },
-      md: { padding: '0 20px' },
-      lg: { padding: '0 24px' },
-      xl: { padding: '0 32px' },
+      md: { padding: '0 24px' },
+      lg: { padding: '0 32px' },
+      xl: { padding: '0 40px' },
     },
   },
 }));

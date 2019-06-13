@@ -77,24 +77,31 @@ class TableBody extends PureComponent<TableBodyProps<*>> {
     }
   }
 
+  renderContent = () => {
+    const { data, children, noData, ...rest } = this.props;
+
+    let rendered = children || null;
+
+    if (typeof children === 'function' && Array.isArray(data) && data.length > 0) {
+      rendered = (
+        <TableBodyInnerTag modifiers={ rest } tagName={ Grid.Layout }>
+          { React.Children.toArray(data.map(children)) }
+        </TableBodyInnerTag>
+      );
+    } else if (!children || (Array.isArray(data) && data.length === 0)) {
+      rendered = noData ? noData : <NoData />;
+    }
+
+    return rendered;
+  };
+
   render() {
-    const { loading, data, children, noData, ...rest } = this.props;
-    const hasBodyRows = data && data.length > 0;
+    const { loading, ...rest } = this.props;
 
     return (
       <TableBodyTag { ...rest }>
         <AsyncContent loading={ loading } stretch>
-          {
-            hasBodyRows ? (
-              <TableBodyInnerTag modifiers={ rest } tagName={ Grid.Layout }>
-                { React.Children.toArray(data && children && data.map(children)) }
-              </TableBodyInnerTag>
-            ) : noData ? (
-              noData
-            ) : (
-              <NoData />
-            )
-          }
+          { this.renderContent() }
         </AsyncContent>
         { this.renderTableAction() }
       </TableBodyTag>

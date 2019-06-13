@@ -2,7 +2,7 @@ import fp from 'lodash/fp';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
-import { getContrastColor } from './Tag.utils';
+import { hexToRGBA } from './Tag.utils';
 
 const name = 'tag';
 
@@ -16,19 +16,20 @@ const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS }: *): * => ({
     alignItems: 'center',
     justifyContent: 'center',
     whiteSpace: 'nowrap',
+    border: '1px solid',
+    fontWeight: 600,
+    fontSize: 12,
+    letterSpacing: '0.5px',
   },
 
   modifiers: {
     color: fp.mapValues(
-      (color) => ({
-        backgroundColor: color,
-        color: getContrastColor(color, {
-          lightColor: COLORS.LIGHT_PRIMARY_TEXT_COLOR,
-          darkColor: COLORS.PRIMARY_TEXT_COLOR,
-        }),
-      }),
-      COLORS,
-    ),
+      (color) => (typeof color === 'string' ? {
+        backgroundColor: hexToRGBA(color, 10),
+        borderColor: hexToRGBA(color, 40),
+        color,
+      } : null)
+      , COLORS),
   },
 }));
 

@@ -21,7 +21,7 @@ function Paper({
   children,
   ...rest
   }: PaperProps) {
-  return <PaperTag { ...rest } tagName="div">{ children }</PaperTag>;
+  return <PaperTag tagName="div" { ...rest }>{ children }</PaperTag>;
 }
 
 Paper.defaultProps = {

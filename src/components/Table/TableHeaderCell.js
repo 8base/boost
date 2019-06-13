@@ -24,7 +24,7 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) 
     alignItems: 'center',
     cursor: props.cursor,
 
-    padding: '0 16px',
+    padding: '0 24px',
     fontSize: SIZES.OVERLINE_1,
     lineHeight: SIZES.OVERLINE_1_LH,
     textTransform: 'uppercase',

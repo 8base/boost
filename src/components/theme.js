@@ -1,6 +1,7 @@
 // @flow
 
 import { theme as avatarTheme } from './Avatar';
+import { theme as avatarsTheme } from './Avatars';
 import { theme as breadcrumbsTheme } from './Breadcrumbs';
 import { theme as buttonTheme } from './Button';
 import { theme as buttonGroupTheme } from './ButtonGroup';
@@ -33,6 +34,7 @@ import { theme as tagTheme } from './Tag';
 import { theme as textAreaTheme } from './TextArea';
 import { theme as textTheme } from './Text';
 import { theme as tooltipTheme } from './Tooltip';
+import { theme as topBarTheme } from './TopBar';
 import { theme as treeSelectTheme } from './TreeSelect';
 import { theme as menuTheme } from './Menu';
 import { theme as dateInputTheme } from './DateInput';
@@ -43,6 +45,7 @@ import { theme as indicatorTheme } from './Indicator';
 
 export const theme = {
   ...avatarTheme,
+  ...avatarsTheme,
   ...breadcrumbsTheme,
   ...buttonTheme,
   ...buttonGroupTheme,
@@ -75,6 +78,7 @@ export const theme = {
   ...textAreaTheme,
   ...textTheme,
   ...tooltipTheme,
+  ...topBarTheme,
   ...treeSelectTheme,
   ...menuTheme,
   ...dateInputTheme,

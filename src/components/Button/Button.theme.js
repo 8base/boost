@@ -101,12 +101,23 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
         backgroundColor: COLORS.DANGER_DARK,
         borderColor: COLORS.DANGER_DARK,
       },
+      success: {
+        backgroundColor: COLORS.GREEN,
+        borderColor: COLORS.GREEN,
+      },
+      white: {
+        backgroundColor: COLORS.WHITE,
+        borderColor: COLORS.WHITE,
+      },
     },
 
     variant: {
       outlined: {
         backgroundColor: COLORS.WHITE,
         color: COLORS.BLACK,
+      },
+      ghost: {
+        backgroundColor: 'transparent',
       },
     },
 

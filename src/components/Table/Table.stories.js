@@ -5,7 +5,7 @@ import React from 'react';
 const TABLE_COLUMNS = [{
   name: 'id',
   title: 'Id',
-  width: '50px',
+  width: '64px',
 }, {
   name: 'createdAt',
   title: 'Created At',

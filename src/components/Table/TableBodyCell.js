@@ -17,7 +17,7 @@ const [TableBodyCellTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
     alignItems: 'center',
     wordBreak: 'break-all',
 
-    padding: '8px 16px',
+    padding: '8px 24px',
   },
   modifiers: {
     bordered: {

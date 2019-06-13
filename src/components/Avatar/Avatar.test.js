@@ -7,7 +7,7 @@ describe('<Avatar />', () => {
   it('should render avatar with name', () => {
     const wrapper = mount(<Avatar name="kd" />);
 
-    expect(wrapper.text()).toBe('K');
+    expect(wrapper.text()).toBe('KD');
   });
 
   it('should render avatar without name', () => {

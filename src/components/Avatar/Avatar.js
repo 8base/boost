@@ -21,7 +21,7 @@ function Avatar({
   return (
     <AvatarTag { ...rest } name={ name } tagName="div">
       {
-        src ? <AvatarImgTag modifiers={ rest } tagName="img" src={ src } /> : (name ? name[0].toUpperCase() : 'A')
+        src ? <AvatarImgTag modifiers={ rest } tagName="img" src={ src } /> : (name ? name.slice(0, 2).toUpperCase() : 'A')
       }
       {
         (onPick && pickLabel)

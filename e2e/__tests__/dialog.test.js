@@ -6,6 +6,10 @@ const SUITES = [
     .setRoot(async (iframe) => {
       return await iframe.waitForXPath('//*[@data-e2e-id="default-dialog"]');
     }),
+  baisy.suite('Components/Dialog', 'with scroll')
+    .setRoot(async (iframe) => {
+      return await iframe.waitForXPath('//*[@data-e2e-id="default-dialog"]');
+    }),
 ];
 
 

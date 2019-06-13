@@ -13,6 +13,7 @@ const [PaperTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
     color: COLORS.BLACK,
     boxShadow: '0 1px 3px 0 rgba(50,50,93,.14), 0 4px 6px 0 rgba(112,157,199,.08)',
     position: 'relative',
+    overflow: 'hidden',
   },
 
   modifiers: {

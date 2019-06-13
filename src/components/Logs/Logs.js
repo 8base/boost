@@ -4,11 +4,12 @@ import { LogsContainerTag, LogMessageTag } from './Logs.theme';
 
 type LogsProps = {
   messages: string[],
+  stretch?: Boolean,
 };
 
-const Logs = ({ messages }: LogsProps) => {
+const Logs = ({ messages, stretch }: LogsProps) => {
   return (
-    <LogsContainerTag>
+    <LogsContainerTag stretch={ stretch }>
       { React.Children.toArray(messages.map(message => (
         <LogMessageTag>{ message }</LogMessageTag> // eslint-disable-line
       ))) }

@@ -1,3 +1,20 @@
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/8base/boost/compare/v0.20.0...v0.21.0) (2019-06-13)
+
+
+### Bug Fixes
+
+* **dialog:** fix dialog scroll ([a944785](https://github.com/8base/boost/commit/a944785))
+
+
+### Features
+
+* **dialog:** add stretch modifier ([be24bd5](https://github.com/8base/boost/commit/be24bd5))
+* **logs:** add Logs component ([be6fdf1](https://github.com/8base/boost/commit/be6fdf1))
+* **logs:** add stretch modifier ([6589637](https://github.com/8base/boost/commit/6589637))
+
+
+
 <a name="0.20.0"></a>
 # [0.20.0](https://github.com/8base/boost/compare/v0.19.11...v0.20.0) (2019-06-13)
 

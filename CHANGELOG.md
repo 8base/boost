@@ -1,3 +1,30 @@
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/8base/boost/compare/v0.19.11...v0.20.0) (2019-06-13)
+
+
+### Bug Fixes
+
+* **Avatar:** background color for non-alphabetic characters ([640a17e](https://github.com/8base/boost/commit/640a17e))
+* **Dialog:** close icon align ([7f8b9ac](https://github.com/8base/boost/commit/7f8b9ac))
+* **Form:** add ability to pass classname to form ([0948342](https://github.com/8base/boost/commit/0948342))
+* **Icon:** pass class name tag icon tag ([e66a659](https://github.com/8base/boost/commit/e66a659))
+* **Paper:** add ability to override tagName ([53b6089](https://github.com/8base/boost/commit/53b6089))
+* **Table:** update styling ([1fb30fd](https://github.com/8base/boost/commit/1fb30fd))
+
+
+### Features
+
+* **Avatars:** initial ([bef956f](https://github.com/8base/boost/commit/bef956f))
+* **Button:** add ghost button type ([a8370b7](https://github.com/8base/boost/commit/a8370b7))
+* **Button:** add success button style ([dd5a91c](https://github.com/8base/boost/commit/dd5a91c))
+* **Card:** update default padding to 24px ([38bb78d](https://github.com/8base/boost/commit/38bb78d))
+* **Progress:** new sizes, colors and text value ([5149624](https://github.com/8base/boost/commit/5149624))
+* **Select:** add passed props to control search value ([620f7a4](https://github.com/8base/boost/commit/620f7a4))
+* **Tag:** restyle ([0e52303](https://github.com/8base/boost/commit/0e52303))
+* **TopBar:** initial ([266242c](https://github.com/8base/boost/commit/266242c))
+
+
+
 <a name="0.19.11"></a>
 ## [0.19.11](https://github.com/8base/boost/compare/v0.19.10...v0.19.11) (2019-06-04)
 

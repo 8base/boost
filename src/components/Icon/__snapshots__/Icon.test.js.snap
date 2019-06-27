@@ -22,6 +22,7 @@ exports[`<Icon /> should shallow input 1`] = `
     >
       <span
         className="emotion-0 emotion-1"
+        title="Alert icon"
       >
         <Boost(iconSvg)
           modifiers={

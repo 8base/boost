@@ -39,11 +39,15 @@ const [FormLabel, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES 
 const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, SIZES }: *) => ({
   root: {
     position: 'relative',
-    top: '-2px',
 
     fontSize: SIZES.OVERLINE_2,
     lineHeight: SIZES.OVERLINE_2_LH,
     color: COLORS.DANGER,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    display: 'block',
+    maxWidth: '100%',
   },
 }));
 
@@ -64,6 +68,7 @@ const [ControlErrorWrapperTag, themeErrorWrapper] = createThemeTag(`${name}Error
     position: 'absolute',
     bottom: 0,
     height: 0,
+    maxWidth: '100%',
   },
 });
 
@@ -105,7 +110,9 @@ const FormField = ({
       </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
         <ControlErrorWrapperTag modifiers={ rest } tagName="div">
-          <ControlErrorTag modifiers={ rest } role="alert" tagName="span">{ error.toString() }</ControlErrorTag>
+          <ControlErrorTag modifiers={ rest } role="alert" tagName="span" title={ error.toString() }>
+            { error.toString() }
+          </ControlErrorTag>
         </ControlErrorWrapperTag>
       </If>
     </FormFieldTag>

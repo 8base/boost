@@ -72,6 +72,7 @@ const COLLECTED_PROPS = [
   'style',
   'to',
   'type',
+  'title',
   'value',
   'disabled',
   'readOnly',

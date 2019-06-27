@@ -1,3 +1,13 @@
+<a name="0.21.2"></a>
+## [0.21.2](https://github.com/8base/boost/compare/v0.21.1...v0.21.2) (2019-06-27)
+
+
+### Bug Fixes
+
+* **FormField:** cut log error texts ([bf7d186](https://github.com/8base/boost/commit/bf7d186))
+
+
+
 <a name="0.21.1"></a>
 ## [0.21.1](https://github.com/8base/boost/compare/v0.21.0...v0.21.1) (2019-06-14)
 

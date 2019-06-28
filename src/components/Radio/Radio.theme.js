@@ -19,6 +19,18 @@ const [RadioCircleTag, themeCircle] = createThemeTag(`${name}Circle`, ({ COLORS 
     transition: 'opacity .3s ease',
     background: COLORS.WHITE,
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+
+    '&:hover': {
+      boxShadow: '0 1px 2px 0 rgba(50,50,93,0.14), 0 3px 4px 0 rgba(112,157,199,0.08)',
+    },
+
+    'input:focus + &': {
+      boxShadow: 'inset 0 1px 2px 0 rgba(50,50,93,0.14), inset 0 3px 4px 0 rgba(112,157,199,0.08)',
+    },
+
+    'input:active + &': {
+      boxShadow: 'inset 0 1px 2px 0 rgba(50,50,93,0.14), inset 0 3px 4px 0 rgba(112,157,199,0.08)',
+    },
   },
   modifiers: {
     hasError: {
@@ -75,7 +87,8 @@ const [RadioWrapperTag, themeRadioWrapper] = createThemeTag(`${name}Wrapper`, {
 
 const [RadioTag, themeRadio] = createThemeTag(name, {
   root: {
-    display: 'none',
+    opacity: 0,
+    position: 'absolute',
   },
 });
 

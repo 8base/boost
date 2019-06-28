@@ -37,9 +37,9 @@ const DropdownHead = dropdownHeadEnhancer(
   class DropdownHead extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
-    const { dropdown: { toggleDropdown }, disabled, stopClickPropagation, onClick } = this.props;
+    const { dropdown: { toggleDropdown }, disabled, stopClickPropagation, onClick, children } = this.props;
 
-    if (!!disabled) {
+    if (!!disabled || typeof children === 'function') {
       return;
     }
 

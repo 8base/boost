@@ -16,6 +16,18 @@ const [CheckboxSquareTag, themeSquare] = createThemeTag(`${name}Square`, ({ COLO
     background: COLORS.WHITE,
     border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
+
+    '&:hover': {
+      boxShadow: '0 1px 3px 0 rgba(50,50,93,0.14), 0 4px 6px 0 rgba(112,157,199,0.08)',
+    },
+
+    'input:focus + &': {
+      boxShadow: 'inset 0 1px 3px 0 rgba(50,50,93,0.14), inset 0 4px 6px 0 rgba(112,157,199,0.08)',
+    },
+
+    'input:active + &': {
+      boxShadow: 'inset 0 1px 3px 0 rgba(50,50,93,0.14), inset 0 4px 6px 0 rgba(112,157,199,0.08)',
+    },
   },
   modifiers: {
     hasError: {
@@ -82,7 +94,8 @@ const [CheckboxWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
 
 const [CheckboxTag, themeCheckbox] = createThemeTag(`${name}Tag`, {
   root: {
-    display: 'none',
+    opacity: 0,
+    position: 'absolute',
   },
 });
 

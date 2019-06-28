@@ -89,11 +89,6 @@ class Checkbox extends PureComponent<CheckboxProps, CheckboxState> {
 
     return (
       <CheckboxWrapperTag { ...rest } tagName="label">
-        <CheckboxSquareTag modifiers={ rest } tagName="div">
-          <CheckboxIconTag modifiers={ iconModifiers } tagName="div">
-            <Icon name={ this.state.iconName } size="xs" />
-          </CheckboxIconTag>
-        </CheckboxSquareTag>
         <CheckboxTag
           modifiers={ rest }
           checked={ rest.indeterminate ? false : rest.checked }
@@ -103,6 +98,11 @@ class Checkbox extends PureComponent<CheckboxProps, CheckboxState> {
           type="checkbox"
           tagName="input"
         />
+        <CheckboxSquareTag modifiers={ rest } tagName="div">
+          <CheckboxIconTag modifiers={ iconModifiers } tagName="div">
+            <Icon name={ this.state.iconName } size="xs" />
+          </CheckboxIconTag>
+        </CheckboxSquareTag>
         <If condition={ !!label }>
           <CheckboxTextTag modifiers={ rest } tagName="div">{ label }</CheckboxTextTag>
         </If>

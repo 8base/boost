@@ -33,7 +33,7 @@ class RadioGroup extends PureComponent<RadioProps> {
     gap: 'md',
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     RadioGroup.instanceCounter++;
   }
 

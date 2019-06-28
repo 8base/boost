@@ -17,6 +17,26 @@ describe('<Checkbox />', () => {
   indeterminate={false}
   tagName="label"
 >
+  <Boost(checkboxTag)
+    checked={true}
+    disabled={false}
+    insideRef={
+      Object {
+        "current": null,
+      }
+    }
+    modifiers={
+      Object {
+        "checked": true,
+        "disabled": false,
+        "hasError": false,
+        "indeterminate": false,
+      }
+    }
+    onChange={[Function]}
+    tagName="input"
+    type="checkbox"
+  />
   <Boost(checkboxSquare)
     modifiers={
       Object {
@@ -46,26 +66,6 @@ describe('<Checkbox />', () => {
       />
     </Boost(checkboxIcon)>
   </Boost(checkboxSquare)>
-  <Boost(checkboxTag)
-    checked={true}
-    disabled={false}
-    insideRef={
-      Object {
-        "current": null,
-      }
-    }
-    modifiers={
-      Object {
-        "checked": true,
-        "disabled": false,
-        "hasError": false,
-        "indeterminate": false,
-      }
-    }
-    onChange={[Function]}
-    tagName="input"
-    type="checkbox"
-  />
   <Boost(checkboxText)
     modifiers={
       Object {

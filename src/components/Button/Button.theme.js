@@ -47,6 +47,7 @@ const getSquaredStyle = (props: *) => {
   if (props.squared && props.size) {
     return {
       width: BUTTON_HEIGHT_BY_SIZE[props.size],
+      minWidth: BUTTON_HEIGHT_BY_SIZE[props.size],
       height: BUTTON_HEIGHT_BY_SIZE[props.size],
     };
   }
@@ -118,6 +119,7 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
       },
       ghost: {
         backgroundColor: 'transparent',
+        color: COLORS.BLACK,
       },
     },
 

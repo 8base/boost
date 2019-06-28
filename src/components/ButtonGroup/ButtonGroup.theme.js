@@ -23,6 +23,12 @@ const [ButtonGroupTag, theme] = createThemeTag(name, {
       },
     },
   }),
+
+  modifiers: {
+    stretch: {
+      width: '100%',
+    },
+  },
 });
 
 

@@ -6,6 +6,7 @@ type DropdownContextType = {|
   isOpen: boolean,
   toggleDropdown: () => void,
   closeDropdown:() => void,
+  openDropdown:() => void,
   outsideClickIgnoreClass: string,
 |}
 

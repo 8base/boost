@@ -6,6 +6,7 @@ import { ButtonGroupTag } from './ButtonGroup.theme';
 
 type ButtonGroupProps = {
   children: React$Node,
+  stretch?: Boolean,
 };
 
 

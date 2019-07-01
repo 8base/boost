@@ -1,3 +1,14 @@
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/8base/boost/compare/v0.21.3...v0.22.0) (2019-07-01)
+
+
+### Features
+
+* **ButtonGroup:** add stretch modifier ([16a171c](https://github.com/8base/boost/commit/16a171c))
+* **Dropdown:** add render prop to hte head ([c857925](https://github.com/8base/boost/commit/c857925))
+
+
+
 <a name="0.21.3"></a>
 ## [0.21.3](https://github.com/8base/boost/compare/v0.21.2...v0.21.3) (2019-06-28)
 

@@ -9,7 +9,11 @@ import { DropdownHeadTag, DropdownPopperTarget } from './DropdownHead.theme';
 
 
 type DropdownHeadProps = {
-  children: React$Node,
+  children: React$Node | ({
+    toggleDropdown: () => void,
+    closeDropdown?: () => void,
+    openDropdown?: () => void,
+   }) => React$Node,
   /** When exists then stretch drodown head */
   stretch?: boolean,
   /** Prevent propagation on click */
@@ -33,9 +37,9 @@ const DropdownHead = dropdownHeadEnhancer(
   class DropdownHead extends PureComponent<DropdownHeadPropsEnhanced> {
 
   onClick = (event: MouseEvent) => {
-    const { dropdown: { toggleDropdown }, disabled, stopClickPropagation, onClick } = this.props;
+    const { dropdown: { toggleDropdown }, disabled, stopClickPropagation, onClick, children } = this.props;
 
-    if (!!disabled) {
+    if (!!disabled || typeof children === 'function') {
       return;
     }
 
@@ -51,15 +55,24 @@ const DropdownHead = dropdownHeadEnhancer(
     stopClickPropagation && event.stopPropagation();
   }
 
+  getHeadChildren = () => {
+    const { children, dropdown: { toggleDropdown, closeDropdown, openDropdown }} = this.props;
+
+    return typeof children === 'function'
+      ? children({ toggleDropdown, closeDropdown, openDropdown })
+      : children;
+  }
+
   render() {
       const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
+      const renderChildren = this.getHeadChildren();
 
       return (
         <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
           <Reference>
             { ({ ref }) => (
               <DropdownPopperTarget tagName="div" insideRef={ ref }>
-                { children }
+                { renderChildren }
               </DropdownPopperTarget>
             ) }
           </Reference>

@@ -34,6 +34,7 @@ type DropdownContextData = {|
   isOpen: boolean,
   toggleDropdown: () => void,
   closeDropdown?: () => void,
+  openDropdown?: () => void,
   targetWidth?: number,
   outsideClickIgnoreClass: string,
 |}
@@ -87,12 +88,13 @@ const DropdownPlate = dropDownEnhancer(
   getIgnoreClickOutsideClass = () => `ignore-react-onclickoutside-${this.instanceIndex}`;
 
   render() {
-      const { children, onCloseDropdown, isOpen, ...rest } = this.props;
+      const { children, onCloseDropdown, onOpenDropdown, isOpen, ...rest } = this.props;
 
       const contextData: DropdownContextData = {
         isOpen,
         toggleDropdown: this.toggleDropdown,
         closeDropdown: onCloseDropdown,
+        openDropdown: onOpenDropdown,
         targetWidth: this.getDropdownWidth(),
         outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
       };

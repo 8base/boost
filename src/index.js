@@ -9,6 +9,5 @@ export {
   COLORS,
 } from './theme';
 export * from './components';
-export { withModal, ModalContext } from './components/Modal';
+export { withModal, useModal, ModalContext } from './components/Modal';
 export { EightBaseBoostProvider } from './EightBaseBoostProvider';
-

@@ -6,8 +6,8 @@ const name = 'avatar';
 
 const COLORS = ['#ffd012', '#a6e50f', '#00bb6e', '#9975d0', '#4da1ff', '#1968cb', '#ff6d4a', '#EB518E', '#eb4235'];
 
-const getBackgroundColorByName = (name: ?string) => {
-  const index = name ? Math.abs(((name.charCodeAt(0) - 64) % COLORS.length)) : 0;
+const getBackgroundColorByName = (firstName: ?string) => {
+  const index = firstName ? Math.abs(((firstName.charCodeAt(0) - 64) % COLORS.length)) : 0;
 
   return COLORS[index];
 };
@@ -20,7 +20,7 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    backgroundColor: getBackgroundColorByName(props.name),
+    backgroundColor: getBackgroundColorByName(props.firstName),
     color: COLORS.WHITE,
     fontWeight: 600,
 
@@ -66,6 +66,7 @@ const [AvatarHandleTag, themeHandle] = createThemeTag(`${name}Handle`, ({ COLORS
     left: '0',
     right: '0',
     height: '30%',
+    cursor: 'pointer',
 
     display: 'flex',
     justifyContent: 'center',

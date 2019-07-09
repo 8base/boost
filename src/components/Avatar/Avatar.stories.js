@@ -9,8 +9,8 @@ export default (asStory) => {
         <Column gap="lg">
           <Row>
             <Avatar />
-            <Avatar name="Madelyn" />
-            <Avatar name="0 First" />
+            <Avatar firstName="Madelyn" lastName="Clantz" />
+            <Avatar firstName="0" lastName="Wiers" />
             <Avatar src="https://randomuser.me/api/portraits/women/17.jpg" />
           </Row>
           <Row>

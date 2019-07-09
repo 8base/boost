@@ -1,3 +1,13 @@
+<a name="0.22.1"></a>
+## [0.22.1](https://github.com/8base/boost/compare/v0.22.0...v0.22.1) (2019-07-09)
+
+
+### Bug Fixes
+
+* **Avatar:** initials ([eb373d7](https://github.com/8base/boost/commit/eb373d7))
+
+
+
 <a name="0.22.0"></a>
 # [0.22.0](https://github.com/8base/boost/compare/v0.21.3...v0.22.0) (2019-07-01)
 

@@ -5,9 +5,9 @@ import { AvatarHandleTag } from './Avatar.theme';
 
 describe('<Avatar />', () => {
   it('should render avatar with name', () => {
-    const wrapper = mount(<Avatar name="kd" />);
+    const wrapper = mount(<Avatar firstName="Albert" lastName="Santalo" />);
 
-    expect(wrapper.text()).toBe('KD');
+    expect(wrapper.text()).toBe('AS');
   });
 
   it('should render avatar without name', () => {

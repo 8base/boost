@@ -37,7 +37,14 @@ const Avatars = ({ users, size, onClick, ...rest }: AvatarsProps) => {
         React.Children.toArray(
           users.slice(0, 4).map(({ firstName, lastName, avatarUrl }, index) => (
             <Tooltip className={ tooltipClassName } message={ `${firstName} ${lastName}` }>
-              <Avatar className={ avatarClassName } style={{ zIndex: Math.abs(index - 7) }} name={ firstName } src={ avatarUrl } size={ size } />
+              <Avatar
+                className={ avatarClassName }
+                style={{ zIndex: Math.abs(index - 7) }}
+                firstName={ firstName }
+                lastName={ lastName }
+                src={ avatarUrl }
+                size={ size }
+              />
             </Tooltip>
           ),
           ))

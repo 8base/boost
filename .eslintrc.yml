@@ -10,6 +10,10 @@ globals:
   enzymeToJson: true
   EightBaseBoostProvider: true
 
+plugins: [
+  react-hooks
+]
+
 rules:  
   #styles
   block-spacing: ['error']
@@ -107,4 +111,7 @@ rules:
   react/jsx-uses-vars: 'warn'
   react/jsx-wrap-multilines: 'warn'
   react/jsx-curly-brace-presence: ['warn', { 'props': 'never' }]
+  react-hooks/rules-of-hooks: "error"
+  react-hooks/exhaustive-deps: "warn"
+
   jsx-a11y/aria-role: 'off'

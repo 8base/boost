@@ -6889,9 +6889,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash-es@^4.2.1:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.10.tgz#62cd7104cdf5dd87f235a837f0ede0e8e5117e05"
-  integrity sha512-iesFYPmxYYGTcmQK0sL8bX3TGHyM6b2qREaB4kamHfQyfPJP0xgoGxp19nsH16nsfquLdiyKyX3mQkfiSGV8Rg==
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.14.tgz#12a95a963cc5955683cee3b74e85458954f37ecc"
+  integrity sha512-7zchRrGa8UZXjD/4ivUWP1867jDkhzTG2c/uj739utSd7O/pFFdxspCemIFKEEjErbcqRzn8nKnGsi7mvTgRPA==
 
 lodash._arrayeach@^3.0.0:
   version "3.0.0"
@@ -7079,7 +7079,7 @@ lru-cache@^4.0.1, lru-cache@^4.1.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-luxon@^1.7.1:
+luxon@1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.7.1.tgz#721e86f12c47526014a53c9f92f74f2da6dc9a4c"
   integrity sha512-0fTd5a3UUVATblRdhD9ZXdhCdXp+ktqGERRu8q9seeMFfED0otQFeqrZwDw/2AoMH/cHjmswVJC8IUPeNBIPTA==

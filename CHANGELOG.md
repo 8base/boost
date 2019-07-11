@@ -1,3 +1,13 @@
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/8base/boost/compare/v0.22.1...v0.23.0) (2019-07-11)
+
+
+### Features
+
+* **Modal:** add useModal hook ([5ff274c](https://github.com/8base/boost/commit/5ff274c))
+
+
+
 <a name="0.22.1"></a>
 ## [0.22.1](https://github.com/8base/boost/compare/v0.22.0...v0.22.1) (2019-07-09)
 

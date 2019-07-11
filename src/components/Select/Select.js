@@ -8,7 +8,7 @@ import { SelectTag } from './Select.theme';
 import { type Theme, COLORS, Z_INDEX } from '../../theme';
 
 type SelectProps = {|
-  options: Array<{ label: mixed, value: string }>,
+  options: Array<{ label: mixed, value: string, options?: Array<Object> }>,
   onChange: (value: mixed, event?: SyntheticInputEvent<HTMLInputElement>) => void,
   inputValue?: string,
   onInputChange ?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
@@ -94,6 +94,26 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
   }),
 });
 
+const findOptionByValue = (value, options) => {
+  if (Array.isArray(value)) {
+    return value.map((valueItem) => findOptionByValue(valueItem, options));
+  }
+
+  const foundOption = options.reduce((result, option) => {
+    if (result === null) {
+      if (option.value === value) {
+        return option;
+      } else if (Array.isArray(option.options)) {
+        return findOptionByValue(value, option.options);
+      }
+    }
+
+    return result;
+  }, null);
+
+  return foundOption;
+};
+
 class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
   static components = components;
   static defaultProps = {
@@ -133,11 +153,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       ...rest
     } = this.props;
 
-    const selectValue = (
-      Array.isArray(value)
-        ? value.map((val) => options.find((option) => option.value === val)).filter((option) => option !== null)
-        : options.find((option) => option.value === value)
-    ) || null;
+    const selectValue = findOptionByValue(value, options);
 
     return (
       <SelectTag { ...rest } aria-busy={ String(loading || false) }>

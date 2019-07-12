@@ -3,22 +3,26 @@ import React from 'react';
 
 import { Grid } from '../Grid';
 import { createThemeTag } from '../../theme/createThemeTag';
+import { gapSizes } from '../../constants';
+import type { PropSizes } from '../../types';
 
 
 type TableHeaderProps = {
   children?: React$Node,
+  columnGap?: PropSizes,
 };
 
 const name = 'tableHeader';
 
 const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
-  root: {
+  root: props => ({
     display: 'grid',
     height: '48px',
     backgroundColor: COLORS.LIGHT_GRAY5,
     borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     color: COLORS.GRAY4,
-  },
+    columnGap: gapSizes[props.columnGap],
+  }),
 
   modifiers: {
     condensed: {

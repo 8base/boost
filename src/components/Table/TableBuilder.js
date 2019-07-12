@@ -40,6 +40,7 @@ type TableState = {
 type TableBulderProps = {
   /** Options of the columns */
   columns: Array<ColumnType>,
+  columnGap: string,
   /** Data to show in table */
   data: Array<Object>,
   /** Callback to execute custom table action */

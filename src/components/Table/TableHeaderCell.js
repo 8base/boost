@@ -2,8 +2,9 @@
 import React, { PureComponent } from 'react';
 
 import { createThemeTag } from '../../theme/createThemeTag';
-
 import { Row } from '../FlexLayout';
+import { justifyContentStyles, alignItemsStyles } from '../../constants';
+import type { PropLayoutStretch, PropLayout } from '../../types';
 import { Icon } from '../Icon';
 
 const DEFAULT_SORT = 'DESC';
@@ -14,6 +15,8 @@ type TableHeaderCellProps = {
   enableSort?: boolean,
   order?: 'ASC' | 'DESC',
   cursor?: 'pointer' | 'default' | 'inherit',
+  justifyContent?: PropLayoutStretch,
+  alignItems?: PropLayout,
 };
 
 const name = 'tableHeaderCell';
@@ -21,7 +24,8 @@ const name = 'tableHeaderCell';
 const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) => ({
   root: props => ({
     display: 'flex',
-    alignItems: 'center',
+    justifyContent: justifyContentStyles[props.justifyContent],
+    alignItems: alignItemsStyles[props.alignItems],
     cursor: props.cursor,
 
     padding: '0 24px',
@@ -43,6 +47,11 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) 
 }));
 
 class TableHeaderCell extends PureComponent<TableHeaderCellProps> {
+
+  static defaultProps = {
+    alignItems: 'center',
+    justifyContent: 'start',
+  }
 
   onSort = () => {
     const { onSort, order, enableSort } = this.props;

@@ -1,3 +1,14 @@
+<a name="0.23.1"></a>
+## [0.23.1](https://github.com/8base/boost/compare/v0.23.0...v0.23.1) (2019-07-12)
+
+
+### Features
+
+* **CehcboxField:** add stretch modifier ([aa3f9e0](https://github.com/8base/boost/commit/aa3f9e0))
+* **Table:** add justifyContent, alignItems, columnGap modifiers ([9dadf30](https://github.com/8base/boost/commit/9dadf30))
+
+
+
 <a name="0.23.0"></a>
 # [0.23.0](https://github.com/8base/boost/compare/v0.22.1...v0.23.0) (2019-07-11)
 

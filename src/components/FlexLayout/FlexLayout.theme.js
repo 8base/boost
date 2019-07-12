@@ -1,48 +1,10 @@
 // @flow
 
 import { createThemeTag } from '../../theme/createThemeTag';
-
+import { paddingSizes, gapSizes, justifyContentStyles, alignContentStyles, alignItemsStyles } from '../../constants';
 
 const name = 'flex-layout';
 
-const paddingSizes = {
-  none: '0',
-  xs: '4px',
-  sm: '8px',
-  md: '16px',
-  lg: '24px',
-  xl: '32px',
-};
-
-const gapSizes = {
-  none: '0',
-  xs: '4px',
-  sm: '8px',
-  md: '16px',
-  lg: '24px',
-  xl: '32px',
-};
-
-const justifyContentStyles = {
-  start: 'flex-start',
-  end: 'flex-end',
-  center: 'center',
-  between: 'space-between',
-  around: 'space-around',
-};
-
-const alignContentStyles = {
-  ...justifyContentStyles,
-  stretch: 'stretch',
-};
-
-const alignItemsStyles = {
-  start: 'flex-start',
-  end: 'flex-end',
-  center: 'center',
-  baseline: 'baseline',
-  stretch: 'stretch',
-};
 
 const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) =>
   direction === 'row'
@@ -97,4 +59,4 @@ const [FlexLayoutTag, theme] = createThemeTag(name, {
 });
 
 
-export { FlexLayoutTag, theme };
+export { FlexLayoutTag, justifyContentStyles, alignContentStyles, alignItemsStyles, theme };

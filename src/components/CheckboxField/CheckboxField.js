@@ -20,6 +20,8 @@ type CheckboxFieldProps = {
   disabled ?: boolean,
   /** no wrap text  */
   nowrap?: boolean,
+  /** when true then stretch to the maximal width */
+  stretch?: boolean,
 };
 
 const CheckboxField = ({
@@ -36,7 +38,7 @@ const CheckboxField = ({
   const hasError = formUtils.hasError(meta);
 
   return (
-    <FormField { ...rest } input={ input } meta={ meta }>
+    <FormField { ...rest } input={ input } meta={ meta } stretch={ stretch }>
       <Checkbox
         label={ label }
         name={ name }

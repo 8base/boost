@@ -12,7 +12,7 @@ declare var render: typeof __enzume.render;
 declare var mount: typeof __enzume.mount;
 declare var shallow: typeof __enzume.shallow;
 declare var enzymeToJson: (any) => string;
-declare var EightBaseBoostProvider: React$ComponentType<*>;
+declare var BoostProvider: React$ComponentType<*>;
 
 /** hocs helpers */
 type UnaryFn<A, R> = (a: A) => R

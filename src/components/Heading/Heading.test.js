@@ -5,9 +5,9 @@ import { Heading } from './';
 describe('<Heading />', () => {
   it('should render Heading components', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Heading type="h1" kind="primary">Primary Heading</Heading>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.text()).toBe('Primary Heading');

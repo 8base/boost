@@ -5,9 +5,9 @@ import { Text } from './';
 describe('<Text />', () => {
   it('should render with text prop', () => {
     const wrapper = render(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Text text="some-text" />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.text()).toBe('some-text');

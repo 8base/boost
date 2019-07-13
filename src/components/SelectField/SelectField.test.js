@@ -20,7 +20,7 @@ describe('<SelectField />', () => {
     const meta = { error: 'asdasd', touched: true };
 
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <SelectField
           label={ label }
           input={ input }
@@ -31,7 +31,7 @@ describe('<SelectField />', () => {
           placeholder={ placeholder }
           options={ options }
         />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
 

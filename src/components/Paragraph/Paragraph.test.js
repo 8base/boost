@@ -5,9 +5,9 @@ import { Paragraph } from './';
 describe('<Paragraph />', () => {
   it('should render Paragraph components', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Paragraph kind="primary">Primary Paragraph</Paragraph>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.text()).toBe('Primary Paragraph');

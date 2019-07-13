@@ -3,7 +3,7 @@ import { createSerializer } from 'jest-emotion';
 import { configure, shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import enzymeToJson from 'enzyme-to-json';
-import { EightBaseBoostProvider } from './src';
+import { BoostProvider } from './src';
 
 configure({ adapter: new Adapter() });
 
@@ -12,6 +12,6 @@ global.shallow = shallow;
 global.render = render;
 global.mount = mount;
 global.enzymeToJson = enzymeToJson;
-global.EightBaseBoostProvider = EightBaseBoostProvider;
+global.BoostProvider = BoostProvider;
 
 expect.addSnapshotSerializer(createSerializer(emotion));

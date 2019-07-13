@@ -6,7 +6,7 @@ describe('<Grid />', () => {
 
   it('should render grid components', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Grid.Layout
           columns="auto"
           rows="auto"
@@ -39,7 +39,7 @@ describe('<Grid />', () => {
             3
           </Grid.Box>
         </Grid.Layout>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Grid.Box).at(0).text()).toBe('1');

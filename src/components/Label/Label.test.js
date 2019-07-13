@@ -5,9 +5,9 @@ import { Label } from './';
 describe('<Label />', () => {
   it('should render Label components', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Label kind="primary">Primary Label</Label>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.text()).toBe('Primary Label');

@@ -5,11 +5,11 @@ import { Scrollable } from './';
 describe('<Scrollable />', () => {
   it('should render Scrollable components', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Scrollable>
           some-text
         </Scrollable>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.text()).toBe('some-text');

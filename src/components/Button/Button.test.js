@@ -5,11 +5,11 @@ import { Button } from './Button';
 describe('<Button />', () => {
   it('should render button with text', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Button squared variant="outlined">
           some-text
         </Button>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find('button').text()).toBe('some-text');
@@ -76,9 +76,9 @@ describe('<Button />', () => {
   it('should not click on button while it loading', () => {
     const onClick = jest.fn();
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Button onClick={ onClick } loading />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     wrapper.simulate('click');

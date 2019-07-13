@@ -7,16 +7,16 @@ import { IconsProvider } from './components/Icon/IconsProvider';
 import { ModalProvider } from './components/Modal/ModalProvider';
 import { createTheme, resetGlobal, type Theme } from './theme';
 
-type EightBaseBoostProviderProps = {
+type BoostProviderProps = {
   theme?: Theme,
   icons?: { [name: string]: React$Node },
   children: React$Node,
 };
 
-class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps> {
+class BoostProvider extends React.Component<BoostProviderProps> {
   theme: *;
 
-  constructor(props: EightBaseBoostProviderProps) {
+  constructor(props: BoostProviderProps) {
     super(props);
 
     this.theme = props.theme || createTheme();
@@ -51,4 +51,4 @@ class EightBaseBoostProvider extends React.Component<EightBaseBoostProviderProps
   }
 }
 
-export { EightBaseBoostProvider };
+export { BoostProvider };

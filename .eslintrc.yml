@@ -8,7 +8,7 @@ globals:
   render: true
   mount: true
   enzymeToJson: true
-  EightBaseBoostProvider: true
+  BoostProvider: true
 
 plugins: [
   react-hooks

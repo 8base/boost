@@ -31,7 +31,7 @@ describe('<Table />', () => {
 
   it('should render table', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Table>
           <Table.Header columns="repeat(6, 1fr)">
             <Table.HeaderCell>Id</Table.HeaderCell>
@@ -42,7 +42,7 @@ describe('<Table />', () => {
           </Table.Body>
           <Table.Footer>Footer</Table.Footer>
         </Table>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Table.Header).at(0).find(Table.HeaderCell).at(0).text()).toBe('Id');

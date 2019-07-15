@@ -13,9 +13,9 @@ describe('<Breadcrumbs />', () => {
     ];
 
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Breadcrumbs pathname="/app/settings/security" routes={ routes } />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Link).at(0).text()).toBe('Dashboard');

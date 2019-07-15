@@ -8,7 +8,7 @@ import { withInfo } from '@storybook/addon-info';
 import * as boost from '../src';
 import { StateContainer } from './StateContainer';
 
-const { EightBaseBoostProvider, createTheme, ...components } = boost;
+const { BoostProvider, createTheme, ...components } = boost;
 
 const theme = createTheme({
   components: {
@@ -28,11 +28,11 @@ const Root = styled('div')`
 
 
 const ThemeDecorator = (storyFn) => (
-  <EightBaseBoostProvider theme={ theme }>
+  <BoostProvider theme={ theme }>
     <Root>
       { storyFn() }
     </Root>
-  </EightBaseBoostProvider>
+  </BoostProvider>
 );
 
 export const asStory = (name: string, module: *, init: *) => {

@@ -5,9 +5,9 @@ import { TextArea } from './';
 describe('<TextArea />', () => {
   it('should render with value', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <TextArea value="some-text" />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find('textarea').prop('value')).toBe('some-text');

@@ -30,7 +30,7 @@ describe('<Card />', () => {
 
   it('should render Card components with render prop', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Card someArg={ 42 } padding="xl">
           { ({ someArg }: *) => (
             <React.Fragment>
@@ -42,7 +42,7 @@ describe('<Card />', () => {
             </React.Fragment>
           ) }
         </Card>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Card.Body).text()).toBe('Body 42');

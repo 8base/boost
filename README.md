@@ -13,14 +13,14 @@ yarn storybook
 ### Basic usage
 
 ```js
-import { EightBaseBoostProvider, Button } from '@8base/boost';
+import { BoostProvider, Button } from '@8base/boost';
 
 const App = () => {
   return (
-    <EightBaseBoostProvider>
+    <BoostProvider>
       ...
       <Button>Some Text</Button>
-    </EightBaseBoostProvider>
+    </BoostProvider>
   )
 }
 ```
@@ -28,7 +28,7 @@ const App = () => {
 ### Usage with custom theme
 
 ```js
-import { EightBaseBoostProvider, createTheme } from '@8base/boost';
+import { BoostProvider, createTheme } from '@8base/boost';
 
 
 const customTheme = createTheme({
@@ -66,9 +66,9 @@ const customTheme = createTheme({
 
 const App = () => {
   return (
-    <EightBaseBoostProvider theme={ customTheme }>
+    <BoostProvider theme={ customTheme }>
       ...
-    </EightBaseBoostProvider>
+    </BoostProvider>
   )
 }
 ```
@@ -81,7 +81,7 @@ To expand icons pack you should add [babel-plugin-inline-react-svg](https://www.
 components manual.
 
 ```js
-import { EightBaseBoostProvider, createTheme } from '@8base/boost';
+import { BoostProvider, createTheme } from '@8base/boost';
 
 import SomeSvgIcon from './some-svg-icon.svg';
 import AnotherSvgIcon from './another-svg-icon.svg';
@@ -93,10 +93,10 @@ const icons = {
 
 const App = () => {
   return (
-    <EightBaseBoostProvider icons={ icons }>
+    <BoostProvider icons={ icons }>
       ...
       <Icon name="AnotherSvgIcon" size="lg" color="RED" />
-    </EightBaseBoostProvider>
+    </BoostProvider>
   )
 }
 ```
@@ -106,14 +106,14 @@ const App = () => {
 At the first you need to add install aswesome font to the index.html [as described in the fontawesome docs](https://fontawesome.com/start).
 
 ```js
-import { EightBaseBoostProvider, createTheme } from '@8base/boost';
+import { BoostProvider, createTheme } from '@8base/boost';
 
 const App = () => {
   return (
-    <EightBaseBoostProvider>
+    <BoostProvider>
       ...
       <Icon className="fas fa-igloo" color="RED" size="lg" />
-    </EightBaseBoostProvider>
+    </BoostProvider>
   )
 }
 ```

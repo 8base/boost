@@ -18,7 +18,7 @@ describe('<Select />', () => {
     const components = {};
 
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Select
           clearable={ clearable }
           multiple={ multiple }
@@ -32,7 +32,7 @@ describe('<Select />', () => {
           components={ components }
           stretch={ stretch }
         />
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     const { children, ...passedStyledProps } = wrapper.find(SelectTag).props();

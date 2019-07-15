@@ -37,7 +37,7 @@ describe('<Form />', () => {
 
   it('should render form components content', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Form>
           <Form.Error error="Some error" />
           <Form.Section>
@@ -53,7 +53,7 @@ describe('<Form />', () => {
             </Form.SectionBody>
           </Form.Section>
         </Form>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Form.SectionTitle).at(0).text()).toBe('Some section 1');

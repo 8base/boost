@@ -25,13 +25,13 @@ describe('<Menu />', () => {
 
   it('should render Menu components content', () => {
     const wrapper = mount(
-      <EightBaseBoostProvider>
+      <BoostProvider>
         <Menu>
           <Menu.Item>Tramman</Menu.Item>
           <Menu.Item>Gripman</Menu.Item>
           <Menu.Item>Proalliance</Menu.Item>
         </Menu>
-      </EightBaseBoostProvider>,
+      </BoostProvider>,
     );
 
     expect(wrapper.find(Menu.Item).at(0).text()).toBe('Tramman');

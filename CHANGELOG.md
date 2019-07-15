@@ -880,7 +880,7 @@
 
 ### Bug Fixes
 
-* **EightBaseBoostProvider:** rid of unnecessary trash ([64c82a3](https://github.com/8base/boost/commit/64c82a3))
+* **BoostProvider:** rid of unnecessary trash ([64c82a3](https://github.com/8base/boost/commit/64c82a3))
 * **Select:** fix height ([c40f2b2](https://github.com/8base/boost/commit/c40f2b2))
 
 

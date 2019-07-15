@@ -1,3 +1,13 @@
+<a name="0.25.0"></a>
+# [0.25.0](https://github.com/8base/boost/compare/v0.24.0...v0.25.0) (2019-07-15)
+
+
+### Bug Fixes
+
+* **Select:** find option by value when options contains option groups ([c53a53f](https://github.com/8base/boost/commit/c53a53f))
+
+
+
 <a name="0.24.0"></a>
 # [0.24.0](https://github.com/8base/boost/compare/v0.23.1...v0.24.0) (2019-07-15)
 

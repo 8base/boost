@@ -1,3 +1,13 @@
+<a name="0.25.1"></a>
+## [0.25.1](https://github.com/8base/boost/compare/v0.25.0...v0.25.1) (2019-07-15)
+
+
+### Features
+
+* **Icon:** add DataRelation icon ([07eff8f](https://github.com/8base/boost/commit/07eff8f))
+
+
+
 <a name="0.25.0"></a>
 # [0.25.0](https://github.com/8base/boost/compare/v0.24.0...v0.25.0) (2019-07-15)
 

@@ -13,6 +13,7 @@ import Contract from './Contract.svg';
 import Customers from './Customers.svg';
 import Database from './Database.svg';
 import DataBuilder from './DataBuilder.svg';
+import DataRelation from './DataRelation.svg';
 import Delete from './Delete.svg';
 import Diagram from './Diagram.svg';
 import Discord from './Discord.svg';
@@ -60,6 +61,7 @@ export {
   Customers,
   Database,
   DataBuilder,
+  DataRelation,
   Delete,
   Diagram,
   Discord,

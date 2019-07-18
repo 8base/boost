@@ -20,14 +20,30 @@ export type IconProps = {
   title?: string,
   /** possible types of the css cursor property */
   cursor?: 'pointer' | 'default' | 'auto',
+  //** allow pass props to an Icon */
+  children?: (Glyph: React$Component<Object, null>) => React$Node,
 };
 
-const Icon = ({ name, className, ...rest }: IconProps) => {
-
+const Icon = ({ name, className, children, title, ...rest }: IconProps) => {
   return (
     <IconsConsumer>
       { ({ icons = {}}) => {
         const Glyph: any = icons[name] || glyphs[name];
+
+        if (typeof children === 'function') {
+          return (
+            <IconWrapperTag tagName="span" { ...rest }>
+              <IconSvgTag
+                tagName="i"
+                title={ title }
+                modifiers={ rest }
+                className={ className }
+              >
+                { children(Glyph) }
+              </IconSvgTag>
+            </IconWrapperTag>
+          );
+        }
 
         return (
           <IconWrapperTag tagName="span" { ...rest }>
@@ -35,14 +51,14 @@ const Icon = ({ name, className, ...rest }: IconProps) => {
               <When condition={ !!className && !Glyph }>
                 <IconFontTag
                   tagName="i"
-                  title={ rest.title }
+                  title={ title }
                   modifiers={ rest }
                 />
               </When>
               <When condition={ !!Glyph }>
                 <IconSvgTag
                   tagName="i"
-                  title={ rest.title }
+                  title={ title }
                   modifiers={ rest }
                   className={ className }
                 >

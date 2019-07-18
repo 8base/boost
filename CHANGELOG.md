@@ -1,3 +1,18 @@
+<a name="0.25.2"></a>
+## [0.25.2](https://github.com/8base/boost/compare/v0.25.1...v0.25.2) (2019-07-18)
+
+
+### Bug Fixes
+
+* **Select:** pass menuIsOpen ([61bcaff](https://github.com/8base/boost/commit/61bcaff))
+
+
+### Features
+
+* **Icon:** adds render prop. ([6aa7a87](https://github.com/8base/boost/commit/6aa7a87))
+
+
+
 <a name="0.25.1"></a>
 ## [0.25.1](https://github.com/8base/boost/compare/v0.25.0...v0.25.1) (2019-07-15)
 

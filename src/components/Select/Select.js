@@ -20,6 +20,7 @@ type SelectProps = {|
   clearable?: boolean,
   hasError?: boolean,
   withPortal?: boolean,
+  menuIsOpen?: boolean,
   zIndex?: string | number,
   valueComponent?: React$Node,
   components?: Object,
@@ -150,6 +151,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       formatOptionLabel,
       inputValue,
       onInputChange,
+      menuIsOpen,
       ...rest
     } = this.props;
 
@@ -174,6 +176,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           formatOptionLabel={ formatOptionLabel }
           inputValue={ inputValue }
           onInputChange={ onInputChange }
+          menuIsOpen={ menuIsOpen }
         />
       </SelectTag>
     );

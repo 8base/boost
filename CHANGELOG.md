@@ -1,3 +1,13 @@
+<a name="0.25.3"></a>
+## [0.25.3](https://github.com/8base/boost/compare/v0.25.2...v0.25.3) (2019-07-22)
+
+
+### Bug Fixes
+
+* **Checkbox:** rid of unnecessary overflow ([0f9dc91](https://github.com/8base/boost/commit/0f9dc91))
+
+
+
 <a name="0.25.2"></a>
 ## [0.25.2](https://github.com/8base/boost/compare/v0.25.1...v0.25.2) (2019-07-18)
 

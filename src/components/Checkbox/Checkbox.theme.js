@@ -88,7 +88,6 @@ const [CheckboxWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, {
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
-    overflow: 'hidden',
   },
 });
 

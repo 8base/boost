@@ -52,4 +52,5 @@ export { TopBar } from './TopBar';
 export { NoData } from './NoData';
 export { Pagination } from './Pagination';
 export { Indicator } from './Indicator';
+export { Divider } from './Divider';
 

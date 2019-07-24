@@ -9,6 +9,7 @@ export const paddingSizes = {
 };
 
 export const gapSizes = {
+  noSet: '',
   none: '0',
   xs: '4px',
   sm: '8px',

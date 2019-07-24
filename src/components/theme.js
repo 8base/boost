@@ -42,6 +42,7 @@ import { theme as textTheme } from './Text';
 import { theme as tooltipTheme } from './Tooltip';
 import { theme as topBarTheme } from './TopBar';
 import { theme as treeSelectTheme } from './TreeSelect';
+import { theme as dividerTheme } from './Divider';
 
 
 export const theme = {
@@ -87,4 +88,5 @@ export const theme = {
   ...tooltipTheme,
   ...topBarTheme,
   ...treeSelectTheme,
+  ...dividerTheme,
 };

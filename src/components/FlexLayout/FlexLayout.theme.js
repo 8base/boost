@@ -7,7 +7,7 @@ const name = 'flex-layout';
 
 
 const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) =>
-  direction === 'row'
+  (direction === 'row' && gapProp !== 'noSet')
     ? {
       '&:not(:last-child)': {
         marginRight: gapSizes[gapProp],

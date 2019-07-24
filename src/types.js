@@ -26,7 +26,7 @@ export type MetaType = {|
   visited?: boolean
 |};
 
-export type PropSizes = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+export type PropSizes = 'noSet' | 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 export type PropLayout = 'start' | 'end' | 'between' | 'around' | 'center';
 

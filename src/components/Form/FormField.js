@@ -33,6 +33,7 @@ const [FormLabel, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES 
     lineHeight: SIZES.OVERLINE_1_LH,
     color: COLORS.SECONDARY_TEXT_COLOR,
     marginLeft: props.direction === 'row' ? '8px' : 0,
+    marginBottom: '4px',
   }),
 }));
 

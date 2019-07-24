@@ -71,7 +71,7 @@ const [RadioTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: *):
     color: COLORS.SECONDARY_TEXT_COLOR,
     fontSize: COLORS.BODY_TEXT,
     cursor: 'pointer',
-    paddingLeft: '12px',
+    paddingLeft: '8px',
   },
 }));
 

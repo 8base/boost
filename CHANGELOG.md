@@ -1,3 +1,19 @@
+<a name="0.26.0"></a>
+# [0.26.0](https://github.com/8base/boost/compare/v0.25.3...v0.26.0) (2019-07-24)
+
+
+### Bug Fixes
+
+* **components:** adds minor fixes in spacing. ([dfba4fb](https://github.com/8base/boost/commit/dfba4fb))
+
+
+### Features
+
+* **Divider:** adds Divider component ([537a1e5](https://github.com/8base/boost/commit/537a1e5))
+* **FlexLayout:** adds noSet gap. ([fec54a9](https://github.com/8base/boost/commit/fec54a9))
+
+
+
 <a name="0.25.3"></a>
 ## [0.25.3](https://github.com/8base/boost/compare/v0.25.2...v0.25.3) (2019-07-22)
 

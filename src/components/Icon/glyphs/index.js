@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
+import Add from './Add.svg';
 import Alert from './Alert.svg';
 import APIToken from './APIToken.svg';
 import Check from './Check.svg';
@@ -49,6 +50,7 @@ import Trashcan from './Trashcan.svg';
 import TreeView from './TreeView.svg';
 
 export {
+  Add,
   Alert,
   APIToken,
   Check,

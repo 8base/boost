@@ -1,3 +1,19 @@
+<a name="0.26.2"></a>
+## [0.26.2](https://github.com/8base/boost/compare/v0.26.1...v0.26.2) (2019-08-01)
+
+
+### Bug Fixes
+
+* **Divider:** fixes margins. ([becc1ea](https://github.com/8base/boost/commit/becc1ea))
+* **FlexLayout:** fixes noSet gap. ([de3d6dc](https://github.com/8base/boost/commit/de3d6dc))
+
+
+### Features
+
+* **Navigation:** adds parentExpanded prop. ([f3a8b82](https://github.com/8base/boost/commit/f3a8b82))
+
+
+
 <a name="0.26.1"></a>
 ## [0.26.1](https://github.com/8base/boost/compare/v0.26.0...v0.26.1) (2019-07-29)
 

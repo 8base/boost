@@ -17,6 +17,7 @@ exports[`<Navigation /> should shallow navigation 1`] = `
     icon="Trashcan"
     key=".0"
     label="Jobs"
+    parentExpanded={false}
     tagName="a"
   />
 </Boost(navigation)>

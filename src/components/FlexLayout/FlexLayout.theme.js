@@ -6,18 +6,23 @@ import { paddingSizes, gapSizes, justifyContentStyles, alignContentStyles, align
 const name = 'flex-layout';
 
 
-const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) =>
-  (direction === 'row' && gapProp !== 'noSet')
-    ? {
-      '&:not(:last-child)': {
-        marginRight: gapSizes[gapProp],
-      },
-    }
-    : {
-      '&:not(:last-child)': {
-        marginBottom: gapSizes[gapProp],
-      },
-    };
+const getGapStyle = (direction: 'row' | 'column', gapProp: $Keys<typeof gapSizes>) => {
+  if (gapProp !== 'noSet') {
+    return (direction === 'row')
+      ? {
+        '&:not(:last-child)': {
+          marginRight: gapSizes[gapProp],
+        },
+      }
+      : {
+        '&:not(:last-child)': {
+          marginBottom: gapSizes[gapProp],
+        },
+      };
+  }
+
+  return {};
+};
 
 const getGrowChildrenStyles = (growChildren: boolean) =>
   growChildren

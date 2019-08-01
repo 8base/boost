@@ -16,6 +16,7 @@ type NavigationProps = {
 
 type NavigationState = {
   expandedWidth?: string,
+  expanded: boolean,
 };
 
 class Navigation extends React.Component<NavigationProps, NavigationState> {
@@ -27,6 +28,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
 
   state = {
     expandedWidth: this.props.expandedWidth,
+    expanded: false,
   }
 
   // $FlowFixMe
@@ -63,22 +65,34 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
     if (this.navRef.current) {
       this.navRef.current.style.width = this.state.expandedWidth;
     }
+
+    this.setState({
+      expanded: true,
+    });
   }
 
   onMouseLeave = () => {
     if (this.navRef.current) {
       this.navRef.current.style.width = this.props.collapsedWidth;
     }
+
+    this.setState({
+      expanded: false,
+    });
   }
 
   render() {
     const { color, children, ...rest } = this.props;
+    const { expanded } = this.state;
 
     return (
       <NavigationTag { ...rest } insideRef={ this.navRef } color={ color } tagName="nav">
         {
           React.Children.map(children, child =>
-            React.cloneElement(child, { color: child.props.color || color }),
+            React.cloneElement(child, {
+              color: child.props.color || color,
+              parentExpanded: expanded,
+            }),
           )
         }
       </NavigationTag>

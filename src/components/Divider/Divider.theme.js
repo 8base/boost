@@ -8,8 +8,8 @@ const [DividerOuter, themeOuter] = createThemeTag(name, () => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'stretch',
-    marginTop: '32px',
-    marginBottom: '32px',
+    marginTop: '24px',
+    marginBottom: '24px',
     height: '18px',
   },
 }));

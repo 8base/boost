@@ -29,7 +29,9 @@ type TooltipProps = {
   /** Possible tooltip trigger */
   trigger?: 'hover' | 'click',
   /** Replace tooltip message to the dom root by the portal */
-  withPortal?: boolean
+  withPortal?: boolean,
+  /** Whether events (resize, scroll) are initially enabled */
+  eventsEnabled?: boolean
 }
 
 type TooltipState = {
@@ -55,7 +57,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
       };
     }
 
-    openTooltip =() => this.setState({ isOpen: true });
+    openTooltip = () => this.setState({ isOpen: true });
     closeTooltip = () => this.setState({ isOpen: false });
     toggleTooltip = () => this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
 
@@ -65,13 +67,13 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     };
 
     renderTooltipMessage = () => {
-      const { placement, withPortal, message, ...rest } = this.props;
+      const { placement, withPortal, message, eventsEnabled, ...rest } = this.props;
       const { isOpen } = this.state;
       const PortalCondComponent = withPortal ? Portal : React.Fragment;
 
       return (
         <PortalCondComponent>
-          <Popper placement={ placement }>
+          <Popper placement={ placement } eventsEnabled={ eventsEnabled }>
             { ({ ref, style, placement }) => (
               <If condition={ isOpen }>
                 <TooltipMessageTag
@@ -96,7 +98,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     }
 
     render() {
-      const { children, tagName, cursor, placement, message, trigger, ...rest } = this.props;
+      const { children, tagName, cursor, placement, message, trigger, eventsEnabled, ...rest } = this.props;
       const { isOpen } = this.state;
 
       const targetTriggerEvents = typeof children === 'function'

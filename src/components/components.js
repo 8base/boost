@@ -53,4 +53,5 @@ export { NoData } from './NoData';
 export { Pagination } from './Pagination';
 export { Indicator } from './Indicator';
 export { Divider } from './Divider';
+export { Tab } from './Tab';
 

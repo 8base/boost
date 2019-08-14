@@ -1,3 +1,18 @@
+<a name="0.27.1"></a>
+## [0.27.1](https://github.com/8base/boost/compare/v0.27.0...v0.27.1) (2019-08-14)
+
+
+### Bug Fixes
+
+* **Table:** index cell width ([f84ce26](https://github.com/8base/boost/commit/f84ce26))
+
+
+### Features
+
+* **Menu:** add item disabled state ([dd8adfd](https://github.com/8base/boost/commit/dd8adfd))
+
+
+
 <a name="0.27.0"></a>
 # [0.27.0](https://github.com/8base/boost/compare/v0.26.3...v0.27.0) (2019-08-14)
 

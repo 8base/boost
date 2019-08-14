@@ -1,3 +1,13 @@
+<a name="0.27.0"></a>
+# [0.27.0](https://github.com/8base/boost/compare/v0.26.3...v0.27.0) (2019-08-14)
+
+
+### Features
+
+* **Tab:** adds component. ([325c182](https://github.com/8base/boost/commit/325c182))
+
+
+
 <a name="0.26.3"></a>
 ## [0.26.3](https://github.com/8base/boost/compare/v0.26.2...v0.26.3) (2019-08-07)
 

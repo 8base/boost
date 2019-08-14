@@ -6,6 +6,7 @@ import { MenuItemTag } from './Menu.theme';
 
 type MenuItemProps = {
   children?: React$Node,
+  disabled?: boolean,
 };
 
 

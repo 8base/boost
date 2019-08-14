@@ -38,6 +38,13 @@ const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, SI
       color: COLORS.BLACK,
     },
   },
+  modifiers: {
+    disabled: {
+      pointerEvents: 'none',
+      cursor: 'default',
+      color: COLORS.DISABLED_COLOR,
+    },
+  },
 }));
 
 

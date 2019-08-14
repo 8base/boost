@@ -91,7 +91,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     const gridColumns = [];
 
     if (withSelection) {
-      gridColumns.push('80px');
+      gridColumns.push('72px');
     }
 
     for (let i = 0; i < columns.length; i++) {

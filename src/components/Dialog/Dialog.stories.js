@@ -46,7 +46,7 @@ export default (asStory) => {
         </Dialog>
       ))
       .add('with scroll', () => (
-        <Dialog size="sm" isOpen data-e2e-id="default-dialog">
+        <Dialog size="sm" isOpen data-e2e-id="default-dialog" stretch>
           <Dialog.Header title="Mark Job as Completed" />
           <Dialog.Body scrollable>
             <Column>

@@ -14,7 +14,13 @@ export default (asStory) => {
         <div style={{ border: '1px solid gray', height: '300px' }}>
           <Loader stretch />
         </div>
+      ))
+      .add('with color', () => (
+        <Row alignItems="center" gap="lg" flexWrap="wrap">
+          <Loader size="md" color="PRIMARY" />
+          <Loader size="md" color="SUCCESS" />
+          <Loader size="md" color="PURPLE" />
+        </Row>
       ));
   });
 };
-

@@ -1,9 +1,11 @@
-import { createThemeTag } from '../../theme/createThemeTag';
+// @flow
+import fp from 'lodash/fp';
 
+import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'loader';
 
-const [LoaderTag, themeLoader] = createThemeTag(name, {
+const [LoaderTag, themeLoader] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'inline-flex',
   },
@@ -22,8 +24,9 @@ const [LoaderTag, themeLoader] = createThemeTag(name, {
         height: '80px',
       },
     },
+    color: fp.mapValues(color => ({ color }), COLORS),
   },
-});
+}));
 
 const [LoaderWrapperTag, themeWrappers] = createThemeTag(`${name}Wrapper`, {
   root: {
@@ -42,4 +45,3 @@ const theme = {
 };
 
 export { LoaderTag, LoaderWrapperTag, theme };
-

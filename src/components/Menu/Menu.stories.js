@@ -7,7 +7,7 @@ export default (asStory) => {
         <Menu>
           <Menu.Item>Tramman</Menu.Item>
           <Menu.Item>Gripman</Menu.Item>
-          <Menu.Item>Proalliance</Menu.Item>
+          <Menu.Item disabled>Proalliance</Menu.Item>
         </Menu>
       ));
   });

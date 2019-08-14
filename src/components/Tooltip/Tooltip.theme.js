@@ -1,4 +1,5 @@
 import { createThemeTag } from '../../theme/createThemeTag';
+import { Z_INDEX } from '../../theme';
 
 
 const name = 'tooltip';
@@ -11,6 +12,7 @@ const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`
     fontSize: SIZES.OVERLINE_2,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     boxShadow: '2px 0 10px 0 rgba(0, 0, 0, 0.16)',
+    zIndex: Z_INDEX.TOOLTIP,
   },
 }));
 

@@ -1,3 +1,13 @@
+<a name="0.27.2"></a>
+## [0.27.2](https://github.com/8base/boost/compare/v0.27.1...v0.27.2) (2019-08-14)
+
+
+### Bug Fixes
+
+* **Tooltip:** z-index ([96e8456](https://github.com/8base/boost/commit/96e8456))
+
+
+
 <a name="0.27.1"></a>
 ## [0.27.1](https://github.com/8base/boost/compare/v0.27.0...v0.27.1) (2019-08-14)
 

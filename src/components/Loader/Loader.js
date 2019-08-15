@@ -1,11 +1,8 @@
 // @flow
 import React from 'react';
 
-import { LoaderTag, LoaderWrapperTag } from './Loader.theme';
+import { LoaderTag, LoaderWrapperTag, LoaderCircleTag } from './Loader.theme';
 import { COLORS } from '../../theme';
-
-// $FlowIgnore
-import LoaderSvg from './Loader.svg';
 
 type LoaderProps = {
   size?: 'sm' | 'md' | 'lg',
@@ -16,7 +13,8 @@ type LoaderProps = {
 function Loader(props: LoaderProps) {
   const uiLoader = (
     <LoaderTag { ...props } tagName="div" role="loader">
-      <LoaderSvg width="100%" height="100%" />
+      <LoaderCircleTag { ...props } delay="0" />
+      <LoaderCircleTag { ...props } delay="0.9s" />
     </LoaderTag>
   );
 

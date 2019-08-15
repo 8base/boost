@@ -1,13 +1,35 @@
 // @flow
 import fp from 'lodash/fp';
+import { keyframes } from 'emotion';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'loader';
 
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+`;
+
+const sizeIn = keyframes`
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
 const [LoaderTag, themeLoader] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'inline-flex',
+    position: 'relative',
   },
   modifiers: {
     size: {
@@ -28,6 +50,35 @@ const [LoaderTag, themeLoader] = createThemeTag(name, ({ COLORS }: *) => ({
   },
 }));
 
+const [LoaderCircleTag, themeLoaderCircle] = createThemeTag(`${name}Circle`, ({ COLORS }: *) => ({
+  root: ({ delay }) => ({
+    borderRadius: '100%',
+    border: '4px solid #000',
+    position: 'absolute',
+    transform: 'translate(-50%, -50%)',
+    left: '50%',
+    top: '50%',
+    opacity: '0',
+
+    animation: `${fadeOut} 1.8s cubic-bezier(0.3, 0.61, 0.355, 1) ${delay}, ${sizeIn} 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) ${delay}`,
+    animationIterationCount: 'infinite',
+  }),
+  modifiers: {
+    size: {
+      sm: {
+        borderWidth: '1.6px',
+      },
+      md: {
+        borderWidth: '3.2px',
+      },
+      lg: {
+        borderWidth: '4px',
+      },
+    },
+    color: fp.mapValues(color => ({ borderColor: color }), COLORS),
+  },
+}));
+
 const [LoaderWrapperTag, themeWrappers] = createThemeTag(`${name}Wrapper`, {
   root: {
     display: 'flex',
@@ -41,7 +92,8 @@ const [LoaderWrapperTag, themeWrappers] = createThemeTag(`${name}Wrapper`, {
 
 const theme = {
   ...themeLoader,
+  ...themeLoaderCircle,
   ...themeWrappers,
 };
 
-export { LoaderTag, LoaderWrapperTag, theme };
+export { LoaderTag, LoaderWrapperTag, LoaderCircleTag, theme };

@@ -54,8 +54,8 @@ const Dialog = ({
             <Card padding={ padding } args={ args } onClose={ onClose } stretch={ stretch }>
               {
                 typeof children === 'function'
-                  ? (args) => <DialogInnerTag stretch={ stretch }>{ children(args) }</DialogInnerTag>
-                  : <DialogInnerTag stretch={ stretch }>{ children }</DialogInnerTag>
+                  ? (args) => <DialogInnerTag>{ children(args) }</DialogInnerTag>
+                  : <DialogInnerTag>{ children }</DialogInnerTag>
               }
             </Card>
           </DialogTag>

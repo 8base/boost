@@ -72,11 +72,10 @@ const [DialogInnerTag, themeDialogInner] = createThemeTag('dialogInner', {
       flexDirection: 'column',
       justifyContent: 'flex-start',
     },
+
+    height: '100%',
   },
   modifiers: {
-    stretch: {
-      height: '100%',
-    },
   },
 });
 

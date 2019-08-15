@@ -1,3 +1,13 @@
+<a name="0.27.4"></a>
+## [0.27.4](https://github.com/8base/boost/compare/v0.27.3...v0.27.4) (2019-08-15)
+
+
+### Bug Fixes
+
+* **Dialog:** scroll ([e479cf8](https://github.com/8base/boost/commit/e479cf8))
+
+
+
 <a name="0.27.3"></a>
 ## [0.27.3](https://github.com/8base/boost/compare/v0.27.2...v0.27.3) (2019-08-15)
 

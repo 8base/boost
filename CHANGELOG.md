@@ -1,3 +1,18 @@
+<a name="0.27.3"></a>
+## [0.27.3](https://github.com/8base/boost/compare/v0.27.2...v0.27.3) (2019-08-15)
+
+
+### Bug Fixes
+
+* some icons don't use currentColor ([7cc66f7](https://github.com/8base/boost/commit/7cc66f7))
+
+
+### Features
+
+* **Loader:** rewrite using keyframes ([cedc1b8](https://github.com/8base/boost/commit/cedc1b8))
+
+
+
 <a name="0.27.2"></a>
 ## [0.27.2](https://github.com/8base/boost/compare/v0.27.1...v0.27.2) (2019-08-14)
 

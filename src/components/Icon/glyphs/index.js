@@ -22,6 +22,7 @@ import DismissData from './Dismiss-Data.svg';
 import EditPencil from './EditPencil.svg';
 import EightBase from './EightBase.svg';
 import Environment from './Environment.svg';
+import Expand from './Expand.svg';
 import FirewallOn from './Firewall-On.svg';
 import Gear from './Gear.svg';
 import GraphQL from './GraphQL.svg';
@@ -71,6 +72,7 @@ export {
   EditPencil,
   EightBase,
   Environment,
+  Expand,
   FirewallOn,
   Gear,
   GraphQL,

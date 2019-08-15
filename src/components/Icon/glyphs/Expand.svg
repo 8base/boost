@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".957" transform="translate(1 1)">
+    <path d="M-4.74731365e-13,-1.99840144e-14 L7.69970294,7.69970294"/>
+    <polyline points="5.133 0 0 0 0 5.133"/>
+    <path d="M-4.74731365e-13,21.815825 L7.69970294,14.1161221"/>
+    <polyline points="5.133 21.816 0 21.816 0 16.683"/>
+    <path d="M21.815825,-1.99840144e-14 L14.1161221,7.69970294"/>
+    <polyline points="16.683 0 21.816 0 21.816 5.133"/>
+    <path d="M21.815825,21.815825 L14.1161221,14.1161221"/>
+    <polyline points="16.683 21.816 21.816 21.816 21.816 16.683"/>
+  </g>
+</svg>

@@ -3,6 +3,7 @@ import React from 'react';
 import { Manager, Popper, Reference } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';
 import { Portal } from 'react-portal';
+import { cx } from 'emotion';
 
 import { TooltipTargetTag, TooltipMessageTag } from './Tooltip.theme';
 
@@ -67,7 +68,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     };
 
     renderTooltipMessage = () => {
-      const { placement, withPortal, message, eventsEnabled, ...rest } = this.props;
+      const { placement, withPortal, message, eventsEnabled, className, ...rest } = this.props;
       const { isOpen } = this.state;
       const PortalCondComponent = withPortal ? Portal : React.Fragment;
 
@@ -77,8 +78,8 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
             { ({ ref, style, placement }) => (
               <If condition={ isOpen }>
                 <TooltipMessageTag
-                  modifiers={ rest }
-                  className="ignore-react-onclickoutside"
+                  { ...rest }
+                  className={ cx('ignore-react-onclickoutside', className) }
                   tagName="div"
                   insideRef={ ref }
                   data-placement={ placement }
@@ -98,7 +99,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
     }
 
     render() {
-      const { children, tagName, cursor, placement, message, trigger, eventsEnabled, ...rest } = this.props;
+      const { children, tagName, cursor, trigger } = this.props;
       const { isOpen } = this.state;
 
       const targetTriggerEvents = typeof children === 'function'
@@ -126,7 +127,6 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
           <Reference>
             { ({ ref }) => (
               <TooltipTargetTag
-                { ...rest }
                 { ...targetTriggerEvents }
                 style={{ cursor }}
                 tagName={ tagName }

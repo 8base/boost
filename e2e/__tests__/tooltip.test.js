@@ -11,10 +11,10 @@ const SUITES = [
       const message = await iframe.waitForXPath('//*[contains(@class,"ignore-react-onclickoutside")]');
       await message.click();
     }),
+  baisy.suite('Components/Tooltip', 'with theme'),
 ];
 
 
 SUITES.map(suite => {
   it(suite.getTestName(), suite.testStory, 20000);
 });
-

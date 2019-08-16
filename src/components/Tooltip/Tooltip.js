@@ -32,7 +32,9 @@ type TooltipProps = {
   /** Replace tooltip message to the dom root by the portal */
   withPortal?: boolean,
   /** Whether events (resize, scroll) are initially enabled */
-  eventsEnabled?: boolean
+  eventsEnabled?: boolean,
+  /** Class name for tooltip */
+  className?: string,
 }
 
 type TooltipState = {

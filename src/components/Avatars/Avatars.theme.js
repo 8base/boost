@@ -9,6 +9,10 @@ const [AvatarsTag, themeAvatars] = createThemeTag(name, () => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+
+    '& > *:not(:first-child)': {
+      marginLeft: -10,
+    },
   }),
 }));
 
@@ -24,7 +28,6 @@ const [AvatarsCounterTag, themeCounterAvatars] = createThemeTag(`${name}Counter`
     color: COLORS.WHITE,
     fontWeight: 600,
     fontSize: '100%',
-    marginLeft: -10,
     cursor: 'pointer',
     zIndex: 2,
   }),
@@ -69,7 +72,6 @@ const [AvatarsHandleTag, themeHandleAvatars] = createThemeTag(`${name}Handle`, (
     position: 'relative',
     border: `1px dashed ${COLORS.LIGHT_GRAY1}`,
     color: COLORS.PRIMARY_TEXT_COLOR,
-    marginLeft: -10,
     cursor: 'pointer',
     zIndex: 1,
 
@@ -114,4 +116,3 @@ const theme = {
 };
 
 export { theme, AvatarsTag, AvatarsHandleTag, AvatarsCounterTag };
-

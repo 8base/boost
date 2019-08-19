@@ -144,6 +144,7 @@ exports[`<Dropdown /> should render dropdown 1`] = `
                       padding="none"
                       pin="left"
                       placement="bottom"
+                      positionFixed={false}
                       preventDefault={false}
                       stopPropagation={false}
                       withPortal={false}

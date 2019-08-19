@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { Dropdown } from './';
+import { Popper } from 'react-popper';
 
 
 describe('<Dropdown />', () => {
@@ -19,7 +20,19 @@ describe('<Dropdown />', () => {
   });
 
 
-  it('should open and close dropdwon by changing the props', () => {
+  it('should pass props to Popper component', () => {
+    const wrapper = mount(
+      <Dropdown isOpen>
+        <Dropdown.Head><div /></Dropdown.Head>
+        <Dropdown.Body positionFixed><div /></Dropdown.Body>
+      </Dropdown>,
+    );
+
+    expect(wrapper.find(Popper).props().positionFixed).toBeTruthy();
+  });
+
+
+  it('should open and close dropdown by changing the props', () => {
     const wrapper = mount(
       <Dropdown isOpen={ false }>
         <Dropdown.Head>Head</Dropdown.Head>
@@ -85,7 +98,7 @@ describe('<Dropdown />', () => {
   });
 
 
-  it('shouldn\'t open and close dropdwon when disabled=true', () => {
+  it('shouldn\'t open and close dropdown when disabled=true', () => {
     const wrapper = mount(
       <Dropdown>
         <Dropdown.Head disabled>Head</Dropdown.Head>

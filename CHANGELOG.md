@@ -1,3 +1,14 @@
+<a name="0.27.5"></a>
+## [0.27.5](https://github.com/8base/boost/compare/v0.27.4...v0.27.5) (2019-08-19)
+
+
+### Features
+
+* **Dropdown:** add positionFixed property ([3878492](https://github.com/8base/boost/commit/3878492))
+* **Icon:** add expand icon ([f603954](https://github.com/8base/boost/commit/f603954))
+
+
+
 <a name="0.27.4"></a>
 ## [0.27.4](https://github.com/8base/boost/compare/v0.27.3...v0.27.4) (2019-08-15)
 

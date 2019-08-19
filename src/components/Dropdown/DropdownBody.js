@@ -22,6 +22,8 @@ type DropdownBodyProps = {
   pin?: 'left' | 'right',
   /** Set body offset relative target */
   offset?: PropSizes,
+  /** Use fixed position instead of absolute */
+  positionFixed?: boolean,
   /** Manual set width */
   width?: number,
   /** Popper js option https://popper.js.org/popper-documentation.html#modifiers..preventOverflow */
@@ -83,6 +85,7 @@ const DropdownBody = dropdownBodyEnhancer(
     isOpen: false,
     forceRender: false,
     withPortal: false,
+    positionFixed: false,
     closeOnClickOutside: true,
   }
 
@@ -128,7 +131,7 @@ const DropdownBody = dropdownBodyEnhancer(
 
 
   render() {
-      const { withPortal, forceRender, dropdown: { isOpen }, ...rest } = this.props;
+      const { withPortal, forceRender, positionFixed, dropdown: { isOpen }, ...rest } = this.props;
 
       const popperPlacement = this.getPopperPlacement();
       const popperModifiers = this.getPopperModifiers();
@@ -142,6 +145,7 @@ const DropdownBody = dropdownBodyEnhancer(
             <Popper
               placement={ popperPlacement }
               modifiers={ popperModifiers }
+              positionFixed={ positionFixed }
             >
               { ({ ref, style, placement }) => (
                 <DropdownBodyTag

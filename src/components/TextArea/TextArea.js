@@ -12,6 +12,7 @@ type TextAreaProps = {
   rows?: number,
   value?: string,
   stretch?: boolean,
+  hasError?: boolean,
 };
 
 class TextArea extends React.Component<TextAreaProps> {

@@ -14,6 +14,9 @@ export default (asStory) => {
       ))
       .add('with disabled', () => (
         <TextAreaField label="Area" input={{ name: 'input', onChange: () => null }} placeholder="placeholder" disabled />
+      ))
+      .add('with error', () => (
+        <TextAreaField label="Area" input={{ name: 'input', onChange: () => null }} meta={{ error: 'Required', touched: true }} placeholder="placeholder" />
       ));
   });
 };

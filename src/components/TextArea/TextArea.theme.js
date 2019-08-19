@@ -27,6 +27,9 @@ const [TextAreaTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
       height: '100%',
       width: '100%',
     },
+    hasError: {
+      borderColor: `${COLORS.DANGER}`,
+    },
   },
 }));
 

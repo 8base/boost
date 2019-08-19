@@ -4,6 +4,7 @@ import React from 'react';
 
 import { TextArea } from '../TextArea';
 import { FormField } from '../Form/FormField';
+import * as formUtils from '../../utils/forms';
 
 type TextAreaFieldProps = {
   /** number of textarea columns */
@@ -35,10 +36,13 @@ function TextAreaField({
   }: TextAreaFieldProps) {
   const { name, value, onChange } = input;
 
+  const hasError = formUtils.hasError(meta);
+
   return (
     <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
       <TextArea
         { ...rest }
+        hasError={ hasError }
         name={ name }
         onChange={ onChange }
         placeholder={ placeholder }

@@ -1,3 +1,18 @@
+<a name="0.27.6"></a>
+## [0.27.6](https://github.com/8base/boost/compare/v0.27.5...v0.27.6) (2019-08-20)
+
+
+### Bug Fixes
+
+* **Icon:** remove dump attributes in svg ([b8b7d25](https://github.com/8base/boost/commit/b8b7d25))
+
+
+### Features
+
+* **TextArea:** add hasError modifier ([c46cf56](https://github.com/8base/boost/commit/c46cf56))
+
+
+
 <a name="0.27.5"></a>
 ## [0.27.5](https://github.com/8base/boost/compare/v0.27.4...v0.27.5) (2019-08-19)
 

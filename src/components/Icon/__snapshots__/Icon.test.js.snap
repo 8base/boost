@@ -13,13 +13,13 @@ exports[`<Icon /> should shallow input 1`] = `
     tagName="span"
   >
     <Tag
-      className="emotion-0 emotion-1"
+      className="css-rkvmzw-StyledTag emotion-0"
       color="DANGER"
       size="md"
       tagName="span"
     >
       <span
-        className="emotion-0 emotion-1"
+        className="css-rkvmzw-StyledTag emotion-0"
       >
         <Boost(iconSvg)
           modifiers={
@@ -32,7 +32,7 @@ exports[`<Icon /> should shallow input 1`] = `
           title="Alert icon"
         >
           <Tag
-            className="emotion-0 emotion-1"
+            className="css-rkvmzw-StyledTag emotion-0"
             modifiers={
               Object {
                 "color": "DANGER",
@@ -43,7 +43,7 @@ exports[`<Icon /> should shallow input 1`] = `
             title="Alert icon"
           >
             <i
-              className="emotion-0 emotion-1"
+              className="css-rkvmzw-StyledTag emotion-0"
               title="Alert icon"
             >
               <Alert

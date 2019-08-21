@@ -1,6 +1,6 @@
 // @flow
 import fp from 'lodash/fp';
-import { keyframes } from 'emotion';
+import { keyframes } from '@emotion/core';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 

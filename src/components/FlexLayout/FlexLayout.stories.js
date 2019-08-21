@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Fragment } from 'react';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 
 const ColorBlock = styled('div')(props => ({
   display: 'flex',
@@ -128,4 +128,3 @@ export default (asStory: *) => {
       ));
   });
 };
-

@@ -3,6 +3,7 @@
 import React from 'react';
 import ReactSelect, { components } from 'react-select';
 import { withTheme } from 'emotion-theming';
+import { type SerializedStyles } from '@emotion/utils';
 
 import { SelectTag } from './Select.theme';
 import { type Theme, COLORS, Z_INDEX } from '../../theme';
@@ -28,6 +29,7 @@ type SelectProps = {|
   formatOptionLabel?: Function,
   /** when stretch is true, width is 100% */
   stretch?: boolean,
+  css?: SerializedStyles,
 |};
 
 type SelectPropsFromHOCs = {|

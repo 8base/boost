@@ -15,6 +15,7 @@ exports[`<SecondaryNavigation /> should shallow SecondaryNavigation item 1`] = `
   hovered={false}
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
+  tagName="div"
 >
   <Boost(secondaryNavigationItemLabel)
     modifiers={Object {}}

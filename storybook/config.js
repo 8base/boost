@@ -1,4 +1,4 @@
-import { configure } from '@storybook/react';
+import { configure, addParameters } from '@storybook/react';
 import { asStory } from './utils';
 
 function loadStories() {
@@ -8,5 +8,11 @@ function loadStories() {
     storiesRequire(filename).default(asStory);
   });
 }
+
+addParameters({
+  options: {
+    showPanel: false,
+  },
+});
 
 configure(loadStories, module);

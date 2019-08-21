@@ -35,6 +35,7 @@ exports[`<Navigation /> should shallow navigation item 1`] = `
         "tagName": "a",
       }
     }
+    tagName="div"
   >
     <Icon
       color="WHITE"
@@ -50,6 +51,7 @@ exports[`<Navigation /> should shallow navigation item 1`] = `
         "tagName": "a",
       }
     }
+    tagName="div"
   >
     Jobs
   </Boost(navigationItemLabel)>

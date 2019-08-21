@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 
 const Container = styled('div')`
   max-width: 100px;
@@ -66,7 +66,7 @@ class CheckboxInderteminateState extends Component<*, Object> {
 export default (asStory: *) => {
   asStory('Components/Checkbox', module, (story, { Checkbox, Column }) => {
     story
-      .add('commmon', () => (
+      .add('common', () => (
         <Column>
           <Checkbox checked />
           <Checkbox label="Without Check" />

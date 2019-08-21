@@ -57,6 +57,7 @@ describe('<Select />', () => {
       hasError,
       'aria-busy': String(loading),
       stretch,
+      tagName: 'div',
     });
   });
 });

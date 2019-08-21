@@ -6,27 +6,23 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'loader';
 
-const fadeOut = keyframes`
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-`;
-
-const sizeIn = keyframes`
+const pulse = keyframes`
   0% {
     width: 0;
     height: 0;
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.6;
   }
   100% {
     width: 100%;
     height: 100%;
+    opacity: 0;
   }
 `;
 
-const [LoaderTag, themeLoader] = createThemeTag(name, ({ COLORS }: *) => ({
+const [LoaderTag, themeLoader] = createThemeTag(name, {
   root: {
     display: 'inline-flex',
     position: 'relative',
@@ -46,9 +42,8 @@ const [LoaderTag, themeLoader] = createThemeTag(name, ({ COLORS }: *) => ({
         height: '80px',
       },
     },
-    color: fp.mapValues(color => ({ color }), COLORS),
   },
-}));
+});
 
 const [LoaderCircleTag, themeLoaderCircle] = createThemeTag(`${name}Circle`, ({ COLORS }: *) => ({
   root: ({ delay }) => ({
@@ -60,7 +55,7 @@ const [LoaderCircleTag, themeLoaderCircle] = createThemeTag(`${name}Circle`, ({ 
     top: '50%',
     opacity: '0',
 
-    animation: `${fadeOut} 1.8s cubic-bezier(0.3, 0.61, 0.355, 1) ${delay}, ${sizeIn} 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) ${delay}`,
+    animation: `${pulse} 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) ${delay}`,
     animationIterationCount: 'infinite',
   }),
   modifiers: {

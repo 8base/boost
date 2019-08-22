@@ -7,20 +7,23 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'navigation';
 
 const [NavigationTag, themeNavigation] = createThemeTag(name, ({ COLORS }) => ({
-  root: {
+  root: ({ expanded, collapsedWidth, expandedWidth }) => ({
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
     transition: 'width 0.3s',
 
-    '&:hover': {
+    ...(expanded ? {
       '.NavigationItem-label': {
         transitionDelay: '0.15s',
         opacity: '1',
         visibility: 'visible',
       },
-    },
-  },
+      width: expandedWidth,
+    } : {
+      width: collapsedWidth,
+    }),
+  }),
   modifiers: {
     color: fp.mapValues((color) => ({
       backgroundColor: color,
@@ -52,8 +55,8 @@ const [NavigationItemTag, themeItemMain] = createThemeTag(`${name}Item`, ({ COLO
 const [NavigationItemIcon, themeItemIcon] = createThemeTag(`${name}ItemIcon`, ({ COLORS }) => ({
   root: {
     display: 'flex',
-    width: '60px',
-    height: '60px',
+    width: '56px',
+    height: '56px',
     flexShrink: '0',
     justifyContent: 'center',
     alignItems: 'center',

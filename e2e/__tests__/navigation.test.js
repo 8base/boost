@@ -3,11 +3,11 @@ import { baisy } from '../setup/TestSuiter';
 
 const SUITES = [
   baisy.suite('Components/Navigation', 'default'),
-  baisy.suite('Components/Navigation', 'default', 'hover')
+  baisy.suite('Components/Navigation', 'default', 'expand')
     .setEnhancer(async (iframe) => {
-      const navigationItem = await iframe.waitForXPath('//*[@data-e2e-id="default-navigation"]//a');
+      const expand = await iframe.waitForXPath('//*[@data-e2e-id="expand"]');
 
-      await navigationItem.hover();
+      await expand.click();
     }),
 ];
 

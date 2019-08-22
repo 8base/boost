@@ -2,13 +2,9 @@
 
 exports[`<Navigation /> should shallow navigation 1`] = `
 <Boost(navigation)
-  collapsedWidth="60px"
+  collapsedWidth={56}
   color="GREEN"
-  insideRef={
-    Object {
-      "current": null,
-    }
-  }
+  expandedWidth={196}
   tagName="nav"
 >
   <NavigationItem
@@ -17,7 +13,6 @@ exports[`<Navigation /> should shallow navigation 1`] = `
     icon="Trashcan"
     key=".0"
     label="Jobs"
-    parentExpanded={false}
     tagName="a"
   />
 </Boost(navigation)>

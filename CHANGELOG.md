@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/8base/boost/compare/v1.0.0...v1.0.1) (2019-08-23)
+
+
+### Bug Fixes
+
+* **global:** babel runtime ([e5f999a](https://github.com/8base/boost/commit/e5f999a))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/8base/boost/compare/v0.27.6...v1.0.0) (2019-08-23)
 

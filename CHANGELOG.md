@@ -1,3 +1,13 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/8base/boost/compare/v0.27.6...v1.0.0) (2019-08-23)
+
+
+### Bug Fixes
+
+* **Loader:** sometimes fadeOut starts earlier ([c1f316d](https://github.com/8base/boost/commit/c1f316d))
+
+
+
 <a name="0.27.6"></a>
 ## [0.27.6](https://github.com/8base/boost/compare/v0.27.5...v0.27.6) (2019-08-20)
 

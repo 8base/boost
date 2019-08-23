@@ -1,8 +1,8 @@
 // @flow
 
-import { injectGlobal } from 'emotion';
+import { css } from '@emotion/core';
 
-const resetGlobal = ({ SIZES }: *) => injectGlobal`
+const resetStyles = ({ SIZES }: *) => css`
   html {
     -webkit-font-smoothing: antialiased;
     font-size: 62.5% !important;
@@ -13,7 +13,7 @@ const resetGlobal = ({ SIZES }: *) => injectGlobal`
     font-size: ${SIZES.BODY_TEXT} !important;
     line-height: ${SIZES.BODY_TEXT_LH} !important;
   }
-  
+
   *, *:after, *:before {
     box-sizing: border-box;
   }
@@ -27,8 +27,8 @@ const resetGlobal = ({ SIZES }: *) => injectGlobal`
   dl, dt, dd, ol, ul, li,
   fieldset, form, label, legend,
   table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
     margin: 0;
@@ -39,7 +39,7 @@ const resetGlobal = ({ SIZES }: *) => injectGlobal`
     vertical-align: baseline;
   }
 
-  article, aside, details, figcaption, figure, 
+  article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
@@ -60,4 +60,4 @@ const resetGlobal = ({ SIZES }: *) => injectGlobal`
   }
 `;
 
-export { resetGlobal };
+export { resetStyles };

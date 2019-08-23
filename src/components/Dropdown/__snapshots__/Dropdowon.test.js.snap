@@ -13,15 +13,16 @@ exports[`<Dropdown /> should render dropdown 1`] = `
       <Boost(dropdown)
         insideRef={[Function]}
         tag="div"
+        tagName="div"
       >
         <Tag
-          className="emotion-0 emotion-1"
+          className="css-rkvmzw-StyledTag emotion-0"
           insideRef={[Function]}
           tag="div"
           tagName="div"
         >
           <div
-            className="emotion-0 emotion-1"
+            className="css-rkvmzw-StyledTag emotion-0"
           >
             <Manager
               tag={false}
@@ -45,29 +46,29 @@ exports[`<Dropdown /> should render dropdown 1`] = `
                     tagName="div"
                   >
                     <Tag
-                      className="ignore-react-onclickoutside-0 emotion-0 emotion-1"
+                      className="ignore-react-onclickoutside-0 css-rkvmzw-StyledTag emotion-0"
                       onClick={[Function]}
                       tagName="div"
                     >
                       <div
-                        className="ignore-react-onclickoutside-0 emotion-0 emotion-1"
+                        className="ignore-react-onclickoutside-0 css-rkvmzw-StyledTag emotion-0"
                         onClick={[Function]}
                       >
                         <Reference>
                           <InnerReference
-                            getReferenceRef={[Function]}
+                            setReferenceNode={[Function]}
                           >
                             <Boost(dropdownHeadTarget)
                               insideRef={[Function]}
                               tagName="div"
                             >
                               <Tag
-                                className="emotion-0 emotion-1"
+                                className="css-rkvmzw-StyledTag emotion-0"
                                 insideRef={[Function]}
                                 tagName="div"
                               >
                                 <div
-                                  className="emotion-0 emotion-1"
+                                  className="css-rkvmzw-StyledTag emotion-0"
                                 >
                                   Head
                                 </div>

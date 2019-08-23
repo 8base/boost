@@ -1,6 +1,6 @@
 // @flow
 
-import { keyframes } from 'react-emotion';
+import { keyframes } from '@emotion/core';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 
@@ -174,4 +174,3 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
 }));
 
 export { ButtonTag, theme };
-

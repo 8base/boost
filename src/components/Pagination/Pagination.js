@@ -2,7 +2,7 @@
 
 import React from 'react';
 import memoize from 'lodash/memoize';
-import { css } from 'emotion';
+import { css } from '@emotion/core';
 
 import { Select } from '../Select';
 import { Button } from '../Button';
@@ -49,7 +49,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
   }
 
   // $FlowFixMe
-  createOnChange = memoize((page) => () => {
+  createOnChange = memoize(page => () => {
     const { onChange, pageSize: pageSizeFormProps } = this.props;
     const { pageSize: pageSizeFromState } = this.state;
 
@@ -78,7 +78,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
   };
 
   // $FlowFixMe
-  getPageSizeOptions = (pageSizeOptions: number[]) => pageSizeOptions.map((value) => ({ value, label: String(value) }));
+  getPageSizeOptions = (pageSizeOptions: number[]) => pageSizeOptions.map(value => ({ value, label: String(value) }));
 
   render() {
     const { page: pageFromProps, pageSize: pageSizeFormProps, total, pageSizeOptions = [], showSizeChanger } = this.props;
@@ -104,13 +104,25 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
 
     return (
       <PaginationTag tagName="div">
-        <Button size="sm" className={ css`flex-shrink: 0;` } onClick={ this.createOnChange(page - 1) } color="neutral" variant="outlined" squared disabled={ page <= 1 }>
+        <Button
+          size="sm"
+          css={ css`
+            flex-shrink: 0;
+          ` }
+          onClick={ this.createOnChange(page - 1) }
+          color="neutral"
+          variant="outlined"
+          squared
+          disabled={ page <= 1 }
+        >
           <Icon name="ChevronLeft" size="xs" />
         </Button>
 
         <PaginationItemsTag>
           <If condition={ leftSide > 1 }>
-            <PaginationItemTag active={ page === 1 } onClick={ this.createOnChange(1) }>1</PaginationItemTag>
+            <PaginationItemTag active={ page === 1 } onClick={ this.createOnChange(1) }>
+              1
+            </PaginationItemTag>
           </If>
 
           <If condition={ showLeftMore }>
@@ -119,13 +131,11 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
             </PaginationItemTag>
           </If>
 
-          {
-            pages.map((index) => (
-              <PaginationItemTag key={ index + start } active={ index + start === page } onClick={ this.createOnChange(index + start) }>
-                { index + start }
-              </PaginationItemTag>
-            ))
-          }
+          { pages.map(index => (
+            <PaginationItemTag key={ index + start } active={ index + start === page } onClick={ this.createOnChange(index + start) }>
+              { index + start }
+            </PaginationItemTag>
+          )) }
 
           <If condition={ showRightMore }>
             <PaginationItemTag disabled>
@@ -134,24 +144,43 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
           </If>
 
           <If condition={ rightSide < numberOfPages }>
-            <PaginationItemTag active={ page === numberOfPages } onClick={ this.createOnChange(numberOfPages) }>{ numberOfPages }</PaginationItemTag>
+            <PaginationItemTag active={ page === numberOfPages } onClick={ this.createOnChange(numberOfPages) }>
+              { numberOfPages }
+            </PaginationItemTag>
           </If>
         </PaginationItemsTag>
 
-        <Button size="sm" className={ css`flex-shrink: 0;` } onClick={ this.createOnChange(page + 1) } color="neutral" variant="outlined" squared disabled={ page >= numberOfPages }>
+        <Button
+          size="sm"
+          css={ css`
+            flex-shrink: 0;
+          ` }
+          onClick={ this.createOnChange(page + 1) }
+          color="neutral"
+          variant="outlined"
+          squared
+          disabled={ page >= numberOfPages }
+        >
           <Icon name="ChevronRight" size="xs" />
         </Button>
 
         <If condition={ !!showSizeChanger }>
           <Select
-            className={ css`width: 64px; margin-left: 12px;` }
+            css={ css`
+              width: 64px;
+              margin-left: 12px;
+            ` }
             value={ pageSize }
             options={ this.getPageSizeOptions(pageSizeOptions) }
             onChange={ this.onChangePageSize }
           />
         </If>
 
-        <Text className={ css`margin-left: 12px;` }>
+        <Text
+          css={ css`
+            margin-left: 12px;
+          ` }
+        >
           { formatter.format(firstRecordIndex) } - { formatter.format(lastRecordIndex) } of { formatter.format(total) } records
         </Text>
       </PaginationTag>

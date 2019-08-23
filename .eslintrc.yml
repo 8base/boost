@@ -11,10 +11,11 @@ globals:
   BoostProvider: true
 
 plugins: [
-  react-hooks
+  react-hooks,
+  emotion
 ]
 
-rules:  
+rules:
   #styles
   block-spacing: ['error']
   array-bracket-spacing: ['warn', 'never']
@@ -115,3 +116,8 @@ rules:
   react-hooks/exhaustive-deps: "warn"
 
   jsx-a11y/aria-role: 'off'
+
+  #emotion
+  emotion/no-vanilla: "error"
+  emotion/import-from-emotion: "error"
+  emotion/styled-import: "error"

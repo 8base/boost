@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-key */
 
 import React from 'react';
-import { css } from 'emotion';
+import { css } from '@emotion/core';
 import { theme, AvatarsTag, AvatarsHandleTag, AvatarsCounterTag } from './Avatars.theme';
 
 import { Tooltip } from '../Tooltip';
@@ -33,26 +33,23 @@ const avatarClassName = css`
 const Avatars = ({ users, size, onClick, ...rest }: AvatarsProps) => {
   return (
     <AvatarsTag { ...rest } tagName="div" onClick={ onClick }>
-      {
-        React.Children.toArray(
-          users.slice(0, 4).map(({ firstName, lastName, avatarUrl }, index) => (
-            <Tooltip className={ tooltipClassName } message={ `${firstName} ${lastName}` }>
-              <Avatar
-                className={ avatarClassName }
-                style={{ zIndex: Math.abs(index - 7) }}
-                firstName={ firstName }
-                lastName={ lastName }
-                src={ avatarUrl }
-                size={ size }
-              />
-            </Tooltip>
-          ),
-          ))
-      }
+      { React.Children.toArray(
+        users.slice(0, 4).map(({ firstName, lastName, avatarUrl }, index) => (
+          <Tooltip css={ css(tooltipClassName) } message={ `${firstName} ${lastName}` }>
+            <Avatar
+              css={ css(avatarClassName) }
+              style={{ zIndex: Math.abs(index - 7) }}
+              firstName={ firstName }
+              lastName={ lastName }
+              src={ avatarUrl }
+              size={ size }
+            />
+          </Tooltip>
+        )),
+      ) }
+
       <If condition={ users.length > 4 }>
-        <AvatarsCounterTag size={ size }>
-          + { users.length - 4 }
-        </AvatarsCounterTag>
+        <AvatarsCounterTag size={ size }>+ { users.length - 4 }</AvatarsCounterTag>
       </If>
       <AvatarsHandleTag size={ size }>
         <Icon name="Plus" size="xs" color="PRIMARY" />
@@ -60,7 +57,6 @@ const Avatars = ({ users, size, onClick, ...rest }: AvatarsProps) => {
     </AvatarsTag>
   );
 };
-
 
 Avatars.defaultProps = {
   size: 'lg',

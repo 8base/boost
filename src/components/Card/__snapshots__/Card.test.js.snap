@@ -15,12 +15,12 @@ exports[`<Card /> should render Card components 1`] = `
     >
       <Tag
         borderRadius="all"
-        className="emotion-0 emotion-1"
+        className="css-rkvmzw-StyledTag emotion-0"
         padding="none"
         tagName="div"
       >
         <div
-          className="emotion-0 emotion-1"
+          className="css-rkvmzw-StyledTag emotion-0"
         >
           <CardHeader
             padding="md"
@@ -30,12 +30,12 @@ exports[`<Card /> should render Card components 1`] = `
               tagName="div"
             >
               <Tag
-                className="emotion-0 emotion-1"
+                className="css-rkvmzw-StyledTag emotion-0"
                 padding="md"
                 tagName="div"
               >
                 <div
-                  className="emotion-0 emotion-1"
+                  className="css-rkvmzw-StyledTag emotion-0"
                 >
                   Header
                 </div>
@@ -52,13 +52,13 @@ exports[`<Card /> should render Card components 1`] = `
               tagName="div"
             >
               <Tag
-                className="emotion-0 emotion-1"
+                className="css-rkvmzw-StyledTag emotion-0"
                 padding="lg"
                 scrollable={true}
                 tagName="div"
               >
                 <div
-                  className="emotion-0 emotion-1"
+                  className="css-rkvmzw-StyledTag emotion-0"
                 >
                   <CardSection
                     padding="md"
@@ -68,12 +68,12 @@ exports[`<Card /> should render Card components 1`] = `
                       tagName="div"
                     >
                       <Tag
-                        className="emotion-0 emotion-1"
+                        className="css-rkvmzw-StyledTag emotion-0"
                         padding="md"
                         tagName="div"
                       >
                         <div
-                          className="emotion-0 emotion-1"
+                          className="css-rkvmzw-StyledTag emotion-0"
                         >
                           Body
                         </div>
@@ -92,12 +92,12 @@ exports[`<Card /> should render Card components 1`] = `
               tagName="div"
             >
               <Tag
-                className="emotion-0 emotion-1"
+                className="css-rkvmzw-StyledTag emotion-0"
                 padding="xl"
                 tagName="div"
               >
                 <div
-                  className="emotion-0 emotion-1"
+                  className="css-rkvmzw-StyledTag emotion-0"
                 >
                   Footer
                 </div>

@@ -1,11 +1,10 @@
 // @flow
 
 import React from 'react';
-import { injectGlobal } from 'emotion';
 import { ThemeProvider } from 'emotion-theming';
 import { IconsProvider } from './components/Icon/IconsProvider';
 import { ModalProvider } from './components/Modal/ModalProvider';
-import { createTheme, resetGlobal, type Theme } from './theme';
+import { createTheme, type Theme, Globals } from './theme';
 
 type BoostProviderProps = {
   theme?: Theme,
@@ -22,25 +21,13 @@ class BoostProvider extends React.Component<BoostProviderProps> {
     this.theme = props.theme || createTheme();
   }
 
-  componentDidMount() {
-    resetGlobal(this.theme);
-
-    Object.keys(this.theme.components).forEach((name) => {
-      const { globals } = this.theme.components[name];
-
-      if (globals) {
-        typeof globals === 'function'
-          ? injectGlobal(globals(this.theme))
-          : injectGlobal(globals);
-      }
-    });
-  }
-
   render() {
     const { children, icons } = this.props;
 
     return (
       <ThemeProvider theme={ this.theme }>
+        <Globals components={ this.theme.components } />
+
         <ModalProvider>
           <IconsProvider icons={ icons }>
             { children }

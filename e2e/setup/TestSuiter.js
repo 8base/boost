@@ -1,4 +1,6 @@
 // @flow
+import { toId } from '@storybook/router';
+
 const { E2E_URL } = (process.env: any);
 
 
@@ -17,13 +19,12 @@ class TestSuiter {
     this.stateName = stateName;
   }
 
-
   _init = async () => {
     // $FlowIgnore
     this.page = await __BROWSER_CONTEXT__.newPage();
 
     await this.page.goto(
-      `${E2E_URL}/?selectedKind=${encodeURIComponent(this.kind)}&selectedStory=${encodeURIComponent(this.story)}`, { waitUntil: 'networkidle2' },
+      `${E2E_URL}/?path=/story/${toId(this.kind, this.story)}`, { waitUntil: 'networkidle2' },
     );
 
     // eslint-disable-next-line

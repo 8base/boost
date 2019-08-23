@@ -20,12 +20,12 @@ exports[`<Tabs /> should render Tabs 1`] = `
           tagName="div"
         >
           <Tag
-            className="emotion-0 emotion-1"
+            className="css-rkvmzw-StyledTag emotion-0"
             defaultSelectedTabId="1"
             tagName="div"
           >
             <div
-              className="emotion-0 emotion-1"
+              className="css-rkvmzw-StyledTag emotion-0"
             >
               <TabTitle
                 tabId="1"
@@ -44,12 +44,12 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     tagName="div"
                   >
                     <Tag
-                      className="emotion-0 emotion-1"
+                      className="css-rkvmzw-StyledTag emotion-0"
                       onClick={[Function]}
                       tagName="div"
                     >
                       <div
-                        className="emotion-0 emotion-1"
+                        className="css-rkvmzw-StyledTag emotion-0"
                         onClick={[Function]}
                       >
                         <div>
@@ -77,12 +77,12 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     tagName="div"
                   >
                     <Tag
-                      className="emotion-0 emotion-1"
+                      className="css-rkvmzw-StyledTag emotion-0"
                       onClick={[Function]}
                       tagName="div"
                     >
                       <div
-                        className="emotion-0 emotion-1"
+                        className="css-rkvmzw-StyledTag emotion-0"
                         onClick={[Function]}
                       >
                         <div>
@@ -112,12 +112,12 @@ exports[`<Tabs /> should render Tabs 1`] = `
                     tagName="div"
                   >
                     <Tag
-                      className="emotion-0 emotion-1"
+                      className="css-rkvmzw-StyledTag emotion-0"
                       selected={true}
                       tagName="div"
                     >
                       <div
-                        className="emotion-0 emotion-1"
+                        className="css-rkvmzw-StyledTag emotion-0"
                       >
                         <div
                           className="body-1"

@@ -1,6 +1,6 @@
 // @flow
 
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import fp from 'lodash/fp';
 import { Tag } from '../common';
 import { COLORS } from '../theme/colors';

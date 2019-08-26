@@ -1,3 +1,18 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/8base/boost/compare/v1.0.2...v1.0.3) (2019-08-26)
+
+
+### Bug Fixes
+
+* **Avatar:** letters scaling ([e4cc594](https://github.com/8base/boost/commit/e4cc594))
+
+
+### Features
+
+* **Navigation:** add ability to control expanding ([0362076](https://github.com/8base/boost/commit/0362076))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/8base/boost/compare/v1.0.1...v1.0.2) (2019-08-23)
 

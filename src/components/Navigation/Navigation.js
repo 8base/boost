@@ -11,7 +11,8 @@ type NavigationProps = {
   children?: React$Node,
   expandedWidth?: string,
   collapsedWidth: string,
-  color: $Keys<typeof COLORS>
+  color: $Keys<typeof COLORS>,
+  expanded?: boolean,
 };
 
 type NavigationState = {
@@ -37,7 +38,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
   componentDidMount() {
     const { current: navElement } = this.navRef;
 
-    if (navElement) {
+    if (navElement && !this.isControllable()) {
       requestAnimationFrame(() => {
         if (!this.props.expandedWidth) {
           this.setState({
@@ -55,11 +56,13 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
   componentWillUnmount() {
     const { current: navElement } = this.navRef;
 
-    if (navElement) {
+    if (navElement && !this.isControllable()) {
       navElement.removeEventListener('mouseenter', this.onMouseEnter);
       navElement.removeEventListener('mouseleave', this.onMouseLeave);
     }
   }
+
+  isControllable = () => typeof this.props.expanded === 'boolean';
 
   onMouseEnter = () => {
     if (this.navRef.current) {
@@ -83,10 +86,12 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
 
   render() {
     const { color, children, ...rest } = this.props;
-    const { expanded } = this.state;
+
+    const controllable = this.isControllable();
+    const expanded = controllable ? this.props.expanded : this.state.expanded;
 
     return (
-      <NavigationTag { ...rest } insideRef={ this.navRef } color={ color } tagName="nav">
+      <NavigationTag { ...rest } expanded={ expanded } controllable={ controllable } insideRef={ this.navRef } color={ color } tagName="nav">
         {
           React.Children.map(children, child =>
             React.cloneElement(child, {

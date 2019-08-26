@@ -4,6 +4,8 @@ exports[`<Navigation /> should shallow navigation 1`] = `
 <Boost(navigation)
   collapsedWidth="60px"
   color="GREEN"
+  controllable={false}
+  expanded={false}
   insideRef={
     Object {
       "current": null,

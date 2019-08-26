@@ -38,18 +38,22 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
       sm: {
         width: '32px',
         height: '32px',
+        fontSize: '16px',
       },
       md: {
         width: '48px',
         height: '48px',
+        fontSize: '20px',
       },
       lg: {
         width: '80px',
         height: '80px',
+        fontSize: '24px',
       },
       xl: {
         width: '100px',
         height: '100px',
+        fontSize: '32px',
       },
       stretch: {
         width: '100%',

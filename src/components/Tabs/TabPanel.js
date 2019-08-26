@@ -33,7 +33,7 @@ const TabPanelBase = ({
   tabId,
   forceRender,
   ...rest
-  }: TabPanelBaseProps) => {
+}: TabPanelBaseProps) => {
   const selected = selectedTabId === tabId;
 
   if (forceRender) {

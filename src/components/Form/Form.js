@@ -53,7 +53,7 @@ const Form = ({
   component,
   className,
   ...rest
-  }: FormPlateProps) => {
+}: FormPlateProps) => {
   return (
     <FormTag
       tagName={ component }

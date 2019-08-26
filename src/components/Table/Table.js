@@ -49,7 +49,7 @@ function Table({
   data,
   onActionClick,
   ...rest
-  }: TablePlateProps) {
+}: TablePlateProps) {
   return (
     <TableTag { ...rest } tagName={ Grid.Layout }>
       { children }

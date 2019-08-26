@@ -28,7 +28,7 @@ function Text({
   text,
   children,
   ...rest
-  }: TextProps) {
+}: TextProps) {
   return <TextTag { ...rest } tagName="span">{ children || text }</TextTag>;
 }
 

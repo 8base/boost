@@ -40,7 +40,7 @@ const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
 function TableHeader({
   children,
   ...rest
-  }: TableHeaderProps) {
+}: TableHeaderProps) {
   return <TableHeaderTag { ...rest } tagName={ Grid.Layout }>{ children }</TableHeaderTag>;
 }
 

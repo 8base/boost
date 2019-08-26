@@ -64,10 +64,10 @@ const DropdownPlate = dropDownEnhancer(
   static instancesCount = 0;
 
   constructor(props: DropdownControlledProps) {
-      super(props);
+    super(props);
 
-      this.instanceIndex = DropdownPlate.instancesCount++;
-    }
+    this.instanceIndex = DropdownPlate.instancesCount++;
+  }
 
   toggleDropdown = () => {
     const { isOpen, onOpenDropdown, onCloseDropdown } = this.props;
@@ -88,27 +88,27 @@ const DropdownPlate = dropDownEnhancer(
   getIgnoreClickOutsideClass = () => `ignore-react-onclickoutside-${this.instanceIndex}`;
 
   render() {
-      const { children, onCloseDropdown, onOpenDropdown, isOpen, ...rest } = this.props;
+    const { children, onCloseDropdown, onOpenDropdown, isOpen, ...rest } = this.props;
 
-      const contextData: DropdownContextData = {
-        isOpen,
-        toggleDropdown: this.toggleDropdown,
-        closeDropdown: onCloseDropdown,
-        openDropdown: onOpenDropdown,
-        targetWidth: this.getDropdownWidth(),
-        outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
-      };
+    const contextData: DropdownContextData = {
+      isOpen,
+      toggleDropdown: this.toggleDropdown,
+      closeDropdown: onCloseDropdown,
+      openDropdown: onOpenDropdown,
+      targetWidth: this.getDropdownWidth(),
+      outsideClickIgnoreClass: this.getIgnoreClickOutsideClass(),
+    };
 
-      return (
-        <DropdownContext.Provider value={ contextData }>
-          <DropdownTag { ...rest } tag="div" insideRef={ this.setDropdownRef }>
-            <Manager tag={ false }>
-              { children }
-            </Manager>
-          </DropdownTag>
-        </DropdownContext.Provider>
-      );
-    }
+    return (
+      <DropdownContext.Provider value={ contextData }>
+        <DropdownTag { ...rest } tag="div" insideRef={ this.setDropdownRef }>
+          <Manager tag={ false }>
+            { children }
+          </Manager>
+        </DropdownTag>
+      </DropdownContext.Provider>
+    );
+  }
   },
 );
 

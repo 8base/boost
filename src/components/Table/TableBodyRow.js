@@ -33,7 +33,7 @@ const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
 function TableBodyRow({
   children,
   ...rest
-  }: TableBodyRowProps) {
+}: TableBodyRowProps) {
   return <TableBodyRowTag { ...rest } tagName={ Grid.Layout }>{ children }</TableBodyRowTag>;
 }
 

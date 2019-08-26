@@ -89,7 +89,7 @@ const FormField = ({
   children,
   hideErrorLabel,
   ...rest
-  }: FormFieldProps) => {
+}: FormFieldProps) => {
   const hasError = formUtils.hasError(meta);
   let error: any = formUtils.getError(meta);
 

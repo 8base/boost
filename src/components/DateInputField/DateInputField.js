@@ -19,7 +19,7 @@ function DateInputField({
   input,
   meta,
   ...rest
-  }: DateInputFieldProps) {
+}: DateInputFieldProps) {
   const { name, value, onChange } = input || {};
 
   return (

@@ -22,7 +22,7 @@ const [TableFooterTag, theme] = createThemeTag(name, {
 function TableFooter({
   children,
   ...rest
-  }: TableFooterProps) {
+}: TableFooterProps) {
   return <TableFooterTag { ...rest } tagName={ Grid.Box }>{ children }</TableFooterTag>;
 }
 

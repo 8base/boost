@@ -16,7 +16,7 @@ function Link({
   children,
   tagName,
   ...rest
-  }: LinkProps) {
+}: LinkProps) {
   return (
     <LinkTag
       { ...rest }

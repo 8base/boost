@@ -36,7 +36,7 @@ const Dialog = ({
   tagName,
   stretch,
   ...rest
-  }: DialogProps) => {
+}: DialogProps) => {
   return (
     <Modal
       { ...rest }

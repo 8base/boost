@@ -33,7 +33,7 @@ const CheckboxField = ({
   color,
   nowrap,
   ...rest
-  }: CheckboxFieldProps) => {
+}: CheckboxFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
   const hasError = formUtils.hasError(meta);
 

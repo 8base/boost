@@ -17,7 +17,7 @@ function DialogHeader({
   title,
   onClose,
   ...rest
-  }: DialogHeaderProps) {
+}: DialogHeaderProps) {
   return (
     <Card.Header offset="lg" { ...rest }>
       <Text weight="semibold">{ title }</Text>

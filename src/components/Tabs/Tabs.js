@@ -45,7 +45,7 @@ const TabsPlate = tabsEnhancer(({
   onSelect,
   selectedTabId,
   ...rest
-  }: TabsProps) => {
+}: TabsProps) => {
   const contextData = {
     selectedTabId,
     onSelect,

@@ -19,7 +19,7 @@ function Heading({
   children,
   type,
   ...rest
-  }: HeadingProps) {
+}: HeadingProps) {
   return (
     <HeadingTag
       { ...rest }

@@ -75,7 +75,7 @@ const InputField = ({
   max,
   mask,
   ...rest
-  }: InputFieldProps) => {
+}: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
 
   const hasError = formUtils.hasError(meta);

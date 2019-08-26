@@ -131,43 +131,43 @@ const DropdownBody = dropdownBodyEnhancer(
 
 
   render() {
-      const { withPortal, forceRender, positionFixed, dropdown: { isOpen }, ...rest } = this.props;
+    const { withPortal, forceRender, positionFixed, dropdown: { isOpen }, ...rest } = this.props;
 
-      const popperPlacement = this.getPopperPlacement();
-      const popperModifiers = this.getPopperModifiers();
-      const bodyWidth = this.getBodyWidth();
-      const renderChildren = this.getBodyChildren();
-      const PortalCondComponent = withPortal ? Portal : Fragment;
+    const popperPlacement = this.getPopperPlacement();
+    const popperModifiers = this.getPopperModifiers();
+    const bodyWidth = this.getBodyWidth();
+    const renderChildren = this.getBodyChildren();
+    const PortalCondComponent = withPortal ? Portal : Fragment;
 
-      return forceRender || isOpen
-        ? (
-          <PortalCondComponent>
-            <Popper
-              placement={ popperPlacement }
-              modifiers={ popperModifiers }
-              positionFixed={ positionFixed }
-            >
-              { ({ ref, style, placement }) => (
-                <DropdownBodyTag
-                  { ...rest }
-                  insideRef={ ref }
-                  data-placement={ placement }
-                  tagName="div"
-                  style={{
-                    ...style,
-                    zIndex: DropdownBodyBase.zIndex,
-                    width: bodyWidth,
-                    display: isOpen ? 'block' : 'none',
-                  }}
-                >
-                  { renderChildren }
-                </DropdownBodyTag>
-              ) }
-            </Popper>
-          </PortalCondComponent>
-        )
-        : null;
-    }
+    return forceRender || isOpen
+      ? (
+        <PortalCondComponent>
+          <Popper
+            placement={ popperPlacement }
+            modifiers={ popperModifiers }
+            positionFixed={ positionFixed }
+          >
+            { ({ ref, style, placement }) => (
+              <DropdownBodyTag
+                { ...rest }
+                insideRef={ ref }
+                data-placement={ placement }
+                tagName="div"
+                style={{
+                  ...style,
+                  zIndex: DropdownBodyBase.zIndex,
+                  width: bodyWidth,
+                  display: isOpen ? 'block' : 'none',
+                }}
+              >
+                { renderChildren }
+              </DropdownBodyTag>
+            ) }
+          </Popper>
+        </PortalCondComponent>
+      )
+      : null;
+  }
   },
 );
 

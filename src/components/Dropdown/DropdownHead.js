@@ -64,21 +64,21 @@ const DropdownHead = dropdownHeadEnhancer(
   }
 
   render() {
-      const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
-      const renderChildren = this.getHeadChildren();
+    const { dropdown: { outsideClickIgnoreClass }, children, ...rest } = this.props;
+    const renderChildren = this.getHeadChildren();
 
-      return (
-        <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
-          <Reference>
-            { ({ ref }) => (
-              <DropdownPopperTarget tagName="div" insideRef={ ref }>
-                { renderChildren }
-              </DropdownPopperTarget>
-            ) }
-          </Reference>
-        </DropdownHeadTag>
-      );
-    }
+    return (
+      <DropdownHeadTag { ...rest } tagName="div" className={ outsideClickIgnoreClass } onClick={ this.onClick }>
+        <Reference>
+          { ({ ref }) => (
+            <DropdownPopperTarget tagName="div" insideRef={ ref }>
+              { renderChildren }
+            </DropdownPopperTarget>
+          ) }
+        </Reference>
+      </DropdownHeadTag>
+    );
+  }
   },
 );
 

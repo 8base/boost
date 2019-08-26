@@ -38,7 +38,7 @@ const [TableBodyCellTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
 function TableBodyCell({
   children,
   ...rest
-  }: TableBodyCellProps) {
+}: TableBodyCellProps) {
   return <TableBodyCellTag { ...rest } tagName={ Row }>{ children }</TableBodyCellTag>;
 }
 

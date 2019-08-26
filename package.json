@@ -59,7 +59,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
-    "eslint": "4.1.1",
+    "eslint": "4.19.1",
     "eslint-config-react-app": "2.1.0",
     "eslint-plugin-emotion": "^10.0.14",
     "eslint-plugin-flowtype": "2.34.1",

@@ -20,7 +20,7 @@ type PaperProps = {
 function Paper({
   children,
   ...rest
-  }: PaperProps) {
+}: PaperProps) {
   return <PaperTag tagName="div" { ...rest }>{ children }</PaperTag>;
 }
 

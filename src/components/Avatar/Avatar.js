@@ -21,7 +21,7 @@ function Avatar({
   onPick,
   pickLabel,
   ...rest
-  }: AvatarProps) {
+}: AvatarProps) {
   const initials = firstName && lastName ? firstName.slice(0, 1) + lastName.slice(0, 1) : DEFAULT_INITIALS;
 
   return (

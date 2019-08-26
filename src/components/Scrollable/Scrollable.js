@@ -10,7 +10,7 @@ type ScrollableProps = {
 function Scrollable({
   children,
   ...rest
-  }: ScrollableProps) {
+}: ScrollableProps) {
   return (
     <ScrollableWrapper { ...rest } tagName="div">
       <ScrollableContent modifiers={ rest } tagName="div">{ children }</ScrollableContent>

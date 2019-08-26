@@ -36,7 +36,7 @@ const RadioGroupField = ({
   options,
   disabled,
   ...rest
-  }: RadioGroupFieldProps) => {
+}: RadioGroupFieldProps) => {
   const { name, value, onChange } = input;
 
   const hasError = formUtils.hasError(meta);

@@ -12,7 +12,7 @@ type DialogFooterProps = {
 function DialogFooter({
   children,
   ...rest
-  }: DialogFooterProps) {
+}: DialogFooterProps) {
   return (
     <Card.Footer offset="lg" { ...rest }>
       <Row justifyContent="end">

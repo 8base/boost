@@ -14,7 +14,7 @@ function Label({
   text,
   children,
   ...rest
-  }: LabelProps) {
+}: LabelProps) {
   return (
     <LabelTag
       { ...rest }

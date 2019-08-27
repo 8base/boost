@@ -28,6 +28,9 @@ export default (asStory) => {
             <Text color="WHITE" weight="semibold">Oh no! Your FREE TRIAL has ended, please update your payment details.</Text>
             <Button color="white" variant="ghost" size="sm">Update</Button>
           </TopBar>
+          <TopBar color="RED">
+            <Text color="WHITE" weight="semibold">Oh no! Your FREE TRIAL has ended,<br />please update your<br />payment details.</Text>
+          </TopBar>
         </Column>
       ));
   });

@@ -7,7 +7,12 @@ const name = 'topBar';
 const [TopBarTag, themeTopBar] = createThemeTag(name, ({ COLORS }: *) => ({
   root: (props) => ({
     width: '100%',
-    height: '52px',
+    minHeight: '52px',
+    padding: '8px 24px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
     backgroundColor: COLORS[props.color],
     position: 'relative',
   }),

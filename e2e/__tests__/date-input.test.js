@@ -21,6 +21,16 @@ const SUITES = [
       await (await iframe.waitForXPath('//input')).click();
       await input.click();
     }),
+  baisy.suite('Components/DateInput', 'common', 'open month picker')
+    .setRootHeight(600)
+    .setEnhancer(async (iframe) => {
+      const input = await iframe.waitForXPath('(//input)[7]');
+
+      await input.click();
+
+      await (await iframe.waitForXPath('//input')).click();
+      await input.click();
+    }),
   baisy.suite('Components/DateInputField', 'common'),
 ];
 

@@ -1,13 +1,18 @@
+import { css } from '@emotion/core';
+
 import { createThemeTag } from '../../theme/createThemeTag';
 
 // eslint-disable-next-line
 const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
-  globals: `
+  globals: css`
     .react-datepicker {
       border: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
-      box-shadow: 0 2px 10px 0 rgba(208,215,221,0.5);
+      box-shadow: 0 2px 10px 0 rgba(208, 215, 221, 0.5);
       display: flex;
       padding-bottom: 32px;
+      font-size: 12px;
+      font-family: inherit;
+      color: ${COLORS.PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__header,
@@ -31,8 +36,6 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 12px;
-      font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
     }
 
@@ -44,25 +47,22 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 12px;
-      font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
       margin-left: 4px;
       margin-right: 4px;
-    }
-
-    .react-datepicker__day--selected {
-      border-radius: 24px;
-      background-color: ${COLORS.LIGHT_BLUE};
-      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__day:hover {
       border-radius: 24px;
     }
 
-    .react-datepicker__time-list-item--selected {
-      background-color: ${COLORS.LIGHT_BLUE} !important;
+    .react-datepicker__time-container
+      .react-datepicker__time
+      .react-datepicker__time-box
+      ul.react-datepicker__time-list
+      li.react-datepicker__time-list-item--selected {
+      background-color: ${COLORS.LIGHT_BLUE};
+      font-weight: 600;
     }
 
     .react-datepicker__week {
@@ -85,20 +85,24 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
 
     .react-datepicker__header--time {
       border-bottom: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
+      height: 32px;
     }
 
     .react-datepicker-time__header {
       font-size: 12px;
-      font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
       font-weight: 600;
     }
 
     .react-datepicker__day--today {
-      font-size: 12px;
-      font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
       font-weight: 600;
+    }
+
+    .react-datepicker__day--selected {
+      border-radius: 24px;
+      background-color: ${COLORS.LIGHT_BLUE};
+      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__today-button {
@@ -106,36 +110,50 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
       bottom: 0;
       width: 100%;
       height: 32px;
-      font-size: 12px;
-      font-family: Poppins;
-      color: ${COLORS.PRIMARY_TEXT_COLOR};
       font-weight: 600;
       border-top: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
     }
 
     .react-datepicker__header {
-      padding: 0;
-      height: 64px;
+      border-bottom: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
+      padding-top: 6px;
     }
 
     .react-datepicker__day-names {
-      height: 32px;
-      font-size: 12px;
       display: flex;
-      border-bottom: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
+      margin-top: 6px;
     }
 
-    .react-datepicker__current-month {
+    .react-datepicker-year-header {
+      padding-bottom: 6px;
+    }
+
+    .react-datepicker__current-month,
+    .react-datepicker-year-header {
       font-size: 13px;
       font-weight: 600;
-      font-family: Poppins;
       color: ${COLORS.PRIMARY_TEXT_COLOR};
+    }
+
+    .react-datepicker__month-wrapper {
+      display: flex;
+    }
+
+    .react-datepicker__month-text {
+      flex: 1;
+      padding: 6px 0;
+    }
+
+    .react-datepicker__month--selected,
+    .react-datepicker__month--in-selecting-range,
+    .react-datepicker__month--in-range {
+      background-color: ${COLORS.LIGHT_BLUE};
+      color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
     .react-datepicker__time-list-item {
       align-items: center;
       display: flex;
-      font-size: 12px;
       height: 32px !important;
       justify-content: center;
       padding: 0 !important;
@@ -145,7 +163,6 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
     .react-datepicker__current-month {
       align-items: center;
       display: flex;
-      height: 32px;
       justify-content: center;
       padding: 0;
     }

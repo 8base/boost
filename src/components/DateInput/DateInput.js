@@ -17,6 +17,7 @@ type DateInputProps = {
   stretch?: boolean,
   clearable?: boolean,
   disabled?: boolean,
+  isMonthPicker?: boolean,
   placeholder?: string,
 };
 
@@ -34,24 +35,34 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   constructor(props: DateInputProps) {
     super(props);
 
+    const dateFormat = this.getDateFormat();
+
     this.state = {
-      textValue: utils.fromISOToViewFormat(props.value, props.withTime),
+      textValue: utils.fromISOToViewFormat(props.value, dateFormat),
       isOpen: false,
     };
   }
 
   componentDidUpdate(prevProps: DateInputProps) {
-    const { value, withTime } = this.props;
+    const { value } = this.props;
+    const dateFormat = this.getDateFormat();
 
     if (value !== prevProps.value) {
       this.setState({
-        textValue: utils.fromISOToViewFormat(value, withTime),
+        textValue: utils.fromISOToViewFormat(value, dateFormat),
       });
     }
   }
 
+  getDateFormat() {
+    const { isMonthPicker, withTime } = this.props;
+
+    return isMonthPicker ? utils.YEAR_MONTH_FORMAT : withTime ? utils.DATETIME_FORMAT : utils.DATE_FORMAT;
+  }
+
   onChangeText = ({ target: { value }}: Object) => {
     const { withTime } = this.props;
+    const dateFormat = this.getDateFormat();
 
     this.setState({ textValue: value });
 
@@ -59,7 +70,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
       this.props.onChange(null);
       return;
     } else {
-      const luxonValue = utils.fromViewFormatToLuxon(value, withTime);
+      const luxonValue = utils.fromViewFormatToLuxon(value, dateFormat);
 
       if (luxonValue && luxonValue.isValid) {
         value = utils.fromLuxonToISO(luxonValue, withTime);
@@ -70,13 +81,13 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   };
 
   onBlur = () => {
-    const { withTime } = this.props;
     const { textValue } = this.state;
+    const dateFormat = this.getDateFormat();
 
-    const luxonValue = utils.fromViewFormatToLuxon(textValue, withTime);
+    const luxonValue = utils.fromViewFormatToLuxon(textValue, dateFormat);
 
     if (luxonValue && !luxonValue.isValid) {
-      this.setState({ textValue: utils.fromISOToViewFormat(this.props.value, withTime) });
+      this.setState({ textValue: utils.fromISOToViewFormat(this.props.value, dateFormat) });
     }
   }
 
@@ -93,17 +104,17 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   };
 
   collectProps() {
-    const { value, withTime, withPortal, ...rest } = this.props;
-
-    const dateFormat = withTime ? utils.DATETIME_FORMAT : utils.DATE_FORMAT;
+    const { value, withTime, withPortal, isMonthPicker, ...rest } = this.props;
 
     return {
       selected: utils.fromISOtoJSDate(value),
-      dateFormat,
+      dateFormat: this.getDateFormat(),
       ...rest,
       showTimeSelect: withTime,
+      showMonthYearPicker: isMonthPicker,
       onChange: this.onChangeDate,
       inline: true,
+      todayButton: isMonthPicker ? 'Current' : 'Today',
     };
   }
 
@@ -122,10 +133,10 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   render() {
     const collectedProps = this.collectProps();
 
-    const { value, withTime, withPortal, stretch, onChange, clearable, disabled, placeholder, ...rest } = this.props;
+    const { value, withTime, withPortal, stretch, onChange, clearable, disabled, placeholder, isMonthPicker, ...rest } = this.props;
 
     const { textValue, isOpen } = this.state;
-    const mask = withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
+    const mask = isMonthPicker ? utils.YEAR_MONTH_MASK : withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (
       <Dropdown
@@ -151,7 +162,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
             boundariesElement: 'viewport',
           },
         }}>
-          <DatePicker { ...collectedProps } todayButton="Today" />
+          <DatePicker { ...collectedProps } />
         </Dropdown.Body>
       </Dropdown>
     );

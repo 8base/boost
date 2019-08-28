@@ -1,3 +1,13 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/8base/boost/compare/v1.0.3...v1.0.4) (2019-08-28)
+
+
+### Features
+
+* **TopBar:** multiline topbar ([0f52af3](https://github.com/8base/boost/commit/0f52af3))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/8base/boost/compare/v1.0.2...v1.0.3) (2019-08-26)
 

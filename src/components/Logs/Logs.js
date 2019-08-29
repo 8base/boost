@@ -1,26 +1,21 @@
 // @flow
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { LogsContainerTag, LogMessageTag } from './Logs.theme';
 
 type LogsProps = {
-  messages: string[],
+  messages: React$Node[],
   stretch?: Boolean,
 };
 
-const Logs = ({ messages, stretch }: LogsProps) => {
-  return (
-    <LogsContainerTag stretch={ stretch }>
+const Logs = forwardRef<LogsProps, LogsContainerTag>(
+  ({ messages = [], stretch, children, ...rest }: LogsProps, ref) => (
+    <LogsContainerTag stretch={ stretch } insideRef={ ref } { ...rest }>
       { React.Children.toArray(messages.map(message => (
         <LogMessageTag>{ message }</LogMessageTag> // eslint-disable-line
       ))) }
     </LogsContainerTag>
-  );
-};
+  ),
+);
 
-Logs.defaultProps = {
-  messages: [],
-};
+export { Logs };
 
-export {
-  Logs,
-};

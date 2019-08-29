@@ -27,6 +27,9 @@ export default (asStory) => {
         <StateContainer value={ null }>
           <DateInput placeholder="mm/dd/yyyy" disabled />
         </StateContainer>
+        <StateContainer value="2019-08">
+          <DateInput placeholder="mm/yyyy" isMonthPicker clearable />
+        </StateContainer>
       </Column>
     ));
   });

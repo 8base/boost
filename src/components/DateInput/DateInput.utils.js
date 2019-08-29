@@ -2,18 +2,20 @@
 
 import { DateTime } from 'luxon';
 
+export const YEAR_MONTH_MASK = '99/9999';
 export const DATE_MASK = '99/99/9999';
 export const DATETIME_MASK = '99/99/9999, 99:99 aa';
 
+export const YEAR_MONTH_FORMAT = 'MM/yyyy';
 export const DATE_FORMAT = 'MM/dd/yyyy';
 export const DATETIME_FORMAT = 'MM/dd/yyyy, hh:mm a';
 
-export const fromISOToViewFormat = (value: ?string, withTime: ?boolean) => {
+export const fromISOToViewFormat = (value: ?string, dateFormat: ?string) => {
   if (value) {
     value = DateTime.fromISO(value);
 
     if (value.isValid) {
-      value = value.toFormat(withTime ? DATETIME_FORMAT : DATE_FORMAT);
+      value = value.toFormat(dateFormat || DATE_FORMAT);
     } else {
       value = '';
     }
@@ -52,9 +54,9 @@ export const fromJSDateToISO = (value: ?Date, withTime: ?boolean) => {
   return value;
 };
 
-export const fromViewFormatToLuxon = (value: ?string, withTime: ?boolean) => {
+export const fromViewFormatToLuxon = (value: ?string, dateFormat: ?string) => {
   if (value) {
-    value = DateTime.fromFormat(value, withTime ? DATETIME_FORMAT : DATE_FORMAT);
+    value = DateTime.fromFormat(value, dateFormat || DATE_FORMAT);
   } else {
     value = null;
   }

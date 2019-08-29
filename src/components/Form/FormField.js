@@ -10,6 +10,7 @@ import type { MetaType } from '../../types';
 type FormFieldProps = {
   children?: React$Node,
   label?: string,
+  note?: string,
   stretch?: boolean,
   hideErrorLabel?: boolean,
   direction?: 'row' | 'column',
@@ -52,6 +53,21 @@ const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, 
   },
 }));
 
+const [FormFieldNoteTag, themeNote] = createThemeTag(`${name}Note`, ({ COLORS, SIZES }: *) => ({
+  root: {
+    position: 'relative',
+
+    fontSize: SIZES.OVERLINE_2,
+    lineHeight: SIZES.OVERLINE_2_LH,
+    color: COLORS.GRAY5,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    display: 'block',
+    maxWidth: '100%',
+    marginTop: 4,
+  },
+}));
 
 const [FormFieldDirectionTag, themeDirection] = createThemeTag(`${name}Direction`, {
   root: props => ({
@@ -80,12 +96,14 @@ const theme = {
   ...themeLabel,
   ...themeError,
   ...themeField,
+  ...themeNote,
 };
 
 
 const FormField = ({
   meta = {},
   label,
+  note,
   children,
   hideErrorLabel,
   ...rest
@@ -108,6 +126,11 @@ const FormField = ({
           </FormLabel>
         </If>
         { children }
+        <If condition={ !!note }>
+          <FormFieldNoteTag modifiers={ rest } title={ note }>
+            { note }
+          </FormFieldNoteTag>
+        </If>
       </FormFieldDirectionTag>
       <If condition={ hasError && !hideErrorLabel }>
         <ControlErrorWrapperTag modifiers={ rest } tagName="div">

@@ -18,6 +18,7 @@ type DateInputProps = {
   clearable?: boolean,
   disabled?: boolean,
   isMonthPicker?: boolean,
+  autoFocus?: boolean,
   placeholder?: string,
 };
 
@@ -133,7 +134,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
   render() {
     const collectedProps = this.collectProps();
 
-    const { value, withTime, withPortal, stretch, onChange, clearable, disabled, placeholder, isMonthPicker, ...rest } = this.props;
+    const { value, withTime, withPortal, stretch, onChange, clearable, disabled, placeholder, isMonthPicker, autoFocus, ...rest } = this.props;
 
     const { textValue, isOpen } = this.state;
     const mask = isMonthPicker ? utils.YEAR_MONTH_MASK : withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
@@ -155,6 +156,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
             onBlur={ this.onBlur }
             clearable={ clearable }
             disabled={ disabled }
+            autoFocus={ autoFocus }
           />
         </Dropdown.Head>
         <Dropdown.Body withPortal={ withPortal } modifiers={{

@@ -22,6 +22,7 @@ type SelectProps = {|
   hasError?: boolean,
   withPortal?: boolean,
   menuIsOpen?: boolean,
+  autoFocus?: boolean,
   zIndex?: string | number,
   valueComponent?: React$Node,
   components?: Object,
@@ -154,6 +155,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       inputValue,
       onInputChange,
       menuIsOpen,
+      autoFocus,
       ...rest
     } = this.props;
 
@@ -174,6 +176,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           valueComponent={ valueComponent }
           styles={ customStyles({ ...rest, COLORS: theme.COLORS || COLORS }) }
           value={ selectValue }
+          autoFocus={ autoFocus }
           components={ components }
           formatOptionLabel={ formatOptionLabel }
           inputValue={ inputValue }

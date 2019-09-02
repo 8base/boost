@@ -1,3 +1,14 @@
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/8base/boost/compare/v1.0.6...v1.0.7) (2019-09-02)
+
+
+### Bug Fixes
+
+* **DateInput:** fix autofocus ([5a6fcc9](https://github.com/8base/boost/commit/5a6fcc9))
+* **Select:** fix autofocus ([d6ec455](https://github.com/8base/boost/commit/d6ec455))
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/8base/boost/compare/v1.0.5...v1.0.6) (2019-08-29)
 

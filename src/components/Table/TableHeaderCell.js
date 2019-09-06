@@ -37,10 +37,10 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) 
 
   modifiers: {
     bordered: {
-      borderLeft: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+      borderLeft: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
 
       '&:last-child': {
-        borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+        borderRight: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
       },
     },
   },

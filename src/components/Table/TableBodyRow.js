@@ -18,7 +18,7 @@ const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: props => ({
     display: 'grid',
     minHeight: '48px',
-    borderBottom: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+    borderBottom: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
     columnGap: gapSizes[props.columnGap],
   }),
   modifiers: {

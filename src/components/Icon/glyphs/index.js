@@ -4,6 +4,7 @@ import React from 'react';
 import Add from './Add.svg';
 import Alert from './Alert.svg';
 import APIToken from './APIToken.svg';
+import Calendar from './Calendar.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
 import ChevronLeft from './ChevronLeft.svg';
@@ -54,6 +55,7 @@ export {
   Add,
   Alert,
   APIToken,
+  Calendar,
   Check,
   ChevronDown,
   ChevronLeft,

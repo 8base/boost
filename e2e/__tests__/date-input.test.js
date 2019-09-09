@@ -14,22 +14,16 @@ const SUITES = [
   baisy.suite('Components/DateInput', 'common', 'open datetime')
     .setRootHeight(600)
     .setEnhancer(async (iframe) => {
-      const input = await iframe.waitForXPath('(//input)[5]');
+      const icon = await iframe.waitForXPath('((//input)[5]/../..//i)[last()]');
 
-      await input.click();
-
-      await (await iframe.waitForXPath('//input')).click();
-      await input.click();
+      await icon.click();
     }),
   baisy.suite('Components/DateInput', 'common', 'open month picker')
     .setRootHeight(600)
     .setEnhancer(async (iframe) => {
-      const input = await iframe.waitForXPath('(//input)[7]');
+      const icon = await iframe.waitForXPath('((//input)[7]/../..//i)[last()]');
 
-      await input.click();
-
-      await (await iframe.waitForXPath('//input')).click();
-      await input.click();
+      await icon.click();
     }),
   baisy.suite('Components/DateInputField', 'common'),
 ];

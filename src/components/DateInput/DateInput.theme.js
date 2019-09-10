@@ -3,7 +3,16 @@ import { css } from '@emotion/core';
 import { createThemeTag } from '../../theme/createThemeTag';
 
 // eslint-disable-next-line
-const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
+const [DateInputTag, themeDateInput] = createThemeTag('dateInput', ({ COLORS }: *) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  modifiers: {
+    stretch: {
+      width: '100%',
+    },
+  },
   globals: css`
     .react-datepicker {
       border: 1px solid ${COLORS.PRIMARY_BORDER_COLOR};
@@ -189,4 +198,28 @@ const [_, theme] = createThemeTag('dateInput', ({ COLORS }: *) => ({
   `,
 }));
 
-export { theme };
+const [DateInputCalendarTag, themeDateInputCalendar] = createThemeTag('dateInputCalendar', ({ COLORS, SIZES }: *) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'row',
+    maxHeight: 36,
+    maxWidth: 36,
+    minHeight: 36,
+    minWidth: 36,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: COLORS.PRIMARY_BORDER_COLOR,
+    borderTopRightRadius: SIZES.MAIN_BORDER_RADIUS,
+    borderBottomRightRadius: SIZES.MAIN_BORDER_RADIUS,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    marginLeft: -1,
+  },
+}));
+
+const theme = {
+  ...themeDateInput,
+  ...themeDateInputCalendar,
+};
+
+export { theme, DateInputTag, DateInputCalendarTag };

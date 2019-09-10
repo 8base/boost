@@ -6,8 +6,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 import { DateInputValue } from './DateInputValue';
 import { Dropdown } from '../Dropdown';
-import * as utils from './DateInput.utils';
+import { Icon } from '../Icon';
 
+import { DateInputTag, DateInputCalendarTag } from './DateInput.theme';
+import * as utils from './DateInput.utils';
 
 type DateInputProps = {
   onChange: (value: ?string) => void,
@@ -119,6 +121,12 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     };
   }
 
+  toggle = () => {
+    const { isOpen } = this.state;
+
+    this.setState({ isOpen: !isOpen });
+  };
+
   open = () => {
     const { isOpen } = this.state;
 
@@ -140,33 +148,39 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     const mask = isMonthPicker ? utils.YEAR_MONTH_MASK : withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (
-      <Dropdown
-        isOpen={ isOpen && !disabled }
-        stretch={ stretch }
-        onCloseDropdown={ this.close }
-        onOpenDropdown={ this.open }
-        { ...rest }
-      >
-        <Dropdown.Head onClick={ this.open }>
-          <DateInputValue
-            placeholder={ placeholder }
-            mask={ mask }
-            value={ textValue }
-            onChange={ this.onChangeText }
-            onBlur={ this.onBlur }
-            clearable={ clearable }
-            disabled={ disabled }
-            autoFocus={ autoFocus }
-          />
-        </Dropdown.Head>
-        <Dropdown.Body withPortal={ withPortal } modifiers={{
-          preventOverflow: {
-            boundariesElement: 'viewport',
-          },
-        }}>
-          <DatePicker { ...collectedProps } />
-        </Dropdown.Body>
-      </Dropdown>
+      <DateInputTag stretch={ stretch }>
+        <DateInputValue
+          placeholder={ placeholder }
+          mask={ mask }
+          value={ textValue }
+          onChange={ this.onChangeText }
+          onBlur={ this.onBlur }
+          clearable={ clearable }
+          disabled={ disabled }
+          autoFocus={ autoFocus }
+        />
+        <Dropdown
+          isOpen={ isOpen && !disabled }
+          stretch={ stretch }
+          onCloseDropdown={ this.close }
+          onOpenDropdown={ this.open }
+          css={{ flex: 0 }}
+          { ...rest }
+        >
+          <Dropdown.Head onClick={ this.toggle }>
+            <DateInputCalendarTag>
+              <Icon name="Calendar" />
+            </DateInputCalendarTag>
+          </Dropdown.Head>
+          <Dropdown.Body withPortal={ withPortal } placement="bottom-end" modifiers={{
+            preventOverflow: {
+              boundariesElement: 'viewport',
+            },
+          }}>
+            <DatePicker { ...collectedProps } />
+          </Dropdown.Body>
+        </Dropdown>
+      </DateInputTag>
     );
   }
 }

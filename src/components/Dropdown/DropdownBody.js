@@ -17,7 +17,7 @@ type DropdownBodyProps = {
   children: React$Node | ({ closeDropdown: () => void }) => React$Node,
 
   /** Default content position relative target */
-  placement?: 'top' | 'left' | 'bottom' | 'right' | 'auto',
+  placement?: 'top' | 'left' | 'bottom' | 'right' | 'auto' | 'bottom-end' | 'bottom-start' | 'top-end' | 'top-start',
   /** Default content align relative target*/
   pin?: 'left' | 'right',
   /** Set body offset relative target */

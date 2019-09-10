@@ -20,6 +20,7 @@ type DropdownControlledProps = {|
   /** Callback to open dropdown */
   onOpenDropdown?: () => void,
   children: React$Node,
+  css?: Object,
 |}
 
 type DropdownUncontroledProps = {|
@@ -28,6 +29,7 @@ type DropdownUncontroledProps = {|
   /** When true then  plate */
   stretch?: boolean,
   children: React$Node,
+  css?: Object,
 |}
 
 type DropdownContextData = {|

@@ -14,7 +14,7 @@ type DateInputValueProps = {
 };
 
 const DateInputValue = ({ value, onChange, ...props }: DateInputValueProps) => (
-  <Input onChange={ (val) => onChange({ target: { value: val }}) } value={ value } { ...props } />
+  <Input css={{ '& > input': { borderTopRightRadius: 0, borderBottomRightRadius: 0 }}} onChange={ (val) => onChange({ target: { value: val }}) } value={ value } { ...props } />
 );
 
 export { DateInputValue };

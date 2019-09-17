@@ -28,6 +28,9 @@ type SelectProps = {|
   components?: Object,
   className?: string,
   formatOptionLabel?: Function,
+  filterOption?: Function,
+  getOptionValue?: Function,
+  getOptionLabel?: Function,
   /** when stretch is true, width is 100% */
   stretch?: boolean,
   css?: SerializedStyles,
@@ -156,6 +159,9 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       onInputChange,
       menuIsOpen,
       autoFocus,
+      filterOption,
+      getOptionValue,
+      getOptionLabel,
       ...rest
     } = this.props;
 
@@ -182,6 +188,9 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           inputValue={ inputValue }
           onInputChange={ onInputChange }
           menuIsOpen={ menuIsOpen }
+          filterOption={ filterOption }
+          getOptionValue={ getOptionValue }
+          getOptionLabel={ getOptionLabel }
         />
       </SelectTag>
     );

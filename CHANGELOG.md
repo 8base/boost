@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/8base/boost/compare/v1.1.0...v1.1.1) (2019-09-19)
+
+
+### Bug Fixes
+
+* **DateInput:** fix passing e2e prop ([f26b6b9](https://github.com/8base/boost/commit/f26b6b9))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/8base/boost/compare/v1.0.8...v1.1.0) (2019-09-17)
 

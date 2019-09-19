@@ -148,7 +148,7 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
     const mask = isMonthPicker ? utils.YEAR_MONTH_MASK : withTime ? utils.DATETIME_MASK : utils.DATE_MASK;
 
     return (
-      <DateInputTag stretch={ stretch }>
+      <DateInputTag stretch={ stretch } { ...rest }>
         <DateInputValue
           placeholder={ placeholder }
           mask={ mask }
@@ -165,7 +165,6 @@ class DateInput extends React.Component<DateInputProps, DateInputState> {
           onCloseDropdown={ this.close }
           onOpenDropdown={ this.open }
           css={{ flex: 0 }}
-          { ...rest }
         >
           <Dropdown.Head onClick={ this.toggle }>
             <DateInputCalendarTag>

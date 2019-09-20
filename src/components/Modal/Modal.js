@@ -82,7 +82,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
             <ModalTag
               modifiers={ rest }
               tagName="div"
-              onMouseDown={ this.onModalMouseDown }
+              onMouseDown={ this.onOverlayMouseDown }
             >
               { typeof children === 'function' ? children(rest) : children }
             </ModalTag>

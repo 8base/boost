@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/8base/boost/compare/v1.1.1...v1.1.2) (2019-09-23)
+
+
+### Bug Fixes
+
+* **storybook:** downgrades version. ([a47cb4f](https://github.com/8base/boost/commit/a47cb4f))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/8base/boost/compare/v1.1.0...v1.1.1) (2019-09-19)
 

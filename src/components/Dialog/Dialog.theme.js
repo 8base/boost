@@ -34,8 +34,7 @@ const [DialogTag, themeDialog] = createThemeTag('dialog', {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    maxHeight: '90%',
-    flex: '0 1 90%',
+    margin: '40px 0',
   },
   modifiers: {
     stretch: {

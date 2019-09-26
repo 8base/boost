@@ -63,10 +63,6 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     }
   };
 
-  onModalMouseDown = (event) => {
-    event.stopPropagation();
-  };
-
   render() {
     const { children, isOpen, ...rest } = this.props;
 
@@ -82,7 +78,7 @@ class Modal extends PureComponent<ModalProps, ModalState> {
             <ModalTag
               modifiers={ rest }
               tagName="div"
-              onMouseDown={ this.onModalMouseDown }
+              onMouseDown={ this.onOverlayMouseDown }
             >
               { typeof children === 'function' ? children(rest) : children }
             </ModalTag>

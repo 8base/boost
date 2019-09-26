@@ -63,10 +63,6 @@ class Modal extends PureComponent<ModalProps, ModalState> {
     }
   };
 
-  onModalMouseDown = (event) => {
-    event.stopPropagation();
-  };
-
   render() {
     const { children, isOpen, ...rest } = this.props;
 

@@ -1,3 +1,14 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/8base/boost/compare/v1.1.2...v1.1.3) (2019-09-26)
+
+
+### Bug Fixes
+
+* **Dialog:** fix broken close action ([dc649e2](https://github.com/8base/boost/commit/dc649e2))
+* **Modal:** remove unused fn ([30db9c6](https://github.com/8base/boost/commit/30db9c6))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/8base/boost/compare/v1.1.1...v1.1.2) (2019-09-23)
 

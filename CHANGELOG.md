@@ -1,3 +1,13 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/8base/boost/compare/v1.1.3...v1.1.4) (2019-09-27)
+
+
+### Bug Fixes
+
+* **Modal:** prevent close on click content ([3e1ebf8](https://github.com/8base/boost/commit/3e1ebf8))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/8base/boost/compare/v1.1.2...v1.1.3) (2019-09-26)
 

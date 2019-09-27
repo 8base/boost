@@ -47,6 +47,7 @@ const Dialog = ({
       args={ args }
       shouldCloseOnOverlayClick={ shouldCloseOnOverlayClick }
       shouldCloseOnEscPress={ shouldCloseOnEscPress }
+      stretch={ stretch }
     >
       {
         ({ args, onClose }) => (

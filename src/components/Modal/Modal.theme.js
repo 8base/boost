@@ -21,11 +21,15 @@ const [OverlayTag, themeOverlay] = createThemeTag(`${name}Overlay`, ({ Z_INDEX }
 
 const [ModalTag, themeModal] = createThemeTag(name, {
   root: {
-    height: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  modifiers: {
+    stretch: {
+      height: '100%',
+    },
   },
 });
 

@@ -35,6 +35,27 @@ const ThemeDecorator = (storyFn) => (
   </BoostProvider>
 );
 
+const isClassComponent = (component) => typeof component === 'function' &&
+  !!component.prototype.isReactComponent;
+
+const isFunctionComponent = (component) =>
+  typeof component === 'function' &&
+  String(component).includes('return React.createElement');
+
+const isReactComponent = (component) =>
+  isClassComponent(component) ||
+  isFunctionComponent(component);
+
+const updateSubComponentDisplayName = component => {
+  for (const key in component) {
+    if (isReactComponent(component[key])) {
+      component[key].displayName = `${component.name}.${key}`;
+    }
+  }
+};
+
+Object.entries(components).map(([, component]) => updateSubComponentDisplayName(component));
+
 export const asStory = (name: string, module: *, init: *) => {
   init(
     storiesOf(name, module)

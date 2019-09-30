@@ -46,7 +46,7 @@ const isReactComponent = (component) =>
   isClassComponent(component) ||
   isFunctionComponent(component);
 
-const updateSubComponentDisplayName = component => {
+const updateSubComponentDisplayName = (component:Object) => {
   for (const key in component) {
     if (isReactComponent(component[key])) {
       component[key].displayName = `${component.name}.${key}`;

@@ -2,16 +2,20 @@
 
 import React from 'react';
 
-import { storiesOf } from '@storybook/react';
 import { Divider } from '../../';
 
-storiesOf('Components/Divider', module)
-  .add('without title', () => (
-    <Divider />
-  ))
-  .add('with title', () => (
-    <Divider>
-          With Title
-    </Divider>
-  ));
+export default {
+  title: 'Components/Divider',
+};
 
+export const withoutTitle = () => <Divider />;
+
+withoutTitle.story = {
+  name: 'without title',
+};
+
+export const withTitle = () => <Divider>With Title</Divider>;
+
+withTitle.story = {
+  name: 'with title',
+};

@@ -1,7 +1,6 @@
 /* eslint-disable no-alert */
 
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Avatars, Column } from '../../';
 
 const USERS = [
@@ -14,12 +13,17 @@ const USERS = [
   { firstName: 'Aubrey', lastName: 'Modrak' },
 ];
 
+export default {
+  title: 'Components/Avatars',
+};
 
-storiesOf('Components/Avatars', module)
-  .add('common', () => (
-    <Column gap="lg">
-      <Avatars size="md" users={ USERS } />
-      <Avatars users={ USERS } />
-    </Column>
-  ));
+export const common = () => (
+  <Column gap="lg">
+    <Avatars size="md" users={USERS} />
+    <Avatars users={USERS} />
+  </Column>
+);
 
+common.story = {
+  name: 'common',
+};

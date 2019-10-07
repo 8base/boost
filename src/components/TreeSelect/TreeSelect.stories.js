@@ -1,8 +1,6 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Column, TreeSelect } from '../../';
 import { StateContainer } from '../../../storybook/StateContainer';
-
 
 const OPTIONS = {
   label: 'Search me',
@@ -37,48 +35,66 @@ const OPTIONS = {
   ],
 };
 
+const LONG_OPTIONS = [
+  {
+    label:
+      'Geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness topia antiorthodox cerebropedal Sothis whispered basilica idealizer outvalue thwacking unafraid coining nak friskily renishly stringsman',
+    value: 'ovenlike',
+  },
+  {
+    label:
+      'backhander unpersecuted platch antisymmetrical fumaroid chromitite Microthelyphonida epigraphically myope supramechanical pageant ankle camphory nitronaphthalene thieve umquhile mornings gynomonoecism unvulgarize rickmatic saltless sternoglossal pungi pronumber',
+    value: 'serjeant',
+  },
+  {
+    label:
+      'juju tattlery nonperpetual nonexternal vocabularied umber lichenological repressure unpoled blepharosynechia peragration reduplicature acarid citizenism nongelatinizing splenoptosia unpoisoned tympanic tachogram unhardness dovetail transonic cuinage tributariness',
+    value: 'wiseheartedly',
+  },
+];
 
-const LONG_OPTIONS = [{
-  label: 'Geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness geoglossaceae nontransportation laemodipodiform gluttonously spaework ankylorrhinia zain carlet ironheartedness topia antiorthodox cerebropedal Sothis whispered basilica idealizer outvalue thwacking unafraid coining nak friskily renishly stringsman',
-  value: 'ovenlike',
-}, {
-  label: 'backhander unpersecuted platch antisymmetrical fumaroid chromitite Microthelyphonida epigraphically myope supramechanical pageant ankle camphory nitronaphthalene thieve umquhile mornings gynomonoecism unvulgarize rickmatic saltless sternoglossal pungi pronumber',
-  value: 'serjeant',
-}, {
-  label: 'juju tattlery nonperpetual nonexternal vocabularied umber lichenological repressure unpoled blepharosynechia peragration reduplicature acarid citizenism nongelatinizing splenoptosia unpoisoned tympanic tachogram unhardness dovetail transonic cuinage tributariness',
-  value: 'wiseheartedly',
-}];
+export default {
+  title: 'Components/TreeSelect',
+};
 
-storiesOf('Components/TreeSelect', module)
-  .add('common', () => (
-    <Column>
-      <StateContainer value={ [] }>
-        { ({ value, onChange }) => (
-          <TreeSelect
-            value={ value }
-            options={ OPTIONS }
-            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-          />
-        ) }
-      </StateContainer>
-      <StateContainer value={ [OPTIONS.children[1].value, OPTIONS.children[2].value, OPTIONS.children[0].children[0].value] }>
-        { ({ value, onChange }) => (
-          <TreeSelect
-            value={ value }
-            options={ OPTIONS }
-            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-          />
-        ) }
-      </StateContainer>
-      <StateContainer value={ [LONG_OPTIONS[0].value, LONG_OPTIONS[2].value] }>
-        { ({ value, onChange }) => (
-          <TreeSelect
-            value={ value }
-            options={ LONG_OPTIONS }
-            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-          />
-        ) }
-      </StateContainer>
-    </Column>
-  ));
+export const common = () => (
+  <Column>
+    <StateContainer value={[]}>
+      {({ value, onChange }) => (
+        <TreeSelect
+          value={value}
+          options={OPTIONS}
+          onChange={(_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value))}
+        />
+      )}
+    </StateContainer>
+    <StateContainer
+      value={[
+        OPTIONS.children[1].value,
+        OPTIONS.children[2].value,
+        OPTIONS.children[0].children[0].value,
+      ]}
+    >
+      {({ value, onChange }) => (
+        <TreeSelect
+          value={value}
+          options={OPTIONS}
+          onChange={(_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value))}
+        />
+      )}
+    </StateContainer>
+    <StateContainer value={[LONG_OPTIONS[0].value, LONG_OPTIONS[2].value]}>
+      {({ value, onChange }) => (
+        <TreeSelect
+          value={value}
+          options={LONG_OPTIONS}
+          onChange={(_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value))}
+        />
+      )}
+    </StateContainer>
+  </Column>
+);
 
+common.story = {
+  name: 'common',
+};

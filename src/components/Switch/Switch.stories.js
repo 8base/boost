@@ -2,14 +2,19 @@
 
 import React from 'react';
 
-import { storiesOf } from '@storybook/react';
 import { Switch, Column } from '../../';
 
-storiesOf('Components/Switch', module)
-  .add('common', () => (
-    <Column>
-      <Switch label="Unchecked" value={ false } />
-      <Switch label="Checked" value />
-    </Column>
-  ));
+export default {
+  title: 'Components/Switch',
+};
 
+export const common = () => (
+  <Column>
+    <Switch label="Unchecked" value={false} />
+    <Switch label="Checked" value />
+  </Column>
+);
+
+common.story = {
+  name: 'common',
+};

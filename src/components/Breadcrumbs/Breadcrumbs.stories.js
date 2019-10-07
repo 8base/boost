@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Breadcrumbs } from '../../';
 
 const routes = [
@@ -9,9 +8,14 @@ const routes = [
   { path: '/app/settings/security', label: 'Security' },
 ];
 
+export default {
+  title: 'Components/Breadcrumbs',
+};
 
-storiesOf('Components/Breadcrumbs', module)
-  .add('common', () => (
-    <Breadcrumbs pathname="/app/settings/security" routes={ routes } param={ 1 } />
-  ));
+export const common = () => (
+  <Breadcrumbs pathname="/app/settings/security" routes={routes} param={1} />
+);
 
+common.story = {
+  name: 'common',
+};

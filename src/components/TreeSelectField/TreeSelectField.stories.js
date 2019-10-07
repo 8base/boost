@@ -1,8 +1,6 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { TreeSelectField, Column } from '../../';
 import { StateContainer } from '../../../storybook/StateContainer';
-
 
 const OPTIONS = {
   label: 'Search me',
@@ -37,13 +35,23 @@ const OPTIONS = {
   ],
 };
 
-storiesOf('Components/TreeSelectField', module)
-  .add('common', () => (
-    <Column>
-      <StateContainer value={ [OPTIONS.children[2].value] } withForm>
-        <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" options={ OPTIONS } />
-      </StateContainer>
-    </Column>
-  ));
+export default {
+  title: 'Components/TreeSelectField',
+};
 
+export const common = () => (
+  <Column>
+    <StateContainer value={[OPTIONS.children[2].value]} withForm>
+      <TreeSelectField
+        label="TreeSelect"
+        name="name"
+        placeholder="Select an option"
+        options={OPTIONS}
+      />
+    </StateContainer>
+  </Column>
+);
 
+common.story = {
+  name: 'common',
+};

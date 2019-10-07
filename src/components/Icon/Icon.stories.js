@@ -4,18 +4,19 @@ import { Icon, Row, Text, Grid } from '../../';
 
 export default {
   title: 'Components/Icon',
+  component: Icon,
 };
 
 export const allIcons = () => (
   <Grid.Layout columns="auto auto auto auto auto" gap="sm">
-    {Object.keys(glyphs).map(name => (
-      <Grid.Box key={name}>
+    { Object.keys(glyphs).map(name => (
+      <Grid.Box key={ name }>
         <Row>
-          <Icon name={name} />
-          <Text>{name}</Text>
+          <Icon name={ name } />
+          <Text>{ name }</Text>
         </Row>
       </Grid.Box>
-    ))}
+    )) }
   </Grid.Layout>
 );
 

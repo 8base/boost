@@ -5,6 +5,7 @@ import { Tag, Column } from '../../';
 
 export default {
   title: 'Components/Tag',
+  component: Tag,
 };
 
 export const common = () => (

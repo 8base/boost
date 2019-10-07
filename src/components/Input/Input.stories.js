@@ -4,41 +4,42 @@ import { StateContainer } from '../../../storybook/StateContainer';
 
 export default {
   title: 'Components/Input',
+  component: Input,
 };
 
-export const defaultStory = () => <Input name="input" onChange={() => null} />;
+export const defaultStory = () => <Input name="input" onChange={ () => null } />;
 
 defaultStory.story = {
   name: 'default',
 };
 
-export const withValue = () => <Input name="input" value="value" onChange={() => null} />;
+export const withValue = () => <Input name="input" value="value" onChange={ () => null } />;
 
 withValue.story = {
   name: 'with value',
 };
 
 export const withPlaceholder = () => (
-  <Input name="input" placeholder="custom placeholder" onChange={() => null} />
+  <Input name="input" placeholder="custom placeholder" onChange={ () => null } />
 );
 
 withPlaceholder.story = {
   name: 'with placeholder',
 };
 
-export const withError = () => <Input name="input" hasError onChange={() => null} />;
+export const withError = () => <Input name="input" hasError onChange={ () => null } />;
 
 withError.story = {
   name: 'with error',
 };
 
-export const withStretchFalse = () => <Input name="input" stretch={false} onChange={() => null} />;
+export const withStretchFalse = () => <Input name="input" stretch={ false } onChange={ () => null } />;
 
 withStretchFalse.story = {
   name: 'with stretch=false',
 };
 
-export const withCustomWidth = () => <Input name="input" width={5} onChange={() => null} />;
+export const withCustomWidth = () => <Input name="input" width={ 5 } onChange={ () => null } />;
 
 withCustomWidth.story = {
   name: 'with custom width',
@@ -88,7 +89,7 @@ withClearButton.story = {
 
 export const withTypeNumber = () => (
   <StateContainer value="0">
-    <Input name="input" type="number" stretch={false} />
+    <Input name="input" type="number" stretch={ false } />
   </StateContainer>
 );
 
@@ -97,7 +98,7 @@ withTypeNumber.story = {
 };
 
 export const withKindUnderline = () => (
-  <Input name="input" kind="underline" placeholder="custom placeholder" onChange={() => null} />
+  <Input name="input" kind="underline" placeholder="custom placeholder" onChange={ () => null } />
 );
 
 withKindUnderline.story = {

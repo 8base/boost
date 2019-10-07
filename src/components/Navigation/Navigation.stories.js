@@ -9,6 +9,7 @@ const ExpandState = ({ children }) => {
 
 export default {
   title: 'Components/Navigation',
+  component: Navigation,
 };
 
 export const defaultStory = () => (
@@ -49,12 +50,12 @@ withoutIcons.story = {
 
 export const withExpandButton = () => (
   <ExpandState>
-    {({ expanded, setExpanded }) => (
+    { ({ expanded, setExpanded }) => (
       <React.Fragment>
-        <Button onClick={() => setExpanded(!expanded)}>{expanded ? 'Collapse' : 'Expand'}</Button>
+        <Button onClick={ () => setExpanded(!expanded) }>{ expanded ? 'Collapse' : 'Expand' }</Button>
         <Navigation
-          expanded={expanded}
-          expandedWidth={196}
+          expanded={ expanded }
+          expandedWidth={ 196 }
           color="GREEN"
           data-e2e-id="default-navigation"
         >
@@ -63,7 +64,7 @@ export const withExpandButton = () => (
           <Navigation.Item icon="Search" label="My Active Jobs" to="/my-active-jobs" />
         </Navigation>
       </React.Fragment>
-    )}
+    ) }
   </ExpandState>
 );
 

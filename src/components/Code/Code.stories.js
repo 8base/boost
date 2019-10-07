@@ -4,6 +4,7 @@ import { Code } from '../../';
 
 export default {
   title: 'Components/Code',
+  component: Code,
 };
 
 export const common = () => (
@@ -18,8 +19,8 @@ common.story = {
 };
 
 export const withCustomHeight = () => (
-  <Code height={200}>
-    {`npm i -g 8base
+  <Code height={ 200 }>
+    { `npm i -g 8base
 8base init my-project
 
 npm i -g 8base
@@ -40,7 +41,7 @@ npm i -g 8base
 8base init my-project
 npm i -g 8base
 8base init my-project
-`}
+` }
   </Code>
 );
 
@@ -49,8 +50,8 @@ withCustomHeight.story = {
 };
 
 export const withCopyButtonStory = () => (
-  <Code height={200} withCopyButton>
-    {`
+  <Code height={ 200 } withCopyButton>
+    { `
 <p>
   npm i -g 8base
   8base init my-project
@@ -67,7 +68,7 @@ export const withCopyButtonStory = () => (
   npm i -g 8base
   8base init my-project
 </p>
-          `}
+          ` }
   </Code>
 );
 

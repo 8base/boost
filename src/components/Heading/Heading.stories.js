@@ -4,6 +4,7 @@ import { Heading, Grid } from '../../';
 
 export default {
   title: 'Components/Heading',
+  component: Heading,
 };
 
 export const common = () => (

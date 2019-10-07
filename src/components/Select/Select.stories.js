@@ -37,33 +37,34 @@ const LONG_OPTIONS = [
 
 export default {
   title: 'Components/Select',
+  component: Select,
 };
 
 export const common = () => (
   <Column>
-    <StateContainer value={null}>
-      <Select name="name" placeholder="Select an option" options={OPTIONS} stretch={false} />
+    <StateContainer value={ null }>
+      <Select name="name" placeholder="Select an option" options={ OPTIONS } stretch={ false } />
     </StateContainer>
-    <StateContainer value={OPTIONS[1].value}>
-      <Select name="name" placeholder="Select an option" options={OPTIONS} clearable />
+    <StateContainer value={ OPTIONS[1].value }>
+      <Select name="name" placeholder="Select an option" options={ OPTIONS } clearable />
     </StateContainer>
-    <StateContainer value={[OPTIONS[1].value, OPTIONS[2].value]}>
-      <Select name="name" placeholder="Select an option" options={OPTIONS} multiple />
+    <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>
+      <Select name="name" placeholder="Select an option" options={ OPTIONS } multiple />
     </StateContainer>
-    <StateContainer value={[LONG_OPTIONS[1].value]}>
-      <Select name="name" placeholder="Select an option" options={LONG_OPTIONS} multiple />
+    <StateContainer value={ [LONG_OPTIONS[1].value] }>
+      <Select name="name" placeholder="Select an option" options={ LONG_OPTIONS } multiple />
     </StateContainer>
-    <StateContainer value={[OPTIONS[1].value, OPTIONS[2].value]}>
+    <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] }>
       <Select
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
+        options={ OPTIONS }
         components={{
           MultiValueLabel: ({ children, ...props }) => (
-            <Select.components.MultiValueLabel {...props}>
+            <Select.components.MultiValueLabel { ...props }>
               <Row>
                 <Icon name="Table" size="sm" />
-                <span>{children}</span>
+                <span>{ children }</span>
               </Row>
             </Select.components.MultiValueLabel>
           ),
@@ -71,8 +72,8 @@ export const common = () => (
         multiple
       />
     </StateContainer>
-    <StateContainer value={null}>
-      <Select name="name" placeholder="Select an option" options={OPTIONS} disabled />
+    <StateContainer value={ null }>
+      <Select name="name" placeholder="Select an option" options={ OPTIONS } disabled />
     </StateContainer>
   </Column>
 );

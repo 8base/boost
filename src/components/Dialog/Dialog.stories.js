@@ -4,6 +4,7 @@ import { ModalContext, Dialog, Paragraph, Button, Column } from '../../';
 
 export default {
   title: 'Components/Dialog',
+  component: Dialog,
 };
 
 export const defaultStory = () => (
@@ -74,11 +75,11 @@ export const withScroll = () => (
     <Dialog.Header title="Mark Job as Completed" />
     <Dialog.Body scrollable>
       <Column>
-        {new Array(100).fill('').map(() => (
+        { new Array(100).fill('').map(() => (
           <Paragraph key="">
             Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics
           </Paragraph>
-        ))}
+        )) }
       </Column>
     </Dialog.Body>
     <Dialog.Footer>
@@ -96,30 +97,30 @@ withScroll.story = {
 
 export const withState = () => (
   <ModalContext.Consumer>
-    {({ openModal, closeModal }) => (
+    { ({ openModal, closeModal }) => (
       <React.Fragment>
-        <Dialog id="ID" size="sm" onClose={() => closeModal('ID')}>
-          {({ args, onClose }) => (
+        <Dialog id="ID" size="sm" onClose={ () => closeModal('ID') }>
+          { ({ args, onClose }) => (
             <React.Fragment>
-              <Dialog.Header title="Mark Job as Completed" onClose={onClose} />
+              <Dialog.Header title="Mark Job as Completed" onClose={ onClose } />
               <Dialog.Body>
                 <Paragraph>
-                  Fagelia cancrivorous {args.foo} Curucaneca Echinocaris {args.bar} glassful
+                  Fagelia cancrivorous { args.foo } Curucaneca Echinocaris { args.bar } glassful
                   agronomics
                 </Paragraph>
               </Dialog.Body>
               <Dialog.Footer>
-                <Button color="neutral" variant="outlined" onClick={onClose}>
+                <Button color="neutral" variant="outlined" onClick={ onClose }>
                   Cancel
                 </Button>
                 <Button type="submit">Apply</Button>
               </Dialog.Footer>
             </React.Fragment>
-          )}
+          ) }
         </Dialog>
-        <Button onClick={() => openModal('ID', { foo: '00', bar: '00' })}>Open</Button>
+        <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open</Button>
       </React.Fragment>
-    )}
+    ) }
   </ModalContext.Consumer>
 );
 

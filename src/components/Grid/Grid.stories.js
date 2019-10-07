@@ -16,10 +16,11 @@ const BorderBlock = styled('div')({
   border: '1px solid gray',
 });
 
-const Block = ({ children }) => <ColorBlock color="#e2e4e9">{children}</ColorBlock>;
+const Block = ({ children }) => <ColorBlock color="#e2e4e9">{ children }</ColorBlock>;
 
 export default {
   title: 'Components/Grid',
+  component: Grid,
 };
 
 export const defaultStory = () => (
@@ -216,10 +217,10 @@ withStretch.story = {
 export const withGridAreas = () => (
   <Grid.Layout
     columns="auto"
-    areas={[
+    areas={ [
       ['avatar', 'info', 'rating', 'rate', 'actions'],
       ['avatar', 'skills', 'skills', 'skills', 'actions'],
-    ]}
+    ] }
   >
     <Grid.Box area="avatar">
       <Block>avatar</Block>

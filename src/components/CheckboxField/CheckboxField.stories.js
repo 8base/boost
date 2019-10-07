@@ -4,6 +4,7 @@ import { CheckboxField, Column } from '../../';
 
 export default {
   title: 'Components/CheckboxField',
+  component: CheckboxField,
 };
 
 export const common = () => (

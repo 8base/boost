@@ -15,12 +15,13 @@ const USERS = [
 
 export default {
   title: 'Components/Avatars',
+  component: Avatars,
 };
 
 export const common = () => (
   <Column gap="lg">
-    <Avatars size="md" users={USERS} />
-    <Avatars users={USERS} />
+    <Avatars size="md" users={ USERS } />
+    <Avatars users={ USERS } />
   </Column>
 );
 

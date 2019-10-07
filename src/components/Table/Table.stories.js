@@ -361,6 +361,7 @@ class TableState extends React.Component {
 
 export default {
   title: 'Components/Table',
+  component: Table,
 };
 
 export const defaultStory = () => (
@@ -375,30 +376,30 @@ export const defaultStory = () => (
         <Table.HeaderCell />
       </Table.Header>
 
-      <Table.Body data={TABLE_DATA} action="Create Client" onActionClick={() => alert('Create')}>
-        {client => (
-          <Table.BodyRow columns="repeat(6, 1fr)" key={client.id}>
-            <Table.BodyCell>{client.id}</Table.BodyCell>
+      <Table.Body data={ TABLE_DATA } action="Create Client" onActionClick={ () => alert('Create') }>
+        { client => (
+          <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+            <Table.BodyCell>{ client.id }</Table.BodyCell>
             <Table.BodyCell>
-              <Link to="/">{`${client.firstName} ${client.lastName}`}</Link>
+              <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
             </Table.BodyCell>
-            <Table.BodyCell>{client.email}</Table.BodyCell>
-            <Table.BodyCell>{client.createdAt}</Table.BodyCell>
-            <Table.BodyCell>{client.updatedAt}</Table.BodyCell>
+            <Table.BodyCell>{ client.email }</Table.BodyCell>
+            <Table.BodyCell>{ client.createdAt }</Table.BodyCell>
+            <Table.BodyCell>{ client.updatedAt }</Table.BodyCell>
             <Table.BodyCell>
-              <Dropdown defaultOpen={false}>
+              <Dropdown defaultOpen={ false }>
                 <Dropdown.Head>
                   <Icon name="More" color="LIGHT_GRAY2" />
                 </Dropdown.Head>
                 <Dropdown.Body pin="right">
                   <Menu>
-                    <Menu.Item onClick={() => alert('Delete')}>Delete</Menu.Item>
+                    <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
                   </Menu>
                 </Dropdown.Body>
               </Dropdown>
             </Table.BodyCell>
           </Table.BodyRow>
-        )}
+        ) }
       </Table.Body>
     </Table>
   </div>
@@ -419,7 +420,7 @@ export const withLoader = () => (
         <Table.HeaderCell>Updated At</Table.HeaderCell>
         <Table.HeaderCell />
       </Table.Header>
-      <Table.Body loading action="Create Client" onActionClick={() => alert('Create')} />
+      <Table.Body loading action="Create Client" onActionClick={ () => alert('Create') } />
     </Table>
   </div>
 );
@@ -462,33 +463,33 @@ export const withData = () => (
       </Table.Header>
 
       <Table.Body
-        data={[TABLE_DATA[0], TABLE_DATA[1]]}
+        data={ [TABLE_DATA[0], TABLE_DATA[1]] }
         action="Create Client"
-        onActionClick={() => alert('Create')}
+        onActionClick={ () => alert('Create') }
       >
-        {client => (
-          <Table.BodyRow columns="repeat(6, 1fr)" key={client.id}>
-            <Table.BodyCell>{client.id}</Table.BodyCell>
+        { client => (
+          <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+            <Table.BodyCell>{ client.id }</Table.BodyCell>
             <Table.BodyCell>
-              <Link to="/">{`${client.firstName} ${client.lastName}`}</Link>
+              <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
             </Table.BodyCell>
-            <Table.BodyCell>{client.email}</Table.BodyCell>
-            <Table.BodyCell>{client.createdAt}</Table.BodyCell>
-            <Table.BodyCell>{client.updatedAt}</Table.BodyCell>
+            <Table.BodyCell>{ client.email }</Table.BodyCell>
+            <Table.BodyCell>{ client.createdAt }</Table.BodyCell>
+            <Table.BodyCell>{ client.updatedAt }</Table.BodyCell>
             <Table.BodyCell>
-              <Dropdown defaultOpen={false}>
+              <Dropdown defaultOpen={ false }>
                 <Dropdown.Head>
                   <Icon name="More" color="LIGHT_GRAY2" />
                 </Dropdown.Head>
                 <Dropdown.Body pin="right">
                   <Menu>
-                    <Menu.Item onClick={() => alert('Delete')}>Delete</Menu.Item>
+                    <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
                   </Menu>
                 </Dropdown.Body>
               </Dropdown>
             </Table.BodyCell>
           </Table.BodyRow>
-        )}
+        ) }
       </Table.Body>
     </Table>
   </div>
@@ -512,7 +513,7 @@ export const withCustomActionButton = () => (
 
       <Table.Body
         action={
-          <Button color="secondary" variant="outlined" onClick={() => alert('Create')}>
+          <Button color="secondary" variant="outlined" onClick={ () => alert('Create') }>
             Create Client
           </Button>
         }
@@ -528,17 +529,17 @@ withCustomActionButton.story = {
 export const withSort = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState>
-      {({ tableState, setTableState }) => (
+      { ({ tableState, setTableState }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={TABLE_DATA}
+          columns={ TABLE_COLUMNS }
+          data={ TABLE_DATA }
           action="Create Client"
-          onActionClick={() => alert('Create')}
-          onChange={setTableState}
-          tableState={tableState}
+          onActionClick={ () => alert('Create') }
+          onChange={ setTableState }
+          tableState={ tableState }
           withMultipleSort
         />
-      )}
+      ) }
     </TableState>
   </div>
 );
@@ -550,17 +551,17 @@ withSort.story = {
 export const withSelectionStory = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState>
-      {({ tableState, setTableState }) => (
+      { ({ tableState, setTableState }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={TABLE_DATA}
+          columns={ TABLE_COLUMNS }
+          data={ TABLE_DATA }
           action="Create Client"
-          onActionClick={() => alert('Create')}
-          onChange={setTableState}
-          tableState={tableState}
+          onActionClick={ () => alert('Create') }
+          onChange={ setTableState }
+          tableState={ tableState }
           withSelection
         />
-      )}
+      ) }
     </TableState>
   </div>
 );
@@ -572,19 +573,19 @@ withSelectionStory.story = {
 export const withPaginationStory = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState async>
-      {({ tableState, setTableState, loading, data }) => (
+      { ({ tableState, setTableState, loading, data }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={data}
+          columns={ TABLE_COLUMNS }
+          data={ data }
           action="Create Client"
-          onActionClick={() => alert('Create')}
-          onChange={setTableState}
-          tableState={tableState}
+          onActionClick={ () => alert('Create') }
+          onChange={ setTableState }
+          tableState={ tableState }
           withPagination
           withSelection
-          loading={loading}
+          loading={ loading }
         />
-      )}
+      ) }
     </TableState>
   </div>
 );
@@ -596,17 +597,17 @@ withPaginationStory.story = {
 export const withCondensedModifier = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState>
-      {({ tableState, setTableState }) => (
+      { ({ tableState, setTableState }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={TABLE_DATA}
+          columns={ TABLE_COLUMNS }
+          data={ TABLE_DATA }
           action="Create Client"
-          onActionClick={() => alert('Create')}
-          onChange={setTableState}
-          tableState={tableState}
+          onActionClick={ () => alert('Create') }
+          onChange={ setTableState }
+          tableState={ tableState }
           condensed
         />
-      )}
+      ) }
     </TableState>
   </div>
 );
@@ -618,17 +619,17 @@ withCondensedModifier.story = {
 export const withBorderedModifier = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState>
-      {({ tableState, setTableState }) => (
+      { ({ tableState, setTableState }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={TABLE_DATA}
+          columns={ TABLE_COLUMNS }
+          data={ TABLE_DATA }
           action="Create Client"
-          onActionClick={() => alert('Create')}
-          onChange={setTableState}
-          tableState={tableState}
+          onActionClick={ () => alert('Create') }
+          onChange={ setTableState }
+          tableState={ tableState }
           bordered
         />
-      )}
+      ) }
     </TableState>
   </div>
 );
@@ -640,12 +641,12 @@ withBorderedModifier.story = {
 export const withCustomNoDataComponent = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableState>
-      {({ tableState, setTableState }) => (
+      { ({ tableState, setTableState }) => (
         <TableBuilder
-          columns={TABLE_COLUMNS}
-          data={[]}
-          onChange={setTableState}
-          tableState={tableState}
+          columns={ TABLE_COLUMNS }
+          data={ [] }
+          onChange={ setTableState }
+          tableState={ tableState }
           noData={
             <Column gap="none" justifyContent="center" alignItems="center" stretch>
               <Icon name="EightBase" size="xl" color="LIGHT_GRAY1" />
@@ -654,7 +655,7 @@ export const withCustomNoDataComponent = () => (
           }
           bordered
         />
-      )}
+      ) }
     </TableState>
   </div>
 );

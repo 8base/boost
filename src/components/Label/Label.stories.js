@@ -4,6 +4,7 @@ import { Label, Column } from '../../';
 
 export default {
   title: 'Components/Label',
+  component: Label,
 };
 
 export const common = () => (

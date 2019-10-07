@@ -7,6 +7,7 @@ const BodyContent = () => <div style={{ padding: '8px' }}>Body</div>;
 
 export default {
   title: 'Components/Dropdown',
+  component: Dropdown,
 };
 
 export const common = () => (
@@ -16,7 +17,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="none" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="none" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -24,7 +25,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="xs" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="xs" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -32,7 +33,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="sm" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="sm" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -40,7 +41,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="md" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="md" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -48,7 +49,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="lg" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="lg" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -56,7 +57,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body offset="xl" background="white" closeOnClickOutside={false}>
+        <Dropdown.Body offset="xl" background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -70,7 +71,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body background="dark" closeOnClickOutside={false}>
+        <Dropdown.Body background="dark" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -78,7 +79,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body background="white" closeOnClickOutside={false}>
+        <Dropdown.Body background="white" closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -86,7 +87,7 @@ export const common = () => (
         <Dropdown.Head>
           <Button>Head</Button>
         </Dropdown.Head>
-        <Dropdown.Body closeOnClickOutside={false}>
+        <Dropdown.Body closeOnClickOutside={ false }>
           <BodyContent />
         </Dropdown.Body>
       </Dropdown>
@@ -135,7 +136,7 @@ export const withStretch = () => (
       <Dropdown.Head stretch>
         <Button stretch>Head</Button>
       </Dropdown.Head>
-      <Dropdown.Body closeOnClickOutside={false} background="white">
+      <Dropdown.Body closeOnClickOutside={ false } background="white">
         <BodyContent />
       </Dropdown.Body>
     </Dropdown>
@@ -147,7 +148,7 @@ export const withStretch = () => (
       <Dropdown.Head stretch>
         <Button stretch>Head</Button>
       </Dropdown.Head>
-      <Dropdown.Body stretch closeOnClickOutside={false} background="white">
+      <Dropdown.Body stretch closeOnClickOutside={ false } background="white">
         <BodyContent />
       </Dropdown.Body>
     </Dropdown>
@@ -159,7 +160,7 @@ export const withStretch = () => (
       <Dropdown.Head stretch>
         <Button stretch>Head</Button>
       </Dropdown.Head>
-      <Dropdown.Body width={170} closeOnClickOutside={false} background="white">
+      <Dropdown.Body width={ 170 } closeOnClickOutside={ false } background="white">
         <BodyContent />
       </Dropdown.Body>
     </Dropdown>
@@ -175,7 +176,7 @@ export const withoutCloseOnOutsideClick = () => (
     <Dropdown.Head>
       <Button>Head</Button>
     </Dropdown.Head>
-    <Dropdown.Body closeOnClickOutside={false} background="white">
+    <Dropdown.Body closeOnClickOutside={ false } background="white">
       <BodyContent />
     </Dropdown.Body>
   </Dropdown>
@@ -201,7 +202,7 @@ withForceRender.story = {
 };
 
 export const withMenu = () => (
-  <Dropdown defaultOpen={false}>
+  <Dropdown defaultOpen={ false }>
     <Dropdown.Head>
       <Icon name="More" color="LIGHT_GRAY2" />
     </Dropdown.Head>

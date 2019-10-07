@@ -4,6 +4,7 @@ import { TextAreaField } from '../../';
 
 export default {
   title: 'Components/TextAreaField',
+  component: TextAreaField,
 };
 
 export const defaultStory = () => (

@@ -4,14 +4,15 @@ import { StateContainer } from '../../../storybook/StateContainer';
 
 export default {
   title: 'Components/DateInputField',
+  component: DateInputField,
 };
 
 export const common = () => (
   <Column>
-    <StateContainer value={null} withForm>
+    <StateContainer value={ null } withForm>
       <DateInputField label="Date" placeholder="mm/dd/yyyy" />
     </StateContainer>
-    <StateContainer value={null} withForm>
+    <StateContainer value={ null } withForm>
       <DateInputField label="Datetime" withTime />
     </StateContainer>
     <StateContainer value="2018-11-07" withForm>

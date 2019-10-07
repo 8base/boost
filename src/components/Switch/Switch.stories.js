@@ -6,11 +6,12 @@ import { Switch, Column } from '../../';
 
 export default {
   title: 'Components/Switch',
+  component: Switch,
 };
 
 export const common = () => (
   <Column>
-    <Switch label="Unchecked" value={false} />
+    <Switch label="Unchecked" value={ false } />
     <Switch label="Checked" value />
   </Column>
 );

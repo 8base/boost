@@ -4,6 +4,7 @@ import { Loader, Row } from '../../';
 
 export default {
   title: 'Components/Loader',
+  component: Loader,
 };
 
 export const common = () => (

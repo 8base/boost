@@ -2,11 +2,12 @@ import React from 'react';
 import { Modal, ModalContext, Button } from '../../';
 
 const CustomBackground = ({ children }) => (
-  <div style={{ backgroundColor: '#fff', padding: '10px' }}>{children}</div>
+  <div style={{ backgroundColor: '#fff', padding: '10px' }}>{ children }</div>
 );
 
 export default {
   title: 'Components/Modal',
+  component: Modal,
 };
 
 export const defaultStory = () => (
@@ -90,7 +91,7 @@ withMultipleModals.story = {
 export const withState = () => (
   <React.Fragment>
     <Modal id="ID">
-      {({ args }) => (
+      { ({ args }) => (
         <CustomBackground>
           XXXXXXXXXX
           <br />
@@ -100,9 +101,9 @@ export const withState = () => (
           <br />
           XXXXXXXXXX
           <br />
-          XXXX{args.foo}XXXX
+          XXXX{ args.foo }XXXX
           <br />
-          XXXX{args.bar}XXXX
+          XXXX{ args.bar }XXXX
           <br />
           XXXXXXXXXX
           <br />
@@ -113,12 +114,12 @@ export const withState = () => (
           XXXXXXXXXX
           <br />
         </CustomBackground>
-      )}
+      ) }
     </Modal>
     <ModalContext.Consumer>
-      {({ openModal }) => (
-        <Button onClick={() => openModal('ID', { foo: '00', bar: '00' })}>Open</Button>
-      )}
+      { ({ openModal }) => (
+        <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open</Button>
+      ) }
     </ModalContext.Consumer>
   </React.Fragment>
 );

@@ -4,6 +4,7 @@ import { SwitchField, Column } from '../../';
 
 export default {
   title: 'Components/SwitchField',
+  component: SwitchField,
 };
 
 export const common = () => (

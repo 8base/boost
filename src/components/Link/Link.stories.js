@@ -4,6 +4,7 @@ import { Link, Avatar } from '../../';
 
 export default {
   title: 'Components/Link',
+  component: Link,
 };
 
 export const common = () => (

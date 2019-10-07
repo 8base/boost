@@ -4,6 +4,7 @@ import { Scrollable } from '../../';
 
 export default {
   title: 'Components/Scrollable',
+  component: Scrollable,
 };
 
 export const defaultStory = () => (

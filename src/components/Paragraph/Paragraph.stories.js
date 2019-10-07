@@ -4,6 +4,7 @@ import { Paragraph } from '../../';
 
 export default {
   title: 'Components/Paragraph',
+  component: Paragraph,
 };
 
 export const common = () => (

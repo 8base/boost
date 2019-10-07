@@ -4,6 +4,7 @@ import { SecondaryNavigation } from '../../';
 
 export default {
   title: 'Components/SecondaryNavigation',
+  component: SecondaryNavigation,
 };
 
 export const defaultStory = () => (
@@ -25,7 +26,7 @@ export const defaultWithActions = () => (
     <SecondaryNavigation.Item
       label="Second item"
       className="active"
-      actions={[{ label: 'Action', onClick: () => null }]}
+      actions={ [{ label: 'Action', onClick: () => null }] }
     />
     <SecondaryNavigation.Item label="Third item" />
     <SecondaryNavigation.Item label="Fourth item" />

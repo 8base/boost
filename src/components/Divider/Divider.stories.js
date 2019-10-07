@@ -6,6 +6,7 @@ import { Divider } from '../../';
 
 export default {
   title: 'Components/Divider',
+  component: Divider,
 };
 
 export const withoutTitle = () => <Divider />;

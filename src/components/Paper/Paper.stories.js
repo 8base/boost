@@ -4,6 +4,7 @@ import { Paper, Row } from '../../';
 
 export default {
   title: 'Components/Paper',
+  component: Paper,
 };
 
 export const defaultStory = () => <Paper padding="md">Paper</Paper>;

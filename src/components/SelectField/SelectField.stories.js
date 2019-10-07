@@ -19,43 +19,44 @@ const OPTIONS = [
 
 export default {
   title: 'Components/SelectField',
+  component: SelectField,
 };
 
 export const common = () => (
   <Column>
-    <StateContainer value={null} withForm>
+    <StateContainer value={ null } withForm>
       <SelectField
         label="Stretch = false"
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
-        stretch={false}
+        options={ OPTIONS }
+        stretch={ false }
       />
     </StateContainer>
-    <StateContainer value={OPTIONS[1].value} withForm>
+    <StateContainer value={ OPTIONS[1].value } withForm>
       <SelectField
         label="Clearable select"
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
+        options={ OPTIONS }
         clearable
       />
     </StateContainer>
-    <StateContainer value={[OPTIONS[1].value, OPTIONS[2].value]} withForm>
+    <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] } withForm>
       <SelectField
         label="Multiple select"
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
+        options={ OPTIONS }
         multiple
       />
     </StateContainer>
-    <StateContainer value={[OPTIONS[1].value, OPTIONS[2].value]} withForm>
+    <StateContainer value={ [OPTIONS[1].value, OPTIONS[2].value] } withForm>
       <SelectField
         label="Multiple select"
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
+        options={ OPTIONS }
         disabled
       />
     </StateContainer>

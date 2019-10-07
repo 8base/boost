@@ -50,10 +50,11 @@ const MESSAGES = [
 
 export default {
   title: 'Components/Logs',
+  component: Logs,
 };
 
 export const defaultStory = () => (
-  <Logs messages={[MESSAGES[0], MESSAGES[1], MESSAGES[2], MESSAGES[3]]} />
+  <Logs messages={ [MESSAGES[0], MESSAGES[1], MESSAGES[2], MESSAGES[3]] } />
 );
 
 defaultStory.story = {
@@ -64,7 +65,7 @@ export const withDialog = () => (
   <Dialog isOpen size="xxl" data-e2e-id="logs-dialog">
     <Dialog.Header title="Logs" />
     <Dialog.Body scrollable padding="none">
-      <Logs messages={[...MESSAGES, ...MESSAGES]} />
+      <Logs messages={ [...MESSAGES, ...MESSAGES] } />
     </Dialog.Body>
   </Dialog>
 );
@@ -77,7 +78,7 @@ export const withStretch = () => (
   <Dialog stretch isOpen size="xxl" data-e2e-id="logs-dialog">
     <Dialog.Header title="Logs" />
     <Dialog.Body scrollable padding="none">
-      <Logs stretch messages={[MESSAGES[0]]} />
+      <Logs stretch messages={ [MESSAGES[0]] } />
     </Dialog.Body>
   </Dialog>
 );

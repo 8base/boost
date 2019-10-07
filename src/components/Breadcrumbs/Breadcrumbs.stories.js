@@ -10,10 +10,11 @@ const routes = [
 
 export default {
   title: 'Components/Breadcrumbs',
+  component: Breadcrumbs,
 };
 
 export const common = () => (
-  <Breadcrumbs pathname="/app/settings/security" routes={routes} param={1} />
+  <Breadcrumbs pathname="/app/settings/security" routes={ routes } param={ 1 } />
 );
 
 common.story = {

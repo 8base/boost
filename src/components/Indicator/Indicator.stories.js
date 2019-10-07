@@ -5,6 +5,7 @@ import { Column, Indicator } from '../../';
 
 export default {
   title: 'Components/Indicator',
+  component: Indicator,
 };
 
 export const common = () => (

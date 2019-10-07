@@ -4,6 +4,7 @@ import { Button, Row, Column, Icon } from '../../';
 
 export default {
   title: 'Components/Button',
+  component: Button,
 };
 
 export const common = () => (

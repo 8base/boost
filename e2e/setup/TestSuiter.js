@@ -23,8 +23,10 @@ class TestSuiter {
     // $FlowIgnore
     this.page = await __BROWSER_CONTEXT__.newPage();
 
+    const story = this.story === 'default' ? 'default-story' : this.story;
+
     await this.page.goto(
-      `${E2E_URL}/?path=/story/${toId(this.kind, this.story)}`, { waitUntil: 'networkidle2' },
+      `${E2E_URL}/?path=/story/${toId(this.kind, story)}`, { waitUntil: 'networkidle2' },
     );
 
     // eslint-disable-next-line
@@ -47,12 +49,6 @@ class TestSuiter {
       }
     `,
     });
-
-    const showInfoButton = await this.iframe.waitForXPath('//button[contains(text(),"Show Info")]');
-
-    await this.iframe.evaluate((showInfoButtonDom) => {
-      showInfoButtonDom.style.display = 'none';
-    }, showInfoButton);
   }
 
   _executeEnhancers = async () => {
@@ -70,8 +66,8 @@ class TestSuiter {
 
   getTestName = () => {
     return this.stateName
-      ? `${this.kind} / ${this.story} / ${this.stateName}`
-      : `${this.kind} / ${this.story}`;
+      ? `${this.kind}/${this.story}/${this.stateName}`
+      : `${this.kind}/${this.story}`;
   }
 
   setStateName = (stateName: string) => {

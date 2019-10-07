@@ -6,6 +6,7 @@ import { Avatar, Row, Column } from '../../';
 
 export default {
   title: 'Components/Avatar',
+  component: Avatar,
 };
 
 export const common = () => (
@@ -33,7 +34,7 @@ common.story = {
 export const withPick = () => (
   <Avatar
     src="https://randomuser.me/api/portraits/women/17.jpg"
-    onPick={() => alert(1)}
+    onPick={ () => alert(1) }
     pickLabel="Change"
   />
 );

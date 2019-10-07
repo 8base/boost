@@ -37,16 +37,17 @@ const OPTIONS = {
 
 export default {
   title: 'Components/TreeSelectField',
+  component: TreeSelectField,
 };
 
 export const common = () => (
   <Column>
-    <StateContainer value={[OPTIONS.children[2].value]} withForm>
+    <StateContainer value={ [OPTIONS.children[2].value] } withForm>
       <TreeSelectField
         label="TreeSelect"
         name="name"
         placeholder="Select an option"
-        options={OPTIONS}
+        options={ OPTIONS }
       />
     </StateContainer>
   </Column>

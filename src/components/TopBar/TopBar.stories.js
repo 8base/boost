@@ -6,11 +6,12 @@ import { TopBar, Column, Icon, Text, Button } from '../../';
 const TopBarWithState = props => {
   const [isOpen, setIsOpen] = useState(true);
 
-  return <TopBar isOpen={isOpen} onClose={() => setIsOpen(false)} {...props} />;
+  return <TopBar isOpen={ isOpen } onClose={ () => setIsOpen(false) } { ...props } />;
 };
 
 export default {
   title: 'Components/TopBar',
+  component: TopBar,
 };
 
 export const common = () => (

@@ -4,6 +4,7 @@ import { NoData } from '../../';
 
 export default {
   title: 'Components/NoData',
+  component: NoData,
 };
 
 export const defaultStory = () => <NoData />;

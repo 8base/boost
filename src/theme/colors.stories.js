@@ -7,10 +7,10 @@ export default {
 
 export const palette = () => (
   <div>
-    {React.Children.toArray(
+    { React.Children.toArray(
       Object.keys(PALETTE).map(key => (
         <div
-          key={key}
+          key={ key }
           style={{
             width: '400px',
             height: '30px',
@@ -20,10 +20,10 @@ export const palette = () => (
             alignItems: 'center',
           }}
         >
-          {key}
+          { key }
         </div>
-      ))
-    )}
+      )),
+    ) }
   </div>
 );
 

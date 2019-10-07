@@ -12,6 +12,7 @@ const anchorCss = css`
 
 export default {
   title: 'Components/Tooltip',
+  component: Tooltip,
 };
 
 export const defaultStory = () => (
@@ -36,7 +37,7 @@ withClickTrigger.story = {
 
 export const withRenderProps = () => (
   <Tooltip trigger="click" message="It is trap! You was catched!">
-    {({ toggleTooltip }) => <Icon name="HelpCenter" onClick={toggleTooltip} />}
+    { ({ toggleTooltip }) => <Icon name="HelpCenter" onClick={ toggleTooltip } /> }
   </Tooltip>
 );
 
@@ -50,13 +51,13 @@ export const withModifiers = () => (
       <a
         href="https://popper.js.org/popper-documentation.html#modifiers"
         target="__blank"
-        css={anchorCss}
+        css={ anchorCss }
       >
         See all modifiers here
       </a>
     }
     placement="right"
-    modifiers={{ offset: { offset: '0, -50%' }, flip: { enabled: false } }}
+    modifiers={{ offset: { offset: '0, -50%' }, flip: { enabled: false }}}
   >
     <Icon name="HelpCenter" />
   </Tooltip>

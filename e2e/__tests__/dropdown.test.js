@@ -7,7 +7,11 @@ const SUITES = [
   baisy.suite('Components/Dropdown', 'with pin')
     .addRootHeight(50),
   baisy.suite('Components/Dropdown', 'with stretch')
-    .addRootHeight(50),
+    .addRootHeight(50)
+    .setEnhancer(async (iframe) => {
+      await (await iframe.waitForXPath('//*[contains(text(),"With body stretch")]/..//button')).click();
+      await (await iframe.waitForXPath('//*[contains(text(),"With body stretch")]/..//button')).click();
+    }),
 ];
 
 

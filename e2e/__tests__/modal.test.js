@@ -2,7 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/Modal', 'default')
+  baisy.suite('Components/Modal', 'default story')
     .setRoot(async (iframe) => {
       return await iframe.waitForXPath('//*[@data-e2e-id="default-modal"]');
     }),

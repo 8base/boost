@@ -2,7 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/Logs', 'default', 'hover')
+  baisy.suite('Components/Logs', 'default story', 'hover')
     .setEnhancer(async (iframe) => {
       const logItem = await iframe.waitForXPath('//*[contains(text(),"START RequestId")]');
 

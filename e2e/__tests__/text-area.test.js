@@ -2,8 +2,8 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/TextArea', 'default'),
-  baisy.suite('Components/TextArea', 'default', 'focus')
+  baisy.suite('Components/TextArea', 'default story'),
+  baisy.suite('Components/TextArea', 'default story', 'focus')
     .setEnhancer(async (iframe) => {
       const textarea = await iframe.waitForXPath('//textarea');
 

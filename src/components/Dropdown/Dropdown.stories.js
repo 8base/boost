@@ -11,7 +11,7 @@ export default {
 };
 
 export const common = () => (
-  <Column stretch growChildren alignItems="stretch">
+  <Column growChildren alignItems="stretch" style={{ width: '100%' }}>
     <Row>
       <Dropdown defaultOpen>
         <Dropdown.Head>
@@ -100,7 +100,7 @@ common.story = {
 };
 
 export const withPin = () => (
-  <Column stretch growChildren alignItems="stretch">
+  <Column growChildren alignItems="stretch" style={{ width: '100%' }}>
     <Text>With default pin</Text>
     <Dropdown defaultOpen>
       <Dropdown.Head stretch>
@@ -130,40 +130,46 @@ withPin.story = {
 };
 
 export const withStretch = () => (
-  <Column stretch growChildren alignItems="stretch">
-    <Text>With target stretch</Text>
-    <Dropdown defaultOpen>
-      <Dropdown.Head stretch>
-        <Button stretch>Head</Button>
-      </Dropdown.Head>
-      <Dropdown.Body closeOnClickOutside={ false } background="white">
-        <BodyContent />
-      </Dropdown.Body>
-    </Dropdown>
+  <Column growChildren alignItems="stretch" style={{ width: '100%' }}>
+    <div>
+      <Text>With target stretch</Text>
+      <Dropdown defaultOpen>
+        <Dropdown.Head stretch>
+          <Button stretch>Head</Button>
+        </Dropdown.Head>
+        <Dropdown.Body closeOnClickOutside={ false } background="white">
+          <BodyContent />
+        </Dropdown.Body>
+      </Dropdown>
+    </div>
     <br />
     <br />
     <br />
-    <Text>With body stretch</Text>
-    <Dropdown defaultOpen>
-      <Dropdown.Head stretch>
-        <Button stretch>Head</Button>
-      </Dropdown.Head>
-      <Dropdown.Body stretch closeOnClickOutside={ false } background="white">
-        <BodyContent />
-      </Dropdown.Body>
-    </Dropdown>
+    <div>
+      <Text>With body stretch</Text>
+      <Dropdown defaultOpen>
+        <Dropdown.Head stretch>
+          <Button stretch>Head</Button>
+        </Dropdown.Head>
+        <Dropdown.Body stretch closeOnClickOutside={ false } background="white">
+          <BodyContent />
+        </Dropdown.Body>
+      </Dropdown>
+    </div>
     <br />
     <br />
     <br />
-    <Text>With custom body width</Text>
-    <Dropdown defaultOpen>
-      <Dropdown.Head stretch>
-        <Button stretch>Head</Button>
-      </Dropdown.Head>
-      <Dropdown.Body width={ 170 } closeOnClickOutside={ false } background="white">
-        <BodyContent />
-      </Dropdown.Body>
-    </Dropdown>
+    <div>
+      <Text>With custom body width</Text>
+      <Dropdown defaultOpen>
+        <Dropdown.Head stretch>
+          <Button stretch>Head</Button>
+        </Dropdown.Head>
+        <Dropdown.Body width={ 170 } closeOnClickOutside={ false } background="white">
+          <BodyContent />
+        </Dropdown.Body>
+      </Dropdown>
+    </div>
   </Column>
 );
 

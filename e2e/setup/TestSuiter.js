@@ -23,10 +23,8 @@ class TestSuiter {
     // $FlowIgnore
     this.page = await __BROWSER_CONTEXT__.newPage();
 
-    const story = this.story === 'default' ? 'default-story' : this.story;
-
     await this.page.goto(
-      `${E2E_URL}/?path=/story/${toId(this.kind, story)}`, { waitUntil: 'networkidle2' },
+      `${E2E_URL}/?path=/story/${toId(this.kind, this.story)}`, { waitUntil: 'networkidle2' },
     );
 
     // eslint-disable-next-line

@@ -2,8 +2,8 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/Navigation', 'default'),
-  baisy.suite('Components/Navigation', 'default', 'hover')
+  baisy.suite('Components/Navigation', 'default story'),
+  baisy.suite('Components/Navigation', 'default story', 'hover')
     .setEnhancer(async (iframe) => {
       const navigationItem = await iframe.waitForXPath('//*[@data-e2e-id="default-navigation"]//a');
 

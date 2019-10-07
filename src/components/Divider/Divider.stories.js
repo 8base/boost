@@ -2,16 +2,16 @@
 
 import React from 'react';
 
-export default (asStory: *) => {
-  asStory('Components/Divider', module, (story, { Divider }) => {
-    story
-      .add('without title', () => (
-        <Divider />
-      ))
-      .add('with title', () => (
-        <Divider>
+import { storiesOf } from '@storybook/react';
+import { Divider } from '../../';
+
+storiesOf('Components/Divider', module)
+  .add('without title', () => (
+    <Divider />
+  ))
+  .add('with title', () => (
+    <Divider>
           With Title
-        </Divider>
-      ));
-  });
-};
+    </Divider>
+  ));
+

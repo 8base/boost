@@ -1,20 +1,14 @@
 // @flow
 
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Column, Indicator } from '../../';
 
-export default (asStory: *) => {
-  asStory(
-    'Components/Indicator',
-    module,
-    (story, { Indicator, Column }) => {
-      story
-        .add('common', () => (
-          <Column>
-            <Indicator>Disabled</Indicator>
-            <Indicator status="enabled">Enabled</Indicator>
-          </Column>
-        ));
-    },
-  );
-};
+storiesOf('Components/Indicator', module)
+  .add('common', () => (
+    <Column>
+      <Indicator>Disabled</Indicator>
+      <Indicator status="enabled">Enabled</Indicator>
+    </Column>
+  ));
 

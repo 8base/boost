@@ -1,4 +1,8 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Column, TreeSelect } from '../../';
+import { StateContainer } from '../../../storybook/StateContainer';
+
 
 const OPTIONS = {
   label: 'Search me',
@@ -45,40 +49,36 @@ const LONG_OPTIONS = [{
   value: 'wiseheartedly',
 }];
 
+storiesOf('Components/TreeSelect', module)
+  .add('common', () => (
+    <Column>
+      <StateContainer value={ [] }>
+        { ({ value, onChange }) => (
+          <TreeSelect
+            value={ value }
+            options={ OPTIONS }
+            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
+          />
+        ) }
+      </StateContainer>
+      <StateContainer value={ [OPTIONS.children[1].value, OPTIONS.children[2].value, OPTIONS.children[0].children[0].value] }>
+        { ({ value, onChange }) => (
+          <TreeSelect
+            value={ value }
+            options={ OPTIONS }
+            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
+          />
+        ) }
+      </StateContainer>
+      <StateContainer value={ [LONG_OPTIONS[0].value, LONG_OPTIONS[2].value] }>
+        { ({ value, onChange }) => (
+          <TreeSelect
+            value={ value }
+            options={ LONG_OPTIONS }
+            onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
+          />
+        ) }
+      </StateContainer>
+    </Column>
+  ));
 
-export default (asStory) => {
-  asStory('Components/TreeSelect', module, (story, { Column, StateContainer, TreeSelect }) => {
-    story
-      .add('common', () => (
-        <Column>
-          <StateContainer value={ [] }>
-            { ({ value, onChange }) => (
-              <TreeSelect
-                value={ value }
-                options={ OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-              />
-            ) }
-          </StateContainer>
-          <StateContainer value={ [OPTIONS.children[1].value, OPTIONS.children[2].value, OPTIONS.children[0].children[0].value] }>
-            { ({ value, onChange }) => (
-              <TreeSelect
-                value={ value }
-                options={ OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-              />
-            ) }
-          </StateContainer>
-          <StateContainer value={ [LONG_OPTIONS[0].value, LONG_OPTIONS[2].value] }>
-            { ({ value, onChange }) => (
-              <TreeSelect
-                value={ value }
-                options={ LONG_OPTIONS }
-                onChange={ (_, selectedNodes) => onChange(selectedNodes.map(({ value }) => value)) }
-              />
-            ) }
-          </StateContainer>
-        </Column>
-      ));
-  });
-};

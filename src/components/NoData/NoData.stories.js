@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default (asStory) => {
-  asStory('Components/NoData', module, (story, { NoData }) => {
-    story
-      .add('default', () => (
-        <NoData />
-      ));
-  });
-};
+import { storiesOf } from '@storybook/react';
+import { NoData } from '../../';
+
+storiesOf('Components/NoData', module)
+  .add('default', () => (
+    <NoData />
+  ));
+
 

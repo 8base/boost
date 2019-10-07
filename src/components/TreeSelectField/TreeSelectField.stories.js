@@ -1,4 +1,7 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { TreeSelectField, Column } from '../../';
+import { StateContainer } from '../../../storybook/StateContainer';
 
 
 const OPTIONS = {
@@ -34,16 +37,13 @@ const OPTIONS = {
   ],
 };
 
-export default (asStory) => {
-  asStory('Components/TreeSelectField', module, (story, { TreeSelectField, StateContainer, Column }) => {
-    story
-      .add('common', () => (
-        <Column>
-          <StateContainer value={ [OPTIONS.children[2].value] } withForm>
-            <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" options={ OPTIONS } />
-          </StateContainer>
-        </Column>
-      ));
-  });
-};
+storiesOf('Components/TreeSelectField', module)
+  .add('common', () => (
+    <Column>
+      <StateContainer value={ [OPTIONS.children[2].value] } withForm>
+        <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" options={ OPTIONS } />
+      </StateContainer>
+    </Column>
+  ));
+
 

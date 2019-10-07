@@ -1,4 +1,6 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Logs, Dialog } from '../../';
 
 const MESSAGES = [
   `START RequestId: 9ddb9717-1570-433e-bb06-9e0c3c4fefac Version: $LATEST
@@ -37,28 +39,26 @@ const MESSAGES = [
 `, `START RequestId: 9ddb9717-1570-433e-bb06-9e0c3c4fefac Version: $LATEST
 `];
 
-export default (asStory) => {
-  asStory('Components/Logs', module, (story, { Logs, Dialog }) => {
-    story
-      .add('default', () => (
-        <Logs messages={ [MESSAGES[0], MESSAGES[1], MESSAGES[2], MESSAGES[3]] } />
-      ))
-      .add('with dialog', () => (
-        <Dialog isOpen size="xxl" data-e2e-id="logs-dialog">
-          <Dialog.Header title="Logs" />
-          <Dialog.Body scrollable padding="none">
-            <Logs messages={ [...MESSAGES, ...MESSAGES] } />
-          </Dialog.Body>
-        </Dialog>
-      ))
-      .add('with stretch', () => (
-        <Dialog stretch isOpen size="xxl" data-e2e-id="logs-dialog">
-          <Dialog.Header title="Logs" />
-          <Dialog.Body scrollable padding="none">
-            <Logs stretch messages={ [MESSAGES[0]] } />
-          </Dialog.Body>
-        </Dialog>
-      ));
-  });
-};
+
+storiesOf('Components/Logs', module)
+  .add('default', () => (
+    <Logs messages={ [MESSAGES[0], MESSAGES[1], MESSAGES[2], MESSAGES[3]] } />
+  ))
+  .add('with dialog', () => (
+    <Dialog isOpen size="xxl" data-e2e-id="logs-dialog">
+      <Dialog.Header title="Logs" />
+      <Dialog.Body scrollable padding="none">
+        <Logs messages={ [...MESSAGES, ...MESSAGES] } />
+      </Dialog.Body>
+    </Dialog>
+  ))
+  .add('with stretch', () => (
+    <Dialog stretch isOpen size="xxl" data-e2e-id="logs-dialog">
+      <Dialog.Header title="Logs" />
+      <Dialog.Body scrollable padding="none">
+        <Logs stretch messages={ [MESSAGES[0]] } />
+      </Dialog.Body>
+    </Dialog>
+  ));
+
 

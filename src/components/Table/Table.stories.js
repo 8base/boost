@@ -1,6 +1,8 @@
 /* eslint-disable no-alert */
 
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Table, TableBuilder, Link, Dropdown, Icon, Column, Text, Menu, Button } from '../../';
 
 const TABLE_COLUMNS = [{
   name: 'id',
@@ -325,274 +327,271 @@ class TableState extends React.Component {
   }
 }
 
-export default (asStory) => {
-  asStory('Components/Table', module, (story, { Table, TableBuilder, Link, Dropdown, Icon, Column, Text, Menu, Button }) => {
-    story
-      .add('default', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
+storiesOf('Components/Table', module)
+  .add('default', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <Table>
+        <Table.Header columns="repeat(6, 1fr)">
+          <Table.HeaderCell>Id</Table.HeaderCell>
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+          <Table.HeaderCell>Created At</Table.HeaderCell>
+          <Table.HeaderCell>Updated At</Table.HeaderCell>
+          <Table.HeaderCell />
+        </Table.Header>
 
-            <Table.Body data={ TABLE_DATA } action="Create Client" onActionClick={ () => alert('Create') }>
-              { (client) => (
-                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
-                  <Table.BodyCell>
-                    { client.id }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.email }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.createdAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.updatedAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Dropdown defaultOpen={ false }>
-                      <Dropdown.Head>
-                        <Icon name="More" color="LIGHT_GRAY2" />
-                      </Dropdown.Head>
-                      <Dropdown.Body pin="right">
-                        <Menu>
-                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                        </Menu>
-                      </Dropdown.Body>
-                    </Dropdown>
-                  </Table.BodyCell>
-                </Table.BodyRow>
-              ) }
-            </Table.Body>
-          </Table>
-        </div>
-      ))
+        <Table.Body data={ TABLE_DATA } action="Create Client" onActionClick={ () => alert('Create') }>
+          { (client) => (
+            <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+              <Table.BodyCell>
+                { client.id }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.email }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.createdAt }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.updatedAt }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                <Dropdown defaultOpen={ false }>
+                  <Dropdown.Head>
+                    <Icon name="More" color="LIGHT_GRAY2" />
+                  </Dropdown.Head>
+                  <Dropdown.Body pin="right">
+                    <Menu>
+                      <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
+                    </Menu>
+                  </Dropdown.Body>
+                </Dropdown>
+              </Table.BodyCell>
+            </Table.BodyRow>
+          ) }
+        </Table.Body>
+      </Table>
+    </div>
+  ))
 
-      .add('with loader', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
-            <Table.Body loading action="Create Client" onActionClick={ () => alert('Create') } />
-          </Table>
-        </div>
-      ))
+  .add('with loader', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <Table>
+        <Table.Header columns="repeat(6, 1fr)">
+          <Table.HeaderCell>Id</Table.HeaderCell>
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+          <Table.HeaderCell>Created At</Table.HeaderCell>
+          <Table.HeaderCell>Updated At</Table.HeaderCell>
+          <Table.HeaderCell />
+        </Table.Header>
+        <Table.Body loading action="Create Client" onActionClick={ () => alert('Create') } />
+      </Table>
+    </div>
+  ))
 
-      .add('without data', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table stretch>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
+  .add('without data', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <Table stretch>
+        <Table.Header columns="repeat(6, 1fr)">
+          <Table.HeaderCell>Id</Table.HeaderCell>
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+          <Table.HeaderCell>Created At</Table.HeaderCell>
+          <Table.HeaderCell>Updated At</Table.HeaderCell>
+          <Table.HeaderCell />
+        </Table.Header>
 
-            <Table.Body />
-          </Table>
-        </div>
-      ))
+        <Table.Body />
+      </Table>
+    </div>
+  ))
 
-      .add('with data', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
+  .add('with data', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <Table>
+        <Table.Header columns="repeat(6, 1fr)">
+          <Table.HeaderCell>Id</Table.HeaderCell>
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+          <Table.HeaderCell>Created At</Table.HeaderCell>
+          <Table.HeaderCell>Updated At</Table.HeaderCell>
+          <Table.HeaderCell />
+        </Table.Header>
 
-            <Table.Body data={ [TABLE_DATA[0], TABLE_DATA[1]] } action="Create Client" onActionClick={ () => alert('Create') }>
-              { (client) => (
-                <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
-                  <Table.BodyCell>
-                    { client.id }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.email }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.createdAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    { client.updatedAt }
-                  </Table.BodyCell>
-                  <Table.BodyCell>
-                    <Dropdown defaultOpen={ false }>
-                      <Dropdown.Head>
-                        <Icon name="More" color="LIGHT_GRAY2" />
-                      </Dropdown.Head>
-                      <Dropdown.Body pin="right">
-                        <Menu>
-                          <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
-                        </Menu>
-                      </Dropdown.Body>
-                    </Dropdown>
-                  </Table.BodyCell>
-                </Table.BodyRow>
-              ) }
-            </Table.Body>
-          </Table>
-        </div>
-      ))
+        <Table.Body data={ [TABLE_DATA[0], TABLE_DATA[1]] } action="Create Client" onActionClick={ () => alert('Create') }>
+          { (client) => (
+            <Table.BodyRow columns="repeat(6, 1fr)" key={ client.id }>
+              <Table.BodyCell>
+                { client.id }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                <Link to="/">{ `${client.firstName} ${client.lastName}` }</Link>
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.email }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.createdAt }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                { client.updatedAt }
+              </Table.BodyCell>
+              <Table.BodyCell>
+                <Dropdown defaultOpen={ false }>
+                  <Dropdown.Head>
+                    <Icon name="More" color="LIGHT_GRAY2" />
+                  </Dropdown.Head>
+                  <Dropdown.Body pin="right">
+                    <Menu>
+                      <Menu.Item onClick={ () => alert('Delete') }>Delete</Menu.Item>
+                    </Menu>
+                  </Dropdown.Body>
+                </Dropdown>
+              </Table.BodyCell>
+            </Table.BodyRow>
+          ) }
+        </Table.Body>
+      </Table>
+    </div>
+  ))
 
-      .add('with custom action button', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <Table stretch>
-            <Table.Header columns="repeat(6, 1fr)">
-              <Table.HeaderCell>Id</Table.HeaderCell>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Email</Table.HeaderCell>
-              <Table.HeaderCell>Created At</Table.HeaderCell>
-              <Table.HeaderCell>Updated At</Table.HeaderCell>
-              <Table.HeaderCell />
-            </Table.Header>
+  .add('with custom action button', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <Table stretch>
+        <Table.Header columns="repeat(6, 1fr)">
+          <Table.HeaderCell>Id</Table.HeaderCell>
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+          <Table.HeaderCell>Created At</Table.HeaderCell>
+          <Table.HeaderCell>Updated At</Table.HeaderCell>
+          <Table.HeaderCell />
+        </Table.Header>
 
-            <Table.Body
-              action={ (
-                <Button
-                  color="secondary"
-                  variant="outlined"
-                  onClick={ () => alert('Create') }
-                >
+        <Table.Body
+          action={ (
+            <Button
+              color="secondary"
+              variant="outlined"
+              onClick={ () => alert('Create') }
+            >
                   Create Client
-                </Button>
-              ) }
-            />
-          </Table>
-        </div>
-      ))
+            </Button>
+          ) }
+        />
+      </Table>
+    </div>
+  ))
 
-      .add('with sort', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState>
-            { ({ tableState, setTableState }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ TABLE_DATA }
-                action="Create Client" onActionClick={ () => alert('Create') }
-                onChange={ setTableState }
-                tableState={ tableState }
-                withMultipleSort
-              />
-            ) }
-          </TableState>
-        </div>
-      ))
+  .add('with sort', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState>
+        { ({ tableState, setTableState }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ TABLE_DATA }
+            action="Create Client" onActionClick={ () => alert('Create') }
+            onChange={ setTableState }
+            tableState={ tableState }
+            withMultipleSort
+          />
+        ) }
+      </TableState>
+    </div>
+  ))
 
-      .add('with selection', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState>
-            { ({ tableState, setTableState }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ TABLE_DATA }
-                action="Create Client" onActionClick={ () => alert('Create') }
-                onChange={ setTableState }
-                tableState={ tableState }
-                withSelection
-              />
-            ) }
-          </TableState>
-        </div>
-      ))
+  .add('with selection', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState>
+        { ({ tableState, setTableState }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ TABLE_DATA }
+            action="Create Client" onActionClick={ () => alert('Create') }
+            onChange={ setTableState }
+            tableState={ tableState }
+            withSelection
+          />
+        ) }
+      </TableState>
+    </div>
+  ))
 
-      .add('with pagination', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState async>
-            { ({ tableState, setTableState, loading, data }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ data }
-                action="Create Client" onActionClick={ () => alert('Create') }
-                onChange={ setTableState }
-                tableState={ tableState }
-                withPagination
-                withSelection
-                loading={ loading }
-              />
-            ) }
-          </TableState>
-        </div>
-      ))
+  .add('with pagination', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState async>
+        { ({ tableState, setTableState, loading, data }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ data }
+            action="Create Client" onActionClick={ () => alert('Create') }
+            onChange={ setTableState }
+            tableState={ tableState }
+            withPagination
+            withSelection
+            loading={ loading }
+          />
+        ) }
+      </TableState>
+    </div>
+  ))
 
-      .add('with condensed modifier', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState>
-            { ({ tableState, setTableState }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ TABLE_DATA }
-                action="Create Client" onActionClick={ () => alert('Create') }
-                onChange={ setTableState }
-                tableState={ tableState }
-                condensed
-              />
-            ) }
-          </TableState>
-        </div>
-      ))
+  .add('with condensed modifier', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState>
+        { ({ tableState, setTableState }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ TABLE_DATA }
+            action="Create Client" onActionClick={ () => alert('Create') }
+            onChange={ setTableState }
+            tableState={ tableState }
+            condensed
+          />
+        ) }
+      </TableState>
+    </div>
+  ))
 
-      .add('with bordered modifier', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState>
-            { ({ tableState, setTableState }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ TABLE_DATA }
-                action="Create Client" onActionClick={ () => alert('Create') }
-                onChange={ setTableState }
-                tableState={ tableState }
-                bordered
-              />
-            ) }
-          </TableState>
-        </div>
-      ))
+  .add('with bordered modifier', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState>
+        { ({ tableState, setTableState }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ TABLE_DATA }
+            action="Create Client" onActionClick={ () => alert('Create') }
+            onChange={ setTableState }
+            tableState={ tableState }
+            bordered
+          />
+        ) }
+      </TableState>
+    </div>
+  ))
 
-      .add('with custom NoData component', () => (
-        <div style={{ display: 'flex', height: '600px' }}>
-          <TableState>
-            { ({ tableState, setTableState }) => (
-              <TableBuilder
-                columns={ TABLE_COLUMNS }
-                data={ [] }
-                onChange={ setTableState }
-                tableState={ tableState }
-                noData={
-                  <Column gap="none" justifyContent="center" alignItems="center" stretch>
-                    <Icon name="EightBase" size="xl" color="LIGHT_GRAY1" />
-                    <Text color="LIGHT_GRAY1">Can't find any data</Text>
-                  </Column>
-                }
-                bordered
-              />
-            ) }
-          </TableState>
-        </div>
-      ));
-  });
-};
+  .add('with custom NoData component', () => (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableState>
+        { ({ tableState, setTableState }) => (
+          <TableBuilder
+            columns={ TABLE_COLUMNS }
+            data={ [] }
+            onChange={ setTableState }
+            tableState={ tableState }
+            noData={
+              <Column gap="none" justifyContent="center" alignItems="center" stretch>
+                <Icon name="EightBase" size="xl" color="LIGHT_GRAY1" />
+                <Text color="LIGHT_GRAY1">Can't find any data</Text>
+              </Column>
+            }
+            bordered
+          />
+        ) }
+      </TableState>
+    </div>
+  ));
+

@@ -1,3 +1,8 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/8base/boost/compare/v1.1.4...v1.2.0) (2019-10-08)
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/8base/boost/compare/v1.1.3...v1.1.4) (2019-09-27)
 

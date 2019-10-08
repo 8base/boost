@@ -1,17 +1,26 @@
 import React from 'react';
 
-export default (asStory) => {
-  asStory('Components/Code', module, (story, { Code }) => {
-    story
-      .add('common', () => (
-        <Code>
-          <p>npm i -g 8base</p>
-          <p>8base init my-project</p>
-        </Code>
-      ))
-      .add('with custom height', () => (
-        <Code height={ 200 }>{
-          `npm i -g 8base
+import { Code } from '../../';
+
+export default {
+  title: 'Components/Code',
+  component: Code,
+};
+
+export const common = () => (
+  <Code>
+    <p>npm i -g 8base</p>
+    <p>8base init my-project</p>
+  </Code>
+);
+
+common.story = {
+  name: 'common',
+};
+
+export const withCustomHeight = () => (
+  <Code height={ 200 }>
+    { `npm i -g 8base
 8base init my-project
 
 npm i -g 8base
@@ -32,13 +41,17 @@ npm i -g 8base
 8base init my-project
 npm i -g 8base
 8base init my-project
-`
-	     }
-        </Code>
-      ))
-      .add('with copy button', () => (
-        <Code height={ 200 } withCopyButton>
-          { `
+` }
+  </Code>
+);
+
+withCustomHeight.story = {
+  name: 'with custom height',
+};
+
+export const withCopyButtonStory = () => (
+  <Code height={ 200 } withCopyButton>
+    { `
 <p>
   npm i -g 8base
   8base init my-project
@@ -56,8 +69,9 @@ npm i -g 8base
   8base init my-project
 </p>
           ` }
-        </Code>
-      ));
-  });
-};
+  </Code>
+);
 
+withCopyButtonStory.story = {
+  name: 'with copy button',
+};

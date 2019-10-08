@@ -3,7 +3,6 @@ import { baisy } from '../setup/TestSuiter';
 
 const SUITES = [
   baisy.suite('Components/Breadcrumbs', 'common'),
-
 ];
 
 

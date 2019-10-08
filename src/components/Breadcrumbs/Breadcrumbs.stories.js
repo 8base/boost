@@ -1,4 +1,5 @@
 import React from 'react';
+import { Breadcrumbs } from '../../';
 
 const routes = [
   { path: '/', label: 'Dashboard' },
@@ -7,11 +8,15 @@ const routes = [
   { path: '/app/settings/security', label: 'Security' },
 ];
 
-export default (asStory) => {
-  asStory('Components/Breadcrumbs', module, (story, { Breadcrumbs }) => {
-    story
-      .add('common', () => (
-        <Breadcrumbs pathname="/app/settings/security" routes={ routes } param={ 1 } />
-      ));
-  });
+export default {
+  title: 'Components/Breadcrumbs',
+  component: Breadcrumbs,
+};
+
+export const common = () => (
+  <Breadcrumbs pathname="/app/settings/security" routes={ routes } param={ 1 } />
+);
+
+common.story = {
+  name: 'common',
 };

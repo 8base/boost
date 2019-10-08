@@ -6,17 +6,17 @@ const SUITES = [
   baisy.suite('Components/Table', 'without data'),
   baisy.suite('Components/Table', 'with sort')
     .setEnhancer(async (iframe) => {
-      await (await await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
-      await (await await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
-      await (await await iframe.waitForXPath('//*[contains(text(),"Created At")]')).click();
+      await (await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
+      await (await iframe.waitForXPath('//*[contains(text(),"Id")]')).click();
+      await (await iframe.waitForXPath('//*[contains(text(),"Created At")]')).click();
     }),
-  baisy.suite('Components/Table', 'with selection')
+  baisy.suite('Components/Table', 'with selection story')
     .setEnhancer(async (iframe) => {
-      await (await await iframe.waitForXPath('(//i)[4]')).click();
+      await (await iframe.waitForXPath('(//i)[4]')).click();
     }),
-  baisy.suite('Components/Table', 'with selection', 'all selected')
+  baisy.suite('Components/Table', 'with selection story', 'all selected')
     .setEnhancer(async (iframe) => {
-      await (await await iframe.waitForXPath('//i')).click();
+      await (await iframe.waitForXPath('//i')).click();
     }),
   baisy.suite('Components/Table', 'with condensed modifier'),
   baisy.suite('Components/Table', 'with bordered modifier'),

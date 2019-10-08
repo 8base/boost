@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { TreeSelectField, Column } from '../../';
+import { StateContainer } from '../../../storybook/StateContainer';
 
 const OPTIONS = {
   label: 'Search me',
@@ -34,16 +35,24 @@ const OPTIONS = {
   ],
 };
 
-export default (asStory) => {
-  asStory('Components/TreeSelectField', module, (story, { TreeSelectField, StateContainer, Column }) => {
-    story
-      .add('common', () => (
-        <Column>
-          <StateContainer value={ [OPTIONS.children[2].value] } withForm>
-            <TreeSelectField label="TreeSelect" name="name" placeholder="Select an option" options={ OPTIONS } />
-          </StateContainer>
-        </Column>
-      ));
-  });
+export default {
+  title: 'Components/TreeSelectField',
+  component: TreeSelectField,
 };
 
+export const common = () => (
+  <Column>
+    <StateContainer value={ [OPTIONS.children[2].value] } withForm>
+      <TreeSelectField
+        label="TreeSelect"
+        name="name"
+        placeholder="Select an option"
+        options={ OPTIONS }
+      />
+    </StateContainer>
+  </Column>
+);
+
+common.story = {
+  name: 'common',
+};

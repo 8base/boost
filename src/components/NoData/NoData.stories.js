@@ -1,11 +1,14 @@
 import React from 'react';
 
-export default (asStory) => {
-  asStory('Components/NoData', module, (story, { NoData }) => {
-    story
-      .add('default', () => (
-        <NoData />
-      ));
-  });
+import { NoData } from '../../';
+
+export default {
+  title: 'Components/NoData',
+  component: NoData,
 };
 
+export const defaultStory = () => <NoData />;
+
+defaultStory.story = {
+  name: 'default',
+};

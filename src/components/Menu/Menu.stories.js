@@ -1,14 +1,20 @@
 import React from 'react';
 
-export default (asStory) => {
-  asStory('Components/Menu', module, (story, { Menu }) => {
-    story
-      .add('common', () => (
-        <Menu>
-          <Menu.Item>Tramman</Menu.Item>
-          <Menu.Item>Gripman</Menu.Item>
-          <Menu.Item disabled>Proalliance</Menu.Item>
-        </Menu>
-      ));
-  });
+import { Menu } from '../../';
+
+export default {
+  title: 'Components/Menu',
+  component: Menu,
+};
+
+export const common = () => (
+  <Menu>
+    <Menu.Item>Tramman</Menu.Item>
+    <Menu.Item>Gripman</Menu.Item>
+    <Menu.Item disabled>Proalliance</Menu.Item>
+  </Menu>
+);
+
+common.story = {
+  name: 'common',
 };

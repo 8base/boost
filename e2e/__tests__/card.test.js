@@ -2,7 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/Card', 'default'),
+  baisy.suite('Components/Card', 'default story'),
   baisy.suite('Components/Card', 'with custom paddings'),
   baisy.suite('Components/Card', 'with multiple sections'),
 ];

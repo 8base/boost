@@ -1,13 +1,15 @@
-import { configure, addParameters } from '@storybook/react';
-import { asStory } from './utils';
+import React from 'react';
+import styled from '@emotion/styled';
+import { configure, addParameters, addDecorator } from '@storybook/react';
+import { BoostProvider, createTheme } from '../src';
+import './tag-reset.css';
 
-function loadStories() {
-  const storiesRequire = require.context('../src', true, /\.stories\.js$/);
+const theme = createTheme();
 
-  storiesRequire.keys().forEach(filename => {
-    storiesRequire(filename).default(asStory);
-  });
-}
+const Root = styled('div')`
+  padding: 32px;
+  height: 100%;
+`;
 
 addParameters({
   options: {
@@ -15,4 +17,12 @@ addParameters({
   },
 });
 
-configure(loadStories, module);
+addDecorator((storyFn) => (
+  <BoostProvider theme={ theme }>
+    <Root>
+      { storyFn() }
+    </Root>
+  </BoostProvider>
+));
+
+configure(require.context('../src', true, /\.stories\.(js|mdx)$/), module);

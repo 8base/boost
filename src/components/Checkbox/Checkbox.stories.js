@@ -1,7 +1,7 @@
-// @flow
-
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
+import { Checkbox, Column } from '../../';
+
 
 const Container = styled('div')`
   max-width: 100px;
@@ -63,43 +63,66 @@ class CheckboxInderteminateState extends Component<*, Object> {
   }
 }
 
-export default (asStory: *) => {
-  asStory('Components/Checkbox', module, (story, { Checkbox, Column }) => {
-    story
-      .add('common', () => (
-        <Column>
-          <Checkbox checked />
-          <Checkbox label="Without Check" />
-          <Checkbox label="With Check" checked />
-          <Checkbox label="With error" checked hasError />
-          <Checkbox label="With disabled" checked disabled />
-          <Container>
-            <Checkbox label="With overflow" checked />
-          </Container>
-          <Checkbox label="With indeterminate" indeterminate />
-        </Column>
-      ))
-      .add('with state', () => (
-        <CheckboxState>
-          {
-            ({ checked, changeCheck }) => <Checkbox label="Checkbox" checked={ checked } onChange={ changeCheck } />
-          }
-        </CheckboxState>
-      ))
-      .add('with indeterminate', () => (
-        <CheckboxInderteminateState>
-          {
-            ({ state, onChange, onOptionChange }) => (
-              <Column>
-                <Checkbox label="Fruits" onChange={ onChange } indeterminate={ state.indeterminate } checked={ state.checked } />
 
-                { state.options.map((option) => (
-                  <Checkbox key={ option.label } label={ option.label } checked={ option.checked } onChange={ () => onOptionChange(option) } />
-                )) }
-              </Column>
-            )
-          }
-        </CheckboxInderteminateState>
-      ));
-  });
+export default {
+  title: 'Components/Checkbox',
+  component: Checkbox,
+};
+
+export const common = () => (
+  <Column>
+    <Checkbox checked />
+    <Checkbox label="Without Check" />
+    <Checkbox label="With Check" checked />
+    <Checkbox label="With error" checked hasError />
+    <Checkbox label="With disabled" checked disabled />
+    <Container>
+      <Checkbox label="With overflow" checked />
+    </Container>
+    <Checkbox label="With indeterminate" indeterminate />
+  </Column>
+);
+
+common.story = {
+  name: 'common',
+};
+
+export const withState = () => (
+  <CheckboxState>
+    { ({ checked, changeCheck }) => (
+      <Checkbox label="Checkbox" checked={ checked } onChange={ changeCheck } />
+    ) }
+  </CheckboxState>
+);
+
+withState.story = {
+  name: 'with state',
+};
+
+export const withIndeterminate = () => (
+  <CheckboxInderteminateState>
+    { ({ state, onChange, onOptionChange }) => (
+      <Column>
+        <Checkbox
+          label="Fruits"
+          onChange={ onChange }
+          indeterminate={ state.indeterminate }
+          checked={ state.checked }
+        />
+
+        { state.options.map(option => (
+          <Checkbox
+            key={ option.label }
+            label={ option.label }
+            checked={ option.checked }
+            onChange={ () => onOptionChange(option) }
+          />
+        )) }
+      </Column>
+    ) }
+  </CheckboxInderteminateState>
+);
+
+withIndeterminate.story = {
+  name: 'with indeterminate',
 };

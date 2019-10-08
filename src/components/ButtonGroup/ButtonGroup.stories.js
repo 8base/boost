@@ -1,15 +1,21 @@
 import React from 'react';
 
-export default (asStory) => {
-  asStory('Components/ButtonGroup', module, (story, { Button, ButtonGroup }) => {
-    story
-      .add('common', () => (
-        <ButtonGroup>
-          <Button variant="outlined">Button</Button>
-          <Button variant="outlined">Button</Button>
-          <Button>Button</Button>
-          <Button variant="outlined">Button</Button>
-        </ButtonGroup>
-      ));
-  });
+import { Button, ButtonGroup } from '../../';
+
+export default {
+  title: 'Components/ButtonGroup',
+  component: ButtonGroup,
+};
+
+export const common = () => (
+  <ButtonGroup>
+    <Button variant="outlined">Button</Button>
+    <Button variant="outlined">Button</Button>
+    <Button>Button</Button>
+    <Button variant="outlined">Button</Button>
+  </ButtonGroup>
+);
+
+common.story = {
+  name: 'common',
 };

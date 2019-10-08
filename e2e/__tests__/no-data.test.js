@@ -2,7 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/NoData', 'default'),
+  baisy.suite('Components/NoData', 'default story'),
 ];
 
 

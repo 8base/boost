@@ -2,14 +2,20 @@
 
 import React from 'react';
 
-export default (asStory: *) => {
-  asStory('Components/Switch', module, (story, { Switch, Column }) => {
-    story
-      .add('common', () => (
-        <Column>
-          <Switch label="Unchecked" value={ false } />
-          <Switch label="Checked" value />
-        </Column>
-      ));
-  });
+import { Switch, Column } from '../../';
+
+export default {
+  title: 'Components/Switch',
+  component: Switch,
+};
+
+export const common = () => (
+  <Column>
+    <Switch label="Unchecked" value={ false } />
+    <Switch label="Checked" value />
+  </Column>
+);
+
+common.story = {
+  name: 'common',
 };

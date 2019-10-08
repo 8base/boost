@@ -47,12 +47,6 @@ class TestSuiter {
       }
     `,
     });
-
-    const showInfoButton = await this.iframe.waitForXPath('//button[contains(text(),"Show Info")]');
-
-    await this.iframe.evaluate((showInfoButtonDom) => {
-      showInfoButtonDom.style.display = 'none';
-    }, showInfoButton);
   }
 
   _executeEnhancers = async () => {
@@ -70,8 +64,8 @@ class TestSuiter {
 
   getTestName = () => {
     return this.stateName
-      ? `${this.kind} / ${this.story} / ${this.stateName}`
-      : `${this.kind} / ${this.story}`;
+      ? `${this.kind}/${this.story}/${this.stateName}`
+      : `${this.kind}/${this.story}`;
   }
 
   setStateName = (stateName: string) => {

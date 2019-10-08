@@ -2,16 +2,21 @@
 
 import React from 'react';
 
-export default (asStory: *) => {
-  asStory('Components/Divider', module, (story, { Divider }) => {
-    story
-      .add('without title', () => (
-        <Divider />
-      ))
-      .add('with title', () => (
-        <Divider>
-          With Title
-        </Divider>
-      ));
-  });
+import { Divider } from '../../';
+
+export default {
+  title: 'Components/Divider',
+  component: Divider,
+};
+
+export const withoutTitle = () => <Divider />;
+
+withoutTitle.story = {
+  name: 'without title',
+};
+
+export const withTitle = () => <Divider>With Title</Divider>;
+
+withTitle.story = {
+  name: 'with title',
 };

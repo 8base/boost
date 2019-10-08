@@ -2,8 +2,8 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/SecondaryNavigation', 'default'),
-  baisy.suite('Components/SecondaryNavigation', 'default', 'hover')
+  baisy.suite('Components/SecondaryNavigation', 'default story'),
+  baisy.suite('Components/SecondaryNavigation', 'default story', 'hover')
     .setEnhancer(async (iframe) => {
       const navigationItem = await iframe.waitForXPath('//*[contains(text(),"First item")]/../../div');
 

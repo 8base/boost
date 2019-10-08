@@ -2,7 +2,7 @@ import { baisy } from '../setup/TestSuiter';
 
 
 const SUITES = [
-  baisy.suite('Components/TextAreaField', 'default'),
+  baisy.suite('Components/TextAreaField', 'default story'),
 ];
 
 

@@ -3,10 +3,12 @@
 import React from 'react';
 import ReactSelect, { components } from 'react-select';
 import { withTheme } from 'emotion-theming';
+import { css } from '@emotion/core';
 import { type SerializedStyles } from '@emotion/utils';
 
 import { SelectTag } from './Select.theme';
 import { type Theme, COLORS, Z_INDEX } from '../../theme';
+import { Tooltip } from '../Tooltip';
 
 type SelectProps = {|
   options: Array<{ label: mixed, value: string, options?: Array<Object> }>,
@@ -72,6 +74,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     border: '1px solid #d0d7dd',
     backgroundColor: '#fff',
     height: 26,
+    alignItems: 'center',
   }),
   multiValueLabel: (style) => ({
     ...style,
@@ -100,6 +103,23 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     overflow: 'hidden',
   }),
 });
+
+const MultiValueRemove = props => {
+  return (
+    <Tooltip message="Remove" css={ css`display: flex; align-items: center; height: 14px;` }>
+      <components.MultiValueRemove { ...props } />
+    </Tooltip>
+  );
+};
+
+const ClearIndicator = props => {
+  return (
+    <Tooltip message="Remove All" css={ css`display: flex; align-items: center;` }>
+      <components.ClearIndicator { ...props } />
+    </Tooltip>
+  );
+};
+
 
 const findOptionByValue = (value, options) => {
   if (Array.isArray(value)) {
@@ -183,7 +203,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           styles={ customStyles({ ...rest, COLORS: theme.COLORS || COLORS }) }
           value={ selectValue }
           autoFocus={ autoFocus }
-          components={ components }
+          components={{ MultiValueRemove, ClearIndicator, ...components }}
           formatOptionLabel={ formatOptionLabel }
           inputValue={ inputValue }
           onInputChange={ onInputChange }

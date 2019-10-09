@@ -36,22 +36,49 @@ describe('<Select />', () => {
     );
 
     const { children, ...passedStyledProps } = wrapper.find(SelectTag).props();
-    const { styles, menuPortalTarget, onChange, valueComponent, ...passedSelectProps } = wrapper.find(ReactSelect).props();
+    const {
+      styles,
+      menuPortalTarget,
+      onChange,
+      valueComponent,
+      ...passedSelectProps
+    } = wrapper.find(ReactSelect).props();
 
-    expect(passedSelectProps).toEqual({
-      isClearable: clearable,
-      isMulti: multiple,
-      isDisabled: disabled,
-      placeholder,
-      options,
-      value: options[0],
-      defaultInputValue: '',
-      defaultMenuIsOpen: false,
-      defaultValue: null,
-      menuPlacement: 'auto',
-      isLoading: loading,
-      components,
-    });
+    expect(passedSelectProps).toMatchInlineSnapshot(`
+Object {
+  "autoFocus": undefined,
+  "components": Object {
+    "ClearIndicator": [Function],
+    "MultiValueRemove": [Function],
+  },
+  "defaultInputValue": "",
+  "defaultMenuIsOpen": false,
+  "defaultValue": null,
+  "filterOption": undefined,
+  "formatOptionLabel": undefined,
+  "getOptionLabel": undefined,
+  "getOptionValue": undefined,
+  "inputValue": undefined,
+  "isClearable": true,
+  "isDisabled": true,
+  "isLoading": false,
+  "isMulti": true,
+  "menuIsOpen": undefined,
+  "menuPlacement": "auto",
+  "onInputChange": undefined,
+  "options": Array [
+    Object {
+      "label": "ovenlike",
+      "value": "ovenlike",
+    },
+  ],
+  "placeholder": "Select an option",
+  "value": Object {
+    "label": "ovenlike",
+    "value": "ovenlike",
+  },
+}
+`);
 
     expect(passedStyledProps).toEqual({
       hasError,

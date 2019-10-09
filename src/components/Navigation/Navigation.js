@@ -11,7 +11,7 @@ type NavigationProps = {
   children?: React$Node,
   expandedWidth?: string,
   collapsedWidth: string,
-  color: $Keys<typeof COLORS>,
+  color?: $Keys<typeof COLORS>,
   expanded?: boolean,
 };
 

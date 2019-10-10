@@ -22,9 +22,9 @@ export type ButtonProps = {
   /** possible button types */
   type?: 'submit' | 'button' | 'reset',
   /** possible button colors */
-  color?: 'primary' | 'neutral' | 'danger',
+  color?: 'primary' | 'neutral' | 'danger' | 'success' | 'white',
   /** the type of button */
-  variant?: 'outlined' | 'raised',
+  variant?: 'outlined' | 'raised' | 'ghost',
   /** posible sizes */
   size?: 'sm' | 'md' | 'lg',
   /** possible to reassign the button tag */

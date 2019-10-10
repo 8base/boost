@@ -11,6 +11,13 @@ const SUITES = [
       const message = await iframe.waitForXPath('//*[contains(@class,"ignore-react-onclickoutside")]');
       await message.click();
     }),
+
+  baisy.suite('Components/Tooltip', 'with placement')
+    .addRootHeight(100)
+    .setEnhancer(async (iframe) => {
+      const clickBlock = await iframe.waitForXPath('//*[contains(text(),"Click Me")]');
+      await clickBlock.click();
+    }),
 ];
 
 

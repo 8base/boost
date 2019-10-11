@@ -1,3 +1,13 @@
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/8base/boost/compare/v1.3.0...v1.4.0) (2019-10-11)
+
+
+### Features
+
+* **Tooltip:** add arrows ([e2d59ab](https://github.com/8base/boost/commit/e2d59ab))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/8base/boost/compare/v1.2.0...v1.3.0) (2019-10-10)
 

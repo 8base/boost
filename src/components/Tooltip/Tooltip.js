@@ -4,7 +4,7 @@ import { Manager, Popper, Reference } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';
 import { Portal } from 'react-portal';
 
-import { TooltipTargetTag, TooltipMessageTag } from './Tooltip.theme';
+import { TooltipTargetTag, TooltipMessageTag, TooltipArrowTag } from './Tooltip.theme';
 
 
 type RenderProps = {
@@ -47,7 +47,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
       defaultOpen: false,
       withPortal: true,
       trigger: 'hover',
-      tagName: 'span',
+      tagName: 'div',
       cursor: 'default',
     };
 
@@ -76,7 +76,7 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
       return (
         <PortalCondComponent>
           <Popper placement={ placement } eventsEnabled={ eventsEnabled } modifiers={ modifiers }>
-            { ({ ref, style, placement }) => (
+            { ({ ref, style, placement, arrowProps }) => (
               <If condition={ isOpen }>
                 <TooltipMessageTag
                   modifiers={ rest }
@@ -84,13 +84,12 @@ const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
                   tagName="div"
                   insideRef={ ref }
                   data-placement={ placement }
+                  placement={ placement }
                   onClick={ (event: *) => event.stopPropagation() }
-                  style={{
-                    ...style,
-                    opacity: 1,
-                  }}
+                  style={ style }
                 >
                   { message }
+                  <TooltipArrowTag placement={ placement }insideRef={ arrowProps.ref } style={ arrowProps.style } />
                 </TooltipMessageTag>
               </If>
             ) }

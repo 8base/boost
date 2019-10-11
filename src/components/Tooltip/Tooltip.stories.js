@@ -25,6 +25,28 @@ defaultStory.story = {
   name: 'default',
 };
 
+
+export const withPlacement = () => (
+  <div style={{ position: 'relative', top: '50px', left: '100px' }}>
+    <Tooltip trigger="click" placement="left" message="Left Tooltip">
+      <Tooltip trigger="click" placement="top" message="Top Tooltip">
+        <Tooltip trigger="click" placement="bottom" message="Bottom Tooltip">
+          <Tooltip trigger="click" placement="right" message="Right Tooltip">
+            <div style={{ width: '100px', height: '100px', border: '1px solid gray', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              Click Me
+            </div>
+          </Tooltip>
+        </Tooltip>
+      </Tooltip>
+    </Tooltip>
+  </div>
+);
+
+withPlacement.story = {
+  name: 'with placement',
+};
+
+
 export const withClickTrigger = () => (
   <Tooltip trigger="click" message="It is trap! You was catched!">
     <Icon name="HelpCenter" />
@@ -57,7 +79,7 @@ export const withModifiers = () => (
       </a>
     }
     placement="right"
-    modifiers={{ offset: { offset: '0, -50%' }, flip: { enabled: false }}}
+    modifiers={{ offset: { flip: { enabled: false }}}}
   >
     <Icon name="HelpCenter" />
   </Tooltip>

@@ -14,7 +14,12 @@ import { Z_INDEX } from '../../theme';
 
 type DropdownBodyProps = {
   /** takes either react dom element or function */
-  children: React$Node | ({ closeDropdown: () => void }) => React$Node,
+  children: React$Node | ({
+    toggleDropdown: () => void,
+    closeDropdown?: () => void,
+    openDropdown?: () => void,
+    isOpen: boolean,
+  }) => React$Node,
 
   /** Default content position relative target */
   placement?: 'top' | 'left' | 'bottom' | 'right' | 'auto' | 'bottom-end' | 'bottom-start' | 'top-end' | 'top-start',
@@ -122,10 +127,10 @@ const DropdownBody = dropdownBodyEnhancer(
   }
 
   getBodyChildren = () => {
-    const { children, dropdown: { closeDropdown }} = this.props;
+    const { children, dropdown: { toggleDropdown, closeDropdown, openDropdown, isOpen }} = this.props;
 
     return typeof children === 'function'
-      ? children({ closeDropdown })
+      ? children({ toggleDropdown, closeDropdown, openDropdown, isOpen })
       : children;
   }
 

@@ -1,3 +1,14 @@
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/8base/boost/compare/v1.4.0...v1.4.1) (2019-10-14)
+
+
+### Features
+
+* **FlexLayout:** add inline modifier ([a6fc94d](https://github.com/8base/boost/commit/a6fc94d))
+* **Radio:** add radio buttons ([37e2c7b](https://github.com/8base/boost/commit/37e2c7b))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/8base/boost/compare/v1.3.0...v1.4.0) (2019-10-11)
 

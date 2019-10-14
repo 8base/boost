@@ -41,4 +41,40 @@ describe('<InputField />', () => {
 </FormField>
 `);
   });
+
+  it('should accept `type` from `input` prop over `type` prop', () => {
+    const wrapper = shallow(
+      <InputField
+        type="text"
+        input={{ type: 'number', value: 'some input value' }}
+      />,
+    );
+
+    expect(wrapper).toMatchInlineSnapshot(`
+<FormField
+  direction="column"
+  hideErrorLabel={false}
+  input={
+    Object {
+      "type": "number",
+      "value": "some input value",
+    }
+  }
+  meta={Object {}}
+  stretch={true}
+>
+  <Input
+    align="left"
+    autoComplete={false}
+    hasError={false}
+    hideErrorIndicator={false}
+    hideNumberArrows={true}
+    kind="bordered"
+    stretch={true}
+    type="number"
+    value="some input value"
+  />
+</FormField>
+`);
+  });
 });

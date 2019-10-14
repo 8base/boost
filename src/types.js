@@ -6,7 +6,8 @@ export type InputType = {|
   onChange?: (SyntheticInputEvent<*> | any) => void,
   onFocus?: (?SyntheticFocusEvent<*>) => void,
   value?: any,
-  checked?: boolean
+  checked?: boolean,
+  type?: string
 |};
 
 export type MetaType = {|

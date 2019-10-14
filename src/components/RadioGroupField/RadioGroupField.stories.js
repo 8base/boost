@@ -19,6 +19,18 @@ defaultStory.story = {
   name: 'default',
 };
 
+export const button = () => (
+  <RadioGroupField direction="row" input={{ value: 1 }} meta={{}} gap="none">
+    <Radio.Button label="Radio" value={ 1 } />
+    <Radio.Button label="Radio" value={ 2 } />
+    <Radio.Button label="Radio" value={ 3 } />
+  </RadioGroupField>
+);
+
+button.story = {
+  name: 'button',
+};
+
 export const disabledStory = () => (
   <RadioGroupField direction="row" input={{ value: 1 }} meta={{}} disabled>
     <Radio.Item label="Radio" value={ 1 } />

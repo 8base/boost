@@ -3,6 +3,7 @@ import { baisy } from '../setup/TestSuiter';
 
 const SUITES = [
   baisy.suite('Components/RadioGroupField', 'default story'),
+  baisy.suite('Components/RadioGroupField', 'button'),
   baisy.suite('Components/RadioGroupField', 'disabled story'),
   baisy.suite('Components/RadioGroupField', 'with error'),
 ];

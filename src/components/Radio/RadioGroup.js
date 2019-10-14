@@ -23,6 +23,8 @@ type RadioProps = {
   options?: Array<({ value: any, label: string })>,
   /** disabled */
   disabled?: boolean,
+  /** stretch */
+  stretch?: boolean,
 }
 
 class RadioGroup extends PureComponent<RadioProps> {
@@ -57,10 +59,10 @@ class RadioGroup extends PureComponent<RadioProps> {
   }
 
   render() {
-    const { children, value, direction, gap, onChange, hasError, disabled, ...rest } = this.props;
+    const { children, value, direction, gap, onChange, hasError, disabled, stretch, ...rest } = this.props;
 
     return (
-      <FlexLayout { ...rest } direction={ direction } gap={ gap }>
+      <FlexLayout { ...rest } direction={ direction } gap={ gap } stretch={ stretch } inline>
         {
           React.Children.map(this.renderChildren(), child =>
             React.cloneElement(child, {

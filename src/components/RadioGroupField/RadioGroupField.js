@@ -24,6 +24,8 @@ type RadioGroupFieldProps = {
   options?: Array<({ value: any, label: string })>,
   /** disabled */
   disabled?: boolean,
+  /** stretch */
+  stretch?: boolean,
 };
 
 const RadioGroupField = ({
@@ -35,6 +37,7 @@ const RadioGroupField = ({
   meta,
   options,
   disabled,
+  stretch,
   ...rest
 }: RadioGroupFieldProps) => {
   const { name, value, onChange } = input;
@@ -52,6 +55,7 @@ const RadioGroupField = ({
         options={ options }
         value={ value }
         disabled={ disabled }
+        stretch={ stretch }
       >
         { children }
       </Radio.Group>

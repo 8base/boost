@@ -32,6 +32,22 @@ common.story = {
   name: 'common',
 };
 
+export const button = () => (
+  <RadioState>
+    { ({ value, changeValue }) => (
+      <Radio.Group value={ value } onChange={ changeValue } direction="row" gap="none">
+        <Radio.Button label="Radio" value={ 1 } />
+        <Radio.Button label="Radio" value={ 2 } />
+        <Radio.Button label="Radio" value={ 3 } />
+      </Radio.Group>
+    ) }
+  </RadioState>
+);
+
+button.story = {
+  name: 'button',
+};
+
 export const withCustomGap = () => (
   <Row gap="md">
     <Radio.Group value={ 1 } gap="none">

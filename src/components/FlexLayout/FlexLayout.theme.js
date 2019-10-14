@@ -57,6 +57,9 @@ const [FlexLayoutTag, theme] = createThemeTag(name, {
       width: '100%',
       height: '100%',
     },
+    inline: {
+      display: 'inline-flex',
+    },
     grow: {
       flexGrow: '1',
     },

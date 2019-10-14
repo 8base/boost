@@ -3,6 +3,7 @@ import { baisy } from '../setup/TestSuiter';
 
 const SUITES = [
   baisy.suite('Components/Radio', 'common'),
+  baisy.suite('Components/Radio', 'button'),
   baisy.suite('Components/Radio', 'with custom gap'),
 ];
 

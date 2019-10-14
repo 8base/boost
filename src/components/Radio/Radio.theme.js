@@ -84,6 +84,27 @@ const [RadioWrapperTag, themeRadioWrapper] = createThemeTag(`${name}Wrapper`, {
   },
 });
 
+const [RadioButtonTag, themeRadioButton] = createThemeTag(`${name}Button`, {
+  root: {
+    flex: 1,
+
+    '&:first-child > *': {
+      borderRightStyle: 'unset',
+      borderTopRightRadius: 0,
+      borderBottomRightRadius: 0,
+    },
+
+    '&:last-child > *': {
+      borderLeftStyle: 'unset',
+      borderTopLeftRadius: 0,
+      borderBottomLeftRadius: 0,
+    },
+
+    '&:not(:first-child):not(:last-child) > *': {
+      borderRadius: 0,
+    },
+  },
+});
 
 const [RadioTag, themeRadio] = createThemeTag(name, {
   root: {
@@ -98,6 +119,7 @@ const theme = {
   ...themeCircleInner,
   ...themeText,
   ...themeRadioWrapper,
+  ...themeRadioButton,
   ...themeRadio,
 };
 
@@ -108,5 +130,6 @@ export {
   RadioTag,
   RadioWrapperTag,
   RadioCircleInnerTag,
+  RadioButtonTag,
   RadioTextTag,
 };

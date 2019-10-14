@@ -36,6 +36,7 @@ export type FlexLayoutCommonProps = {
   growChildren?: boolean,
   onClick?: ((event: MouseEvent) => void) | (() => void),
   tagName?: string,
+  inline?: boolean,
 }
 
 type FlexLayoutProps = {

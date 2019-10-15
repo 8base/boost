@@ -13,6 +13,7 @@ type DropdownHeadProps = {
     toggleDropdown: () => void,
     closeDropdown?: () => void,
     openDropdown?: () => void,
+    isOpen: boolean,
    }) => React$Node,
   /** When exists then stretch drodown head */
   stretch?: boolean,
@@ -56,10 +57,10 @@ const DropdownHead = dropdownHeadEnhancer(
   }
 
   getHeadChildren = () => {
-    const { children, dropdown: { toggleDropdown, closeDropdown, openDropdown }} = this.props;
+    const { children, dropdown: { toggleDropdown, closeDropdown, openDropdown, isOpen }} = this.props;
 
     return typeof children === 'function'
-      ? children({ toggleDropdown, closeDropdown, openDropdown })
+      ? children({ toggleDropdown, closeDropdown, openDropdown, isOpen })
       : children;
   }
 

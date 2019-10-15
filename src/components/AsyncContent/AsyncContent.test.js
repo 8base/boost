@@ -14,7 +14,7 @@ describe('<AsyncContent />', () => {
     expect(wrapper.find('.some-children')).toHaveLength(0);
     expect(wrapper.find(Loader)).toHaveLength(1);
     expect(wrapper.find(Loader).props()).toEqual({
-      color: 'RED',
+      color: 'DANGER',
       stretch: true,
       size: 'md',
     });

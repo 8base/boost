@@ -33,7 +33,7 @@ export const withColor = () => (
   <Row alignItems="center" gap="lg" flexWrap="wrap">
     <Loader size="md" color="PRIMARY" />
     <Loader size="md" color="SUCCESS" />
-    <Loader size="md" color="PURPLE" />
+    <Loader size="md" color="PURPLE_10" />
   </Row>
 );
 

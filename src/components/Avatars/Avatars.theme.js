@@ -20,7 +20,7 @@ const [AvatarsCounterTag, themeCounterAvatars] = createThemeTag(`${name}Counter`
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    backgroundColor: COLORS.DSM_DARK_BLUE,
+    backgroundColor: COLORS.BLUE_30,
     color: COLORS.WHITE,
     fontWeight: 600,
     fontSize: '100%',
@@ -67,14 +67,14 @@ const [AvatarsHandleTag, themeHandleAvatars] = createThemeTag(`${name}Handle`, (
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    border: `1px dashed ${COLORS.LIGHT_GRAY1}`,
+    border: `1px dashed ${COLORS.GRAY_20}`,
     color: COLORS.PRIMARY_TEXT_COLOR,
     marginLeft: -10,
     cursor: 'pointer',
     zIndex: 1,
 
     '&:hover': {
-      border: `1px dashed ${COLORS.GRAY5}`,
+      border: `1px dashed ${COLORS.GRAY_40}`,
     },
   }),
   modifiers: {

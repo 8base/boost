@@ -15,9 +15,9 @@ export const common = () => (
     <Text>Semibold: { placeholderText }</Text>
     <Text color="PRIMARY">Primary color: { placeholderText }</Text>
     <Text color="SECONDARY">Secondary color: { placeholderText }</Text>
-    <Text color="RED">Red color: { placeholderText }</Text>
-    <Text color="GREEN">Green color: { placeholderText }</Text>
-    <Text color="BLUE">Blue color: { placeholderText }</Text>
+    <Text color="DANGER">Danger color: { placeholderText }</Text>
+    <Text color="GREEN_20">Green color: { placeholderText }</Text>
+    <Text color="BLUE_30">Blue color: { placeholderText }</Text>
     <Text weight="semibold">Semibold: { placeholderText }</Text>
     <Text weight="bold">Bold: { placeholderText }</Text>
     <Text disabled>Disabled: { placeholderText }</Text>

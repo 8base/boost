@@ -25,7 +25,7 @@ const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, SI
     cursor: 'pointer',
     whiteSpace: 'nowrap',
 
-    color: COLORS.DSM.GREY_COLORS.DSM_DARK_GREY_2,
+    color: COLORS.LIGHT_TEXT_COLOR,
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
     fontWeight: 400,
@@ -42,7 +42,7 @@ const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, SI
     disabled: {
       pointerEvents: 'none',
       cursor: 'default',
-      color: COLORS.DISABLED_COLOR,
+      color: COLORS.DISABLED_TEXT_COLOR,
     },
   },
 }));

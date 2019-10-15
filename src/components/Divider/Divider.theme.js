@@ -17,7 +17,7 @@ const [DividerOuter, themeOuter] = createThemeTag(name, () => ({
 const [DividerInner, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }) => ({
   root: {
     height: '1px',
-    backgroundColor: COLORS.LIGHT_GRAY1,
+    backgroundColor: COLORS.PRIMARY_BORDER_COLOR,
     width: '100%',
   },
 }));
@@ -27,7 +27,7 @@ const [DividerTitle, themeTitle] = createThemeTag(`${name}Title`, ({ COLORS }) =
     fontSize: '12px',
     fontFamily: 'inherit',
     fontWeight: 600,
-    color: COLORS.DSM_DARK_GREY_1,
+    color: COLORS.GRAY_50,
     lineHeight: '18px',
     whiteSpace: 'nowrap',
     flexGrow: 2,

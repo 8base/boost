@@ -23,7 +23,7 @@ const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }
     '&.active': {
       backgroundColor: COLORS.WHITE,
       paddingLeft: 0,
-      borderLeft: `4px solid ${COLORS.DSM.NAVIGATION_COLORS.DSM_DB_SELECTED}`,
+      borderLeft: `4px solid ${COLORS.GRAY_70}`,
     },
   },
   modifiers: {

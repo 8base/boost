@@ -22,7 +22,7 @@ const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, (
     alignItems: 'center',
     position: 'relative',
     flexShrink: 0,
-    color: COLORS.GRAY5,
+    color: COLORS.GRAY_40,
     cursor: 'pointer',
     userSelect: 'none',
 
@@ -42,7 +42,7 @@ const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, (
 
       '&:before': {
         content: '\'\'',
-        backgroundColor: COLORS.LIGHT_BLUE,
+        backgroundColor: COLORS.BLUE_10,
         borderRadius: 18,
         position: 'absolute',
         left: '- calc((28px - 100%) / 2)',

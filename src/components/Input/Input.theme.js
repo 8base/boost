@@ -13,7 +13,7 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
     paddingRight: props.hasRightIcon || (props.type === 'number' && !props.hideNumberArrows) ? '48px' : '16px',
 
     backgroundColor: (props.disabled || props.readOnly)
-      ? COLORS.LIGHT_GRAY5
+      ? COLORS.DISABLED_COLOR
       : COLORS.WHITE,
 
     borderColor: COLORS.PRIMARY_BORDER_COLOR,

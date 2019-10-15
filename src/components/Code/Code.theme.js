@@ -39,7 +39,7 @@ const [CodeBodyTag, themeBody] = createThemeTag(`${name}Body`, ({ COLORS }: *) =
 const [CodeNumericTag, themeNumeric] = createThemeTag(`${name}Numeric`, ({ COLORS, SIZES }: *) => ({
   root: (props) => ({
     height: props.height ? 'auto' : '100%',
-    backgroundColor: COLORS.LIGHT_GRAY5,
+    backgroundColor: COLORS.GRAY_10,
     borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     padding: '20px 0 40px',
     borderTopLeftRadius: SIZES.MAIN_BORDER_RADIUS,

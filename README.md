@@ -56,7 +56,7 @@ const customTheme = createTheme({
       },
       modifiers: {
         disabled: {
-          backgroundColor: COLORS.RED,
+          backgroundColor: COLORS.RED_30,
         },
       },
     }),
@@ -95,7 +95,7 @@ const App = () => {
   return (
     <BoostProvider icons={ icons }>
       ...
-      <Icon name="AnotherSvgIcon" size="lg" color="RED" />
+      <Icon name="AnotherSvgIcon" size="lg" color="DANGER" />
     </BoostProvider>
   )
 }
@@ -112,7 +112,7 @@ const App = () => {
   return (
     <BoostProvider>
       ...
-      <Icon className="fas fa-igloo" color="RED" size="lg" />
+      <Icon className="fas fa-igloo" color="DANGER" size="lg" />
     </BoostProvider>
   )
 }

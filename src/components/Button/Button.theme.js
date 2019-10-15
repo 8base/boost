@@ -95,7 +95,7 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
         borderColor: COLORS.PRIMARY,
       },
       neutral: {
-        backgroundColor: COLORS.LIGHT_GRAY1,
+        backgroundColor: COLORS.GRAY_20,
         borderColor: COLORS.PRIMARY_BORDER_COLOR,
       },
       danger: {
@@ -103,8 +103,8 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
         borderColor: COLORS.DANGER_DARK,
       },
       success: {
-        backgroundColor: COLORS.GREEN,
-        borderColor: COLORS.GREEN,
+        backgroundColor: COLORS.GREEN_40,
+        borderColor: COLORS.GREEN_40,
       },
       white: {
         backgroundColor: COLORS.WHITE,
@@ -137,14 +137,14 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
       },
     },
     disabled: {
-      backgroundColor: COLORS.LIGHT_GRAY5,
-      borderColor: COLORS.LIGHT_GRAY3,
-      color: COLORS.LIGHT_GRAY3,
+      backgroundColor: COLORS.GRAY_20,
+      borderColor: COLORS.GRAY_30,
+      color: COLORS.DISABLED_TEXT_COLOR,
       cursor: 'default',
       pointerEvents: 'none',
 
       svg: {
-        color: COLORS.LIGHT_GRAY3,
+        color: COLORS.GRAY_30,
       },
 
       '&:hover': {

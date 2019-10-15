@@ -59,7 +59,7 @@ const [FormFieldNoteTag, themeNote] = createThemeTag(`${name}Note`, ({ COLORS, S
 
     fontSize: SIZES.OVERLINE_2,
     lineHeight: SIZES.OVERLINE_2_LH,
-    color: COLORS.GRAY5,
+    color: COLORS.LIGHT_TEXT_COLOR,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',

@@ -11,16 +11,15 @@ export default {
 export const common = () => (
   <Column>
     <Tag>Content</Tag>
-    <Tag color="GRAY1">Content</Tag>
-    <Tag color="GRAY5">Content</Tag>
-    <Tag color="YELLOW">Content</Tag>
-    <Tag color="PURPLE">Content</Tag>
-    <Tag color="PINK">Content</Tag>
-    <Tag color="LIGHT_BLUE">Content</Tag>
-    <Tag color="BLUE">Content</Tag>
-    <Tag color="DARK_BLUE">Content</Tag>
-    <Tag color="BLUE">Content</Tag>
-    <Tag color="GREEN">Content</Tag>
+    <Tag color="GRAY_50">Content</Tag>
+    <Tag color="GRAY_40">Content</Tag>
+    <Tag color="YELLOW_30">Content</Tag>
+    <Tag color="PURPLE_10">Content</Tag>
+    <Tag color="BLUE_10">Content</Tag>
+    <Tag color="BLUE_20">Content</Tag>
+    <Tag color="BLUE_30">Content</Tag>
+    <Tag color="BLUE_40">Content</Tag>
+    <Tag color="GREEN_40">Content</Tag>
   </Column>
 );
 

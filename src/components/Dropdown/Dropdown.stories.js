@@ -210,7 +210,7 @@ withForceRender.story = {
 export const withMenu = () => (
   <Dropdown defaultOpen={ false }>
     <Dropdown.Head>
-      <Icon name="More" color="LIGHT_GRAY2" />
+      <Icon name="More" color="GRAY_30" />
     </Dropdown.Head>
     <Dropdown.Body forceRender>
       <Menu>

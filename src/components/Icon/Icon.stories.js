@@ -27,10 +27,10 @@ allIcons.story = {
 export const withColor = () => (
   <Row alignItems="center">
     <Icon name="Alert" color="DANGER" />
-    <Icon name="DismissData" color="LIGHT_BLUE" />
-    <Icon name="FirewallOn" color="BLUE" />
-    <Icon name="Search" color="GREEN" />
-    <Icon name="House" color="LIGHT_GRAY1" />
+    <Icon name="DismissData" color="BLUE_10" />
+    <Icon name="FirewallOn" color="BLUE_30" />
+    <Icon name="Search" color="GREEN_40" />
+    <Icon name="House" color="GRAY_40" />
   </Row>
 );
 

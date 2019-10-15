@@ -77,7 +77,7 @@ class SecondaryNavigationItem extends React.PureComponent<SecondaryNavigationIte
             <SecondaryNavigationItemActionsTag>
               <Dropdown isOpen={ openedActions } onCloseDropdown={ this.closeActions } onOpenDropdown={ this.openActions }>
                 <Dropdown.Head stopClickPropagation>
-                  <Icon size="sm" name="More" color="GRAY5" />
+                  <Icon size="sm" name="More" color="GRAY_40" />
                 </Dropdown.Head>
                 <Dropdown.Body preventOverflow withPortal>
                   <Menu>

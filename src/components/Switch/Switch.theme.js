@@ -24,7 +24,7 @@ const [SwitchInputTag, themeInput] = createThemeTag(`${name}Input`, {
 const [SwitchApperanceTag, themeApperance] = createThemeTag(`${name}Appearance`, ({ COLORS }: *) => ({
   root: props => ({
     display: 'flex',
-    backgroundColor: COLORS[props.value ? 'PRIMARY' : 'DISABLED_COLOR'],
+    backgroundColor: COLORS[props.value ? 'PRIMARY' : 'GRAY_30'],
     position: 'relative',
 
     height: '24px',
@@ -37,7 +37,7 @@ const [SwitchApperanceTag, themeApperance] = createThemeTag(`${name}Appearance`,
       width: '20px',
       height: '20px',
       borderRadius: '20px',
-      backgroundColor: '#fff',
+      backgroundColor: COLORS.WHITE,
       left: `${props.value ? 26 : 2}px`,
       top: '2px',
       zIndex: 1,
@@ -48,7 +48,6 @@ const [SwitchApperanceTag, themeApperance] = createThemeTag(`${name}Appearance`,
 
 const [SwitchLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS }: *) => ({
   root: {
-    fontSize: COLORS.OVERLINE,
     color: COLORS.SECONDARY_TEXT_COLOR,
     marginLeft: '8px',
     userSelect: 'none',

@@ -60,7 +60,7 @@ const [RadioCircleInnerTag, themeCircleInner] = createThemeTag(`${name}CircleInn
       secondary: { backgroundColor: COLORS.SECONDARY },
     },
     disabled: {
-      backgroundColor: COLORS.GRAY4,
+      backgroundColor: COLORS.GRAY_50,
     },
   },
 }));

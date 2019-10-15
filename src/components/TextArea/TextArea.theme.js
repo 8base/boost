@@ -15,7 +15,7 @@ const [TextAreaTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
     padding: '8px',
 
     backgroundColor: (props.disabled || props.readOnly)
-      ? COLORS.LIGHT_GRAY5
+      ? COLORS.DISABLED_COLOR
       : COLORS.WHITE,
 
     '&::placeholder': {

@@ -12,7 +12,7 @@ import {
 const NoData = (props: *) => (
   <Column stretch justifyContent="center" alignItems="center" gap="lg" offsetY="lg">
     <NoDataIconContainerTag modifiers={ props }>
-      <Icon size="stretch" name="DismissData" color="LIGHT_GRAY1" />
+      <Icon size="stretch" name="DismissData" color="GRAY_30" />
     </NoDataIconContainerTag>
     <NoDataTextTag modifiers={ props }>no data</NoDataTextTag>
   </Column>

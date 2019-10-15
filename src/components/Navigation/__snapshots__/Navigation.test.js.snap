@@ -3,7 +3,7 @@
 exports[`<Navigation /> should shallow navigation 1`] = `
 <Boost(navigation)
   collapsedWidth="60px"
-  color="GREEN"
+  color="GREEN_40"
   controllable={false}
   expanded={false}
   insideRef={
@@ -14,7 +14,7 @@ exports[`<Navigation /> should shallow navigation 1`] = `
   tagName="nav"
 >
   <NavigationItem
-    color="GREEN"
+    color="GREEN_40"
     href="/jobs"
     icon="Trashcan"
     key=".0"

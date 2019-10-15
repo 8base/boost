@@ -13,7 +13,7 @@ export default {
 };
 
 export const defaultStory = () => (
-  <Navigation color="GREEN" data-e2e-id="default-navigation">
+  <Navigation color="GREEN_40" data-e2e-id="default-navigation">
     <Navigation.Item icon="Trashcan" label="Jobs" to="/jobs" />
     <Navigation.Item icon="Mail" label="Posted" to="/posted" />
     <Navigation.Item icon="Search" label="My Active Jobs" to="/my-active-jobs" />
@@ -25,7 +25,7 @@ defaultStory.story = {
 };
 
 export const withIconSize = () => (
-  <Navigation color="GREEN">
+  <Navigation color="GREEN_40">
     <Navigation.Item iconSize="lg" icon="Trashcan" label="Jobs" to="/jobs" />
     <Navigation.Item iconSize="lg" icon="Mail" label="Posted" to="/posted" />
     <Navigation.Item iconSize="lg" icon="Search" label="My Active Jobs" to="/my-active-jobs" />
@@ -37,7 +37,7 @@ withIconSize.story = {
 };
 
 export const withoutIcons = () => (
-  <Navigation color="GREEN" data-e2e-id="default-navigation">
+  <Navigation color="GREEN_40" data-e2e-id="default-navigation">
     <Navigation.Item label="Jobs" to="/jobs" />
     <Navigation.Item label="Posted" to="/posted" />
     <Navigation.Item label="My Active Jobs" to="/my-active-jobs" />
@@ -56,7 +56,7 @@ export const withExpandButton = () => (
         <Navigation
           expanded={ expanded }
           expandedWidth={ 196 }
-          color="GREEN"
+          color="GREEN_40"
           data-e2e-id="default-navigation"
         >
           <Navigation.Item icon="Trashcan" label="Jobs" to="/jobs" />

@@ -32,7 +32,7 @@ const [ProgressInnerTag, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS 
   root: ({ size }) => ({
     flex: '1',
     height: HEIGHT_BY_SIZE[size],
-    background: COLORS.LIGHT_GRAY4,
+    background: COLORS.GRAY_20,
     borderRadius: '8px',
   }),
 }));
@@ -51,7 +51,7 @@ const [ProgressTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, SI
     minWidth: '40px',
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
-    color: COLORS.DSM_DARK_GREY_2,
+    color: COLORS.GRAY_40,
   },
 }));
 
@@ -59,7 +59,7 @@ const [ProgressLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS,
   root: {
     fontSize: SIZES.BODY_TEXT,
     lineHeight: SIZES.BODY_TEXT_LH,
-    color: COLORS.DSM_DARK_GREY_2,
+    color: COLORS.GRAY_40,
   },
 }));
 

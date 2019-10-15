@@ -34,7 +34,7 @@ const [CheckboxSquareTag, themeSquare] = createThemeTag(`${name}Square`, ({ COLO
       borderColor: COLORS.DANGER,
     },
     disabled: {
-      backgroundColor: COLORS.LIGHT_GRAY4,
+      backgroundColor: COLORS.GRAY_20,
       cursor: 'auto',
     },
   },

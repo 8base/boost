@@ -188,8 +188,8 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
 
         '.toggle': {
           position: 'relative',
-          color: COLORS.GRAY5,
-          border: `2px solid ${COLORS.GRAY5}`,
+          color: COLORS.GRAY_40,
+          border: `2px solid ${COLORS.GRAY_40}`,
           borderRadius: '50%',
           width: '16px',
           height: '16px',
@@ -204,7 +204,7 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
             left: '2px',
             height: '2px',
             width: '8px',
-            backgroundColor: COLORS.GRAY5,
+            backgroundColor: COLORS.GRAY_40,
           },
 
           '&.collapsed:before': {
@@ -214,7 +214,7 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
             left: '5px',
             height: '8px',
             width: '2px',
-            backgroundColor: COLORS.GRAY5,
+            backgroundColor: COLORS.GRAY_40,
           },
         },
 

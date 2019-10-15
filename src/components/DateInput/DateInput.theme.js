@@ -26,7 +26,7 @@ const [DateInputTag, themeDateInput] = createThemeTag('dateInput', ({ COLORS }: 
 
     .react-datepicker__header,
     .react-datepicker__today-button {
-      background-color: ${COLORS.LIGHT_GRAY5};
+      background-color: ${COLORS.GRAY_10};
     }
 
     .react-datepicker__month-container {
@@ -70,7 +70,7 @@ const [DateInputTag, themeDateInput] = createThemeTag('dateInput', ({ COLORS }: 
       .react-datepicker__time-box
       ul.react-datepicker__time-list
       li.react-datepicker__time-list-item--selected {
-      background-color: ${COLORS.LIGHT_BLUE};
+      background-color: ${COLORS.BLUE_10};
       font-weight: 600;
     }
 
@@ -110,7 +110,7 @@ const [DateInputTag, themeDateInput] = createThemeTag('dateInput', ({ COLORS }: 
 
     .react-datepicker__day--selected {
       border-radius: 24px;
-      background-color: ${COLORS.LIGHT_BLUE};
+      background-color: ${COLORS.BLUE_10};
       color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 
@@ -156,7 +156,7 @@ const [DateInputTag, themeDateInput] = createThemeTag('dateInput', ({ COLORS }: 
     .react-datepicker__month--selected,
     .react-datepicker__month--in-selecting-range,
     .react-datepicker__month--in-range {
-      background-color: ${COLORS.LIGHT_BLUE};
+      background-color: ${COLORS.BLUE_10};
       color: ${COLORS.LIGHT_PRIMARY_TEXT_COLOR};
     }
 

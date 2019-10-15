@@ -29,6 +29,10 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
       margin: 0,
     },
 
+    '&[type=number]': {
+      '-moz-appearance': 'textfield',
+    },
+
     '&::-ms-clear': {
       display: 'none',
     },

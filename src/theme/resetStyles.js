@@ -2,7 +2,7 @@
 
 import { css } from '@emotion/core';
 
-const resetStyles = ({ SIZES }: *) => css`
+const resetStyles = ({ FONTS }: *) => css`
   html {
     -webkit-font-smoothing: antialiased;
     font-size: 62.5% !important;
@@ -10,8 +10,8 @@ const resetStyles = ({ SIZES }: *) => css`
 
   body {
     font-family: 'Poppins', sans-serif !important;
-    font-size: ${SIZES.BODY_TEXT} !important;
-    line-height: ${SIZES.BODY_TEXT_LH} !important;
+    font-size: ${FONTS.BODY_1.fontSize} !important;
+    line-height: ${FONTS.BODY_1.lineHeight} !important;
   }
 
   *, *:after, *:before {

@@ -22,13 +22,10 @@ const [DividerInner, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }) =
   },
 }));
 
-const [DividerTitle, themeTitle] = createThemeTag(`${name}Title`, ({ COLORS }) => ({
+const [DividerTitle, themeTitle] = createThemeTag(`${name}Title`, ({ COLORS, FONTS }) => ({
   root: {
-    fontSize: '12px',
     fontFamily: 'inherit',
-    fontWeight: 600,
-    color: COLORS.GRAY_50,
-    lineHeight: '18px',
+    ...FONTS.OVERLINE_2,
     whiteSpace: 'nowrap',
     flexGrow: 2,
     marginRight: '8px',

@@ -4,15 +4,13 @@ import { Z_INDEX } from '../../theme';
 
 const name = 'tooltip';
 
-const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES }: *) => ({
+const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES, FONTS }: *) => ({
   root: {
     // position: 'relative',
     padding: '12px 16px',
     backgroundColor: '#3D4751',
+    ...FONTS.OVERLINE_1,
     color: COLORS.WHITE,
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: 1.8,
-    fontFamily: 'Poppins',
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     boxShadow: '2px 0 10px 0 rgba(0, 0, 0, 0.16)',
     zIndex: Z_INDEX.TOOLTIP,

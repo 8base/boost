@@ -16,7 +16,7 @@ const [TreeSelectWrapperTag, treeSelectWrapperTheme] = createThemeTag(`${name}Wr
 });
 
 // eslint-disable-next-line
-const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
+const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) => ({
   globals: theme => ({
     [`.${CLASS_NAME}`]: {
       '.dropdown': {
@@ -71,9 +71,8 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
           '& input': {
             height: '26px',
             margin: '2px 2px 2px 4px',
-            fontSize: SIZES.BODY_TEXT,
-            lineHeight: SIZES.BODY_TEXT_LH,
             borderBottom: 'none !important',
+            ...FONTS.BODY_1,
 
             '&, &::placeholder': {
               color: COLORS.PLACEHOLDER_COLOR,
@@ -92,9 +91,8 @@ const [_, treeSelectTheme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
         padding: '0 24px 0 12px',
         color: COLORS.SECONDARY_TEXT_COLOR,
         border: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
+        ...FONTS.SMALL_1,
         backgroundColor: '#fff',
-        fontSize: '11px',
-        fontWeight: 400,
         textOverflow: 'ellipsis',
 
         '& button': {

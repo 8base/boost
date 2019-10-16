@@ -5,7 +5,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'input';
 
 
-const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * => ({
+const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *): * => ({
   root: props => ({
     width: props.width ? `${props.width}rem` : props.stretch ? '100%' : SIZES.FIELD_WIDTH,
     outline: 'none',
@@ -37,10 +37,7 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES }: *): * =>
       display: 'none',
     },
 
-    color: COLORS.PRIMARY_TEXT_COLOR,
-    fontSize: SIZES.BODY_TEXT,
-    lineHeight: SIZES.BODY_TEXT_LH,
-    fontWeight: 400,
+    ...FONTS.BODY_1,
     height: '36px',
     transition: 'all .15s ease-in-out',
 

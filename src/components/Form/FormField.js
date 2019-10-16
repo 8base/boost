@@ -28,22 +28,19 @@ const [FormFieldTag, themeField] = createThemeTag(name, {
   }),
 });
 
-const [FormLabel, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+const [FormLabel, themeLabel] = createThemeTag(`${name}Label`, ({ FONTS }: *) => ({
   root: props => ({
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: SIZES.OVERLINE_1_LH,
-    color: COLORS.SECONDARY_TEXT_COLOR,
+    ...FONTS.OVERLINE_1,
     marginLeft: props.direction === 'row' ? '8px' : 0,
     marginBottom: '4px',
   }),
 }));
 
-const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, SIZES }: *) => ({
+const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, FONTS }: *) => ({
   root: {
     position: 'relative',
 
-    fontSize: SIZES.OVERLINE_2,
-    lineHeight: SIZES.OVERLINE_2_LH,
+    ...FONTS.SMALL_1,
     color: COLORS.DANGER,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -53,13 +50,11 @@ const [ControlErrorTag, themeError] = createThemeTag(`${name}Error`, ({ COLORS, 
   },
 }));
 
-const [FormFieldNoteTag, themeNote] = createThemeTag(`${name}Note`, ({ COLORS, SIZES }: *) => ({
+const [FormFieldNoteTag, themeNote] = createThemeTag(`${name}Note`, ({ FONTS }: *) => ({
   root: {
     position: 'relative',
 
-    fontSize: SIZES.OVERLINE_2,
-    lineHeight: SIZES.OVERLINE_2_LH,
-    color: COLORS.LIGHT_TEXT_COLOR,
+    ...FONTS.SMALL_1,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',

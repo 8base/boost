@@ -5,11 +5,9 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'label';
 
-const [LabelTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
+const [LabelTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) => ({
   root: {
-    fontWeight: 400,
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: SIZES.OVERLINE_1_LH,
+    ...FONTS.OVERLINE_1,
     margin: 0,
   },
   modifiers: {

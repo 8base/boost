@@ -63,7 +63,7 @@ const [CheckboxIconTag, themeIcon] = createThemeTag(`${name}Icon`, ({ COLORS }: 
   },
 }));
 
-const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: *): * => ({
+const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, FONTS }: *): * => ({
   root: {
     paddingLeft: '12px',
     cursor: 'pointer',
@@ -71,8 +71,7 @@ const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: 
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
 
-    color: COLORS.SECONDARY_TEXT_COLOR,
-    fontSize: COLORS.BODY_TEXT,
+    ...FONTS.BODY_2,
   },
 
   modifiers: {

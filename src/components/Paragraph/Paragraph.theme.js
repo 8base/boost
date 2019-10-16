@@ -4,10 +4,9 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'paragraph';
 
-const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) => ({
+const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES, COLORS, FONTS }: *) => ({
   root: props => ({
-    fontSize: SIZES.BODY_TEXT,
-    lineHeight: SIZES.BODY_TEXT_LH,
+    ...FONTS.BODY_1,
     margin: 0,
     '& > *': {
       verticalAlign: props.verticalAlign,

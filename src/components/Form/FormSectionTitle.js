@@ -11,12 +11,9 @@ type FormSectionTitleProps = {
 
 const name = 'formSectionTitle';
 
-const [FormSectionTitleTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
+const [FormSectionTitleTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) => ({
   root: {
-    fontWeight: 600,
-    color: COLORS.PRIMARY_TEXT_COLOR,
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: SIZES.OVERLINE_1_LH,
+    ...FONTS.OVERLINE_1,
   },
   modifiers: {},
   defaults: {},

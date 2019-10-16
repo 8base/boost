@@ -6,11 +6,13 @@ import { Tag } from '../common';
 import { COLORS } from '../theme/colors';
 import { SIZES } from '../theme/sizes';
 import { Z_INDEX } from '../theme/zIndex';
+import { FONTS } from '../theme/fonts';
 
 type ThemeConstatns = {
   COLORS: typeof COLORS,
   SIZES: typeof SIZES,
   Z_INDEX: typeof Z_INDEX,
+  FONTS: typeof FONTS,
 }
 
 const createComponentTheme = (
@@ -71,7 +73,7 @@ const createStyledTag = (themeName: string) => {
 };
 
 
-const createThemeTag = (themeName: string, theme?: Object | Function = {}) => { //Function | { root?: Object, modifiers?: Object, defaults?: Object } = {}) => {
+const createThemeTag = (themeName: string, theme?: Object | (ThemeConstatns) => Object = {}) => { //Function | { root?: Object, modifiers?: Object, defaults?: Object } = {}) => {
 
   return [
     createStyledTag(themeName),

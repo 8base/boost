@@ -45,21 +45,17 @@ const [ProgressValueTag, themeValue] = createThemeTag(`${name}Value`, ({ COLORS 
   }),
 }));
 
-const [ProgressTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, SIZES }: *) => ({
+const [ProgressTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *) => ({
   root: {
     marginLeft: '20px',
     minWidth: '40px',
-    fontSize: SIZES.BODY_TEXT,
-    lineHeight: SIZES.BODY_TEXT_LH,
-    color: COLORS.GRAY_40,
+    ...FONTS.BODY_3,
   },
 }));
 
-const [ProgressLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+const [ProgressLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ FONTS }: *) => ({
   root: {
-    fontSize: SIZES.BODY_TEXT,
-    lineHeight: SIZES.BODY_TEXT_LH,
-    color: COLORS.GRAY_40,
+    ...FONTS.BODY_3,
   },
 }));
 

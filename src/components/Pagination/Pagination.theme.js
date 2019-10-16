@@ -13,7 +13,7 @@ const [PaginationTag, themePagination] = createThemeTag(name, () => ({
   },
 }));
 
-const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, ({ COLORS }: *) => ({
+const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, ({ COLORS, FONTS }: *) => ({
   root: {
     height: 36,
     marginRight: 24,
@@ -36,7 +36,7 @@ const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, (
   },
   modifiers: {
     active: {
-      fontSize: 14,
+      ...FONTS.SUBTITLE,
       color: COLORS.WHITE,
       pointerEvents: 'none',
 

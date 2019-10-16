@@ -28,7 +28,7 @@ function Link({
 }
 
 Link.defaultProps = {
-  color: 'BLUE_10',
+  color: 'BLUE_30',
   underline: false,
   tagName: 'a',
 };

@@ -22,9 +22,9 @@ type BreadcrumbsProps = {
 
 const name = 'breadcrumbs';
 
-const [BreadcrumbsTag, theme] = createThemeTag(name, ({ SIZES }: *) => ({
+const [BreadcrumbsTag, theme] = createThemeTag(name, ({ FONTS }: *) => ({
   root: {
-    fontSize: SIZES.SUBTITLE_1,
+    ...FONTS.SUBTITLE_1,
   },
 }));
 

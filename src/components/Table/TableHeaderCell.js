@@ -21,7 +21,7 @@ type TableHeaderCellProps = {
 
 const name = 'tableHeaderCell';
 
-const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) => ({
+const [TableHeaderCellTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => ({
   root: props => ({
     display: 'flex',
     justifyContent: justifyContentStyles[props.justifyContent],
@@ -29,10 +29,7 @@ const [TableHeaderCellTag, theme] = createThemeTag(name, ({ SIZES, COLORS }: *) 
     cursor: props.cursor,
 
     padding: '0 24px',
-    fontSize: SIZES.OVERLINE_1,
-    lineHeight: SIZES.OVERLINE_1_LH,
-    textTransform: 'uppercase',
-    fontWeight: 700,
+    ...FONTS.OVERLINE_2,
   }),
 
   modifiers: {

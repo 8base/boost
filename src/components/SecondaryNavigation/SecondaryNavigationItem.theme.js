@@ -37,7 +37,7 @@ const [SecondaryNavigationItemTag, rootTheme] = createThemeTag(name, ({ COLORS }
   },
 }));
 
-const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Label`, ({ COLORS, SIZES }: *) => ({
+const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Label`, ({ FONTS }: *) => ({
   root: {
     paddingLeft: '20px',
     backgroundColor: 'inherit',
@@ -47,8 +47,7 @@ const [SecondaryNavigationItemLabelTag, labelTheme] = createThemeTag(`${name}Lab
     textOverflow: 'ellipsis',
     minWidth: 0,
     marginRight: 8,
-    color: COLORS.PRIMARY_TEXT_COLOR,
-    fontSize: SIZES.BODY_TEXT,
+    ...FONTS.BODY_1,
   },
 }));
 

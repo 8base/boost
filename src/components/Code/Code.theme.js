@@ -13,14 +13,13 @@ const [CodeWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLOR
   }),
 }));
 
-const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ COLORS, SIZES }: *) => ({
+const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ COLORS, SIZES, FONTS }: *) => ({
   root: {
-    color: COLORS.PRIMARY_TEXT_COLOR,
+    ...FONTS.BODY_1,
     fontFamily: 'Courier',
     opacity: '0.5',
     textAlign: 'center',
     lineHeight: 2,
-    fontSize: SIZES.BODY_TEXT,
   },
 }));
 

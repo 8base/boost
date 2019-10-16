@@ -1,3 +1,13 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/8base/boost/compare/v1.4.1...v1.4.2) (2019-10-16)
+
+
+### Features
+
+* **Dropdown:** pass all dd context to the render props ([75a17a5](https://github.com/8base/boost/commit/75a17a5))
+
+
+
 <a name="1.4.1"></a>
 ## [1.4.1](https://github.com/8base/boost/compare/v1.4.0...v1.4.1) (2019-10-14)
 

@@ -17,7 +17,7 @@ const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS, FONTS }: *): * =>
     justifyContent: 'center',
     whiteSpace: 'nowrap',
     border: '1px solid',
-    ...FONTS.OVERLINE_1
+    ...FONTS.OVERLINE_1,
   },
 
   modifiers: {

@@ -4,7 +4,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'paragraph';
 
-const [ParagraphTag, theme] = createThemeTag(name, ({ SIZES, COLORS, FONTS }: *) => ({
+const [ParagraphTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => ({
   root: props => ({
     ...FONTS.BODY_1,
     margin: 0,

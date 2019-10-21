@@ -48,7 +48,7 @@ const [CardBodyTag, cardBodyTheme] = createThemeTag('cardBody', {
 const [CardFooterTag, cardFooterTheme] = createThemeTag('cardFooter', ({ COLORS }: *): * => ({
   root: {
     flexShrink: 0,
-    borderTop: `1px solid ${COLORS.GRAY_20}`,
+    borderTop: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
   },
   modifiers: {
     ...offsetModifier,
@@ -59,7 +59,7 @@ const [CardFooterTag, cardFooterTheme] = createThemeTag('cardFooter', ({ COLORS 
 const [CardSectionTag, cardSectionTheme] = createThemeTag('cardSection', ({ COLORS }: *) => ({
   root: {
     '&:not(:last-child)': {
-      borderBottom: `1px solid ${COLORS.GRAY_20}`,
+      borderBottom: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
     },
   },
   modifiers: {
@@ -87,7 +87,7 @@ const [CardHeaderTag, cardHeaderTheme] = createThemeTag('cardHeader', ({ COLORS 
     flexShrink: 0,
     height: '64px',
 
-    borderBottom: `1px solid ${COLORS.GRAY_20}`,
+    borderBottom: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
   },
   modifiers: {
     padding: {

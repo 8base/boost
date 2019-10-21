@@ -67,7 +67,7 @@ const [AvatarsHandleTag, themeHandleAvatars] = createThemeTag(`${name}Handle`, (
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    border: `1px dashed ${COLORS.GRAY_20}`,
+    border: `1px dashed ${COLORS.SECONDARY_BORDER_COLOR}`,
     color: COLORS.PRIMARY_TEXT_COLOR,
     marginLeft: -10,
     cursor: 'pointer',

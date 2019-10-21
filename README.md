@@ -56,7 +56,7 @@ const customTheme = createTheme({
       },
       modifiers: {
         disabled: {
-          backgroundColor: COLORS.RED_30,
+          backgroundColor: COLORS.RED,
         },
       },
     }),
@@ -95,7 +95,7 @@ const App = () => {
   return (
     <BoostProvider icons={ icons }>
       ...
-      <Icon name="AnotherSvgIcon" size="lg" color="DANGER" />
+      <Icon name="AnotherSvgIcon" size="lg" color="RED" />
     </BoostProvider>
   )
 }
@@ -103,7 +103,7 @@ const App = () => {
 
 
 ### Using with fontawesome
-At the first you need to add install aswesome font to the index.html [as described in the fontawesome docs](https://fontawesome.com/start).
+At the first you need to add install awesome font to the index.html [as described in the fontawesome docs](https://fontawesome.com/start).
 
 ```js
 import { BoostProvider, createTheme } from '@8base/boost';
@@ -112,7 +112,7 @@ const App = () => {
   return (
     <BoostProvider>
       ...
-      <Icon className="fas fa-igloo" color="DANGER" size="lg" />
+      <Icon className="fas fa-igloo" color="RED" size="lg" />
     </BoostProvider>
   )
 }

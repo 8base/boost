@@ -11,16 +11,16 @@ type FormSectionTitleProps = {
 
 const name = 'formSectionTitle';
 
-const [FormSectionTitleTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) => ({
+const [FormSectionTitleTag, theme] = createThemeTag(name, ({ FONTS }: *) => ({
   root: {
-    ...FONTS.OVERLINE_1,
+    ...FONTS.H5,
   },
   modifiers: {},
   defaults: {},
 }));
 
 const FormSectionTitle = ({ children, text, ...rest }: FormSectionTitleProps) => (
-  <FormSectionTitleTag { ...rest } tagName="span">{ children || text }</FormSectionTitleTag>
+  <FormSectionTitleTag { ...rest } tagName="h5">{ children || text }</FormSectionTitleTag>
 );
 
 export { FormSectionTitle, theme };

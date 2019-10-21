@@ -27,6 +27,9 @@ const [TextTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *): * => ({
       'small-2': {
         ...FONTS.SMALL_2,
       },
+      subtitle: {
+        ...FONTS.SUBTITLE,
+      },
     },
 
     color: fp.mapValues(

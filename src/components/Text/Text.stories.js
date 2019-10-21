@@ -28,6 +28,21 @@ common.story = {
   name: 'common',
 };
 
+export const withKindModifiers = () => (
+  <Column>
+    <Text kind="subtitle">Subtitle kind: { placeholderText }</Text>
+    <Text kind="body">Body kind: { placeholderText }</Text>
+    <Text kind="overline-1">Overline-1 kind: { placeholderText }</Text>
+    <Text kind="overline-2">Overline-2 kind: { placeholderText }</Text>
+    <Text kind="small-1">Small-1 kind: { placeholderText }</Text>
+    <Text kind="small-2">Small-2 kind: { placeholderText }</Text>
+  </Column>
+);
+
+withKindModifiers.story = {
+  name: 'with kind modifiers',
+};
+
 export const withAlignModifiers = () => (
   <div style={{ width: '300px', display: ' flex', flexDirection: 'column' }}>
     <Text align="left">{ placeholderText }</Text>

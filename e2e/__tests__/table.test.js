@@ -20,7 +20,7 @@ const SUITES = [
     }),
   baisy.suite('Components/Table', 'with condensed modifier'),
   baisy.suite('Components/Table', 'with bordered modifier'),
-  baisy.suite('Components/Table', 'with custom NoData component'),
+  baisy.suite('Components/Table', 'with custom no data component'),
 ];
 
 

@@ -4,12 +4,10 @@ import { Z_INDEX } from '../../theme';
 
 const name = 'tooltip';
 
-const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES, FONTS }: *) => ({
+const [TooltipMessageTag, tooltipMessageTheme] = createThemeTag(`${name}Message`, ({ COLORS, SIZES }: *) => ({
   root: {
-    // position: 'relative',
     padding: '12px 16px',
     backgroundColor: '#3D4751',
-    ...FONTS.BODY,
     color: COLORS.WHITE,
     borderRadius: SIZES.MAIN_BORDER_RADIUS,
     boxShadow: '2px 0 10px 0 rgba(0, 0, 0, 0.16)',

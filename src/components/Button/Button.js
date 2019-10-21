@@ -24,11 +24,13 @@ export type ButtonProps = {
   /** possible button colors */
   color?: 'primary' | 'neutral' | 'danger' | 'success' | 'warning',
   /** the type of button */
-  variant?: 'outlined' | 'raised' | 'ghost',
+  variant?: 'outlined' | 'raised' | 'ghost' | 'link',
   /** posible sizes */
   size?: 'sm' | 'md' | 'lg',
   /** possible to reassign the button tag */
   tagName?: any,
+  /** enable autosize for icons */
+  withIconAutosize?: boolean,
 };
 
 class Button extends Component<ButtonProps> {
@@ -37,6 +39,7 @@ class Button extends Component<ButtonProps> {
     color: 'primary',
     size: 'md',
     tagName: 'button',
+    withIconAutosize: true,
   };
 
   onClick = (event: *) => {

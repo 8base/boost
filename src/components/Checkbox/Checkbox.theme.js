@@ -63,7 +63,7 @@ const [CheckboxIconTag, themeIcon] = createThemeTag(`${name}Icon`, ({ COLORS }: 
   },
 }));
 
-const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS, FONTS }: *): * => ({
+const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *): * => ({
   root: {
     paddingLeft: '12px',
     cursor: 'pointer',

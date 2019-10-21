@@ -4,7 +4,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'heading';
 
-const [HeadingTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) => ({
+const [HeadingTag, theme] = createThemeTag(name, ({ FONTS }: *) => ({
   root: {
     margin: 0,
   },
@@ -22,19 +22,8 @@ const [HeadingTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) =
       h4: {
         ...FONTS.H4,
       },
-    },
-    kind: {
-      primary: {
-        color: COLORS.PRIMARY_TEXT_COLOR,
-      },
-      secondary: {
-        color: COLORS.SECONDARY_TEXT_COLOR,
-      },
-      disabled: {
-        color: COLORS.DISABLED_TEXT_COLOR,
-      },
-      white: {
-        color: COLORS.WHITE,
+      h5: {
+        ...FONTS.H5,
       },
     },
     ellipsis: {

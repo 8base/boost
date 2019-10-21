@@ -19,15 +19,21 @@ const spinner = keyframes`
 
 
 const getLoading = (props: *, COLORS: *) => {
-  let color = props.variant === 'ghost' ? COLORS.PRIMARY_BORDER_COLOR : COLORS.WHITE;
 
-  if (props.color === 'neutral') {
-    color = COLORS.GRAY_30;
-  }
+  let color = COLORS.WHITE;
 
   if (props.color === 'warning') {
     color = COLORS.GRAY_60;
   }
+
+  if (props.color === 'neutral') {
+    color = COLORS.PRIMARY_BORDER_COLOR;
+  }
+
+  if (props.variant === 'ghost' || props.variant === 'outlined') {
+    color = COLORS.PRIMARY_BORDER_COLOR;
+  }
+
 
   return props.loading
     ? {
@@ -69,7 +75,7 @@ const boxShadowFocus = 'inset 0 1px 3px 0 rgba(50,50,93,0.14), inset 0 4px 6px 0
 
 
 const getLinkStyles = (props: *) => {
-  if (props.kind === 'link') {
+  if (props.variant === 'link') {
     return {
       backgroundColor: 'transparent',
       border: 'none',
@@ -83,7 +89,7 @@ const getLinkStyles = (props: *) => {
 
 
 const getSizeStyles = (props) => {
-  if (props.kind === 'link') {
+  if (props.variant === 'link') {
     return {};
   }
 
@@ -92,28 +98,37 @@ const getSizeStyles = (props) => {
       height: BUTTON_HEIGHT_BY_SIZE.sm,
       padding: '0 20px',
     };
-    case 'md': return {
-      height: BUTTON_HEIGHT_BY_SIZE.md,
-      padding: '0 32px',
-    };
     case 'lg': return {
       height: BUTTON_HEIGHT_BY_SIZE.lg,
       padding: '0 48px',
+    };
+    case 'md':
+    default: return {
+      height: BUTTON_HEIGHT_BY_SIZE.md,
+      padding: '0 32px',
     };
   }
 };
 
 const getKindStyles = (props: *, COLORS: *) => {
 
-  switch (props.kind) {
+  switch (props.variant) {
     case 'ghost': {
       return {
         color: COLORS.WHITE,
         backgroundColor: 'transparent',
+
+        '&:hover': {
+          boxShadow: boxShadowHover,
+        },
+
+        '&:active': {
+          boxShadow: boxShadowFocus,
+        },
       };
     }
 
-    case 'link': {
+    case 'link':
       if (props.disabled) {
         return {
           color: COLORS.DISABLED_TEXT_COLOR,
@@ -133,7 +148,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             color: COLORS.BLUE_20,
           },
 
-          '&:focus': {
+          '&:active': {
             color: COLORS.BLUE_10,
           },
         };
@@ -145,7 +160,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             color: COLORS.RED_30,
           },
 
-          '&:focus': {
+          '&:active': {
             color: COLORS.RED_20,
           },
         };
@@ -160,12 +175,106 @@ const getKindStyles = (props: *, COLORS: *) => {
             color: COLORS.GRAY_50,
           },
 
-          '&:focus': {
+          '&:active': {
             color: COLORS.GRAY_40,
           },
         };
       }
-    } break;
+      break;
+
+    case 'outlined':
+      if (props.disabled) {
+        return {
+          backgroundColor: COLORS.GRAY_20,
+          borderColor: COLORS.GRAY_30,
+          color: COLORS.DISABLED_TEXT_COLOR,
+          cursor: 'not-allowed',
+
+          svg: {
+            color: COLORS.GRAY_30,
+          },
+
+          '&:hover': {
+            boxShadow: 'none',
+          },
+        };
+      }
+
+      if (props.color === 'primary') {
+        return {
+          backgroundColor: COLORS.WHITE,
+          borderColor: COLORS.BLUE_30,
+
+          '&:hover': {
+            borderColor: COLORS.BLUE_20,
+            boxShadow: boxShadowHover,
+          },
+
+          '&:active': {
+            borderColor: COLORS.BLUE_10,
+            boxShadow: boxShadowFocus,
+          },
+        };
+      } else if (props.color === 'danger') {
+        return {
+          backgroundColor: COLORS.WHITE,
+          borderColor: COLORS.RED_40,
+
+          '&:hover': {
+            borderColor: COLORS.RED_30,
+            boxShadow: boxShadowHover,
+          },
+
+          '&:active': {
+            borderColor: COLORS.RED_20,
+            boxShadow: boxShadowFocus,
+          },
+        };
+      } else if (props.color === 'warning') {
+        return {
+          backgroundColor: COLORS.WHITE,
+          borderColor: COLORS.YELLOW_30,
+
+          '&:hover': {
+            borderColor: COLORS.YELLOW_20,
+            boxShadow: boxShadowHover,
+          },
+
+          '&:active': {
+            borderColor: COLORS.YELLOW_10,
+            boxShadow: boxShadowFocus,
+          },
+        };
+      } else if (props.color === 'success') {
+        return {
+          backgroundColor: COLORS.WHITE,
+          borderColor: COLORS.GREEN_30,
+
+          '&:hover': {
+            borderColor: COLORS.GREEN_20,
+            boxShadow: boxShadowHover,
+          },
+
+          '&:active': {
+            borderColor: COLORS.GREEN_10,
+            boxShadow: boxShadowFocus,
+          },
+        };
+      } else if (props.color === 'neutral') {
+        return {
+          backgroundColor: COLORS.WHITE,
+          borderColor: COLORS.PRIMARY_BORDER_COLOR,
+
+          '&:hover': {
+            boxShadow: boxShadowHover,
+          },
+
+          '&:active': {
+            boxShadow: boxShadowFocus,
+          },
+        };
+      }
+      break;
 
     case 'raised':
     default: {
@@ -198,7 +307,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             boxShadow: boxShadowHover,
           },
 
-          '&:focus': {
+          '&:active': {
             backgroundColor: COLORS.BLUE_10,
             borderColor: COLORS.BLUE_10,
             boxShadow: boxShadowFocus,
@@ -216,7 +325,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             boxShadow: boxShadowHover,
           },
 
-          '&:focus': {
+          '&:active': {
             backgroundColor: COLORS.RED_20,
             borderColor: COLORS.RED_20,
             boxShadow: boxShadowFocus,
@@ -233,7 +342,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             boxShadow: boxShadowHover,
           },
 
-          '&:focus': {
+          '&:active': {
             backgroundColor: COLORS.YELLOW_10,
             borderColor: COLORS.YELLOW_10,
             boxShadow: boxShadowFocus,
@@ -251,7 +360,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             boxShadow: boxShadowHover,
           },
 
-          '&:focus': {
+          '&:active': {
             backgroundColor: COLORS.GREEN_20,
             borderColor: COLORS.GREEN_20,
             boxShadow: boxShadowFocus,
@@ -267,7 +376,7 @@ const getKindStyles = (props: *, COLORS: *) => {
             boxShadow: boxShadowHover,
           },
 
-          '&:focus': {
+          '&:active': {
             boxShadow: boxShadowFocus,
           },
         };
@@ -298,7 +407,7 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) =>
 
     ...getSquaredStyle(props),
     ...getLoading(props, COLORS),
-    ...getLinkStyles(props, COLORS),
+    ...getLinkStyles(props),
     ...getKindStyles(props, COLORS),
     ...getSizeStyles(props),
 
@@ -306,10 +415,12 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) =>
       marginRight: '8px',
     },
 
-    '& i': {
-      width: '20px',
-      height: '20px',
-    },
+    ...(props.withIconAutosize ? {
+      '& i': {
+        width: '20px',
+        height: '20px',
+      }} : {})
+    ,
   }),
   modifiers: {
     stretch: {

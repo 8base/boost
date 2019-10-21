@@ -28,7 +28,7 @@ function Loader(props: LoaderProps) {
 Loader.defaultProps = {
   stretch: false,
   size: 'md',
-  color: 'RED_30',
+  color: 'RED',
 };
 
 export { Loader };

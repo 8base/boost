@@ -4,7 +4,7 @@ import { baisy } from '../setup/TestSuiter';
 const SUITES = [
   baisy.suite('Components/Paper', 'default story'),
   baisy.suite('Components/Paper', 'with padding'),
-  baisy.suite('Components/Paper', 'with borderRadius'),
+  baisy.suite('Components/Paper', 'with border radius'),
 ];
 
 

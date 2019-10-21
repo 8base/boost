@@ -19,7 +19,7 @@ const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => (
     display: 'grid',
     height: '48px',
     backgroundColor: COLORS.GRAY_10,
-    borderBottom: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
+    borderBottom: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
     ...FONTS.OVERLINE_2,
     columnGap: gapSizes[props.columnGap],
   }),
@@ -31,7 +31,7 @@ const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => (
 
     bordered: {
       '&:first-child': {
-        borderTop: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
+        borderTop: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       },
     },
   },

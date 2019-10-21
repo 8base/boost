@@ -30,13 +30,13 @@ const [TableBodyTag, themeBody] = createThemeTag(name, ({ COLORS }: *): * => ({
     justifyContent: 'space-between',
     overflow: 'auto',
 
-    borderBottom: action ? `1px solid ${COLORS.TABLE_BORDER_COLOR}` : 'none',
+    borderBottom: action ? `1px solid ${COLORS.SECONDARY_BORDER_COLOR}` : 'none',
   }),
 
   modifiers: {
     bordered: {
       '&:first-child': {
-        borderTop: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
+        borderTop: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       },
     },
   },

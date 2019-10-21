@@ -25,11 +25,23 @@ export const common = () => (
       <Button color="neutral" loading>Button</Button>
     </Row>
     <Row>
-      <Button color="primary" kind="link">Button Link</Button>
-      <Button color="danger" kind="link">Button Link</Button>
-      <Button color="success" kind="link">Button Link</Button>
-      <Button color="neutral" kind="link">Button Link</Button>
-      <Button disabled kind="link">Button Link</Button>
+      <Button color="primary" variant="outlined">Button</Button>
+      <Button color="danger" variant="outlined">Button</Button>
+      <Button color="warning" variant="outlined">Button</Button>
+      <Button color="success" variant="outlined">Button</Button>
+    </Row>
+    <Row>
+      <Button color="primary" variant="outlined" loading>Button</Button>
+      <Button color="danger" variant="outlined" loading>Button</Button>
+      <Button color="warning" variant="outlined" loading>Button</Button>
+      <Button color="success" variant="outlined" loading>Button</Button>
+    </Row>
+    <Row>
+      <Button color="primary" variant="link">Button Link</Button>
+      <Button color="danger" variant="link">Button Link</Button>
+      <Button color="success" variant="link">Button Link</Button>
+      <Button color="neutral" variant="link">Button Link</Button>
+      <Button disabled variant="link">Button Link</Button>
     </Row>
     <Row>
       <Button size="sm">Button</Button>

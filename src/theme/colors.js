@@ -1,71 +1,16 @@
 // @flow
-import * as DSM from './dsmColors';
-
-const LEGACY_PALETTE = {
-  DARK_GRAY1: '#323c47',
-  DARK_GRAY2: '#3E4650',
-  DARK_GRAY3: '#444D57',
-
-  GRAY1: '#878c93',
-  GRAY2: '#5C6268',
-  GRAY3: '#737A82',
-  GRAY4: '#7e868e',
-  GRAY5: '#A5AFB6',
-
-  LIGHT_GRAY1: '#d0d7dd',
-  LIGHT_GRAY2: '#E9EFF4',
-  LIGHT_GRAY3: '#E5E9EC',
-  LIGHT_GRAY4: '#EDF0F2',
-  LIGHT_GRAY5: '#f4f7f9',
-
-  YELLOW: '#ffd012',
-  PURPLE: '#9975D0',
-  PINK: '#EB518E',
-
-  LIGHT_BLUE: '#4DA1FF',
-  BLUE: '#1968cb',
-  DARK_BLUE: '#687695',
-
-  LIGHT_GREEN: '#a6e50f',
-  GREEN: '#00bb6e',
-
-  LIGHT_RED: '#ff6d4a',
-  RED: '#eb4235',
-
-  TRANSPARENT: 'transparent',
-
-  DSM,
-
-  // TODO: delete after colors collisions resolve
-  ...DSM.MAIN_BRAND_COLORS,
-  ...DSM.GREY_COLORS,
-  ...DSM.NAVIGATION_COLORS,
-  ...DSM.SECONDARY_COLORS,
-};
-
 
 const DEFINE_PALETTE = {
   WHITE: '#FFFFFF',
   BLACK: '#323C47',
 
   GRAY_10: '#F4F7F9',
-  // LIGHT_GRAY5: '#f4f7f9',
   GRAY_20: '#E8EFF5',
-  // LIGHT_GRAY2: '#E9EFF4',
   GRAY_30: '#CFD7DE',
-  // LIGHT_GRAY1: '#d0d7dd',
-
   GRAY_40: '#A3AFB7',
   GRAY_50: '#7D828C',
-  // GRAY1: '#878c93',
-  // DARK_GREY_1: '#7e828b',
-  // DARK_GREY_2: '#939ea7',
-  // DARK_GREY_3: '#a5afb6',
-
   GRAY_60: '#323C47',
-  // DARK_GRAY1: '#323c47',
   GRAY_70: '#1A252F',
-
 
   BLUE_10: '#4DA1FF',
   BLUE_20: '#238BFF',
@@ -82,7 +27,6 @@ const DEFINE_PALETTE = {
   RED_20: '#FF6D4A',
   RED_30: '#FE4B3D',
   RED_40: '#FF2A25',
-
 
   PURPLE_10: '#9975D0',
   PURPLE_20: '#4D329A',
@@ -104,7 +48,6 @@ const PALETTE = {
   SECONDARY: DEFINE_PALETTE.GREEN_40,
   SUCCESS: DEFINE_PALETTE.GREEN_10,
   DANGER: DEFINE_PALETTE.RED_30,
-  DANGER_DARK: DEFINE_PALETTE.RED_40,
 
   BLUE: DEFINE_PALETTE.BLUE_30,
   RED: DEFINE_PALETTE.RED_30,
@@ -128,8 +71,6 @@ const COLORS = {
   PRIMARY_TEXT_COLOR: PALETTE.GRAY_60,
   SECONDARY_TEXT_COLOR: PALETTE.GRAY_50,
   LIGHT_TEXT_COLOR: PALETTE.GRAY_40,
-
-  LIGHT_PRIMARY_TEXT_COLOR: 'rgba(255, 255, 255, 1)',
 };
 
 export { COLORS, PALETTE };

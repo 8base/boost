@@ -12,36 +12,24 @@ export const common = () => (
     <Row>
       <Button color="primary">Button</Button>
       <Button color="danger">Button</Button>
+      <Button color="warning">Button</Button>
+      <Button color="success">Button</Button>
       <Button color="neutral">Button</Button>
-      <Button color="primary" variant="outlined">
-        Button
-      </Button>
-      <Button color="danger" variant="outlined">
-        Button
-      </Button>
-      <Button color="neutral" variant="outlined">
-        Button
-      </Button>
+      <Button disabled>Button</Button>
     </Row>
     <Row>
-      <Button color="primary" loading>
-        Button
-      </Button>
-      <Button color="danger" loading>
-        Button
-      </Button>
-      <Button color="neutral" loading>
-        Button
-      </Button>
-      <Button color="primary" variant="outlined" loading>
-        Button
-      </Button>
-      <Button color="danger" variant="outlined" loading>
-        Button
-      </Button>
-      <Button color="neutral" variant="outlined" loading>
-        Button
-      </Button>
+      <Button color="primary" loading>Button</Button>
+      <Button color="danger" loading>Button</Button>
+      <Button color="warning" loading>Button</Button>
+      <Button color="success" loading>Button</Button>
+      <Button color="neutral" loading>Button</Button>
+    </Row>
+    <Row>
+      <Button color="primary" kind="link">Button Link</Button>
+      <Button color="danger" kind="link">Button Link</Button>
+      <Button color="success" kind="link">Button Link</Button>
+      <Button color="neutral" kind="link">Button Link</Button>
+      <Button disabled kind="link">Button Link</Button>
     </Row>
     <Row>
       <Button size="sm">Button</Button>
@@ -49,7 +37,6 @@ export const common = () => (
       <Button size="lg">Button</Button>
     </Row>
     <Row>
-      <Button disabled>Button</Button>
       <Button rounded>Button</Button>
       <Button squared>
         <Icon name="Trashcan" />

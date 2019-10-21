@@ -12,6 +12,9 @@ const resetStyles = ({ FONTS }: *) => css`
     font-family: 'Poppins', sans-serif !important;
     font-size: ${FONTS.BODY_1.fontSize} !important;
     line-height: ${FONTS.BODY_1.lineHeight} !important;
+    font-weight: ${FONTS.BODY_1.fontWeight} !important;
+    letter-spacing: ${FONTS.BODY_1.letterSpacing} !important;
+    color: ${FONTS.BODY_1.color};
   }
 
   *, *:after, *:before {

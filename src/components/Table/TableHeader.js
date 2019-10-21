@@ -14,13 +14,13 @@ type TableHeaderProps = {
 
 const name = 'tableHeader';
 
-const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
+const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => ({
   root: props => ({
     display: 'grid',
     height: '48px',
     backgroundColor: COLORS.GRAY_10,
     borderBottom: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
-    color: COLORS.GRAY_50,
+    ...FONTS.OVERLINE_2,
     columnGap: gapSizes[props.columnGap],
   }),
 

@@ -33,6 +33,7 @@ const getRootStyles = (themeName: string, props: *) => {
 
 const getModifiersStyles = (themeName: string, props: Object) => {
   const themeModifiers = fp.getOr({}, ['theme', 'components', themeName, 'modifiers'], props);
+  // const omittedProps = fp.omit(['theme'], props);
 
   return Object.keys(themeModifiers)
     .reduce(

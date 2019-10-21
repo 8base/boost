@@ -22,7 +22,7 @@ export type ButtonProps = {
   /** possible button types */
   type?: 'submit' | 'button' | 'reset',
   /** possible button colors */
-  color?: 'primary' | 'neutral' | 'danger' | 'success' | 'white',
+  color?: 'primary' | 'neutral' | 'danger' | 'success' | 'warning',
   /** the type of button */
   variant?: 'outlined' | 'raised' | 'ghost',
   /** posible sizes */

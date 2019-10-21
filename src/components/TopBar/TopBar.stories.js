@@ -16,7 +16,7 @@ export default {
 
 export const common = () => (
   <Column gap="lg">
-    <TopBar color="HOME_SELECTED">
+    <TopBar color="BLUE">
       <Text color="WHITE" weight="semibold">
         You have 7 days until your FREE TRIAL ends.
       </Text>

@@ -11,7 +11,7 @@ type InputCommonProps = {
   /** field placeholder */
   placeholder?: string,
   /** html auto-complete representation */
-  autoComplete?: boolean,
+  autoComplete?: string | boolean,
   /** html auto-focus representation */
   autoFocus?: boolean,
   /** disabled */
@@ -163,7 +163,7 @@ class Input extends PureComponent<InputProps> {
 
     const inputProps = {
       align,
-      autoComplete: autoComplete ? 'on' : 'off',
+      autoComplete: typeof autoComplete === 'string' ? autoComplete : Boolean(autoComplete) ? 'on' : 'off',
       hasError,
       hasLeftIcon,
       hasRightIcon,

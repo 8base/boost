@@ -97,6 +97,80 @@ describe('<Input />', () => {
     expect(onChange.mock.calls[0][0]).toBe('12');
   });
 
+  it('should use autoComplete from props if it\'s string', () => {
+    const wrapper = shallow(<Input autoComplete="new-password" />);
+
+    expect(wrapper).toMatchInlineSnapshot(`
+<Boost(inputWrapper)
+  stretch={true}
+  tagName="div"
+>
+  <Boost(input)
+    align="left"
+    autoComplete="new-password"
+    hasError={false}
+    hasLeftIcon={false}
+    hasRightIcon={false}
+    hideNumberArrows={true}
+    kind="bordered"
+    modifiers={Object {}}
+    onChange={[Function]}
+    stretch={true}
+    tagName="input"
+    type="text"
+  />
+</Boost(inputWrapper)>
+`);
+  });
+
+  it('should convert autoComplete to "on" or "off" if it\'s boolean', () => {
+    const wrapperOn = shallow(<Input autoComplete />);
+    const wrapperOff = shallow(<Input autoComplete={ false } />);
+
+    expect(wrapperOn).toMatchInlineSnapshot(`
+<Boost(inputWrapper)
+  stretch={true}
+  tagName="div"
+>
+  <Boost(input)
+    align="left"
+    autoComplete="on"
+    hasError={false}
+    hasLeftIcon={false}
+    hasRightIcon={false}
+    hideNumberArrows={true}
+    kind="bordered"
+    modifiers={Object {}}
+    onChange={[Function]}
+    stretch={true}
+    tagName="input"
+    type="text"
+  />
+</Boost(inputWrapper)>
+`);
+    expect(wrapperOff).toMatchInlineSnapshot(`
+<Boost(inputWrapper)
+  stretch={true}
+  tagName="div"
+>
+  <Boost(input)
+    align="left"
+    autoComplete="off"
+    hasError={false}
+    hasLeftIcon={false}
+    hasRightIcon={false}
+    hideNumberArrows={true}
+    kind="bordered"
+    modifiers={Object {}}
+    onChange={[Function]}
+    stretch={true}
+    tagName="input"
+    type="text"
+  />
+</Boost(inputWrapper)>
+`);
+  });
+
   describe('input with type number', () => {
     it('should increment and decrement number on arrows click', () => {
       const onChange = jest.fn();

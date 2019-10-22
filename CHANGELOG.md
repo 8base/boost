@@ -1,3 +1,15 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/8base/boost/compare/v1.4.2...v1.5.0) (2019-10-22)
+
+
+### Features
+
+* **Button:** update button styles ([9b7dd9e](https://github.com/8base/boost/commit/9b7dd9e))
+* update colors palette ([039cac4](https://github.com/8base/boost/commit/039cac4))
+* update fonts ([1bf7c05](https://github.com/8base/boost/commit/1bf7c05))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/8base/boost/compare/v1.4.1...v1.4.2) (2019-10-16)
 

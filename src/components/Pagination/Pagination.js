@@ -114,6 +114,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
           variant="outlined"
           squared
           disabled={ page <= 1 }
+          withIconAutosize={ false }
         >
           <Icon name="ChevronLeft" size="xs" />
         </Button>
@@ -160,6 +161,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
           variant="outlined"
           squared
           disabled={ page >= numberOfPages }
+          withIconAutosize={ false }
         >
           <Icon name="ChevronRight" size="xs" />
         </Button>

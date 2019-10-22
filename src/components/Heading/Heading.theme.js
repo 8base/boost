@@ -4,66 +4,26 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'heading';
 
-const [HeadingTag, theme] = createThemeTag(name, ({ COLORS, SIZES }: *) => ({
+const [HeadingTag, theme] = createThemeTag(name, ({ FONTS }: *) => ({
   root: {
     margin: 0,
   },
   modifiers: {
     type: {
       h1: {
-        fontSize: SIZES.HEADING_1,
-        lineHeight: SIZES.HEADING_1_LH,
+        ...FONTS.H1,
       },
       h2: {
-        fontSize: SIZES.HEADING_2,
-        lineHeight: SIZES.HEADING_2_LH,
+        ...FONTS.H2,
       },
       h3: {
-        fontSize: SIZES.HEADING_3,
-        lineHeight: SIZES.HEADING_3_LH,
+        ...FONTS.H3,
       },
       h4: {
-        fontSize: SIZES.HEADING_4,
-        lineHeight: SIZES.HEADING_4_LH,
+        ...FONTS.H4,
       },
       h5: {
-        fontSize: SIZES.HEADING_5,
-        lineHeight: SIZES.HEADING_5_LH,
-      },
-      h6: {
-        fontSize: SIZES.HEADING_6,
-        lineHeight: SIZES.HEADING_6_LH,
-      },
-    },
-    kind: {
-      primary: {
-        color: COLORS.PRIMARY_TEXT_COLOR,
-      },
-      secondary: {
-        color: COLORS.SECONDARY_TEXT_COLOR,
-      },
-      disabled: {
-        color: COLORS.DISABLED_TEXT_COLOR,
-      },
-      white: {
-        color: COLORS.WHITE,
-      },
-    },
-    weight: {
-      light: {
-        fontWeight: 300,
-      },
-      normal: {
-        fontWeight: 400,
-      },
-      medium: {
-        fontWeight: 500,
-      },
-      semibold: {
-        fontWeight: 600,
-      },
-      bold: {
-        fontWeight: 700,
+        ...FONTS.H5,
       },
     },
     ellipsis: {

@@ -4,13 +4,34 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'text';
 
-const [TextTag, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
+const [TextTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *): * => ({
   root: props => ({
     margin: 0,
     cursor: props.cursor,
   }),
 
   modifiers: {
+    kind: {
+      body: {
+        ...FONTS.BODY_1,
+      },
+      'overline-1': {
+        ...FONTS.OVERLINE_1,
+      },
+      'overline-2': {
+        ...FONTS.OVERLINE_2,
+      },
+      'small-1': {
+        ...FONTS.SMALL_1,
+      },
+      'small-2': {
+        ...FONTS.SMALL_2,
+      },
+      subtitle: {
+        ...FONTS.SUBTITLE,
+      },
+    },
+
     color: fp.mapValues(
       (color) => ({ color }),
       COLORS,
@@ -23,7 +44,7 @@ const [TextTag, theme] = createThemeTag(name, ({ COLORS }: *): * => ({
     },
 
     disabled: {
-      color: COLORS.DISABLED_TEXT_COLOR,
+      color: COLORS.PRIMARY_TEXT_COLOR,
     },
 
     weight: {

@@ -16,7 +16,7 @@ export default {
 
 export const common = () => (
   <Column gap="lg">
-    <TopBar color="DSM_HOME_SELECTED">
+    <TopBar color="BLUE">
       <Text color="WHITE" weight="semibold">
         You have 7 days until your FREE TRIAL ends.
       </Text>
@@ -24,8 +24,8 @@ export const common = () => (
         Update
       </Button>
     </TopBar>
-    <TopBarWithState color="RED">
-      <Icon color="YELLOW" name="Alert" />
+    <TopBarWithState color="DANGER">
+      <Icon color="YELLOW_30" name="Alert" />
       <Text color="WHITE" weight="semibold">
         Oh no! Your FREE TRIAL has ended, please update your payment details.
       </Text>
@@ -33,8 +33,8 @@ export const common = () => (
         Update
       </Button>
     </TopBarWithState>
-    <TopBar color="RED">
-      <Icon color="YELLOW" name="Alert" />
+    <TopBar color="DANGER">
+      <Icon color="YELLOW_30" name="Alert" />
       <Text color="WHITE" weight="semibold">
         Oh no! Your FREE TRIAL has ended, please update your payment details.
       </Text>
@@ -42,7 +42,7 @@ export const common = () => (
         Update
       </Button>
     </TopBar>
-    <TopBar color="RED">
+    <TopBar color="DANGER">
       <Text color="WHITE" weight="semibold">
         Oh no! Your FREE TRIAL has ended,
         <br />

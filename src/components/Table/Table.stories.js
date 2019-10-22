@@ -389,7 +389,7 @@ export const defaultStory = () => (
             <Table.BodyCell>
               <Dropdown defaultOpen={ false }>
                 <Dropdown.Head>
-                  <Icon name="More" color="LIGHT_GRAY2" />
+                  <Icon name="More" color="GRAY_30" />
                 </Dropdown.Head>
                 <Dropdown.Body pin="right">
                   <Menu>
@@ -479,7 +479,7 @@ export const withData = () => (
             <Table.BodyCell>
               <Dropdown defaultOpen={ false }>
                 <Dropdown.Head>
-                  <Icon name="More" color="LIGHT_GRAY2" />
+                  <Icon name="More" color="GRAY_30" />
                 </Dropdown.Head>
                 <Dropdown.Body pin="right">
                   <Menu>
@@ -649,8 +649,8 @@ export const withCustomNoDataComponent = () => (
           tableState={ tableState }
           noData={
             <Column gap="none" justifyContent="center" alignItems="center" stretch>
-              <Icon name="EightBase" size="xl" color="LIGHT_GRAY1" />
-              <Text color="LIGHT_GRAY1">Can't find any data</Text>
+              <Icon name="EightBase" size="xl" color="GRAY_20" />
+              <Text color="GRAY_20">Can't find any data</Text>
             </Column>
           }
           bordered

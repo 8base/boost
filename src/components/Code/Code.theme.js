@@ -13,14 +13,13 @@ const [CodeWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLOR
   }),
 }));
 
-const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ COLORS, SIZES }: *) => ({
+const [CodeLineCounterTag, themeCounter] = createThemeTag(`${name}Counter`, ({ FONTS }: *) => ({
   root: {
-    color: COLORS.PRIMARY_TEXT_COLOR,
+    ...FONTS.BODY_1,
     fontFamily: 'Courier',
     opacity: '0.5',
     textAlign: 'center',
     lineHeight: 2,
-    fontSize: SIZES.BODY_TEXT,
   },
 }));
 
@@ -39,7 +38,7 @@ const [CodeBodyTag, themeBody] = createThemeTag(`${name}Body`, ({ COLORS }: *) =
 const [CodeNumericTag, themeNumeric] = createThemeTag(`${name}Numeric`, ({ COLORS, SIZES }: *) => ({
   root: (props) => ({
     height: props.height ? 'auto' : '100%',
-    backgroundColor: COLORS.LIGHT_GRAY5,
+    backgroundColor: COLORS.GRAY_10,
     borderRight: `1px solid ${COLORS.PRIMARY_BORDER_COLOR}`,
     padding: '20px 0 40px',
     borderTopLeftRadius: SIZES.MAIN_BORDER_RADIUS,

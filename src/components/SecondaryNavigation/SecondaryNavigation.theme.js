@@ -2,21 +2,20 @@
 
 import { createThemeTag } from '../../theme/createThemeTag';
 
-import { GREY_COLORS } from '../../theme/dsmColors';
 import { theme as secondaryNavigationItemTheme } from './SecondaryNavigationItem';
 
 const name = 'secondaryNavigation';
 
-const [SecondaryNavigationTag, secondaryNavigationTheme] = createThemeTag(name, {
+const [SecondaryNavigationTag, secondaryNavigationTheme] = createThemeTag(name, ({ COLORS }: *) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
     width: 'auto',
 
-    backgroundColor: GREY_COLORS.DSM_LIGHT_GREY_3,
+    backgroundColor: COLORS.GRAY_10,
   },
-});
+}));
 
 const theme = {
   ...secondaryNavigationTheme,

@@ -5,7 +5,7 @@ import { Navigation } from './Navigation';
 describe('<Navigation />', () => {
   it('should shallow navigation', () => {
     const wrapper = shallow(
-      <Navigation color="GREEN">
+      <Navigation color="GREEN_40">
         <Navigation.Item icon="Trashcan" label="Jobs" href="/jobs" />
       </Navigation>,
     );
@@ -27,7 +27,7 @@ describe('<Navigation />', () => {
     const Link = () => null;
 
     const wrapper = mount(
-      <Navigation color="GREEN">
+      <Navigation color="GREEN_40">
         <Navigation.Item
           icon="Trashcan"
           label="Jobs"

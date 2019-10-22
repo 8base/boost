@@ -6,7 +6,7 @@ import { hexToRGBA } from './Tag.utils';
 
 const name = 'tag';
 
-const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS }: *): * => ({
+const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS, FONTS }: *): * => ({
   root: {
     margin: 0,
     minHeight: '24px',
@@ -17,9 +17,7 @@ const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS }: *): * => ({
     justifyContent: 'center',
     whiteSpace: 'nowrap',
     border: '1px solid',
-    fontWeight: 600,
-    fontSize: 12,
-    letterSpacing: '0.5px',
+    ...FONTS.OVERLINE_1,
   },
 
   modifiers: {

@@ -6,10 +6,10 @@ import { createThemeTag } from '../../theme/createThemeTag';
 
 const name = 'link';
 
-const [LinkTag, theme] = createThemeTag(name, ({ COLORS }) => ({
+const [LinkTag, theme] = createThemeTag(name, ({ COLORS, FONTS }) => ({
   root: {
     cursor: 'pointer',
-    fontWeight: 400,
+    ...FONTS.LINK,
     fontSize: 'inherit',
     textDecoration: 'none',
 

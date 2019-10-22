@@ -18,17 +18,14 @@ const [MenuTag, themeMenu] = createThemeTag(name, {
 });
 
 
-const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, SIZES }: *) => ({
+const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, FONTS }: *) => ({
   root: {
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',
     whiteSpace: 'nowrap',
 
-    color: COLORS.DSM.GREY_COLORS.DSM_DARK_GREY_2,
-    fontSize: SIZES.BODY_TEXT,
-    lineHeight: SIZES.BODY_TEXT_LH,
-    fontWeight: 400,
+    ...FONTS.BODY_3,
     height: '32px',
     paddingRight: '16px',
     paddingLeft: '16px',
@@ -42,7 +39,7 @@ const [MenuItemTag, themeMenuItem] = createThemeTag(`${name}Item`, ({ COLORS, SI
     disabled: {
       pointerEvents: 'none',
       cursor: 'default',
-      color: COLORS.DISABLED_COLOR,
+      color: COLORS.DISABLED_TEXT_COLOR,
     },
   },
 }));

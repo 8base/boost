@@ -73,28 +73,28 @@ const [NavigationItemIcon, themeItemIcon] = createThemeTag(`${name}ItemIcon`, ({
   },
 }));
 
-const [NavigationItemLabel, themeItemLabel] = createThemeTag(`${name}ItemLabel`, {
+const [NavigationItemLabel, themeItemLabel] = createThemeTag(`${name}ItemLabel`, ({ COLORS, FONTS }: *) => ({
   root: {
     display: 'flex',
     alignItems: 'center',
-    textTransform: 'uppercase',
-    fontWeight: 600,
     paddingRight: '20px',
     opacity: '0',
     visibility: 'hidden',
     transition: 'all 0.1s',
     whiteSpace: 'nowrap',
+    ...FONTS.OVERLINE_2,
+    color: COLORS.WHITE,
   },
-});
+}));
 
 
-const [NavigationItemLabelPreview, themeItemLabelPreview] = createThemeTag(`${name}ItemLabelPreview`, {
+const [NavigationItemLabelPreview, themeItemLabelPreview] = createThemeTag(`${name}ItemLabelPreview`, ({ COLORS, FONTS }: *) => ({
   root: {
     alignItems: 'center',
-    textTransform: 'uppercase',
-    fontWeight: 600,
+    ...FONTS.OVERLINE_2,
+    color: COLORS.WHITE,
   },
-});
+}));
 
 
 const theme = {

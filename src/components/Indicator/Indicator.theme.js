@@ -26,8 +26,8 @@ const [IndicatorTag, themeIndicator] = createThemeTag(
 
     modifiers: {
       status: {
-        enabled: { backgroundColor: COLORS.GREEN },
-        disabled: { backgroundColor: COLORS.DISABLED_TEXT_COLOR },
+        enabled: { backgroundColor: COLORS.GREEN_40 },
+        disabled: { backgroundColor: COLORS.GRAY_30 },
       },
     },
   }),

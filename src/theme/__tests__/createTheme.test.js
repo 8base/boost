@@ -45,6 +45,7 @@ describe('createThemeTag', () => {
       LARGE: '20px',
     },
     Z_INDEX: {},
+    FONTS: {},
     components: {
       ...themeText,
       ...themeSubtitle,

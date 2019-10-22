@@ -103,7 +103,7 @@ const App = () => {
 
 
 ### Using with fontawesome
-At the first you need to add install aswesome font to the index.html [as described in the fontawesome docs](https://fontawesome.com/start).
+At the first you need to add install awesome font to the index.html [as described in the fontawesome docs](https://fontawesome.com/start).
 
 ```js
 import { BoostProvider, createTheme } from '@8base/boost';

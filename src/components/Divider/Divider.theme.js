@@ -17,18 +17,15 @@ const [DividerOuter, themeOuter] = createThemeTag(name, () => ({
 const [DividerInner, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }) => ({
   root: {
     height: '1px',
-    backgroundColor: COLORS.LIGHT_GRAY1,
+    backgroundColor: COLORS.PRIMARY_BORDER_COLOR,
     width: '100%',
   },
 }));
 
-const [DividerTitle, themeTitle] = createThemeTag(`${name}Title`, ({ COLORS }) => ({
+const [DividerTitle, themeTitle] = createThemeTag(`${name}Title`, ({ FONTS }) => ({
   root: {
-    fontSize: '12px',
     fontFamily: 'inherit',
-    fontWeight: 600,
-    color: COLORS.DSM_DARK_GREY_1,
-    lineHeight: '18px',
+    ...FONTS.OVERLINE_2,
     whiteSpace: 'nowrap',
     flexGrow: 2,
     marginRight: '8px',

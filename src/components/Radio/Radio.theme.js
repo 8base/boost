@@ -60,16 +60,15 @@ const [RadioCircleInnerTag, themeCircleInner] = createThemeTag(`${name}CircleInn
       secondary: { backgroundColor: COLORS.SECONDARY },
     },
     disabled: {
-      backgroundColor: COLORS.GRAY4,
+      backgroundColor: COLORS.GRAY_50,
     },
   },
 }));
 
 
-const [RadioTextTag, themeText] = createThemeTag(`${name}Text`, ({ COLORS }: *): * => ({
+const [RadioTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *): * => ({
   root: {
-    color: COLORS.SECONDARY_TEXT_COLOR,
-    fontSize: COLORS.BODY_TEXT,
+    ...FONTS.BODY_2,
     cursor: 'pointer',
     paddingLeft: '8px',
   },

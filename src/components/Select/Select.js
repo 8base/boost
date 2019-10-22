@@ -46,7 +46,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
   control: (style, { isFocused, isDisabled }) => ({
     ...style,
     minHeight: '36px',
-    backgroundColor: isDisabled ? COLORS.LIGHT_GRAY5 : COLORS.WHITE,
+    backgroundColor: isDisabled ? COLORS.DISABLED_COLOR : COLORS.WHITE,
     borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR),
     boxShadow: null,
     '&:hover': {
@@ -70,9 +70,9 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     ...style,
     borderRadius: '12px',
     padding: '0 8px',
-    color: '#878c93',
+    color: COLORS.SECONDARY_TEXT_COLOR,
     border: '1px solid #d0d7dd',
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.WHITE,
     height: 26,
     alignItems: 'center',
   }),

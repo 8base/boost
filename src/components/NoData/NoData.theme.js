@@ -17,7 +17,7 @@ const [NoDataTextTag, themeText] = createThemeTag(
   `${name}Text`,
   ({ COLORS }: *) => ({
     root: {
-      color: COLORS.DISABLED_TEXT_COLOR,
+      color: COLORS.GRAY_30,
       fontSize: '32px',
       fontWeight: 500,
       textTransform: 'uppercase',

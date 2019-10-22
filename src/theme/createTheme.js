@@ -47,6 +47,9 @@ const parseThemes = (originalRawTheme: RawTheme, extendedTheme?: $Shape<RawTheme
     Z_INDEX: {
       ...originalRawTheme.Z_INDEX, ...(extendedTheme.Z_INDEX || {}),
     },
+    FONTS: {
+      ...originalRawTheme.FONTS, ...(extendedTheme.FONTS || {}),
+    },
   };
 
   return {

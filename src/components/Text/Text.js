@@ -22,6 +22,8 @@ type TextProps = {
   ellipsis?: boolean,
   /** possible types of the css cursor property */
   cursor?: 'pointer' | 'default' | 'auto',
+  /** modern text kinds */
+  kind?: 'overline-2' | 'overline-1' | 'small-2' | 'small-1' | 'body' | 'subtitle',
 };
 
 function Text({
@@ -35,6 +37,7 @@ function Text({
 Text.defaultProps = {
   color: 'PRIMARY_TEXT_COLOR',
   weight: 'normal',
+  kind: 'body',
   ellipsis: false,
 };
 

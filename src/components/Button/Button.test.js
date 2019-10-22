@@ -26,6 +26,7 @@ describe('<Button />', () => {
   size="md"
   tagName="button"
   variant="raised"
+  withIconAutosize={true}
 >
   <span
     key=".0"
@@ -86,4 +87,3 @@ describe('<Button />', () => {
     expect(wrapper.find('button').prop('aria-busy')).toBe('true');
   });
 });
-

@@ -23,8 +23,8 @@ const [TableActionTag, themeAction] = createThemeTag(name, ({ COLORS }: *) => ({
   },
   modifiers: {
     bordered: {
-      borderLeft: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
-      borderRight: `1px solid ${COLORS.TABLE_BORDER_COLOR}`,
+      borderLeft: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
+      borderRight: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
     },
   },
   defaults: {

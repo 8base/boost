@@ -4,8 +4,6 @@ import React from 'react';
 import fp from 'lodash/fp';
 import { compose, withStateHandlers, branch } from 'recompose';
 
-import { createThemeTag } from '../../theme/createThemeTag';
-
 import { TabsContext } from './TabsContext';
 import { TabPanel } from './TabPanel';
 import { TabTitle } from './TabTitle';
@@ -25,8 +23,6 @@ type WithStateTabsProps = {
   defaultSelectedTabId: string,
 }
 
-const [TabPlateTag] = createThemeTag('tabPlate', {});
-
 
 const tabsEnhancer: any = compose(
   branch(
@@ -44,7 +40,6 @@ const TabsPlate = tabsEnhancer(({
   children,
   onSelect,
   selectedTabId,
-  ...rest
 }: TabsProps) => {
   const contextData = {
     selectedTabId,
@@ -53,9 +48,7 @@ const TabsPlate = tabsEnhancer(({
 
   return (
     <TabsContext.Provider value={ contextData }>
-      <TabPlateTag { ...rest } tagName="div">
-        { children }
-      </TabPlateTag>
+      { children }
     </TabsContext.Provider>
   );
 });

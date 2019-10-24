@@ -53,13 +53,13 @@ export const withSelectedTitle = () => (
   <Tabs defaultSelectedTabId="1">
     <Row gap="xs">
       <Tabs.Title tabId="1">
-        { ({ selected }) => <Button kind={ selected ? 'primary' : 'neutral' }>Tab-1</Button> }
+        { ({ selected }) => <Button color={ selected ? 'primary' : 'neutral' }>Tab-1</Button> }
       </Tabs.Title>
       <Tabs.Title tabId="2">
-        { ({ selected }) => <Button kind={ selected ? 'primary' : 'neutral' }>Tab-2</Button> }
+        { ({ selected }) => <Button color={ selected ? 'primary' : 'neutral' }>Tab-2</Button> }
       </Tabs.Title>
       <Tabs.Title tabId="3">
-        { ({ selected }) => <Button kind={ selected ? 'primary' : 'neutral' }>Tab-3</Button> }
+        { ({ selected }) => <Button color={ selected ? 'primary' : 'neutral' }>Tab-3</Button> }
       </Tabs.Title>
     </Row>
     <Tabs.Panel tabId="1" forceRender>

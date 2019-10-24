@@ -85,7 +85,6 @@
     "@babel/runtime": "^7.5.5",
     "@emotion/core": "^10.0.16",
     "@emotion/styled": "^10.0.15",
-    "@storybook/core": "^5.2.2",
     "color": "^3.0.0",
     "deepmerge": "^3.0.0",
     "emotion-theming": "^10.0.14",

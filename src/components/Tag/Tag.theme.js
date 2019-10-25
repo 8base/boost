@@ -28,6 +28,10 @@ const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS, FONTS }: *): * =>
         color,
       } : null)
       , COLORS),
+    condensed: {
+      borderRadius: '5px',
+      minHeight: '16px',
+    },
   },
 }));
 

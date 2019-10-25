@@ -9,10 +9,11 @@ type TagProps = {
   children?: React$Node,
   /** tag background color */
   color?: string,
+  condensed?: boolean,
 };
 
-const Tag = ({ children, ...rest }: TagProps) => (
-  <TagOuter { ...rest } tagName="span">
+const Tag = ({ children, condensed = false, ...rest }: TagProps) => (
+  <TagOuter condensed={ condensed } { ...rest } tagName="span">
     <TagInner tagName="span">{ children }</TagInner>
   </TagOuter>
 );

@@ -4,6 +4,7 @@ import { baisy } from '../setup/TestSuiter';
 const SUITES = [
   baisy.suite('Components/Tag', 'common'),
   baisy.suite('Components/Tag', 'with large content'),
+  baisy.suite('Components/Tag', 'condensed'),
 ];
 
 

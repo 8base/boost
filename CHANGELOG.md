@@ -1,3 +1,13 @@
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/8base/boost/compare/v1.5.0...v1.6.0) (2019-10-25)
+
+
+### Features
+
+* **Tag:** adds condensed mode. ([436b147](https://github.com/8base/boost/commit/436b147))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/8base/boost/compare/v1.4.2...v1.5.0) (2019-10-22)
 

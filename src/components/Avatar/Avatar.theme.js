@@ -88,6 +88,8 @@ const [AvatarHandleTag, themeHandle] = createThemeTag(`${name}Handle`, ({ COLORS
 const [AvatarImgTag, themeAvatarImg] = createThemeTag(`${name}Img`, {
   root: {
     width: '100%',
+    height: '100%',
+    objectFit: 'cover',
   },
 });
 
@@ -98,4 +100,3 @@ const theme = {
 };
 
 export { theme, AvatarImgTag, AvatarTag, AvatarHandleTag };
-

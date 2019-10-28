@@ -1,3 +1,13 @@
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/8base/boost/compare/v1.6.0...v1.6.1) (2019-10-28)
+
+
+### Bug Fixes
+
+* **Radio:** shrink for the item ([37a0621](https://github.com/8base/boost/commit/37a0621))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/8base/boost/compare/v1.5.0...v1.6.0) (2019-10-25)
 

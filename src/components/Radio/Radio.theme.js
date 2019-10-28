@@ -12,6 +12,7 @@ const [RadioCircleTag, themeCircle] = createThemeTag(`${name}Circle`, ({ COLORS 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    flexShrink: 0,
 
     width: '16px',
     height: '16px',

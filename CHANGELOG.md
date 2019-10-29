@@ -1,3 +1,13 @@
+<a name="1.6.3"></a>
+## [1.6.3](https://github.com/8base/boost/compare/v1.6.2...v1.6.3) (2019-10-29)
+
+
+### Bug Fixes
+
+* **Dialog:** scrollable for no-stretch dialogs ([c578aa0](https://github.com/8base/boost/commit/c578aa0))
+
+
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/8base/boost/compare/v1.6.1...v1.6.2) (2019-10-29)
 

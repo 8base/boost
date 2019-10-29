@@ -73,6 +73,7 @@ const [DialogInnerTag, themeDialogInner] = createThemeTag('dialogInner', {
     },
 
     height: '100%',
+    overflow: 'auto',
   },
   modifiers: {
   },

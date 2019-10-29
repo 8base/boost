@@ -71,7 +71,7 @@ withLargeSize.story = {
 };
 
 export const withScroll = () => (
-  <Dialog size="sm" isOpen data-e2e-id="default-dialog" stretch>
+  <Dialog size="sm" isOpen data-e2e-id="default-dialog">
     <Dialog.Header title="Mark Job as Completed" />
     <Dialog.Body scrollable>
       <Column>
@@ -93,6 +93,31 @@ export const withScroll = () => (
 
 withScroll.story = {
   name: 'with scroll',
+};
+
+export const withStretchScroll = () => (
+  <Dialog size="sm" isOpen data-e2e-id="default-dialog" stretch>
+    <Dialog.Header title="Mark Job as Completed" />
+    <Dialog.Body scrollable>
+      <Column>
+        { new Array(100).fill('').map(() => (
+          <Paragraph key="">
+            Fagelia cancrivorous Nahor Curucaneca Echinocaris intrafissural glassful agronomics
+          </Paragraph>
+        )) }
+      </Column>
+    </Dialog.Body>
+    <Dialog.Footer>
+      <Button color="neutral" variant="outlined">
+        Cancel
+      </Button>
+      <Button type="submit">Apply</Button>
+    </Dialog.Footer>
+  </Dialog>
+);
+
+withScroll.story = {
+  name: 'with stretch scroll',
 };
 
 export const withState = () => (

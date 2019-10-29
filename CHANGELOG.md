@@ -1,3 +1,13 @@
+<a name="1.6.2"></a>
+## [1.6.2](https://github.com/8base/boost/compare/v1.6.1...v1.6.2) (2019-10-29)
+
+
+### Bug Fixes
+
+* **Radio:** adjust label width for radio width ([dc061b0](https://github.com/8base/boost/commit/dc061b0))
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://github.com/8base/boost/compare/v1.6.0...v1.6.1) (2019-10-28)
 

@@ -63,6 +63,7 @@ Object {
   "isDisabled": true,
   "isLoading": false,
   "isMulti": true,
+  "isSearchable": undefined,
   "menuIsOpen": undefined,
   "menuPlacement": "auto",
   "onInputChange": undefined,

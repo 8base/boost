@@ -35,6 +35,7 @@ type SelectProps = {|
   getOptionLabel?: Function,
   /** when stretch is true, width is 100% */
   stretch?: boolean,
+  isSearchable?: boolean,
   css?: SerializedStyles,
 |};
 
@@ -182,6 +183,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       filterOption,
       getOptionValue,
       getOptionLabel,
+      isSearchable,
       ...rest
     } = this.props;
 
@@ -211,6 +213,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
           filterOption={ filterOption }
           getOptionValue={ getOptionValue }
           getOptionLabel={ getOptionLabel }
+          isSearchable={ isSearchable }
         />
       </SelectTag>
     );

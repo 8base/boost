@@ -175,6 +175,7 @@ class Pagination extends React.Component<PaginationProps, PaginationState> {
             value={ pageSize }
             options={ this.getPageSizeOptions(pageSizeOptions) }
             onChange={ this.onChangePageSize }
+            isSearchable={ false }
           />
         </If>
 

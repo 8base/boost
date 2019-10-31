@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import equal from 'fast-deep-equal';
 
 import { createThemeTag } from '../../theme/createThemeTag';
 import { Row } from '../FlexLayout';
@@ -35,12 +36,12 @@ const [TableBodyCellTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   },
 }));
 
-function TableBodyCell({
+const TableBodyCell = React.memo(({
   children,
   ...rest
-}: TableBodyCellProps) {
+}: TableBodyCellProps) => {
   return <TableBodyCellTag { ...rest } tagName={ Row }>{ children }</TableBodyCellTag>;
-}
+}, equal);
 
 TableBodyCell.defaultProps = {
   alignItems: 'center',

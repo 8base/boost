@@ -12,6 +12,7 @@ import { TableBodyCell } from './TableBodyCell';
 import { Table } from './Table';
 import { Checkbox } from '../Checkbox';
 import { Pagination } from '../Pagination';
+import { Input } from '../Input';
 
 const DEFAULT_SORT_ENABLE = true;
 
@@ -235,6 +236,46 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     );
   }
 
+
+  renderRow = (rowData) => {
+    const {
+      columns,
+      onActionClick,
+      action,
+      data,
+      withSelection,
+      renderCell,
+      noData,
+      tableState,
+      onChange,
+      ...rest
+    } = this.props;
+
+    return (
+      <TableBodyRow
+        columns={ this.getGridColumns() }
+        key={ `row-${rowData.id}` }
+        modifiers={ rest }
+      >
+        <If condition={ !!withSelection }>
+          <TableBodyCell key={ `index-${rowData.id}` } justifyContent="center" modifiers={ rest }>
+            <div>
+              <Checkbox
+                onChange={ this.onSelectRow(rowData.id) }
+                checked={ this.hasRowSelection(rowData.id) }
+              />
+            </div>
+          </TableBodyCell>
+        </If>
+        { columns.map((column) => (
+          <TableBodyCell key={ `${column.name}-${rowData.id}` } modifiers={ rest }>
+            <TableBodyCell />
+          </TableBodyCell>
+        )) }
+      </TableBodyRow>
+    );
+  }
+
   renderBody = () => {
     const {
       columns,
@@ -244,6 +285,8 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       withSelection,
       renderCell,
       noData,
+      tableState,
+      onChange,
       ...rest
     } = this.props;
 
@@ -256,27 +299,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
         noData={ noData }
         modifiers={ rest }
       >
-        { (rowData) => (
-          <TableBodyRow
-            columns={ this.getGridColumns() }
-            key={ rowData.id }
-            modifiers={ rest }
-          >
-            <If condition={ !!withSelection }>
-              <TableBodyCell justifyContent="center" modifiers={ rest }>
-                <Checkbox
-                  onChange={ this.onSelectRow(rowData.id) }
-                  checked={ this.hasRowSelection(rowData.id) }
-                />
-              </TableBodyCell>
-            </If>
-            { columns.map((column) => (
-              <TableBodyCell key={ column.name } modifiers={ rest }>
-                { renderCell ? renderCell(column, rowData) : rowData[column.name] }
-              </TableBodyCell>
-            )) }
-          </TableBodyRow>
-        ) }
+        { this.renderRow }
       </TableBody >
     );
   }

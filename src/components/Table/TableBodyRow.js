@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import equal from 'fast-deep-equal';
 
 import { Grid } from '../Grid';
 import { createThemeTag } from '../../theme/createThemeTag';
@@ -30,11 +31,11 @@ const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   },
 }));
 
-function TableBodyRow({
+const TableBodyRow = React.memo(({
   children,
   ...rest
-}: TableBodyRowProps) {
+}: TableBodyRowProps) => {
   return <TableBodyRowTag { ...rest } tagName={ Grid.Layout }>{ children }</TableBodyRowTag>;
-}
+}, equal);
 
 export { TableBodyRow, theme };

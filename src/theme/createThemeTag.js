@@ -1,5 +1,6 @@
 // @flow
 
+import React from 'react';
 import styled from '@emotion/styled';
 import fp from 'lodash/fp';
 import { Tag } from '../common';
@@ -7,6 +8,7 @@ import { COLORS } from '../theme/colors';
 import { SIZES } from '../theme/sizes';
 import { Z_INDEX } from '../theme/zIndex';
 import { FONTS } from '../theme/fonts';
+import equal from 'fast-deep-equal';
 
 type ThemeConstatns = {
   COLORS: typeof COLORS,
@@ -70,7 +72,7 @@ const createStyledTag = (themeName: string) => {
 
   StyledTag.displayName = `Boost(${themeName})`;
 
-  return StyledTag;
+  return React.memo(StyledTag, equal);
 };
 
 

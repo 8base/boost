@@ -111,7 +111,7 @@ class Tag extends PureComponent<TagProps> {
   };
 
   render() {
-    const { tagName: TagComponent, modifiers, ...props } = this.props;
+    const { tagName: TagComponent, modifiers, children, ...props } = this.props;
 
     const collectedProps = HTML_TAGS.indexOf(TagComponent) === -1 ? props : collectProps(props);
 
@@ -119,7 +119,7 @@ class Tag extends PureComponent<TagProps> {
       collectedProps.ref = props.insideRef;
     }
 
-    return <TagComponent { ...collectedProps } />;
+    return <TagComponent { ...props }>{ children }</TagComponent>;
   }
 }
 

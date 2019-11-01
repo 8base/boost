@@ -69,7 +69,7 @@ const [TooltipArrowTag, tooltipArrowTheme] = createThemeTag(`${name}Arrow`, () =
 
 const [TooltipTargetTag, themeTarget] = createThemeTag(`${name}Target`, {
   root: {
-    display: 'inline-block',
+    display: 'inline-flex',
   },
 });
 

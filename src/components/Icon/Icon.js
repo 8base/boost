@@ -62,7 +62,7 @@ const Icon = ({ name, className, children, title, ...rest }: IconProps) => {
                   modifiers={ rest }
                   className={ className }
                 >
-                  <Glyph width="100%" height="100%" />
+                  <Glyph />
                 </IconSvgTag>
               </When>
             </Choose>

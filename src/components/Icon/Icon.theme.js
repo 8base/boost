@@ -29,6 +29,12 @@ const [IconWrapperTag, themeWrapper] = createThemeTag(`${name}Wrapper`, ({ COLOR
 
 
 const [IconSvgTag, themeSvg] = createThemeTag(`${name}Svg`, {
+  root: {
+    '& > svg': {
+      height: '100%',
+      width: '100%',
+    },
+  },
   modifiers: {
     size: {
       xs: {

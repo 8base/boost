@@ -90,7 +90,16 @@ const getLinkStyles = (props: *) => {
 
 const getSizeStyles = (props) => {
   if (props.variant === 'link') {
-    return {};
+    switch (props.size) {
+      case 'sm': return {
+        fontSize: '1.2rem',
+        lineHeight: '1.4rem',
+        fontWeight: '400',
+      };
+      case 'lg':
+      case 'md':
+      default: return {};
+    }
   }
 
   switch (props.size) {
@@ -419,6 +428,17 @@ const [ButtonTag, theme] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *) =>
       '& i': {
         width: '20px',
         height: '20px',
+
+        '&:not(:last-child)': {
+          marginRight: '8px',
+        },
+      }} : {}),
+
+    ...(props.withIconAutosize && props.variant === 'link' && props.size === 'sm' ? {
+      '& i': {
+        width: '16px',
+        height: '16px',
+        marginRight: '8px',
       }} : {})
     ,
   }),

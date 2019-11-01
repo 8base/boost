@@ -42,7 +42,6 @@ exports[`<Form /> should shallow form error 1`] = `
       color="SECONDARY_TEXT_COLOR"
       ellipsis={false}
       kind="body"
-      weight="normal"
     >
       Some error
     </Text>

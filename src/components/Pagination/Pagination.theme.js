@@ -42,7 +42,7 @@ const [PaginationItemTag, themePaginationItem] = createThemeTag(`${name}Item`, (
 
       '&:before': {
         content: '\'\'',
-        backgroundColor: COLORS.BLUE_10,
+        backgroundColor: COLORS.PRIMARY,
         borderRadius: 18,
         position: 'absolute',
         left: '- calc((28px - 100%) / 2)',

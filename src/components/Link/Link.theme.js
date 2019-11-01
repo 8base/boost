@@ -7,7 +7,7 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'link';
 
 const [LinkTag, theme] = createThemeTag(name, ({ COLORS, FONTS }) => ({
-  root: {
+  root: props => ({
     cursor: 'pointer',
     ...FONTS.LINK,
     fontSize: 'inherit',
@@ -16,7 +16,13 @@ const [LinkTag, theme] = createThemeTag(name, ({ COLORS, FONTS }) => ({
     '&:hover': {
       textDecoration: 'underline',
     },
-  },
+
+    ...((props.color === 'BLUE_30' || props.color === 'BLUE' || props.color === 'PRIMARY') ? {
+      '&:active': {
+        color: COLORS.BLUE_10,
+      },
+    } : {}),
+  }),
   modifiers: {
     color: fp.mapValues(
       (color) => ({ color }),

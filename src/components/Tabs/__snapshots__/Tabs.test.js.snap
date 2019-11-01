@@ -15,138 +15,123 @@ exports[`<Tabs /> should render Tabs 1`] = `
         onSelect={[Function]}
         selectedTabId="1"
       >
-        <Boost(tabPlate)
-          defaultSelectedTabId="1"
-          tagName="div"
+        <TabTitle
+          tabId="1"
         >
-          <Tag
-            className="css-rkvmzw-StyledTag emotion-0"
-            defaultSelectedTabId="1"
-            tagName="div"
+          <TabTitleBase
+            tabId="1"
+            tabs={
+              Object {
+                "onSelect": [Function],
+                "selectedTabId": "1",
+              }
+            }
           >
-            <div
-              className="css-rkvmzw-StyledTag emotion-0"
+            <Boost(tabTitle)
+              onClick={[Function]}
+              tagName="div"
             >
-              <TabTitle
-                tabId="1"
+              <Tag
+                className="css-rkvmzw-StyledTag emotion-0"
+                onClick={[Function]}
+                tagName="div"
               >
-                <TabTitleBase
-                  tabId="1"
-                  tabs={
-                    Object {
-                      "onSelect": [Function],
-                      "selectedTabId": "1",
-                    }
-                  }
+                <div
+                  className="css-rkvmzw-StyledTag emotion-0"
+                  onClick={[Function]}
                 >
-                  <Boost(tabTitle)
-                    onClick={[Function]}
-                    tagName="div"
-                  >
-                    <Tag
-                      className="css-rkvmzw-StyledTag emotion-0"
-                      onClick={[Function]}
-                      tagName="div"
-                    >
-                      <div
-                        className="css-rkvmzw-StyledTag emotion-0"
-                        onClick={[Function]}
-                      >
-                        <div>
-                          Tab-1
-                        </div>
-                      </div>
-                    </Tag>
-                  </Boost(tabTitle)>
-                </TabTitleBase>
-              </TabTitle>
-              <TabTitle
-                tabId="2"
+                  <div>
+                    Tab-1
+                  </div>
+                </div>
+              </Tag>
+            </Boost(tabTitle)>
+          </TabTitleBase>
+        </TabTitle>
+        <TabTitle
+          tabId="2"
+        >
+          <TabTitleBase
+            tabId="2"
+            tabs={
+              Object {
+                "onSelect": [Function],
+                "selectedTabId": "1",
+              }
+            }
+          >
+            <Boost(tabTitle)
+              onClick={[Function]}
+              tagName="div"
+            >
+              <Tag
+                className="css-rkvmzw-StyledTag emotion-0"
+                onClick={[Function]}
+                tagName="div"
               >
-                <TabTitleBase
-                  tabId="2"
-                  tabs={
-                    Object {
-                      "onSelect": [Function],
-                      "selectedTabId": "1",
-                    }
-                  }
+                <div
+                  className="css-rkvmzw-StyledTag emotion-0"
+                  onClick={[Function]}
                 >
-                  <Boost(tabTitle)
-                    onClick={[Function]}
-                    tagName="div"
-                  >
-                    <Tag
-                      className="css-rkvmzw-StyledTag emotion-0"
-                      onClick={[Function]}
-                      tagName="div"
-                    >
-                      <div
-                        className="css-rkvmzw-StyledTag emotion-0"
-                        onClick={[Function]}
-                      >
-                        <div>
-                          Tab-2
-                        </div>
-                      </div>
-                    </Tag>
-                  </Boost(tabTitle)>
-                </TabTitleBase>
-              </TabTitle>
-              <TabPanel
-                tabId="1"
+                  <div>
+                    Tab-2
+                  </div>
+                </div>
+              </Tag>
+            </Boost(tabTitle)>
+          </TabTitleBase>
+        </TabTitle>
+        <TabPanel
+          tabId="1"
+        >
+          <TabPanelBase
+            forceRender={false}
+            selected={false}
+            tabId="1"
+            tabs={
+              Object {
+                "onSelect": [Function],
+                "selectedTabId": "1",
+              }
+            }
+          >
+            <Boost(tabPlate)
+              selected={true}
+              tagName="div"
+            >
+              <Tag
+                className="css-rkvmzw-StyledTag emotion-0"
+                selected={true}
+                tagName="div"
               >
-                <TabPanelBase
-                  forceRender={false}
-                  selected={false}
-                  tabId="1"
-                  tabs={
-                    Object {
-                      "onSelect": [Function],
-                      "selectedTabId": "1",
-                    }
-                  }
+                <div
+                  className="css-rkvmzw-StyledTag emotion-0"
                 >
-                  <Boost(tabPlate)
-                    selected={true}
-                    tagName="div"
+                  <div
+                    className="body-1"
                   >
-                    <Tag
-                      className="css-rkvmzw-StyledTag emotion-0"
-                      selected={true}
-                      tagName="div"
-                    >
-                      <div
-                        className="css-rkvmzw-StyledTag emotion-0"
-                      >
-                        <div
-                          className="body-1"
-                        >
-                          Body-1
-                        </div>
-                      </div>
-                    </Tag>
-                  </Boost(tabPlate)>
-                </TabPanelBase>
-              </TabPanel>
-              <TabPanel
-                tabId="2"
-              >
-                <TabPanelBase
-                  forceRender={false}
-                  selected={false}
-                  tabId="2"
-                  tabs={
-                    Object {
-                      "onSelect": [Function],
-                      "selectedTabId": "1",
-                    }
-                  }
-                />
-              </TabPanel>
-            </div>
-          </Tag>
-        </Boost(tabPlate)>
+                    Body-1
+                  </div>
+                </div>
+              </Tag>
+            </Boost(tabPlate)>
+          </TabPanelBase>
+        </TabPanel>
+        <TabPanel
+          tabId="2"
+        >
+          <TabPanelBase
+            forceRender={false}
+            selected={false}
+            tabId="2"
+            tabs={
+              Object {
+                "onSelect": [Function],
+                "selectedTabId": "1",
+              }
+            }
+          />
+        </TabPanel>
       </Component>
     </withStateHandlers(Component)>
   </branch(Component)>

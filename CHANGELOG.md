@@ -1,3 +1,13 @@
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/8base/boost/compare/v1.6.4...v1.7.0) (2019-11-01)
+
+
+### Bug Fixes
+
+* fix styles after color updates ([5d3101e](https://github.com/8base/boost/commit/5d3101e))
+
+
+
 <a name="1.6.4"></a>
 ## [1.6.4](https://github.com/8base/boost/compare/v1.6.3...v1.6.4) (2019-11-01)
 

@@ -1,3 +1,18 @@
+<a name="1.6.4"></a>
+## [1.6.4](https://github.com/8base/boost/compare/v1.6.3...v1.6.4) (2019-11-01)
+
+
+### Bug Fixes
+
+* **Tooltip:** replace inlin-block to inline-flex ([f6fe7d2](https://github.com/8base/boost/commit/f6fe7d2))
+
+
+### Features
+
+* **table:** disable search in page size select ([976bfe4](https://github.com/8base/boost/commit/976bfe4))
+
+
+
 <a name="1.6.3"></a>
 ## [1.6.3](https://github.com/8base/boost/compare/v1.6.2...v1.6.3) (2019-10-29)
 

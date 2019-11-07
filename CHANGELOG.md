@@ -1,3 +1,13 @@
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/8base/boost/compare/v1.7.0...v1.7.1) (2019-11-07)
+
+
+### Features
+
+* **Tag:** update condensed styles ([ce997dc](https://github.com/8base/boost/commit/ce997dc))
+
+
+
 <a name="1.7.0"></a>
 # [1.7.0](https://github.com/8base/boost/compare/v1.6.4...v1.7.0) (2019-11-01)
 

@@ -9,7 +9,7 @@ const name = 'tag';
 const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS, FONTS }: *): * => ({
   root: {
     margin: 0,
-    minHeight: '24px',
+    height: '24px',
     padding: '0 12px',
     borderRadius: '24px',
     display: 'flex',
@@ -30,7 +30,10 @@ const [TagOuter, themeOuter] = createThemeTag(name, ({ COLORS, FONTS }: *): * =>
       , COLORS),
     condensed: {
       borderRadius: '5px',
-      minHeight: '16px',
+      height: '16px',
+      fontSize: 10,
+      lineHeight: 12,
+      textTransform: 'uppercase',
     },
   },
 }));

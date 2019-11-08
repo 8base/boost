@@ -1,3 +1,13 @@
+<a name="1.7.2"></a>
+## [1.7.2](https://github.com/8base/boost/compare/v1.7.1...v1.7.2) (2019-11-08)
+
+
+### Features
+
+* **Modal:** pass dialog args ([d1ffab3](https://github.com/8base/boost/commit/d1ffab3))
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://github.com/8base/boost/compare/v1.7.0...v1.7.1) (2019-11-07)
 

@@ -106,6 +106,7 @@ exports[`<Tabs /> should render Tabs 1`] = `
               >
                 <div
                   className="css-rkvmzw-StyledTag emotion-0"
+                  selected={true}
                 >
                   <div
                     className="body-1"

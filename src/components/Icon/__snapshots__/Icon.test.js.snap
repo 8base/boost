@@ -20,6 +20,7 @@ exports[`<Icon /> should shallow input 1`] = `
     >
       <span
         className="css-rkvmzw-StyledTag emotion-0"
+        size="md"
       >
         <Boost(iconSvg)
           modifiers={

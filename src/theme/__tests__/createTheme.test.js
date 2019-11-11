@@ -85,6 +85,7 @@ describe('createThemeTag', () => {
 
 <div
   class="emotion-0 emotion-1"
+  kind="primary"
 />
 `);
   });

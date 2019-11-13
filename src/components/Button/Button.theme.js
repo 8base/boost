@@ -151,31 +151,31 @@ const getKindStyles = (props: *, COLORS: *) => {
 
       if (props.color === 'primary') {
         return {
-          color: COLORS.BLUE_30,
+          color: COLORS.PRIMARY,
 
           '&:hover': {
-            color: COLORS.BLUE_20,
+            color: COLORS.PRIMARY_LIGHT,
           },
 
           '&:active': {
-            color: COLORS.BLUE_10,
+            color: COLORS.PRIMARY_LIGHTER,
           },
         };
       } else if (props.color === 'danger') {
         return {
-          color: COLORS.RED_40,
+          color: COLORS.DANGER_DARK,
 
           '&:hover': {
-            color: COLORS.RED_30,
+            color: COLORS.DANGER,
           },
 
           '&:active': {
-            color: COLORS.RED_20,
+            color: COLORS.DANGER_LIGHT,
           },
         };
       } else if (props.color === 'success') {
         return {
-          color: COLORS.GREEN_40,
+          color: COLORS.SUCCESS_DARK,
         };
       } else if (props.color === 'neutral') {
         return {
@@ -212,55 +212,55 @@ const getKindStyles = (props: *, COLORS: *) => {
       if (props.color === 'primary') {
         return {
           backgroundColor: COLORS.WHITE,
-          borderColor: COLORS.BLUE_30,
+          borderColor: COLORS.PRIMARY,
 
           '&:hover': {
-            borderColor: COLORS.BLUE_20,
+            borderColor: COLORS.PRIMARY_LIGHT,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            borderColor: COLORS.BLUE_10,
+            borderColor: COLORS.PRIMARY_LIGHTER,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'danger') {
         return {
           backgroundColor: COLORS.WHITE,
-          borderColor: COLORS.RED_40,
+          borderColor: COLORS.DANGER_DARK,
 
           '&:hover': {
-            borderColor: COLORS.RED_30,
+            borderColor: COLORS.DANGER,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            borderColor: COLORS.RED_20,
+            borderColor: COLORS.DANGER_LIGHT,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'warning') {
         return {
           backgroundColor: COLORS.WHITE,
-          borderColor: COLORS.YELLOW_30,
+          borderColor: COLORS.WARNING,
 
           '&:hover': {
-            borderColor: COLORS.YELLOW_20,
+            borderColor: COLORS.WARNING_LIGHT,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            borderColor: COLORS.YELLOW_10,
+            borderColor: COLORS.WARNING_LIGHTER,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'success') {
         return {
           backgroundColor: COLORS.WHITE,
-          borderColor: COLORS.GREEN_30,
+          borderColor: COLORS.SUCCESS,
 
           '&:hover': {
-            borderColor: COLORS.GREEN_20,
+            borderColor: COLORS.SUCCESS_LIGHT,
             boxShadow: boxShadowHover,
           },
 
@@ -306,72 +306,72 @@ const getKindStyles = (props: *, COLORS: *) => {
 
       if (props.color === 'primary') {
         return {
-          backgroundColor: COLORS.BLUE_30,
-          borderColor: COLORS.BLUE_30,
+          backgroundColor: COLORS.PRIMARY,
+          borderColor: COLORS.PRIMARY,
           color: COLORS.WHITE,
 
           '&:hover': {
-            backgroundColor: COLORS.BLUE_20,
-            borderColor: COLORS.BLUE_20,
+            backgroundColor: COLORS.PRIMARY_LIGHT,
+            borderColor: COLORS.PRIMARY_LIGHT,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            backgroundColor: COLORS.BLUE_10,
-            borderColor: COLORS.BLUE_10,
+            backgroundColor: COLORS.PRIMARY_LIGHTER,
+            borderColor: COLORS.PRIMARY_LIGHTER,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'danger') {
         return {
-          backgroundColor: COLORS.RED_40,
-          borderColor: COLORS.RED_40,
+          backgroundColor: COLORS.DANGER_DARK,
+          borderColor: COLORS.DANGER_DARK,
           color: COLORS.WHITE,
 
           '&:hover': {
-            backgroundColor: COLORS.RED_30,
-            borderColor: COLORS.RED_30,
+            backgroundColor: COLORS.DANGER,
+            borderColor: COLORS.DANGER,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            backgroundColor: COLORS.RED_20,
-            borderColor: COLORS.RED_20,
+            backgroundColor: COLORS.DANGER_LIGHT,
+            borderColor: COLORS.DANGER_LIGHT,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'warning') {
         return {
-          backgroundColor: COLORS.YELLOW_30,
-          borderColor: COLORS.YELLOW_30,
+          backgroundColor: COLORS.WARNING,
+          borderColor: COLORS.WARNING,
 
           '&:hover': {
-            backgroundColor: COLORS.YELLOW_20,
-            borderColor: COLORS.YELLOW_20,
+            backgroundColor: COLORS.WARNING_LIGHT,
+            borderColor: COLORS.WARNING_LIGHT,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            backgroundColor: COLORS.YELLOW_10,
-            borderColor: COLORS.YELLOW_10,
+            backgroundColor: COLORS.WARNING_LIGHTER,
+            borderColor: COLORS.WARNING_LIGHTER,
             boxShadow: boxShadowFocus,
           },
         };
       } else if (props.color === 'success') {
         return {
-          backgroundColor: COLORS.GREEN_40,
-          borderColor: COLORS.GREEN_40,
+          backgroundColor: COLORS.SUCCESS_DARK,
+          borderColor: COLORS.SUCCESS_DARK,
           color: COLORS.WHITE,
 
           '&:hover': {
-            backgroundColor: COLORS.GREEN_30,
-            borderColor: COLORS.GREEN_30,
+            backgroundColor: COLORS.SUCCESS,
+            borderColor: COLORS.SUCCESS,
             boxShadow: boxShadowHover,
           },
 
           '&:active': {
-            backgroundColor: COLORS.GREEN_20,
-            borderColor: COLORS.GREEN_20,
+            backgroundColor: COLORS.SUCCESS_LIGHT,
+            borderColor: COLORS.SUCCESS_LIGHT,
             boxShadow: boxShadowFocus,
             color: COLORS.WHITE,
           },

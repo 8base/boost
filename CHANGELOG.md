@@ -1,3 +1,18 @@
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/8base/boost/compare/v1.7.3...v1.8.0) (2019-11-14)
+
+
+### Bug Fixes
+
+* **button:** fix button color customization ([f192513](https://github.com/8base/boost/commit/f192513))
+
+
+### Features
+
+* **build:** add styled to export to simplify ts typings ([befcbef](https://github.com/8base/boost/commit/befcbef))
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/8base/boost/compare/v1.7.2...v1.7.3) (2019-11-11)
 

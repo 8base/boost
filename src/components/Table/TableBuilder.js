@@ -6,9 +6,8 @@ import fp from 'lodash/fp';
 import { TableHeader } from './TableHeader';
 import { TableBody } from './TableBody';
 import { TableFooter } from './TableFooter';
-import { TableBodyRow } from './TableBodyRow';
+import { TableBuilderBodyRow } from './TableBuilderBodyRow';
 import { TableHeaderCell } from './TableHeaderCell';
-import { TableBodyCell } from './TableBodyCell';
 import { Table } from './Table';
 import { Checkbox } from '../Checkbox';
 import { Pagination } from '../Pagination';
@@ -26,6 +25,11 @@ type ColumnType = {
   sortEnable?: boolean,
   width?: string,
 };
+
+type ExpandedRowRenderData = {
+  rowData: Object,
+  isExpanded: boolean,
+}
 
 type TableState = {
   sort?: Sort[],
@@ -60,16 +64,47 @@ type TableBulderProps = {
   /** Options to show loader */
   loading?: boolean,
   /** Calback to render cell */
-  renderCell?: (column: ColumnType, data: any) => React$Node,
+  renderCell?: (column: ColumnType, data: any, opts: { expandRow: () => void, isExpanded?: boolean }) => React$Node,
   /** Callback to render head cell */
   renderHeadCell?: (column: ColumnType) => React$Node,
   /** Callback to render head cell */
   condensed?: boolean,
   /** Component that is displayed when there is no data */
   noData?: React$Node,
+  /** Array of expanded rows keys (e.g. id) */
+  expandedRowKeys?: Array<string>,
+  /** Render function for expanded row */
+  expandedRowRender?: (data: ExpandedRowRenderData) => React$Node,
+  /** Callback executed when the row `isExpanded` state is changed  */
+  onExpand?: ({ key: string, isExpanded: boolean }) => void,
 };
 
-class TableBuilder extends PureComponent<TableBulderProps> {
+type TableBuilderState = {|
+  expandedRowKeys: Array<string>
+|};
+
+const TABLE_BUILDER_PROPS = [
+  'columns',
+  'columnGap',
+  'data',
+  'onActionClick',
+  'action',
+  'onChange',
+  'tableState',
+  'withSelection',
+  'withMultipleSort',
+  'withPagination',
+  'loading',
+  'renderCell',
+  'renderHeadCell',
+  'condensed',
+  'noData',
+  'expandedRowKeys',
+  'expandedRowRender',
+  'onExpand',
+];
+
+class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
   static defaultProps = {
     columns: [],
     data: [],
@@ -84,6 +119,10 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       },
     },
   };
+
+  state = {
+    expandedRowKeys: [],
+  }
 
   getGridColumns = () => {
     const { columns, withSelection } = this.props;
@@ -155,7 +194,6 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     return order;
   }
 
-
   onSelectAllRows = () => {
     const { tableState = {}, data } = this.props;
     const isAllRowsSelected = this.hasAllRowsSelection();
@@ -171,7 +209,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
     });
   }
 
-  onSelectRow = fp.memoize((id: string) => () => {
+  onSelectRow = (id: string) => {
     const { tableState = {}} = this.props;
     const previousSelectedIds = tableState.selectedIds || [];
     const isRowSelected = this.hasRowSelection(id);
@@ -184,7 +222,47 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       ...tableState,
       selectedIds,
     });
-  })
+  }
+
+  isExpandedRowsControlled() {
+    return !!this.props.expandedRowKeys;
+  }
+
+  getExpandedRows(): Array<string> {
+    // $FlowFixMe
+    return this.isExpandedRowsControlled() ? this.props.expandedRowKeys : this.state.expandedRowKeys;
+  }
+
+  isRowExpanded(id: string, expandedRowKeys: $PropertyType<TableBuilderState, 'expandedRowKeys'>) {
+    return expandedRowKeys.includes(id);
+  }
+
+  onExpand = (id: string) => {
+    const callback = ({ isExpanded }) => {
+      typeof this.props.onExpand === 'function' && this.props.onExpand({ key: id, isExpanded });
+    };
+
+    if (this.isExpandedRowsControlled()) {
+      // $FlowFixMe We know that `this.props.expandedRowKeys` is Array here
+      const rowIsExpanded = this.isRowExpanded(id, this.props.expandedRowKeys);
+
+      callback({ isExpanded: !rowIsExpanded });
+
+      return;
+    }
+
+    this.setState(s => {
+      const rowIsExpanded = this.isRowExpanded(id, s.expandedRowKeys);
+
+      return ({
+        expandedRowKeys: rowIsExpanded ? s.expandedRowKeys.filter(key => key !== id) : [...s.expandedRowKeys, id],
+      });
+    }, () => {
+      const rowIsExpanded = this.isRowExpanded(id, this.state.expandedRowKeys);
+
+      callback({ isExpanded: rowIsExpanded });
+    });
+  }
 
   hasRowSelection = (id: string) => {
     const { tableState = {}} = this.props;
@@ -207,12 +285,14 @@ class TableBuilder extends PureComponent<TableBulderProps> {
 
 
   renderHeader = () => {
-    const { columns, withSelection, renderHeadCell, ...rest } = this.props;
+    const { columns, withSelection, renderHeadCell, ...restTableProps } = this.props;
+    const rest = fp.omit(TABLE_BUILDER_PROPS, this.props);
+    const modifiers = { ...restTableProps, ...rest };
 
     return (
-      <TableHeader columns={ this.getGridColumns() } modifiers={ rest }>
+      <TableHeader columns={ this.getGridColumns() } modifiers={ modifiers }>
         <If condition={ !!withSelection }>
-          <TableHeaderCell justifyContent="center" modifiers={ rest }>
+          <TableHeaderCell justifyContent="center" modifiers={ modifiers }>
             <Checkbox
               onChange={ this.onSelectAllRows }
               checked={ this.hasAllRowsSelection() }
@@ -226,7 +306,7 @@ class TableBuilder extends PureComponent<TableBulderProps> {
             enableSort={ this.getColumnSortEnable(column.name) }
             onSort={ this.onSort(column.name) }
             order={ this.getColumnOrder(column.name) }
-            modifiers={ rest }
+            modifiers={ modifiers }
           >
             { renderHeadCell ? renderHeadCell(column) : column.title || '' }
           </TableHeaderCell>
@@ -244,40 +324,43 @@ class TableBuilder extends PureComponent<TableBulderProps> {
       withSelection,
       renderCell,
       noData,
-      ...rest
+      expandedRowRender,
+      loading,
+      condensed,
     } = this.props;
+
+    const rest = fp.omit(TABLE_BUILDER_PROPS, this.props);
 
     return (
       <TableBody
         data={ data }
         onActionClick={ onActionClick }
         action={ action }
-        loading={ rest.loading }
+        loading={ loading }
         noData={ noData }
         modifiers={ rest }
       >
-        { (rowData) => (
-          <TableBodyRow
-            columns={ this.getGridColumns() }
-            key={ rowData.id }
-            modifiers={ rest }
-          >
-            <If condition={ !!withSelection }>
-              <TableBodyCell justifyContent="center" modifiers={ rest }>
-                <Checkbox
-                  onChange={ this.onSelectRow(rowData.id) }
-                  checked={ this.hasRowSelection(rowData.id) }
-                />
-              </TableBodyCell>
-            </If>
-            { columns.map((column) => (
-              <TableBodyCell key={ column.name } modifiers={ rest }>
-                { renderCell ? renderCell(column, rowData) : rowData[column.name] }
-              </TableBodyCell>
-            )) }
-          </TableBodyRow>
-        ) }
-      </TableBody >
+        { (rowData) => {
+          const rowIsExpanded = this.isRowExpanded(rowData.id, this.getExpandedRows());
+
+          return (
+            <TableBuilderBodyRow
+              key={ rowData.id }
+              gridColumns={ this.getGridColumns() }
+              columns={ columns }
+              withSelection={ withSelection }
+              rowData={ rowData }
+              renderCell={ renderCell }
+              onExpand={ this.onExpand }
+              isExpanded={ rowIsExpanded }
+              expandedRowRender={ expandedRowRender }
+              onSelectRow={ this.onSelectRow }
+              isSelected={ this.hasRowSelection(rowData.id) }
+              condensed={ condensed }
+              { ...rest }
+            />
+          ); } }
+      </TableBody>
     );
   }
 
@@ -316,8 +399,10 @@ class TableBuilder extends PureComponent<TableBulderProps> {
   };
 
   render() {
+    const rest = fp.omit(TABLE_BUILDER_PROPS, this.props);
+
     return (
-      <Table>
+      <Table modifiers={ rest }>
         { this.renderHeader() }
         { this.renderBody() }
         { this.renderFooter() }

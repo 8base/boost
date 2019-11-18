@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 
-import React from 'react';
-import { Table, TableBuilder, Link, Dropdown, Icon, Column, Text, Menu, Button } from '../../';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import { Table, TableBuilder, Link, Dropdown, Icon, Column, Text, Menu, Button, Row } from '../../';
 
 const TABLE_COLUMNS = [
   {
@@ -29,6 +29,15 @@ const TABLE_COLUMNS = [
     name: 'email',
     title: 'Email',
   },
+];
+
+const TABLE_EXPANDABLE_COLUMNS = [
+  {
+    name: 'id',
+    title: 'Id',
+    width: '82px',
+  },
+  ...TABLE_COLUMNS.slice(1),
 ];
 
 const TABLE_DATA = [
@@ -513,7 +522,7 @@ export const withCustomActionButton = () => (
 
       <Table.Body
         action={
-          <Button color="secondary" variant="outlined" onClick={ () => alert('Create') }>
+          <Button color="success" variant="outlined" onClick={ () => alert('Create') }>
             Create Client
           </Button>
         }
@@ -662,4 +671,115 @@ export const withCustomNoDataComponent = () => (
 
 withCustomNoDataComponent.story = {
   name: 'with custom NoData component',
+};
+
+export const WithExpandableRows = () => {
+  const renderCell = useCallback(
+    ({ name: columnName }, rowData, { expandRow, isExpanded }) => {
+      if (columnName === 'id') {
+        return (
+          <Button variant="link" onClick={ () => expandRow() } withIconAutosize={ false }>
+            <Icon name={ isExpanded ? 'ChevronTop' : 'ChevronDown' } size="sm" />
+            <span>{ rowData[columnName] }</span>
+          </Button>
+        );
+      }
+
+      return rowData[columnName];
+    },
+    [],
+  );
+
+  return (
+    <div style={{ display: 'flex', height: '600px' }}>
+      <TableBuilder
+        columns={ TABLE_EXPANDABLE_COLUMNS }
+        data={ TABLE_DATA }
+        expandedRowRender={ ({ rowData }) => (
+          // It will be rendered in <TableBodyRow /> that has the same `grid-template-columns` as any other row in the table
+          // So in order to occupy the whole width you can use `grid-column` for that
+          <Table.BodyCell style={{ gridColumn: '1 / -1' }} bordered={ false }>
+            Expanded row with id { rowData.id }
+          </Table.BodyCell>
+        ) }
+        renderCell={ renderCell }
+        bordered
+      />
+    </div>
+  );
+};
+
+WithExpandableRows.story = {
+  name: 'with expandable rows',
+};
+
+const LoadableComponent = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
+
+  return loading ? <div>Loading...</div> : <div>Loaded</div>;
+};
+
+export const WithControlledExpandableRows = () => {
+  const [expandedRowKeys, setExpandedRowKeys] = useState([]);
+  const ids = useMemo(() => TABLE_DATA.map(({ id }) => id), []);
+
+  const renderCell = useCallback(
+    ({ name: columnName }, rowData, { expandRow, isExpanded }) => {
+      if (columnName === 'id') {
+        return (
+          <Button variant="link" onClick={ () => expandRow() } withIconAutosize={ false }>
+            <Icon name={ isExpanded ? 'ChevronTop' : 'ChevronDown' } size="sm" />
+            <span>{ rowData[columnName] }</span>
+          </Button>
+        );
+      }
+
+      return rowData[columnName];
+    },
+    [],
+  );
+
+  const expandedRowRender = useCallback(({ rowData }) => (
+    <React.Fragment>
+      <div />
+      <Table.BodyCell bordered={ false }>
+      Expanded row with id { rowData.id }
+      </Table.BodyCell>
+      <Table.BodyCell style={{ gridColumn: '3 / -1' }} bordered={ false }>
+        <LoadableComponent />
+      </Table.BodyCell>
+    </React.Fragment>
+  ), []);
+
+  return (
+    <Column style={{ height: '600px' }} gap="md">
+      <Row gap="md">
+        <Button onClick={ () => setExpandedRowKeys(ids) }>Expand all</Button>
+        <Button onClick={ () => setExpandedRowKeys([]) } variant="outlined">
+          Collapse all
+        </Button>
+      </Row>
+
+      <TableBuilder
+        columns={ TABLE_EXPANDABLE_COLUMNS }
+        data={ TABLE_DATA }
+        expandedRowKeys={ expandedRowKeys }
+        expandedRowRender={ expandedRowRender }
+        renderCell={ renderCell }
+        onExpand={ ({ key, isExpanded }) =>
+          setExpandedRowKeys(s =>
+            isExpanded ? [...s, key] : s.filter(el => el !== key),
+          )
+        }
+        bordered={ false }
+      />
+    </Column>
+  ); };
+
+WithControlledExpandableRows.story = {
+  name: 'with controlled expandable rows',
 };

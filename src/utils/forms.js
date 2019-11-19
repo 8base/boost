@@ -1,7 +1,7 @@
 export const hasError = (meta: Object = {}) => {
   const { submitError, dirtySinceLastSubmit, error, touched } = meta;
 
-  return (!!error || !!submitError) && !!touched && !dirtySinceLastSubmit;
+  return (!!error || (!!submitError && !dirtySinceLastSubmit)) && !!touched;
 };
 
 export const getError = (meta: Object) => {

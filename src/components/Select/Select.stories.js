@@ -15,6 +15,11 @@ const OPTIONS = [
     label: 'wiseheartedly',
     value: 'wiseheartedly',
   },
+  {
+    label: 'disabled',
+    value: 'disabled',
+    isDisabled: true,
+  },
 ];
 
 const LONG_OPTIONS = [

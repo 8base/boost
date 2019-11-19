@@ -75,6 +75,7 @@ export const common = () => (
     <StateContainer value={ null }>
       <Select name="name" placeholder="Select an option" options={ OPTIONS } disabled />
     </StateContainer>
+    <Select name="name" placeholder="With error" options={ OPTIONS } hasError />
   </Column>
 );
 

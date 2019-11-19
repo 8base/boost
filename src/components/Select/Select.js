@@ -51,7 +51,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR),
     boxShadow: null,
     '&:hover': {
-      borderColor: isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR,
+      borderColor: null,
     },
   }),
   menuPortal: (style) => ({

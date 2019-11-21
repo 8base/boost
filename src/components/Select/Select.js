@@ -5,6 +5,7 @@ import ReactSelect, { components } from 'react-select';
 import { withTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import { type SerializedStyles } from '@emotion/utils';
+import color from 'color';
 
 import { SelectTag } from './Select.theme';
 import { type Theme, COLORS, Z_INDEX } from '../../theme';
@@ -51,7 +52,7 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     borderColor: hasError ? COLORS.DANGER : (isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR),
     boxShadow: null,
     '&:hover': {
-      borderColor: isFocused ? COLORS.PRIMARY : COLORS.PRIMARY_BORDER_COLOR,
+      borderColor: null,
     },
   }),
   menuPortal: (style) => ({
@@ -98,10 +99,29 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
     ...style,
     padding: '0 8px',
   }),
-  option: (style) => ({
+  option: (style, { isFocused, isDisabled, isSelected }) => ({
     ...style,
     textOverflow: 'ellipsis',
     overflow: 'hidden',
+    backgroundColor: isDisabled
+      ? null
+      : isSelected
+        ? COLORS.PRIMARY
+        : isFocused
+          ? color(COLORS.PRIMARY).alpha(0.1).string()
+          : null,
+    color: isDisabled
+      ? COLORS.DISABLED_TEXT_COLOR
+      : isSelected
+        ? color(COLORS.PRIMARY).contrast(color(COLORS.WHITE)) > 2
+          ? COLORS.WHITE
+          : COLORS.BLACK
+        : COLORS.PRIMARY_TEXT_COLOR,
+
+    ':active': {
+      ...style[':active'],
+      backgroundColor: !isDisabled && !isSelected && color(COLORS.PRIMARY).alpha(0.3).string(),
+    },
   }),
 });
 

@@ -1,3 +1,15 @@
+<a name="1.8.1"></a>
+## [1.8.1](https://github.com/8base/boost/compare/v1.8.0...v1.8.1) (2019-11-21)
+
+
+### Bug Fixes
+
+* warnings ([b9d8f0b](https://github.com/8base/boost/commit/b9d8f0b))
+* **Form:** hasError doesn't work properly ([84dc1d0](https://github.com/8base/boost/commit/84dc1d0))
+* **Select:** error outline is removed on hover ([1120b94](https://github.com/8base/boost/commit/1120b94))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/8base/boost/compare/v1.7.3...v1.8.0) (2019-11-14)
 

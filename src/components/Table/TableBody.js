@@ -35,7 +35,7 @@ const [TableBodyTag, themeBody] = createThemeTag(name, ({ COLORS }: *): * => ({
 
   modifiers: {
     bordered: {
-      '&:first-child': {
+      '&:first-of-type': {
         borderTop: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       },
     },

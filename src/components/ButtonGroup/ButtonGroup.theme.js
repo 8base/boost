@@ -15,7 +15,7 @@ const [ButtonGroupTag, theme] = createThemeTag(name, {
         borderTopRightRadius: 0,
         borderBottomRightRadius: 0,
       },
-      '&:not(:first-child)': {
+      '&:not(:first-of-type)': {
         borderLeftColor: 'none',
         borderTopLeftRadius: 0,
         borderBottomLeftRadius: 0,

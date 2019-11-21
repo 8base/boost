@@ -26,7 +26,7 @@ const [LogMessageTag, themeLogMessage] = createThemeTag(`${name}Wrapper`, ({ COL
     padding: '0 24px',
     cursor: 'default',
 
-    '&:first-child': {
+    '&:first-of-type': {
       paddingTop: '24px',
     },
 

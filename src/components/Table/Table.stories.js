@@ -678,7 +678,7 @@ export const WithExpandableRows = () => {
     ({ name: columnName }, rowData, { expandRow, isExpanded }) => {
       if (columnName === 'id') {
         return (
-          <Button variant="link" onClick={ () => expandRow() } withIconAutosize={ false }>
+          <Button data-testid={ `expand-row-${rowData[columnName]}` } variant="link" onClick={ () => expandRow() } withIconAutosize={ false }>
             <Icon name={ isExpanded ? 'ChevronTop' : 'ChevronDown' } size="sm" />
             <span>{ rowData[columnName] }</span>
           </Button>

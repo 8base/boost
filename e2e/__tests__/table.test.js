@@ -21,6 +21,14 @@ const SUITES = [
   baisy.suite('Components/Table', 'with condensed modifier'),
   baisy.suite('Components/Table', 'with bordered modifier'),
   baisy.suite('Components/Table', 'with custom no data component'),
+  baisy.suite('Components/Table', 'with expandable rows')
+    .setEnhancer(async (iframe) => {
+      await (await iframe.waitForSelector('button[data-testid="expand-row-1"]')).click();
+    }),
+  baisy.suite('Components/Table', 'with controlled expandable rows', 'all expanded')
+    .setEnhancer(async (iframe) => {
+      await (await iframe.waitForXPath('//button[contains(., "Expand all")]')).click();
+    }),
 ];
 
 

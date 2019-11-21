@@ -20,7 +20,7 @@ type AvatarsProps = {
 };
 
 const tooltipClassName = css`
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: -10px;
   }
 `;

@@ -89,7 +89,7 @@ const [RadioButtonTag, themeRadioButton] = createThemeTag(`${name}Button`, {
   root: {
     flex: 1,
 
-    '&:first-child > *': {
+    '&:first-of-type > *': {
       borderRightStyle: 'unset',
       borderTopRightRadius: 0,
       borderBottomRightRadius: 0,
@@ -101,7 +101,7 @@ const [RadioButtonTag, themeRadioButton] = createThemeTag(`${name}Button`, {
       borderBottomLeftRadius: 0,
     },
 
-    '&:not(:first-child):not(:last-child) > *': {
+    '&:not(:first-of-type):not(:last-child) > *': {
       borderRadius: 0,
     },
   },

@@ -24,9 +24,9 @@ class TextArea extends React.Component<TextAreaProps> {
   }
 
   render() {
-    const { onChange, ...rest } = this.props;
+    const { onChange, hasError, ...rest } = this.props;
 
-    return <TextAreaTag { ...rest } onChange={ this.onChange }tagName="textarea" />;
+    return <TextAreaTag { ...rest } onChange={ this.onChange } tagName="textarea" />;
   }
 }
 

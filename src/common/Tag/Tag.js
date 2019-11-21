@@ -201,6 +201,7 @@ const HTML_TAGS = [
   'nav',
   'img',
   'pre',
+  'textarea',
 ];
 
 const collectProps = (props) => pickBy(props, (value, name) => COLLECTED_PROPS.indexOf(name) !== -1 || /^data-/.test(name));

@@ -26,10 +26,8 @@ const [TableBodyCellTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
   }),
   modifiers: {
     bordered: {
-      borderLeft: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
-
-      '&:last-child': {
-        borderRight: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
+      '&:not(:first-of-type)': {
+        borderLeft: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       },
     },
   },

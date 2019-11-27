@@ -30,6 +30,9 @@ const [TableHeaderTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *) => (
     },
 
     bordered: {
+      borderLeft: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
+      borderRight: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
+
       '&:first-of-type': {
         borderTop: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       },

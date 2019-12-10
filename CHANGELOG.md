@@ -1,3 +1,15 @@
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/8base/boost/compare/v1.8.1...v1.9.0) (2019-12-10)
+
+
+### Features
+
+* **progress:** adds background color and separator. ([f45366e](https://github.com/8base/boost/commit/f45366e))
+* **Table:** add e2e snapshots for expandable stories ([1b5e531](https://github.com/8base/boost/commit/1b5e531))
+* **Table:** add expandable rows ([19f6362](https://github.com/8base/boost/commit/19f6362))
+
+
+
 <a name="1.8.1"></a>
 ## [1.8.1](https://github.com/8base/boost/compare/v1.8.0...v1.8.1) (2019-11-21)
 

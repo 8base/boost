@@ -7,6 +7,7 @@ import {
   ProgressBodyTag,
   ProgressInnerTag,
   ProgressValueTag,
+  ProgressSeparatorTag,
   ProgressTextTag,
   ProgressLabelTag,
 } from './Progress.theme';
@@ -17,9 +18,18 @@ type ProgressProps = {
   valueText?: React$Node,
   valueWidth?: number | string,
   size?: 'sm' | 'md' | 'lg',
+  color?: string,
+  backgroundColor?: string,
+  showSeparator?: boolean,
 };
 
-const Progress = ({ value, label, valueText, valueWidth, ...rest }: ProgressProps) => {
+const Progress = ({
+  value,
+  label,
+  valueText,
+  valueWidth,
+  ...rest
+}: ProgressProps) => {
   value = value > 100 ? value % 100 : value;
 
   return (
@@ -28,8 +38,13 @@ const Progress = ({ value, label, valueText, valueWidth, ...rest }: ProgressProp
       <ProgressBodyTag modifiers={ rest }>
         <ProgressInnerTag modifiers={ rest } style={ valueWidth ? { minWidth: valueWidth, maxWidth: valueWidth } : {} }>
           <ProgressValueTag modifiers={ rest } style={{ width: `${value}%` }} />
+          <If condition={ !!rest.showSeparator } >
+            <ProgressSeparatorTag modifiers={ rest } style={{ left: `${value}%` }} />
+          </If>
         </ProgressInnerTag>
-        <ProgressTextTag modifiers={ rest }>{ valueText ? valueText : `${value} %` }</ProgressTextTag>
+        <ProgressTextTag modifiers={ rest }>
+          { valueText ? valueText : `${value} %` }
+        </ProgressTextTag>
       </ProgressBodyTag>
     </ProgressTag>
   );
@@ -38,6 +53,8 @@ const Progress = ({ value, label, valueText, valueWidth, ...rest }: ProgressProp
 Progress.defaultProps = {
   size: 'md',
   color: 'PRIMARY',
+  backgroundColor: 'GRAY_20',
+  showSeparator: false,
 };
 
 export { Progress };

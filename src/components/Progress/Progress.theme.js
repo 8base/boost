@@ -28,20 +28,48 @@ const HEIGHT_BY_SIZE = {
   lg: 16,
 };
 
+const HEIGHT_SEPARATOR_BY_SIZE = {
+  sm: 12,
+  md: 18,
+  lg: 20,
+};
+
+const BORDER_RADIUS_BY_SIZE = {
+  sm: 4,
+  md: 8,
+  lg: 12,
+};
+
 const [ProgressInnerTag, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }: *) => ({
-  root: ({ size }) => ({
+  root: ({ size, backgroundColor }) => ({
+    position: 'relative',
+    zIndex: 1,
     flex: '1',
     height: HEIGHT_BY_SIZE[size],
-    background: COLORS.GRAY_20,
-    borderRadius: '8px',
+    background: COLORS[backgroundColor],
+    borderRadius: BORDER_RADIUS_BY_SIZE[size],
   }),
 }));
 
 const [ProgressValueTag, themeValue] = createThemeTag(`${name}Value`, ({ COLORS }: *) => ({
-  root: ({ size, color }) => ({
+  root: ({ size, color, showSeparator }) => ({
     height: '100%',
     backgroundColor: COLORS[color],
-    borderRadius: HEIGHT_BY_SIZE[size],
+    borderRadius: BORDER_RADIUS_BY_SIZE[size],
+    borderTopRightRadius: showSeparator ? 0 : BORDER_RADIUS_BY_SIZE[size],
+    borderBottomRightRadius: showSeparator ? 0 : BORDER_RADIUS_BY_SIZE[size],
+  }),
+}));
+
+const [ProgressSeparatorTag, themeSeparator] = createThemeTag(`${name}Separator`, ({ COLORS }: *) => ({
+  root: ({ size }) => ({
+    position: 'absolute',
+    width: '2px',
+    borderRadius: '1px',
+    backgroundColor: COLORS.GRAY_30,
+    height: HEIGHT_SEPARATOR_BY_SIZE[size],
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
   }),
 }));
 
@@ -64,6 +92,7 @@ const theme = {
   ...themeBody,
   ...themeInner,
   ...themeValue,
+  ...themeSeparator,
   ...themeText,
   ...themeLabel,
 };
@@ -74,6 +103,7 @@ export {
   ProgressBodyTag,
   ProgressInnerTag,
   ProgressValueTag,
+  ProgressSeparatorTag,
   ProgressTextTag,
   ProgressLabelTag,
 };

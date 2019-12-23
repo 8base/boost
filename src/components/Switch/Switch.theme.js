@@ -13,6 +13,11 @@ const [SwitchTag, themeSwitch] = createThemeTag(name, {
 
     height: '36px',
   },
+  modifiers: {
+    inverted: {
+      flexDirection: 'row-reverse',
+    },
+  },
 });
 
 const [SwitchInputTag, themeInput] = createThemeTag(`${name}Input`, {
@@ -51,6 +56,12 @@ const [SwitchLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ COLORS }:
     color: COLORS.SECONDARY_TEXT_COLOR,
     marginLeft: '8px',
     userSelect: 'none',
+  },
+  modifiers: {
+    inverted: {
+      marginRight: '8px',
+      marginLeft: 0,
+    },
   },
 }));
 

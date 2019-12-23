@@ -13,6 +13,7 @@ type SwitchProps = {
   name?: string,
   value: boolean,
   onChange?: (boolean, SyntheticInputEvent<HTMLInputElement>) => void,
+  inverted?: boolean,
 };
 
 class Switch extends React.Component<SwitchProps> {
@@ -31,7 +32,7 @@ class Switch extends React.Component<SwitchProps> {
       <SwitchTag tagName="label" { ...rest }>
         <SwitchInputTag modifiers={ rest } tagName="input" type="checkbox" name={ name } checked={ value } onChange={ this.onChange } />
         <SwitchApperanceTag modifiers={ rest } value={ value } />
-        { label && <SwitchLabelTag>{ label }</SwitchLabelTag> }
+        { label && <SwitchLabelTag modifiers={ rest }>{ label }</SwitchLabelTag> }
       </SwitchTag>
     );
   }

@@ -1,3 +1,13 @@
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/8base/boost/compare/v1.9.0...v1.9.1) (2019-12-23)
+
+
+### Features
+
+* **Switch:** inverted switch ([98466b2](https://github.com/8base/boost/commit/98466b2))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/8base/boost/compare/v1.8.1...v1.9.0) (2019-12-10)
 

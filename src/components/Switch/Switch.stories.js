@@ -13,6 +13,7 @@ export const common = () => (
   <Column>
     <Switch label="Unchecked" value={ false } />
     <Switch label="Checked" value />
+    <Switch label="Checked" value inverted />
   </Column>
 );
 

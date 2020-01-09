@@ -7,11 +7,13 @@ function useModal(id) {
   const dialogContext = useContext(ModalContext);
 
   const args = _.get(dialogContext, ['state', id, 'args'], {});
+  const isOpen = _.get(dialogContext, ['state', id, 'isOpen'], false);
 
   return {
     openModal: dialogContext.openModal,
     closeModal: dialogContext.closeModal,
     args,
+    isOpen,
   };
 }
 

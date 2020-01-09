@@ -1,3 +1,13 @@
+<a name="1.9.2"></a>
+## [1.9.2](https://github.com/8base/boost/compare/v1.9.1...v1.9.2) (2020-01-09)
+
+
+### Features
+
+* **Modal:** returns isOpen from useModal too ([1cc90c7](https://github.com/8base/boost/commit/1cc90c7))
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/8base/boost/compare/v1.9.0...v1.9.1) (2019-12-23)
 

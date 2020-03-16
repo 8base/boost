@@ -1,3 +1,13 @@
+<a name="1.9.3"></a>
+## [1.9.3](https://github.com/8base/boost/compare/v1.9.2...v1.9.3) (2020-03-16)
+
+
+### Bug Fixes
+
+* switch flex shrink ([744363d](https://github.com/8base/boost/commit/744363d))
+
+
+
 <a name="1.9.2"></a>
 ## [1.9.2](https://github.com/8base/boost/compare/v1.9.1...v1.9.2) (2020-01-09)
 

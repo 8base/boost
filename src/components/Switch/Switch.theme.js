@@ -34,6 +34,7 @@ const [SwitchApperanceTag, themeApperance] = createThemeTag(`${name}Appearance`,
 
     height: '24px',
     width: '48px',
+    flexShrink: 0,
     borderRadius: '24px',
 
     '&:before': {

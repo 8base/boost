@@ -37,6 +37,10 @@ const [RadioCircleTag, themeCircle] = createThemeTag(`${name}Circle`, ({ COLORS 
     hasError: {
       borderColor: COLORS.DANGER,
     },
+
+    disabled: {
+      backgroundColor: COLORS.GRAY_10,
+    },
   },
 }));
 

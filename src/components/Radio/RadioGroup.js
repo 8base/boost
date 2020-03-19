@@ -20,7 +20,7 @@ type RadioProps = {
   /** then true when show error styles */
   hasError?: boolean,
   /** options to define radio items */
-  options?: Array<({ value: any, label: string })>,
+  options?: Array<({ value: any, label: string, disabled?: boolean })>,
   /** disabled */
   disabled?: boolean,
   /** stretch */
@@ -53,8 +53,8 @@ class RadioGroup extends PureComponent<RadioProps> {
     }
 
     // $FlowFixMe
-    return options.map(({ value, label }) => (
-      <RadioItem key={ value } label={ label } value={ value } />
+    return options.map(({ value, label, disabled }) => (
+      <RadioItem key={ value } label={ label } value={ value } disabled={ disabled || this.props.disabled } />
     ));
   }
 

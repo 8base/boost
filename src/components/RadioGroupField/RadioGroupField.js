@@ -21,7 +21,7 @@ type RadioGroupFieldProps = {
   /** direction of the radio items */
   direction?: 'row' | 'column',
   /** options to define radio items */
-  options?: Array<({ value: any, label: string })>,
+  options?: Array<({ value: any, label: string, disabled?: boolean })>,
   /** disabled */
   disabled?: boolean,
   /** stretch */

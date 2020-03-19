@@ -32,11 +32,15 @@ button.story = {
 };
 
 export const disabledStory = () => (
-  <RadioGroupField direction="row" input={{ value: 1 }} meta={{}} disabled>
-    <Radio.Item label="Radio" value={ 1 } />
-    <Radio.Item label="Radio" value={ 2 } />
-    <Radio.Item label="Radio" value={ 3 } />
-  </RadioGroupField>
+  <React.Fragment>
+    <RadioGroupField direction="row" input={{ value: 1 }} meta={{}} disabled>
+      <Radio.Item label="Radio" value={ 1 } />
+      <Radio.Item label="Radio" value={ 2 } />
+      <Radio.Item label="Radio" value={ 3 } />
+    </RadioGroupField>
+
+    <RadioGroupField direction="row" input={{ value: 3 }} meta={{}} options={ [{ label: '1', value: 1 }, { label: '2', value: 2, disabled: true }, { label: '3', value: 3, disabled: true }] } />
+  </React.Fragment>
 );
 
 disabledStory.story = {

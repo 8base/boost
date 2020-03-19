@@ -1,3 +1,13 @@
+<a name="1.9.4"></a>
+## [1.9.4](https://github.com/8base/boost/compare/v1.9.3...v1.9.4) (2020-03-19)
+
+
+### Features
+
+* **Radio:** disabled item state ([20d8e52](https://github.com/8base/boost/commit/20d8e52))
+
+
+
 <a name="1.9.3"></a>
 ## [1.9.3](https://github.com/8base/boost/compare/v1.9.2...v1.9.3) (2020-03-16)
 

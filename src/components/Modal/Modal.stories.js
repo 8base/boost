@@ -10,32 +10,42 @@ export default {
   component: Modal,
 };
 
-export const defaultStory = () => (
-  <Modal isOpen data-e2e-id="default-modal">
-    <CustomBackground>
+export const defaultStory = () => {
+  return (
+    <React.Fragment>
+      <Modal id="ID_modal_default" data-e2e-id="default-modal">
+        <CustomBackground>
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
+          <br />
       XXXXXXXXXX
-      <br />
-    </CustomBackground>
-  </Modal>
-);
+          <br />
+        </CustomBackground>
+      </Modal>
+
+      <ModalContext.Consumer>
+        { ({ openModal }) => (
+          <Button onClick={ () => openModal('ID_modal_default') }>Open modal</Button>
+        ) }
+      </ModalContext.Consumer>
+    </React.Fragment>
+  );
+};
 
 defaultStory.story = {
   name: 'default',
@@ -43,44 +53,55 @@ defaultStory.story = {
 
 export const withMultipleModals = () => (
   <React.Fragment>
-    <Modal isOpen>
+    <Modal id="ID_withMultipleModals_first" >
       <CustomBackground>
-        XXXXXXXXXX
+        First modal
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
         <br />
-        XXXXXXXXXX
+        XXXXXXXXXXXXXXXXXXXX
+        <br />
+        <ModalContext.Consumer>
+          { ({ openModal }) => (
+            <Button onClick={ () => openModal('ID_withMultipleModals_second') }>Open second modal</Button>
+          ) }
+        </ModalContext.Consumer>
+      </CustomBackground>
+    </Modal>
+
+    <Modal id="ID_withMultipleModals_second" data-e2e-id="multiple-modal">
+      <CustomBackground>
+        Second modal
+        <br />
+        00000
+        <br />
+        00000
+        <br />
+        00000
+        <br />
+        00000
         <br />
       </CustomBackground>
     </Modal>
-    <Modal isOpen data-e2e-id="multiple-modal">
-      <CustomBackground>
-        00000
-        <br />
-        00000
-        <br />
-        00000
-        <br />
-        00000
-        <br />
-        00000
-        <br />
-      </CustomBackground>
-    </Modal>
+    <ModalContext.Consumer>
+      { ({ openModal }) => (
+        <Button onClick={ () => openModal('ID_withMultipleModals_first') }>Open modal</Button>
+      ) }
+    </ModalContext.Consumer>
   </React.Fragment>
 );
 
@@ -118,7 +139,7 @@ export const withState = () => (
     </Modal>
     <ModalContext.Consumer>
       { ({ openModal }) => (
-        <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open</Button>
+        <Button onClick={ () => openModal('ID', { foo: '00', bar: '00' }) }>Open modal</Button>
       ) }
     </ModalContext.Consumer>
   </React.Fragment>

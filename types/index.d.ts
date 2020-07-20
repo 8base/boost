@@ -1,5 +1,6 @@
-declare module '@8base/boost' {
+declare module '@cobuildlab/boost' {
   import React from 'react';
+  import
 
   type TagProps = {
     activeClassName?: string;

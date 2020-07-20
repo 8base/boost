@@ -1,7 +1,6 @@
 declare module '@cobuildlab/boost' {
   import React from 'react';
-  import
-
+  
   type TagProps = {
     activeClassName?: string;
     children?: React.ReactNode;

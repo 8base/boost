@@ -9,7 +9,7 @@ import {
 } from './Switch.theme';
 
 type SwitchProps = {
-  label?: string,
+  label?: string | React$Node,
   name?: string,
   value: boolean,
   onChange?: (boolean, SyntheticInputEvent<HTMLInputElement>) => void,

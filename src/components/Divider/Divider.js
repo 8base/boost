@@ -6,10 +6,11 @@ import { DividerOuter, DividerInner, DividerTitle } from './Divider.theme';
 
 type DividerProps = {
   children?: React$Node,
+  noOffset?: boolean;
 };
 
-const Divider = ({ children, ...rest }: DividerProps) => (
-  <DividerOuter { ...rest }>
+const Divider = ({ children, noOffset = false, ...rest }: DividerProps) => (
+  <DividerOuter noOffset={ noOffset } { ...rest }>
     <Choose>
       <When condition={ !!children }>
         <DividerInner />

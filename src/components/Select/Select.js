@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactSelect, { components } from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 import { withTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import { type SerializedStyles } from '@emotion/utils';
@@ -20,7 +21,9 @@ type SelectProps = {|
   value?: any | any[],
   loading?: boolean,
   disabled?: boolean,
+  /* Multiple prop is deprecated */
   multiple?: boolean,
+  isMulti?: boolean,
   clearable?: boolean,
   hasError?: boolean,
   withPortal?: boolean,
@@ -38,6 +41,7 @@ type SelectProps = {|
   stretch?: boolean,
   isSearchable?: boolean,
   css?: SerializedStyles,
+  creatable?: boolean;
 |};
 
 type SelectPropsFromHOCs = {|
@@ -142,9 +146,21 @@ const ClearIndicator = props => {
 };
 
 
-const findOptionByValue = (value, options) => {
+const getCreatableOptionByValue = (value) => {
   if (Array.isArray(value)) {
-    return value.map((valueItem) => findOptionByValue(valueItem, options));
+    return value.map(valueItem => getCreatableOptionByValue(valueItem));
+  } else {
+    return {
+      label: value,
+      value,
+    };
+  }
+};
+
+
+const getOptionByValue = (value, options) => {
+  if (Array.isArray(value)) {
+    return value.map((valueItem) => getOptionByValue(valueItem, options));
   }
 
   const foundOption = options.reduce((result, option) => {
@@ -152,7 +168,7 @@ const findOptionByValue = (value, options) => {
       if (option.value === value) {
         return option;
       } else if (Array.isArray(option.options)) {
-        return findOptionByValue(value, option.options);
+        return getOptionByValue(value, option.options);
       }
     }
 
@@ -170,10 +186,11 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
   };
 
   onChange = (option: Object) => {
+    const { isMulti } = this.props;
     let value = null;
 
-    if (Array.isArray(option)) {
-      value = option.map(({ value }) => value);
+    if (Array.isArray(option) || isMulti) {
+      value = (option || []).map(({ value }) => value);
     } else if (option) {
       ({ value } = option);
     }
@@ -188,6 +205,7 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       clearable,
       disabled,
       multiple,
+      isMulti,
       options,
       placeholder,
       valueComponent,
@@ -204,18 +222,21 @@ class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
       getOptionValue,
       getOptionLabel,
       isSearchable,
+      creatable,
       ...rest
     } = this.props;
 
-    const selectValue = findOptionByValue(value, options);
+    const selectValue = creatable ? getCreatableOptionByValue(value) : getOptionByValue(value, options || []);
+
+    const SelectComponent = creatable ? CreatableSelect : ReactSelect;
 
     return (
       <SelectTag { ...rest } aria-busy={ String(loading || false) }>
-        <ReactSelect
+        <SelectComponent
           isClearable={ clearable }
           isDisabled={ disabled }
           isLoading={ loading }
-          isMulti={ multiple }
+          isMulti={ multiple || isMulti }
           menuPlacement="auto"
           menuPortalTarget={ withPortal ? document.body : false }
           onChange={ this.onChange }

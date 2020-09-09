@@ -17,7 +17,7 @@ type RenderProps = {
 type TooltipProps = {
   children: React$Node | (RenderProps) => React$Node,
   /** Default content position relative target */
-  placement?: 'top' | 'left' | 'bottom' | 'right',
+  placement?: 'top' | 'left' | 'bottom' | 'right' | 'auto' | 'bottom-end' | 'bottom-start' | 'top-end' | 'top-start',
   /** Custom tag of the tooltip target */
   tagName?: string,
   /** Custom style of the cursor */

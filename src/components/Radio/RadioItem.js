@@ -21,10 +21,11 @@ type RadioItemClonedProps = {
 }
 
 type RadioItemProps = {
+  children?: React$Node | ({ checked: boolean }) => React$Node,
   /** text of the label */
   label?: string,
   /** radio value */
-  value: string | number,
+  value: string | number | boolean,
   /** possible colors */
   color?: 'primary' | 'secondary',
   /** when true then disable radio */
@@ -53,6 +54,7 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
       selectedValue,
       equalsFunc,
       onChange,
+      children,
       ...rest
     } = this.props;
     const hasLabel = !!label;
@@ -61,12 +63,22 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
     return (
       <RadioWrapperTag tagName="label" { ...rest }>
         <RadioTag modifiers={ rest } name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
-        <RadioCircleTag modifiers={ rest } tagName="div" >
-          <RadioCircleInnerTag modifiers={ rest } tagName="div" checked={ checked } />
-        </RadioCircleTag>
-        <If condition={ hasLabel }>
-          <RadioTextTag modifiers={ rest } tagName="div">{ label }</RadioTextTag>
-        </If>
+        <Choose>
+          <When condition={ typeof children === 'function' }>
+            { children({ checked }) }
+          </When>
+          <When condition={ !!children }>
+            { children }
+          </When>
+          <Otherwise>
+            <RadioCircleTag modifiers={ rest } tagName="div" >
+              <RadioCircleInnerTag modifiers={ rest } tagName="div" checked={ checked } />
+            </RadioCircleTag>
+            <If condition={ hasLabel }>
+              <RadioTextTag modifiers={ rest } tagName="div">{ label }</RadioTextTag>
+            </If>
+          </Otherwise>
+        </Choose>
       </RadioWrapperTag>
     );
   }

@@ -5,15 +5,15 @@ import { RadioCircleTag, RadioTag, RadioWrapperTag, RadioCircleInnerTag, RadioTe
 
 
 type EqualsFuncArgument = {
-  selectedValue?: string | number,
-  value: string | number,
+  selectedValue?: string | number | boolean,
+  value: string | number | boolean,
 }
 
 type RadioItemClonedProps = {
   /** private cloned props */
   name?: string,
   /** private cloned props */
-  onChange?: (string | number, SyntheticInputEvent<HTMLInputElement>) => void,
+  onChange?: (string | number | boolean, SyntheticInputEvent<HTMLInputElement>) => void,
   /** private cloned props */
   selectedValue?: string | number,
   /** then true when show error styles */
@@ -21,7 +21,7 @@ type RadioItemClonedProps = {
 }
 
 type RadioItemProps = {
-  children?: React$Node | ({ checked: boolean }) => React$Node,
+  children?: any,
   /** text of the label */
   label?: string,
   /** radio value */
@@ -65,9 +65,11 @@ class RadioItem extends PureComponent<RadioItemProps & RadioItemClonedProps> {
         <RadioTag modifiers={ rest } name={ name } tagName="input" type="radio" onChange={ this.onChange } checked={ checked } />
         <Choose>
           <When condition={ typeof children === 'function' }>
+            { /* $FlowIgnore */ }
             { children({ checked }) }
           </When>
           <When condition={ !!children }>
+            { /* $FlowIgnore */ }
             { children }
           </When>
           <Otherwise>

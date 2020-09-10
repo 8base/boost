@@ -33,7 +33,9 @@ class SelectField extends React.Component<SelectFieldProps> {
   }
 
   collectSelectProps() {
-    const { input = {}, meta, placeholder, options, multiple, stretch, filterOption, getOptionValue, getOptionLabel } = this.props;
+    const {
+      input = {}, meta, placeholder, options, multiple, isMulti, creatable, stretch, filterOption, getOptionValue, getOptionLabel,
+    } = this.props;
 
     const hasError = formUtils.hasError(meta);
 
@@ -46,6 +48,8 @@ class SelectField extends React.Component<SelectFieldProps> {
       options,
       stretch,
       multiple,
+      isMulti,
+      creatable,
       filterOption,
       getOptionValue,
       getOptionLabel,

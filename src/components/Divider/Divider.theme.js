@@ -3,15 +3,15 @@ import { createThemeTag } from '../../theme/createThemeTag';
 const name = 'divider';
 
 const [DividerOuter, themeOuter] = createThemeTag(name, () => ({
-  root: {
+  root: props => ({
     width: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'stretch',
-    marginTop: '24px',
-    marginBottom: '24px',
+    marginTop: props.noOffset ? '0' : '24px',
+    marginBottom: props.noOffset ? '0' : '24px',
     height: '18px',
-  },
+  }),
 }));
 
 const [DividerInner, themeInner] = createThemeTag(`${name}Inner`, ({ COLORS }) => ({

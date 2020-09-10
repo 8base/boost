@@ -5,7 +5,7 @@ import React from 'react';
 import * as formUtils from '../../utils/forms';
 import { Radio } from '../Radio';
 import { FormField } from '../Form/FormField';
-import type { InputType, MetaType, PropSizes } from '../../types';
+import type { InputType, MetaType, PropLayout, PropLayoutStretch, PropSizes } from '../../types';
 
 type RadioGroupFieldProps = {
   /** Grop.Item components */
@@ -26,6 +26,10 @@ type RadioGroupFieldProps = {
   disabled?: boolean,
   /** stretch */
   stretch?: boolean,
+  justifyContent?: PropLayoutStretch,
+  alignContent?: PropLayout,
+  alignItems?: PropLayoutStretch,
+  flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse',
 };
 
 const RadioGroupField = ({
@@ -38,6 +42,10 @@ const RadioGroupField = ({
   options,
   disabled,
   stretch,
+  justifyContent,
+  alignContent,
+  alignItems,
+  flexWrap,
   ...rest
 }: RadioGroupFieldProps) => {
   const { name, value, onChange } = input;
@@ -56,6 +64,10 @@ const RadioGroupField = ({
         value={ value }
         disabled={ disabled }
         stretch={ stretch }
+        justifyContent={ justifyContent }
+        alignContent={ alignContent }
+        alignItems={ alignItems }
+        flexWrap={ flexWrap }
       >
         { children }
       </Radio.Group>

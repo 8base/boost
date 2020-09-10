@@ -34,6 +34,7 @@ import House from './House.svg';
 import Lock from './Lock.svg';
 import Logic from './Logic.svg';
 import Mail from './Mail.svg';
+import Man from './Man.svg';
 import MapPin from './MapPin.svg';
 import Minus from './Minus.svg';
 import More from './More.svg';
@@ -85,6 +86,7 @@ export {
   Lock,
   Logic,
   Mail,
+  Man,
   MapPin,
   Minus,
   More,

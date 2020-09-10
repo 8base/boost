@@ -16,8 +16,8 @@ type DropdownBodyProps = {
   /** takes either react dom element or function */
   children: React$Node | ({
     toggleDropdown: () => void,
-    closeDropdown?: () => void,
-    openDropdown?: () => void,
+    closeDropdown: () => void,
+    openDropdown: () => void,
     isOpen: boolean,
   }) => React$Node,
 

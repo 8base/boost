@@ -1,0 +1,42 @@
+name: checks
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+
+      - name: Install Docker
+        run: |
+          docker run --name dockerhost --cap-add=NET_ADMIN --cap-add=NET_RAW -d qoomon/docker-host
+          docker run --privileged --name e2e-chrome --link dockerhost -p 9222:9222 -d vorobeez/puppeteer-e2e-chrome:74.0.3729.169-1
+          curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
+
+      - name: Install Dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Build packages
+        run: yarn build
+
+      - name: Run linter
+        run: yarn eslint
+
+      - name: Run flow
+        run: yarn flow
+
+      - name: Run tests
+        run: |
+          yarn storybook &
+          sleep 40
+          yarn e2e:ci
+          killall5 node || echo "Server is stopped"

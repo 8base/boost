@@ -1,3 +1,24 @@
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/8base/boost/compare/v1.9.4...v1.10.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* fix flow errors ([85a782f](https://github.com/8base/boost/commit/85a782f))
+* **Dropdown:** fix typings  ([39b6a63](https://github.com/8base/boost/commit/39b6a63))
+* **Switch:** fix typings ([2667836](https://github.com/8base/boost/commit/2667836))
+* **Tooltip:** fix typings ([f895975](https://github.com/8base/boost/commit/f895975))
+
+
+### Features
+
+* **Divider:** add noMargin prop ([23909da](https://github.com/8base/boost/commit/23909da))
+* **Icon:** add icon man ([e7e3c72](https://github.com/8base/boost/commit/e7e3c72))
+* **Radio:** add render prop feature ([13025ce](https://github.com/8base/boost/commit/13025ce))
+* **Select:** add creatable select ([5274706](https://github.com/8base/boost/commit/5274706))
+
+
+
 <a name="1.9.4"></a>
 ## [1.9.4](https://github.com/8base/boost/compare/v1.9.3...v1.9.4) (2020-03-19)
 

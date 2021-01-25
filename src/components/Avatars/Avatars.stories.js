@@ -20,8 +20,8 @@ export default {
 
 export const common = () => (
   <Column gap="lg">
-    <Avatars size="md" users={ USERS } />
-    <Avatars users={ USERS } />
+    <Avatars size="md" users={ USERS } withPlusButton />
+    <Avatars users={ USERS } withPlusButton />
   </Column>
 );
 

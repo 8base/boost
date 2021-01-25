@@ -19,6 +19,7 @@ type AvatarsProps = {
   onAvatarsClick?: Function,
   onCounterClick?: Function,
   onPlusClick?: Function,
+  withPlusButton?: boolean,
 };
 
 const tooltipClassName = css`
@@ -38,6 +39,7 @@ const Avatars = ({
   onAvatarsClick,
   onCounterClick,
   onPlusClick,
+  withPlusButton,
   ...rest
 }: AvatarsProps) => {
   return (
@@ -61,9 +63,12 @@ const Avatars = ({
       <If condition={ users.length > 4 }>
         <AvatarsCounterTag onClick={ onCounterClick } size={ size }>+ { users.length - 4 }</AvatarsCounterTag>
       </If>
-      <AvatarsHandleTag onClick={ onPlusClick } size={ size }>
-        <Icon name="Plus" size="xs" color="PRIMARY" />
-      </AvatarsHandleTag>
+
+      <If condition={ !!withPlusButton } >
+        <AvatarsHandleTag onClick={ onPlusClick } size={ size }>
+          <Icon name="Plus" size="xs" color="PRIMARY" />
+        </AvatarsHandleTag>
+      </If>
     </AvatarsTag>
   );
 };

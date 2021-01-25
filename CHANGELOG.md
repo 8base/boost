@@ -1,3 +1,13 @@
+<a name="1.11.3"></a>
+## [1.11.3](https://github.com/8base/boost/compare/v1.11.2...v1.11.3) (2021-01-25)
+
+
+### Features
+
+* **avatars:** add hide plus button prop to component ([ac1a5b6](https://github.com/8base/boost/commit/ac1a5b6))
+
+
+
 <a name="1.11.2"></a>
 ## [1.11.2](https://github.com/8base/boost/compare/v1.11.1...v1.11.2) (2021-01-25)
 

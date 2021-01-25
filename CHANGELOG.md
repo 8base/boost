@@ -1,3 +1,13 @@
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/8base/boost/compare/v1.10.0...v1.11.0) (2021-01-25)
+
+
+### Features
+
+* **avatars:** split avatars click handlers ([d26174e](https://github.com/8base/boost/commit/d26174e))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/8base/boost/compare/v1.9.4...v1.10.0) (2020-09-10)
 

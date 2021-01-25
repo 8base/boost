@@ -1,3 +1,13 @@
+<a name="1.11.1"></a>
+## [1.11.1](https://github.com/8base/boost/compare/v1.11.0...v1.11.1) (2021-01-25)
+
+
+### Bug Fixes
+
+* fix publish script ([7a3fd3a](https://github.com/8base/boost/commit/7a3fd3a))
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://github.com/8base/boost/compare/v1.10.0...v1.11.0) (2021-01-25)
 

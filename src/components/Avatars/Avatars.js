@@ -16,7 +16,9 @@ type AvatarsProps = {
     lastName: string,
     avatarUrl: string,
   }>,
-  onClick: Function,
+  onAvatarsClick?: Function,
+  onCounterClick?: Function,
+  onPlusClick?: Function,
 };
 
 const tooltipClassName = css`
@@ -30,13 +32,21 @@ const avatarClassName = css`
   cursor: pointer;
 `;
 
-const Avatars = ({ users, size, onClick, ...rest }: AvatarsProps) => {
+const Avatars = ({
+  users,
+  size,
+  onAvatarsClick,
+  onCounterClick,
+  onPlusClick,
+  ...rest
+}: AvatarsProps) => {
   return (
-    <AvatarsTag { ...rest } tagName="div" onClick={ onClick }>
+    <AvatarsTag { ...rest } tagName="div">
       { React.Children.toArray(
         users.slice(0, 4).map(({ firstName, lastName, avatarUrl }, index) => (
           <Tooltip css={ css(tooltipClassName) } message={ `${firstName} ${lastName}` }>
             <Avatar
+              onClick={ onAvatarsClick }
               css={ css(avatarClassName) }
               style={{ zIndex: Math.abs(index - 7) }}
               firstName={ firstName }
@@ -49,9 +59,9 @@ const Avatars = ({ users, size, onClick, ...rest }: AvatarsProps) => {
       ) }
 
       <If condition={ users.length > 4 }>
-        <AvatarsCounterTag size={ size }>+ { users.length - 4 }</AvatarsCounterTag>
+        <AvatarsCounterTag onClick={ onCounterClick } size={ size }>+ { users.length - 4 }</AvatarsCounterTag>
       </If>
-      <AvatarsHandleTag size={ size }>
+      <AvatarsHandleTag onClick={ onPlusClick } size={ size }>
         <Icon name="Plus" size="xs" color="PRIMARY" />
       </AvatarsHandleTag>
     </AvatarsTag>

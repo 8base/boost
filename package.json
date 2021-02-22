@@ -1,6 +1,6 @@
 {
   "name": "@cobuildlab/boost",
-  "version": "1.9.4",
+  "version": "1.9.5",
   "author": "8base",
   "license": "MIT",
   "main": "es/index.js",

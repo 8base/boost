@@ -2,7 +2,7 @@
 import fp from 'lodash/fp';
 import React, { PureComponent, Fragment } from 'react';
 import { type HOC, compose, setDisplayName, withProps } from 'recompose';
-import onClickOutside from 'react-onclickoutside';
+// import onClickOutside from 'react-onclickoutside';
 import { Popper } from 'react-popper';
 import { Portal } from 'react-portal';
 
@@ -71,13 +71,21 @@ const dropdownBodyEnhancer: HOC<*, DropdownBodyProps> = compose(
   withProps(
     ({ dropdown: { outsideClickIgnoreClass }}) => ({ outsideClickIgnoreClass }),
   ),
-  onClickOutside,
+  // onClickOutside,
 );
 
 type DropdownBodyEnhancedProps = HOCBase<typeof dropdownBodyEnhancer>;
 
 const DropdownBody = dropdownBodyEnhancer(
   class DropdownBodyBase extends PureComponent<DropdownBodyEnhancedProps> {
+    constructor(props: DropdownBodyEnhancedProps) {
+      super(props);
+      this.componentRef = null;
+
+      this.setComponentRef = element => {
+        this.componentRef = element;
+      };
+    }
   static zIndex = Z_INDEX.DROPDOWN;
 
   static defaultProps = {
@@ -94,12 +102,29 @@ const DropdownBody = dropdownBodyEnhancer(
     closeOnClickOutside: true,
   }
 
-  handleClickOutside = () => {
+  // handleClickOutside = () => {
+  //   const { closeOnClickOutside, dropdown: { closeDropdown }} = this.props;
+
+  //   closeOnClickOutside && closeDropdown && closeDropdown();
+  // }
+  handleOutsideClick = (e) => {
+    if ((this.componentRef && this.componentRef.contains(e.target)) || !this.props.isOpen) {
+      return;
+    }
     const { closeOnClickOutside, dropdown: { closeDropdown }} = this.props;
 
     closeOnClickOutside && closeDropdown && closeDropdown();
+    e.stopPropagation();
   }
 
+  componentDidMount = () => {
+
+    document.addEventListener('mousedown', this.handleOutsideClick);
+  }
+  componentWillUnmount = () => {
+    document.removeEventListener('mousedown', this.handleOutsideClick);
+
+  }
   getPopperPlacement = () => {
     const { pin, placement = '' } = this.props;
     const popperPin = pin === 'left' ? 'start' : 'end';
@@ -151,6 +176,7 @@ const DropdownBody = dropdownBodyEnhancer(
             placement={ popperPlacement }
             modifiers={ popperModifiers }
             positionFixed={ positionFixed }
+            innerRef={ this.setComponentRef }
           >
             { ({ ref, style, placement }) => (
               <DropdownBodyTag

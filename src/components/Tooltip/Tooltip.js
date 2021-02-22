@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { Manager, Popper, Reference } from 'react-popper';
-import onClickOutside from 'react-onclickoutside';
+// import onClickOutside from 'react-onclickoutside';
 import { Portal } from 'react-portal';
 
 import { TooltipTargetTag, TooltipMessageTag, TooltipArrowTag } from './Tooltip.theme';
@@ -40,109 +40,132 @@ type TooltipState = {
   isOpen: boolean,
 }
 
-const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
-  class Tooltip extends React.PureComponent<TooltipProps, TooltipState> {
+// const Tooltip: React$ComponentType<TooltipProps> = onClickOutside(
 
-    static defaultProps = {
-      defaultOpen: false,
-      withPortal: true,
-      trigger: 'hover',
-      tagName: 'div',
-      cursor: 'default',
+// );
+class Tooltip extends React.PureComponent<TooltipProps, TooltipState> {
+
+  static defaultProps = {
+    defaultOpen: false,
+    withPortal: true,
+    trigger: 'hover',
+    tagName: 'div',
+    cursor: 'default',
+  };
+
+  constructor(props: TooltipProps) {
+    super(props);
+    // this.componentRef = React.createRef();
+    this.componentRef = null;
+
+    this.setComponentRef = element => {
+      this.componentRef = element;
     };
-
-    constructor(props: TooltipProps) {
-      super(props);
-
-      this.state = {
-        isOpen: props.defaultOpen || false,
-      };
-    }
-
-    openTooltip = () => this.setState({ isOpen: true });
-    closeTooltip = () => this.setState({ isOpen: false });
-    toggleTooltip = () => this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
-
-    handleClickOutside = (event: *) => {
-      this.closeTooltip();
-      event.stopPropagation();
+    this.state = {
+      isOpen: props.defaultOpen || false,
     };
+  }
 
-    renderTooltipMessage = () => {
-      const { placement, withPortal, message, eventsEnabled, modifiers, ...rest } = this.props;
-      const { isOpen } = this.state;
-      const PortalCondComponent = withPortal ? Portal : React.Fragment;
+  openTooltip = () => this.setState({ isOpen: true });
+  closeTooltip = () => this.setState({ isOpen: false });
+  toggleTooltip = () => this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
 
-      return (
-        <PortalCondComponent>
-          <Popper placement={ placement } eventsEnabled={ eventsEnabled } modifiers={ modifiers }>
-            { ({ ref, style, placement, arrowProps }) => (
-              <If condition={ isOpen }>
-                <TooltipMessageTag
-                  modifiers={ rest }
-                  className="ignore-react-onclickoutside"
-                  tagName="div"
-                  insideRef={ ref }
-                  data-placement={ placement }
-                  placement={ placement }
-                  onClick={ (event: *) => event.stopPropagation() }
-                  style={ style }
-                >
-                  { message }
-                  <TooltipArrowTag placement={ placement }insideRef={ arrowProps.ref } style={ arrowProps.style } />
-                </TooltipMessageTag>
-              </If>
-            ) }
-          </Popper>
-        </PortalCondComponent>
-      );
+  handleOutsideClick = (e) => {
+    if (this.componentRef && this.componentRef.contains(e.target)) {
+      return;
     }
+    this.closeTooltip();
+    e.stopPropagation();
+  }
 
-    render() {
-      const { children, tagName, cursor, placement, message, trigger, eventsEnabled, modifiers, ...rest } = this.props;
-      const { isOpen } = this.state;
+  componentDidMount = () => {
 
-      const targetTriggerEvents = typeof children === 'function'
-        ? {}
-        : trigger === 'hover'
-          ? {
-            onMouseEnter: this.openTooltip,
-            onMouseLeave: this.closeTooltip,
-          } : {
-            onClick: this.toggleTooltip,
-          };
+    document.addEventListener('click', this.handleOutsideClick);
+  }
+  componentWillUnmount = () => {
+    document.removeEventListener('click', this.handleOutsideClick);
 
+  }
+  // handleClickOutside = (event: *) => {
+  //   this.closeTooltip();
+  //   event.stopPropagation();
+  // };
 
-      const renderedChildren = typeof children === 'function'
-        ? children({
-          isOpen,
-          openTooltip: this.openTooltip,
-          closeTooltip: this.closeTooltip,
-          toggleTooltip: this.toggleTooltip,
-        })
-        : children;
+  renderTooltipMessage = () => {
+    const { placement, withPortal, message, eventsEnabled, modifiers, ...rest } = this.props;
+    const { isOpen } = this.state;
+    const PortalCondComponent = withPortal ? Portal : React.Fragment;
 
-      return (
-        <Manager tag={ false }>
-          <Reference>
-            { ({ ref }) => (
-              <TooltipTargetTag
-                { ...rest }
-                { ...targetTriggerEvents }
-                style={{ cursor }}
-                tagName={ tagName }
+    return (
+      <PortalCondComponent>
+        <Popper placement={ placement } eventsEnabled={ eventsEnabled } modifiers={ modifiers }>
+          { ({ ref, style, placement, arrowProps }) => (
+            <If condition={ isOpen }>
+              <TooltipMessageTag
+                modifiers={ rest }
+                className="ignore-react-onclickoutside"
+                tagName="div"
                 insideRef={ ref }
+                data-placement={ placement }
+                placement={ placement }
+                onClick={ (event: *) => event.stopPropagation() }
+                style={ style }
               >
-                { renderedChildren }
-                { this.renderTooltipMessage() }
-              </TooltipTargetTag>
-            ) }
-          </Reference>
-        </Manager>
-      );
-    }
-  },
-);
+                { message }
+                <TooltipArrowTag placement={ placement }insideRef={ arrowProps.ref } style={ arrowProps.style } />
+              </TooltipMessageTag>
+            </If>
+          ) }
+        </Popper>
+      </PortalCondComponent>
+    );
+  }
+
+  render() {
+    const { children, tagName, cursor, placement, message, trigger, eventsEnabled, modifiers, ...rest } = this.props;
+    const { isOpen } = this.state;
+
+    const targetTriggerEvents = typeof children === 'function'
+      ? {}
+      : trigger === 'hover'
+        ? {
+          onMouseEnter: this.openTooltip,
+          onMouseLeave: this.closeTooltip,
+        } : {
+          onClick: this.toggleTooltip,
+        };
+
+
+    const renderedChildren = typeof children === 'function'
+      ? children({
+        isOpen,
+        openTooltip: this.openTooltip,
+        closeTooltip: this.closeTooltip,
+        toggleTooltip: this.toggleTooltip,
+      })
+      : children;
+
+    return (
+      <Manager tag={ false }>
+        <Reference innerRef={ this.setComponentRef }>
+          { ({ ref }) => (
+            <TooltipTargetTag
+              { ...rest }
+              { ...targetTriggerEvents }
+              style={{ cursor }}
+              tagName={ tagName }
+              insideRef={ ref }
+            >
+              { renderedChildren }
+              { this.renderTooltipMessage() }
+            </TooltipTargetTag>
+          )
+          }
+        </Reference>
+      </Manager>
+    );
+  }
+}
 
 export {
   Tooltip,

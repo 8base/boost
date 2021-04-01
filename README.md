@@ -8,6 +8,15 @@ Storybook - https://8base.github.io/boost/
 yarn storybook
 ```
 
+## Update snapshots
+```
+docker  pull vorobeez/puppeteer-e2e-chrome:74.0.3729.169-1
+
+docker run --privileged --name e2e-chrome -p 9222:9222 -d vorobeez/puppeteer-e2e-chrome:74.0.3729.169-1
+
+yarn e2e:update
+```
+
 ## Usage
 
 ### Basic usage

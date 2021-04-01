@@ -58,6 +58,7 @@ export {
   Alert,
   APIToken,
   Calendar,
+  Camera,
   Check,
   ChevronDown,
   ChevronLeft,
@@ -104,5 +105,4 @@ export {
   Tables,
   Trashcan,
   TreeView,
-  Camera,
 };

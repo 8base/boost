@@ -20,11 +20,17 @@ export const common = () => (
       <Avatar src="https://randomuser.me/api/portraits/women/17.jpg" />
     </Row>
     <Row>
+      <Avatar size="xxl" />
       <Avatar size="xl" />
       <Avatar size="lg" />
       <Avatar size="md" />
       <Avatar size="sm" />
       <Avatar size="xs" />
+    </Row>
+    <Row>
+      <Avatar size="xl" variant="circle" />
+      <Avatar size="xl" variant="square" />
+      <Avatar size="xl" variant="rounded" />
     </Row>
   </Column>
 );
@@ -34,11 +40,22 @@ common.story = {
 };
 
 export const withPick = () => (
-  <Avatar
-    src="https://randomuser.me/api/portraits/women/17.jpg"
-    onPick={ () => alert(1) }
-    pickLabel="Change"
-  />
+  <Column>
+    <Row>
+      <Avatar
+        src="https://randomuser.me/api/portraits/women/17.jpg"
+        onPick={ () => alert(1) }
+      />
+      <Avatar
+        src="https://randomuser.me/api/portraits/women/17.jpg"
+        onPick={ () => alert(1) }
+        pickLabel="Update"
+        pickVariant="fullWidth"
+        variant="rounded"
+      />
+    </Row>
+  </Column>
+
 );
 
 withPick.story = {

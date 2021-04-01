@@ -36,7 +36,7 @@ const [IconSvgTag, themeSvg] = createThemeTag(`${name}Svg`, {
     },
   },
   modifiers: {
-    size: {
+    size: (props) => ({
       xs: {
         width: '12px',
         height: '12px',
@@ -61,7 +61,11 @@ const [IconSvgTag, themeSvg] = createThemeTag(`${name}Svg`, {
         height: '100%',
         width: '100%',
       },
-    },
+      custom: {
+        height: props.customSize,
+        width: props.customSize,
+      },
+    }),
   },
 });
 

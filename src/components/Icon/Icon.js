@@ -12,8 +12,10 @@ export type IconProps = {
   name: string,
   /** icon color */
   color?: $Keys<typeof COLORS>,
-  /** icon size */
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch',
+  /** icon size ('xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch' | 'custom') */
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'stretch' | 'custom',
+  /** custom icon size (it is required if the size set to custom) */
+  customSize?: string,
   /** custom icon class */
   className?: string,
   /** title attribute for the icon */

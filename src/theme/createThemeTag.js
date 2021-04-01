@@ -35,21 +35,21 @@ const getModifiersStyles = (themeName: string, props: Object) => {
   const themeModifiers = fp.getOr({}, ['theme', 'components', themeName, 'modifiers'], props);
   const omittedProps = fp.omit(['theme'], props);
 
-  return Object.entries(themeModifiers)
-    .reduce(
-      (result, [modifierName, modifierData]) => {
-        const modifierStyles = typeof modifierData === 'function'
-          ? modifierData(omittedProps)
-          : modifierData || {};
+  const themeStyles = typeof themeModifiers === 'function'
+    ? themeModifiers(omittedProps)
+    : themeModifiers;
 
+  return Object.keys(themeStyles)
+    .reduce(
+      (result, modifierName) => {
         const modifierValue = props[modifierName];
 
         let styles = {};
 
         if (typeof modifierValue !== 'boolean') {
-          styles = modifierStyles[modifierValue] || {};
+          styles = themeStyles[modifierName][modifierValue] || {};
         } else if (modifierValue === true) {
-          styles = themeModifiers[modifierName];
+          styles = themeStyles[modifierName];
         }
 
         return { ...result, ...styles };

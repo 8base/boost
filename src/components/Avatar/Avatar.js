@@ -55,7 +55,7 @@ function Avatar({
         &&
         <AvatarHandleFullWidthTag modifiers={ rest } onClick={ onPick } >
           <AvatarHandleIconContainerTag modifiers={ rest }>
-            <Icon name="Camera" color="WHITE" size="custom" customSize={ CAMERA_ICON_SIZE[rest.size] } />
+            <Icon name="Camera" color="WHITE" size="custom" customSize={ CAMERA_ICON_SIZE[rest.size || 'lg'] } />
             <div>
               { pickLabel }
             </div>

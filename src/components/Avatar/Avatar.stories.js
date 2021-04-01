@@ -48,6 +48,7 @@ export const withPick = () => (
       />
       <Avatar
         src="https://randomuser.me/api/portraits/women/17.jpg"
+        size="xxl"
         onPick={ () => alert(1) }
         pickLabel="Update"
         pickVariant="fullWidth"

@@ -51,3 +51,14 @@ export const withSize = () => (
 withSize.story = {
   name: 'with size',
 };
+
+export const withCustomSize = () => (
+  <Row alignItems="center">
+    <Icon name="House" size="custom" customSize="100px" />
+    <Icon name="House" size="custom" customSize="2rem" />
+  </Row>
+);
+
+withCustomSize.story = {
+  name: 'with custom size',
+};

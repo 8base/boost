@@ -5,6 +5,7 @@ import Add from './Add.svg';
 import Alert from './Alert.svg';
 import APIToken from './APIToken.svg';
 import Calendar from './Calendar.svg';
+import Camera from './Camera.svg';
 import Check from './Check.svg';
 import ChevronDown from './ChevronDown.svg';
 import ChevronLeft from './ChevronLeft.svg';
@@ -57,6 +58,7 @@ export {
   Alert,
   APIToken,
   Calendar,
+  Camera,
   Check,
   ChevronDown,
   ChevronLeft,

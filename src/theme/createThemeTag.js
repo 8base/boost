@@ -33,9 +33,13 @@ const getRootStyles = (themeName: string, props: *) => {
 
 const getModifiersStyles = (themeName: string, props: Object) => {
   const themeModifiers = fp.getOr({}, ['theme', 'components', themeName, 'modifiers'], props);
-  // const omittedProps = fp.omit(['theme'], props);
+  const omittedProps = fp.omit(['theme'], props);
 
-  return Object.keys(themeModifiers)
+  const themeStyles = typeof themeModifiers === 'function'
+    ? themeModifiers(omittedProps)
+    : themeModifiers;
+
+  return Object.keys(themeStyles)
     .reduce(
       (result, modifierName) => {
         const modifierValue = props[modifierName];
@@ -43,9 +47,9 @@ const getModifiersStyles = (themeName: string, props: Object) => {
         let styles = {};
 
         if (typeof modifierValue !== 'boolean') {
-          styles = themeModifiers[modifierName][modifierValue] || {};
+          styles = themeStyles[modifierName][modifierValue] || {};
         } else if (modifierValue === true) {
-          styles = themeModifiers[modifierName];
+          styles = themeStyles[modifierName];
         }
 
         return { ...result, ...styles };

@@ -1,3 +1,8 @@
+<a name="1.11.4"></a>
+## [1.11.4](https://github.com/8base/boost/compare/v1.11.3...v1.11.4) (2021-04-01)
+
+
+
 <a name="1.11.3"></a>
 ## [1.11.3](https://github.com/8base/boost/compare/v1.11.2...v1.11.3) (2021-01-25)
 

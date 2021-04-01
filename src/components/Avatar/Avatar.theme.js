@@ -144,7 +144,7 @@ const [AvatarHandleFullWidthTag, themeHandleFullWidth] = createThemeTag(`${name}
         borderRadius: '17%',
       },
     },
-  }
+  },
 }));
 
 const [AvatarHandleIconContainerTag, themeHandleIconContainer] = createThemeTag(`${name}HandleIconContainer`, ({ COLORS }: *) => ({

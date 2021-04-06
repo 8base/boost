@@ -14,6 +14,7 @@ const name = 'formSectionTitle';
 const [FormSectionTitleTag, theme] = createThemeTag(name, ({ FONTS }: *) => ({
   root: {
     ...FONTS.H5,
+    letterSpacing: '0.5px',
   },
   modifiers: {},
   defaults: {},

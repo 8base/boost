@@ -9,7 +9,8 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *
   root: props => ({
     width: props.width ? `${props.width}rem` : props.stretch ? '100%' : SIZES.FIELD_WIDTH,
     outline: 'none',
-    paddingLeft: props.hasLeftIcon ? '36px' : '8px',
+    paddingTop: '1px',
+    paddingLeft: props.hasLeftIcon ? '36px' : '15px',
     paddingRight: props.hasRightIcon || (props.type === 'number' && !props.hideNumberArrows) ? '48px' : '16px',
 
     backgroundColor: (props.disabled || props.readOnly)
@@ -38,6 +39,7 @@ const [InputTag, themeInput] = createThemeTag(name, ({ COLORS, SIZES, FONTS }: *
     },
 
     ...FONTS.BODY_1,
+    color: props.disabled ? COLORS.LIGHT_TEXT_COLOR : COLORS.PRIMARY_TEXT_COLOR,
     height: '36px',
     transition: 'all .15s ease-in-out',
 

@@ -30,6 +30,11 @@ common.story = {
 
 export const withKindModifiers = () => (
   <Column>
+    <Text kind="h1">H1 kind: { placeholderText }</Text>
+    <Text kind="h2">H2 kind: { placeholderText }</Text>
+    <Text kind="h3">H3 kind: { placeholderText }</Text>
+    <Text kind="h4">H4 kind: { placeholderText }</Text>
+    <Text kind="h5">H5 kind: { placeholderText }</Text>
     <Text kind="subtitle">Subtitle kind: { placeholderText }</Text>
     <Text kind="body">Body kind: { placeholderText }</Text>
     <Text kind="overline-1">Overline-1 kind: { placeholderText }</Text>

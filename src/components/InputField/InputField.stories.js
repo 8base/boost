@@ -97,6 +97,11 @@ export const common = () => (
           mask="999-999"
           stretch={ false }
         />
+        <InputField
+          label="Email"
+          disabled
+          input={{ name: 'input', value: 'hello@8base.com', onChange }}
+        />
       </Column>
     </Grid.Box>
     <Grid.Box>

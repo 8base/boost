@@ -104,3 +104,9 @@ export const withKindUnderline = () => (
 withKindUnderline.story = {
   name: 'with kind="underline"',
 };
+
+export const disabledStory = () => <Input value="hello@8base.com" name="input" onChange={ () => null } disabled />;
+
+disabledStory.story = {
+  name: 'with disabled=true',
+};

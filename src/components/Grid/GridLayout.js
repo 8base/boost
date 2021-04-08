@@ -9,7 +9,9 @@ type GridLayoutProps = {
   /** when true then stretch to full width */
   stretch?: boolean,
   /** possbile spaces between grid items */
-  gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'none',
+  gap?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'none' | 'custom',
+  /** custom grid-gap value (it is required if the gap set to custom) */
+  customGap?: string,
   /** when true then set inline-grid */
   inline?: boolean,
   /** possible paddings of the grid layout */
@@ -70,7 +72,7 @@ const [StyledTag, theme] = createThemeTag(name, {
 
     return style;
   },
-  modifiers: {
+  modifiers: (props) => ({
     gap: {
       xs: {
         gridGap: '4px',
@@ -91,6 +93,9 @@ const [StyledTag, theme] = createThemeTag(name, {
         gridGap: '40px',
       },
       none: {},
+      custom: {
+        gridGap: props.customGap,
+      },
     },
     padding: {
       none: {},
@@ -115,7 +120,7 @@ const [StyledTag, theme] = createThemeTag(name, {
       width: '100%',
       maxWidth: '100%',
     },
-  },
+  }),
 });
 
 class GridLayout extends React.PureComponent<GridLayoutProps> {

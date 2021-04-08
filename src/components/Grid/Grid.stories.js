@@ -138,6 +138,17 @@ export const withGap = () => (
         <Block />
       </Grid.Box>
     </Grid.Layout>
+    <Grid.Layout inline gap="custom" customGap="64px" columns="auto auto auto">
+      <Grid.Box>
+        <Block>custom</Block>
+      </Grid.Box>
+      <Grid.Box>
+        <Block />
+      </Grid.Box>
+      <Grid.Box>
+        <Block />
+      </Grid.Box>
+    </Grid.Layout>
   </Column>
 );
 

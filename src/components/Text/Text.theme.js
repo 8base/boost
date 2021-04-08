@@ -30,6 +30,21 @@ const [TextTag, theme] = createThemeTag(name, ({ COLORS, FONTS }: *): * => ({
       subtitle: {
         ...FONTS.SUBTITLE,
       },
+      h1: {
+        ...FONTS.H1,
+      },
+      h2: {
+        ...FONTS.H2,
+      },
+      h3: {
+        ...FONTS.H3,
+      },
+      h4: {
+        ...FONTS.H4,
+      },
+      h5: {
+        ...FONTS.H5,
+      },
     },
 
     color: fp.mapValues(

@@ -45,6 +45,8 @@ type InputFieldProps = {
   min?: string | number,
   max?: string | number,
   mask?: string,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 const InputField = ({
@@ -74,11 +76,12 @@ const InputField = ({
   min,
   max,
   mask,
+  showErrorOnTouched,
   ...rest
 }: InputFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
 
-  const hasError = formUtils.hasError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
   return (
     <FormField
@@ -89,6 +92,7 @@ const InputField = ({
       hideErrorLabel={ hideErrorLabel }
       input={ input }
       meta={ meta }
+      showErrorOnTouched={ showErrorOnTouched }
     >
       <Input
         align={ align }
@@ -128,6 +132,7 @@ InputField.defaultProps = {
   type: 'text',
   input: {},
   meta: {},
+  showErrorOnTouched: true,
 };
 
 export { InputField };

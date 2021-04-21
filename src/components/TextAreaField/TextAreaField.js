@@ -21,6 +21,8 @@ type TextAreaFieldProps = {
   input: Object,
   /** form meta object */
   meta?: Object,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 
@@ -32,14 +34,15 @@ function TextAreaField({
   placeholder,
   rows,
   stretch,
+  showErrorOnTouched,
   ...rest
 }: TextAreaFieldProps) {
   const { name, value, onChange } = input;
 
-  const hasError = formUtils.hasError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
   return (
-    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta }>
+    <FormField label={ label } stretch={ stretch } input={ input } meta={ meta } showErrorOnTouched={ showErrorOnTouched }>
       <TextArea
         { ...rest }
         hasError={ hasError }
@@ -54,5 +57,9 @@ function TextAreaField({
     </FormField>
   );
 }
+
+TextAreaField.defaultProps = {
+  showErrorOnTouched: true,
+};
 
 export { TextAreaField };

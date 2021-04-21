@@ -30,6 +30,8 @@ type RadioGroupFieldProps = {
   alignContent?: PropLayout,
   alignItems?: PropLayoutStretch,
   flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse',
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 const RadioGroupField = ({
@@ -46,14 +48,15 @@ const RadioGroupField = ({
   alignContent,
   alignItems,
   flexWrap,
+  showErrorOnTouched,
   ...rest
 }: RadioGroupFieldProps) => {
   const { name, value, onChange } = input;
 
-  const hasError = formUtils.hasError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
   return (
-    <FormField { ...rest } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta }>
+    <FormField { ...rest } hideErrorLabel={ hideErrorLabel } input={ input } meta={ meta } showErrorOnTouched={ showErrorOnTouched }>
       <Radio.Group
         direction={ direction }
         gap={ gap }
@@ -73,6 +76,10 @@ const RadioGroupField = ({
       </Radio.Group>
     </FormField>
   );
+};
+
+RadioGroupField.defaultProps = {
+  showErrorOnTouched: true,
 };
 
 export { RadioGroupField };

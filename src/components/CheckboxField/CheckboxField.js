@@ -22,6 +22,8 @@ type CheckboxFieldProps = {
   nowrap?: boolean,
   /** when true then stretch to the maximal width */
   stretch?: boolean,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 const CheckboxField = ({
@@ -32,13 +34,14 @@ const CheckboxField = ({
   disabled,
   color,
   nowrap,
+  showErrorOnTouched,
   ...rest
 }: CheckboxFieldProps) => {
   const { name, value, onChange, onFocus, onBlur } = input;
-  const hasError = formUtils.hasError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
   return (
-    <FormField { ...rest } input={ input } meta={ meta } stretch={ stretch }>
+    <FormField { ...rest } input={ input } meta={ meta } stretch={ stretch } showErrorOnTouched={ showErrorOnTouched }>
       <Checkbox
         label={ label }
         name={ name }
@@ -54,6 +57,10 @@ const CheckboxField = ({
       />
     </FormField>
   );
+};
+
+CheckboxField.defaultProps = {
+  showErrorOnTouched: true,
 };
 
 export { CheckboxField };

@@ -15,6 +15,7 @@ type FormFieldProps = {
   hideErrorLabel?: boolean,
   direction?: 'row' | 'column',
   meta?: MetaType,
+  showErrorOnTouched?: boolean,
 };
 
 const name = 'formField';
@@ -101,10 +102,11 @@ const FormField = ({
   note,
   children,
   hideErrorLabel,
+  showErrorOnTouched,
   ...rest
 }: FormFieldProps) => {
-  const hasError = formUtils.hasError(meta);
-  let error: any = formUtils.getError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
+  let error: any = formUtils.getError(meta, showErrorOnTouched);
 
   const hasLabel = !!label;
 
@@ -142,6 +144,7 @@ FormField.defaultProps = {
   hideErrorLabel: false,
   stretch: true,
   direction: 'column',
+  showErrorOnTouched: true,
 };
 
 export { FormField, theme, FormLabel, ControlErrorTag };

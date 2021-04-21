@@ -23,21 +23,27 @@ type SelectFieldProps = {
   inputValue?: string,
   /** callback to control search value */
   onInputChange?: (value: string, event?: SyntheticInputEvent<HTMLInputElement>) => void,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 class SelectField extends React.Component<SelectFieldProps> {
-  collectFormFieldProps() {
-    const { meta, input, stretch, label } = this.props;
+  static defaultProps = {
+    showErrorOnTouched: true,
+  };
 
-    return { meta, input, stretch, label };
+  collectFormFieldProps() {
+    const { meta, input, stretch, label, showErrorOnTouched } = this.props;
+
+    return { meta, input, stretch, label, showErrorOnTouched };
   }
 
   collectSelectProps() {
     const {
-      input = {}, meta, placeholder, options, multiple, isMulti, creatable, stretch, filterOption, getOptionValue, getOptionLabel,
+      input = {}, meta, placeholder, options, multiple, isMulti, creatable, stretch, filterOption, getOptionValue, getOptionLabel, showErrorOnTouched,
     } = this.props;
 
-    const hasError = formUtils.hasError(meta);
+    const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
     return {
       ...this.props,

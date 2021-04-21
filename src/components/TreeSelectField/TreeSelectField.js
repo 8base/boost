@@ -20,9 +20,14 @@ type TreeSelectFieldProps = {
   input: InputType,
   /** form meta object */
   meta?: MetaType,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
 class TreeSelectField extends React.Component<TreeSelectFieldProps> {
+  static defaultProps = {
+    showErrorOnTouched: true,
+  };
 
   onChange = (currenNode: Object, selectedNodes: Object[]) => {
     const { input } = this.props;
@@ -32,15 +37,15 @@ class TreeSelectField extends React.Component<TreeSelectFieldProps> {
   };
 
   collectFormFieldProps() {
-    const { meta, input, stretch, label } = this.props;
+    const { meta, input, stretch, label, showErrorOnTouched } = this.props;
 
-    return { meta, input, stretch, label };
+    return { meta, input, stretch, label, showErrorOnTouched };
   }
 
   collectSelectProps() {
-    const { input, meta, placeholder, options, stretch } = this.props;
+    const { input, meta, placeholder, options, stretch, showErrorOnTouched } = this.props;
 
-    const hasError = formUtils.hasError(meta);
+    const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
     return {
       ...this.props,

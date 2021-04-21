@@ -11,9 +11,11 @@ type SwitchFieldProps = {
   label?: string,
   input: InputType,
   meta?: MetaType,
+  /** show error only for touched fields */
+  showErrorOnTouched?: boolean,
 };
 
-const SwitchField = ({ label, input, meta, ...rest }: SwitchFieldProps) => {
+const SwitchField = ({ label, input, meta, showErrorOnTouched, ...rest }: SwitchFieldProps) => {
   const {
     name,
     value,
@@ -21,10 +23,10 @@ const SwitchField = ({ label, input, meta, ...rest }: SwitchFieldProps) => {
     onFocus,
     onBlur,
   } = input;
-  const hasError = formUtils.hasError(meta);
+  const hasError = formUtils.hasError(meta, showErrorOnTouched);
 
   return (
-    <FormField { ...rest } input={ input } meta={ meta }>
+    <FormField { ...rest } input={ input } meta={ meta } showErrorOnTouched={ showErrorOnTouched }>
       <Switch
         name={ name }
         label={ label }
@@ -36,6 +38,10 @@ const SwitchField = ({ label, input, meta, ...rest }: SwitchFieldProps) => {
       />
     </FormField>
   );
+};
+
+SwitchField.defaultProps = {
+  showErrorOnTouched: true,
 };
 
 export { SwitchField };

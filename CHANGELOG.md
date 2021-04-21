@@ -1,3 +1,13 @@
+<a name="1.11.6"></a>
+## [1.11.6](https://github.com/8base/boost/compare/v1.11.5...v1.11.6) (2021-04-21)
+
+
+### Features
+
+* add showErrorOnTouched prop to the all fields ([9f0919d](https://github.com/8base/boost/commit/9f0919d))
+
+
+
 <a name="1.11.5"></a>
 ## [1.11.5](https://github.com/8base/boost/compare/v1.11.4...v1.11.5) (2021-04-08)
 

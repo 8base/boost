@@ -5,3 +5,7 @@
   border-radius: 0;
   display: inline;
 }
+
+html {
+  height: 100%;
+}

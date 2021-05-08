@@ -88,7 +88,7 @@
     "color": "^3.0.0",
     "deepmerge": "^3.0.0",
     "emotion-theming": "^10.0.14",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "luxon": "1.7.1",
     "react-datepicker": "^2.3.0",
     "react-dropdown-tree-select": "1.13.0",

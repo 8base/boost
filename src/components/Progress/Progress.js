@@ -10,12 +10,14 @@ import {
   ProgressSeparatorTag,
   ProgressTextTag,
   ProgressLabelTag,
+  ProgressDescriptionTag,
 } from './Progress.theme';
 
 type ProgressProps = {
   value: number,
-  label?: string,
+  label?: string | React$Node,
   valueText?: React$Node,
+  description?: React$Node,
   valueWidth?: number | string,
   size?: 'sm' | 'md' | 'lg',
   color?: string,
@@ -28,6 +30,7 @@ const Progress = ({
   label,
   valueText,
   valueWidth,
+  description,
   ...rest
 }: ProgressProps) => {
   value = value > 100 ? value % 100 : value;
@@ -46,6 +49,7 @@ const Progress = ({
           { valueText ? valueText : `${value} %` }
         </ProgressTextTag>
       </ProgressBodyTag>
+      { description && <ProgressDescriptionTag> { description } </ProgressDescriptionTag> }
     </ProgressTag>
   );
 };

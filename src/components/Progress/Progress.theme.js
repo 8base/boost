@@ -23,18 +23,21 @@ const [ProgressBodyTag, themeBody] = createThemeTag(`${name}Body`, {
 });
 
 const HEIGHT_BY_SIZE = {
+  xs: 4,
   sm: 8,
   md: 12,
   lg: 16,
 };
 
 const HEIGHT_SEPARATOR_BY_SIZE = {
+  xs: 8,
   sm: 12,
   md: 18,
   lg: 20,
 };
 
 const BORDER_RADIUS_BY_SIZE = {
+  xs: 4,
   sm: 4,
   md: 8,
   lg: 12,
@@ -87,6 +90,12 @@ const [ProgressLabelTag, themeLabel] = createThemeTag(`${name}Label`, ({ FONTS }
   },
 }));
 
+const [ProgressDescriptionTag, themeDescription] = createThemeTag(`${name}Description`, ({ FONTS }: *) => ({
+  root: {
+    ...FONTS.BODY_3,
+  },
+}));
+
 const theme = {
   ...themeProgress,
   ...themeBody,
@@ -95,6 +104,7 @@ const theme = {
   ...themeSeparator,
   ...themeText,
   ...themeLabel,
+  ...themeDescription,
 };
 
 export {
@@ -106,4 +116,5 @@ export {
   ProgressSeparatorTag,
   ProgressTextTag,
   ProgressLabelTag,
+  ProgressDescriptionTag,
 };

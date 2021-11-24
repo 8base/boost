@@ -19,7 +19,7 @@ type ProgressProps = {
   valueText?: React$Node,
   description?: React$Node,
   valueWidth?: number | string,
-  size?: 'sm' | 'md' | 'lg',
+  size?: 'xs' | 'sm' | 'md' | 'lg',
   color?: string,
   backgroundColor?: string,
   showSeparator?: boolean,

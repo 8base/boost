@@ -61,6 +61,29 @@ export const common = () => (
       backgroundColor="GREEN_30"
     />
     <br />
+    <Progress
+      size="xs"
+      valueWidth="25%"
+      label={ (
+        <div>
+          <span style={{ fontWeight: 600 }} >Developers and Administrator Accounts</span>
+        </div>
+      ) }
+      description={ (
+        <div>
+          +$40/mo per  additional member
+        </div>
+      ) }
+      valueText={ (
+        <div>
+          8 / 6
+        </div>
+      ) }
+      value={ (100 * 8) / 6 }
+      showSeparator
+      backgroundColor="RED_30"
+    />
+    <br />
   </Column>
 );
 

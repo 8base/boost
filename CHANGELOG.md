@@ -1,3 +1,13 @@
+<a name="1.11.7"></a>
+## [1.11.7](https://github.com/8base/boost/compare/v1.11.6...v1.11.7) (2021-11-25)
+
+
+### Bug Fixes
+
+* expand progress component ([#405](https://github.com/8base/boost/issues/405)) ([fdbeb25](https://github.com/8base/boost/commit/fdbeb25))
+
+
+
 <a name="1.11.6"></a>
 ## [1.11.6](https://github.com/8base/boost/compare/v1.11.5...v1.11.6) (2021-04-21)
 

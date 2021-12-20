@@ -67,9 +67,6 @@ const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *
   root: {
     paddingLeft: '12px',
     cursor: 'pointer',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
 
     ...FONTS.BODY_2,
   },
@@ -77,7 +74,9 @@ const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *
   modifiers: {
     nowrap: {
       whiteSpace: 'nowrap',
-    },
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+    }
   },
 }));
 

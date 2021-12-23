@@ -77,7 +77,7 @@ export const common = () => (
     <Checkbox label="With error" checked hasError />
     <Checkbox label="With disabled" checked disabled />
     <Container>
-      <Checkbox label="With overflow" checked />
+      <Checkbox label="With overflow" nowrap checked />
     </Container>
     <Checkbox label="With indeterminate" indeterminate />
   </Column>

@@ -79,9 +79,6 @@ export const common = () => (
     <Container>
       <Checkbox label="With overflow" checked />
     </Container>
-    <Container style={{ maxWidth: '175px' }}>
-      <Checkbox label="With nowrap & ellipsis" checked nowrap />
-    </Container>
     <Checkbox label="With indeterminate" indeterminate />
   </Column>
 );

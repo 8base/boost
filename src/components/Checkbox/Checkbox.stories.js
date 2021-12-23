@@ -7,10 +7,6 @@ const Container = styled('div')`
   max-width: 100px;
 `;
 
-const WideContainer = styled('div')`
-  max-width: 175px;
-`;
-
 class CheckboxState extends Component<*, Object> {
   state = {
     checked: false,
@@ -83,9 +79,9 @@ export const common = () => (
     <Container>
       <Checkbox label="With overflow" checked />
     </Container>
-    <WideContainer>
+    <Container style={{ maxWidth: '175px' }}>
       <Checkbox label="With nowrap & ellipsis" checked nowrap />
-    </WideContainer>
+    </Container>
     <Checkbox label="With indeterminate" indeterminate />
   </Column>
 );

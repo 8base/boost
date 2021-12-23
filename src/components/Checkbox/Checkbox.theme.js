@@ -76,7 +76,7 @@ const [CheckboxTextTag, themeText] = createThemeTag(`${name}Text`, ({ FONTS }: *
       whiteSpace: 'nowrap',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
-    }
+    },
   },
 }));
 

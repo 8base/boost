@@ -1,3 +1,13 @@
+<a name="1.11.8"></a>
+## [1.11.8](https://github.com/8base/boost/compare/v1.11.7...v1.11.8) (2022-02-04)
+
+
+### Bug Fixes
+
+* fix checkbox nowrap prop ([#406](https://github.com/8base/boost/issues/406)) ([613d17b](https://github.com/8base/boost/commit/613d17b))
+
+
+
 <a name="1.11.7"></a>
 ## [1.11.7](https://github.com/8base/boost/compare/v1.11.6...v1.11.7) (2021-11-25)
 

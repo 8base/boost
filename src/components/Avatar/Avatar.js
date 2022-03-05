@@ -30,13 +30,13 @@ const CAMERA_ICON_SIZE = {
 };
 
 const getInitials = (firstName?: string, lastName?: string): string => {
-  if (!firstName && !lastName) return DEFAULT_INITIALS;
+  if (firstName && lastName) return firstName.slice(0, 1) + lastName.slice(0, 1);
 
   if (firstName && !lastName) return firstName.slice(0, 1);
 
   if (!firstName && lastName) return lastName.slice(0, 1);
 
-  return firstName.slice(0, 1) + lastName.slice(0, 1);
+  return DEFAULT_INITIALS;
 };
 
 function Avatar({

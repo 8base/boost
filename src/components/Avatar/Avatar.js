@@ -29,6 +29,16 @@ const CAMERA_ICON_SIZE = {
   xxl: '24px',
 };
 
+const getInitials = (firstName?: string, lastName?: string): string => {
+  if (!firstName && !lastName) return DEFAULT_INITIALS;
+
+  if (firstName && !lastName) return firstName.slice(0, 1);
+
+  if (!firstName && lastName) return lastName.slice(0, 1);
+
+  return firstName.slice(0, 1) + lastName.slice(0, 1);
+};
+
 function Avatar({
   src,
   firstName,
@@ -38,7 +48,7 @@ function Avatar({
   pickVariant,
   ...rest
 }: AvatarProps) {
-  const initials = firstName && lastName ? firstName.slice(0, 1) + lastName.slice(0, 1) : DEFAULT_INITIALS;
+  const initials = getInitials(firstName, lastName);
 
   return (
     <AvatarTag pickVariant={ pickVariant } { ...rest } firstName={ firstName } tagName="div">

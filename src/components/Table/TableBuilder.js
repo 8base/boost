@@ -81,7 +81,7 @@ type TableBulderProps = {
   /** Callback executed when the row `isExpanded` state is changed  */
   onExpand?: ({ key: string, isExpanded: boolean }) => void,
   /** Callback to group data by field*/
-  groupBy: <T = $Shape<any>>(data: T[]) => { [key: string]: T[]},
+  groupBy: <T: $Shape<any>>(data: T[]) => { [key: string]: T[]},
   /** Callback to render grouped table title */
   renderGroupTitle?: (key:string, data: any) => React$Node,
 };

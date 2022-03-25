@@ -283,6 +283,81 @@ const TABLE_DATA = [
   },
 ];
 
+const GROUPED_TABLE_DATA = [
+  {
+    id: '1',
+    group: 'First',
+    createdAt: '2018-09-03T09:59:43.000Z',
+    updatedAt: '2018-09-03T09:59:43.000Z',
+    firstName: 'Cecily',
+    lastName: 'Oen',
+    email: 'parasol@skilfish.co.uk',
+  },
+  {
+    id: '2',
+    group: 'First',
+    createdAt: '2018-09-03T10:34:15.000Z',
+    updatedAt: '2018-09-03T10:34:15.000Z',
+    firstName: 'Larry',
+    lastName: 'Marwick',
+    email: 'parasol@skilfish.co.uk',
+  },
+  {
+    id: '3',
+    group: 'First',
+    createdAt: '2018-09-03T09:59:46.000Z',
+    updatedAt: '2018-09-03T09:59:46.000Z',
+    firstName: 'Evangelina',
+    lastName: 'Korner',
+    email: 'maidenliness@semiflexion.co.uk',
+  },
+  {
+    id: '4',
+    group: 'Second',
+    createdAt: '2018-09-03T09:59:43.000Z',
+    updatedAt: '2018-09-03T09:59:43.000Z',
+    firstName: 'Dian',
+    lastName: 'Wegge',
+    email: 'clinanthium@illuminize.com',
+  },
+  {
+    id: '5',
+    group: 'Second',
+    createdAt: '2018-09-03T09:59:45.000Z',
+    updatedAt: '2018-09-03T09:59:45.000Z',
+    firstName: 'Chas',
+    lastName: 'Dalrymple',
+    email: 'inadaptive@brucine.net',
+  },
+  {
+    id: '6',
+    group: 'Third',
+    createdAt: '2018-09-03T09:59:43.000Z',
+    updatedAt: '2018-09-03T09:59:43.000Z',
+    firstName: 'Preston',
+    lastName: 'Bonini',
+    email: 'tiza@unlovingness.net',
+  },
+  {
+    id: '7',
+    group: 'Third',
+    createdAt: '2018-09-03T09:59:45.000Z',
+    updatedAt: '2018-09-03T09:59:45.000Z',
+    firstName: 'Chas',
+    lastName: 'Dalrymple',
+    email: 'inadaptive@brucine.net',
+  },
+  {
+    id: '8',
+    group: 'First',
+    createdAt: '2018-09-03T09:59:45.000Z',
+    updatedAt: '2018-09-03T09:59:45.000Z',
+    firstName: 'Chas',
+    lastName: 'Dalrymple',
+    email: 'inadaptive@brucine.net',
+  },
+];
+
 const fetchData = async (page, pageSize) => {
   await (() => new Promise(resolve => setTimeout(resolve, 5000)))();
 
@@ -414,8 +489,26 @@ export const defaultStory = () => (
   </div>
 );
 
-defaultStory.story = {
-  name: 'default',
+export const grouped = () => (
+  <div style={{ display: 'flex', height: '600px' }}>
+    <TableBuilder
+      columns={ TABLE_COLUMNS }
+      data={ GROUPED_TABLE_DATA }
+      groupBy={ (data) =>
+        data.reduce(
+          (acc, item) => {
+            if (!acc[item.group]) {
+              return { ...acc, [item.group]: [item] };
+            }
+            acc[item.group] = [...acc[item.group], item];
+            return acc;
+          }, {}) }
+    />
+  </div>
+);
+
+grouped.story = {
+  name: 'grouped',
 };
 
 export const withLoader = () => (

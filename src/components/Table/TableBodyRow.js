@@ -35,6 +35,9 @@ const [TableBodyRowTag, theme] = createThemeTag(name, ({ COLORS }: *) => ({
       borderLeft: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
       borderRight: `1px solid ${COLORS.SECONDARY_BORDER_COLOR}`,
     },
+    borderedLess: {
+      border: 'none',
+    },
   },
 }));
 

@@ -1,3 +1,18 @@
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/8base/boost/compare/v1.11.8...v1.12.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* correction of initials in the avatar ([#407](https://github.com/8base/boost/issues/407)) ([b752cfd](https://github.com/8base/boost/commit/b752cfd))
+
+
+### Features
+
+* add grouped table ([#408](https://github.com/8base/boost/issues/408)) ([d3462be](https://github.com/8base/boost/commit/d3462be))
+
+
+
 <a name="1.11.8"></a>
 ## [1.11.8](https://github.com/8base/boost/compare/v1.11.7...v1.11.8) (2022-02-04)
 

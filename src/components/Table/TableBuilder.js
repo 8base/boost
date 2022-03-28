@@ -11,6 +11,9 @@ import { TableHeaderCell } from './TableHeaderCell';
 import { Table } from './Table';
 import { Checkbox } from '../Checkbox';
 import { Pagination } from '../Pagination';
+import { TableBodyRow } from './TableBodyRow';
+import { TableBodyCell } from './TableBodyCell';
+import { Heading } from '../Heading';
 
 const DEFAULT_SORT_ENABLE = true;
 
@@ -63,7 +66,7 @@ type TableBulderProps = {
   withPagination?: boolean,
   /** Options to show loader */
   loading?: boolean,
-  /** Calback to render cell */
+  /** Callback to render cell */
   renderCell?: (column: ColumnType, data: any, opts: { expandRow: () => void, isExpanded?: boolean }) => React$Node,
   /** Callback to render head cell */
   renderHeadCell?: (column: ColumnType) => React$Node,
@@ -77,6 +80,10 @@ type TableBulderProps = {
   expandedRowRender?: (data: ExpandedRowRenderData) => React$Node,
   /** Callback executed when the row `isExpanded` state is changed  */
   onExpand?: ({ key: string, isExpanded: boolean }) => void,
+  /** Callback to group data by field*/
+  groupBy: <T: $Shape<any>>(data: T[]) => { [key: string]: T[]},
+  /** Callback to render grouped table title */
+  renderGroupTitle?: (key: string, data: Array<Object>) => React$Node,
 };
 
 type TableBuilderState = {|
@@ -315,12 +322,11 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
     );
   }
 
-  renderBody = () => {
+  renderBody = (data: Array<Object>) => {
     const {
       columns,
       onActionClick,
       action,
-      data,
       withSelection,
       renderCell,
       noData,
@@ -364,6 +370,32 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
     );
   }
 
+  renderContent = () => {
+    const { groupBy, data, renderGroupTitle } = this.props;
+
+    if (groupBy && typeof groupBy === 'function') {
+
+      const groupedData = groupBy(data) || {};
+      return (
+        <div style={{ overflow: 'auto' }}>
+          { Object.keys(groupedData).map((key) => (
+            <div key={ key }>
+              { renderGroupTitle && typeof renderGroupTitle === 'function' ?
+                renderGroupTitle(key, groupedData[key]) :
+                <TableBodyRow borderedLess>
+                  <TableBodyCell>
+                    <Heading type="h4">{ key }</Heading>
+                  </TableBodyCell>
+                </TableBodyRow> }
+              { this.renderBody(groupedData[key]) }
+            </div>
+          )) }
+        </div>);
+    }
+
+    return this.renderBody(data);
+  };
+
   onChangePagination = (page: number, pageSize: number) => {
     const { onChange, tableState } = this.props;
 
@@ -404,7 +436,7 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
     return (
       <Table modifiers={ rest }>
         { this.renderHeader() }
-        { this.renderBody() }
+        { this.renderContent() }
         { this.renderFooter() }
       </Table>
     );

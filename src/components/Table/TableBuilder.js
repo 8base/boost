@@ -83,7 +83,7 @@ type TableBulderProps = {
   /** Callback to group data by field*/
   groupBy: <T: $Shape<any>>(data: T[]) => { [key: string]: T[]},
   /** Callback to render grouped table title */
-  renderGroupTitle?: (key:string, data: any) => React$Node,
+  renderGroupTitle?: (key: string, data: Array<Object>) => React$Node,
 };
 
 type TableBuilderState = {|
@@ -322,7 +322,7 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
     );
   }
 
-  renderBody = (data:any) => {
+  renderBody = (data: Array<Object>) => {
     const {
       columns,
       onActionClick,
@@ -379,16 +379,16 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
       return (
       // $FlowFixMe
         <div style={{ overflow: 'auto' }}>
-          { Object.entries(groupedData).map(([key, data]) => (
+          { Object.keys(groupedData).map((key) => (
             <div key={ key }>
               { renderGroupTitle && typeof renderGroupTitle === 'function' ?
-                renderGroupTitle(key, data) :
+                renderGroupTitle(key, groupedData[key]) :
                 <TableBodyRow borderedLess>
                   <TableBodyCell>
                     <Heading type="h4">{ key }</Heading>
                   </TableBodyCell>
                 </TableBodyRow> }
-              { this.renderBody(data) }
+              { this.renderBody(groupedData[key]) }
             </div>
           )) }
         </div>);

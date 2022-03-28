@@ -489,6 +489,10 @@ export const defaultStory = () => (
   </div>
 );
 
+defaultStory.story = {
+  name: 'default',
+};
+
 export const grouped = () => (
   <div style={{ display: 'flex', height: '600px' }}>
     <TableBuilder

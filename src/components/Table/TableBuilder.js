@@ -377,7 +377,6 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
 
       const groupedData = groupBy(data) || {};
       return (
-      // $FlowFixMe
         <div style={{ overflow: 'auto' }}>
           { Object.keys(groupedData).map((key) => (
             <div key={ key }>

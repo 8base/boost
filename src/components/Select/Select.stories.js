@@ -40,6 +40,19 @@ const LONG_OPTIONS = [
   },
 ];
 
+const OPTIONS_WITH_DESCRIPTION = [
+  {
+    description: 'This is the description',
+    label: 'This is the value to show',
+    value: 'value',
+  },
+  {
+    description: 'Another description',
+    label: 'Another Value',
+    value: 'value2',
+  },
+];
+
 export default {
   title: 'Components/Select',
   component: Select,
@@ -81,6 +94,14 @@ export const common = () => (
       <Select name="name" placeholder="Select an option" options={ OPTIONS } disabled />
     </StateContainer>
     <Select name="name" placeholder="With error" options={ OPTIONS } hasError />
+    <StateContainer value={ OPTIONS_WITH_DESCRIPTION[0].value }>
+      <Select
+        name="name"
+        placeholder="Select an option"
+        components={{ Option: Select.components.OptionWithDescription }}
+        options={ OPTIONS_WITH_DESCRIPTION }
+      />
+    </StateContainer>
   </Column>
 );
 

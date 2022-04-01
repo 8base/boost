@@ -126,6 +126,16 @@ const customStyles = ({ hasError, zIndex = Z_INDEX.DROPDOWN, COLORS }) => ({
       ...style[':active'],
       backgroundColor: !isDisabled && !isSelected && color(COLORS.PRIMARY).alpha(0.3).string(),
     },
+    '.option-description': {
+      fontSize: '10px',
+      color: isDisabled
+        ? COLORS.DISABLED_TEXT_COLOR
+        : isSelected
+          ? color(COLORS.PRIMARY).contrast(color(COLORS.WHITE)) > 2
+            ? COLORS.WHITE
+            : COLORS.BLACK
+          : COLORS.GRAY_50,
+    },
   }),
 });
 
@@ -178,8 +188,23 @@ const getOptionByValue = (value, options) => {
   return foundOption;
 };
 
+const OptionWithDescription = (props: any) => {
+  const { data: { label, description }} = props;
+
+  return (
+    <components.Option { ...props }>
+      <div style={{ flexDirection: 'column', display: 'flex' }}>
+        <span>{ label }</span>
+        <span className="option-description">
+          { description }
+        </span>
+      </div>
+    </components.Option>
+  );
+};
+
 class Select extends React.Component<SelectProps & SelectPropsFromHOCs> {
-  static components = components;
+  static components = { ...components, OptionWithDescription };
   static defaultProps = {
     withPortal: true,
     stretch: true,

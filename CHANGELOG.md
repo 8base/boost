@@ -1,3 +1,13 @@
+<a name="1.12.1"></a>
+## [1.12.1](https://github.com/8base/boost/compare/v1.12.0...v1.12.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* fix bug with table and avatar ([#410](https://github.com/8base/boost/issues/410)) ([a4f3e69](https://github.com/8base/boost/commit/a4f3e69))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/8base/boost/compare/v1.11.8...v1.12.0) (2022-03-28)
 

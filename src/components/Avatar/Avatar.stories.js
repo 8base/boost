@@ -18,7 +18,6 @@ export const common = () => (
       { /* Wide image */ }
       <Avatar src="https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&auto=format&fit=crop&w=1930&q=80" />
       <Avatar src="https://randomuser.me/api/portraits/women/17.jpg" />
-      <Avatar src="https://cdn.filestackcontent.com/security=policy:eyJjYWxsIjpbInJlYWQiLCJjb252ZXJ0Il0sImV4cGlyeSI6MjUyNDYwODAwMCwiaGFuZGxlIjoibXFBSVk5T1JKU1MweWpZbzhzUUcifQ==,signature:9cc918b40a68d76e681387fef3595a20ee386296a3f1197c1ee492e01c1fa577/mqAIY9ORJSS0yjYo8sQG" />
     </Row>
     <Row>
       <Avatar size="xxl" />

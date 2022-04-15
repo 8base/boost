@@ -19,7 +19,7 @@ const [AvatarTag, themeAvatar] = createThemeTag(name, ({ COLORS }: *) => ({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    backgroundColor: getBackgroundColorByName(props.firstName),
+    backgroundColor: props.transparent ? 'transparent' : getBackgroundColorByName(props.firstName),
     color: COLORS.WHITE,
     fontWeight: 600,
   }),

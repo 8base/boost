@@ -51,7 +51,7 @@ function Avatar({
   const initials = getInitials(firstName, lastName);
 
   return (
-    <AvatarTag pickVariant={ pickVariant } { ...rest } firstName={ firstName } tagName="div">
+    <AvatarTag transparent={ !!src } pickVariant={ pickVariant } { ...rest } firstName={ firstName } tagName="div">
       {
         src ? <AvatarImgTag modifiers={ rest } tagName="img" src={ src } /> : initials
       }

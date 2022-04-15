@@ -373,7 +373,7 @@ class TableBuilder extends PureComponent<TableBulderProps, TableBuilderState> {
   renderContent = () => {
     const { groupBy, data, renderGroupTitle } = this.props;
 
-    if (groupBy && typeof groupBy === 'function') {
+    if (data && data.length !== 0 && groupBy && typeof groupBy === 'function') {
 
       const groupedData = groupBy(data) || {};
       return (

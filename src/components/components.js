@@ -54,4 +54,6 @@ export { Pagination } from './Pagination';
 export { Indicator } from './Indicator';
 export { Divider } from './Divider';
 export { Tab } from './Tab';
+export { Stepper,Step } from './Stepper';
+
 
